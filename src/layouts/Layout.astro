@@ -1,0 +1,67 @@
+---
+import { Download } from "lucide-react";
+import { Sidebar } from "@/components/Sidebar";
+import ThemeInit from "@/components/ThemeInit.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  children: any;
+}
+
+const {
+  title,
+  description = "A beautiful dashboard built with Astro and shadcn/ui",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+
+<ThemeInit />
+  </head>
+
+  <body class="min-h-screen bg-background font-sans antialiased touch-none">
+    <div class="flex h-screen optimize-gpu overflow-auto">
+      <div id="left-sidebar" class="w-[64px] shrink-0 border-r mobile:fixed mobile:z-50 mobile:transition-transform mobile:duration-300 mobile:translate-x-[-64px] mobile:data-[open=true]:translate-x-0">
+        <Sidebar client:load />
+      </div>
+
+      <div class="flex-1 flex flex-col min-w-0 mobile:pl-0">
+        <header
+          id="top-header"
+          class="h-16 min-h-[64px] max-h-[64px] border-b flex items-center px-6 gap-4 bg-background"
+        >
+          <div class="flex-1 flex justify-center pl-16">
+            <img src="/logo-dark.png" alt="Logo" class="h-10 dark:hidden" />
+            <img src="/logo.svg" alt="Logo" class="h-10 hidden dark:block" />
+          </div>
+          <a href="https://actualia.ch" class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg">
+            <Download className="h-4 w-4" />
+            Install Actualia
+          </a>
+        </header>
+
+        <main class="flex-1 p-6">
+          <slot />
+        </main>
+
+        <footer
+          id="bottom-footer"
+          class="h-12 border-t flex items-center px-6 text-sm text-muted-foreground"
+        >
+          © 2025 &nbsp; <a href="https://one.ie"> ONE </a>
+        </footer>
+      </div>
+    </div>
+
+  </body>
+</html>
