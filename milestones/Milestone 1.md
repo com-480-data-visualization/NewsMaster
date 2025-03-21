@@ -44,7 +44,7 @@ The RSS fluxs we plan to use include, but are not limited to: [BBC](https://feed
 
 The basic format of an RSS is an array featuring title, pubDate, description, link.
 
-We have provide some basic statistic in a jupyter notebook, notably :
+We have provide some basic statistic in a [jupyter notebook](stats.ipynb), notably :
 
 - Words per news  
 - Number of news and average number of words of a news per RSS (limit to last 24h news)  
