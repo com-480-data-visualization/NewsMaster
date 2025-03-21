@@ -1,5 +1,7 @@
 # 🚀 NewsMaster
 
+## [Milestone 1](/milestones/Milestone%201.md)
+
 ## ⚡ Quick Start
 
 ```bash
