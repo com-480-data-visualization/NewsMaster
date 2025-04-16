@@ -16,31 +16,32 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 ### Visualizations
 
-#### World Map of Media Attention
+#### 1) World Map of Media Attention
 
-- Import view: How often a country is mentioned in *other countries'* news.
-- Export view: How often a country's *media talks about* other countries.
-- Interaction: Hover to view breakdown, switch between import/export.
+- **Import view**: How often a country is mentioned in *other countries'* news.
+- **Export view**: How often a country's *media talks about* other countries.
+- **Interactions**: 
+    - Hover for a view breakdown
+    - Switch button to switch between import/export view
 
-![World Map Visualization](res/world_map.png)
+<img src="res/world_map.png" alt="World Map Visualization" width="45%">
 
-#### Keyword Bubble Chart (Network of News Topics)
+#### 2) Keyword Bubble Chart
 
-- Each node = a trending named entity or keyword
-- Links = co-occurrence in the same article
-- Size = frequency
-- Edge thickness = strength of co-occurrence
+- **Node**: a named entity or keyword
+    - *size*: number of articles where the keyword occurs
+- **Edges**: co-occurence in the same article
+    - *thickness*: number of co-occurrences
 
-![Bubble Chart Keyword](res/bubble_chart.png)
+<img src="res/bubble_chart.png" alt="Bubble Chart Keyword" width="45%">
 
-![Bubble Chart Keyword](res/bubble_chart.png)
 
-#### Temporal Trend Rankings
+#### 3) Temporal Trend Rankings
 
-- Rankings of top 10 topics over past in a week. Shown as a histogram of the % of appearances of the topic in the articles of the selected week.
-- Interactions:
-  - Hovering a bar displays the total number of appearances.
-  - Clicking a bar displays a new graph, showing the trending of this topics over the weeks.
+- **View**: Ranking of top 10 topics over past in a week. Shown as a histogram of the % of occurence of the topic in the articles of the selected week, ordered.
+- **Interactions**:
+  - Hover a bar displays the total number of appearances
+  - Click a bar displays a new graph, showing the trending of this topics over the weeks
 
 <img src="res/temporal_trend.jpg" alt="Temporal Trend Visualization" width="45%">
 
@@ -53,10 +54,10 @@ The result will be a live dashboard showing the most discussed countries, topics
 - [ ] Docs to explain the model and choice of hyperparameter
 - [ ] Docs to explain the dataset format
   
-#### SWE
+#### Website development
 
-- [X] website deployment via git action
-- [ ] page design and layout
+- [X] Website deployment via git action
+- [ ] Page design and layout
 - [ ] Add graph libraries and try them out
 - [ ] Design the graphs with dummy data
 - [ ] Link the dataset with the graphs
@@ -65,8 +66,8 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 ### Tools & Lecture Needs
 
-| Component               | Tools / Libraries                | Related Lectures / Resources          |
-|------------------------|----------------------------------|----------------------------------------|
+| Component              | Tools / Libraries                | Related Lectures / Resources          |
+|------------------------|----------------------------------|---------------------------------------|
 | Map                    | D3.js, TopoJSON, Leaflet (maybe) | D3.js lectures, Map projections       |
 | NLP                    | spaCy, NLTK, scikit-learn        | NLP in Python, Topic modeling basics  |
 | Bubble & Trend Charts  | D3.js, Plotly.js, Chart.js       | Graph viz & Time series lectures      |
