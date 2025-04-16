@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "id": "unique_id",
+            "providerId": "provider_id",
+            "title": "title",
+            "description": "description",
+            "url": "url",
+            "language": "language",
+            "createdAt": "created_at",
+            "pubDate": "pub_timestamp"
+        }
+    ]
+}
