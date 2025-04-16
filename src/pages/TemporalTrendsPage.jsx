@@ -8,6 +8,17 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
+// Color configuration for easier customization
+const colorConfig = {
+  primary: 'hsl(215, 70%, 60%)', // Softer blue
+  secondary: 'hsl(280, 40%, 60%)', // Soft purple 
+  highlight: 'hsl(150, 50%, 60%)', // Mint green
+  grid: 'hsl(220, 10%, 90%)', // Light gray for grid
+  cursorHighlight: 'hsla(220, 10%, 90%, 0.6)', // Transparent gray for hover
+  tooltipBg: 'hsl(var(--background))',
+  tooltipBorder: 'hsl(var(--border))',
+};
+
 // Function to format week keys (e.g., "14-20.04" to "14 - 20 April")
 const formatWeekKey = (weekKey) => {
   if (!weekKey) return '';
@@ -112,11 +123,11 @@ const TemporalTrendsPage = () => {
           <CardContent>
             <ResponsiveContainer width="100%" height={350}>
               <BarChart data={currentWeekTopics} onClick={handleBarClick} margin={{ top: 5, right: 0, left: -25, bottom: 5 }}>
-                <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke={colorConfig.grid} />
                 <XAxis dataKey="name" tickLine={false} axisLine={false} />
                 <YAxis unit="%" tickLine={false} axisLine={false} width={60} />
-                <RechartsTooltip content={<CustomBarTooltip />} cursor={{ fill: 'hsl(var(--muted))' }} />
-                <Bar dataKey="%" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} />
+                <RechartsTooltip content={<CustomBarTooltip />} cursor={{ fill: colorConfig.cursorHighlight }} />
+                <Bar dataKey="%" fill={colorConfig.primary} radius={[4, 4, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </CardContent>
@@ -130,11 +141,18 @@ const TemporalTrendsPage = () => {
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
                 <LineChart data={topicTrendData} margin={{ top: 5, right: 20, left: -25, bottom: 5 }}>
-                  <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke={colorConfig.grid} />
                   <XAxis dataKey="week" tickFormatter={formatWeekKey} tickLine={false} axisLine={false} />
                   <YAxis tickLine={false} axisLine={false} width={60} />
                   <RechartsTooltip content={<CustomLineTooltip />} />
-                  <Line type="monotone" dataKey="appearances" stroke="hsl(var(--primary))" strokeWidth={2} dot={{ r: 4 }} activeDot={{ r: 6 }} />
+                  <Line 
+                    type="monotone" 
+                    dataKey="appearances" 
+                    stroke={colorConfig.secondary} 
+                    strokeWidth={2} 
+                    dot={{ r: 4, fill: colorConfig.secondary }} 
+                    activeDot={{ r: 6, fill: colorConfig.highlight }} 
+                  />
                 </LineChart>
               </ResponsiveContainer>
             </CardContent>
