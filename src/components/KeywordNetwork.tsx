@@ -1,220 +1,129 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useMemo, useState } from "react";
 import Select from "react-select";
-import { Sigma } from "sigma";
-import Graph from "graphology";
-import { random } from "graphology-layout";
+import type { SingleValue } from "react-select";
+import ForceGraph2D from "react-force-graph-2d";
+import articlesData from "../../data/articles_16.04.2025.json";
+const articles = articlesData.data;
 
-const KEYWORD_TYPES = ["organisation", "person", "location", "misc"];
-
-interface Article {
+type Article = {
+    id: string;
+    providerId: string;
     title: string;
-    organisation?: string[];
-    person?: string[];
-    location?: string[];
-    misc?: string[];
-    [key: string]: any;
-}
+    description: string;
+    url: string;
+    language: string;
+    createdAt: string;
+    pubDate: number;
+};
 
-interface ArticleOption {
+type Node = {
+    id: string;
+    val: number;
+};
+
+type Link = {
+    source: string;
+    target: string;
+    articles: string[];
     value: number;
+    title: string;
+};
+
+type GraphData = {
+    nodes: Node[];
+    links: Link[];
+};
+
+type CategoryOption = {
+    value: string | null;
     label: string;
+};
+
+// Updated `buildGraphData` to use keywords instead of titles for nodes and edges
+function buildGraphData(filterCategory: string | null): GraphData {
+    const keywordMap = new Map<string, Node>();
+    const edgeMap = new Map<string, { source: string; target: string; articles: string[] }>();
+
+    (articles as Article[]).forEach((article) => {
+        const keywords: { label: string; category: string }[] = [];
+
+        // Extract keywords from the article (e.g., "AI", "Nebraska", "Carlos Mendes")
+        if (article.title) {
+            const extractedKeywords = article.title.split(/\s+/); // Simple split for demonstration
+            extractedKeywords.forEach((kw) => {
+                keywords.push({ label: kw, category: "keyword" });
+            });
+        }
+
+        // Build keyword occurrences
+        keywords.forEach((kw) => {
+            if (!keywordMap.has(kw.label)) {
+                keywordMap.set(kw.label, { id: kw.label, val: 1 });
+            } else {
+                keywordMap.get(kw.label)!.val += 1;
+            }
+        });
+
+        // Build edges (co-occurrence)
+        for (let i = 0; i < keywords.length; i++) {
+            for (let j = i + 1; j < keywords.length; j++) {
+                const key = [keywords[i].label, keywords[j].label].sort().join("--");
+                if (!edgeMap.has(key)) {
+                    edgeMap.set(key, { source: keywords[i].label, target: keywords[j].label, articles: [article.title] });
+                } else {
+                    edgeMap.get(key)!.articles.push(article.title);
+                }
+            }
+        }
+    });
+
+    const nodes = Array.from(keywordMap.values());
+    const links = Array.from(edgeMap.values()).map((e) => ({
+        ...e,
+        value: e.articles.length,
+        title: e.articles.join("\n")
+    }));
+
+    return { nodes, links };
 }
 
-const KeywordNetwork: React.FC = () => {
-    const [data, setData] = useState<Article[]>([]);
-    const [keywordType, setKeywordType] = useState<string>("person");
-    const [articleOptions, setArticleOptions] = useState<ArticleOption[]>([]);
-    const [selectedArticle, setSelectedArticle] = useState<ArticleOption | null>(null);
-    const containerRef = useRef<HTMLDivElement>(null);
-    const sigmaRef = useRef<Sigma | null>(null);
-    const depth = 2;
+const categoryOptions: CategoryOption[] = [
+    { value: null, label: "All" },
+    { value: "organisation", label: "Organisation" },
+    { value: "location", label: "Location" },
+    { value: "person", label: "Person" },
+    { value: "misc", label: "Misc" }
+];
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch("/data/16.04.2025/network.json");
-                const json = await res.json();
-                setData(json.data);
+const KeywordNetwork = () => {
+    const [selectedCategory, setSelectedCategory] = useState<CategoryOption | null>(null);
 
-                const options = json.data.map((article: Article, idx: number) => ({
-                    value: idx,
-                    label: article.title,
-                }));
-                setArticleOptions(options);
-            } catch (err) {
-                console.error("Error fetching articles.json:", err);
-            }
-        };
-
-        fetchData();
-    }, []);
-
-    const getLinks = (articles: Article[], type: string): [number, number][] => {
-        const keywordMap = new Map<string, number[]>();
-
-        articles.forEach((article, index) => {
-            const keywords = article[type] as string[] | undefined;
-            if (Array.isArray(keywords)) {
-                keywords.forEach(keyword => {
-                    if (!keywordMap.has(keyword)) {
-                        keywordMap.set(keyword, []);
-                    }
-                    keywordMap.get(keyword)?.push(index);
-                });
-            }
-        });
-
-        const links: [number, number][] = [];
-        keywordMap.forEach(indices => {
-            for (let i = 0; i < indices.length; i++) {
-                for (let j = i + 1; j < indices.length; j++) {
-                    links.push([indices[i], indices[j]]);
-                }
-            }
-        });
-
-        return links;
-    };
-
-    const addGraphNodesAndEdges = (
-        graph: Graph,
-        links: [number, number][],
-        current: number,
-        depth: number,
-        visited: Set<number> = new Set(),
-        level: number = 0
-    ): void => {
-        if (depth === 0 || visited.has(current)) return;
-        visited.add(current);
-
-        links.forEach(([source, target]) => {
-            if (source === current || target === current) {
-                const other = source === current ? target : source;
-
-                if (!graph.hasNode(String(source))) {
-                    graph.addNode(String(source), {
-                        label: data[source]?.title || `Article ${source}`,
-                        depth: level,
-                        size: 5,
-                    });
-                }
-
-                if (!graph.hasNode(String(target))) {
-                    graph.addNode(String(target), {
-                        label: data[target]?.title || `Article ${target}`,
-                        depth: level,
-                        size: 5,
-                    });
-                }
-
-                if (!graph.hasEdge(String(source), String(target)) &&
-                    !graph.hasEdge(String(target), String(source))) {
-                    graph.addEdge(String(source), String(target), {
-                        color: "#999",
-                        size: 1,
-                    });
-                }
-
-                addGraphNodesAndEdges(graph, links, other, depth - 1, visited, level + 1);
-            }
-        });
-    };
-
-    useEffect(() => {
-        if (!selectedArticle || !data.length) return;
-
-        // Clean up previous Sigma instance
-        if (sigmaRef.current) {
-            // Type assertion to access kill method
-            (sigmaRef.current as any).kill();
-            sigmaRef.current = null;
-        }
-
-        const graph = new Graph();
-        const links = getLinks(data, keywordType);
-        const current = selectedArticle.value;
-
-        addGraphNodesAndEdges(graph, links, current, depth);
-
-        graph.forEachNode((node, attrs) => {
-            const degree = graph.degree(node);
-            graph.setNodeAttribute(node, "size", Math.min(degree + 3, 10));
-            graph.setNodeAttribute(node, "color",
-                node === String(current) ? "blue" :
-                    attrs.depth === 0 ? "violet" : "#666"
-            );
-        });
-
-        random.assign(graph);
-
-        if (containerRef.current) {
-            const sigma = new Sigma(graph, containerRef.current);
-            sigmaRef.current = sigma;
-
-            const capturedCurrent = current; // Capture the current value for closure
-
-            sigma.on("enterNode", ({ node }: { node: string }) => {
-                graph.updateEachNodeAttributes((n, attrs) => ({
-                    ...attrs,
-                    color: n === node ? "red" : attrs.color,
-                }));
-
-                graph.updateEachEdgeAttributes((edge, attrs) => {
-                    const [source, target] = graph.extremities(edge);
-                    return {
-                        ...attrs,
-                        color: source === node || target === node ? "red" : attrs.color,
-                        size: source === node || target === node ? 2 : 1,
-                        hidden: source !== node && target !== node,
-                    };
-                });
-
-                sigma.refresh();
-            });
-
-            sigma.on("leaveNode", () => {
-                graph.updateEachNodeAttributes((n, attrs) => ({
-                    ...attrs,
-                    color: n === String(capturedCurrent) ? "blue" :
-                        attrs.depth === 0 ? "violet" : "#666",
-                }));
-
-                graph.updateEachEdgeAttributes((edge, attrs) => ({
-                    ...attrs,
-                    color: "#999",
-                    size: 1,
-                    hidden: false,
-                }));
-
-                sigma.refresh();
-            });
-        }
-
-        // Cleanup function
-        return () => {
-            if (sigmaRef.current) {
-                (sigmaRef.current as any).kill();
-                sigmaRef.current = null;
-            }
-        };
-    }, [selectedArticle, keywordType, data, depth]);
+    const graphData = useMemo(() => buildGraphData(selectedCategory?.value || null), [selectedCategory]);
 
     return (
-        <div>
-            <div className="flex gap-4 p-4">
+        <div className="p-4">
+            <h1 className="text-2xl font-bold mb-4">Keyword Co-occurrence Graph</h1>
+            <div className="mb-4 w-64">
                 <Select
-                    options={KEYWORD_TYPES.map(k => ({ label: k, value: k }))}
-                    onChange={(opt) => setKeywordType(opt?.value || "person")}
-                    defaultValue={{ label: "person", value: "person" }}
-                    placeholder="Select keyword type"
-                />
-                <Select
-                    options={articleOptions}
-                    onChange={(opt) => setSelectedArticle(opt)}
-                    placeholder="Select an article"
+                    options={categoryOptions}
+                    value={selectedCategory}
+                    onChange={(newValue) => setSelectedCategory(newValue as SingleValue<CategoryOption>)}
+                    isClearable
+                    placeholder="Filter by category..."
                 />
             </div>
-            <div ref={containerRef} style={{ width: "100%", height: "90vh" }} />
+            <ForceGraph2D
+                graphData={graphData}
+                nodeLabel={(node) => `${node.id} (x${node.val})`}
+                nodeAutoColorBy="id"
+                nodeVal={(node) => node.val}
+                linkDirectionalParticles={2}
+                linkDirectionalParticleWidth={1}
+                linkLabel={(link) => link.title}
+                linkWidth={(link) => Math.log2(link.value + 1)}
+                width={1000}
+                height={600}
+            />
         </div>
     );
 };
