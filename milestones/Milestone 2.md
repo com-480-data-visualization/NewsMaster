@@ -1,5 +1,4 @@
-# **NewsMaster**
-# Milestone 2
+# **NewsMaster** - Milestone 2
 
 ## Project Goal
 
@@ -17,22 +16,26 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 ### 1) World Map of Media Attention
 
-#### Description & sketch:
+#### Description & sketch
+
 - **Import view**: How often a country is mentioned in *other countries'* news.
 - **Export view**: How often a country's *media talks about* other countries.
-- **Interactions**: 
-    - Hover for a view breakdown
-    - Switch button to switch between import/export view
+- **Interactions**:
+  - Hover for a view breakdown
+  - Switch button to switch between import/export view
 
-<img src="res/world_map.png" alt="World Map Visualization" width="45%">
+![World Map Visualization](res/world_map.png)
 
-#### Tools & lectures needed:  
+#### Tools & lectures needed  
+
 **Tools**:  
+
 - D3.js  
 - TopoJSON  
 - Leaflet (maybe)  
 
 **Lectures**:  
+
 - 4_2_D3
 - 5_1_Interaction
 - 6_1_Perception_colors
@@ -43,19 +46,22 @@ The result will be a live dashboard showing the most discussed countries, topics
 ### 2) Keyword Bubble Chart
 
 - **Node**: a named entity or keyword
-    - *size*: number of articles where the keyword occurs
+  - *size*: number of articles where the keyword occurs
 - **Edges**: co-occurence in the same article
-    - *thickness*: number of co-occurrences
+  - *thickness*: number of co-occurrences
 
 <img src="res/bubble_chart.png" alt="Bubble Chart Keyword" width="45%">
 
 #### Tools & lectures needed
+
 **Tools**:
+
 - D3.js
-- Plotly.js 
+- Plotly.js
 - Chart.js
 
 **Lectures**:
+
 - 4_2_D3
 - 6_2_Mark_channel
 - 9_Text
@@ -71,12 +77,15 @@ The result will be a live dashboard showing the most discussed countries, topics
 <img src="res/temporal_trend.jpg" alt="Temporal Trend Visualization" width="45%">
 
 #### Tools & lectures needed
+
 **Tools**:
+
 - D3.js
-- Plotly.js 
+- Plotly.js
 - Chart.js
 
 **Lectures**:
+
 - 4_2_D3.pdf
 - 5_1_Interaction
 - 6_1_Perception_colors
@@ -84,12 +93,17 @@ The result will be a live dashboard showing the most discussed countries, topics
 - 11_1_Tabular_data
 
 ## Roadmap
+
+First, let's have a look a our data flow :
+
+![Data flow](res/pipeline.excalidraw.svg)
+
 ### ML
 
-- [ ] Parse RSS feeds Action, clean them (TODO add link)
-- [ ] Apply NLP (Named Entity Recognition, Trend)
-- [ ] Docs to explain the model and choice of hyperparameter
-- [ ] Docs to explain the dataset format
+- [ ] Parse RSS feeds and sanitize them `ingestor_clean.py`
+- [ ] Apply NLP Named Entity Recognition with TBD `named_entity_recognition.py`
+- [ ] Apply NLP Trend Analysis with BERTopic `trend_analysis.py`
+- [ ] Format the NLP analysis into  `graph_processing.py`
   
 ### Website development
 
