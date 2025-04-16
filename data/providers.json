@@ -1,0 +1,8 @@
+[
+    {
+        "id": "test_provider",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://rss.nytimes.com/services/xml/rss/nyt/World.xml"]
+    }
+] 
