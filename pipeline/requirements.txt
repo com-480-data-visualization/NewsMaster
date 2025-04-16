@@ -1,0 +1,4 @@
+feedparser
+requests
+beautifulsoup4
+pytz
