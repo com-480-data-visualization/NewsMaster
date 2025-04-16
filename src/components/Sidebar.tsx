@@ -5,11 +5,13 @@ import {
   Home,
   FileText,
   Scale,
-  Book
+  Book,
+  LineChart
 } from 'lucide-react'
 
 const navigation = [
   { title: "Home", path: "/", icon: Home },
+  { title: "Temporal Trends", path: "/temporal-trends", icon: LineChart },
 ] as const
 
 // Components
