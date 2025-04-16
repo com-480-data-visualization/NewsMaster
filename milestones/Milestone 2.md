@@ -1,6 +1,6 @@
 # **NewsMaster**
 
-## 📰 Milestone 2
+## Milestone 2
 
 ### Project Goal
 
@@ -31,12 +31,16 @@ The result will be a live dashboard showing the most discussed countries, topics
 - Size = frequency
 - Edge thickness = strength of co-occurrence
 
+![Bubble Chart Keyword](res/bubble_chart.png)
+
+![Bubble Chart Keyword](res/bubble_chart.png)
+
 #### Temporal Trend Rankings
 
 - Rankings of top 10 topics over past in a week. Shown as a histogram of the % of appearances of the topic in the articles of the selected week.
 - Interactions:
-    - Hovering a bar displays the total number of appearances.
-    - Clicking a bar displays a new graph, showing the trending of this topics over the weeks.
+  - Hovering a bar displays the total number of appearances.
+  - Clicking a bar displays a new graph, showing the trending of this topics over the weeks.
 
 <img src="res/temporal_trend.jpg" alt="Temporal Trend Visualization" width="45%">
 
@@ -44,16 +48,18 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 #### ML
 
-- Parse RSS feeds (BBC, NYT, Reuters, etc.)
-- Clean + store past 7 days' news articles
-- Apply NLP (Named Entity Recognition, Trend)
+- [ ] Parse RSS feeds Action, clean them (TODO add link)
+- [ ] Apply NLP (Named Entity Recognition, Trend)
+- [ ] Docs to explain the model and choice of hyperparameter
+- [ ] Docs to explain the dataset format
   
 #### SWE
 
-- website up via git action
-- page design
-- graph skeleton
-- link skeleton with pipelin
+- [X] website deployment via git action
+- [ ] page design and layout
+- [ ] Add graph libraries and try them out
+- [ ] Design the graphs with dummy data
+- [ ] Link the dataset with the graphs
 
 ---
 
