@@ -94,7 +94,7 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 First, let's have a look a our data flow :
 
-<img src="res/pipeline.excalidraw.svg" alt="Data flow" width="45%">
+<img src="res/pipeline.excalidraw.svg" alt="Data flow" width="30%">
 
 ### ML
 
@@ -114,6 +114,7 @@ First, let's have a look a our data flow :
 ## Additional ideas  
 
 - Interactive timeline for major news events
+- Add a trend analysis
 - Country comparison tool to see side-by-side media coverage differences
 - Topic clustering visualization showing related news categories
 - Mobile-responsive design for on-the-go news trend monitoring
