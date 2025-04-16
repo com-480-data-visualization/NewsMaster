@@ -15,7 +15,11 @@ import KeywordNetwork from "../components/KeywordNetwork";
         </p>
 
         <div class="mb-10">
-            <KeywordNetwork client:load />
+            <div
+                class="relative w-full h-[600px] border rounded-lg overflow-hidden"
+            >
+                <KeywordNetwork client:only="react" />
+            </div>
         </div>
 
         <div class="bg-gray-50 p-6 rounded-lg border">
