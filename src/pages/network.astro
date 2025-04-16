@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import KeywordNetwork from "../components/KeywordNetwork";
+---
+
+<Layout title="Keyword Network | NewsMaster">
+    <div class="container mx-auto py-8 px-4">
+        <h1 class="text-3xl font-bold mb-6">Keyword Network Visualization</h1>
+        <p class="mb-8 text-gray-700">
+            This interactive visualization shows connections between keywords
+            found in today's news articles. Larger nodes represent more
+            frequently mentioned topics, and thicker edges represent stronger
+            connections. You can drag and reposition nodes to explore the
+            network structure.
+        </p>
+
+        <div class="mb-10">
+            <KeywordNetwork client:load />
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-lg border">
+            <h2 class="text-xl font-bold mb-3">
+                How to Use This Visualization
+            </h2>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Click and drag any node to reposition it</li>
+                <li>
+                    Nodes are sized according to their prominence in today's
+                    news
+                </li>
+                <li>
+                    Lines between nodes indicate that they appear together in
+                    articles
+                </li>
+                <li>
+                    Thicker lines represent stronger connections between topics
+                </li>
+            </ul>
+        </div>
+    </div>
+</Layout>
