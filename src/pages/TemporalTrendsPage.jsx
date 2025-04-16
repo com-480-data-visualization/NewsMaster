@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, LineChart, Line, Legend } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, LineChart, Line, Legend, Text } from 'recharts';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 import weeksData from '@/../public/data/temporal_trends/weeks.json';
@@ -17,6 +17,7 @@ const colorConfig = {
   cursorHighlight: 'hsla(220, 10%, 90%, 0.6)', // Transparent gray for hover
   tooltipBg: 'hsl(var(--background))',
   tooltipBorder: 'hsl(var(--border))',
+  axisLabel: 'hsl(0, 0%, 20%)', // Dark gray for axis labels
 };
 
 // Function to format week keys (e.g., "14-20.04" to "14 - 20 April")
@@ -28,12 +29,21 @@ const formatWeekKey = (weekKey) => {
   return `${dates.replace('-', ' - ')} ${month}`;
 };
 
+// Function to format topic names for better readability
+const formatTopicName = (name) => {
+  if (!name) return '';
+  // Capitalize first letter of each word and replace underscores with spaces
+  return name
+    .replace(/_/g, ' ')
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+};
+
 // Custom Tooltip for Bar Chart
 const CustomBarTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
     return (
       <div className="bg-background border p-2 rounded shadow-lg">
-        <p className="label font-bold">{`${label}`}</p>
+        <p className="label font-bold">{formatTopicName(label)}</p>
         <p className="intro text-sm text-muted-foreground">{`Percentage: ${payload[0].value}%`}</p>
         <p className="desc text-sm text-muted-foreground">{`Appearances: ${payload[0].payload['#']}`}</p>
       </div>
@@ -53,6 +63,24 @@ const CustomLineTooltip = ({ active, payload, label }) => {
     );
   }
   return null;
+};
+
+// Custom X-Axis tick for better topic name display
+const CustomXAxisTick = ({ x, y, payload }) => {
+  const formattedText = formatTopicName(payload.value);
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text 
+        dy={16} 
+        textAnchor="middle" 
+        fill={colorConfig.cursorHighlight}
+        fontWeight="600"
+        fontSize="16"
+      >
+        {formattedText}
+      </text>
+    </g>
+  );
 };
 
 const TemporalTrendsPage = () => {
@@ -121,11 +149,29 @@ const TemporalTrendsPage = () => {
             </div>
           </CardHeader>
           <CardContent>
+            <div className="text-left text-sm text-muted-foreground mb-2">
+              Articles mentioning the topic
+            </div>
             <ResponsiveContainer width="100%" height={350}>
-              <BarChart data={currentWeekTopics} onClick={handleBarClick} margin={{ top: 5, right: 0, left: -25, bottom: 5 }}>
+              <BarChart 
+                data={currentWeekTopics} 
+                onClick={handleBarClick} 
+                margin={{ top: 5, right: 50, left: 50, bottom: 65 }} // Increased bottom margin for rotated labels
+              >
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke={colorConfig.grid} />
-                <XAxis dataKey="name" tickLine={false} axisLine={false} />
-                <YAxis unit="%" tickLine={false} axisLine={false} width={60} />
+                <XAxis 
+                  dataKey="name" 
+                  tickLine={false} 
+                  axisLine={false}
+                  tick={<CustomXAxisTick />}
+                  interval={0} // Ensure all labels are displayed
+                />
+                <YAxis 
+                  unit="%" 
+                  tickLine={false} 
+                  axisLine={false} 
+                  width={60} 
+                />
                 <RechartsTooltip content={<CustomBarTooltip />} cursor={{ fill: colorConfig.cursorHighlight }} />
                 <Bar dataKey="%" fill={colorConfig.primary} radius={[4, 4, 0, 0]} />
               </BarChart>
@@ -136,7 +182,7 @@ const TemporalTrendsPage = () => {
         {selectedTopic && topicTrendData.length > 0 && (
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg font-medium">Temporal trend: {selectedTopic}</CardTitle>
+              <CardTitle className="text-lg font-medium">Temporal trend: {formatTopicName(selectedTopic)}</CardTitle>
             </CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={300}>
