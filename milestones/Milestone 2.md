@@ -35,6 +35,10 @@ The result will be a live dashboard showing the most discussed countries, topics
 **Lectures**:  
 - 4_2_D3
 - 5_1_Interaction
+- 6_1_Perception_colors
+- 6_2_Mark_channel
+- 8_1_Maps
+- 8_2_Practical_maps
 
 ### 2) Keyword Bubble Chart
 
@@ -53,6 +57,9 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 **Lectures**:
 - 4_2_D3
+- 6_2_Mark_channel
+- 9_Text
+- 10_Graphs
 
 ### 3) Temporal Trend Rankings
 
@@ -72,6 +79,9 @@ The result will be a live dashboard showing the most discussed countries, topics
 **Lectures**:
 - 4_2_D3.pdf
 - 5_1_Interaction
+- 6_1_Perception_colors
+- 6_2_Mark_channel
+- 11_1_Tabular_data
 
 ## Roadmap
 ### ML
