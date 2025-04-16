@@ -50,12 +50,12 @@ const TemporalTrendsPage = () => {
   const [selectedTopic, setSelectedTopic] = useState(null);
 
   const handlePrevWeek = () => {
-    setCurrentWeekIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : weekKeys.length - 1));
+    setCurrentWeekIndex((prevIndex) => prevIndex - 1);
     setSelectedTopic(null); // Reset topic selection when changing week
   };
 
   const handleNextWeek = () => {
-    setCurrentWeekIndex((prevIndex) => (prevIndex < weekKeys.length - 1 ? prevIndex + 1 : 0));
+    setCurrentWeekIndex((prevIndex) => prevIndex + 1);
     setSelectedTopic(null); // Reset topic selection when changing week
   };
 
@@ -68,7 +68,12 @@ const TemporalTrendsPage = () => {
 
   const currentWeekKey = weekKeys[currentWeekIndex];
   const currentWeekDisplay = formatWeekKey(currentWeekKey);
-  const currentWeekTopics = weeksData[currentWeekKey] || [];
+  
+  // Sort topics by percentage in descending order
+  const currentWeekTopics = useMemo(() => {
+    const topics = weeksData[currentWeekKey] || [];
+    return [...topics].sort((a, b) => b["%"] - a["%"]);
+  }, [currentWeekKey]);
 
   // Prepare data for the topic trend line chart
   const topicTrendData = useMemo(() => {
@@ -79,6 +84,9 @@ const TemporalTrendsPage = () => {
     }));
   }, [selectedTopic, weekKeys]);
 
+  const isFirstWeek = currentWeekIndex === 0;
+  const isLastWeek = currentWeekIndex === weekKeys.length - 1;
+
   return (
     <TooltipProvider>
       <div className="space-y-6">
@@ -86,13 +94,19 @@ const TemporalTrendsPage = () => {
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-lg font-medium">By week</CardTitle>
             <div className="flex items-center space-x-2">
-              <Button variant="outline" size="icon" onClick={handlePrevWeek} disabled={weekKeys.length <= 1}>
-                <ChevronLeft className="h-4 w-4" />
-              </Button>
+              {!isFirstWeek && (
+                <Button variant="outline" size="icon" onClick={handlePrevWeek}>
+                  <ChevronLeft className="h-4 w-4" />
+                </Button>
+              )}
+              {isFirstWeek && <div className="w-9" />} {/* Placeholder to maintain alignment */}
               <span className="w-32 text-center font-semibold">{currentWeekDisplay}</span>
-              <Button variant="outline" size="icon" onClick={handleNextWeek} disabled={weekKeys.length <= 1}>
-                <ChevronRight className="h-4 w-4" />
-              </Button>
+              {!isLastWeek && (
+                <Button variant="outline" size="icon" onClick={handleNextWeek}>
+                  <ChevronRight className="h-4 w-4" />
+                </Button>
+              )}
+              {isLastWeek && <div className="w-9" />} {/* Placeholder to maintain alignment */}
             </div>
           </CardHeader>
           <CardContent>
