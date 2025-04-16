@@ -92,7 +92,7 @@ const TemporalTrendsPage = () => {
       <div className="space-y-6">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-lg font-medium">By week</CardTitle>
+            <CardTitle className="text-lg font-medium">Top 10 topics by week</CardTitle>
             <div className="flex items-center space-x-2">
               {!isFirstWeek && (
                 <Button variant="outline" size="icon" onClick={handlePrevWeek}>
