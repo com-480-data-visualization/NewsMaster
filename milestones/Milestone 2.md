@@ -50,7 +50,7 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 <img src="res/bubble_chart.png" alt="Bubble Chart Keyword" width="45%">
 
-#### Tools & lectures needed:
+#### Tools & lectures needed
 
 **Tools**:
 
@@ -95,7 +95,6 @@ The result will be a live dashboard showing the most discussed countries, topics
 First, let's have a look a our data flow :
 
 <img src="res/pipeline.excalidraw.svg" alt="Data flow" width="45%">
-
 
 ### ML
 
