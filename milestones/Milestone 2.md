@@ -90,7 +90,7 @@ The result will be a live dashboard showing the most discussed countries, topics
 - 6_2_Mark_channel
 - 11_1_Tabular_data
 
-## Roadmap
+## Roadmap for the core website  
 
 First, let's have a look a our data flow :
 
@@ -111,6 +111,14 @@ First, let's have a look a our data flow :
 - [ ] Add graph libraries and try them out
 - [ ] Design the graphs with dummy data
 - [ ] Link the dataset with the graphs
+
+## Additional ideas  
+
+- Interactive timeline for major news events
+- Country comparison tool to see side-by-side media coverage differences
+- Topic clustering visualization showing related news categories
+- Mobile-responsive design for on-the-go news trend monitoring
+- News source breakdown to show media diversity per topic/country
 
 ---
 The images of this document have been produced with the help of OpenAI tools.
