@@ -86,7 +86,7 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 First, let's have a look a our data flow :
 
-![Datadlow](res/pipeline.excalidraw.svg)
+![Data flow](res/pipeline.excalidraw.svg)
 
 ### ML
 
