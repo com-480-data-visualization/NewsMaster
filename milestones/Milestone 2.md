@@ -10,8 +10,6 @@ We aim to make global news trends instantly understandable through intuitive and
 
 The result will be a live dashboard showing the most discussed countries, topics, and their interconnections. This serves users who want to stay updated on global narratives at a glance.
 
----
-
 ## Visualizations
 
 ### 1) World Map of Media Attention
@@ -52,7 +50,7 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 <img src="res/bubble_chart.png" alt="Bubble Chart Keyword" width="45%">
 
-#### Tools & lectures needed
+#### Tools & lectures needed:
 
 **Tools**:
 
@@ -96,7 +94,8 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 First, let's have a look a our data flow :
 
-![Data flow](res/pipeline.excalidraw.svg)
+<img src="res/pipeline.excalidraw.svg" alt="Data flow" width="45%">
+
 
 ### ML
 
@@ -107,7 +106,7 @@ First, let's have a look a our data flow :
   
 ### Website development
 
-- [X] Website deployment via git action
+- [x] Website deployment via git action
 - [ ] Page design and layout
 - [ ] Add graph libraries and try them out
 - [ ] Design the graphs with dummy data
