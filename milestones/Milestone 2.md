@@ -24,7 +24,7 @@ The result will be a live dashboard showing the most discussed countries, topics
   - Hover for a view breakdown
   - Switch button to switch between import/export view
 
-![World Map Visualization](res/world_map.png)
+<img src="res/world_map.png" alt="World Map Visualization" width="45%">
 
 #### Tools & lectures needed  
 
