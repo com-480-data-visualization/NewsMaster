@@ -1,12 +1,14 @@
-## 📰 NewsMaster — Milestone 2
+# **NewsMaster**
+
+## 📰 Milestone 2
 
 ### Project Goal
 
 We aim to make global news trends instantly understandable through intuitive and interactive visualizations. Our project helps users see:
 
-- Who’s talking about whom (country-to-country media attention),
-- What’s being talked about (keyword/topic clusters), and
-- When it’s trending (temporal evolution of attention and topics).
+- Who's talking about whom (country-to-country media attention),
+- What's being talked about (keyword/topic clusters), and
+- When it's trending (temporal evolution of attention and topics).
 
 The result will be a live dashboard showing the most discussed countries, topics, and their interconnections. This serves users who want to stay updated on global narratives at a glance.
 
@@ -16,8 +18,8 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 #### World Map of Media Attention
 
-- Import view: How often a country is mentioned in *other countries’* news.
-- Export view: How often a country’s *media talks about* other countries.
+- Import view: How often a country is mentioned in *other countries'* news.
+- Export view: How often a country's *media talks about* other countries.
 - Interaction: Hover to view breakdown, switch between import/export.
 
 ![World Map Visualization](res/world_map.png)
@@ -34,12 +36,14 @@ The result will be a live dashboard showing the most discussed countries, topics
 - Daily rankings of top-mentioned topics or countries over past 7 days.
 - Interactive: Hovering or clicking shows how a topic evolved over time.
 
+![Temporal Trend Visualization](res/temporal_trend.jpg)
+
 ### Roadmap
 
 #### ML
 
 - Parse RSS feeds (BBC, NYT, Reuters, etc.)
-- Clean + store past 7 days’ news articles
+- Clean + store past 7 days' news articles
 - Apply NLP (Named Entity Recognition, Trend)
   
 #### SWE
@@ -51,7 +55,7 @@ The result will be a live dashboard showing the most discussed countries, topics
 
 ---
 
-### 📚 Tools & Lecture Needs
+### Tools & Lecture Needs
 
 | Component               | Tools / Libraries                | Related Lectures / Resources          |
 |------------------------|----------------------------------|----------------------------------------|
@@ -59,5 +63,30 @@ The result will be a live dashboard showing the most discussed countries, topics
 | NLP                    | spaCy, NLTK, scikit-learn        | NLP in Python, Topic modeling basics  |
 | Bubble & Trend Charts  | D3.js, Plotly.js, Chart.js       | Graph viz & Time series lectures      |
 | Backend + Cron         | Python, GitHub Actions           | Data pipeline & automation practices  |
+
+### Relevant Lectures
+
+#### Map Visualization
+
+- Maps & Practical Maps (8_1, 8_2) - Projections, GeoJSON/TopoJSON, D3 implementation
+- D3.js (4_2) - Geographic data binding and rendering
+- Web Development (1_2) - SVG essentials
+
+#### NLP & Data Processing
+
+- Introduction to Data Viz (1_1) - Basic NLP and clustering concepts
+- *Note: Additional NLP resources needed for implementation*
+
+#### Charts & Interactivity
+
+- D3.js (4_2) - Lines, paths, dynamic updates
+- Interaction (5_1, 5_2) - Linking, brushing, transitions
+- Design Principles (6_2, 7_1) - Marks, channels, multi-dimensional viz
+- Perception & Colors (6_1) - Visual encoding choices
+
+#### General Visualization
+
+- Design Principles (7_1, 7_2) - Clarity, purpose, best practices
+- Mark & Channel Theory (6_2) - Core visual encoding principles
 
 ---
