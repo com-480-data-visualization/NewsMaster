@@ -31,12 +31,14 @@ The result will be a live dashboard showing the most discussed countries, topics
 - Size = frequency
 - Edge thickness = strength of co-occurrence
 
-#### Temporal Trend Ranking (Google Trends-style)
+#### Temporal Trend Rankings
 
-- Daily rankings of top-mentioned topics or countries over past 7 days.
-- Interactive: Hovering or clicking shows how a topic evolved over time.
+- Rankings of top 10 topics over past in a week. Shown as a histogram of the % of appearances of the topic in the articles of the selected week.
+- Interactions:
+    - Hovering a bar displays the total number of appearances.
+    - Clicking a bar displays a new graph, showing the trending of this topics over the weeks.
 
-![Temporal Trend Visualization](res/temporal_trend.jpg)
+<img src="res/temporal_trend.jpg" alt="Temporal Trend Visualization" width="45%">
 
 ### Roadmap
 
@@ -90,3 +92,4 @@ The result will be a live dashboard showing the most discussed countries, topics
 - Mark & Channel Theory (6_2) - Core visual encoding principles
 
 ---
+The images of this document have been produced with the help of OpenAI tools.
