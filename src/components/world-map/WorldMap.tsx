@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import type { Feature, GeoJSON } from 'geojson';
-import { importData, exportData, importColorScale, exportColorScale, strokeColor, highlightColor } from '../data/mapData';
+import { importData, exportData, importColorScale, exportColorScale, strokeColor, highlightColor } from '../../data/mapData';
 
 type Country = {
   id: string;
@@ -83,6 +83,9 @@ const WorldMap: React.FC<Props> = ({ mode, setSelectedCountry, setHoveredCountry
           const countryId = (d as any).id;
           const countryName = (d as any).properties.name;
           
+          // Get SVG element position
+          const svgRect = svgRef.current?.getBoundingClientRect();
+          
           // Highlight country
           d3.select(this)
             .style("stroke", highlightColor)
@@ -93,7 +96,10 @@ const WorldMap: React.FC<Props> = ({ mode, setSelectedCountry, setHoveredCountry
           setHoveredCountry({
             id: countryId,
             name: countryName,
-            position: { x: event.clientX, y: event.clientY }
+            position: { 
+              x: event.pageX, 
+              y: event.pageY 
+            }
           });
         })
         .on("mouseout", function() {

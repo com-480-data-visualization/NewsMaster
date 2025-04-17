@@ -1,5 +1,5 @@
 import React from 'react';
-import { importData, exportData, countryNameMap } from '../data/mapData';
+import { importData, exportData, countryNameMap } from '../../data/mapData';
 
 type Props = {
   mode: 'import' | 'export';

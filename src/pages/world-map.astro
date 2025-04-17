@@ -3,13 +3,13 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="World Media Attention Map">
-  <div class="container" id="world-map-root"></div>
+  <div id="world-map-root" class="w-full"></div>
 </Layout>
 
 <script>
   import React from 'react';
   import ReactDOM from 'react-dom/client';
-  import WorldMapPage from '../components/WorldMapPage';
+  import WorldMapPage from '../components/world-map/WorldMapPage';
 
   const rootElement = document.getElementById('world-map-root');
   if (rootElement) {

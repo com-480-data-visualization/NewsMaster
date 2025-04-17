@@ -4,7 +4,7 @@ import {
   importData, exportData, 
   importColorScale, exportColorScale, 
   timeSeriesData, calculateGlobalAverage 
-} from '../data/mapData';
+} from '../../data/mapData';
 
 type Props = {
   hoveredCountry: { 
@@ -36,8 +36,8 @@ const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode }) => {
       .attr("height", "100%");
     
     const margin = { top: 10, right: 10, bottom: 20, left: 40 };
-    const chartWidth = 220 - margin.left - margin.right;
-    const chartHeight = 80 - margin.top - margin.bottom;
+    const chartWidth = 280 - margin.left - margin.right;
+    const chartHeight = 100 - margin.top - margin.bottom;
     
     const g = chartSvg.append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
@@ -65,7 +65,7 @@ const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode }) => {
     // Add Y axis
     g.append("g")
       .call(d3.axisLeft(y)
-        .ticks(3)
+        .ticks(4)
         .tickFormat((d) => `${(Number(d) * 100).toFixed(0)}%`))
       .selectAll("text")
       .attr("class", "text-xs text-muted-foreground");
@@ -108,9 +108,9 @@ const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode }) => {
       .attr("width", "100%")
       .attr("height", "100%");
     
-    const margin = { top: 15, right: 15, bottom: 20, left: 35 };
-    const chartWidth = 220 - margin.left - margin.right;
-    const chartHeight = 90 - margin.top - margin.bottom;
+    const margin = { top: 15, right: 15, bottom: 20, left: 45 };
+    const chartWidth = 280 - margin.left - margin.right;
+    const chartHeight = 110 - margin.top - margin.bottom;
     
     const g = chartSvg.append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
@@ -135,10 +135,10 @@ const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode }) => {
     
     // Add Y axis
     g.append("g")
-      .call(d3.axisLeft(y).ticks(3).tickFormat(d => `${(Number(d) * 100).toFixed(0)}%`))
+      .call(d3.axisLeft(y).ticks(4).tickFormat(d => `${(Number(d) * 100).toFixed(0)}%`))
       .selectAll("text")
       .attr("class", "text-xs text-muted-foreground")
-      .attr("dx", "-0.5em");
+      .attr("dx", "-0.2em");
     
     // Add lines
     // Global import average
@@ -244,27 +244,37 @@ const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode }) => {
   if (!hoveredCountry) return null;
 
   // Calculate tooltip position
-  const tooltipHeight = 220;
+  const tooltipWidth = 320;
+  const tooltipHeight = 280;
+  const windowWidth = window.innerWidth;
   const windowHeight = window.innerHeight;
-  const positionAbove = hoveredCountry.position.y + tooltipHeight + 20 > windowHeight;
-  const topPosition = positionAbove 
-    ? hoveredCountry.position.y - tooltipHeight - 5 
-    : hoveredCountry.position.y + 5;
+  
+  // Determine if tooltip should be shown to the right or left of cursor
+  const showToLeft = hoveredCountry.position.x + tooltipWidth + 20 > windowWidth;
+  const leftPosition = showToLeft 
+    ? hoveredCountry.position.x - tooltipWidth - 10
+    : hoveredCountry.position.x + 20;
+  
+  // Determine if tooltip should be shown above or below cursor
+  const showAbove = hoveredCountry.position.y + tooltipHeight + 20 > windowHeight;
+  const topPosition = showAbove
+    ? hoveredCountry.position.y - tooltipHeight - 10
+    : hoveredCountry.position.y + 20;
 
   return (
     <div 
-      className="absolute bg-popover p-4 rounded-lg shadow-lg text-sm border border-border z-10 w-64"
+      className="fixed bg-popover p-5 rounded-lg shadow-lg text-sm border border-border z-10 w-80"
       style={{
-        left: `${hoveredCountry.position.x + 5}px`,
-        top: `${topPosition}px`,
+        left: `${Math.max(10, leftPosition)}px`,
+        top: `${Math.max(10, topPosition)}px`,
         transition: 'top 0.1s ease, left 0.1s ease',
         pointerEvents: 'none'
       }}
     >
-      <p className="font-bold text-foreground mb-2">{hoveredCountry.name}</p>
-      <div ref={barChartRef} className="h-20 w-full mb-4"></div>
-      <p className="text-xs text-muted-foreground mb-1">Performance (last 30 days)</p>
-      <div ref={trendChartRef} className="h-24 w-full"></div>
+      <p className="font-bold text-lg text-foreground mb-3">{hoveredCountry.name}</p>
+      <div ref={barChartRef} className="h-24 w-full mb-4"></div>
+      <p className="text-sm text-muted-foreground mb-2">Performance (last 30 days)</p>
+      <div ref={trendChartRef} className="h-28 w-full"></div>
     </div>
   );
 };

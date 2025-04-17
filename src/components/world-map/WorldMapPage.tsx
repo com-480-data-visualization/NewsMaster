@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import WorldMap from '../components/WorldMap';
-import CountryTooltip from '../components/CountryTooltip';
-import CountryInfoPanel from '../components/CountryInfoPanel';
-import GlobalRankings from '../components/GlobalRankings';
-import { ModeToggle } from '../components/ModeToggle';
-import { ImportExportToggle } from '../components/ImportExportToggle';
-import Legend from '../components/Legend';
-import { importData, exportData, importColorScale, exportColorScale, countryNameMap } from '../data/mapData';
+import WorldMap from './WorldMap';
+import CountryTooltip from './CountryTooltip';
+import CountryInfoPanel from './CountryInfoPanel';
+import GlobalRankings from './GlobalRankings';
+import { ImportExportToggle } from './ImportExportToggle';
+import Legend from './Legend';
+import { importData, exportData, importColorScale, exportColorScale, countryNameMap } from '../../data/mapData';
 
 const WorldMapPage: React.FC = () => {
   // State management
@@ -36,16 +35,15 @@ const WorldMapPage: React.FC = () => {
   const { highest, lowest } = getExtremeCountries(currentData);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="max-w-7xl w-full mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
         <h1 className="text-3xl font-bold">World Media Attention Map</h1>
         
         <div className="flex items-center mt-2 md:mt-0 gap-2">
-          <div className="mr-2 flex items-center bg-card p-2 rounded-md border">
+          <div className="flex items-center bg-card p-2 rounded-md border">
             <span className="text-sm mr-2 md:block hidden">Media Type:</span>
             <ImportExportToggle mode={mode} setMode={setMode} />
           </div>
-          <ModeToggle />
         </div>
       </div>
       

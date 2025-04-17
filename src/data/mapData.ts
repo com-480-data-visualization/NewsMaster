@@ -4,8 +4,8 @@ import * as d3 from 'd3';
 export const isDarkMode = typeof document !== 'undefined' && document.documentElement.classList.contains('dark');
 
 // Color schemes for light and dark modes
-export const importColorRange = isDarkMode ? ["#1a365d", "#60a5fa"] : ["#e6f2ff", "#0066cc"];
-export const exportColorRange = isDarkMode ? ["#1c4532", "#48bb78"] : ["#f0fff4", "#38a169"];
+export const importColorRange = isDarkMode ? ["#0f2942", "#7cb3fb"] : ["#cce5ff", "#004db3"];
+export const exportColorRange = isDarkMode ? ["#0f2b1e", "#5ecc8d"] : ["#e6fff0", "#2a8c57"];
 
 // Color scales for import and export
 export const importColorScale = d3.scaleSequential()
