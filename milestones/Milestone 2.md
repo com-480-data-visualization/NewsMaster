@@ -105,6 +105,8 @@ First, let's have a look a our data flow :
   
 ### Website development
 
+The skeleton is [available here](https://newsmaster-dashboard.netlify.app/).
+
 - [x] Website deployment via git action
 - [ ] Page design and layout
 - [ ] Add graph libraries and try them out
