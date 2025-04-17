@@ -84,6 +84,7 @@
     "@astrojs/netlify": "^6.1.0",
     "@tailwindcss/typography": "^0.5.16",
     "@types/d3": "^7.4.3",
+    "@types/geojson": "^7946.0.16",
     "terser": "^5.37.0",
     "vite": "^6.0.11"
   }

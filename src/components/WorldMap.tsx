@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as d3 from 'd3';
-import type { GeoJSON } from 'geojson';
+import type { Feature, GeoJSON } from 'geojson';
 import { importData, exportData, importColorScale, exportColorScale, strokeColor, highlightColor } from '../data/mapData';
 
 type Country = {
@@ -14,6 +14,15 @@ type Props = {
   setSelectedCountry: (country: string | null) => void;
   setHoveredCountry: (country: { id: string; name: string; position: { x: number; y: number } } | null) => void;
 };
+
+// Type for GeoJSON feature properties
+interface CountryFeature extends Feature {
+  id: string;
+  properties: {
+    name: string;
+    [key: string]: any;
+  };
+}
 
 const WorldMap: React.FC<Props> = ({ mode, setSelectedCountry, setHoveredCountry }) => {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -53,15 +62,18 @@ const WorldMap: React.FC<Props> = ({ mode, setSelectedCountry, setHoveredCountry
       if (!world || !('features' in world)) return;
       
       // Filter out Antarctica
-      const filteredFeatures = world.features.filter(f => 
-        (f as any).id !== 'ATA' && (f as any).properties.name !== 'Antarctica'
+      const filteredFeatures = world.features.filter((f: any) => 
+        f.id !== 'ATA' && f.properties.name !== 'Antarctica'
       );
       
       // Draw map
       mapGroup.selectAll("path")
         .data(filteredFeatures)
         .join("path")
-        .attr("d", (d) => path(d) || '')
+        .attr("d", (d) => {
+          // Explicitly cast d to any and ensure a string is returned
+          return path(d as any) || '';
+        })
         .attr("class", "country")
         .style("stroke", strokeColor)
         .style("stroke-width", 0.5)
@@ -94,7 +106,8 @@ const WorldMap: React.FC<Props> = ({ mode, setSelectedCountry, setHoveredCountry
         })
         .on("click", function(_, d) {
           const id = (d as any).id;
-          const name = (d as any).properties.name;
+          // Not using name, so removing the unused variable
+          // const name = (d as any).properties.name;
           
           // Highlight clicked country with stronger effect
           mapGroup.selectAll("path")
