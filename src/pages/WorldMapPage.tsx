@@ -4,6 +4,7 @@ import CountryTooltip from '../components/CountryTooltip';
 import CountryInfoPanel from '../components/CountryInfoPanel';
 import GlobalRankings from '../components/GlobalRankings';
 import { ModeToggle } from '../components/ModeToggle';
+import { ImportExportToggle } from '../components/ImportExportToggle';
 import Legend from '../components/Legend';
 import { importData, exportData, importColorScale, exportColorScale, countryNameMap } from '../data/mapData';
 
@@ -42,8 +43,9 @@ const WorldMapPage: React.FC = () => {
         <div className="flex items-center mt-2 md:mt-0 gap-2">
           <div className="mr-2 flex items-center bg-card p-2 rounded-md border">
             <span className="text-sm mr-2 md:block hidden">Media Type:</span>
-            <ModeToggle mode={mode} setMode={setMode} />
+            <ImportExportToggle mode={mode} setMode={setMode} />
           </div>
+          <ModeToggle />
         </div>
       </div>
       
@@ -130,12 +132,6 @@ const WorldMapPage: React.FC = () => {
             )}
           </div>
         </div>
-      </div>
-      
-      {/* Country Details and Media Attention - Side by Side */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <CountryInfoPanel selectedCountry={selectedCountry} mode={mode} />
-        <Legend mode={mode} />
       </div>
       
       {/* Top 10 Exporters and Importers */}
