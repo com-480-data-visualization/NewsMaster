@@ -3,6 +3,8 @@ import ForceGraph3D from 'react-force-graph-3d';
 import type { NodeObject, LinkObject } from 'react-force-graph-3d'; // Use type-only import
 import Select from 'react-select';
 import * as THREE from 'three'; // Import THREE for sprite-based labels
+import { Button } from '@/components/ui/button'; // Import Button
+import { MaximizeIcon, MinimizeIcon } from 'lucide-react'; // Import icons
 
 interface NerEntity {
     text: string;
@@ -51,8 +53,11 @@ const KeywordNetwork: React.FC = () => {
     const [networkData, setNetworkData] = useState<NetworkData | null>(null);
     const [selectedLabels, setSelectedLabels] = useState<SelectOption[]>([]);
     const [allLabels, setAllLabels] = useState<SelectOption[]>([]);
+    const [isClient, setIsClient] = useState(false);
+    const [isPlainScreen, setIsPlainScreen] = useState(false); // State for plain screen mode
 
     useEffect(() => {
+        setIsClient(true);
         // Fetch data from the public directory
         fetch('/data/16.04.2025/network.json')
             .then(response => {
@@ -164,15 +169,8 @@ const KeywordNetwork: React.FC = () => {
         setSelectedLabels(selectedOptions ? Array.from(selectedOptions) : []);
     };
 
-    // ForceGraph3D requires client-side rendering. Ensure this component is used with a client:* directive in Astro.
-    // We also need to check if we are in a browser environment before rendering ForceGraph3D.
-    const [isClient, setIsClient] = useState(false);
-    useEffect(() => {
-        setIsClient(true);
-    }, []);
-
-    // Function to create sprite-based labels
-    const createNodeLabelSprite = (node: CustomNodeObject): THREE.Sprite => { // Return THREE.Sprite
+    // Function to create sprite-based labels - now accepts isDarkMode
+    const createNodeLabelSprite = (node: CustomNodeObject, isDarkMode: boolean): THREE.Sprite => {
         const sprite = new THREE.Sprite() as any; // Use 'as any' for custom properties
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
@@ -198,8 +196,8 @@ const KeywordNetwork: React.FC = () => {
         // Background - Transparent
         // No background fill
 
-        // Text
-        ctx.fillStyle = 'red'; // Set text color to red
+        // Text - Color depends on dark mode
+        ctx.fillStyle = isDarkMode ? 'white' : 'dark'; // White text on dark, red on light
         ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -226,120 +224,226 @@ const KeywordNetwork: React.FC = () => {
         return sprite; // Return the sprite itself
     };
 
+    const togglePlainScreen = () => setIsPlainScreen(!isPlainScreen);
+
+    // Define styles for react-select in dark mode
+    const plainScreenSelectStyles = isPlainScreen ? {
+        control: (baseStyles: any) => ({
+            ...baseStyles,
+            backgroundColor: '#1a1a1a', // Dark background
+            borderColor: '#444',
+        }),
+        menu: (baseStyles: any) => ({
+            ...baseStyles,
+            backgroundColor: '#1a1a1a', // Dark background
+        }),
+        option: (baseStyles: any, state: { isFocused: boolean; }) => ({
+            ...baseStyles,
+            backgroundColor: state.isFocused ? '#333' : '#1a1a1a',
+            color: 'white',
+            ':active': {
+                backgroundColor: '#555',
+            },
+        }),
+        multiValue: (baseStyles: any) => ({
+            ...baseStyles,
+            backgroundColor: '#007bff', // Keep primary color or adjust
+        }),
+        multiValueLabel: (baseStyles: any) => ({
+            ...baseStyles,
+            color: 'white',
+        }),
+        multiValueRemove: (baseStyles: any) => ({
+            ...baseStyles,
+            color: 'white',
+            ':hover': {
+                backgroundColor: '#0056b3',
+                color: 'white',
+            },
+        }),
+        input: (baseStyles: any) => ({
+            ...baseStyles,
+            color: 'white',
+        }),
+        singleValue: (baseStyles: any) => ({
+            ...baseStyles,
+            color: 'white',
+        }),
+        placeholder: (baseStyles: any) => ({
+            ...baseStyles,
+            color: '#ccc', // Lighter placeholder text for dark bg
+        }),
+    } : {};
+
 
     return (
-        <div style={{ height: '80vh', width: '100%', position: 'relative' }}>
-            <div style={{ marginBottom: '1rem', zIndex: 10, position: 'relative' }}>
-                <label htmlFor="ner-select">Filter by NER Label:</label>
-                <Select
-                    id="ner-select"
-                    isMulti
-                    options={allLabels}
-                    value={selectedLabels}
-                    onChange={handleLabelChange}
-                    className="react-select-container"
-                    classNamePrefix="react-select"
-                    placeholder="Select NER labels to display..."
-                />
+        <div
+            style={isPlainScreen ? {
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                width: '100vw',
+                height: '100vh',
+                backgroundColor: '#000', // Force dark background
+                zIndex: 1000, // Ensure it's on top
+                padding: '1rem', // Add some padding
+                display: 'flex',
+                flexDirection: 'column', // Stack controls and graph
+            } : {
+                height: '80vh',
+                width: '100%',
+                position: 'relative', // Keep original layout flow
+            }}
+        >
+            {/* Controls container */}
+            <div style={{
+                marginBottom: '1rem',
+                zIndex: 1001, // Above graph
+                position: isPlainScreen ? 'relative' : 'relative',
+                display: 'flex',
+                gap: '0.5rem', // Reduced gap slightly for better alignment
+                alignItems: 'center',
+                flexShrink: 0,
+                padding: isPlainScreen ? '0 1rem' : '0',
+            }}>
+                {/* Move label outside the growing div */}
+                <label
+                    htmlFor="ner-select"
+                    className={`${isPlainScreen ? 'text-white' : ''} whitespace-nowrap`}
+                    style={{ marginRight: '0.5rem' }} // Add some space after label
+                >
+                    Filter by NER Label:
+                </label>
+                {/* Div to make Select component grow */}
+                <div style={{ flexGrow: 1 }}>
+                    <Select
+                        id="ner-select"
+                        isMulti
+                        options={allLabels}
+                        value={selectedLabels}
+                        onChange={handleLabelChange}
+                        className="react-select-container"
+                        classNamePrefix="react-select"
+                        placeholder="Select NER labels to display..."
+                        styles={plainScreenSelectStyles} // Apply conditional styles
+                    />
+                </div>
+                {/* Button remains the last item */}
+                <Button
+                    variant="outline"
+                    size="icon"
+                    onClick={togglePlainScreen}
+                    title={isPlainScreen ? "Exit plain screen" : "Enter plain screen"}
+                    // Updated style for better visibility in dark mode
+                    style={isPlainScreen ? {
+                        backgroundColor: '#2a2a2a', // Slightly lighter dark background
+                        borderColor: '#555',     // Visible border
+                        color: 'white'          // White icon
+                    } : {}}
+                >
+                    {isPlainScreen ? <MinimizeIcon className="h-4 w-4" /> : <MaximizeIcon className="h-4 w-4" />}
+                </Button>
             </div>
-            {isClient && networkData ? (
-                <ForceGraph3D
-                    graphData={graphData}
-                    nodeAutoColorBy="label" // Color nodes by NER label
-                    nodeVal={node => (node as CustomNodeObject).degree ?? 1} // Set node size based on degree, ensure type
-                    // Use nodeThreeObject to create custom node appearance (sphere + label)
-                    nodeThreeObject={(node): THREE.Object3D => {
-                        const customNode = node as CustomNodeObject;
-                        if (!customNode.id) {
-                            console.warn("Node missing id:", customNode);
-                            return new THREE.Object3D();
-                        }
 
-                        // --- Calculate Node Size ---
-                        const nodeVal = customNode.degree ?? 1;
-                        // Adjust multiplier for more pronounced size differences
-                        const radius = Math.cbrt(nodeVal) * 2.0; // Increased multiplier (was 1.5)
-
-                        // --- Create the Sphere (Bubble) ---
-                        const geometry = new THREE.SphereGeometry(radius, 16, 8); // Adjust segments for performance/quality
-                        const material = new THREE.MeshLambertMaterial({
-                            color: customNode.color || '#ffffaa', // Use color assigned by library or a default
-                            transparent: true,
-                            opacity: 0.75 // Slightly transparent nodes
-                        });
-                        const sphere = new THREE.Mesh(geometry, material);
-
-                        // --- Create the Label Sprite ---
-                        const sprite = createNodeLabelSprite(customNode);
-
-                        // --- Scale the Sprite proportionally to the node radius ---
-                        // Adjust this multiplier to fine-tune text size relative to bubble size
-                        const spriteScaleMultiplier = radius * 0.5;
-                        sprite.scale.multiplyScalar(spriteScaleMultiplier); // Scale existing sprite scale
-
-                        // Position sprite slightly in front of the sphere's center
-                        sprite.position.set(0, 0, radius + 0.1); // Position in front along Z
-
-                        // --- Create a Group ---
-                        const group = new THREE.Group();
-                        group.add(sphere);
-                        group.add(sprite); // Add scaled sprite to the group
-
-                        // Store the group on the node object if needed (optional, library might do this)
-                        customNode.__threeObj = group;
-
-                        return group; // Return the group containing sphere and sprite
-                    }}
-                    // Adjust linkLabel to handle potentially complex source/target objects
-                    linkLabel={(link: CustomLinkObject) => {
-                        // Type assertion needed as react-force-graph provides full objects here
-                        const sourceNode = link.source as CustomNodeObject;
-                        const targetNode = link.target as CustomNodeObject;
-                        // Ensure IDs exist before creating label
-                        const sourceId = sourceNode?.id ?? 'Unknown Source';
-                        const targetId = targetNode?.id ?? 'Unknown Target';
-                        const articleTitles = link.articles?.join(', ') ?? 'No articles';
-                        return `${sourceId} &harr; ${targetId}<br/>Articles: ${articleTitles}`;
-                    }}
-                    linkDirectionalParticles={1} // Optional: show particle flow on links
-                    linkDirectionalParticleWidth={1.5}
-                    linkWidth={0.5}
-                    backgroundColor="rgba(0,0,0,0)" // Transparent background
-                />
-            ) : (
-                <div>Loading graph data...</div>
+            {/* Graph container */}
+            <div style={{ flexGrow: 1, position: 'relative' }}> {/* Make graph take remaining space */}
+                {isClient && networkData ? (
+                    <ForceGraph3D
+                        graphData={graphData}
+                        nodeAutoColorBy="label"
+                        nodeVal={node => (node as CustomNodeObject).degree ?? 1}
+                        nodeThreeObject={(node): THREE.Object3D => {
+                            const customNode = node as CustomNodeObject;
+                            if (!customNode.id) {
+                                console.warn("Node missing id:", customNode);
+                                return new THREE.Object3D();
+                            }
+                            const nodeVal = customNode.degree ?? 1;
+                            const radius = Math.cbrt(nodeVal) * 2.0;
+                            const geometry = new THREE.SphereGeometry(radius, 16, 8);
+                            const material = new THREE.MeshLambertMaterial({
+                                color: customNode.color || '#ffffaa',
+                                transparent: true,
+                                opacity: 0.75
+                            });
+                            const sphere = new THREE.Mesh(geometry, material);
+                            // Pass isPlainScreen to label creation
+                            const sprite = createNodeLabelSprite(customNode, isPlainScreen);
+                            const spriteScaleMultiplier = radius * 0.5;
+                            sprite.scale.multiplyScalar(spriteScaleMultiplier);
+                            sprite.position.set(0, 0, radius + 0.1);
+                            const group = new THREE.Group();
+                            group.add(sphere);
+                            group.add(sprite);
+                            customNode.__threeObj = group;
+                            return group;
+                        }}
+                        linkLabel={(link: CustomLinkObject) => {
+                            const sourceNode = link.source as CustomNodeObject;
+                            const targetNode = link.target as CustomNodeObject;
+                            const sourceId = sourceNode?.id ?? 'Unknown Source';
+                            const targetId = targetNode?.id ?? 'Unknown Target';
+                            const articleTitles = link.articles?.join(', ') ?? 'No articles';
+                            // Use light text color for tooltip in dark mode
+                            const linkLabelColor = isPlainScreen ? 'color: white;' : '';
+                            return `<div style="${linkLabelColor}">${sourceId} &harr; ${targetId}<br/>Articles: ${articleTitles}</div>`;
+                        }}
+                        linkDirectionalParticles={1}
+                        linkDirectionalParticleWidth={1.5}
+                        linkWidth={0.5}
+                        // Set background based on plain screen mode
+                        backgroundColor={isPlainScreen ? '#000000' : 'rgba(0,0,0,0)'}
+                        // Ensure graph fills its container
+                        height={isPlainScreen ? undefined : undefined} // Let parent div control height
+                        width={isPlainScreen ? undefined : undefined} // Let parent div control width
+                    />
+                ) : (
+                    <div className={isPlainScreen ? 'text-white' : ''}>Loading graph data...</div>
+                )}
+            </div>
+            {/* Keep original styles for non-plain screen mode */}
+            {!isPlainScreen && (
+                <style>{`
+                    .react-select-container .react-select__control {
+                    background-color: var(--background);
+                    border-color: var(--border);
+                    }
+                    .react-select-container .react-select__menu {
+                    background-color: var(--background);
+                    color: var(--foreground); /* Ensure text color uses variable */
+                    }
+                    .react-select-container .react-select__option--is-focused {
+                    background-color: var(--accent);
+                    }
+                     .react-select-container .react-select__option--is-selected {
+                        background-color: var(--primary); /* Style for selected option */
+                        color: var(--primary-foreground);
+                    }
+                    .react-select-container .react-select__multi-value {
+                    background-color: var(--primary);
+                    color: var(--primary-foreground);
+                    }
+                    .react-select-container .react-select__multi-value__label {
+                        color: var(--primary-foreground);
+                    }
+                    .react-select-container .react-select__multi-value__remove {
+                        color: var(--primary-foreground);
+                    }
+                    .react-select-container .react-select__multi-value__remove:hover {
+                        background-color: hsl(var(--primary) / 0.8); /* Use HSL variable */
+                        color: var(--primary-foreground);
+                    }
+                    .react-select-container .react-select__input-container {
+                        color: var(--foreground);
+                    }
+                    .react-select-container .react-select__placeholder {
+                         color: var(--muted-foreground); /* Style placeholder */
+                    }
+                     .react-select-container .react-select__single-value {
+                         color: var(--foreground); /* Style single selected value */
+                    }
+                `}</style>
             )}
-            {/* Basic styling for react-select if needed, or use Tailwind/CSS modules */}
-            <style>{`
-         .react-select-container .react-select__control {
-           background-color: var(--background);
-           border-color: var(--border);
-         }
-         .react-select-container .react-select__menu {
-           background-color: var(--background);
-           color: var (--foreground);
-         }
-         .react-select-container .react-select__option--is-focused {
-           background-color: var(--accent);
-         }
-         .react-select-container .react-select__multi-value {
-           background-color: var(--primary);
-           color: var(--primary-foreground);
-         }
-         .react-select-container .react-select__multi-value__label {
-            color: var(--primary-foreground);
-         }
-         .react-select-container .react-select__multi-value__remove {
-            color: var(--primary-foreground);
-         }
-         .react-select-container .react-select__multi-value__remove:hover {
-            background-color: var(--primary / 0.8);
-            color: var (--primary-foreground);
-         }
-         .react-select-container .react-select__input-container {
-            color: var(--foreground);
-         }
-       `}</style>
         </div>
     );
 };
