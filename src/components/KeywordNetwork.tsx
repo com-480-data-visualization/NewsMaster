@@ -1,129 +1,192 @@
-import React, { useMemo, useState } from "react";
-import Select from "react-select";
-import type { SingleValue } from "react-select";
-import ForceGraph2D from "react-force-graph-2d";
-import articlesData from "../../data/articles_16.04.2025.json";
-const articles = articlesData.data;
+import React, { useState, useEffect, useMemo } from 'react';
+import ForceGraph3D from 'react-force-graph-3d';
+import Select from 'react-select';
 
-type Article = {
+interface NerEntity {
+    text: string;
+    label: string;
+}
+
+interface Article {
     id: string;
-    providerId: string;
     title: string;
     description: string;
-    url: string;
-    language: string;
-    createdAt: string;
-    pubDate: number;
-};
+    ner: NerEntity[];
+}
 
-type Node = {
+interface NetworkData {
+    data: Article[];
+}
+
+interface GraphNode {
     id: string;
-    val: number;
-};
+    label: string;
+    // Add other properties if needed, e.g., color based on label
+}
 
-type Link = {
+interface GraphLink {
     source: string;
     target: string;
-    articles: string[];
-    value: number;
-    title: string;
-};
+}
 
-type GraphData = {
-    nodes: Node[];
-    links: Link[];
-};
+interface GraphData {
+    nodes: GraphNode[];
+    links: GraphLink[];
+}
 
-type CategoryOption = {
-    value: string | null;
+interface SelectOption {
+    value: string;
     label: string;
-};
+}
 
-// Updated `buildGraphData` to use keywords instead of titles for nodes and edges
-function buildGraphData(filterCategory: string | null): GraphData {
-    const keywordMap = new Map<string, Node>();
-    const edgeMap = new Map<string, { source: string; target: string; articles: string[] }>();
+const KeywordNetwork: React.FC = () => {
+    const [networkData, setNetworkData] = useState<NetworkData | null>(null);
+    const [selectedLabels, setSelectedLabels] = useState<SelectOption[]>([]);
+    const [allLabels, setAllLabels] = useState<SelectOption[]>([]);
 
-    (articles as Article[]).forEach((article) => {
-        const keywords: { label: string; category: string }[] = [];
-
-        // Extract keywords from the article (e.g., "AI", "Nebraska", "Carlos Mendes")
-        if (article.title) {
-            const extractedKeywords = article.title.split(/\s+/); // Simple split for demonstration
-            extractedKeywords.forEach((kw) => {
-                keywords.push({ label: kw, category: "keyword" });
+    useEffect(() => {
+        // Fetch data from the public directory
+        fetch('/data/16.04.2025/network.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data: NetworkData) => {
+                setNetworkData(data);
+                // Extract all unique NER labels for the select options
+                const labels = new Set<string>();
+                data.data.forEach(article => {
+                    article.ner.forEach(entity => labels.add(entity.label));
+                });
+                setAllLabels(Array.from(labels).sort().map(label => ({ value: label, label })));
+                // Optionally pre-select all labels initially
+                // setSelectedLabels(Array.from(labels).sort().map(label => ({ value: label, label })));
+            })
+            .catch(error => {
+                console.error("Error fetching network data:", error);
             });
-        }
+    }, []);
 
-        // Build keyword occurrences
-        keywords.forEach((kw) => {
-            if (!keywordMap.has(kw.label)) {
-                keywordMap.set(kw.label, { id: kw.label, val: 1 });
-            } else {
-                keywordMap.get(kw.label)!.val += 1;
+    const graphData = useMemo<GraphData>(() => {
+        if (!networkData) return { nodes: [], links: [] };
+
+        const nodesMap = new Map<string, GraphNode>();
+        const linksSet = new Set<string>(); // Use a set to avoid duplicate links (e.g., A-B and B-A)
+        const links: GraphLink[] = [];
+        const activeLabels = new Set(selectedLabels.map(opt => opt.value));
+
+        networkData.data.forEach(article => {
+            const articleEntities = article.ner
+                .filter(entity => activeLabels.size === 0 || activeLabels.has(entity.label)); // Filter by selected labels (or show all if none selected)
+
+            // Add nodes
+            articleEntities.forEach(entity => {
+                if (!nodesMap.has(entity.text)) {
+                    nodesMap.set(entity.text, { id: entity.text, label: entity.label });
+                }
+            });
+
+            // Add links for co-occurring entities within the article
+            for (let i = 0; i < articleEntities.length; i++) {
+                for (let j = i + 1; j < articleEntities.length; j++) {
+                    const source = articleEntities[i].text;
+                    const target = articleEntities[j].text;
+                    // Ensure consistent link key regardless of order
+                    const linkKey = [source, target].sort().join('--');
+                    if (!linksSet.has(linkKey)) {
+                        linksSet.add(linkKey);
+                        links.push({ source, target });
+                    }
+                }
             }
         });
 
-        // Build edges (co-occurrence)
-        for (let i = 0; i < keywords.length; i++) {
-            for (let j = i + 1; j < keywords.length; j++) {
-                const key = [keywords[i].label, keywords[j].label].sort().join("--");
-                if (!edgeMap.has(key)) {
-                    edgeMap.set(key, { source: keywords[i].label, target: keywords[j].label, articles: [article.title] });
-                } else {
-                    edgeMap.get(key)!.articles.push(article.title);
-                }
-            }
-        }
-    });
+        // Filter nodes that are actually part of the selected links
+        const nodesInLinks = new Set<string>();
+        links.forEach(link => {
+            nodesInLinks.add(link.source);
+            nodesInLinks.add(link.target);
+        });
 
-    const nodes = Array.from(keywordMap.values());
-    const links = Array.from(edgeMap.values()).map((e) => ({
-        ...e,
-        value: e.articles.length,
-        title: e.articles.join("\n")
-    }));
+        const filteredNodes = Array.from(nodesMap.values()).filter(node => nodesInLinks.has(node.id));
 
-    return { nodes, links };
-}
 
-const categoryOptions: CategoryOption[] = [
-    { value: null, label: "All" },
-    { value: "organisation", label: "Organisation" },
-    { value: "location", label: "Location" },
-    { value: "person", label: "Person" },
-    { value: "misc", label: "Misc" }
-];
+        return { nodes: filteredNodes, links };
+    }, [networkData, selectedLabels]);
 
-const KeywordNetwork = () => {
-    const [selectedCategory, setSelectedCategory] = useState<CategoryOption | null>(null);
+    const handleLabelChange = (selectedOptions: readonly SelectOption[] | null) => {
+        setSelectedLabels(selectedOptions ? Array.from(selectedOptions) : []);
+    };
 
-    const graphData = useMemo(() => buildGraphData(selectedCategory?.value || null), [selectedCategory]);
+    // ForceGraph3D requires client-side rendering. Ensure this component is used with a client:* directive in Astro.
+    // We also need to check if we are in a browser environment before rendering ForceGraph3D.
+    const [isClient, setIsClient] = useState(false);
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
 
     return (
-        <div className="p-4">
-            <h1 className="text-2xl font-bold mb-4">Keyword Co-occurrence Graph</h1>
-            <div className="mb-4 w-64">
+        <div style={{ height: '80vh', width: '100%', position: 'relative' }}>
+            <div style={{ marginBottom: '1rem', zIndex: 10, position: 'relative' }}>
+                <label htmlFor="ner-select">Filter by NER Label:</label>
                 <Select
-                    options={categoryOptions}
-                    value={selectedCategory}
-                    onChange={(newValue) => setSelectedCategory(newValue as SingleValue<CategoryOption>)}
-                    isClearable
-                    placeholder="Filter by category..."
+                    id="ner-select"
+                    isMulti
+                    options={allLabels}
+                    value={selectedLabels}
+                    onChange={handleLabelChange}
+                    className="react-select-container"
+                    classNamePrefix="react-select"
+                    placeholder="Select NER labels to display..."
                 />
             </div>
-            <ForceGraph2D
-                graphData={graphData}
-                nodeLabel={(node) => `${node.id} (x${node.val})`}
-                nodeAutoColorBy="id"
-                nodeVal={(node) => node.val}
-                linkDirectionalParticles={2}
-                linkDirectionalParticleWidth={1}
-                linkLabel={(link) => link.title}
-                linkWidth={(link) => Math.log2(link.value + 1)}
-                width={1000}
-                height={600}
-            />
+            {isClient && networkData ? (
+                <ForceGraph3D
+                    graphData={graphData}
+                    nodeLabel="id" // Show node ID (NER text) on hover
+                    nodeAutoColorBy="label" // Color nodes by NER label
+                    linkDirectionalParticles={1} // Optional: show particle flow on links
+                    linkDirectionalParticleWidth={1.5}
+                    linkWidth={0.5}
+                    backgroundColor="rgba(0,0,0,0)" // Transparent background
+                />
+            ) : (
+                <div>Loading graph data...</div>
+            )}
+            {/* Basic styling for react-select if needed, or use Tailwind/CSS modules */}
+            <style>{`
+         .react-select-container .react-select__control {
+           background-color: var(--background);
+           border-color: var(--border);
+         }
+         .react-select-container .react-select__menu {
+           background-color: var(--background);
+           color: var(--foreground);
+         }
+         .react-select-container .react-select__option--is-focused {
+           background-color: var(--accent);
+         }
+         .react-select-container .react-select__multi-value {
+           background-color: var(--primary);
+           color: var(--primary-foreground);
+         }
+         .react-select-container .react-select__multi-value__label {
+            color: var(--primary-foreground);
+         }
+         .react-select-container .react-select__multi-value__remove {
+            color: var(--primary-foreground);
+         }
+         .react-select-container .react-select__multi-value__remove:hover {
+            background-color: var(--primary / 0.8);
+            color: var(--primary-foreground);
+         }
+         .react-select-container .react-select__input-container {
+            color: var(--foreground);
+         }
+       `}</style>
         </div>
     );
 };

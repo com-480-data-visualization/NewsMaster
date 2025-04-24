@@ -1,213 +1,261 @@
 {
     "data": [
         {
-            "title": "AI-Powered Drones Revolutionize Farming",
-            "url": "https://agri-technews.com/articles/ai-drones-farming",
-            "organisation": [
-                "AgriFuture Labs",
-                "DroneTech Co."
-            ],
-            "location": [
-                "Nebraska",
-                "USA"
-            ],
-            "person": [
-                "Carlos Mendes",
-                "Dr. Emily Zhao"
-            ],
-            "misc": [
-                "AI",
-                "drones",
-                "precision agriculture"
+            "id": "c04d5b5ba5805a22402b8893d1f64cd7",
+            "title": "A U.S.-China Trade War With Students and Tourists as Potential Pawns",
+            "description": "With travel warnings and revoked visas, the two superpowers locked in a bruising trade war may make students and tourists their bargaining chips.",
+            "ner": [
+                {
+                    "text": "U.S.",
+                    "label": "GPE"
+                },
+                {
+                    "text": "China",
+                    "label": "GPE"
+                },
+                {
+                    "text": "students",
+                    "label": "NORP"
+                },
+                {
+                    "text": "tourists",
+                    "label": "NORP"
+                },
+                {
+                    "text": "trade war",
+                    "label": "EVENT"
+                }
             ]
         },
         {
-            "title": "Smart Traffic Systems Reduce Urban Congestion",
-            "url": "https://urbanupdate.com/ai-traffic-city",
-            "organisation": [
-                "MetroAI Systems",
-                "AgriFuture Labs"
-            ],
-            "location": [
-                "Copenhagen",
-                "USA"
-            ],
-            "person": [
-                "Carlos Mendes",
-                "Lars Petersen"
-            ],
-            "misc": [
-                "AI",
-                "smart city",
-                "traffic"
+            "id": "9af329f383ab03be6a888545389c21d1",
+            "title": "Keith Siegel, a Former Hostage, Recounts Captivity in Gaza",
+            "description": "Keith Siegel, who spent 484 days as a hostage, described the physical and psychological distress he endured, in an interview with The New York Times.",
+            "ner": [
+                {
+                    "text": "Keith Siegel",
+                    "label": "PERSON"
+                },
+                {
+                    "text": "Gaza",
+                    "label": "GPE"
+                },
+                {
+                    "text": "The New York Times",
+                    "label": "ORG"
+                },
+                {
+                    "text": "484 days",
+                    "label": "DATE"
+                }
             ]
         },
         {
-            "title": "AI Boosts Climate Modeling Accuracy",
-            "url": "https://climatealert.org/reports/ai-climate-models",
-            "organisation": [
-                "National Climate Center",
-                "MetroAI Systems"
-            ],
-            "location": [
-                "Greenland",
-                "Copenhagen"
-            ],
-            "person": [
-                "Dr. Emily Zhao",
-                "Dr. Sven Olafson"
-            ],
-            "misc": [
-                "AI",
-                "climate change",
-                "data modeling"
+            "id": "84a39c4339fa1d1713e0f5e77f6ee3c8",
+            "title": "UK Supreme Court Says Trans Women Are Not Legally Women Under Equality Act",
+            "description": "Britain’s Supreme Court ruled that the word “woman” refers to biological sex under the country’s anti-discrimination law, in a blow to trans rights activists.",
+            "ner": [
+                {
+                    "text": "UK",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Supreme Court",
+                    "label": "ORG"
+                },
+                {
+                    "text": "Britain",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Equality Act",
+                    "label": "LAW"
+                }
             ]
         },
         {
-            "title": "Quantum Computing Meets Agriculture",
-            "url": "https://technewsdaily.io/quantum-farming",
-            "organisation": [
-                "QubitCore Inc.",
-                "DroneTech Co."
-            ],
-            "location": [
-                "Nebraska",
-                "Zurich"
-            ],
-            "person": [
-                "Dr. Emily Zhao",
-                "Nina Müller"
-            ],
-            "misc": [
-                "quantum computing",
-                "precision agriculture",
-                "AI"
+            "id": "c302d2ffa80839e92af942dc8d107e60",
+            "title": "Its Journalism Challenged Autocrats. Trump Wants to Silence It.",
+            "description": "Journalists at Radio Free Europe/Radio Liberty who have been imprisoned for their work are dismayed by the effort to close the outlet.",
+            "ner": [
+                {
+                    "text": "Trump",
+                    "label": "PERSON"
+                },
+                {
+                    "text": "Radio Free Europe/Radio Liberty",
+                    "label": "ORG"
+                }
             ]
         },
         {
-            "title": "Digital Artists Tackle Climate Change",
-            "url": "https://artscene.news/berlin-digital-climate",
-            "organisation": [
-                "Global Art Collective",
-                "National Climate Center"
-            ],
-            "location": [
-                "Berlin",
-                "Greenland"
-            ],
-            "person": [
-                "Sofia Laurent",
-                "Dr. Sven Olafson"
-            ],
-            "misc": [
-                "digital art",
-                "climate change",
-                "AI"
+            "id": "23690457ab59d9fcdb840ccbb181fd90",
+            "title": "Italy’s Meloni Heads to Washington to Meet Trump. Will It Pay Off for Europe?",
+            "description": "The stakes are high as Giorgia Meloni, a conservative who shares some of Mr. Trump’s nationalist ideology, meets with him on Thursday as his trade war has frayed nerves worldwide.",
+            "ner": [
+                {
+                    "text": "Italy",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Meloni",
+                    "label": "PERSON"
+                },
+                {
+                    "text": "Washington",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Trump",
+                    "label": "PERSON"
+                },
+                {
+                    "text": "Europe",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Giorgia Meloni",
+                    "label": "PERSON"
+                },
+                {
+                    "text": "Thursday",
+                    "label": "DATE"
+                }
             ]
         },
         {
-            "title": "Deep-Sea Discoveries in the Arctic",
-            "url": "https://deepseadiscovery.org/mariana-arctic-findings",
-            "organisation": [
-                "Oceanic Research Institute",
-                "National Climate Center"
-            ],
-            "location": [
-                "Arctic",
-                "Greenland"
-            ],
-            "person": [
-                "Dr. Linh Tran",
-                "Dr. Sven Olafson"
-            ],
-            "misc": [
-                "marine biology",
-                "climate change",
-                "environment"
+            "id": "1b06c9bc94a5936c6b7449b17a4c32a3",
+            "title": "Israel Threatens Further Escalation in Gaza War",
+            "description": "The United Nations warned that the humanitarian situation in Gaza was likely at its worst since the conflict began and that the population was again on the brink of famine.",
+            "ner": [
+                {
+                    "text": "Israel",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Gaza",
+                    "label": "GPE"
+                },
+                {
+                    "text": "The United Nations",
+                    "label": "ORG"
+                }
             ]
         },
         {
-            "title": "Mars Rover Shares Earth-Like Terrain",
-            "url": "https://spacewatch.com/news/mars-terrain",
-            "organisation": [
-                "NASA",
-                "DroneTech Co."
-            ],
-            "location": [
-                "Mars",
-                "Nebraska"
-            ],
-            "person": [
-                "Dr. Linh Tran",
-                "Dr. Leo Chan"
-            ],
-            "misc": [
-                "Mars",
-                "drones",
-                "AI"
+            "id": "738079c73b83e64f2a3f62e2c155569b",
+            "title": "R.S.F. in Sudan Declare Parallel Government Amid Assault on Zamzam Camp",
+            "description": "The United Nations said that at least 300 people were killed when the armed group, the Rapid Support Forces, stormed a camp in Darfur.",
+            "ner": [
+                {
+                    "text": "R.S.F.",
+                    "label": "ORG"
+                },
+                {
+                    "text": "Sudan",
+                    "label": "GPE"
+                },
+                {
+                    "text": "The United Nations",
+                    "label": "ORG"
+                },
+                {
+                    "text": "Rapid Support Forces",
+                    "label": "ORG"
+                },
+                {
+                    "text": "Darfur",
+                    "label": "GPE"
+                }
             ]
         },
         {
-            "title": "Wearable Translators Used in Global Classrooms",
-            "url": "https://gadgetwire.net/articles/translator-education",
-            "organisation": [
-                "LinguaLoop Technologies",
-                "VirtuLearn"
-            ],
-            "location": [
-                "Seoul",
-                "Boston"
-            ],
-            "person": [
-                "Kim Soo-yeon",
-                "Maya Desai"
-            ],
-            "misc": [
-                "wearable tech",
-                "education",
-                "AI"
+            "id": "cb73588d16de57598874bbadf4d8c434",
+            "title": "Bukele Has Power to Return Deportee in El Salvador to U.S., Experts Say",
+            "description": "Experts say President Nayib Bukele has the power but not the interest to return a man deported from Maryland to El Salvador in error.",
+            "ner": [
+                {
+                    "text": "Bukele",
+                    "label": "PERSON"
+                },
+                {
+                    "text": "El Salvador",
+                    "label": "GPE"
+                },
+                {
+                    "text": "U.S.",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Nayib Bukele",
+                    "label": "PERSON"
+                },
+                {
+                    "text": "Maryland",
+                    "label": "GPE"
+                }
             ]
         },
         {
-            "title": "Virtual Reality Teaches Climate History",
-            "url": "https://edtechfuture.com/vr-climate-learning",
-            "organisation": [
-                "VirtuLearn",
-                "National Climate Center"
-            ],
-            "location": [
-                "Boston",
-                "Greenland"
-            ],
-            "person": [
-                "Maya Desai",
-                "Dr. Sven Olafson"
-            ],
-            "misc": [
-                "virtual reality",
-                "education",
-                "climate change"
+            "id": "dc2e68a0357ec65d5974b8e5e96ff9cc",
+            "title": "Latvia Exits Land Mine Convention Amid Fears of Russian Aggression",
+            "description": "The government, along with two other Baltic nations and Poland, agreed last month to quit the 1997 accord that prohibits from using anti-personnel mines. Russia’s invasion of Ukraine was cited as a key reason.",
+            "ner": [
+                {
+                    "text": "Latvia",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Baltic",
+                    "label": "LOC"
+                },
+                {
+                    "text": "Poland",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Russia",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Ukraine",
+                    "label": "GPE"
+                },
+                {
+                    "text": "1997",
+                    "label": "DATE"
+                }
             ]
         },
         {
-            "title": "Startup Uses AI to Recycle Plastic",
-            "url": "https://sciencenow.org/plastic-ai-recycling",
-            "organisation": [
-                "EcoScience Labs",
-                "MetroAI Systems"
-            ],
-            "location": [
-                "Manchester",
-                "Copenhagen"
-            ],
-            "person": [
-                "Dr. Rachel Moore",
-                "Carlos Mendes"
-            ],
-            "misc": [
-                "AI",
-                "recycling",
-                "environment"
+            "id": "e39ddfa02816a33ab0b9c2a983ea3df3",
+            "title": "Peru’s Former First Lady Flees as She and Ex-President Are Sentenced to Prison",
+            "description": "Former President Ollanta Humala and his wife, Nadine Heredia, were sentenced on Tuesday to 15 years in prison for money laundering. Brazil granted her diplomatic asylum, officials said.",
+            "ner": [
+                {
+                    "text": "Peru",
+                    "label": "GPE"
+                },
+                {
+                    "text": "First Lady",
+                    "label": "PERSON"
+                },
+                {
+                    "text": "Ollanta Humala",
+                    "label": "PERSON"
+                },
+                {
+                    "text": "Nadine Heredia",
+                    "label": "PERSON"
+                },
+                {
+                    "text": "Brazil",
+                    "label": "GPE"
+                },
+                {
+                    "text": "Tuesday",
+                    "label": "DATE"
+                }
             ]
         }
     ]
