@@ -21,12 +21,14 @@ interface NetworkData {
 interface GraphNode {
     id: string;
     label: string;
+    degree?: number; // Add degree property for node size
     // Add other properties if needed, e.g., color based on label
 }
 
 interface GraphLink {
     source: string;
     target: string;
+    articles: string[]; // Store titles of articles connecting the nodes
 }
 
 interface GraphData {
@@ -73,35 +75,59 @@ const KeywordNetwork: React.FC = () => {
         if (!networkData) return { nodes: [], links: [] };
 
         const nodesMap = new Map<string, GraphNode>();
-        const linksSet = new Set<string>(); // Use a set to avoid duplicate links (e.g., A-B and B-A)
+        // Remove linksSet as it wasn't used effectively for finding existing links
         const links: GraphLink[] = [];
         const activeLabels = new Set(selectedLabels.map(opt => opt.value));
+        const nodeDegrees = new Map<string, number>(); // Map to store node degrees
 
         networkData.data.forEach(article => {
             const articleEntities = article.ner
                 .filter(entity => activeLabels.size === 0 || activeLabels.has(entity.label)); // Filter by selected labels (or show all if none selected)
 
-            // Add nodes
+            // Add nodes (initially without degree)
             articleEntities.forEach(entity => {
                 if (!nodesMap.has(entity.text)) {
-                    nodesMap.set(entity.text, { id: entity.text, label: entity.label });
+                    // Initialize degree to 0 when adding the node
+                    nodesMap.set(entity.text, { id: entity.text, label: entity.label, degree: 0 });
                 }
             });
 
-            // Add links for co-occurring entities within the article
+            // Add links and update degrees
             for (let i = 0; i < articleEntities.length; i++) {
                 for (let j = i + 1; j < articleEntities.length; j++) {
                     const source = articleEntities[i].text;
                     const target = articleEntities[j].text;
                     // Ensure consistent link key regardless of order
                     const linkKey = [source, target].sort().join('--');
-                    if (!linksSet.has(linkKey)) {
-                        linksSet.add(linkKey);
-                        links.push({ source, target });
+                    // Find existing link more efficiently
+                    const existingLinkIndex = links.findIndex(l => [l.source, l.target].sort().join('--') === linkKey);
+
+                    if (existingLinkIndex === -1) {
+                        links.push({ source, target, articles: [article.title] });
+                        // Increment degree for both source and target nodes
+                        nodeDegrees.set(source, (nodeDegrees.get(source) || 0) + 1);
+                        nodeDegrees.set(target, (nodeDegrees.get(target) || 0) + 1);
+                    } else {
+                        // If the link already exists, add the article title if it's not already there
+                        if (!links[existingLinkIndex].articles.includes(article.title)) {
+                            links[existingLinkIndex].articles.push(article.title);
+                        }
+                        // Note: Degree is only incremented when a *new* link is added between two nodes.
+                        // If you want degree to increase every time an article connects two existing nodes,
+                        // you would increment degrees here as well. Current logic counts unique connections.
                     }
                 }
             }
         });
+
+        // Add calculated degrees to the nodes in nodesMap
+        nodeDegrees.forEach((degree, nodeId) => {
+            const node = nodesMap.get(nodeId);
+            if (node) {
+                node.degree = degree;
+            }
+        });
+
 
         // Filter nodes that are actually part of the selected links
         const nodesInLinks = new Set<string>();
@@ -110,7 +136,11 @@ const KeywordNetwork: React.FC = () => {
             nodesInLinks.add(link.target);
         });
 
-        const filteredNodes = Array.from(nodesMap.values()).filter(node => nodesInLinks.has(node.id));
+        // Ensure nodes have degree property, default to 0 if not in nodeDegrees (shouldn't happen with current logic)
+        // Also update the node in the map directly before filtering
+        const filteredNodes = Array.from(nodesMap.values())
+            .filter(node => nodesInLinks.has(node.id))
+            .map(node => ({ ...node, degree: node.degree ?? 0 })); // Ensure degree is always a number
 
 
         return { nodes: filteredNodes, links };
@@ -148,6 +178,16 @@ const KeywordNetwork: React.FC = () => {
                     graphData={graphData}
                     nodeLabel="id" // Show node ID (NER text) on hover
                     nodeAutoColorBy="label" // Color nodes by NER label
+                    nodeVal="degree" // Set node size based on degree
+                    // The type inference seems incorrect here, source/target are node objects
+                    // Also, the link object itself needs type assertion
+                    linkLabel={link => {
+                        const sourceNode = link.source as GraphNode;
+                        const targetNode = link.target as GraphNode;
+                        const linkData = link as GraphLink; // Assert link type to access articles
+                        const articleTitles = linkData.articles.join(', ');
+                        return `${sourceNode.id} &harr; ${targetNode.id}<br/>Articles: ${articleTitles}`;
+                    }}
                     linkDirectionalParticles={1} // Optional: show particle flow on links
                     linkDirectionalParticleWidth={1.5}
                     linkWidth={0.5}
