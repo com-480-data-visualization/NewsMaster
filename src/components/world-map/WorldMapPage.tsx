@@ -110,7 +110,10 @@ const WorldMapPage: React.FC = () => {
             </div>
             <div className="flex justify-between w-full mt-1">
               <div className="text-xs text-muted-foreground">0%</div>
-              <div className="text-xs text-muted-foreground">100%</div>
+              <div className="text-xs text-muted-foreground">
+                {mode === 'import' ? importData[highest.id].toFixed(1) : exportData[highest.id].toFixed(1)} 
+                { '%'}
+              </div>
             </div>
           </div>
         </div>

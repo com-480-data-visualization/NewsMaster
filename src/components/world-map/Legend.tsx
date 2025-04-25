@@ -1,5 +1,5 @@
 import React from 'react';
-import { importColorScale, exportColorScale } from '../../data/mapData';
+import { importColorScale, exportColorScale, importData, exportData } from '../../data/mapData';
 
 type Props = {
   mode: 'import' | 'export';
@@ -7,6 +7,8 @@ type Props = {
 
 const Legend: React.FC<Props> = ({ mode }) => {
   const colorScale = mode === 'import' ? importColorScale : exportColorScale;
+  const data = mode === 'import' ? importData : exportData;
+  const maxValue = Math.max(...Object.values(data));
   
   return (
     <div className="p-4 bg-card border rounded-lg shadow-sm">
@@ -22,7 +24,7 @@ const Legend: React.FC<Props> = ({ mode }) => {
           className="w-full h-3 rounded-sm overflow-hidden" 
           style={{ 
             background: `linear-gradient(to right, 
-              ${colorScale(0)}, ${colorScale(1)}
+              ${colorScale(0)}, ${colorScale(maxValue)}
             )` 
           }}
         ></div>

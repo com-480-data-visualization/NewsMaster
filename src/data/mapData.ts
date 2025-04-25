@@ -7,22 +7,13 @@ export const isDarkMode = typeof document !== 'undefined' && document.documentEl
 export const importColorRange = isDarkMode ? ["#0f2942", "#7cb3fb"] : ["#cce5ff", "#004db3"];
 export const exportColorRange = isDarkMode ? ["#0f2b1e", "#5ecc8d"] : ["#e6fff0", "#2a8c57"];
 
-// Color scales for import and export
-export const importColorScale = d3.scaleSequential()
-  .domain([0, 1])
-  .interpolator(d3.interpolate(importColorRange[0], importColorRange[1]));
-
-export const exportColorScale = d3.scaleSequential()
-  .domain([0, 1])
-  .interpolator(d3.interpolate(exportColorRange[0], exportColorRange[1]));
-
 // Sample media attention import data
-export const importData: Record<string, number> = {
-  "USA": 0.8,
+const rawImportData: Record<string, number> = {
+  "USA": 1.9,
   "BRA": 0.5,
   "ZAF": 0.4, // South Africa
   "NGA": 0.4, // Nigeria
-  "CHN": 0.7,
+  "CHN": 0.5,
   "IND": 0.6,
   "RUS": 0.3,
   "GBR": 0.65, // United Kingdom
@@ -36,12 +27,12 @@ export const importData: Record<string, number> = {
 };
 
 // Sample media attention export data
-export const exportData: Record<string, number> = {
-  "USA": 0.9,
+const rawExportData: Record<string, number> = {
+  "USA": 1,
   "BRA": 0.3,
   "ZAF": 0.2, // South Africa
   "NGA": 0.3, // Nigeria
-  "CHN": 0.85,
+  "CHN": 0.5,
   "IND": 0.4,
   "RUS": 0.5,
   "GBR": 0.7, // United Kingdom
@@ -53,6 +44,37 @@ export const exportData: Record<string, number> = {
   "ITA": 0.55,  // Italy
   "ESP": 0.4  // Spain
 };
+
+// Normalize data to range to a distribution population
+function normalizeData(data: Record<string, number>): Record<string, number> {
+  const values = Object.values(data);
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min;
+
+  const normalized: Record<string, number> = {};
+  // Calculate the sum of all values
+  const sum = values.reduce((acc, val) => acc + val, 0);
+  // Normalize each value by dividing by the sum
+  Object.keys(data).forEach(key => {
+    normalized[key] = data[key] / sum;
+  });
+  console.log(normalized);
+  return normalized;
+}
+
+// Normalized data for export
+export const importData = normalizeData(rawImportData);
+export const exportData = normalizeData(rawExportData);
+
+// Color scales for import and export - defined after data is available
+export const importColorScale = d3.scaleSequential()
+  .domain([0, d3.max(Object.values(importData)) || 0.1])
+  .interpolator(d3.interpolate(importColorRange[0], importColorRange[1]));
+
+export const exportColorScale = d3.scaleSequential()
+  .domain([0, d3.max(Object.values(exportData)) || 0.1])
+  .interpolator(d3.interpolate(exportColorRange[0], exportColorRange[1]));
 
 // Sample time series data for the last 30 days (per country)
 export const timeSeriesData: Record<string, { import: number[], export: number[] }> = {
