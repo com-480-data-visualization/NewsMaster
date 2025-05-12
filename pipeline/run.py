@@ -5,6 +5,7 @@ from ingestor_clean import fetch_all_articles
 from translate_to_en import Translator
 from ner import BERTNER
 from entity_normalizer import EntityNormalizer
+from temporal_trends import update_current_week_trends
 
 def get_today_date_str():
     """Return the current date as DD.MM.YYYY string."""
@@ -106,6 +107,10 @@ def main():
     print("\n3. Saving processed articles...")
     save_processed_articles(processed_articles)
     
+    # Step 5: Update temporal trends
+    print("\n4. Updating temporal trends...")
+    update_current_week_trends()
+
     print("\nPipeline completed successfully!")
 
 if __name__ == '__main__':

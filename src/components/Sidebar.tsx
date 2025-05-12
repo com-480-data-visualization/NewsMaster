@@ -7,11 +7,13 @@ import {
   Scale,
   Book,
   Globe,
-  Share2
+  Share2,
+  LineChart
 } from 'lucide-react'
 
 const navigation = [
   { title: "Home", path: "/", icon: Home },
+  { title: "Temporal Trends", path: "/temporal-trends", icon: LineChart },
   { title: "World Map", path: "/world-map", icon: Globe },
   { title: "Network", path: "/network", icon: Share2 },
 ] as const
