@@ -1,4 +1,4 @@
-# 🚀 NewsMaster
+# 🚀 NewsMaster (https://newsmaster-dashboard.netlify.app/)
 
 ## [Milestone 1](/milestones/Milestone%201.md)
 
