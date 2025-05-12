@@ -351,7 +351,11 @@ const KeywordNetwork: React.FC = () => {
                     <ForceGraph3D
                         graphData={graphData}
                         nodeAutoColorBy="label"
-                        nodeVal={node => (node as CustomNodeObject).degree ?? 1}
+                        nodeVal={node => {
+                            // Increase scaling factor for bubble size
+                            const degree = (node as CustomNodeObject).degree ?? 1;
+                            return Math.max(2, degree * 3); // Make bubbles much bigger for higher degree
+                        }}
                         nodeThreeObject={(node): THREE.Object3D => {
                             const customNode = node as CustomNodeObject;
                             if (!customNode.id) {
@@ -359,7 +363,8 @@ const KeywordNetwork: React.FC = () => {
                                 return new THREE.Object3D();
                             }
                             const nodeVal = customNode.degree ?? 1;
-                            const radius = Math.cbrt(nodeVal) * 2.0;
+                            // Increase radius scaling for more visible difference
+                            const radius = Math.cbrt(Math.max(2, nodeVal * 3)) * 2.5;
                             const geometry = new THREE.SphereGeometry(radius, 16, 8);
                             const material = new THREE.MeshLambertMaterial({
                                 color: customNode.color || '#ffffaa',
@@ -371,7 +376,8 @@ const KeywordNetwork: React.FC = () => {
                             const sprite = createNodeLabelSprite(customNode, isPlainScreen);
                             const spriteScaleMultiplier = radius * 0.5;
                             sprite.scale.multiplyScalar(spriteScaleMultiplier);
-                            sprite.position.set(0, 0, radius + 0.1);
+                            // Position the label sprite above the bubble
+                            sprite.position.set(0, radius + (sprite.scale.y / 2) + 2, 0);
                             const group = new THREE.Group();
                             group.add(sphere);
                             group.add(sprite);
