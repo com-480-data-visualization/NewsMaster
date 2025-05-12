@@ -1,4 +1,16 @@
+# ner.py
+torch
+transformers
+
+# translate_to_en.py
+langdetect
+googletrans
+
+# ingestor_clean.py
 feedparser
 requests
 beautifulsoup4
+
 pytz
+numpy
+tqdm  # For progress bars 
