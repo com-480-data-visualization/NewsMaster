@@ -2,6 +2,8 @@
 
 ## [Milestone 1](/milestones/Milestone%201.md)
 
+## [Milestone 2](/milestones/Milestone%202.md)
+
 ## ⚡ Quick Start
 
 ```bash

@@ -1,4 +1,20 @@
+# ner.py
+torch
+transformers
+
+# translate_to_en.py
+langdetect
+googletrans
+
+# ingestor_clean.py
 feedparser
 requests
 beautifulsoup4
+
+# entity_normalizer.py
+country-converter
+usaddress
+
 pytz
+numpy
+tqdm  # For progress bars 
