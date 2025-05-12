@@ -13,8 +13,15 @@ interface NerEntity {
 
 interface Article {
     id: string;
+    providerId: string;
     title: string;
     description: string;
+    url: string;
+    language: string;
+    createdAt: string;
+    pubDate: number;
+    translatedTitle?: string;
+    translatedDescription?: string;
     ner: NerEntity[];
 }
 
@@ -61,6 +68,9 @@ const KeywordNetwork: React.FC = () => {
         return today.toISOString().slice(0, 10);
     });
     const [fetchError, setFetchError] = useState<string | null>(null);
+    const [linkDetails, setLinkDetails] = useState<CustomLinkObject | null>(null);
+    const [articleDetails, setArticleDetails] = useState<Article[]>([]);
+    const [showLinkDialog, setShowLinkDialog] = useState(false);
 
     useEffect(() => {
         setIsClient(true);
@@ -237,6 +247,13 @@ const KeywordNetwork: React.FC = () => {
     };
 
     const togglePlainScreen = () => setIsPlainScreen(!isPlainScreen);
+
+    // Helper to get article details for a link
+    const getArticlesForLink = (link: CustomLinkObject): Article[] => {
+        if (!networkData) return [];
+        // Find articles whose title matches any in link.articles
+        return networkData.data.filter(article => link.articles.includes(article.title));
+    };
 
     // Define styles for react-select in dark mode
     const plainScreenSelectStyles = isPlainScreen ? {
@@ -436,9 +453,9 @@ const KeywordNetwork: React.FC = () => {
                         height={isPlainScreen ? undefined : undefined} // Let parent div control height
                         width={isPlainScreen ? undefined : undefined} // Let parent div control width
                         onLinkClick={(link: CustomLinkObject, event: MouseEvent) => {
-                            // Show article titles in an alert (replace with custom UI as needed)
-                            const articleTitles = link.articles?.join(', ') || 'No articles';
-                            alert(`Articles for this link: ${articleTitles}`);
+                            setLinkDetails(link);
+                            setArticleDetails(getArticlesForLink(link));
+                            setShowLinkDialog(true);
                         }}
                     />
                 ) : (
@@ -447,6 +464,70 @@ const KeywordNetwork: React.FC = () => {
                     </div>
                 )}
             </div>
+            {/* Link Details Dialog */}
+            {showLinkDialog && linkDetails && (
+                <div style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    width: '100vw',
+                    height: '100vh',
+                    background: 'rgba(0,0,0,0.6)',
+                    zIndex: 2000,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}
+                    onClick={() => setShowLinkDialog(false)}
+                >
+                    <div style={{
+                        background: '#222',
+                        color: 'white',
+                        borderRadius: 12,
+                        padding: 32,
+                        minWidth: 400,
+                        maxWidth: 600,
+                        boxShadow: '0 4px 32px #000a',
+                        position: 'relative',
+                    }} onClick={e => e.stopPropagation()}>
+                        <button
+                            style={{
+                                position: 'absolute',
+                                top: 12,
+                                right: 16,
+                                background: 'transparent',
+                                border: 'none',
+                                color: '#fff',
+                                fontSize: 24,
+                                cursor: 'pointer',
+                            }}
+                            onClick={() => setShowLinkDialog(false)}
+                            aria-label="Close"
+                        >×</button>
+                        <h2 style={{ marginBottom: 12, fontSize: 22, fontWeight: 700 }}>
+                            Link: {((linkDetails.source as CustomNodeObject)?.id ?? linkDetails.source)} &harr; {((linkDetails.target as CustomNodeObject)?.id ?? linkDetails.target)}
+                        </h2>
+                        <div style={{ marginBottom: 16 }}>
+                            <strong>Articles ({articleDetails.length}):</strong>
+                            <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
+                                {articleDetails.map(article => (
+                                    <li key={article.id} style={{ marginBottom: 18, borderBottom: '1px solid #444', paddingBottom: 10 }}>
+                                        <div style={{ fontWeight: 600, fontSize: 17 }}>{article.title}</div>
+                                        <div style={{ fontSize: 14, color: '#ccc', margin: '4px 0' }}>{article.description}</div>
+                                        <div style={{ fontSize: 13, color: '#aaa' }}>
+                                            <span>Provider: {article.providerId}</span> | <span>Lang: {article.language}</span>
+                                        </div>
+                                        <div style={{ fontSize: 13, color: '#aaa' }}>
+                                            <span>Published: {article.createdAt}</span>
+                                        </div>
+                                        <a href={article.url} target="_blank" rel="noopener noreferrer" style={{ color: '#4ea1ff', fontSize: 14, textDecoration: 'underline' }}>Read full article</a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            )}
             {/* Keep original styles for non-plain screen mode */}
             {!isPlainScreen && (
                 <style>{`
