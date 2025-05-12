@@ -11,6 +11,10 @@ feedparser
 requests
 beautifulsoup4
 
+# entity_normalizer.py
+country-converter
+usaddress
+
 pytz
 numpy
 tqdm  # For progress bars 
