@@ -55,11 +55,21 @@ const KeywordNetwork: React.FC = () => {
     const [allLabels, setAllLabels] = useState<SelectOption[]>([]);
     const [isClient, setIsClient] = useState(false);
     const [isPlainScreen, setIsPlainScreen] = useState(false); // State for plain screen mode
+    const [selectedDate, setSelectedDate] = useState<string>(() => {
+        // Default to today's date in yyyy-mm-dd format
+        const today = new Date();
+        return today.toISOString().slice(0, 10);
+    });
+    const [fetchError, setFetchError] = useState<string | null>(null);
 
     useEffect(() => {
         setIsClient(true);
-        // Fetch data from the public directory
-        fetch('/data/16.04.2025/network.json')
+        setFetchError(null); // Reset error on date change
+        // Format date as DD.MM.YYYY for the path
+        const [year, month, day] = selectedDate.split('-');
+        const formattedDate = `${day}.${month}.${year}`;
+        const jsonPath = `/data/${formattedDate}/articles.json`;
+        fetch(jsonPath)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -78,9 +88,11 @@ const KeywordNetwork: React.FC = () => {
                 // setSelectedLabels(Array.from(labels).sort().map(label => ({ value: label, label })));
             })
             .catch(error => {
+                setNetworkData(null);
+                setFetchError("No data for this date. Please select another date.");
                 console.error("Error fetching network data:", error);
             });
-    }, []);
+    }, [selectedDate]);
 
     const graphData = useMemo<GraphData>(() => {
         if (!networkData) return { nodes: [], links: [] };
@@ -306,15 +318,37 @@ const KeywordNetwork: React.FC = () => {
                 flexShrink: 0,
                 padding: isPlainScreen ? '0 1rem' : '0',
             }}>
-                {/* Move label outside the growing div */}
+                {/* Date selector */}
+                <label
+                    htmlFor="date-picker"
+                    className={`${isPlainScreen ? 'text-white' : ''} whitespace-nowrap`}
+                    style={{ marginRight: '0.5rem' }}
+                >
+                    Date:
+                </label>
+                <input
+                    id="date-picker"
+                    type="date"
+                    value={selectedDate}
+                    onChange={e => setSelectedDate(e.target.value)}
+                    style={{
+                        marginRight: '1rem',
+                        background: isPlainScreen ? '#1a1a1a' : undefined,
+                        color: isPlainScreen ? 'white' : undefined,
+                        border: isPlainScreen ? '1px solid #444' : undefined,
+                        borderRadius: 4,
+                        padding: '0.25rem 0.5rem',
+                    }}
+                    max={new Date().toISOString().slice(0, 10)}
+                />
+                {/* NER label filter */}
                 <label
                     htmlFor="ner-select"
                     className={`${isPlainScreen ? 'text-white' : ''} whitespace-nowrap`}
-                    style={{ marginRight: '0.5rem' }} // Add some space after label
+                    style={{ marginRight: '0.5rem' }}
                 >
                     Filter by NER Label:
                 </label>
-                {/* Div to make Select component grow */}
                 <div style={{ flexGrow: 1 }}>
                     <Select
                         id="ner-select"
@@ -325,7 +359,7 @@ const KeywordNetwork: React.FC = () => {
                         className="react-select-container"
                         classNamePrefix="react-select"
                         placeholder="Select NER labels to display..."
-                        styles={plainScreenSelectStyles} // Apply conditional styles
+                        styles={plainScreenSelectStyles}
                     />
                 </div>
                 {/* Button remains the last item */}
@@ -334,11 +368,10 @@ const KeywordNetwork: React.FC = () => {
                     size="icon"
                     onClick={togglePlainScreen}
                     title={isPlainScreen ? "Exit plain screen" : "Enter plain screen"}
-                    // Updated style for better visibility in dark mode
                     style={isPlainScreen ? {
-                        backgroundColor: '#2a2a2a', // Slightly lighter dark background
-                        borderColor: '#555',     // Visible border
-                        color: 'white'          // White icon
+                        backgroundColor: '#2a2a2a',
+                        borderColor: '#555',
+                        color: 'white'
                     } : {}}
                 >
                     {isPlainScreen ? <MinimizeIcon className="h-4 w-4" /> : <MaximizeIcon className="h-4 w-4" />}
@@ -404,7 +437,9 @@ const KeywordNetwork: React.FC = () => {
                         width={isPlainScreen ? undefined : undefined} // Let parent div control width
                     />
                 ) : (
-                    <div className={isPlainScreen ? 'text-white' : ''}>Loading graph data...</div>
+                    <div className={isPlainScreen ? 'text-white' : ''}>
+                        {fetchError ? fetchError : 'Loading graph data...'}
+                    </div>
                 )}
             </div>
             {/* Keep original styles for non-plain screen mode */}
