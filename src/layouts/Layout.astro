@@ -26,12 +26,15 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
 
-<ThemeInit />
+    <ThemeInit />
   </head>
 
   <body class="min-h-screen bg-background font-sans antialiased touch-none">
     <div class="flex h-screen optimize-gpu overflow-auto">
-      <div id="left-sidebar" class="w-[64px] shrink-0 border-r mobile:fixed mobile:z-50 mobile:transition-transform mobile:duration-300 mobile:translate-x-[-64px] mobile:data-[open=true]:translate-x-0">
+      <div
+        id="left-sidebar"
+        class="w-[64px] shrink-0 border-r mobile:fixed mobile:z-50 mobile:transition-transform mobile:duration-300 mobile:translate-x-[-64px] mobile:data-[open=true]:translate-x-0"
+      >
         <Sidebar client:load />
       </div>
 
@@ -44,7 +47,10 @@ const {
             <img src="/logo-dark.png" alt="Logo" class="h-10 dark:hidden" />
             <img src="/logo.svg" alt="Logo" class="h-10 hidden dark:block" />
           </div>
-          <a href="https://actualia.ch" class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg">
+          <a
+            href="https://actualia.ch"
+            class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg"
+          >
             <Download className="h-4 w-4" />
             Install Actualia
           </a>
@@ -53,15 +59,7 @@ const {
         <main class="flex-1 p-6">
           <slot />
         </main>
-
-        <footer
-          id="bottom-footer"
-          class="h-12 border-t flex items-center px-6 text-sm text-muted-foreground"
-        >
-          © 2025 &nbsp; <a href="https://one.ie"> ONE </a>
-        </footer>
       </div>
     </div>
-
   </body>
 </html>

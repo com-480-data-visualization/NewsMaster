@@ -1,0 +1,16 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import KeywordNetwork from "@/components/KeywordNetwork";
+---
+
+<Layout title="Keyword Network">
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-4">Article Keyword Network</h1>
+        <p class="mb-6 text-muted-foreground">
+            Visualize the connections between named entities (like people,
+            organizations, locations) mentioned together in news articles. Use
+            the dropdown below to filter entities by type.
+        </p>
+        <KeywordNetwork client:only="react" />
+    </main>
+</Layout>

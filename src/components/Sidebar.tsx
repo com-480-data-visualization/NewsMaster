@@ -6,12 +6,14 @@ import {
   FileText,
   Scale,
   Book,
-  Globe
+  Globe,
+  Share2
 } from 'lucide-react'
 
 const navigation = [
   { title: "Home", path: "/", icon: Home },
   { title: "World Map", path: "/world-map", icon: Globe },
+  { title: "Network", path: "/network", icon: Share2 },
 ] as const
 
 // Components
