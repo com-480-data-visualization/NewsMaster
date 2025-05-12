@@ -14,15 +14,11 @@ cet_tz = pytz.timezone("CET")
 access_denied_count = 0
 
 # Paths
-PROVIDERS_JSON_PATH = '../data/providers.json'
-OUTPUT_DIR = '../data'
+PROVIDERS_JSON_PATH = 'data/providers.json'
+OUTPUT_DIR = 'data'
 
-def get_today_filename():
-    today = datetime.now().strftime("%d.%m.%Y")
-    return f'articles_{today}.json'
-
-def main():
-    print("Starting main function")
+def fetch_all_articles():
+    print("Starting article fetching")
     print(f"Looking for providers in: {PROVIDERS_JSON_PATH}")
     global access_denied_count
     access_denied_count = 0
@@ -32,30 +28,20 @@ def main():
         providers = get_providers()
         if not providers:
             print("No providers found.")
-            return
+            return []
 
         print(f"Found {len(providers)} providers")
         articles_items = fetch_and_deduplicate_articles(providers)
         if not articles_items:
-            print("No new articles to process.")
-            return
+            print("No new articles fetched.")
+            return []
 
-        output_data = {
-            "data": articles_items
-        }
-        
-        # Ensure output directory exists
-        os.makedirs(OUTPUT_DIR, exist_ok=True)
-        
-        output_filename = os.path.join(OUTPUT_DIR, get_today_filename())
-        with open(output_filename, 'w', encoding='utf-8') as f:
-            json.dump(output_data, f, ensure_ascii=False, indent=2)
+        print(f"Fetched {len(articles_items)} articles.")
+        return articles_items
 
-        print(f"Processed {len(articles_items)} articles.")
-        print(f"Output saved to: {output_filename}")
     except Exception as e:
-        print(f"Error: {e}")
-        print(f"Error occurred: {e}")
+        print(f"Error during article fetching: {e}")
+        return []
 
 
 def get_providers():
@@ -157,7 +143,11 @@ def parse_pub_date(pub_date_str):
 
 
 if __name__ == '__main__':
-    print("Starting ingestor_clean.py")
-    main()
+    print("Starting ingestor_clean.py directly for fetching...")
+    fetched_articles = fetch_all_articles()
+    if fetched_articles:
+        print(f"Successfully fetched {len(fetched_articles)} articles (output not saved)." )
+    else:
+        print("Fetching completed, but no articles were returned.")
 
 print("Ending ingestor_clean.py")

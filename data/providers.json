@@ -1,8 +1,14 @@
 [
     {
-        "id": "test_provider",
+        "id": "New York Times",
         "builtin": true,
         "language": "en",
         "url": ["https://rss.nytimes.com/services/xml/rss/nyt/World.xml"]
+    },
+    {
+        "id": "RTS",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.france24.com/fr/rss"]
     }
 ] 
