@@ -1,0 +1,23 @@
+{
+    "articles_per_day": [
+        {
+            "date": "2025-05-10",
+            "articles": 120,
+            "ner": 430
+        },
+        {
+            "date": "2025-05-11",
+            "articles": 135,
+            "ner": 510
+        },
+        {
+            "date": "2025-05-12",
+            "articles": 140,
+            "ner": 495
+        }
+    ],
+    "total_ner_today": 495,
+    "total_articles_today": 140,
+    "total_articles_week": 395,
+    "total_articles_total": 18500
+}
