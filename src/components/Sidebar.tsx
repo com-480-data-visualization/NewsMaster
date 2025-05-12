@@ -5,11 +5,13 @@ import {
   Home,
   FileText,
   Scale,
-  Book
+  Book,
+  Share2
 } from 'lucide-react'
 
 const navigation = [
   { title: "Home", path: "/", icon: Home },
+  { title: "Network", path: "/network", icon: Share2 },
 ] as const
 
 // Components
