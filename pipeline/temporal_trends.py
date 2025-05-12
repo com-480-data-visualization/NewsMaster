@@ -12,8 +12,7 @@ def get_current_week_range():
     sunday = monday + timedelta(days=6)
     
     # Format as DD-DD.MM.YYYY
-    week_range = f"{monday.day:02d}-{sunday.day:02d}.{monday.month:02d}.{monday.year}"
-    print(f"Generated week range: {week_range}")
+    week_range = f"{monday.day:02d}-{sunday.day:02d}.{sunday.month:02d}.{sunday.year}"
     return week_range
 
 def get_date_folders_for_current_week():
@@ -22,18 +21,12 @@ def get_date_folders_for_current_week():
     data_dir = "./data"
     current_week_range = get_current_week_range()
     
-    print(f"Looking for date folders in: {os.path.abspath(data_dir)}")
-    
     # Parse current week dates
     # Format is DD-DD.MM.YYYY (e.g., 12-18.05.2025)
     # Split by parts manually to avoid issues
     parts = current_week_range.split('.')
     
-    # Debug the parts
-    print(f"Split parts: {parts}")
-    
     if len(parts) != 3:  # Should be [DD-DD, MM, YYYY]
-        print(f"Unexpected format for week range: {current_week_range}")
         return []
     
     day_range = parts[0]  # DD-DD
@@ -43,7 +36,6 @@ def get_date_folders_for_current_week():
     # Split the day range
     day_parts = day_range.split('-')
     if len(day_parts) != 2:
-        print(f"Unexpected format for day range: {day_range}")
         return []
     
     start_day = day_parts[0]
@@ -55,20 +47,16 @@ def get_date_folders_for_current_week():
         month = int(month)
         year = int(year)
     except ValueError as e:
-        print(f"Error parsing date components: {e}")
         return []
     
     # Create date objects for the week range
-    start_date = datetime(year, month, start_day)
-    end_date = datetime(year, month, end_day) if end_day > start_day else datetime(year, month + 1, end_day)
-    
-    print(f"Looking for folders with dates between {start_date.strftime('%d.%m.%Y')} and {end_date.strftime('%d.%m.%Y')}")
+    start_date = datetime(year, month if start_day < end_day else (month - 1) % 12, start_day)
+    end_date = datetime(year, month, end_day)
     
     date_folders = []
     
     # Check if the directory exists
     if not os.path.exists(data_dir):
-        print(f"Data directory not found: {data_dir}")
         return []
     
     # Check all items in the data directory
@@ -83,7 +71,6 @@ def get_date_folders_for_current_week():
                 # Check if the folder date is within the current week
                 if start_date <= folder_date <= end_date:
                     date_folders.append(item)
-                    print(f"Found matching date folder: {item}")
             except ValueError:
                 continue
     
@@ -94,10 +81,8 @@ def extract_entities_from_articles(date_dir):
     # The date folders are in ./data directory
     articles_file = os.path.join("./data", date_dir, "articles.json")
     if not os.path.exists(articles_file):
-        print(f"Articles file not found: {articles_file}")
         return []
     
-    print(f"Reading articles from: {articles_file}")
     with open(articles_file, 'r', encoding='utf-8') as f:
         try:
             articles_data = json.load(f)
@@ -108,24 +93,19 @@ def extract_entities_from_articles(date_dir):
                     if 'entity' in ner_item:
                         entities.append(ner_item['entity'].lower())
             
-            print(f"Found {len(entities)} entities in {articles_file}")
             return entities
         except json.JSONDecodeError:
-            print(f"Error parsing JSON in {articles_file}")
             return []
 
 def update_current_week_trends():
     """Update topics.json with only the current week's data"""
     # Get the current week range
     current_week = get_current_week_range()
-    print(f"Updating data for week: {current_week}")
     
     # Get date folders for the current week
     date_folders = get_date_folders_for_current_week()
-    print(f"Found {len(date_folders)} date folders for the current week")
     
     if not date_folders:
-        print("No date folders found for the current week. Nothing to update.")
         return
     
     # Collect all entities from the current week
@@ -135,7 +115,6 @@ def update_current_week_trends():
         all_entities.extend(entities)
     
     if not all_entities:
-        print("No entities found in the current week's articles. Nothing to update.")
         return
     
     # Count entity occurrences
@@ -157,7 +136,7 @@ def update_current_week_trends():
             with open(topics_file, 'r', encoding='utf-8') as f:
                 existing_data = json.load(f)
         except json.JSONDecodeError:
-            print(f"Error reading existing topics.json, creating new file")
+            pass
     
     # Update existing data with new week data
     for topic, weeks in topics_data.items():
@@ -172,8 +151,6 @@ def update_current_week_trends():
     os.makedirs(os.path.dirname(topics_file), exist_ok=True)
     with open(topics_file, 'w', encoding='utf-8') as f:
         json.dump(existing_data, f, indent=4)
-    
-    print(f"Updated topics.json with trends for {len(topics_data)} topics for week {current_week}")
 
 if __name__ == "__main__":
     update_current_week_trends()

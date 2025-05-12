@@ -24,7 +24,7 @@ type TableRowData = {
 const parseDateRange = (range: string): Date => {
     const currentYear = new Date().getFullYear();
     const [days, month] = range.split('.');
-    const startDate = parseInt(days.split('-')[0], 10);
+    const startDate = parseInt(days.split('-')[1], 10);
     return new Date(currentYear, parseInt(month, 10) - 1, startDate);
 };
 
