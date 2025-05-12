@@ -52,6 +52,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.0.0",
+    "d3": "^7.9.0",
     "date-fns": "^2.30.0",
     "embla-carousel-react": "^8.5.2",
     "esbuild": "^0.25.0",
@@ -82,6 +83,8 @@
   "devDependencies": {
     "@astrojs/netlify": "^6.1.0",
     "@tailwindcss/typography": "^0.5.16",
+    "@types/d3": "^7.4.3",
+    "@types/geojson": "^7946.0.16",
     "terser": "^5.37.0",
     "vite": "^6.0.11"
   }
