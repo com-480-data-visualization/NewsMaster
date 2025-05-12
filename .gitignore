@@ -5,6 +5,10 @@ blocks/
 
 *.obsidian
 
+# Pipeline
+pipeline/__pycache__/*
+
+venv/
 
 # generated types
 .astro/
