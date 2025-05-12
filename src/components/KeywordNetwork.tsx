@@ -5,6 +5,7 @@ import Select from 'react-select';
 import * as THREE from 'three'; // Import THREE for sprite-based labels
 import { Button } from '@/components/ui/button'; // Import Button
 import { MaximizeIcon, MinimizeIcon } from 'lucide-react'; // Import icons
+import { formatDistanceToNow, parseISO } from 'date-fns';
 
 interface NerEntity {
     entity: string;
@@ -508,17 +509,17 @@ const KeywordNetwork: React.FC = () => {
                             Link: {((linkDetails.source as CustomNodeObject)?.id ?? linkDetails.source)} &harr; {((linkDetails.target as CustomNodeObject)?.id ?? linkDetails.target)}
                         </h2>
                         <div style={{ marginBottom: 16 }}>
-                            <strong>Articles ({articleDetails.length}):</strong>
+                            <strong>Articles ({articleDetails.length}):</strong><br /><br />
                             <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
                                 {articleDetails.map(article => (
                                     <li key={article.id} style={{ marginBottom: 18, borderBottom: '1px solid #444', paddingBottom: 10 }}>
                                         <div style={{ fontWeight: 600, fontSize: 17 }}>{article.title}</div>
                                         <div style={{ fontSize: 14, color: '#ccc', margin: '4px 0' }}>{article.description}</div>
                                         <div style={{ fontSize: 13, color: '#aaa' }}>
-                                            <span>Provider: {article.providerId}</span> | <span>Lang: {article.language}</span>
+                                            <span>Provider: {article.providerId}</span>
                                         </div>
                                         <div style={{ fontSize: 13, color: '#aaa' }}>
-                                            <span>Published: {article.createdAt}</span>
+                                            <span>Published: {formatDistanceToNow(parseISO(article.createdAt), { addSuffix: true })}</span>
                                         </div>
                                         <a href={article.url} target="_blank" rel="noopener noreferrer" style={{ color: '#4ea1ff', fontSize: 14, textDecoration: 'underline' }}>Read full article</a>
                                     </li>
