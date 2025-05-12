@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'; // Import Button
 import { MaximizeIcon, MinimizeIcon } from 'lucide-react'; // Import icons
 
 interface NerEntity {
-    text: string;
+    entity: string;
     label: string;
 }
 
@@ -108,18 +108,18 @@ const KeywordNetwork: React.FC = () => {
 
             // Add nodes
             articleEntities.forEach(entity => {
-                if (!nodesMap.has(entity.text)) {
+                if (!nodesMap.has(entity.entity)) {
                     // Initialize degree to 0 when adding the node
                     // Ensure id is string and other properties match CustomNodeObject
-                    nodesMap.set(entity.text, { id: entity.text, label: entity.label, degree: 0 });
+                    nodesMap.set(entity.entity, { id: entity.entity, label: entity.label, degree: 0 });
                 }
             });
 
             // Add links and update degrees
             for (let i = 0; i < articleEntities.length; i++) {
                 for (let j = i + 1; j < articleEntities.length; j++) {
-                    const source = articleEntities[i].text;
-                    const target = articleEntities[j].text;
+                    const source = articleEntities[i].entity;
+                    const target = articleEntities[j].entity;
                     const linkKey = [source, target].sort().join('--');
                     // Find existing link more efficiently
                     const existingLinkIndex = links.findIndex(l => {
@@ -435,6 +435,11 @@ const KeywordNetwork: React.FC = () => {
                         // Ensure graph fills its container
                         height={isPlainScreen ? undefined : undefined} // Let parent div control height
                         width={isPlainScreen ? undefined : undefined} // Let parent div control width
+                        onLinkClick={(link: CustomLinkObject, event: MouseEvent) => {
+                            // Show article titles in an alert (replace with custom UI as needed)
+                            const articleTitles = link.articles?.join(', ') || 'No articles';
+                            alert(`Articles for this link: ${articleTitles}`);
+                        }}
                     />
                 ) : (
                     <div className={isPlainScreen ? 'text-white' : ''}>
