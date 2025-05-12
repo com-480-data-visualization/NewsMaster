@@ -1,8 +1,100 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import TemporalTrendsPage from './TemporalTrendsPage.jsx';
+import topicsData from '../../public/data/temporal_trends/topics.json';
+import TopicTable from '@/components/TopicTable';
+import TopicTrendChart from '@/components/TopicTrendChart';
+
+// Add type definitions at the top of the script section
+type TopicData = {
+    [topic: string]: {
+        [dateRange: string]: number;
+    };
+};
+
+type TableRowData = {
+    rank: number;
+    topic: string;
+    latestScore: number;
+    isTrendingUp: boolean | null;
+    percentageChange: number | null;
+};
+
+// Function to parse date range string "DD-DD.MM" into a comparable format (e.g., Date object or YYYYMMDD)
+// Assuming year is current year for simplicity, might need adjustment for year changes
+const parseDateRange = (range: string): Date => {
+    const currentYear = new Date().getFullYear();
+    const [days, month] = range.split('.');
+    const startDate = parseInt(days.split('-')[0], 10);
+    return new Date(currentYear, parseInt(month, 10) - 1, startDate);
+};
+
+// Assert the type of imported JSON data
+const typedTopicsData = topicsData as TopicData;
+
+// Get all unique date ranges and sort them
+const allDateRanges = [...new Set(Object.values(typedTopicsData).flatMap(topic => Object.keys(topic)))]
+    .sort((a, b) => parseDateRange(a).getTime() - parseDateRange(b).getTime());
+
+const latestDateRange = allDateRanges[allDateRanges.length - 1];
+const previousDateRange = allDateRanges[allDateRanges.length - 2];
+
+// Process data for the table
+const tableData: TableRowData[] = Object.entries(typedTopicsData)
+    .map(([topic, dates]) => ({ topic, dates })) // Keep intermediate structure for type safety
+    .filter(({ dates }) => dates[latestDateRange] !== undefined) // Only include topics with data for the latest week
+    .map(({ topic, dates }) => {
+        const latestScore = dates[latestDateRange]!; // Assert non-null since we filtered
+        const previousScore = dates[previousDateRange]; // Might be undefined
+        let isTrendingUp: boolean | null = null;
+        let percentageChange: number | null = null;
+
+        if (previousScore !== undefined && latestScore !== undefined) {
+            isTrendingUp = latestScore > previousScore;
+            if (previousScore !== 0) {
+                 percentageChange = parseFloat((((latestScore - previousScore) / previousScore) * 100).toFixed(1));
+            } else if (latestScore > 0) {
+                percentageChange = Infinity; // Indicate infinite growth if previous was 0
+            } else {
+                percentageChange = 0; // No change if both are 0
+            }
+        }
+
+        return {
+            topic,
+            latestScore,
+            isTrendingUp,
+            percentageChange,
+        };
+    })
+    .sort((a, b) => b.latestScore - a.latestScore) // Sort by latest score descending for ranking
+    .map((item, index) => ({ ...item, rank: index + 1 })); // Add rank
+
+// Determine the top topic for default selection
+const topTopicName = tableData.length > 0 ? tableData[0].topic : null;
+
+// Prepare data structure for the chart component
+// Pass all data, chart component can filter/process as needed
+const chartDataInput = {
+    topics: typedTopicsData, // Use the typed data
+    dateRanges: allDateRanges,
+};
+
 ---
 
 <Layout title="Temporal Trends">
-    <TemporalTrendsPage client:load />
-</Layout> 
+    <main class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-6 text-center">Topic Temporal Trends</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 h-[calc(100vh-200px)]"> {/* Adjust height as needed */}
+            <div class="border rounded-lg p-4 overflow-y-auto">
+                 <h2 class="text-xl font-semibold mb-4">Topic Rankings (Latest Week: {latestDateRange})</h2>
+                <TopicTable client:only="react" data={tableData} defaultSelectedTopic={topTopicName} />
+            </div>
+            <div class="border rounded-lg p-4 flex flex-col">
+                 <h2 class="text-xl font-semibold mb-4">Trend Comparison</h2>
+                <div class="flex-grow min-h-[400px]">
+                     <TopicTrendChart client:only="react" data={chartDataInput} defaultTopic={topTopicName} />
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
