@@ -1,12 +1,12 @@
 [
     {
-        "id": "new_york_times",
+        "id": "New York Times",
         "builtin": true,
         "language": "en",
         "url": ["https://rss.nytimes.com/services/xml/rss/nyt/World.xml"]
     },
     {
-        "id": "rts",
+        "id": "RTS",
         "builtin": true,
         "language": "en",
         "url": ["https://www.france24.com/fr/rss"]
