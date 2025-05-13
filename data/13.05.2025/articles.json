@@ -1,0 +1,3674 @@
+{
+  "data": [
+    {
+      "id": "4b9975e5e508991091339e19ba29cb0e",
+      "providerId": "New York Times",
+      "title": "Trump Wants Saudi Arabia to Invest $1 Trillion in the U.S.",
+      "description": "President Trump goes to the Gulf kingdom this week seeking $1 trillion worth of investments in the United States — a sum equivalent to the entire Saudi gross domestic product for a year.",
+      "url": "https://www.nytimes.com/2025/05/12/world/middleeast/trump-saudi-arabia-investment.html",
+      "language": "en",
+      "createdAt": "2025-05-12T09:01:19.000+00:00Z",
+      "pubDate": 1747040479,
+      "translatedTitle": "Trump Wants Saudi Arabia to Invest $1 Trillion in the U.S.",
+      "translatedDescription": "President Trump goes to the Gulf kingdom this week seeking $1 trillion worth of investments in the United States — a sum equivalent to the entire Saudi gross domestic product for a year.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 12,
+          "end": 24,
+          "source": "title"
+        },
+        {
+          "entity": "Gulf",
+          "label": "LOC",
+          "start": 28,
+          "end": 32,
+          "source": "description"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 99,
+          "end": 112,
+          "source": "description"
+        },
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 146,
+          "end": 151,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "6763d45ef8f4cb7804542ddcbff42656",
+      "providerId": "New York Times",
+      "title": "India and Pakistan Hold Talks Aimed at Extending Cease-Fire",
+      "description": "Civilian airports were reopened and stocks jumped in both nations, signs of confidence that the agreement to halt the most alarming fighting in decades was holding.",
+      "url": "https://www.nytimes.com/2025/05/12/world/asia/india-pakistan-cease-fire-extended.html",
+      "language": "en",
+      "createdAt": "2025-05-12T18:31:29.000+00:00Z",
+      "pubDate": 1747074689,
+      "translatedTitle": "India and Pakistan Hold Talks Aimed at Extending Cease-Fire",
+      "translatedDescription": "Civilian airports were reopened and stocks jumped in both nations, signs of confidence that the agreement to halt the most alarming fighting in decades was holding.",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 10,
+          "end": 18,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "1defab6b4502b55fca5af3e9c3b84f8f",
+      "providerId": "New York Times",
+      "title": "Pope Leo XIV Calls for News Media to Shun Divisive Language",
+      "description": "In his first audience with journalists as the pontiff, Leo renewed pleas for a more peaceful world. He also spoke to Ukraine’s president on Monday.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/pope-leo-vatican-journalists.html",
+      "language": "en",
+      "createdAt": "2025-05-12T20:09:18.000+00:00Z",
+      "pubDate": 1747080558,
+      "translatedTitle": "Pope Leo XIV Calls for News Media to Shun Divisive Language",
+      "translatedDescription": "In his first audience with journalists as the pontiff, Leo renewed pleas for a more peaceful world. He also spoke to Ukraine’s president on Monday.",
+      "ner": [
+        {
+          "entity": "Pope Leo Xiv",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "title"
+        },
+        {
+          "entity": "Leo",
+          "label": "PER",
+          "start": 55,
+          "end": 58,
+          "source": "description"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 117,
+          "end": 124,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "df7bb79832fca5eed0439d2d625b3a61",
+      "providerId": "New York Times",
+      "title": "Kurdish P.K.K. Says It Will End Conflict with Turkish State",
+      "description": "The Kurdistan Workers’ Party, or P.K.K., said that it would lay down its arms and disband, a decision that could reverberate in neighboring countries.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/kurdish-pkk-turkey.html",
+      "language": "en",
+      "createdAt": "2025-05-12T19:26:15.000+00:00Z",
+      "pubDate": 1747077975,
+      "translatedTitle": "Kurdish P.K.K. Says It Will End Conflict with Turkish State",
+      "translatedDescription": "The Kurdistan Workers’ Party, or P.K.K., said that it would lay down its arms and disband, a decision that could reverberate in neighboring countries.",
+      "ner": [
+        {
+          "entity": "Kurdish",
+          "label": "MISC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Turkish",
+          "label": "MISC",
+          "start": 46,
+          "end": 53,
+          "source": "title"
+        },
+        {
+          "entity": "Kurdistan Workers’ Party",
+          "label": "ORG",
+          "start": 4,
+          "end": 28,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "be5c995595171ed32c63afdb23022b9f",
+      "providerId": "New York Times",
+      "title": "What to Know About the P.K.K. and Its Fight Against Turkey",
+      "description": "The Kurdish group waged a bloody insurgency against the Turkish state for four decades.",
+      "url": "https://www.nytimes.com/article/pkk-turkey-kurds.html",
+      "language": "en",
+      "createdAt": "2025-05-12T09:50:43.000+00:00Z",
+      "pubDate": 1747043443,
+      "translatedTitle": "What to Know About the P.K.K. and Its Fight Against Turkey",
+      "translatedDescription": "The Kurdish group waged a bloody insurgency against the Turkish state for four decades.",
+      "ner": [
+        {
+          "entity": "Turkey",
+          "label": "LOC",
+          "start": 52,
+          "end": 58,
+          "source": "title"
+        },
+        {
+          "entity": "Kurdish",
+          "label": "MISC",
+          "start": 4,
+          "end": 11,
+          "source": "description"
+        },
+        {
+          "entity": "Turkish",
+          "label": "MISC",
+          "start": 56,
+          "end": 63,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "449a47ebfcb955415ac3b8b8f8c1b80f",
+      "providerId": "New York Times",
+      "title": "Hamas Frees Edan Alexander, American Hostage Held in Gaza, in Deal With U.S.",
+      "description": "Edan Alexander, a dual Israeli American national, was released following pressure from President Trump, who is set to travel to the region.",
+      "url": "https://www.nytimes.com/2025/05/12/world/middleeast/edan-alexander-israel-hamas-hostage-released.html",
+      "language": "en",
+      "createdAt": "2025-05-12T20:25:27.000+00:00Z",
+      "pubDate": 1747081527,
+      "translatedTitle": "Hamas Frees Edan Alexander, American Hostage Held in Gaza, in Deal With U.S.",
+      "translatedDescription": "Edan Alexander, a dual Israeli American national, was released following pressure from President Trump, who is set to travel to the region.",
+      "ner": [
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Edan Alexander",
+          "label": "PER",
+          "start": 12,
+          "end": 26,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 28,
+          "end": 36,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 53,
+          "end": 57,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 23,
+          "end": 39,
+          "source": "description"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 97,
+          "end": 102,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "596dbe8286971a01277a81d852dd2f50",
+      "providerId": "New York Times",
+      "title": "Who Is Edan Alexander, the American Hostage Held by Hamas in Gaza?",
+      "description": "On Monday, Hamas released the American Israeli citizen, who was serving in the Israeli army when he was captured on Oct. 7, 2023.",
+      "url": "https://www.nytimes.com/2025/05/12/world/middleeast/edan-alexander-hamas-american-hostage-who-is.html",
+      "language": "en",
+      "createdAt": "2025-05-12T19:38:02.000+00:00Z",
+      "pubDate": 1747078682,
+      "translatedTitle": "Who Is Edan Alexander, the American Hostage Held by Hamas in Gaza?",
+      "translatedDescription": "On Monday, Hamas released the American Israeli citizen, who was serving in the Israeli army when he was captured on Oct. 7, 2023.",
+      "ner": [
+        {
+          "entity": "Edan Alexander",
+          "label": "PER",
+          "start": 7,
+          "end": 21,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 27,
+          "end": 35,
+          "source": "title"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 52,
+          "end": 57,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 61,
+          "end": 65,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 30,
+          "end": 46,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "84c3188b2b1fb2b4c7d93e25ba722385",
+      "providerId": "New York Times",
+      "title": "E.U. Leaders Demand Russia Accept Ukraine Cease-fire by End of Day",
+      "description": "European leaders threatened new sanctions unless Moscow accepted a cease-fire right away. President Trump seemed to endorse the idea of a meeting between Ukraine’s and Russia’s presidents, and said he might take part.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/russia-ukraine-putin-ceasefire.html",
+      "language": "en",
+      "createdAt": "2025-05-12T18:45:17.000+00:00Z",
+      "pubDate": 1747075517,
+      "translatedTitle": "E.U. Leaders Demand Russia Accept Ukraine Cease-fire by End of Day",
+      "translatedDescription": "European leaders threatened new sanctions unless Moscow accepted a cease-fire right away. President Trump seemed to endorse the idea of a meeting between Ukraine’s and Russia’s presidents, and said he might take part.",
+      "ner": [
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 20,
+          "end": 26,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 34,
+          "end": 41,
+          "source": "title"
+        },
+        {
+          "entity": "European",
+          "label": "MISC",
+          "start": 0,
+          "end": 8,
+          "source": "description"
+        },
+        {
+          "entity": "Moscow",
+          "label": "LOC",
+          "start": 49,
+          "end": 55,
+          "source": "description"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 100,
+          "end": 105,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "14bceff01fd260f232dbc542b7d4415c",
+      "providerId": "New York Times",
+      "title": "For Catholics, the Pope Is a Holy Father. For the World, He Is a Powerful Voice.",
+      "description": "The papacy is a global platform, so the issues Pope Leo chooses to focus on can resonate far beyond the church.",
+      "url": "https://www.nytimes.com/2025/05/12/world/asia/pope-leo-voice-platform.html",
+      "language": "en",
+      "createdAt": "2025-05-12T19:11:15.000+00:00Z",
+      "pubDate": 1747077075,
+      "translatedTitle": "For Catholics, the Pope Is a Holy Father. For the World, He Is a Powerful Voice.",
+      "translatedDescription": "The papacy is a global platform, so the issues Pope Leo chooses to focus on can resonate far beyond the church.",
+      "ner": [
+        {
+          "entity": "Catholics",
+          "label": "MISC",
+          "start": 4,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Pope",
+          "label": "PER",
+          "start": 19,
+          "end": 23,
+          "source": "title"
+        },
+        {
+          "entity": "Leo",
+          "label": "PER",
+          "start": 52,
+          "end": 55,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "6633efafb4ee134925f5ca011569871a",
+      "providerId": "New York Times",
+      "title": "Starmer Pledges to Cut U.K. Immigration",
+      "description": "Prime Minister Keir Starmer said his government was “taking back control of our borders,” weeks after a right-wing populist party, Reform U.K., made gains in municipal elections.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/starmer-uk-immigration.html",
+      "language": "en",
+      "createdAt": "2025-05-12T23:42:34.000+00:00Z",
+      "pubDate": 1747093354,
+      "translatedTitle": "Starmer Pledges to Cut U.K. Immigration",
+      "translatedDescription": "Prime Minister Keir Starmer said his government was “taking back control of our borders,” weeks after a right-wing populist party, Reform U.K., made gains in municipal elections.",
+      "ner": [
+        {
+          "entity": "Star",
+          "label": "PER",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Keir Starmer",
+          "label": "PER",
+          "start": 15,
+          "end": 27,
+          "source": "description"
+        },
+        {
+          "entity": "Reform U",
+          "label": "ORG",
+          "start": 131,
+          "end": 139,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "915a3a81f63143e4de643963d31ca321",
+      "providerId": "New York Times",
+      "title": "Counterterror Police Investigate Fire at Starmer’s North London Home",
+      "description": "Damage was caused to the entrance of a property belonging to the prime minister in Kentish Town, but nobody was hurt, the police said.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/keir-starmer-fire-counterterror-police.html",
+      "language": "en",
+      "createdAt": "2025-05-12T20:05:23.000+00:00Z",
+      "pubDate": 1747080323,
+      "translatedTitle": "Counterterror Police Investigate Fire at Starmer’s North London Home",
+      "translatedDescription": "Damage was caused to the entrance of a property belonging to the prime minister in Kentish Town, but nobody was hurt, the police said.",
+      "ner": [
+        {
+          "entity": "Starmer",
+          "label": "PER",
+          "start": 41,
+          "end": 48,
+          "source": "title"
+        },
+        {
+          "entity": "North London",
+          "label": "LOC",
+          "start": 51,
+          "end": 63,
+          "source": "title"
+        },
+        {
+          "entity": "Kentish Town",
+          "label": "LOC",
+          "start": 83,
+          "end": 95,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "660834eff83720f382968011a58d86e0",
+      "providerId": "New York Times",
+      "title": "China Courts Lula and Latin America After Trump’s Tariff Shock",
+      "description": "President Luiz Inácio Lula da Silva of Brazil is visiting Beijing this week, and China’s Xi Jinping will also meet top officials from other Latin American and Caribbean nations to emphasize their ties.",
+      "url": "https://www.nytimes.com/2025/05/12/world/asia/china-lula-latam-trade.html",
+      "language": "en",
+      "createdAt": "2025-05-12T18:19:09.000+00:00Z",
+      "pubDate": 1747073949,
+      "translatedTitle": "China Courts Lula and Latin America After Trump’s Tariff Shock",
+      "translatedDescription": "President Luiz Inácio Lula da Silva of Brazil is visiting Beijing this week, and China’s Xi Jinping will also meet top officials from other Latin American and Caribbean nations to emphasize their ties.",
+      "ner": [
+        {
+          "entity": "China",
+          "label": "LOC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Lu",
+          "label": "PER",
+          "start": 13,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "Latin America",
+          "label": "LOC",
+          "start": 22,
+          "end": 35,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 42,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Luiz Inácio Lula Da Silva",
+          "label": "PER",
+          "start": 10,
+          "end": 35,
+          "source": "description"
+        },
+        {
+          "entity": "Brazil",
+          "label": "LOC",
+          "start": 39,
+          "end": 45,
+          "source": "description"
+        },
+        {
+          "entity": "Beijing",
+          "label": "LOC",
+          "start": 58,
+          "end": 65,
+          "source": "description"
+        },
+        {
+          "entity": "Xi Jinping",
+          "label": "PER",
+          "start": 89,
+          "end": 99,
+          "source": "description"
+        },
+        {
+          "entity": "Latin American",
+          "label": "MISC",
+          "start": 140,
+          "end": 154,
+          "source": "description"
+        },
+        {
+          "entity": "Caribbean",
+          "label": "LOC",
+          "start": 159,
+          "end": 168,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "f8395967d6f852e7107071ce48f62a66",
+      "providerId": "New York Times",
+      "title": "Rodrigo Duterte Is Expected to Again Become Mayor of Davao City",
+      "description": "Former President Rodrigo Duterte, who faces international court charges of crimes against humanity, appears to have been elected mayor of Davao City. One of his sons is expected to fill in.",
+      "url": "https://www.nytimes.com/2025/05/11/world/asia/duterte-davao-mayor-election.html",
+      "language": "en",
+      "createdAt": "2025-05-13T00:38:22.000+00:00Z",
+      "pubDate": 1747096702,
+      "translatedTitle": "Rodrigo Duterte Is Expected to Again Become Mayor of Davao City",
+      "translatedDescription": "Former President Rodrigo Duterte, who faces international court charges of crimes against humanity, appears to have been elected mayor of Davao City. One of his sons is expected to fill in.",
+      "ner": [
+        {
+          "entity": "Rodrigo Duterte",
+          "label": "PER",
+          "start": 0,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "Davao City",
+          "label": "LOC",
+          "start": 53,
+          "end": 63,
+          "source": "title"
+        },
+        {
+          "entity": "Dava",
+          "label": "LOC",
+          "start": 138,
+          "end": 142,
+          "source": "description"
+        },
+        {
+          "entity": "o City",
+          "label": "LOC",
+          "start": 142,
+          "end": 148,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "893328d09f3404cd7d0d8f4092d5f454",
+      "providerId": "New York Times",
+      "title": "Trump’s Tariffs on Canada Spark Debate Over U.S. Trade: Does the U.S. Need Canada?",
+      "description": "President Trump seems to think not. The industries he constantly mentions when he pushes his case, including autos, energy and lumber, beg to differ.",
+      "url": "https://www.nytimes.com/2025/05/12/world/canada/trump-us-canada-tariffs.html",
+      "language": "en",
+      "createdAt": "2025-05-12T21:34:57.000+00:00Z",
+      "pubDate": 1747085697,
+      "translatedTitle": "Trump’s Tariffs on Canada Spark Debate Over U.S. Trade: Does the U.S. Need Canada?",
+      "translatedDescription": "President Trump seems to think not. The industries he constantly mentions when he pushes his case, including autos, energy and lumber, beg to differ.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Canada",
+          "label": "LOC",
+          "start": 19,
+          "end": 25,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "0070ef327d22fba956169d66c9374a9d",
+      "providerId": "New York Times",
+      "title": "Farmers Sued Over Deleted Climate Data. So the Government Will Put It Back.",
+      "description": "The Agriculture Department pledged to restore online climate information that farmers said helped them do business, but which officials had deleted.",
+      "url": "https://www.nytimes.com/2025/05/12/climate/trump-deleted-climate-website-farmers-lawsuit.html",
+      "language": "en",
+      "createdAt": "2025-05-12T22:55:29.000+00:00Z",
+      "pubDate": 1747090529,
+      "translatedTitle": "Farmers Sued Over Deleted Climate Data. So the Government Will Put It Back.",
+      "translatedDescription": "The Agriculture Department pledged to restore online climate information that farmers said helped them do business, but which officials had deleted.",
+      "ner": [
+        {
+          "entity": "Agriculture Department",
+          "label": "ORG",
+          "start": 4,
+          "end": 26,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "56fb12f5fb14694b532afb2e21a48d71",
+      "providerId": "New York Times",
+      "title": "Palestinian Authority Lifting Ban on Al Jazeera in West Bank",
+      "description": "The authority offered scant information about why it issued the ban in January, and it maintained that stance in announcing that it was rescinding it.",
+      "url": "https://www.nytimes.com/2025/05/12/world/middleeast/al-jazeera-ban-palestinian-authority.html",
+      "language": "en",
+      "createdAt": "2025-05-12T22:31:08.000+00:00Z",
+      "pubDate": 1747089068,
+      "translatedTitle": "Palestinian Authority Lifting Ban on Al Jazeera in West Bank",
+      "translatedDescription": "The authority offered scant information about why it issued the ban in January, and it maintained that stance in announcing that it was rescinding it.",
+      "ner": [
+        {
+          "entity": "Palestine",
+          "label": "ORG",
+          "start": 0,
+          "end": 21,
+          "source": "title"
+        },
+        {
+          "entity": "Al Jazeera",
+          "label": "ORG",
+          "start": 37,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "West Bank",
+          "label": "LOC",
+          "start": 51,
+          "end": 60,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "608a64266b386047c4c48fe77067e028",
+      "providerId": "New York Times",
+      "title": "Energy Department to Repeal Efficiency Rules for Appliances",
+      "description": "Experts say the moves, which would apply to household appliances, will raise energy costs for consumers.",
+      "url": "https://www.nytimes.com/2025/05/12/climate/energy-effiency-programs-department-of-energy.html",
+      "language": "en",
+      "createdAt": "2025-05-12T21:48:32.000+00:00Z",
+      "pubDate": 1747086512,
+      "translatedTitle": "Energy Department to Repeal Efficiency Rules for Appliances",
+      "translatedDescription": "Experts say the moves, which would apply to household appliances, will raise energy costs for consumers.",
+      "ner": [
+        {
+          "entity": "Energy Department",
+          "label": "ORG",
+          "start": 0,
+          "end": 17,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "bb2175d7d24c4e9aba8a91771bee516d",
+      "providerId": "New York Times",
+      "title": "Tuesday Briefing: Trump’s Visit to the Gulf",
+      "description": "Plus, a big week for the art world.",
+      "url": "https://www.nytimes.com/2025/05/12/briefing/trump-gulf-visit-china-us-tariffs-ukraine-russia-sanctions.html",
+      "language": "en",
+      "createdAt": "2025-05-12T21:00:11.000+00:00Z",
+      "pubDate": 1747083611,
+      "translatedTitle": "Tuesday Briefing: Trump’s Visit to the Gulf",
+      "translatedDescription": "Plus, a big week for the art world.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 18,
+          "end": 23,
+          "source": "title"
+        },
+        {
+          "entity": "Gulf",
+          "label": "LOC",
+          "start": 39,
+          "end": 43,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "b1be04f4015160be9f72893d20a82193",
+      "providerId": "New York Times",
+      "title": "Avelo Airlines Faces Backlash for Aiding Trump’s Deportation Campaign",
+      "description": "The company, which serves airports in liberal cities on the coasts, has agreed to operate chartered flights for Immigration and Customs Enforcement.",
+      "url": "https://www.nytimes.com/2025/05/12/business/trump-deportation-flights-avelo-airlines.html",
+      "language": "en",
+      "createdAt": "2025-05-12T19:16:01.000+00:00Z",
+      "pubDate": 1747077361,
+      "translatedTitle": "Avelo Airlines Faces Backlash for Aiding Trump’s Deportation Campaign",
+      "translatedDescription": "The company, which serves airports in liberal cities on the coasts, has agreed to operate chartered flights for Immigration and Customs Enforcement.",
+      "ner": [
+        {
+          "entity": "Avelo Airlines",
+          "label": "ORG",
+          "start": 0,
+          "end": 14,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "MISC",
+          "start": 41,
+          "end": 46,
+          "source": "title"
+        },
+        {
+          "entity": "Immigration and Customs Enforcement",
+          "label": "ORG",
+          "start": 112,
+          "end": 147,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "ce75c0b876d3342282e1bc298155ab02",
+      "providerId": "New York Times",
+      "title": "Here are some past memorable encounters between popes and reporters.",
+      "description": "",
+      "url": "https://www.nytimes.com/live/2025/05/12/world/pope-leo-news/here-are-some-past-memorable-encounters-between-popes-and-reporters",
+      "language": "en",
+      "createdAt": "2025-05-12T09:58:10.000+00:00Z",
+      "pubDate": 1747043890,
+      "translatedTitle": "Here are some past memorable encounters between popes and reporters.",
+      "translatedDescription": "",
+      "ner": []
+    },
+    {
+      "id": "d8b03c894309b97d62cd7d26109ffa5b",
+      "providerId": "New York Times",
+      "title": "The last 5 pontiffs have held audiences with the news media.",
+      "description": "The last five pontiffs have addressed members of the international news media who reported on the conclaves that elected them.",
+      "url": "https://www.nytimes.com/live/2025/05/12/world/pope-leo-news/the-last-5-pontiffs-have-held-audiences-with-the-news-media",
+      "language": "en",
+      "createdAt": "2025-05-12T08:44:26.000+00:00Z",
+      "pubDate": 1747039466,
+      "translatedTitle": "The last 5 pontiffs have held audiences with the news media.",
+      "translatedDescription": "The last five pontiffs have addressed members of the international news media who reported on the conclaves that elected them.",
+      "ner": []
+    },
+    {
+      "id": "f6715ff416f0bdbc12a56c655fee0a3b",
+      "providerId": "New York Times",
+      "title": "Pope Leo Is Celebrated in the Peruvian City Where He Served as Bishop",
+      "description": "People in the city of Chiclayo, where Leo XIV served as bishop for about eight years, gathered to celebrate a man they see as one of their own.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/pope-leo-peru.html",
+      "language": "en",
+      "createdAt": "2025-05-12T22:28:53.000+00:00Z",
+      "pubDate": 1747088933,
+      "translatedTitle": "Pope Leo Is Celebrated in the Peruvian City Where He Served as Bishop",
+      "translatedDescription": "People in the city of Chiclayo, where Leo XIV served as bishop for about eight years, gathered to celebrate a man they see as one of their own.",
+      "ner": [
+        {
+          "entity": "Pope",
+          "label": "MISC",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Leo",
+          "label": "PER",
+          "start": 5,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "Peru",
+          "label": "LOC",
+          "start": 30,
+          "end": 38,
+          "source": "title"
+        },
+        {
+          "entity": "Chiclayo",
+          "label": "LOC",
+          "start": 22,
+          "end": 30,
+          "source": "description"
+        },
+        {
+          "entity": "Leo Xiv",
+          "label": "PER",
+          "start": 38,
+          "end": 45,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "da0ba58902a3e259d26e6247b63c4f88",
+      "providerId": "New York Times",
+      "title": "Here’s what happened.",
+      "description": "",
+      "url": "https://www.nytimes.com/live/2025/05/12/world/pope-leo-news/heres-the-latest",
+      "language": "en",
+      "createdAt": "2025-05-12T10:58:38.000+00:00Z",
+      "pubDate": 1747047518,
+      "translatedTitle": "Here’s what happened.",
+      "translatedDescription": "",
+      "ner": []
+    },
+    {
+      "id": "0cb1c40a34d8309f52f72a3520217891",
+      "providerId": "New York Times",
+      "title": "Monday Briefing",
+      "description": "Here’s what you need to know.",
+      "url": "https://www.nytimes.com/2025/05/12/briefing/china-trade-pakistan-vatican.html",
+      "language": "en",
+      "createdAt": "2025-05-12T04:35:34.000+00:00Z",
+      "pubDate": 1747024534,
+      "translatedTitle": "Monday Briefing",
+      "translatedDescription": "Here’s what you need to know.",
+      "ner": []
+    },
+    {
+      "id": "8123ea11690a8c0bc454034ceb9fe562",
+      "providerId": "New York Times",
+      "title": "Monday Briefing: U.S.-China Talks",
+      "description": "Plus, crypto bro fight club.",
+      "url": "https://www.nytimes.com/2025/05/11/briefing/us-china-talks-india-pakistan-truce-trump-netanyahu-divide.html",
+      "language": "en",
+      "createdAt": "2025-05-11T21:00:26.000+00:00Z",
+      "pubDate": 1746997226,
+      "translatedTitle": "Monday Briefing: U.S.-China Talks",
+      "translatedDescription": "Plus, crypto bro fight club.",
+      "ner": [
+        {
+          "entity": "China",
+          "label": "LOC",
+          "start": 22,
+          "end": 27,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "fc0d776b5d0227b73a8dcebeb732345e",
+      "providerId": "New York Times",
+      "title": "Dozens of Afrikaners Leave for U.S. After Trump Grants Refugee Status",
+      "description": "Dozens of Afrikaners who claim discrimination in their home country flew out of Johannesburg on Sunday. Their departure for the U.S. came as the Trump administration was halting virtually all refugee admissions.",
+      "url": "https://www.nytimes.com/2025/05/11/world/africa/trump-white-south-african-refugees.html",
+      "language": "en",
+      "createdAt": "2025-05-12T11:13:26.000+00:00Z",
+      "pubDate": 1747048406,
+      "translatedTitle": "Dozens of Afrikaners Leave for U.S. After Trump Grants Refugee Status",
+      "translatedDescription": "Dozens of Afrikaners who claim discrimination in their home country flew out of Johannesburg on Sunday. Their departure for the U.S. came as the Trump administration was halting virtually all refugee admissions.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 42,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Johannesburg",
+          "label": "LOC",
+          "start": 80,
+          "end": 92,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "fb2f29f0a4395cb7dc04cb4253cbad02",
+      "providerId": "New York Times",
+      "title": "Hamas Says It Will Release Its Last American Hostage",
+      "description": "The announcement, which did not say when the hostage, Edan Alexander, would be set free, came as President Trump planned to visit the region.",
+      "url": "https://www.nytimes.com/2025/05/11/world/middleeast/hamas-hostage-edan-alexander.html",
+      "language": "en",
+      "createdAt": "2025-05-11T23:29:01.000+00:00Z",
+      "pubDate": 1747006141,
+      "translatedTitle": "Hamas Says It Will Release Its Last American Hostage",
+      "translatedDescription": "The announcement, which did not say when the hostage, Edan Alexander, would be set free, came as President Trump planned to visit the region.",
+      "ner": [
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 36,
+          "end": 44,
+          "source": "title"
+        },
+        {
+          "entity": "Ed",
+          "label": "PER",
+          "start": 54,
+          "end": 56,
+          "source": "description"
+        },
+        {
+          "entity": "An Alexander",
+          "label": "PER",
+          "start": 56,
+          "end": 68,
+          "source": "description"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 107,
+          "end": 112,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "3258021ccb96d8ec42646b1c71240ebc",
+      "providerId": "New York Times",
+      "title": "As Cease-Fire Seems to Hold, India and Pakistan Both Claim Victory",
+      "description": "The Trump administration’s public descriptions of its role in the mediation seemed to touch some sensitive spots politically in India.",
+      "url": "https://www.nytimes.com/2025/05/11/world/asia/india-pakistan-kashmir-ceasefire.html",
+      "language": "en",
+      "createdAt": "2025-05-11T21:12:49.000+00:00Z",
+      "pubDate": 1746997969,
+      "translatedTitle": "As Cease-Fire Seems to Hold, India and Pakistan Both Claim Victory",
+      "translatedDescription": "The Trump administration’s public descriptions of its role in the mediation seemed to touch some sensitive spots politically in India.",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 29,
+          "end": 34,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 39,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 4,
+          "end": 9,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "0c4336871d840970b9b3cac32a7692f7",
+      "providerId": "New York Times",
+      "title": "How a Quiet American Cardinal Became Pope",
+      "description": "At a conclave with many new members, a swift, stunning consensus built around an unknown to many outside of the church.",
+      "url": "https://www.nytimes.com/2025/05/11/world/europe/conclave-vote-pope-leo-robert-prevost.html",
+      "language": "en",
+      "createdAt": "2025-05-12T16:08:04.000+00:00Z",
+      "pubDate": 1747066084,
+      "translatedTitle": "How a Quiet American Cardinal Became Pope",
+      "translatedDescription": "At a conclave with many new members, a swift, stunning consensus built around an unknown to many outside of the church.",
+      "ner": [
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 12,
+          "end": 20,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "9d104fb8931a1e26b2838ad3c66a6c7b",
+      "providerId": "New York Times",
+      "title": "Pope Leo XIV Calls for End to Wars in Gaza and Ukraine",
+      "description": "The new pope, speaking to thousands in St. Peter’s Square, echoed themes that Francis, his predecessor, regularly addressed.",
+      "url": "https://www.nytimes.com/2025/05/11/world/europe/pope-leo-xiv-address-peace.html",
+      "language": "en",
+      "createdAt": "2025-05-11T19:51:22.000+00:00Z",
+      "pubDate": 1746993082,
+      "translatedTitle": "Pope Leo XIV Calls for End to Wars in Gaza and Ukraine",
+      "translatedDescription": "The new pope, speaking to thousands in St. Peter’s Square, echoed themes that Francis, his predecessor, regularly addressed.",
+      "ner": [
+        {
+          "entity": "Pope Leo Xiv",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 38,
+          "end": 42,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 47,
+          "end": 54,
+          "source": "title"
+        },
+        {
+          "entity": "St",
+          "label": "LOC",
+          "start": 39,
+          "end": 41,
+          "source": "description"
+        },
+        {
+          "entity": "Francis",
+          "label": "PER",
+          "start": 78,
+          "end": 85,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "2d499e31d736bcda13159fcc8c54ad15",
+      "providerId": "New York Times",
+      "title": "Bangladesh Bans the Political Party of Its Ousted Former Ruler",
+      "description": "Sheikh Hasina fled the country after a mass uprising against her government, but the party she led remained a factor in Bangladeshi politics.",
+      "url": "https://www.nytimes.com/2025/05/11/world/asia/bangladesh-awami-party-ban.html",
+      "language": "en",
+      "createdAt": "2025-05-11T11:34:17.000+00:00Z",
+      "pubDate": 1746963257,
+      "translatedTitle": "Bangladesh Bans the Political Party of Its Ousted Former Ruler",
+      "translatedDescription": "Sheikh Hasina fled the country after a mass uprising against her government, but the party she led remained a factor in Bangladeshi politics.",
+      "ner": [
+        {
+          "entity": "Bangladesh",
+          "label": "LOC",
+          "start": 0,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Political Party of",
+          "label": "ORG",
+          "start": 20,
+          "end": 38,
+          "source": "title"
+        },
+        {
+          "entity": "Hasina",
+          "label": "PER",
+          "start": 7,
+          "end": 13,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "e4c01d9bdf5fad49e808ddd18702e3b5",
+      "providerId": "New York Times",
+      "title": "South Korea’s Two Presidential Candidates Have Been Chosen For June Election",
+      "description": "Lee Jae-myung and Kim Moon-soo represent the opposite sides of a country polarized over former President Yoon Suk Yeol’s use of martial law and his ouster.",
+      "url": "https://www.nytimes.com/2025/05/11/world/asia/south-korea-presidential-election-candidates.html",
+      "language": "en",
+      "createdAt": "2025-05-11T11:36:18.000+00:00Z",
+      "pubDate": 1746963378,
+      "translatedTitle": "South Korea’s Two Presidential Candidates Have Been Chosen For June Election",
+      "translatedDescription": "Lee Jae-myung and Kim Moon-soo represent the opposite sides of a country polarized over former President Yoon Suk Yeol’s use of martial law and his ouster.",
+      "ner": [
+        {
+          "entity": "South Korea",
+          "label": "LOC",
+          "start": 0,
+          "end": 11,
+          "source": "title"
+        },
+        {
+          "entity": "Lee Jae",
+          "label": "PER",
+          "start": 0,
+          "end": 7,
+          "source": "description"
+        },
+        {
+          "entity": "Kim Moon",
+          "label": "PER",
+          "start": 18,
+          "end": 26,
+          "source": "description"
+        },
+        {
+          "entity": "Yoon Suk Yeol",
+          "label": "PER",
+          "start": 105,
+          "end": 118,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "20b6f53eacc9a66be0aab18454eda2d4",
+      "providerId": "New York Times",
+      "title": "Zelensky Demands Cease-Fire in Response to Putin’s Call for Direct Talks",
+      "description": "The Ukrainian president claimed he was ready to travel to Turkey to meet with Russia’s leader, but he also insisted on an immediate truce before negotiations can begin.",
+      "url": "https://www.nytimes.com/2025/05/11/world/europe/ukraine-russia-ceasefire-talks-putin-zelensky.html",
+      "language": "en",
+      "createdAt": "2025-05-11T21:36:42.000+00:00Z",
+      "pubDate": 1746999402,
+      "translatedTitle": "Zelensky Demands Cease-Fire in Response to Putin’s Call for Direct Talks",
+      "translatedDescription": "The Ukrainian president claimed he was ready to travel to Turkey to meet with Russia’s leader, but he also insisted on an immediate truce before negotiations can begin.",
+      "ner": [
+        {
+          "entity": "Zelensky",
+          "label": "PER",
+          "start": 0,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "Putin",
+          "label": "PER",
+          "start": 43,
+          "end": 48,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 4,
+          "end": 13,
+          "source": "description"
+        },
+        {
+          "entity": "Turkey",
+          "label": "LOC",
+          "start": 58,
+          "end": 64,
+          "source": "description"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 78,
+          "end": 84,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "228d32e25ed899d4644c1635eb3d3047",
+      "providerId": "New York Times",
+      "title": "Once in Sync, Trump and Netanyahu Now Show Signs of Division",
+      "description": "Both men are politically divisive, fiercely combative and have outsize egos. But as Mr. Trump arrives in the Middle East next week, the fate of the region could hinge on their relationship.",
+      "url": "https://www.nytimes.com/2025/05/11/world/europe/trump-netanyahu-iran-yemen.html",
+      "language": "en",
+      "createdAt": "2025-05-11T09:00:47.000+00:00Z",
+      "pubDate": 1746954047,
+      "translatedTitle": "Once in Sync, Trump and Netanyahu Now Show Signs of Division",
+      "translatedDescription": "Both men are politically divisive, fiercely combative and have outsize egos. But as Mr. Trump arrives in the Middle East next week, the fate of the region could hinge on their relationship.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 14,
+          "end": 19,
+          "source": "title"
+        },
+        {
+          "entity": "Netanyahu",
+          "label": "PER",
+          "start": 24,
+          "end": 33,
+          "source": "title"
+        },
+        {
+          "entity": "Middle East",
+          "label": "LOC",
+          "start": 109,
+          "end": 120,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "83b893b0c4c4871fcc03bdc17fc4dd6a",
+      "providerId": "New York Times",
+      "title": "The Danger for India and Pakistan Has Not Gone Away",
+      "description": "New developments in the nuclear powers’ harrowing four-day conflict, along with entrenched religious nationalism on each side, could signal more frequent battles ahead.",
+      "url": "https://www.nytimes.com/2025/05/11/world/asia/india-pakistan-war-analysis.html",
+      "language": "en",
+      "createdAt": "2025-05-11T16:22:03.000+00:00Z",
+      "pubDate": 1746980523,
+      "translatedTitle": "The Danger for India and Pakistan Has Not Gone Away",
+      "translatedDescription": "New developments in the nuclear powers’ harrowing four-day conflict, along with entrenched religious nationalism on each side, could signal more frequent battles ahead.",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 15,
+          "end": 20,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 25,
+          "end": 33,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "6a2d1ee1d646d4b33d38a9b0843156f8",
+      "providerId": "New York Times",
+      "title": "How the India-Pakistan Clashes Unfolded and What We Know About the Cease-Fire",
+      "description": "Some details are clouded by contradictory statements and disinformation. But a pattern of rapid escalation brought the conflict to the brink of catastrophe.",
+      "url": "https://www.nytimes.com/2025/05/11/world/asia/india-pakistan-what-we-know.html",
+      "language": "en",
+      "createdAt": "2025-05-12T18:03:13.000+00:00Z",
+      "pubDate": 1747072993,
+      "translatedTitle": "How the India-Pakistan Clashes Unfolded and What We Know About the Cease-Fire",
+      "translatedDescription": "Some details are clouded by contradictory statements and disinformation. But a pattern of rapid escalation brought the conflict to the brink of catastrophe.",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 8,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 14,
+          "end": 22,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "10ac746198afa5a20d1664ce21cd59c3",
+      "providerId": "New York Times",
+      "title": "Colombia Grants Asylum to Ricardo Martinelli, Ex-President of Panama",
+      "description": "The former leader said he had traveled to Bogotá after spending a year holed up the Nicaraguan Embassy in Panama City following a money-laundering conviction.",
+      "url": "https://www.nytimes.com/2025/05/11/world/americas/ricardo-martinelli-panama-colombia-asylum.html",
+      "language": "en",
+      "createdAt": "2025-05-11T16:49:51.000+00:00Z",
+      "pubDate": 1746982191,
+      "translatedTitle": "Colombia Grants Asylum to Ricardo Martinelli, Ex-President of Panama",
+      "translatedDescription": "The former leader said he had traveled to Bogotá after spending a year holed up the Nicaraguan Embassy in Panama City following a money-laundering conviction.",
+      "ner": [
+        {
+          "entity": "Colombia",
+          "label": "LOC",
+          "start": 0,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "Ricardo Martinelli",
+          "label": "PER",
+          "start": 26,
+          "end": 44,
+          "source": "title"
+        },
+        {
+          "entity": "Panama",
+          "label": "LOC",
+          "start": 62,
+          "end": 68,
+          "source": "title"
+        },
+        {
+          "entity": "Bogotá",
+          "label": "LOC",
+          "start": 42,
+          "end": 48,
+          "source": "description"
+        },
+        {
+          "entity": "Nicaragua",
+          "label": "LOC",
+          "start": 84,
+          "end": 94,
+          "source": "description"
+        },
+        {
+          "entity": "Panama City",
+          "label": "LOC",
+          "start": 106,
+          "end": 117,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "be3fe0ecc7c53c7a14fc3ad7c699bd60",
+      "providerId": "New York Times",
+      "title": "A Night in Kashmir, Caught Between India and Pakistan’s Fight",
+      "description": "Far from the missile strikes and drone combat that grabbed the world’s attention, ordinary Kashmiris suffer the heaviest toll of India and Pakistan’s confrontation.",
+      "url": "https://www.nytimes.com/2025/05/11/world/asia/kashmir-conflict-eyewitness.html",
+      "language": "en",
+      "createdAt": "2025-05-11T05:58:55.000+00:00Z",
+      "pubDate": 1746943135,
+      "translatedTitle": "A Night in Kashmir, Caught Between India and Pakistan’s Fight",
+      "translatedDescription": "Far from the missile strikes and drone combat that grabbed the world’s attention, ordinary Kashmiris suffer the heaviest toll of India and Pakistan’s confrontation.",
+      "ner": [
+        {
+          "entity": "Kashmir",
+          "label": "LOC",
+          "start": 11,
+          "end": 18,
+          "source": "title"
+        },
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 35,
+          "end": 40,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 45,
+          "end": 53,
+          "source": "title"
+        },
+        {
+          "entity": "Kashmiris",
+          "label": "MISC",
+          "start": 91,
+          "end": 100,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "b05e28c8839f5ab89ce448157323262d",
+      "providerId": "New York Times",
+      "title": "Can King Charles Heal a Royal Family Crisis Before It’s Too Late?",
+      "description": "Prince Harry’s desperate plea to reconcile with his father highlighted a rupture that could undermine the monarchy’s attempts to model unity.",
+      "url": "https://www.nytimes.com/2025/05/11/world/europe/charles-harry-royal-family-crisis.html",
+      "language": "en",
+      "createdAt": "2025-05-11T19:09:18.000+00:00Z",
+      "pubDate": 1746990558,
+      "translatedTitle": "Can King Charles Heal a Royal Family Crisis Before It’s Too Late?",
+      "translatedDescription": "Prince Harry’s desperate plea to reconcile with his father highlighted a rupture that could undermine the monarchy’s attempts to model unity.",
+      "ner": [
+        {
+          "entity": "Charles",
+          "label": "PER",
+          "start": 9,
+          "end": 16,
+          "source": "title"
+        },
+        {
+          "entity": "Harry",
+          "label": "PER",
+          "start": 7,
+          "end": 12,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "657b41b53326e13d2aaddbd8ec87b126",
+      "providerId": "New York Times",
+      "title": "Can Trump Rename the Persian Gulf?",
+      "description": "His suggestion to call the body of water the “Arabian Gulf” has apparently done the impossible: Unite Iranians.",
+      "url": "https://www.nytimes.com/2025/05/11/world/middleeast/can-trump-rename-the-persian-gulf.html",
+      "language": "en",
+      "createdAt": "2025-05-11T04:01:11.000+00:00Z",
+      "pubDate": 1746936071,
+      "translatedTitle": "Can Trump Rename the Persian Gulf?",
+      "translatedDescription": "His suggestion to call the body of water the “Arabian Gulf” has apparently done the impossible: Unite Iranians.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 4,
+          "end": 9,
+          "source": "title"
+        },
+        {
+          "entity": "Persian Gulf",
+          "label": "LOC",
+          "start": 21,
+          "end": 33,
+          "source": "title"
+        },
+        {
+          "entity": "Arabian Gulf”",
+          "label": "LOC",
+          "start": 46,
+          "end": 59,
+          "source": "description"
+        },
+        {
+          "entity": "Iran",
+          "label": "LOC",
+          "start": 102,
+          "end": 110,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "83470350aa7a66f25ca12239cfba5341",
+      "providerId": "New York Times",
+      "title": "Why America’s ‘Beautiful Beef’ Is a Trade War Sore Point for Europe",
+      "description": "European officials call food safety standards a “red line,” as Trump administration officials criticize rules that keep American beef and other meats off grocery shelves.",
+      "url": "https://www.nytimes.com/2025/05/11/world/europe/tariffs-farm-products-beef-meat-european-union-trump.html",
+      "language": "en",
+      "createdAt": "2025-05-11T16:43:14.000+00:00Z",
+      "pubDate": 1746981794,
+      "translatedTitle": "Why America’s ‘Beautiful Beef’ Is a Trade War Sore Point for Europe",
+      "translatedDescription": "European officials call food safety standards a “red line,” as Trump administration officials criticize rules that keep American beef and other meats off grocery shelves.",
+      "ner": [
+        {
+          "entity": "America",
+          "label": "LOC",
+          "start": 4,
+          "end": 11,
+          "source": "title"
+        },
+        {
+          "entity": "Europe",
+          "label": "LOC",
+          "start": 61,
+          "end": 67,
+          "source": "title"
+        },
+        {
+          "entity": "European",
+          "label": "MISC",
+          "start": 0,
+          "end": 8,
+          "source": "description"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 63,
+          "end": 68,
+          "source": "description"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 120,
+          "end": 128,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "59a4b6e8a98b8c384b87927de6982f9c",
+      "providerId": "New York Times",
+      "title": "Trump’s No. 1 Fan in Greenland: A Bricklayer Turned Political Player",
+      "description": "Jorgen Boassen’s idolization of all things Trump, which has won him friends in Washington and sometimes hostile attention at home, has given him an unlikely new career: political influencer.",
+      "url": "https://www.nytimes.com/2025/05/11/world/europe/greenland-trump-biggest-fan.html",
+      "language": "en",
+      "createdAt": "2025-05-12T16:12:46.000+00:00Z",
+      "pubDate": 1747066366,
+      "translatedTitle": "Trump’s No. 1 Fan in Greenland: A Bricklayer Turned Political Player",
+      "translatedDescription": "Jorgen Boassen’s idolization of all things Trump, which has won him friends in Washington and sometimes hostile attention at home, has given him an unlikely new career: political influencer.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Greenland",
+          "label": "LOC",
+          "start": 21,
+          "end": 30,
+          "source": "title"
+        },
+        {
+          "entity": "Jorgen Boassen",
+          "label": "PER",
+          "start": 0,
+          "end": 14,
+          "source": "description"
+        },
+        {
+          "entity": "Washington",
+          "label": "LOC",
+          "start": 79,
+          "end": 89,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "cae8a88718b7167045a2f8b7c1d9694e",
+      "providerId": "New York Times",
+      "title": "Margot Friedländer, Holocaust Survivor Who Found Her Voice, Dies at 103",
+      "description": "She never spoke of her experience until after her husband’s death, when she returned to Berlin with a mission to tell her story, and to teach tolerance.",
+      "url": "https://www.nytimes.com/2025/05/10/world/europe/margot-friedlander-dead.html",
+      "language": "en",
+      "createdAt": "2025-05-11T00:27:50.000+00:00Z",
+      "pubDate": 1746923270,
+      "translatedTitle": "Margot Friedländer, Holocaust Survivor Who Found Her Voice, Dies AT 103",
+      "translatedDescription": "She never spoke of her experience until after her husband’s death, when she returned to Berlin with a mission to tell her story, and to teach tolerance.",
+      "ner": [
+        {
+          "entity": "Margot Friedländer",
+          "label": "PER",
+          "start": 0,
+          "end": 18,
+          "source": "title"
+        },
+        {
+          "entity": "Holocaust Survivor",
+          "label": "MISC",
+          "start": 20,
+          "end": 38,
+          "source": "title"
+        },
+        {
+          "entity": "Berlin",
+          "label": "LOC",
+          "start": 88,
+          "end": 94,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "71b47f3b634cac81a9cdd50d13642833",
+      "providerId": "New York Times",
+      "title": "How Front Pages Around the World Covered the Selection of Pope Leo XIV",
+      "description": "In a digital age, the front pages of print newspapers can still capture a historic moment as they did on Friday with word-playing headlines, splashy photos and a dose of solemnity.",
+      "url": "https://www.nytimes.com/2025/05/10/world/europe/pope-leo-news-front-pages.html",
+      "language": "en",
+      "createdAt": "2025-05-10T23:07:17.000+00:00Z",
+      "pubDate": 1746918437,
+      "translatedTitle": "How Front Pages Around the World Covered the Selection of Pope Leo XIV",
+      "translatedDescription": "In a digital age, the front pages of print newspapers can still capture a historic moment as they did on Friday with word-playing headlines, splashy photos and a dose of solemnity.",
+      "ner": [
+        {
+          "entity": "Pope",
+          "label": "MISC",
+          "start": 58,
+          "end": 62,
+          "source": "title"
+        },
+        {
+          "entity": "Leo Xiv",
+          "label": "PER",
+          "start": 63,
+          "end": 70,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "7ba306e4d11c48a3a25a30007d54af35",
+      "providerId": "New York Times",
+      "title": "How Xi and Putin Got Closer",
+      "description": "In terms of geopolitical bromances, this is it. David Pierson, a foreign correspondent for The New York Times covering China, explains how President Vladimir V. Putin of Russia and Xi Jinping, the leader of China, are closer than ever before.",
+      "url": "https://www.nytimes.com/video/world/asia/100000010157380/how-xi-and-putin-got-closer.html",
+      "language": "en",
+      "createdAt": "2025-05-10T20:44:22.000+00:00Z",
+      "pubDate": 1746909862,
+      "translatedTitle": "How Xi and Putin Got Closer",
+      "translatedDescription": "In terms of geopolitical bromances, this is it. David Pierson, a foreign correspondent for The New York Times covering China, explains how President Vladimir V. Putin of Russia and Xi Jinping, the leader of China, are closer than ever before.",
+      "ner": [
+        {
+          "entity": "Xi",
+          "label": "PER",
+          "start": 4,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Putin",
+          "label": "PER",
+          "start": 11,
+          "end": 16,
+          "source": "title"
+        },
+        {
+          "entity": "David Pierson",
+          "label": "PER",
+          "start": 48,
+          "end": 61,
+          "source": "description"
+        },
+        {
+          "entity": "The New York Times",
+          "label": "ORG",
+          "start": 91,
+          "end": 109,
+          "source": "description"
+        },
+        {
+          "entity": "China",
+          "label": "LOC",
+          "start": 119,
+          "end": 124,
+          "source": "description"
+        },
+        {
+          "entity": "Vladimir V. Putin",
+          "label": "PER",
+          "start": 149,
+          "end": 166,
+          "source": "description"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 170,
+          "end": 176,
+          "source": "description"
+        },
+        {
+          "entity": "Xi Jinping",
+          "label": "PER",
+          "start": 181,
+          "end": 191,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "a83812f0eff2105c4cb57174ae3dd597",
+      "providerId": "New York Times",
+      "title": "What We Know About the Terrorist Groups India Said It Targeted",
+      "description": "India has accused Pakistan of continuing to support Lashkar-e-Taiba and Jaish-e-Muhammad. Pakistan has rejected those claims.",
+      "url": "https://www.nytimes.com/2025/05/10/world/asia/what-is-lashkar-e-taiba-pakistan-kashmir-terror-groups.html",
+      "language": "en",
+      "createdAt": "2025-05-10T14:49:18.000+00:00Z",
+      "pubDate": 1746888558,
+      "translatedTitle": "What We Know About the Terrorist Groups India Said It Targeted",
+      "translatedDescription": "India has accused Pakistan of continuing to support Lashkar-e-Taiba and Jaish-e-Muhammad. Pakistan has rejected those claims.",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 40,
+          "end": 45,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 18,
+          "end": 26,
+          "source": "description"
+        },
+        {
+          "entity": "Lashkar-",
+          "label": "MISC",
+          "start": 52,
+          "end": 60,
+          "source": "description"
+        },
+        {
+          "entity": "Jaish-e-Muhammad",
+          "label": "ORG",
+          "start": 72,
+          "end": 88,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "2c5bfdb50eaa8f99e96a6c652238d20b",
+      "providerId": "New York Times",
+      "title": "World Catholics See the First American Pope as Hardly American",
+      "description": "Catholics around the world were skeptical at first about an American pope. But Pope Leo XIV’s multicultural and multilingual identity has put them at ease.",
+      "url": "https://www.nytimes.com/2025/05/10/world/americas/pope-leo-american-popular-world-reaction.html",
+      "language": "en",
+      "createdAt": "2025-05-10T19:27:57.000+00:00Z",
+      "pubDate": 1746905277,
+      "translatedTitle": "World Catholics See the First American Pope as Hardly American",
+      "translatedDescription": "Catholics around the world were skeptical at first about an American pope. But Pope Leo XIV’s multicultural and multilingual identity has put them at ease.",
+      "ner": [
+        {
+          "entity": "World Catholics",
+          "label": "MISC",
+          "start": 0,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 54,
+          "end": 62,
+          "source": "title"
+        },
+        {
+          "entity": "Catholics",
+          "label": "MISC",
+          "start": 0,
+          "end": 9,
+          "source": "description"
+        },
+        {
+          "entity": "Pope",
+          "label": "PER",
+          "start": 79,
+          "end": 83,
+          "source": "description"
+        },
+        {
+          "entity": "Leo Xiv",
+          "label": "PER",
+          "start": 84,
+          "end": 91,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "4714813f026d38449da21ddf907772a8",
+      "providerId": "New York Times",
+      "title": "India and Pakistan, old enemies, had a new weapon this time: drones.",
+      "description": "",
+      "url": "https://www.nytimes.com/live/2025/05/10/world/pakistan-india-kashmir/india-and-pakistan-old-enemies-had-a-new-weapon-this-time-drones",
+      "language": "en",
+      "createdAt": "2025-05-10T14:23:38.000+00:00Z",
+      "pubDate": 1746887018,
+      "translatedTitle": "India and Pakistan, old enemies, had a new weapon this time: drones.",
+      "translatedDescription": "",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 10,
+          "end": 18,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "13bbc93a3bc52ebea4609eb4bc007608",
+      "providerId": "New York Times",
+      "title": "Pope Leo XIV Outlines Path for Catholic Church That Follows in Francis’ Steps",
+      "description": "The new pope said he would be guided by a key document that his predecessor wrote listing the church’s priorities, including a “loving care for the least and the rejected.”",
+      "url": "https://www.nytimes.com/2025/05/10/world/europe/leo-xiv-pope-francis-catholic-church.html",
+      "language": "en",
+      "createdAt": "2025-05-10T18:36:08.000+00:00Z",
+      "pubDate": 1746902168,
+      "translatedTitle": "Pope Leo XIV Outlines Path for Catholic Church That Follows in Francis’ Steps",
+      "translatedDescription": "The new pope said he would be guided by a key document that his predecessor wrote listing the church’s priorities, including a “loving care for the least and the rejected.”",
+      "ner": [
+        {
+          "entity": "Pope",
+          "label": "MISC",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Catholic Church",
+          "label": "MISC",
+          "start": 31,
+          "end": 46,
+          "source": "title"
+        },
+        {
+          "entity": "Francis",
+          "label": "PER",
+          "start": 63,
+          "end": 70,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "a6b7c8408e5115dfab2e99f941c87a58",
+      "providerId": "New York Times",
+      "title": "Here’s the latest.",
+      "description": "",
+      "url": "https://www.nytimes.com/live/2025/05/10/world/pakistan-india-kashmir/india-pakistan-truce-trump",
+      "language": "en",
+      "createdAt": "2025-05-10T19:38:37.000+00:00Z",
+      "pubDate": 1746905917,
+      "translatedTitle": "Here’s the latest.",
+      "translatedDescription": "",
+      "ner": []
+    },
+    {
+      "id": "51aa8d037b276bcaefb7a24ec9ca717b",
+      "providerId": "New York Times",
+      "title": "European Leaders Visit Ukraine and Press Russia for a 30-Day Cease-Fire",
+      "description": "Faced with the threat of new sanctions, President Vladimir V. Putin called for direct talks between Ukraine and Russia in the coming days.",
+      "url": "https://www.nytimes.com/2025/05/10/world/europe/ukraine-war-visit-starmer-macron-zelensky-merz.html",
+      "language": "en",
+      "createdAt": "2025-05-11T06:39:16.000+00:00Z",
+      "pubDate": 1746945556,
+      "translatedTitle": "European Leaders Visit Ukraine and Press Russia for a 30-Day Cease-Fire",
+      "translatedDescription": "Faced with the threat of new sanctions, President Vladimir V. Putin called for direct talks between Ukraine and Russia in the coming days.",
+      "ner": [
+        {
+          "entity": "European",
+          "label": "MISC",
+          "start": 0,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 23,
+          "end": 30,
+          "source": "title"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 41,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Vladimir V",
+          "label": "PER",
+          "start": 50,
+          "end": 60,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "bdd39b719536d6f420fc20440056a368",
+      "providerId": "New York Times",
+      "title": "Plot Twists",
+      "description": "The best art makes us question the received ideas we’ve internalized and, just maybe, offers us ideas for living differently.",
+      "url": "https://www.nytimes.com/2025/05/10/briefing/plot-twists.html",
+      "language": "en",
+      "createdAt": "2025-05-12T14:55:18.000+00:00Z",
+      "pubDate": 1747061718,
+      "translatedTitle": "Plot Twists",
+      "translatedDescription": "The best art makes us question the received ideas we’ve internalized and, just maybe, offers us ideas for living differently.",
+      "ner": []
+    },
+    {
+      "id": "aa422394b55a6f334c3ad6f7f1198c7b",
+      "providerId": "New York Times",
+      "title": "The Shifting Conversation Around Canada’s Opioid Crisis",
+      "description": "President Trump’s claims about fentanyl trafficking have played a role in refocusing Canada’s attention on border control.",
+      "url": "https://www.nytimes.com/2025/05/10/world/canada/canada-fentanyl-ports.html",
+      "language": "en",
+      "createdAt": "2025-05-10T10:00:06.000+00:00Z",
+      "pubDate": 1746871206,
+      "translatedTitle": "The Shifting Conversation Around Canada’s Opioid Crisis",
+      "translatedDescription": "President Trump’s claims about fentanyl trafficking have played a role in refocusing Canada’s attention on border control.",
+      "ner": [
+        {
+          "entity": "Canada",
+          "label": "LOC",
+          "start": 33,
+          "end": 39,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 10,
+          "end": 15,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "fe47f1f784a66268fd35816183fce12e",
+      "providerId": "New York Times",
+      "title": "Lay Catholics Expected to Retain Big Role in Pope Leo XIV’s Church",
+      "description": "When still a cardinal, the new pope led discussions on key issues facing the church during which “every voice had equal value,” whether an archbishop or an unordained believer.",
+      "url": "https://www.nytimes.com/2025/05/10/world/europe/pope-leo-xiv-lay-catholics-synodal.html",
+      "language": "en",
+      "createdAt": "2025-05-10T09:03:01.000+00:00Z",
+      "pubDate": 1746867781,
+      "translatedTitle": "Lay Catholics Expected to Retain Big Role in Pope Leo XIV’s Church",
+      "translatedDescription": "When still a cardinal, the new pope led discussions on key issues facing the church during which “every voice had equal value,” whether an archbishop or an unordained believer.",
+      "ner": [
+        {
+          "entity": "Lay",
+          "label": "MISC",
+          "start": 0,
+          "end": 3,
+          "source": "title"
+        },
+        {
+          "entity": "Catholics",
+          "label": "MISC",
+          "start": 4,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Pope",
+          "label": "MISC",
+          "start": 45,
+          "end": 49,
+          "source": "title"
+        },
+        {
+          "entity": "Leo Xiv",
+          "label": "PER",
+          "start": 50,
+          "end": 57,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "94a11e29aba2cdc88c46f766b33c7381",
+      "providerId": "New York Times",
+      "title": "Putin Puts On Show of Defiance as Cease-fire Talks Drag On",
+      "description": "Russia’s president used the celebration of victory in World War II to highlight the resources he has to keep fighting in Ukraine.",
+      "url": "https://www.nytimes.com/2025/05/10/world/europe/putin-russia-victory-day-parade.html",
+      "language": "en",
+      "createdAt": "2025-05-10T10:49:22.000+00:00Z",
+      "pubDate": 1746874162,
+      "translatedTitle": "Putin Puts On Show of Defiance as Cease-fire Talks Drag On",
+      "translatedDescription": "Russia’s president used the celebration of victory in World War II to highlight the resources he has to keep fighting in Ukraine.",
+      "ner": [
+        {
+          "entity": "Putin",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "description"
+        },
+        {
+          "entity": "World War II",
+          "label": "MISC",
+          "start": 54,
+          "end": 66,
+          "source": "description"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 121,
+          "end": 128,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "a7941ff693288f735d3d4723629fc9c9",
+      "providerId": "New York Times",
+      "title": "Europe Wants to Arm Ukraine, but It’s Losing a Race Against Time",
+      "description": "President Trump’s insistence that the United States do less toward securing Europe means that allies, scrambling to arm themselves, have less to give to Ukraine.",
+      "url": "https://www.nytimes.com/2025/05/10/world/europe/eu-ukraine-weapons.html",
+      "language": "en",
+      "createdAt": "2025-05-10T11:06:53.000+00:00Z",
+      "pubDate": 1746875213,
+      "translatedTitle": "Europe Wants to Arm Ukraine, but It’s Losing a Race Against Time",
+      "translatedDescription": "President Trump’s insistence that the United States do less toward securing Europe means that allies, scrambling to arm themselves, have less to give to Ukraine.",
+      "ner": [
+        {
+          "entity": "Europe",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 20,
+          "end": 27,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 10,
+          "end": 15,
+          "source": "description"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 38,
+          "end": 51,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "56682c05dc9635de3cd5b14c061c7f0b",
+      "providerId": "New York Times",
+      "title": "Another Casualty of the Trade Wars? Burgers Made With Brazilian Beef",
+      "description": "Americans are eating record amounts of Brazilian beef. Now, tariffs and trade wars could push up U.S. prices and send more of it to China.",
+      "url": "https://www.nytimes.com/2025/05/10/world/americas/trade-war-burgers-brazil-meat.html",
+      "language": "en",
+      "createdAt": "2025-05-10T09:00:19.000+00:00Z",
+      "pubDate": 1746867619,
+      "translatedTitle": "Another Casualty of the Trade Wars? Burgers Made With Brazilian Beef",
+      "translatedDescription": "Americans are eating record amounts of Brazilian beef. Now, tariffs and trade wars could push up U.S. prices and send more of it to China.",
+      "ner": [
+        {
+          "entity": "Trade Wars",
+          "label": "MISC",
+          "start": 24,
+          "end": 34,
+          "source": "title"
+        },
+        {
+          "entity": "Brazil",
+          "label": "LOC",
+          "start": 54,
+          "end": 67,
+          "source": "title"
+        },
+        {
+          "entity": "Americans",
+          "label": "MISC",
+          "start": 0,
+          "end": 9,
+          "source": "description"
+        },
+        {
+          "entity": "China",
+          "label": "LOC",
+          "start": 132,
+          "end": 137,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "0f6d7e07f7607caa039fbab971439384",
+      "providerId": "New York Times",
+      "title": "India and Pakistan Announce Cease-Fire but Clashes Persist",
+      "description": "President Trump also announced the truce, saying it had been mediated by the United States, although only Pakistan quickly acknowledged an American role.",
+      "url": "https://www.nytimes.com/2025/05/10/world/asia/india-pakistan-conflict.html",
+      "language": "en",
+      "createdAt": "2025-05-11T14:29:23.000+00:00Z",
+      "pubDate": 1746973763,
+      "translatedTitle": "India and Pakistan Announce Cease-Fire but Clashes Persist",
+      "translatedDescription": "President Trump also announced the truce, saying it had been mediated by the United States, although only Pakistan quickly acknowledged an American role.",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 10,
+          "end": 18,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 10,
+          "end": 15,
+          "source": "description"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 77,
+          "end": 90,
+          "source": "description"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 139,
+          "end": 147,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "ce0c6e2a9bd890cb7053959093d7f63d",
+      "providerId": "New York Times",
+      "title": "Billionaires’ Battle Over a Sculpture Exposes a Mysterious Art Market",
+      "description": "David Geffen and Justin Sun’s unusually public dispute over ownership of a Giacometti sculpture valued at tens of millions of dollars gives a glimpse into a shrouded world.",
+      "url": "https://www.nytimes.com/2025/05/10/world/europe/geffen-sun-giacometti-nez.html",
+      "language": "en",
+      "createdAt": "2025-05-10T04:01:13.000+00:00Z",
+      "pubDate": 1746849673,
+      "translatedTitle": "Billionaires’ Battle Over a Sculpture Exposes a Mysterious Art Market",
+      "translatedDescription": "David Geffen and Justin Sun’s unusually public dispute over ownership of a Giacometti sculpture valued at tens of millions of dollars gives a glimpse into a shrouded world.",
+      "ner": [
+        {
+          "entity": "David Geffen",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "description"
+        },
+        {
+          "entity": "Justin Sun",
+          "label": "PER",
+          "start": 17,
+          "end": 27,
+          "source": "description"
+        },
+        {
+          "entity": "Giacometti",
+          "label": "PER",
+          "start": 75,
+          "end": 85,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "198bb87b65caa028db4598dfea84af7d",
+      "providerId": "New York Times",
+      "title": "This Is the Trade Conflict Xi Jinping Has Been Waiting For",
+      "description": "For years, the leader of China has planned to make the world dependent on its exports and know-how. But the strategy has costs for his own country.",
+      "url": "https://www.nytimes.com/2025/05/10/world/asia/xi-jinping-china-trade-war.html",
+      "language": "en",
+      "createdAt": "2025-05-11T02:18:29.000+00:00Z",
+      "pubDate": 1746929909,
+      "translatedTitle": "This Is the Trade Conflict Xi Jinping Has Been Waiting For",
+      "translatedDescription": "For years, the leader of China has planned to make the world dependent on its exports and know-how. But the strategy has costs for his own country.",
+      "ner": [
+        {
+          "entity": "Xi Jinping",
+          "label": "PER",
+          "start": 27,
+          "end": 37,
+          "source": "title"
+        },
+        {
+          "entity": "China",
+          "label": "LOC",
+          "start": 25,
+          "end": 30,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "e31f57cf5c1d0d3557f1128cf1506d9a",
+      "providerId": "New York Times",
+      "title": "How Macron Became a Close Zelensky Ally",
+      "description": "The French and Ukrainian presidents have a particular bond, built on a common goal of protecting Ukraine and deflecting Russia.",
+      "url": "https://www.nytimes.com/2025/05/10/world/europe/macron-zelensky-relationship.html",
+      "language": "en",
+      "createdAt": "2025-05-10T08:12:37.000+00:00Z",
+      "pubDate": 1746864757,
+      "translatedTitle": "How Macron Became a Close Zelensky Ally",
+      "translatedDescription": "The French and Ukrainian presidents have a particular bond, built on a common goal of protecting Ukraine and deflecting Russia.",
+      "ner": [
+        {
+          "entity": "Macron",
+          "label": "PER",
+          "start": 4,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Close",
+          "label": "MISC",
+          "start": 20,
+          "end": 25,
+          "source": "title"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 4,
+          "end": 10,
+          "source": "description"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 15,
+          "end": 24,
+          "source": "description"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 120,
+          "end": 126,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "f91647edd99360d50d8c2f62a8668b2b",
+      "providerId": "New York Times",
+      "title": "In Pope Leo, Some in MAGA Movement See an Antagonist",
+      "description": "While President Trump welcomed the U.S.-born cardinal as the new pope, top Trump allies criticized Leo XIV for his similarities to Pope Francis.",
+      "url": "https://www.nytimes.com/2025/05/09/us/pope-leo-maga-donald-trump-steve-bannon.html",
+      "language": "en",
+      "createdAt": "2025-05-10T03:44:09.000+00:00Z",
+      "pubDate": 1746848649,
+      "translatedTitle": "In Pope Leo, Some in MAGA Movement See an Antagonist",
+      "translatedDescription": "While President Trump welcomed the U.S.-born cardinal as the new pope, top Trump allies criticized Leo XIV for his similarities to Pope Francis.",
+      "ner": [
+        {
+          "entity": "Pope",
+          "label": "PER",
+          "start": 3,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "MAGA Movement",
+          "label": "ORG",
+          "start": 21,
+          "end": 34,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 16,
+          "end": 21,
+          "source": "description"
+        },
+        {
+          "entity": "Leo Xiv",
+          "label": "PER",
+          "start": 99,
+          "end": 106,
+          "source": "description"
+        },
+        {
+          "entity": "Francis",
+          "label": "PER",
+          "start": 136,
+          "end": 143,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "9f869be3afce0e0c35bf71a5351417a2",
+      "providerId": "RTS",
+      "title": "Crash du MH17 : l'agence de l'ONU pour l'aviation civile juge la Russie responsable",
+      "description": "L'Organisation de l'aviation civile internationale a estimé lundi que la Russie était responsable du crash du MH17 en 2014 au-dessus de l'Ukraine et que les plaintes déposées par l'Australie et les Pays-Bas - deux pays les plus touchés par ce drame - étaient \"fondées en fait et en droit\".",
+      "url": "https://www.france24.com/fr/europe/20250513-crash-mh17-agence-onu-pour-aviation-civile-oaci-juge-russie-responsable",
+      "language": "en",
+      "createdAt": "2025-05-13T03:23:49.000+00:00Z",
+      "pubDate": 1747106629,
+      "translatedTitle": "MH17 crash: the UN agency for civil aviation judges responsible Russia",
+      "translatedDescription": "The organization of international civil aviation estimated on Monday that Russia was responsible for the MH17 crash in 2014 above Ukraine and that the complaints filed by Australia and the Netherlands - two countries most affected by this drama - were \"founded in fact and in law\".",
+      "ner": [
+        {
+          "entity": "MH17",
+          "label": "MISC",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "UN",
+          "label": "ORG",
+          "start": 16,
+          "end": 18,
+          "source": "title"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 64,
+          "end": 70,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 130,
+          "end": 137,
+          "source": "description"
+        },
+        {
+          "entity": "Australia",
+          "label": "LOC",
+          "start": 171,
+          "end": 180,
+          "source": "description"
+        },
+        {
+          "entity": "Netherlands",
+          "label": "LOC",
+          "start": 189,
+          "end": 200,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "738601da7a2021e8a0a61c8276181d3a",
+      "providerId": "RTS",
+      "title": "L'Ukraine accuse la Russie d'ignorer l'appel au cessez-le-feu",
+      "description": "Le président ukrainien a regretté lundi soir le \"silence\" de Moscou après la demande de cessez-le-feu de 30 jours formulée par Kiev et ses alliés. L'Ukraine accuse la Russie d'avoir lancé des dizaines d'attaques le long de la ligne de front, ainsi qu'un assaut impliquant plus de 100 drones.",
+      "url": "https://www.france24.com/fr/europe/20250513-ukraine-accuse-russie-ignorer-appel-cessez-le-feu-zelensky-poutine",
+      "language": "en",
+      "createdAt": "2025-05-13T01:17:45.000+00:00Z",
+      "pubDate": 1747099065,
+      "translatedTitle": "Ukraine accuses Russia of ignoring the call to the ceasefire",
+      "translatedDescription": "The Ukrainian president regretted Moscow's \"silence\" on Monday evening after the 30-day ceasefire request made by kyiv and his allies. Ukraine accuses Russia of having launched dozens of attacks along the front line, as well as an assault involving more than 100 drones.",
+      "ner": [
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 16,
+          "end": 22,
+          "source": "title"
+        },
+        {
+          "entity": "Moscow",
+          "label": "LOC",
+          "start": 34,
+          "end": 40,
+          "source": "description"
+        },
+        {
+          "entity": "yi",
+          "label": "LOC",
+          "start": 115,
+          "end": 117,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "001ebc31e5a00da968a57db84a994276",
+      "providerId": "RTS",
+      "title": "Trêve de 90 jours dans la guerre commerciale entre la Chine et les Etats-Unis",
+      "description": "Il n'aura fallu que 48h de discussions à Genève pour enterrer la hache de guerre commerciale entre Pékin et Washington et parvenir à une pause de 90 jours, à compter du 14 mai. Les taxes américaines sur les importations chinoises passent de 145 % à 30 %, les surtaxes chinoises sur les importations américaines reculent, elles, de 125 % à 10 %.Le 9 avril dernier, Donald Trump accusait la Chine de « piller » son pays. Aujourd'hui, le ton du républicain a bien changé, il évoque désormais de \"très bonnes\" relations avec l'autre principale puissance économique au monde. Mais dans ces semaines où les surtaxes étaient au plus haut des deux côtés du Pacifique, près de 600 milliards $ d'échanges bilatéraux ont été paralysés, affectant les chaînes d'approvisionnement et entraînant des licenciements.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/info-%C3%A9co/20250512-tr%C3%AAve-de-90-jours-dans-la-guerre-commerciale-entre-la-chine-et-les-etats-unis",
+      "language": "en",
+      "createdAt": "2025-05-12T21:47:17.000+00:00Z",
+      "pubDate": 1747086437,
+      "translatedTitle": "90-day truce in the trade war between China and the United States",
+      "translatedDescription": "It only took a 48 -hour discussion in Geneva to bury the ax of trade war between Beijing and Washington and reach a 90 -day break from May 14. American taxes on Chinese imports drop from 145% to 30%, Chinese surcharge on American imports retreat from 125% to 10%. April 9, Donald Trump accused China of \"looting\" his country. Today, the tone of the Republican has changed a lot, it now evokes \"very good\" relations with the other main economic power in the world. But in these weeks when the surcharge was at the highest on both sides of the Pacific, nearly $ 600 billion in bilateral exchanges were paralyzed, affecting supply chains and causing layoffs.",
+      "ner": [
+        {
+          "entity": "China",
+          "label": "LOC",
+          "start": 38,
+          "end": 43,
+          "source": "title"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 52,
+          "end": 65,
+          "source": "title"
+        },
+        {
+          "entity": "Geneva",
+          "label": "LOC",
+          "start": 38,
+          "end": 44,
+          "source": "description"
+        },
+        {
+          "entity": "Beijing",
+          "label": "LOC",
+          "start": 81,
+          "end": 88,
+          "source": "description"
+        },
+        {
+          "entity": "Washington",
+          "label": "LOC",
+          "start": 93,
+          "end": 103,
+          "source": "description"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 143,
+          "end": 151,
+          "source": "description"
+        },
+        {
+          "entity": "Chinese",
+          "label": "MISC",
+          "start": 161,
+          "end": 168,
+          "source": "description"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 273,
+          "end": 285,
+          "source": "description"
+        },
+        {
+          "entity": "Republican",
+          "label": "MISC",
+          "start": 349,
+          "end": 359,
+          "source": "description"
+        },
+        {
+          "entity": "Pacific",
+          "label": "LOC",
+          "start": 542,
+          "end": 549,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "9da42839148263cb57392056397692e1",
+      "providerId": "RTS",
+      "title": "PDCI : Tidjane Thiam quitte la présidence",
+      "description": "L'opposant ivoirien Tidjane Thiam a annoncé démissionner de la présidence du Parti démocratique de Côte d'Ivoire (PDCI), principale formation d'opposition, mais devrait se faire réélire dès mercredi lors d'un congrès, pour mettre fin à une saga judiciaire contestant sa légitimité. À moins de six mois du scrutin, le climat politique est tendu en Côte d'Ivoire, où plusieurs opposants de premier plan, dont M. Thiam, ont été déclarés inéligibles.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/journal-de-l-afrique/20250512-pdci-tidjane-thiam-quitte-la-pr%C3%A9sidence",
+      "language": "en",
+      "createdAt": "2025-05-12T21:16:54.000+00:00Z",
+      "pubDate": 1747084614,
+      "translatedTitle": "PDCI: Tidjane Thiam leaves the presidency",
+      "translatedDescription": "The Ivorian opponent Tidjane Thiam announced to resign from the presidency of the Democratic Party of Côte d'Ivoire (PDCI), the main opposition training, but should be re -elected on Wednesday during a congress, to end a judicial saga contesting its legitimacy. Less than six months of the ballot, the political climate is tense in Côte d'Ivoire, where several leading opponents, including Mr. Thiam, were declared ineligible.",
+      "ner": [
+        {
+          "entity": "PDCI",
+          "label": "ORG",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Tidjane Thiam",
+          "label": "PER",
+          "start": 6,
+          "end": 19,
+          "source": "title"
+        },
+        {
+          "entity": "vorian",
+          "label": "MISC",
+          "start": 5,
+          "end": 11,
+          "source": "description"
+        },
+        {
+          "entity": "Cote d'Ivoire",
+          "label": "ORG",
+          "start": 82,
+          "end": 115,
+          "source": "description"
+        },
+        {
+          "entity": "Côte d'Ivoire",
+          "label": "LOC",
+          "start": 332,
+          "end": 345,
+          "source": "description"
+        },
+        {
+          "entity": "Thiam",
+          "label": "PER",
+          "start": 394,
+          "end": 399,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "00f88214f6d0b4242da4d862b4c9f4b2",
+      "providerId": "RTS",
+      "title": "Emmanuel Macron en train de prendre de la cocaïne ? De la poudre aux yeux",
+      "description": "L'intox a cumulé plus de 75 millions de vues. Dans le train qui le menait à Kiev, aux côtés du Premier Ministre britannique Keir Starmer et du chancelier allemand Friedrich Merz, Emmanuel Macron est accusé d’avoir consommé et dissimulé un sachet de cocaïne.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/info-ou-intox/20250512-emmanuel-macron-en-train-de-prendre-de-la-coca%C3%AFne-de-la-poudre-aux-yeux",
+      "language": "en",
+      "createdAt": "2025-05-12T20:40:46.000+00:00Z",
+      "pubDate": 1747082446,
+      "translatedTitle": "Emmanuel Macron taking cocaine? Eye powder",
+      "translatedDescription": "The intoxication has accumulated more than 75 million views. On the train that led him to kyiv, alongside British Prime Minister Keir Starmer and German Chancellor Friedrich Merz, Emmanuel Macron is accused of consuming and hidden a sachet of cocaine.",
+      "ner": [
+        {
+          "entity": "Emmanuel Macron",
+          "label": "PER",
+          "start": 0,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "yiv",
+          "label": "LOC",
+          "start": 91,
+          "end": 94,
+          "source": "description"
+        },
+        {
+          "entity": "British",
+          "label": "MISC",
+          "start": 106,
+          "end": 113,
+          "source": "description"
+        },
+        {
+          "entity": "Keir Starmer",
+          "label": "PER",
+          "start": 129,
+          "end": 141,
+          "source": "description"
+        },
+        {
+          "entity": "German",
+          "label": "MISC",
+          "start": 146,
+          "end": 152,
+          "source": "description"
+        },
+        {
+          "entity": "Friedrich Merz",
+          "label": "PER",
+          "start": 164,
+          "end": 178,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "82fea0015c6c00a8f2d4557a02b0fa78",
+      "providerId": "RTS",
+      "title": "La chaîne Al Jazeera va de nouveau pouvoir être diffusée dans les Territoires palestiniens",
+      "description": "Al Jazeera a été de nouveau autorisée à reprendre ses activités et sa diffusion dans les Territoires palestiniens, a déclaré lundi son chef de bureau. Une décision qui intervient plusieurs mois après l'interdiction de la chaîne qatarie par l'Autorité palestinienne, qui l'accusait d'\"incitation à la sédition\" et d'\"ingérence\".",
+      "url": "https://www.france24.com/fr/moyen-orient/20250512-la-cha%C3%AEne-al-jazeera-va-de-nouveau-pouvoir-%C3%AAtre-diffus%C3%A9e-dans-les-territoires-palestiniens",
+      "language": "en",
+      "createdAt": "2025-05-12T20:01:16.000+00:00Z",
+      "pubDate": 1747080076,
+      "translatedTitle": "The Al Jazeera channel will again be able to be broadcast in the Palestinian territories",
+      "translatedDescription": "Al Jazeera was again authorized to resume its activities and its dissemination in the Palestinian territories, his head of office said on Monday. A decision which comes several months after the ban on the Qatari chain by the Palestinian authority, which accused him of \"incentive to sedition\" and \"interference\".",
+      "ner": [
+        {
+          "entity": "Al Jazeera",
+          "label": "ORG",
+          "start": 4,
+          "end": 14,
+          "source": "title"
+        },
+        {
+          "entity": "Palestine",
+          "label": "LOC",
+          "start": 65,
+          "end": 76,
+          "source": "title"
+        },
+        {
+          "entity": "Qatar",
+          "label": "LOC",
+          "start": 205,
+          "end": 211,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "26fbdcef77e571016ac36bb8550e6690",
+      "providerId": "RTS",
+      "title": "La France cherche-t-elle à influencer le choix du nouveau Pape ?",
+      "description": "Alors que s'est ouvert le conclave pour désigner un successeur au Pape François, Emmanuel Macron est accusé notamment par plusieurs titres de la presse italienne, de vouloir œuvrer à l'élection du nouveau pontife. L'Elysée dément toute forme d'ingérence.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/info-ou-intox/20250512-la-france-cherche-t-elle-%C3%A0-influencer-le-choix-du-nouveau-pape",
+      "language": "en",
+      "createdAt": "2025-05-12T19:47:25.000+00:00Z",
+      "pubDate": 1747079245,
+      "translatedTitle": "Does France seek to influence the choice of the new Pope?",
+      "translatedDescription": "While the conclave opened to designate a successor to Pope Francis, Emmanuel Macron is accused in particular by several titles of the Italian press, of wanting to work in the election of the new pontiff. The Elysée denies any form of interference.",
+      "ner": [
+        {
+          "entity": "France",
+          "label": "LOC",
+          "start": 5,
+          "end": 11,
+          "source": "title"
+        },
+        {
+          "entity": "Pope",
+          "label": "PER",
+          "start": 54,
+          "end": 58,
+          "source": "description"
+        },
+        {
+          "entity": "Francis",
+          "label": "PER",
+          "start": 59,
+          "end": 66,
+          "source": "description"
+        },
+        {
+          "entity": "Emmanuel Macron",
+          "label": "PER",
+          "start": 68,
+          "end": 83,
+          "source": "description"
+        },
+        {
+          "entity": "Italy",
+          "label": "LOC",
+          "start": 134,
+          "end": 141,
+          "source": "description"
+        },
+        {
+          "entity": "Elysée",
+          "label": "ORG",
+          "start": 208,
+          "end": 214,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "6d17177568856ae6e4a3ca72179a1142",
+      "providerId": "RTS",
+      "title": "Macron, le mouchoir et la cocaïne : histoire d'une fake news et de ses \"idiots utiles\"",
+      "description": "Lors d'une réunion entre Emmanuel Macron, Friedrich Merz et Keir Starmer dans un train en direction de Kiev, une simple image d’un mouchoir a suffi pour déclencher une vaste campagne de désinformation. Relayée par des figures d’extrême droite et des comptes prorusses, la rumeur a pris une ampleur telle que l’Élysée a dû démentir. Pour France 24, Tristan Mendès France décrypte cette séquence.",
+      "url": "https://www.france24.com/fr/%C3%A9co-tech/20250512-macron-le-mouchoir-et-la-coca%C3%AFne-histoire-d-une-fake-news-et-de-ses-idiots-utiles",
+      "language": "en",
+      "createdAt": "2025-05-12T19:39:17.000+00:00Z",
+      "pubDate": 1747078757,
+      "translatedTitle": "Macron, handkerchief and cocaine: story of a fake news and its \"useful idiots\"",
+      "translatedDescription": "During a meeting between Emmanuel Macron, Friedrich Merz and Keir Starmer in a train towards kyiv, a simple image of a handkerchief was enough to trigger a large disinformation campaign. Relayed by extreme right figures and prorussian accounts, the rumor has gained momentum that the Élysée had to deny. For France 24, Tristan Mendès France deciphers this sequence.",
+      "ner": [
+        {
+          "entity": "Macron",
+          "label": "PER",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Emmanuel Macron",
+          "label": "PER",
+          "start": 25,
+          "end": 40,
+          "source": "description"
+        },
+        {
+          "entity": "Friedrich Merz",
+          "label": "PER",
+          "start": 42,
+          "end": 56,
+          "source": "description"
+        },
+        {
+          "entity": "Keir Starmer",
+          "label": "PER",
+          "start": 61,
+          "end": 73,
+          "source": "description"
+        },
+        {
+          "entity": "yiv",
+          "label": "LOC",
+          "start": 94,
+          "end": 97,
+          "source": "description"
+        },
+        {
+          "entity": "russ",
+          "label": "MISC",
+          "start": 227,
+          "end": 231,
+          "source": "description"
+        },
+        {
+          "entity": "Élysée",
+          "label": "ORG",
+          "start": 284,
+          "end": 290,
+          "source": "description"
+        },
+        {
+          "entity": "France",
+          "label": "ORG",
+          "start": 308,
+          "end": 314,
+          "source": "description"
+        },
+        {
+          "entity": "Tristan Mendès",
+          "label": "PER",
+          "start": 319,
+          "end": 333,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "5728f2f9492eaa112ec31e4fd005bb96",
+      "providerId": "RTS",
+      "title": "Ultra -trail : les réflexions d'Albert Meige, coureur de trail épuisé dans son livre \"Kilomètre 360\"",
+      "description": "Albert Meige a participé à la SwissPeaks360, l'une des courses d'ultra-trail les plus difficiles au monde. Il partage ses réflexions et conseils dans son livre \"Kilomètre 360\" aux éditions Paulsen. Que se passe-t-il dans la tête de l'homme qui court depuis six jours, 360 kilomètres, 26000 mètres de dénivelée à travers les Alpes suisses ? Que perçoivent ses neurones de la réalité, du temps ? Albert Meige démêle les fils de ses souvenirs pour raconter ce voyage extraordinaire. Il était l'invité du journal des sports sur France 24.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250512-ultra-trail-les-r%C3%A9flexions-d-albert-meige-coureur-de-trail-%C3%A9puis%C3%A9-dans-son-livre-kilom%C3%A8tre-360",
+      "language": "en",
+      "createdAt": "2025-05-12T19:31:32.000+00:00Z",
+      "pubDate": 1747078292,
+      "translatedTitle": "Ultra -trail: the reflections of Albert Meige, trail runner exhausted in his book \"Kilometer 360\"",
+      "translatedDescription": "Albert Meige participated in the Swisspeaks360, one of the most difficult ultra-trail races in the world. He shares his reflections and advice in his book \"Kilometer 360\" by Paulsen editions. What happens in the head of the man who has been running for six days, 360 kilometers, 26,000 meters of elevation through the Swiss Alps? What do its neurons of reality perceive, of time? Albert Meige disadvates the sons of his memories to tell this extraordinary journey. He was the guest of the Sports Journal on France 24.",
+      "ner": [
+        {
+          "entity": "Ultra",
+          "label": "MISC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Albert Meige",
+          "label": "PER",
+          "start": 33,
+          "end": 45,
+          "source": "title"
+        },
+        {
+          "entity": "Kilometer 360",
+          "label": "MISC",
+          "start": 83,
+          "end": 96,
+          "source": "title"
+        },
+        {
+          "entity": "Switzerland",
+          "label": "LOC",
+          "start": 33,
+          "end": 46,
+          "source": "description"
+        },
+        {
+          "entity": "Paul",
+          "label": "PER",
+          "start": 174,
+          "end": 178,
+          "source": "description"
+        },
+        {
+          "entity": "Swiss Alps",
+          "label": "LOC",
+          "start": 318,
+          "end": 328,
+          "source": "description"
+        },
+        {
+          "entity": "Sports",
+          "label": "ORG",
+          "start": 489,
+          "end": 495,
+          "source": "description"
+        },
+        {
+          "entity": "France",
+          "label": "ORG",
+          "start": 507,
+          "end": 516,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "4ba79f6bbe12c867a486bbd10e2b04ca",
+      "providerId": "RTS",
+      "title": "Donald Trump dans les pays du Golfe pour une visite entre business et diplomatie",
+      "description": "Le président américain s'est envolé lundi au Moyen-Orient pour un voyage de trois jours dans les monarchies du Golfe : Arabie saoudite, Qatar et Émirats arabes unis. Une tournée cruciale où il sera question de la stabilité régionale, de la guerre à Gaza mais aussi des projets d’investissements.",
+      "url": "https://www.france24.com/fr/moyen-orient/20250512-donald-trump-dans-les-pays-du-golfe-pour-une-visite-entre-business-et-diplomatie",
+      "language": "en",
+      "createdAt": "2025-05-12T18:51:37.000+00:00Z",
+      "pubDate": 1747075897,
+      "translatedTitle": "Donald Trump in the Gulf countries for a visit between business and diplomacy",
+      "translatedDescription": "The American president flew to the Middle East on Monday for a three-day trip in the Gulf monarchies: Saudi Arabia, Qatar and the United Arab Emirates. A crucial tour where regional stability, war in Gaza but also investment projects.",
+      "ner": [
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "title"
+        },
+        {
+          "entity": "Gulf",
+          "label": "LOC",
+          "start": 20,
+          "end": 24,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 4,
+          "end": 12,
+          "source": "description"
+        },
+        {
+          "entity": "Middle East",
+          "label": "LOC",
+          "start": 35,
+          "end": 46,
+          "source": "description"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 102,
+          "end": 114,
+          "source": "description"
+        },
+        {
+          "entity": "Qatar",
+          "label": "LOC",
+          "start": 116,
+          "end": 121,
+          "source": "description"
+        },
+        {
+          "entity": "United Arab Emirates",
+          "label": "LOC",
+          "start": 130,
+          "end": 150,
+          "source": "description"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 200,
+          "end": 204,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "bcaac12496a5c7f6f25981761e755d56",
+      "providerId": "RTS",
+      "title": "Poutine-Zelensky : rencontre en vue ?",
+      "description": "Zelensky a proposé à Poutine de le rencontrer personnellement en Turquie mais le Président ukrainien exige un cessez le feu total complet, durable, et fiable. Poutine n'a pas répondu à l'offre de Zelensky mais le Kremlin qualifie d'inacceptable\" l'\"ultimatum\" lancé à Moscou par Kiev et ses alliés européens d'accepter un cessez-le-feu de 30 jours avant des négociations directes entre la Russie et l'Ukraine. Le Kremlin dit vouloir des négociations \"sérieuses\" pour aboutir à une paix à long terme.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20250512-poutine-zelensky-rencontre-en-vue",
+      "language": "en",
+      "createdAt": "2025-05-12T18:08:12.000+00:00Z",
+      "pubDate": 1747073292,
+      "translatedTitle": "Putin-Zelensky: meeting in sight?",
+      "translatedDescription": "Zelensky proposed to Putin to meet him personally in Türkiye, but the Ukrainian president requires a complete, sustainable, and reliable total fire. Putin did not respond to Zelensky's offer but the Kremlin describes as unacceptable \"the\" ultimatum \"launched in Moscow by kyiv and his European allies to accept a 30-day cease-fire before direct negotiations between Russia and Ukraine. Kremlin says he wants\" serious \"negotiations to lead to long-term peace.",
+      "ner": [
+        {
+          "entity": "Putin",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Zelensky",
+          "label": "PER",
+          "start": 6,
+          "end": 14,
+          "source": "title"
+        },
+        {
+          "entity": "Türkiye",
+          "label": "LOC",
+          "start": 53,
+          "end": 60,
+          "source": "description"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 70,
+          "end": 79,
+          "source": "description"
+        },
+        {
+          "entity": "Kremlin",
+          "label": "LOC",
+          "start": 199,
+          "end": 206,
+          "source": "description"
+        },
+        {
+          "entity": "Moscow",
+          "label": "LOC",
+          "start": 262,
+          "end": 268,
+          "source": "description"
+        },
+        {
+          "entity": "yiv",
+          "label": "LOC",
+          "start": 273,
+          "end": 276,
+          "source": "description"
+        },
+        {
+          "entity": "European",
+          "label": "MISC",
+          "start": 285,
+          "end": 293,
+          "source": "description"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 366,
+          "end": 372,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "cd97f883a4adc139ecc0915bf74eab05",
+      "providerId": "RTS",
+      "title": "Côte d'Ivoire : l'opposant Tidjane Thiam quitte la tête de son parti, pour mieux s'y faire réélire ?",
+      "description": "Tidjane Thiam a annoncé lundi démissionner de la présidence du Parti démocratique de Côte d'Ivoire (PDCI), principale formation d'opposition, tout en assurant vouloir continuer de mener la bataille pour la présidentielle d'octobre, dont il est exclu depuis sa radiation de la liste électorale.",
+      "url": "https://www.france24.com/fr/afrique/20250512-afrique-c%C3%B4te-ivoire-tidjane-thiam-d%C3%A9mission-pr%C3%A9sidence-principal-parti-opposition-pdci",
+      "language": "en",
+      "createdAt": "2025-05-12T17:43:49.000+00:00Z",
+      "pubDate": 1747071829,
+      "translatedTitle": "Côte d'Ivoire: opponent Tidjane Thiam leaves the head of his party, to be better re -elected?",
+      "translatedDescription": "Tidjane Thiam announced Monday resigning from the presidency of the Democratic Party of Côte d'Ivoire (PDCI), the main opposition training, while wanting to continue to lead the battle for the presidential election, from which he has been excluded since his radiation from the electoral list.",
+      "ner": [
+        {
+          "entity": "Côte d'Ivoire",
+          "label": "LOC",
+          "start": 0,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Tidjane Thiam",
+          "label": "PER",
+          "start": 24,
+          "end": 37,
+          "source": "title"
+        },
+        {
+          "entity": "Cote d'Ivoire",
+          "label": "ORG",
+          "start": 68,
+          "end": 101,
+          "source": "description"
+        },
+        {
+          "entity": "PDCI",
+          "label": "ORG",
+          "start": 103,
+          "end": 107,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "d7fcc5f2fbe1a7600576e551a30c1822",
+      "providerId": "RTS",
+      "title": "Festival de Cannes 2025 : Tom Cruise, De Niro, Chaplin et un parfum de Nouvelle Vague",
+      "description": "Du 13 au 24 mai, la Croisette accueille la 78e édition du Festival de Cannes avec son défilé de stars, notamment Tom Cruise, venu présenter le dernier Mission impossible, et Robert De Niro, qui recevra une Palme d’or d’honneur. Vingt-deux films concourent pour le plus prestigieux trophée, décerné cette année par le jury de Juliette Binoche, dont les longs métrages des Américains Wes Anderson et Richard Linklater, de l’Égyptien Tarik Saleh ou bien des Françaises Hafsia Herzi et Julia Ducournau.",
+      "url": "https://www.france24.com/fr/culture/20250512-festival-cannes-2025-films-tom-cruise-de-niro-chaplin-parfum-de-nouvelle-vague",
+      "language": "en",
+      "createdAt": "2025-05-12T17:38:06.000+00:00Z",
+      "pubDate": 1747071486,
+      "translatedTitle": "2025 Cannes Film Festival: Tom Cruise, Niro, Chaplin and a New Wave perfume",
+      "translatedDescription": "From May 13 to 24, La Croisette welcomes the 78th edition of the Cannes Festival with its parade of stars, notably Tom Cruise, who came to present the last impossible mission, and Robert de Niro, who will receive a palm of gold of honor. Twenty-two films contribute for the most prestigious trophy, awarded this year by the jury of Juliette Binoche, whose feature films by the Americans Wes Anderson and Richard Linklater, the Egyptian Tarik Saleh or French women Hafsia Herzi and Julia Ducournau.",
+      "ner": [
+        {
+          "entity": "Cannes Film Festival",
+          "label": "MISC",
+          "start": 5,
+          "end": 25,
+          "source": "title"
+        },
+        {
+          "entity": "Tom Cruise",
+          "label": "PER",
+          "start": 27,
+          "end": 37,
+          "source": "title"
+        },
+        {
+          "entity": "Niro",
+          "label": "PER",
+          "start": 39,
+          "end": 43,
+          "source": "title"
+        },
+        {
+          "entity": "Chaplin",
+          "label": "PER",
+          "start": 45,
+          "end": 52,
+          "source": "title"
+        },
+        {
+          "entity": "New Wave",
+          "label": "MISC",
+          "start": 59,
+          "end": 67,
+          "source": "title"
+        },
+        {
+          "entity": "Laos",
+          "label": "ORG",
+          "start": 19,
+          "end": 21,
+          "source": "description"
+        },
+        {
+          "entity": "Cannes Festival",
+          "label": "MISC",
+          "start": 65,
+          "end": 80,
+          "source": "description"
+        },
+        {
+          "entity": "Robert De Niro",
+          "label": "PER",
+          "start": 180,
+          "end": 194,
+          "source": "description"
+        },
+        {
+          "entity": "Juliette Binoche",
+          "label": "PER",
+          "start": 332,
+          "end": 348,
+          "source": "description"
+        },
+        {
+          "entity": "Americans",
+          "label": "MISC",
+          "start": 377,
+          "end": 386,
+          "source": "description"
+        },
+        {
+          "entity": "Wes Anderson",
+          "label": "PER",
+          "start": 387,
+          "end": 399,
+          "source": "description"
+        },
+        {
+          "entity": "Richard Linklater",
+          "label": "PER",
+          "start": 404,
+          "end": 421,
+          "source": "description"
+        },
+        {
+          "entity": "Egypt",
+          "label": "LOC",
+          "start": 427,
+          "end": 435,
+          "source": "description"
+        },
+        {
+          "entity": "Tarik Saleh",
+          "label": "PER",
+          "start": 436,
+          "end": 447,
+          "source": "description"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 451,
+          "end": 457,
+          "source": "description"
+        },
+        {
+          "entity": "Hafs",
+          "label": "PER",
+          "start": 464,
+          "end": 468,
+          "source": "description"
+        },
+        {
+          "entity": "Ia Herzi",
+          "label": "PER",
+          "start": 468,
+          "end": 476,
+          "source": "description"
+        },
+        {
+          "entity": "Julia Ducournau",
+          "label": "PER",
+          "start": 481,
+          "end": 496,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "1b7260c8e680b9a2307d155c1c3e24f1",
+      "providerId": "RTS",
+      "title": "Inondations en RDC et en Somalie, l'Afrique en première ligne du changement climatique",
+      "description": "La République démocratique du Congo est à nouveau touchée par de graves inondations, après des pluies torrentielles. Au moins 104 personnes sont mortes, prises au piège pendant leur sommeil. Des inondations meurtrières ont aussi touché la Somalie. En première ligne du changement climatique, l'Afrique reste vulnérable, alors que les événements extrêmes vont augmenter en fréquence et en intensité sur le continent, qui n'est responsable que de 4% des émissions mondiales de gaz à effet de serre.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/%C3%A9l%C3%A9ment-terre-la-quotidienne/20250512-inondations-en-rdc-et-en-somalie-l-afrique-en-premi%C3%A8re-ligne-du-changement-climatique",
+      "language": "en",
+      "createdAt": "2025-05-12T16:33:47.000+00:00Z",
+      "pubDate": 1747067627,
+      "translatedTitle": "Floods in the DRC and Somalia, Africa in the front line of climate change",
+      "translatedDescription": "The Democratic Republic of Congo is again touched by serious floods, after torrential rains. At least 104 people died, trapped during their sleep. Murdering floods have also affected Somalia. On the front line of climate change, Africa remains vulnerable, while extreme events will increase frequency and intensity on the continent, which is only responsible for 4% of global greenhouse gas emissions.",
+      "ner": [
+        {
+          "entity": "DRC",
+          "label": "LOC",
+          "start": 14,
+          "end": 17,
+          "source": "title"
+        },
+        {
+          "entity": "Somalia",
+          "label": "LOC",
+          "start": 22,
+          "end": 29,
+          "source": "title"
+        },
+        {
+          "entity": "Africa",
+          "label": "LOC",
+          "start": 31,
+          "end": 37,
+          "source": "title"
+        },
+        {
+          "entity": "Democratic Republic of Congo",
+          "label": "LOC",
+          "start": 4,
+          "end": 32,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "99e346296eaea77172d9b7da38c57694",
+      "providerId": "RTS",
+      "title": "Gaza : le Hamas annonce que l'otage Edan Alexander a été libéré",
+      "description": "La branche armée du Hamas a annoncé lundi 12 mai la libération de l'otage israélo-américain Edan Alexander qui était détenu dans la bande de Gaza. Les précisions de notre correspondant, Stéphane Amar.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250512-gaza-le-hamas-annonce-que-l-otage-edan-alexander-a-%C3%A9t%C3%A9-lib%C3%A9r%C3%A9",
+      "language": "en",
+      "createdAt": "2025-05-12T15:55:50.000+00:00Z",
+      "pubDate": 1747065350,
+      "translatedTitle": "Gaza: Hamas announces that hostage Edan Alexander has been released",
+      "translatedDescription": "The Hamas armed branch announced on Monday May 12 the liberation of the Israeli-American hostage Edan Alexander who was detained in the Gaza Strip. The details of our correspondent, Stéphane Amar.",
+      "ner": [
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 6,
+          "end": 11,
+          "source": "title"
+        },
+        {
+          "entity": "Edan Alexander",
+          "label": "PER",
+          "start": 35,
+          "end": 49,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 72,
+          "end": 79,
+          "source": "description"
+        },
+        {
+          "entity": "Gaza Strip",
+          "label": "LOC",
+          "start": 136,
+          "end": 146,
+          "source": "description"
+        },
+        {
+          "entity": "Sté",
+          "label": "PER",
+          "start": 182,
+          "end": 185,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "b4b08ea25203cf7450e068157f1e8052",
+      "providerId": "RTS",
+      "title": "France : ouverture des débats sur la fin de vie dans l'hémicycle de l'Assemblée",
+      "description": "La question de la fin de vie a fait son retour dans l'hémicycle de l'Assemblée nationale lundi, promettant des débats empreints de gravité durant les deux semaines à venir, avec en perspective la création d'un \"droit à l'aide à mourir\" que l'exécutif, divisé, veut \"très encadré\".",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250512-france-ouverture-des-d%C3%A9bats-sur-la-fin-de-vie-dans-l-h%C3%A9micycle-de-l-assembl%C3%A9e",
+      "language": "en",
+      "createdAt": "2025-05-12T15:46:59.000+00:00Z",
+      "pubDate": 1747064819,
+      "translatedTitle": "France: Opening of debates on the end of life in the hemicycle of the Assembly",
+      "translatedDescription": "The question of the end of life made its return to the hemicycle of the National Assembly on Monday, promising debates imbued with gravity during the next two weeks, with in perspective the creation of a \"right to help\" that the executive, divided, wants \"very supervised\".",
+      "ner": [
+        {
+          "entity": "France",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Assembly",
+          "label": "ORG",
+          "start": 70,
+          "end": 78,
+          "source": "title"
+        },
+        {
+          "entity": "National Assembly",
+          "label": "ORG",
+          "start": 72,
+          "end": 89,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "0359385b008791d363534bba50c99a77",
+      "providerId": "RTS",
+      "title": "Carlo Ancelotti, nommé sélectionneur du Brésil, va quitter le Real Madrid",
+      "description": "Carlo Ancelotti, meneur d'hommes placide adoré de ses joueurs, va quitter le Real Madrid pour relancer une Seleçao bien mal en point à un peu plus d'un an du Mondial-2026. À 65 ans, le détenteur du record de trophées en Ligue des champions en tant qu'entraîneur (5) va ainsi prendre les rênes de l'équipe nationale la plus titrée en Coupe du monde (5).",
+      "url": "https://www.france24.com/fr/info-en-continu/20250512-foot-ancelotti-au-chevet-du-br%C3%A9sil-en-vue-du-mondial-2026",
+      "language": "en",
+      "createdAt": "2025-05-12T15:31:16.000+00:00Z",
+      "pubDate": 1747063876,
+      "translatedTitle": "Carlo Ancelotti, named Brazil coach, will leave Real Madrid",
+      "translatedDescription": "Carlo Ancelotti, leader of placid men adored by his players, will leave Real Madrid to revive a very badly in point in a little more than a year of the World-2026. At 65, the holder of the trophy record in the Champions League as a coach (5) will thus take the reins of the most titled national team in the World Cup (5).",
+      "ner": [
+        {
+          "entity": "Carlo Ancelotti",
+          "label": "PER",
+          "start": 0,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "Brazil",
+          "label": "LOC",
+          "start": 23,
+          "end": 29,
+          "source": "title"
+        },
+        {
+          "entity": "Real Madrid",
+          "label": "ORG",
+          "start": 48,
+          "end": 59,
+          "source": "title"
+        },
+        {
+          "entity": "Champions League",
+          "label": "MISC",
+          "start": 210,
+          "end": 226,
+          "source": "description"
+        },
+        {
+          "entity": "World Cup",
+          "label": "MISC",
+          "start": 307,
+          "end": 316,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "40d5b1a257601a3c67175d50bdde95aa",
+      "providerId": "RTS",
+      "title": "Tensions entre la France et l'Algérie : nouvelles expulsions décidées par Alger",
+      "description": "Le chef de la diplomatie française a annoncé lundi 12 mai une réponse \"ferme\" et \"proportionnée\" à la décision des autorités algériennes de demander le rapatriement immédiat de 15 agents français affectés selon elles à des fonctions diplomatiques ou consulaires dans des conditions irrégulières.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250512-tensions-entre-la-france-et-l-alg%C3%A9rie-nouvelles-expulsions-d%C3%A9cid%C3%A9es-par-alger",
+      "language": "en",
+      "createdAt": "2025-05-12T15:30:18.000+00:00Z",
+      "pubDate": 1747063818,
+      "translatedTitle": "Tensions between France and Algeria: new expulsions decided by Algiers",
+      "translatedDescription": "The head of French diplomacy announced on Monday, May 12 on Monday, May 12, a \"firm\" response and \"proportionate\" to the decision of the Algerian authorities to request the immediate repatriation of 15 French agents assigned according to them to diplomatic or consular functions under irregular conditions.",
+      "ner": [
+        {
+          "entity": "France",
+          "label": "LOC",
+          "start": 17,
+          "end": 23,
+          "source": "title"
+        },
+        {
+          "entity": "Algeria",
+          "label": "LOC",
+          "start": 28,
+          "end": 35,
+          "source": "title"
+        },
+        {
+          "entity": "Algiers",
+          "label": "LOC",
+          "start": 63,
+          "end": 70,
+          "source": "title"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 12,
+          "end": 18,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "de0a1fc02f5814b875f0a455a44ea88f",
+      "providerId": "RTS",
+      "title": "Etats-Unis : ce cadeau gênant du Qatar à Trump",
+      "description": "Donald Trump a assuré lundi 12 mai qu'il serait \"stupide\" de refuser l'avion en passe d'être offert aux Etats-Unis par le Qatar. L'administration du président américain Donald Trump a l'intention d'accepter un Boeing 747-8 offert par la famille royale du Qatar, et l'appareil serait équipé pour servir d'\"Air Force One\", le surnom donné à l'avion présidentiel aux Etats-Unis, selon une source informée de la question.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250512-etats-unis-ce-cadeau-g%C3%AAnant-du-qatar-%C3%A0-trump",
+      "language": "en",
+      "createdAt": "2025-05-12T15:26:20.000+00:00Z",
+      "pubDate": 1747063580,
+      "translatedTitle": "United States: this embarrassing gift from Qatar to Trump",
+      "translatedDescription": "Donald Trump assured Monday May 12 that it would be \"stupid\" to refuse the plane on the way to being offered in the United States by Qatar. The administration of American president Donald Trump intends to accept a Boeing 747-8 offered by the royal family of Qatar, and the aircraft would be equipped to serve as \"Air Force One\", the nickname given to the presidential plane in the United States, according to an informed source of the issue.",
+      "ner": [
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 0,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Qatar",
+          "label": "LOC",
+          "start": 43,
+          "end": 48,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 52,
+          "end": 57,
+          "source": "title"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "description"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 162,
+          "end": 170,
+          "source": "description"
+        },
+        {
+          "entity": "Boeing 747-8",
+          "label": "MISC",
+          "start": 214,
+          "end": 226,
+          "source": "description"
+        },
+        {
+          "entity": "Air Force One",
+          "label": "MISC",
+          "start": 313,
+          "end": 326,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "099d8eab3227475a07cc7c915e47bd08",
+      "providerId": "RTS",
+      "title": "🔴 Gaza : l'otage israélo-américain Edan Alexander remis par le Hamas à la Croix-Rouge",
+      "description": "",
+      "url": "https://www.france24.com/fr/moyen-orient/20250512-guerre-israel-hamas-gaza-lib%C3%A9ration-otage-isra%C3%A9lo-am%C3%A9ricain-edan-alexander",
+      "language": "en",
+      "createdAt": "2025-05-12T15:26:17.000+00:00Z",
+      "pubDate": 1747063577,
+      "translatedTitle": "🔴 Gaza: Israeli-American hostage Edan Alexander handed over by Hamas to the Red Cross",
+      "translatedDescription": "",
+      "ner": [
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 2,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 8,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 16,
+          "end": 24,
+          "source": "title"
+        },
+        {
+          "entity": "Edan Alexander",
+          "label": "PER",
+          "start": 33,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 63,
+          "end": 68,
+          "source": "title"
+        },
+        {
+          "entity": "Red Cross",
+          "label": "ORG",
+          "start": 76,
+          "end": 85,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "438ea69cb20fb9684e2d9fe52ee3e80c",
+      "providerId": "RTS",
+      "title": "Dissolution du PKK : la Turquie salue \"une étape historique\"",
+      "description": "Le ministre turc des Affaires étrangères Hakan Fidan a salué lundi \"une étape historique et encourageante\" qui \"nous rend très fiers de notre pays\", après l'annonce de l'autodissolution du PKK, en lutte armée contre Ankara depuis plus de 40 ans. Le décryptage d'Antoine Mariotti, chroniqueur international à France 24.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250512-dissolution-du-pkk-la-turquie-salue-une-%C3%A9tape-historique",
+      "language": "en",
+      "createdAt": "2025-05-12T14:42:22.000+00:00Z",
+      "pubDate": 1747060942,
+      "translatedTitle": "Dissolution of the PKK: Turkey salutes \"a historic stage\"",
+      "translatedDescription": "Turkish Foreign Minister Hakan Fidan praised a historic and encouraging stage \"which\" made us very proud of our country on Monday \", after the announcement of the PKK self -tuning against Ankara for more than 40 years. The decryption of Antoine Mariotti, international columnist at France 24.",
+      "ner": [
+        {
+          "entity": "PKK",
+          "label": "ORG",
+          "start": 19,
+          "end": 22,
+          "source": "title"
+        },
+        {
+          "entity": "Turkey",
+          "label": "LOC",
+          "start": 24,
+          "end": 30,
+          "source": "title"
+        },
+        {
+          "entity": "Turkish",
+          "label": "MISC",
+          "start": 0,
+          "end": 7,
+          "source": "description"
+        },
+        {
+          "entity": "Hakan Fidan",
+          "label": "PER",
+          "start": 25,
+          "end": 36,
+          "source": "description"
+        },
+        {
+          "entity": "Ankara",
+          "label": "LOC",
+          "start": 188,
+          "end": 194,
+          "source": "description"
+        },
+        {
+          "entity": "Antoine Mariotti",
+          "label": "PER",
+          "start": 237,
+          "end": 253,
+          "source": "description"
+        },
+        {
+          "entity": "France",
+          "label": "ORG",
+          "start": 282,
+          "end": 291,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "058faf89dfb4322f449ae87971ae8052",
+      "providerId": "RTS",
+      "title": "Ukraine : vers un cessez-le-feu ?",
+      "description": "\"Soit la Russie est sérieuse et veut la paix, soit elle n'est pas sérieuse et nous devons sanctionner encore davantage\", previent le président français Emmanuel Macron qui ajoute qu'il va s'entretenir dans la journée avec le président ukrainien Volodymyr Zelensky.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250512-ukraine-vers-un-cessez-le-feu",
+      "language": "en",
+      "createdAt": "2025-05-12T14:38:31.000+00:00Z",
+      "pubDate": 1747060711,
+      "translatedTitle": "Ukraine: Towards a ceasefire?",
+      "translatedDescription": "\"Either Russia is serious and wants peace, or it is not serious and we must sanction even more,\" warns French President Emmanuel Macron who adds that he will speak during the day with the Ukrainian president Volodymyr Zelensky.",
+      "ner": [
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 8,
+          "end": 14,
+          "source": "description"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 103,
+          "end": 109,
+          "source": "description"
+        },
+        {
+          "entity": "Emmanuel Macron",
+          "label": "PER",
+          "start": 120,
+          "end": 135,
+          "source": "description"
+        },
+        {
+          "entity": "Volodymyr Zelensky",
+          "label": "PER",
+          "start": 208,
+          "end": 226,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "e1b644cd0b8288fad6374b121a928d62",
+      "providerId": "RTS",
+      "title": "Gaza : l'otage israélo-américain Edan Alexander bientôt libéré",
+      "description": "La branche armée du mouvement islamiste palestinien Hamas a annoncé qu'elle allait libérer lundi l'otage israélo-américain Edan Alexander retenu dans la bande de Gaza, où une suspension temporaire des bombardements offre un rare répit à ses habitants.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250512-gaza-l-otage-isra%C3%A9lo-am%C3%A9ricain-edan-alexander-bient%C3%B4t-lib%C3%A9r%C3%A9",
+      "language": "en",
+      "createdAt": "2025-05-12T14:38:05.000+00:00Z",
+      "pubDate": 1747060685,
+      "translatedTitle": "Gaza: Israeli-American hostage Edan Alexander soon released",
+      "translatedDescription": "The armed branch of the Palestinian Islamist movement Hamas announced that it was going to release the Israeli-American hostage Edan Alexander in the Gaza Strip on Monday, where a temporary suspension of bombings offers a rare respite to its inhabitants.",
+      "ner": [
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 6,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 14,
+          "end": 22,
+          "source": "title"
+        },
+        {
+          "entity": "Edan Alexander",
+          "label": "PER",
+          "start": 31,
+          "end": 45,
+          "source": "title"
+        },
+        {
+          "entity": "Palestine",
+          "label": "LOC",
+          "start": 24,
+          "end": 41,
+          "source": "description"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 54,
+          "end": 59,
+          "source": "description"
+        },
+        {
+          "entity": "Ed",
+          "label": "PER",
+          "start": 128,
+          "end": 130,
+          "source": "description"
+        },
+        {
+          "entity": "An Alexander",
+          "label": "PER",
+          "start": 130,
+          "end": 142,
+          "source": "description"
+        },
+        {
+          "entity": "Gaza Strip",
+          "label": "LOC",
+          "start": 150,
+          "end": 160,
+          "source": "description"
+        }
+      ]
+    }
+  ],
+  "processedAt": "2025-05-13T04:29:19.151864"
+}
