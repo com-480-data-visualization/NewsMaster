@@ -1,0 +1,3277 @@
+{
+  "data": [
+    {
+      "id": "2db0743691a50914c09402134274ad02",
+      "providerId": "New York Times",
+      "title": "Judge Allows Deportation of Venezuelans Under Alien Enemies Act",
+      "description": "The president announced the planned change in U.S. policy during a speech at a Saudi investment forum at the start of the first major international trip of his second term. His meeting with Syria’s new leader will take place Wednesday.",
+      "url": "https://www.nytimes.com/live/2025/05/13/us/trump-news-saudi-arabia",
+      "language": "en",
+      "createdAt": "2025-05-14T03:30:48.000+00:00Z",
+      "pubDate": 1747193448,
+      "translatedTitle": "Judge Allows Deportation of Venezuelans Under Alien Enemies Act",
+      "translatedDescription": "The president announced the planned change in U.S. policy during a speech at a Saudi investment forum at the start of the first major international trip of his second term. His meeting with Syria’s new leader will take place Wednesday.",
+      "ner": [
+        {
+          "entity": "Venezuela",
+          "label": "LOC",
+          "start": 28,
+          "end": 38,
+          "source": "title"
+        },
+        {
+          "entity": "Alien Enemies Act",
+          "label": "MISC",
+          "start": 46,
+          "end": 63,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 79,
+          "end": 84,
+          "source": "description"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 190,
+          "end": 195,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "fcd1b14b48690204837bff4795558bbf",
+      "providerId": "New York Times",
+      "title": "In Private, Some Israeli Officers Admit That Gaza Is on the Brink of Starvation",
+      "description": "Israel’s government has publicly dismissed warnings of extreme food shortages after it blocked aid deliveries, but an internal analysis concluded that a crisis looms if food supplies are not restored.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/gaza-famine-starvation-israel.html",
+      "language": "en",
+      "createdAt": "2025-05-14T03:00:00.000+00:00Z",
+      "pubDate": 1747191600,
+      "translatedTitle": "In Private, Some Israeli Officers Admit That Gaza Is on the Brink of Starvation",
+      "translatedDescription": "Israel’s government has publicly dismissed warnings of extreme food shortages after it blocked aid deliveries, but an internal analysis concluded that a crisis looms if food supplies are not restored.",
+      "ner": [
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 17,
+          "end": 24,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 45,
+          "end": 49,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "a8e3fa1b31e001d44434e19fd0a1103a",
+      "providerId": "New York Times",
+      "title": "In Augustinian Order, Pope Leo XIV Found Unity, Charity and ‘Eternal Friendship’",
+      "description": "The Order of St. Augustine, with fewer than 3,000 members, shaped the man who would become a cardinal, and then pope to the world’s Roman Catholics.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/pope-leo-order-of-st-augustine.html",
+      "language": "en",
+      "createdAt": "2025-05-13T16:43:50.000+00:00Z",
+      "pubDate": 1747154630,
+      "translatedTitle": "In Augustinian Order, Pope Leo XIV Found Unity, Charity and ‘Eternal Friendship’",
+      "translatedDescription": "The Order of St. Augustine, with fewer than 3,000 members, shaped the man who would become a cardinal, and then pope to the world’s Roman Catholics.",
+      "ner": [
+        {
+          "entity": "Augustinian Order",
+          "label": "MISC",
+          "start": 3,
+          "end": 20,
+          "source": "title"
+        },
+        {
+          "entity": "Leo Xiv",
+          "label": "PER",
+          "start": 27,
+          "end": 34,
+          "source": "title"
+        },
+        {
+          "entity": "Unity",
+          "label": "ORG",
+          "start": 41,
+          "end": 46,
+          "source": "title"
+        },
+        {
+          "entity": "Order of St. Augustine",
+          "label": "ORG",
+          "start": 4,
+          "end": 26,
+          "source": "description"
+        },
+        {
+          "entity": "Roman Catholics",
+          "label": "MISC",
+          "start": 132,
+          "end": 147,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "7be3b4ff759f961d569a841ebc4b68cc",
+      "providerId": "New York Times",
+      "title": "Israel Bombards Gaza Seeking to Kill Muhammad Sinwar, a Top Hamas Leader, Officials Say",
+      "description": "Israeli officials said the military had launched an attack targeting Muhammad Sinwar, the brother of a leader killed last year.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/israel-gaza-sinwar-khan-younis.html",
+      "language": "en",
+      "createdAt": "2025-05-13T23:18:05.000+00:00Z",
+      "pubDate": 1747178285,
+      "translatedTitle": "Israel Bombards Gaza Seeking to Kill Muhammad Sinwar, a Top Hamas Leader, Officials Say",
+      "translatedDescription": "Israeli officials said the military had launched an attack targeting Muhammad Sinwar, the brother of a leader killed last year.",
+      "ner": [
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 16,
+          "end": 20,
+          "source": "title"
+        },
+        {
+          "entity": "Muhammad Sinwar",
+          "label": "PER",
+          "start": 37,
+          "end": 52,
+          "source": "title"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 60,
+          "end": 65,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "24b1df81b53dc3be4d25d36a389338e8",
+      "providerId": "New York Times",
+      "title": "Trump Cites $600 Billion in Saudi Deals, but Real Figure Appears Lower",
+      "description": "The White House was shy on details about the agreements, and the projects’ costs totaled less than half the number it announced.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/trump-saudi-economic-forum.html",
+      "language": "en",
+      "createdAt": "2025-05-13T20:01:42.000+00:00Z",
+      "pubDate": 1747166502,
+      "translatedTitle": "Trump Cites $600 Billion in Saudi Deals, but Real Figure Appears Lower",
+      "translatedDescription": "The White House was shy on details about the agreements, and the projects’ costs totaled less than half the number it announced.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 28,
+          "end": 33,
+          "source": "title"
+        },
+        {
+          "entity": "White House",
+          "label": "LOC",
+          "start": 4,
+          "end": 15,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "d9143a5fe589ce13f47486915fdf3b36",
+      "providerId": "New York Times",
+      "title": "Afrikaners Granted Refugee Status by Trump Arrive in U.S.: What We Know",
+      "description": "The first group of Afrikaners have arrived in the United States, claiming they were victims of persecution or had reason to fear persecution in their home country.",
+      "url": "https://www.nytimes.com/article/afrikaner-refugees-trump-south-africa.html",
+      "language": "en",
+      "createdAt": "2025-05-13T22:04:51.000+00:00Z",
+      "pubDate": 1747173891,
+      "translatedTitle": "Afrikaners Granted Refugee Status by Trump Arrive in U.S.: What We Know",
+      "translatedDescription": "The first group of Afrikaners have arrived in the United States, claiming they were victims of persecution or had reason to fear persecution in their home country.",
+      "ner": [
+        {
+          "entity": "Afrikaners",
+          "label": "MISC",
+          "start": 0,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 37,
+          "end": 42,
+          "source": "title"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 50,
+          "end": 63,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "253f69ad45f60a6ab4d419589a2f35bc",
+      "providerId": "New York Times",
+      "title": "Zelensky Asks Trump to Attend Peace Talks, but Putin’s Plans Remain Unclear",
+      "description": "President Volodymyr Zelensky of Ukraine said that if President Trump attended the talks, it would put pressure on Russia’s leader, Vladimir V. Putin, to meet face-to-face.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/russia-ukraine-putin-zelensky.html",
+      "language": "en",
+      "createdAt": "2025-05-13T19:45:41.000+00:00Z",
+      "pubDate": 1747165541,
+      "translatedTitle": "Zelensky Asks Trump to Attend Peace Talks, but Putin’s Plans Remain Unclear",
+      "translatedDescription": "President Volodymyr Zelensky of Ukraine said that if President Trump attended the talks, it would put pressure on Russia’s leader, Vladimir V. Putin, to meet face-to-face.",
+      "ner": [
+        {
+          "entity": "Zelensky",
+          "label": "PER",
+          "start": 0,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 14,
+          "end": 19,
+          "source": "title"
+        },
+        {
+          "entity": "Putin",
+          "label": "PER",
+          "start": 47,
+          "end": 52,
+          "source": "title"
+        },
+        {
+          "entity": "Volodymyr Zelensky",
+          "label": "PER",
+          "start": 10,
+          "end": 28,
+          "source": "description"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 32,
+          "end": 39,
+          "source": "description"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 114,
+          "end": 120,
+          "source": "description"
+        },
+        {
+          "entity": "Vladimir V",
+          "label": "PER",
+          "start": 131,
+          "end": 141,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "2e42b973bebca29735a2a8409ff495f2",
+      "providerId": "New York Times",
+      "title": "Xi Woos Latin American Leaders With Promises of Cooperation on Technology",
+      "description": "The Chinese leader, Xi Jinping, has suggested expanding trade ties beyond buying commodities as he continues to rally nations in the face of President Trump’s tariffs.",
+      "url": "https://www.nytimes.com/2025/05/13/world/asia/china-xi-latin-america.html",
+      "language": "en",
+      "createdAt": "2025-05-13T11:27:59.000+00:00Z",
+      "pubDate": 1747135679,
+      "translatedTitle": "Xi Woos Latin American Leaders With Promises of Cooperation on Technology",
+      "translatedDescription": "The Chinese leader, Xi Jinping, has suggested expanding trade ties beyond buying commodities as he continues to rally nations in the face of President Trump’s tariffs.",
+      "ner": [
+        {
+          "entity": "Xi",
+          "label": "PER",
+          "start": 0,
+          "end": 2,
+          "source": "title"
+        },
+        {
+          "entity": "Latin American",
+          "label": "MISC",
+          "start": 8,
+          "end": 22,
+          "source": "title"
+        },
+        {
+          "entity": "Chinese",
+          "label": "MISC",
+          "start": 4,
+          "end": 11,
+          "source": "description"
+        },
+        {
+          "entity": "Xi Jinping",
+          "label": "PER",
+          "start": 20,
+          "end": 30,
+          "source": "description"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 151,
+          "end": 156,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "9e4d0f7182f19812a1ce50208aa965b2",
+      "providerId": "New York Times",
+      "title": "Tariffs Push Honda to Move Production From Canada to U.S.",
+      "description": "President Trump’s trade war again tests Canada’s new government. Honda is also postponing  a major electric vehicle factory in Canada.",
+      "url": "https://www.nytimes.com/2025/05/13/world/americas/honda-trump-tariffs-us-canada.html",
+      "language": "en",
+      "createdAt": "2025-05-13T18:20:35.000+00:00Z",
+      "pubDate": 1747160435,
+      "translatedTitle": "Tariffs Push Honda to Move Production From Canada to U.S.",
+      "translatedDescription": "President Trump’s trade war again tests Canada’s new government. Honda is also postponing  a major electric vehicle factory in Canada.",
+      "ner": [
+        {
+          "entity": "Honda",
+          "label": "ORG",
+          "start": 13,
+          "end": 18,
+          "source": "title"
+        },
+        {
+          "entity": "Canada",
+          "label": "LOC",
+          "start": 43,
+          "end": 49,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 10,
+          "end": 15,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "bd7cc0d3695d92c49817e4ce5801eedb",
+      "providerId": "New York Times",
+      "title": "Gérard Depardieu Found Guilty of Sexual Assault",
+      "description": "The French actor was found guilty of sexually assaulting two women on the set of a movie in which he starred in 2021. He was given a suspended sentence of 18 months.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/gerard-depardieu-guilty-sexual-assault-trial.html",
+      "language": "en",
+      "createdAt": "2025-05-13T22:58:39.000+00:00Z",
+      "pubDate": 1747177119,
+      "translatedTitle": "Gérard Depardieu Found Guilty of Sexual Assault",
+      "translatedDescription": "The French actor was found guilty of sexually assaulting two women on the set of a movie in which he starred in 2021. He was given a suspended sentence of 18 months.",
+      "ner": [
+        {
+          "entity": "Gérard Depardieu",
+          "label": "PER",
+          "start": 0,
+          "end": 16,
+          "source": "title"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 4,
+          "end": 10,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "cfcea0a9ffd15282f110773a98bcc022",
+      "providerId": "New York Times",
+      "title": "Germany Bans Far-Right ‘King of Germany’ Group and Arrests Its Leaders",
+      "description": "Members of a group calling itself the Kingdom of Germany, which was targeted in nationwide raids, reject the existence of the German state and want to set up a parallel one.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/germany-ban-far-right-kingdom.html",
+      "language": "en",
+      "createdAt": "2025-05-13T14:24:16.000+00:00Z",
+      "pubDate": 1747146256,
+      "translatedTitle": "Germany Bans Far-Right ‘King of Germany’ Group and Arrests Its Leaders",
+      "translatedDescription": "Members of a group calling itself the Kingdom of Germany, which was targeted in nationwide raids, reject the existence of the German state and want to set up a parallel one.",
+      "ner": [
+        {
+          "entity": "Germany",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Far",
+          "label": "MISC",
+          "start": 13,
+          "end": 16,
+          "source": "title"
+        },
+        {
+          "entity": "Right",
+          "label": "MISC",
+          "start": 17,
+          "end": 22,
+          "source": "title"
+        },
+        {
+          "entity": "Kingdom of Germany",
+          "label": "LOC",
+          "start": 38,
+          "end": 56,
+          "source": "description"
+        },
+        {
+          "entity": "German",
+          "label": "MISC",
+          "start": 126,
+          "end": 132,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "d70b83309f42378b033bf42a87716738",
+      "providerId": "New York Times",
+      "title": "Kim Kardashian Testifies in Paris Court About 2016 Robbery Ordeal",
+      "description": "The reality TV star, in emotional testimony at a trial in Paris, described being held at gunpoint as jewelry worth millions was stolen.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/kim-kardashian-testimony-paris-robbery-trial.html",
+      "language": "en",
+      "createdAt": "2025-05-13T17:36:34.000+00:00Z",
+      "pubDate": 1747157794,
+      "translatedTitle": "Kim Kardashian Testifies in Paris Court About 2016 Robbery Ordeal",
+      "translatedDescription": "The reality TV star, in emotional testimony at a trial in Paris, described being held at gunpoint as jewelry worth millions was stolen.",
+      "ner": [
+        {
+          "entity": "Kim Kardashian",
+          "label": "PER",
+          "start": 0,
+          "end": 14,
+          "source": "title"
+        },
+        {
+          "entity": "Paris",
+          "label": "LOC",
+          "start": 28,
+          "end": 33,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "22525f06a7cac0907bef3a93325cfb6b",
+      "providerId": "New York Times",
+      "title": "Peter Sullivan’s Murder Conviction Is Quashed After 38 Years in Jail",
+      "description": "Peter Sullivan was found guilty of a brutal killing in 1987. But an appeals court overturned his conviction on Tuesday and ordered his immediate release.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/peter-sullivan-murder-appeal-free-uk.html",
+      "language": "en",
+      "createdAt": "2025-05-13T17:54:52.000+00:00Z",
+      "pubDate": 1747158892,
+      "translatedTitle": "Peter Sullivan’s Murder Conviction Is Quashed After 38 Years in Jail",
+      "translatedDescription": "Peter Sullivan was found guilty of a brutal killing in 1987. But an appeals court overturned his conviction on Tuesday and ordered his immediate release.",
+      "ner": [
+        {
+          "entity": "Peter Sullivan",
+          "label": "PER",
+          "start": 0,
+          "end": 14,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "cae8e4f55e81c5a22fa02bcc444b4bca",
+      "providerId": "New York Times",
+      "title": "Trump Begins Middle East Tour in Saudi Arabia: Photos and Video",
+      "description": "Mr. Trump has few meetings directly about pressing geopolitical challenges. Instead, he’s in the Persian Gulf to make deals.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/trump-middle-east-photos.html",
+      "language": "en",
+      "createdAt": "2025-05-13T22:51:37.000+00:00Z",
+      "pubDate": 1747176697,
+      "translatedTitle": "Trump Begins Middle East Tour in Saudi Arabia: Photos and Video",
+      "translatedDescription": "Mr. Trump has few meetings directly about pressing geopolitical challenges. Instead, he’s in the Persian Gulf to make deals.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Middle East Tour",
+          "label": "MISC",
+          "start": 13,
+          "end": 29,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 33,
+          "end": 45,
+          "source": "title"
+        },
+        {
+          "entity": "Persian Gulf",
+          "label": "LOC",
+          "start": 97,
+          "end": 109,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "31a7af9e1df844be74e7ade08d22757b",
+      "providerId": "New York Times",
+      "title": "Beyond Tariff Truce, China Readies for a Rocky Time With U.S.",
+      "description": "Beijing is trying to win over other countries with vows of economic cooperation. But it won’t back down from its territorial claims, experts predict.",
+      "url": "https://www.nytimes.com/2025/05/14/world/asia/china-us-tariffs-security.html",
+      "language": "en",
+      "createdAt": "2025-05-14T04:02:46.000+00:00Z",
+      "pubDate": 1747195366,
+      "translatedTitle": "Beyond Tariff Truce, China Readies for a Rocky Time With U.S.",
+      "translatedDescription": "Beijing is trying to win over other countries with vows of economic cooperation. But it won’t back down from its territorial claims, experts predict.",
+      "ner": [
+        {
+          "entity": "China",
+          "label": "LOC",
+          "start": 21,
+          "end": 26,
+          "source": "title"
+        },
+        {
+          "entity": "Beijing",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "2a494ef6efa4fba37a21844dadd8411f",
+      "providerId": "New York Times",
+      "title": "Iran Proposes Novel Path to Nuclear Deal With U.S.",
+      "description": "In talks with American negotiators, the Iranians spoke of a consortium with several countries that would allow it to keep producing civilian grade fuel, but with more monitoring.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/iran-us-nuclear-talks.html",
+      "language": "en",
+      "createdAt": "2025-05-14T04:04:10.000+00:00Z",
+      "pubDate": 1747195450,
+      "translatedTitle": "Iran Proposes Novel Path to Nuclear Deal With U.S.",
+      "translatedDescription": "In talks with American negotiators, the Iranians spoke of a consortium with several countries that would allow it to keep producing civilian grade fuel, but with more monitoring.",
+      "ner": [
+        {
+          "entity": "Iran",
+          "label": "LOC",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 14,
+          "end": 22,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "51c29f1547d20cb663c9ec695f10c9ba",
+      "providerId": "New York Times",
+      "title": "Wednesday Briefing: Israeli Officers Warn of Famine",
+      "description": "Plus, a Hollywood takeover at Cannes.",
+      "url": "https://www.nytimes.com/2025/05/13/briefing/israel-gaza-famine-trump-syria-sanctions-ukraine-russia-talks.html",
+      "language": "en",
+      "createdAt": "2025-05-13T21:03:34.000+00:00Z",
+      "pubDate": 1747170214,
+      "translatedTitle": "Wednesday Briefing: Israeli Officers Warn of Famine",
+      "translatedDescription": "Plus, a Hollywood takeover at Cannes.",
+      "ner": [
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 20,
+          "end": 27,
+          "source": "title"
+        },
+        {
+          "entity": "Hollywood",
+          "label": "LOC",
+          "start": 8,
+          "end": 17,
+          "source": "description"
+        },
+        {
+          "entity": "Cannes",
+          "label": "LOC",
+          "start": 30,
+          "end": 36,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "00f864d1d751003a3c5e594fdb6bd247",
+      "providerId": "New York Times",
+      "title": "As Trump Crows Over Ending a Conflict, India’s Leaders Feel Betrayed",
+      "description": "President Trump’s repeated descriptions of U.S. mediation efforts between India and Pakistan have hit sore spots in Indian politics.",
+      "url": "https://www.nytimes.com/2025/05/13/world/asia/trump-india-pakistan-ceasefire.html",
+      "language": "en",
+      "createdAt": "2025-05-14T03:40:45.000+00:00Z",
+      "pubDate": 1747194045,
+      "translatedTitle": "As Trump Crows Over Ending a Conflict, India’s Leaders Feel Betrayed",
+      "translatedDescription": "President Trump’s repeated descriptions of U.S. mediation efforts between India and Pakistan have hit sore spots in Indian politics.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 3,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 39,
+          "end": 44,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 84,
+          "end": 92,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "5bb50a60e81d714299ee76bd1902d69f",
+      "providerId": "New York Times",
+      "title": "Trump Welcomes White South African Refugees as He Shuts Out Afghans and Others",
+      "description": "The Trump administration carved out an exception to its refugee ban for white South Africans. But other groups, including Afghans who helped U.S. forces during the war in their country, are being shut out.",
+      "url": "https://www.nytimes.com/2025/05/13/us/politics/trump-refugees-white-south-africa-aghanistan.html",
+      "language": "en",
+      "createdAt": "2025-05-13T23:08:10.000+00:00Z",
+      "pubDate": 1747177690,
+      "translatedTitle": "Trump Welcomes White South African Refugees as He Shuts Out Afghans and Others",
+      "translatedDescription": "The Trump administration carved out an exception to its refugee ban for white South Africans. But other groups, including Afghans who helped U.S. forces during the war in their country, are being shut out.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "South Africa",
+          "label": "LOC",
+          "start": 15,
+          "end": 34,
+          "source": "title"
+        },
+        {
+          "entity": "Afghanistan",
+          "label": "LOC",
+          "start": 60,
+          "end": 66,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "53b0e7fd9fb341590e2994b250ac3ae0",
+      "providerId": "New York Times",
+      "title": "Saudis Greet Trump to His Tastes, With Pomp, Opulence and Real Estate",
+      "description": "The Saudi crown prince gave President Trump a warm and opulent welcome, reflecting the amity between a royal family and presidential family with diplomatic and business alliances.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/trump-saudi-arabia.html",
+      "language": "en",
+      "createdAt": "2025-05-14T03:49:51.000+00:00Z",
+      "pubDate": 1747194591,
+      "translatedTitle": "Saudis Greet Trump to His Tastes, With Pomp, Opulence and Real Estate",
+      "translatedDescription": "The Saudi crown prince gave President Trump a warm and opulent welcome, reflecting the amity between a royal family and presidential family with diplomatic and business alliances.",
+      "ner": [
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 13,
+          "end": 18,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "c2e8a2a87b65bd8fb1a1f571ecacf4e7",
+      "providerId": "New York Times",
+      "title": "3M to Pay New Jersey Up to $450 Million for Drinking-Water Contamination",
+      "description": "The state claimed “forever chemicals,” also known as PFAS, contaminated groundwater from an industrial park where they were used for decades.",
+      "url": "https://www.nytimes.com/2025/05/13/climate/3m-pfas-forever-chemical-lawsuit-water-new-jersey.html",
+      "language": "en",
+      "createdAt": "2025-05-13T20:21:37.000+00:00Z",
+      "pubDate": 1747167697,
+      "translatedTitle": "3M to Pay New Jersey Up to $450 Million for Drinking-Water Contamination",
+      "translatedDescription": "The state claimed “forever chemicals,” also known as PFAS, contaminated groundwater from an industrial park where they were used for decades.",
+      "ner": [
+        {
+          "entity": "New Jersey",
+          "label": "LOC",
+          "start": 10,
+          "end": 20,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "abadb5d1bdef8061f1f4568ccd64b98f",
+      "providerId": "New York Times",
+      "title": "Trump to Lift Sanctions on Syria and Meet With New President",
+      "description": "President Trump, on a state visit to Saudi Arabia, said he made the decision after speaking to the Saudi crown prince. The president is trying to drum up Saudi investment in the U.S.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/trump-syria-president-meeting.html",
+      "language": "en",
+      "createdAt": "2025-05-14T00:44:25.000+00:00Z",
+      "pubDate": 1747183465,
+      "translatedTitle": "Trump to Lift Sanctions on Syria and Meet With New President",
+      "translatedDescription": "President Trump, on a state visit to Saudi Arabia, said he made the decision after speaking to the Saudi crown prince. The president is trying to drum up Saudi investment in the U.S.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 27,
+          "end": 32,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 37,
+          "end": 49,
+          "source": "description"
+        },
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 99,
+          "end": 104,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "41aaeabb0f5da027eda231c8838c25b2",
+      "providerId": "New York Times",
+      "title": "Kate Middleton Presents 2025 Queen Elizabeth II Award for Design",
+      "description": "The British royal made a surprise appearance on Tuesday to present a fashion award named for Queen Elizabeth II.",
+      "url": "https://www.nytimes.com/2025/05/13/style/kate-middleton-queen-elizabeth-ii-award-design.html",
+      "language": "en",
+      "createdAt": "2025-05-13T15:10:34.000+00:00Z",
+      "pubDate": 1747149034,
+      "translatedTitle": "Kate Middleton Presents 2025 Queen Elizabeth II Award for Design",
+      "translatedDescription": "The British royal made a surprise appearance on Tuesday to present a fashion award named for Queen Elizabeth II.",
+      "ner": [
+        {
+          "entity": "Kate Middleton",
+          "label": "PER",
+          "start": 0,
+          "end": 14,
+          "source": "title"
+        },
+        {
+          "entity": "Queen Elizabeth II Award",
+          "label": "MISC",
+          "start": 29,
+          "end": 53,
+          "source": "title"
+        },
+        {
+          "entity": "British",
+          "label": "MISC",
+          "start": 4,
+          "end": 11,
+          "source": "description"
+        },
+        {
+          "entity": "Elizabeth Ii",
+          "label": "PER",
+          "start": 99,
+          "end": 111,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "59a06dd63049f947dfdb7e44593be9b8",
+      "providerId": "New York Times",
+      "title": "Boxes of Nazi Material Are Found After Decades in Basement of Argentina Court",
+      "description": "Thousands of documents in the boxes could result in new information about Nazi activity in Argentina in the early years of World War II.",
+      "url": "https://www.nytimes.com/2025/05/13/world/americas/nazi-documents-argentina.html",
+      "language": "en",
+      "createdAt": "2025-05-13T14:14:56.000+00:00Z",
+      "pubDate": 1747145696,
+      "translatedTitle": "Boxes of Nazi Material Are Found After Decades in Basement of Argentina Court",
+      "translatedDescription": "Thousands of documents in the boxes could result in new information about Nazi activity in Argentina in the early years of World War II.",
+      "ner": [
+        {
+          "entity": "Nazi",
+          "label": "MISC",
+          "start": 9,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Argentina",
+          "label": "LOC",
+          "start": 62,
+          "end": 71,
+          "source": "title"
+        },
+        {
+          "entity": "World War II",
+          "label": "MISC",
+          "start": 123,
+          "end": 135,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "08b1b37ed1fee8b763988dd90308ae11",
+      "providerId": "New York Times",
+      "title": "U.K. Retail Giant M&S Says Customer Data Was Compromised in Cyberattack",
+      "description": "The company suspended online orders for weeks after the breach, which may have exposed contact details and birth dates.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/marks-spencer-cyber-attack.html",
+      "language": "en",
+      "createdAt": "2025-05-13T13:16:59.000+00:00Z",
+      "pubDate": 1747142219,
+      "translatedTitle": "U.K. Retail Giant M&S Says Customer Data Was Compromised in Cyberattack",
+      "translatedDescription": "The company suspended online orders for weeks after the breach, which may have exposed contact details and birth dates.",
+      "ner": [
+        {
+          "entity": "M&S",
+          "label": "ORG",
+          "start": 18,
+          "end": 21,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "2668dc70edb1865907a47c7355309f81",
+      "providerId": "New York Times",
+      "title": "Republican Budget Bill Aims to End I.R.A. Clean Energy Boom",
+      "description": "The party’s signature tax plan would kill most Biden-era incentives, but there’s a sticking point: G.O.P. districts have the most to lose.",
+      "url": "https://www.nytimes.com/2025/05/13/climate/ira-repubican-tax-bill-clean-energy.html",
+      "language": "en",
+      "createdAt": "2025-05-13T09:00:46.000+00:00Z",
+      "pubDate": 1747126846,
+      "translatedTitle": "Republican Budget Bill Aims to End I.R.A. Clean Energy Boom",
+      "translatedDescription": "The party’s signature tax plan would kill most Biden-era incentives, but there’s a sticking point: G.O.P. districts have the most to lose.",
+      "ner": [
+        {
+          "entity": "Republican Budget Bill",
+          "label": "MISC",
+          "start": 0,
+          "end": 22,
+          "source": "title"
+        },
+        {
+          "entity": "Clean Energy",
+          "label": "MISC",
+          "start": 42,
+          "end": 54,
+          "source": "title"
+        },
+        {
+          "entity": "Biden",
+          "label": "MISC",
+          "start": 47,
+          "end": 52,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "55ceaa9815ff80a0cd14db4e215dcd0d",
+      "providerId": "New York Times",
+      "title": "Man Arrested Over Fire at Starmer’s North London House",
+      "description": "The police said a 21-year-old man was held in connection with three fires, including two at properties linked to the British prime minister.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/arrest-starmer-fire-house.html",
+      "language": "en",
+      "createdAt": "2025-05-13T18:00:57.000+00:00Z",
+      "pubDate": 1747159257,
+      "translatedTitle": "Man Arrested Over Fire at Starmer’s North London House",
+      "translatedDescription": "The police said a 21-year-old man was held in connection with three fires, including two at properties linked to the British prime minister.",
+      "ner": [
+        {
+          "entity": "Starmer",
+          "label": "PER",
+          "start": 26,
+          "end": 33,
+          "source": "title"
+        },
+        {
+          "entity": "North London House",
+          "label": "LOC",
+          "start": 36,
+          "end": 54,
+          "source": "title"
+        },
+        {
+          "entity": "British",
+          "label": "MISC",
+          "start": 117,
+          "end": 124,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "4f734974f773b237b562796313a0a29d",
+      "providerId": "New York Times",
+      "title": "Tuesday Briefing",
+      "description": "President Trump’s visit to the Gulf region.",
+      "url": "https://www.nytimes.com/2025/05/13/briefing/trump-gulf-china-trade.html",
+      "language": "en",
+      "createdAt": "2025-05-13T05:08:25.000+00:00Z",
+      "pubDate": 1747112905,
+      "translatedTitle": "Tuesday Briefing",
+      "translatedDescription": "President Trump’s visit to the Gulf region.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 10,
+          "end": 15,
+          "source": "description"
+        },
+        {
+          "entity": "Gulf region",
+          "label": "LOC",
+          "start": 31,
+          "end": 42,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "0070ef327d22fba956169d66c9374a9d",
+      "providerId": "New York Times",
+      "title": "Farmers Sued Over Deleted Climate Data. So the Government Will Put It Back.",
+      "description": "The Agriculture Department pledged to restore online climate information that farmers said helped them do business, but which officials had deleted.",
+      "url": "https://www.nytimes.com/2025/05/12/climate/trump-deleted-climate-website-farmers-lawsuit.html",
+      "language": "en",
+      "createdAt": "2025-05-12T22:55:29.000+00:00Z",
+      "pubDate": 1747090529,
+      "translatedTitle": "Farmers Sued Over Deleted Climate Data. So the Government Will Put It Back.",
+      "translatedDescription": "The Agriculture Department pledged to restore online climate information that farmers said helped them do business, but which officials had deleted.",
+      "ner": [
+        {
+          "entity": "Agriculture Department",
+          "label": "ORG",
+          "start": 4,
+          "end": 26,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "56fb12f5fb14694b532afb2e21a48d71",
+      "providerId": "New York Times",
+      "title": "Palestinian Authority Lifting Ban on Al Jazeera in West Bank",
+      "description": "The authority offered scant information about why it issued the ban in January, and it maintained that stance in announcing that it was rescinding it.",
+      "url": "https://www.nytimes.com/2025/05/12/world/middleeast/al-jazeera-ban-palestinian-authority.html",
+      "language": "en",
+      "createdAt": "2025-05-12T22:31:09.000+00:00Z",
+      "pubDate": 1747089069,
+      "translatedTitle": "Palestinian Authority Lifting Ban on Al Jazeera in West Bank",
+      "translatedDescription": "The authority offered scant information about why it issued the ban in January, and it maintained that stance in announcing that it was rescinding it.",
+      "ner": [
+        {
+          "entity": "Palestine",
+          "label": "ORG",
+          "start": 0,
+          "end": 21,
+          "source": "title"
+        },
+        {
+          "entity": "Al Jazeera",
+          "label": "ORG",
+          "start": 37,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "West Bank",
+          "label": "LOC",
+          "start": 51,
+          "end": 60,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "608a64266b386047c4c48fe77067e028",
+      "providerId": "New York Times",
+      "title": "Energy Department to Repeal Efficiency Rules for Appliances",
+      "description": "Experts say the moves, which would apply to household appliances, will raise energy costs for consumers.",
+      "url": "https://www.nytimes.com/2025/05/12/climate/energy-effiency-programs-department-of-energy.html",
+      "language": "en",
+      "createdAt": "2025-05-12T21:48:32.000+00:00Z",
+      "pubDate": 1747086512,
+      "translatedTitle": "Energy Department to Repeal Efficiency Rules for Appliances",
+      "translatedDescription": "Experts say the moves, which would apply to household appliances, will raise energy costs for consumers.",
+      "ner": [
+        {
+          "entity": "Energy Department",
+          "label": "ORG",
+          "start": 0,
+          "end": 17,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "bb2175d7d24c4e9aba8a91771bee516d",
+      "providerId": "New York Times",
+      "title": "Tuesday Briefing: Trump’s Visit to the Gulf",
+      "description": "Plus, a big week for the art world.",
+      "url": "https://www.nytimes.com/2025/05/12/briefing/trump-gulf-visit-china-us-tariffs-ukraine-russia-sanctions.html",
+      "language": "en",
+      "createdAt": "2025-05-12T21:00:11.000+00:00Z",
+      "pubDate": 1747083611,
+      "translatedTitle": "Tuesday Briefing: Trump’s Visit to the Gulf",
+      "translatedDescription": "Plus, a big week for the art world.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 18,
+          "end": 23,
+          "source": "title"
+        },
+        {
+          "entity": "Gulf",
+          "label": "LOC",
+          "start": 39,
+          "end": 43,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "915a3a81f63143e4de643963d31ca321",
+      "providerId": "New York Times",
+      "title": "Counterterror Police Investigate Fire at Starmer’s North London Home",
+      "description": "Damage was caused to the entrance of a property belonging to the prime minister in Kentish Town, but nobody was hurt, the police said.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/keir-starmer-fire-counterterror-police.html",
+      "language": "en",
+      "createdAt": "2025-05-12T20:05:23.000+00:00Z",
+      "pubDate": 1747080323,
+      "translatedTitle": "Counterterror Police Investigate Fire at Starmer’s North London Home",
+      "translatedDescription": "Damage was caused to the entrance of a property belonging to the prime minister in Kentish Town, but nobody was hurt, the police said.",
+      "ner": [
+        {
+          "entity": "Starmer",
+          "label": "PER",
+          "start": 41,
+          "end": 48,
+          "source": "title"
+        },
+        {
+          "entity": "North London",
+          "label": "LOC",
+          "start": 51,
+          "end": 63,
+          "source": "title"
+        },
+        {
+          "entity": "Kentish Town",
+          "label": "LOC",
+          "start": 83,
+          "end": 95,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "449a47ebfcb955415ac3b8b8f8c1b80f",
+      "providerId": "New York Times",
+      "title": "Hamas Frees Edan Alexander, American Hostage Held in Gaza, in Deal With U.S.",
+      "description": "Edan Alexander, a dual Israeli American national, was released following pressure from President Trump, who is set to travel to the region.",
+      "url": "https://www.nytimes.com/2025/05/12/world/middleeast/edan-alexander-israel-hamas-hostage-released.html",
+      "language": "en",
+      "createdAt": "2025-05-12T20:25:27.000+00:00Z",
+      "pubDate": 1747081527,
+      "translatedTitle": "Hamas Frees Edan Alexander, American Hostage Held in Gaza, in Deal With U.S.",
+      "translatedDescription": "Edan Alexander, a dual Israeli American national, was released following pressure from President Trump, who is set to travel to the region.",
+      "ner": [
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Edan Alexander",
+          "label": "PER",
+          "start": 12,
+          "end": 26,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 28,
+          "end": 36,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 53,
+          "end": 57,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 23,
+          "end": 39,
+          "source": "description"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 97,
+          "end": 102,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "b1be04f4015160be9f72893d20a82193",
+      "providerId": "New York Times",
+      "title": "Avelo Airlines Faces Backlash for Aiding Trump’s Deportation Campaign",
+      "description": "The company, which serves airports in liberal cities on the coasts, has agreed to operate chartered flights for Immigration and Customs Enforcement.",
+      "url": "https://www.nytimes.com/2025/05/12/business/trump-deportation-flights-avelo-airlines.html",
+      "language": "en",
+      "createdAt": "2025-05-13T13:19:43.000+00:00Z",
+      "pubDate": 1747142383,
+      "translatedTitle": "Avelo Airlines Faces Backlash for Aiding Trump’s Deportation Campaign",
+      "translatedDescription": "The company, which serves airports in liberal cities on the coasts, has agreed to operate chartered flights for Immigration and Customs Enforcement.",
+      "ner": [
+        {
+          "entity": "Avelo Airlines",
+          "label": "ORG",
+          "start": 0,
+          "end": 14,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "MISC",
+          "start": 41,
+          "end": 46,
+          "source": "title"
+        },
+        {
+          "entity": "Immigration and Customs Enforcement",
+          "label": "ORG",
+          "start": 112,
+          "end": 147,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "84c3188b2b1fb2b4c7d93e25ba722385",
+      "providerId": "New York Times",
+      "title": "E.U. Leaders Demand Russia Accept Ukraine Cease-fire by End of Day",
+      "description": "European leaders threatened new sanctions unless Moscow accepted a cease-fire right away. President Trump seemed to endorse the idea of a meeting between Ukraine’s and Russia’s presidents, and said he might take part.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/russia-ukraine-putin-ceasefire.html",
+      "language": "en",
+      "createdAt": "2025-05-12T18:45:17.000+00:00Z",
+      "pubDate": 1747075517,
+      "translatedTitle": "E.U. Leaders Demand Russia Accept Ukraine Cease-fire by End of Day",
+      "translatedDescription": "European leaders threatened new sanctions unless Moscow accepted a cease-fire right away. President Trump seemed to endorse the idea of a meeting between Ukraine’s and Russia’s presidents, and said he might take part.",
+      "ner": [
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 20,
+          "end": 26,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 34,
+          "end": 41,
+          "source": "title"
+        },
+        {
+          "entity": "European",
+          "label": "MISC",
+          "start": 0,
+          "end": 8,
+          "source": "description"
+        },
+        {
+          "entity": "Moscow",
+          "label": "LOC",
+          "start": 49,
+          "end": 55,
+          "source": "description"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 100,
+          "end": 105,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "1defab6b4502b55fca5af3e9c3b84f8f",
+      "providerId": "New York Times",
+      "title": "Pope Leo XIV Calls for News Media to Shun Divisive Language",
+      "description": "In his first audience with journalists as the pontiff, Leo renewed pleas for a more peaceful world. He also spoke to Ukraine’s president on Monday.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/pope-leo-vatican-journalists.html",
+      "language": "en",
+      "createdAt": "2025-05-12T20:09:18.000+00:00Z",
+      "pubDate": 1747080558,
+      "translatedTitle": "Pope Leo XIV Calls for News Media to Shun Divisive Language",
+      "translatedDescription": "In his first audience with journalists as the pontiff, Leo renewed pleas for a more peaceful world. He also spoke to Ukraine’s president on Monday.",
+      "ner": [
+        {
+          "entity": "Pope Leo Xiv",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "title"
+        },
+        {
+          "entity": "Leo",
+          "label": "PER",
+          "start": 55,
+          "end": 58,
+          "source": "description"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 117,
+          "end": 124,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "596dbe8286971a01277a81d852dd2f50",
+      "providerId": "New York Times",
+      "title": "Who Is Edan Alexander, the American Hostage Held by Hamas in Gaza?",
+      "description": "On Monday, Hamas released the American Israeli citizen, who was serving in the Israeli army when he was captured on Oct. 7, 2023.",
+      "url": "https://www.nytimes.com/2025/05/12/world/middleeast/edan-alexander-hamas-american-hostage-who-is.html",
+      "language": "en",
+      "createdAt": "2025-05-12T19:38:02.000+00:00Z",
+      "pubDate": 1747078682,
+      "translatedTitle": "Who Is Edan Alexander, the American Hostage Held by Hamas in Gaza?",
+      "translatedDescription": "On Monday, Hamas released the American Israeli citizen, who was serving in the Israeli army when he was captured on Oct. 7, 2023.",
+      "ner": [
+        {
+          "entity": "Edan Alexander",
+          "label": "PER",
+          "start": 7,
+          "end": 21,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 27,
+          "end": 35,
+          "source": "title"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 52,
+          "end": 57,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 61,
+          "end": 65,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 30,
+          "end": 46,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "6763d45ef8f4cb7804542ddcbff42656",
+      "providerId": "New York Times",
+      "title": "India and Pakistan Hold Talks Aimed at Extending Cease-Fire",
+      "description": "Civilian airports were reopened and stocks jumped in both nations, signs of confidence that the agreement to halt the most alarming fighting in decades was holding.",
+      "url": "https://www.nytimes.com/2025/05/12/world/asia/india-pakistan-cease-fire-extended.html",
+      "language": "en",
+      "createdAt": "2025-05-13T08:25:00.000+00:00Z",
+      "pubDate": 1747124700,
+      "translatedTitle": "India and Pakistan Hold Talks Aimed at Extending Cease-Fire",
+      "translatedDescription": "Civilian airports were reopened and stocks jumped in both nations, signs of confidence that the agreement to halt the most alarming fighting in decades was holding.",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 10,
+          "end": 18,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "ce75c0b876d3342282e1bc298155ab02",
+      "providerId": "New York Times",
+      "title": "Here are some past memorable encounters between popes and reporters.",
+      "description": "",
+      "url": "https://www.nytimes.com/live/2025/05/12/world/pope-leo-news/here-are-some-past-memorable-encounters-between-popes-and-reporters",
+      "language": "en",
+      "createdAt": "2025-05-12T09:58:10.000+00:00Z",
+      "pubDate": 1747043890,
+      "translatedTitle": "Here are some past memorable encounters between popes and reporters.",
+      "translatedDescription": "",
+      "ner": []
+    },
+    {
+      "id": "6633efafb4ee134925f5ca011569871a",
+      "providerId": "New York Times",
+      "title": "Starmer Pledges to Cut U.K. Immigration",
+      "description": "Prime Minister Keir Starmer said his government was “taking back control of our borders,” weeks after a right-wing populist party, Reform U.K., made gains in municipal elections.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/starmer-uk-immigration.html",
+      "language": "en",
+      "createdAt": "2025-05-12T23:42:34.000+00:00Z",
+      "pubDate": 1747093354,
+      "translatedTitle": "Starmer Pledges to Cut U.K. Immigration",
+      "translatedDescription": "Prime Minister Keir Starmer said his government was “taking back control of our borders,” weeks after a right-wing populist party, Reform U.K., made gains in municipal elections.",
+      "ner": [
+        {
+          "entity": "Star",
+          "label": "PER",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Keir Starmer",
+          "label": "PER",
+          "start": 15,
+          "end": 27,
+          "source": "description"
+        },
+        {
+          "entity": "Reform U",
+          "label": "ORG",
+          "start": 131,
+          "end": 139,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "14bceff01fd260f232dbc542b7d4415c",
+      "providerId": "New York Times",
+      "title": "For Catholics, the Pope Is a Holy Father. For the World, He Is a Powerful Voice.",
+      "description": "The papacy is a global platform, so the issues Pope Leo chooses to focus on can resonate far beyond the church.",
+      "url": "https://www.nytimes.com/2025/05/12/world/asia/pope-leo-voice-platform.html",
+      "language": "en",
+      "createdAt": "2025-05-12T19:11:15.000+00:00Z",
+      "pubDate": 1747077075,
+      "translatedTitle": "For Catholics, the Pope Is a Holy Father. For the World, He Is a Powerful Voice.",
+      "translatedDescription": "The papacy is a global platform, so the issues Pope Leo chooses to focus on can resonate far beyond the church.",
+      "ner": [
+        {
+          "entity": "Catholics",
+          "label": "MISC",
+          "start": 4,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Pope",
+          "label": "PER",
+          "start": 19,
+          "end": 23,
+          "source": "title"
+        },
+        {
+          "entity": "Leo",
+          "label": "PER",
+          "start": 52,
+          "end": 55,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "893328d09f3404cd7d0d8f4092d5f454",
+      "providerId": "New York Times",
+      "title": "Trump’s Tariffs on Canada Spark Debate Over U.S. Trade: Does the U.S. Need Canada?",
+      "description": "President Trump seems to think not. The industries he constantly mentions when he pushes his case, including autos, energy and lumber, beg to differ.",
+      "url": "https://www.nytimes.com/2025/05/12/world/canada/trump-us-canada-tariffs.html",
+      "language": "en",
+      "createdAt": "2025-05-13T14:32:40.000+00:00Z",
+      "pubDate": 1747146760,
+      "translatedTitle": "Trump’s Tariffs on Canada Spark Debate Over U.S. Trade: Does the U.S. Need Canada?",
+      "translatedDescription": "President Trump seems to think not. The industries he constantly mentions when he pushes his case, including autos, energy and lumber, beg to differ.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Canada",
+          "label": "LOC",
+          "start": 19,
+          "end": 25,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "4b9975e5e508991091339e19ba29cb0e",
+      "providerId": "New York Times",
+      "title": "Trump Wants Saudi Arabia to Invest $1 Trillion in the U.S.",
+      "description": "President Trump goes to the Gulf kingdom this week seeking $1 trillion worth of investments in the United States — a sum equivalent to the entire Saudi gross domestic product for a year.",
+      "url": "https://www.nytimes.com/2025/05/12/world/middleeast/trump-saudi-arabia-investment.html",
+      "language": "en",
+      "createdAt": "2025-05-12T09:01:19.000+00:00Z",
+      "pubDate": 1747040479,
+      "translatedTitle": "Trump Wants Saudi Arabia to Invest $1 Trillion in the U.S.",
+      "translatedDescription": "President Trump goes to the Gulf kingdom this week seeking $1 trillion worth of investments in the United States — a sum equivalent to the entire Saudi gross domestic product for a year.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 12,
+          "end": 24,
+          "source": "title"
+        },
+        {
+          "entity": "Gulf",
+          "label": "LOC",
+          "start": 28,
+          "end": 32,
+          "source": "description"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 99,
+          "end": 112,
+          "source": "description"
+        },
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 146,
+          "end": 151,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "d8b03c894309b97d62cd7d26109ffa5b",
+      "providerId": "New York Times",
+      "title": "The last 5 pontiffs have held audiences with the news media.",
+      "description": "The last five pontiffs have addressed members of the international news media who reported on the conclaves that elected them.",
+      "url": "https://www.nytimes.com/live/2025/05/12/world/pope-leo-news/the-last-5-pontiffs-have-held-audiences-with-the-news-media",
+      "language": "en",
+      "createdAt": "2025-05-12T08:44:26.000+00:00Z",
+      "pubDate": 1747039466,
+      "translatedTitle": "The last 5 pontiffs have held audiences with the news media.",
+      "translatedDescription": "The last five pontiffs have addressed members of the international news media who reported on the conclaves that elected them.",
+      "ner": []
+    },
+    {
+      "id": "f6715ff416f0bdbc12a56c655fee0a3b",
+      "providerId": "New York Times",
+      "title": "Pope Leo Is Celebrated in the Peruvian City Where He Served as Bishop",
+      "description": "People in the city of Chiclayo, where Leo XIV served as bishop for about eight years, gathered to celebrate a man they see as one of their own.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/pope-leo-peru.html",
+      "language": "en",
+      "createdAt": "2025-05-12T22:28:53.000+00:00Z",
+      "pubDate": 1747088933,
+      "translatedTitle": "Pope Leo Is Celebrated in the Peruvian City Where He Served as Bishop",
+      "translatedDescription": "People in the city of Chiclayo, where Leo XIV served as bishop for about eight years, gathered to celebrate a man they see as one of their own.",
+      "ner": [
+        {
+          "entity": "Pope",
+          "label": "MISC",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Leo",
+          "label": "PER",
+          "start": 5,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "Peru",
+          "label": "LOC",
+          "start": 30,
+          "end": 38,
+          "source": "title"
+        },
+        {
+          "entity": "Chiclayo",
+          "label": "LOC",
+          "start": 22,
+          "end": 30,
+          "source": "description"
+        },
+        {
+          "entity": "Leo Xiv",
+          "label": "PER",
+          "start": 38,
+          "end": 45,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "da0ba58902a3e259d26e6247b63c4f88",
+      "providerId": "New York Times",
+      "title": "Here’s what happened.",
+      "description": "",
+      "url": "https://www.nytimes.com/live/2025/05/12/world/pope-leo-news/heres-the-latest",
+      "language": "en",
+      "createdAt": "2025-05-12T10:58:38.000+00:00Z",
+      "pubDate": 1747047518,
+      "translatedTitle": "Here’s what happened.",
+      "translatedDescription": "",
+      "ner": []
+    },
+    {
+      "id": "df7bb79832fca5eed0439d2d625b3a61",
+      "providerId": "New York Times",
+      "title": "Kurdish P.K.K. Says It Will End Conflict with Turkish State",
+      "description": "The Kurdistan Workers’ Party, or P.K.K., said that it would lay down its arms and disband, a decision that could reverberate in neighboring countries.",
+      "url": "https://www.nytimes.com/2025/05/12/world/europe/kurdish-pkk-turkey.html",
+      "language": "en",
+      "createdAt": "2025-05-12T19:26:15.000+00:00Z",
+      "pubDate": 1747077975,
+      "translatedTitle": "Kurdish P.K.K. Says It Will End Conflict with Turkish State",
+      "translatedDescription": "The Kurdistan Workers’ Party, or P.K.K., said that it would lay down its arms and disband, a decision that could reverberate in neighboring countries.",
+      "ner": [
+        {
+          "entity": "Kurdish",
+          "label": "MISC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Turkish",
+          "label": "MISC",
+          "start": 46,
+          "end": 53,
+          "source": "title"
+        },
+        {
+          "entity": "Kurdistan Workers’ Party",
+          "label": "ORG",
+          "start": 4,
+          "end": 28,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "660834eff83720f382968011a58d86e0",
+      "providerId": "New York Times",
+      "title": "China Courts Lula and Latin America After Trump’s Tariff Shock",
+      "description": "President Luiz Inácio Lula da Silva of Brazil is visiting Beijing this week, and China’s Xi Jinping will also meet top officials from other Latin American and Caribbean nations to emphasize their ties.",
+      "url": "https://www.nytimes.com/2025/05/12/world/asia/china-lula-latam-trade.html",
+      "language": "en",
+      "createdAt": "2025-05-12T18:19:09.000+00:00Z",
+      "pubDate": 1747073949,
+      "translatedTitle": "China Courts Lula and Latin America After Trump’s Tariff Shock",
+      "translatedDescription": "President Luiz Inácio Lula da Silva of Brazil is visiting Beijing this week, and China’s Xi Jinping will also meet top officials from other Latin American and Caribbean nations to emphasize their ties.",
+      "ner": [
+        {
+          "entity": "China",
+          "label": "LOC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Lu",
+          "label": "PER",
+          "start": 13,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "Latin America",
+          "label": "LOC",
+          "start": 22,
+          "end": 35,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 42,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Luiz Inácio Lula Da Silva",
+          "label": "PER",
+          "start": 10,
+          "end": 35,
+          "source": "description"
+        },
+        {
+          "entity": "Brazil",
+          "label": "LOC",
+          "start": 39,
+          "end": 45,
+          "source": "description"
+        },
+        {
+          "entity": "Beijing",
+          "label": "LOC",
+          "start": 58,
+          "end": 65,
+          "source": "description"
+        },
+        {
+          "entity": "Xi Jinping",
+          "label": "PER",
+          "start": 89,
+          "end": 99,
+          "source": "description"
+        },
+        {
+          "entity": "Latin American",
+          "label": "MISC",
+          "start": 140,
+          "end": 154,
+          "source": "description"
+        },
+        {
+          "entity": "Caribbean",
+          "label": "LOC",
+          "start": 159,
+          "end": 168,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "0cb1c40a34d8309f52f72a3520217891",
+      "providerId": "New York Times",
+      "title": "Monday Briefing",
+      "description": "Here’s what you need to know.",
+      "url": "https://www.nytimes.com/2025/05/12/briefing/china-trade-pakistan-vatican.html",
+      "language": "en",
+      "createdAt": "2025-05-12T04:35:34.000+00:00Z",
+      "pubDate": 1747024534,
+      "translatedTitle": "Monday Briefing",
+      "translatedDescription": "Here’s what you need to know.",
+      "ner": []
+    },
+    {
+      "id": "f8395967d6f852e7107071ce48f62a66",
+      "providerId": "New York Times",
+      "title": "Rodrigo Duterte Is Expected to Again Become Mayor of Davao City",
+      "description": "Former President Rodrigo Duterte, who faces international court charges of crimes against humanity, appears to have been elected mayor of Davao City. One of his sons is expected to fill in.",
+      "url": "https://www.nytimes.com/2025/05/11/world/asia/duterte-davao-mayor-election.html",
+      "language": "en",
+      "createdAt": "2025-05-13T00:38:22.000+00:00Z",
+      "pubDate": 1747096702,
+      "translatedTitle": "Rodrigo Duterte Is Expected to Again Become Mayor of Davao City",
+      "translatedDescription": "Former President Rodrigo Duterte, who faces international court charges of crimes against humanity, appears to have been elected mayor of Davao City. One of his sons is expected to fill in.",
+      "ner": [
+        {
+          "entity": "Rodrigo Duterte",
+          "label": "PER",
+          "start": 0,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "Davao City",
+          "label": "LOC",
+          "start": 53,
+          "end": 63,
+          "source": "title"
+        },
+        {
+          "entity": "Dava",
+          "label": "LOC",
+          "start": 138,
+          "end": 142,
+          "source": "description"
+        },
+        {
+          "entity": "o City",
+          "label": "LOC",
+          "start": 142,
+          "end": 148,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "8123ea11690a8c0bc454034ceb9fe562",
+      "providerId": "New York Times",
+      "title": "Monday Briefing: U.S.-China Talks",
+      "description": "Plus, crypto bro fight club.",
+      "url": "https://www.nytimes.com/2025/05/11/briefing/us-china-talks-india-pakistan-truce-trump-netanyahu-divide.html",
+      "language": "en",
+      "createdAt": "2025-05-11T21:00:26.000+00:00Z",
+      "pubDate": 1746997226,
+      "translatedTitle": "Monday Briefing: U.S.-China Talks",
+      "translatedDescription": "Plus, crypto bro fight club.",
+      "ner": [
+        {
+          "entity": "China",
+          "label": "LOC",
+          "start": 22,
+          "end": 27,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "fc0d776b5d0227b73a8dcebeb732345e",
+      "providerId": "New York Times",
+      "title": "Dozens of Afrikaners Leave for U.S. After Trump Grants Refugee Status",
+      "description": "Dozens of Afrikaners who claim discrimination in their home country flew out of Johannesburg on Sunday. Their departure for the U.S. came as the Trump administration was halting virtually all refugee admissions.",
+      "url": "https://www.nytimes.com/2025/05/11/world/africa/trump-white-south-african-refugees.html",
+      "language": "en",
+      "createdAt": "2025-05-12T11:13:26.000+00:00Z",
+      "pubDate": 1747048406,
+      "translatedTitle": "Dozens of Afrikaners Leave for U.S. After Trump Grants Refugee Status",
+      "translatedDescription": "Dozens of Afrikaners who claim discrimination in their home country flew out of Johannesburg on Sunday. Their departure for the U.S. came as the Trump administration was halting virtually all refugee admissions.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 42,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Johannesburg",
+          "label": "LOC",
+          "start": 80,
+          "end": 92,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "fb2f29f0a4395cb7dc04cb4253cbad02",
+      "providerId": "New York Times",
+      "title": "Hamas Says It Will Release Its Last American Hostage",
+      "description": "The announcement, which did not say when the hostage, Edan Alexander, would be set free, came as President Trump planned to visit the region.",
+      "url": "https://www.nytimes.com/2025/05/11/world/middleeast/hamas-hostage-edan-alexander.html",
+      "language": "en",
+      "createdAt": "2025-05-11T23:29:01.000+00:00Z",
+      "pubDate": 1747006141,
+      "translatedTitle": "Hamas Says It Will Release Its Last American Hostage",
+      "translatedDescription": "The announcement, which did not say when the hostage, Edan Alexander, would be set free, came as President Trump planned to visit the region.",
+      "ner": [
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 36,
+          "end": 44,
+          "source": "title"
+        },
+        {
+          "entity": "Ed",
+          "label": "PER",
+          "start": 54,
+          "end": 56,
+          "source": "description"
+        },
+        {
+          "entity": "An Alexander",
+          "label": "PER",
+          "start": 56,
+          "end": 68,
+          "source": "description"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 107,
+          "end": 112,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "3258021ccb96d8ec42646b1c71240ebc",
+      "providerId": "New York Times",
+      "title": "As Cease-Fire Seems to Hold, India and Pakistan Both Claim Victory",
+      "description": "The Trump administration’s public descriptions of its role in the mediation seemed to touch some sensitive spots politically in India.",
+      "url": "https://www.nytimes.com/2025/05/11/world/asia/india-pakistan-kashmir-ceasefire.html",
+      "language": "en",
+      "createdAt": "2025-05-11T21:12:49.000+00:00Z",
+      "pubDate": 1746997969,
+      "translatedTitle": "As Cease-Fire Seems to Hold, India and Pakistan Both Claim Victory",
+      "translatedDescription": "The Trump administration’s public descriptions of its role in the mediation seemed to touch some sensitive spots politically in India.",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 29,
+          "end": 34,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 39,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 4,
+          "end": 9,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "0c4336871d840970b9b3cac32a7692f7",
+      "providerId": "New York Times",
+      "title": "How a Quiet American Cardinal Became Pope",
+      "description": "At a conclave with many new members, a swift, stunning consensus built around an unknown to many outside of the church.",
+      "url": "https://www.nytimes.com/2025/05/11/world/europe/conclave-vote-pope-leo-robert-prevost.html",
+      "language": "en",
+      "createdAt": "2025-05-12T16:08:04.000+00:00Z",
+      "pubDate": 1747066084,
+      "translatedTitle": "How a Quiet American Cardinal Became Pope",
+      "translatedDescription": "At a conclave with many new members, a swift, stunning consensus built around an unknown to many outside of the church.",
+      "ner": [
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 12,
+          "end": 20,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "9d104fb8931a1e26b2838ad3c66a6c7b",
+      "providerId": "New York Times",
+      "title": "Pope Leo XIV Calls for End to Wars in Gaza and Ukraine",
+      "description": "The new pope, speaking to thousands in St. Peter’s Square, echoed themes that Francis, his predecessor, regularly addressed.",
+      "url": "https://www.nytimes.com/2025/05/11/world/europe/pope-leo-xiv-address-peace.html",
+      "language": "en",
+      "createdAt": "2025-05-11T19:51:22.000+00:00Z",
+      "pubDate": 1746993082,
+      "translatedTitle": "Pope Leo XIV Calls for End to Wars in Gaza and Ukraine",
+      "translatedDescription": "The new pope, speaking to thousands in St. Peter’s Square, echoed themes that Francis, his predecessor, regularly addressed.",
+      "ner": [
+        {
+          "entity": "Pope Leo Xiv",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 38,
+          "end": 42,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 47,
+          "end": 54,
+          "source": "title"
+        },
+        {
+          "entity": "St",
+          "label": "LOC",
+          "start": 39,
+          "end": 41,
+          "source": "description"
+        },
+        {
+          "entity": "Francis",
+          "label": "PER",
+          "start": 78,
+          "end": 85,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "2d499e31d736bcda13159fcc8c54ad15",
+      "providerId": "New York Times",
+      "title": "Bangladesh Bans the Political Party of Its Ousted Former Ruler",
+      "description": "Sheikh Hasina fled the country after a mass uprising against her government, but the party she led remained a factor in Bangladeshi politics.",
+      "url": "https://www.nytimes.com/2025/05/11/world/asia/bangladesh-awami-party-ban.html",
+      "language": "en",
+      "createdAt": "2025-05-11T11:34:17.000+00:00Z",
+      "pubDate": 1746963257,
+      "translatedTitle": "Bangladesh Bans the Political Party of Its Ousted Former Ruler",
+      "translatedDescription": "Sheikh Hasina fled the country after a mass uprising against her government, but the party she led remained a factor in Bangladeshi politics.",
+      "ner": [
+        {
+          "entity": "Bangladesh",
+          "label": "LOC",
+          "start": 0,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Political Party of",
+          "label": "ORG",
+          "start": 20,
+          "end": 38,
+          "source": "title"
+        },
+        {
+          "entity": "Hasina",
+          "label": "PER",
+          "start": 7,
+          "end": 13,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "19c38991409cd87f694bb0f3635b9bb6",
+      "providerId": "RTS",
+      "title": "La gauche d'Amérique latine pleure l'une de ses icônes, \"Pepe\" Mujica",
+      "description": "Immédiatement après l'annonce de la mort, mardi, de l'ancien président d'Uruguay José \"Pepe\" Mujica, plusieurs figures de gauche en Amérique latine, de Lula à Evo Morales en passant par Claudia Sheinbaum, lui ont rendu hommage.",
+      "url": "https://www.france24.com/fr/am%C3%A9riques/20250514-gauche-amerique-latine-pleure-une-de-ses-ic%C3%B4nes-pepe-mujica-mort",
+      "language": "en",
+      "createdAt": "2025-05-14T01:28:44.000+00:00Z",
+      "pubDate": 1747186124,
+      "translatedTitle": "The left of Latin America cries one of its icons, \"Pepe\" Mujica",
+      "translatedDescription": "Immediately after the announcement of the death on Tuesday of the former president of Uruguay José \"Pepe\" Mujica, several figures on the left in Latin America, from Lula to Evo Morales via Claudia Sheinbaum, paid tribute to him.",
+      "ner": [
+        {
+          "entity": "Latin America",
+          "label": "LOC",
+          "start": 12,
+          "end": 25,
+          "source": "title"
+        },
+        {
+          "entity": "Pepe\" Mujica",
+          "label": "PER",
+          "start": 51,
+          "end": 63,
+          "source": "title"
+        },
+        {
+          "entity": "Uruguay",
+          "label": "LOC",
+          "start": 86,
+          "end": 93,
+          "source": "description"
+        },
+        {
+          "entity": "José \"Pepe\" Mujica",
+          "label": "PER",
+          "start": 94,
+          "end": 112,
+          "source": "description"
+        },
+        {
+          "entity": "Lula",
+          "label": "PER",
+          "start": 165,
+          "end": 169,
+          "source": "description"
+        },
+        {
+          "entity": "Evo Morales",
+          "label": "PER",
+          "start": 173,
+          "end": 184,
+          "source": "description"
+        },
+        {
+          "entity": "Claudia Sheinbaum",
+          "label": "PER",
+          "start": 189,
+          "end": 206,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "0b1b706bd0dbdf85d2a7710b660a3efb",
+      "providerId": "RTS",
+      "title": "Les Flammes sacrent l'as de la mélodie R'n'B Tiakola et la rappeuse belge Shay",
+      "description": "Tiakola, alias \"le Rossignol de La Courneuve\", a été désigné mardi soir artiste masculin de l'année lors de la troisième édition des Flammes, trophées de la sphère du hip-hop. Côté féminin, c'est Shay, avec son rap hardcore, qui a été récompensée.",
+      "url": "https://www.france24.com/fr/culture/20250514-musique-rap-rnb-flammes-tiakola-shay",
+      "language": "en",
+      "createdAt": "2025-05-14T01:00:40.000+00:00Z",
+      "pubDate": 1747184440,
+      "translatedTitle": "The flames sacrust the ace of the melody R'n'b Tiakola and the Belgian rapper Shay",
+      "translatedDescription": "Tiakola, aka \"Le Rossignol de la Courneuve\", was appointed on Tuesday evening male artist of the year during the third edition of the flames, trophies of the hip-hop sphere. On the feminine side, it was Shay, with his Hardcore rap, which was rewarded.",
+      "ner": [
+        {
+          "entity": "Tiakola",
+          "label": "PER",
+          "start": 47,
+          "end": 54,
+          "source": "title"
+        },
+        {
+          "entity": "Belgian",
+          "label": "MISC",
+          "start": 63,
+          "end": 70,
+          "source": "title"
+        },
+        {
+          "entity": "Shay",
+          "label": "PER",
+          "start": 78,
+          "end": 82,
+          "source": "title"
+        },
+        {
+          "entity": "Le Rossignol De La",
+          "label": "PER",
+          "start": 14,
+          "end": 32,
+          "source": "description"
+        },
+        {
+          "entity": "Hardcore",
+          "label": "MISC",
+          "start": 218,
+          "end": 226,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "ab25c2814d02fab3f1bbe0fe950fbc30",
+      "providerId": "RTS",
+      "title": "En Albanie, le camp du Premier ministre Edi Rama remporte une large victoire",
+      "description": "Les socialistes du Premier ministre albanais Edi Rama ont remporté une large victoire aux législatives de dimanche, selon des résultats officiels publiés dans la nuit de mardi à mercredi. L'opposition, qui dénonce des fraudes et appelle à manifester, a laissé entendre qu'elle pourrait ne pas reconnaître les résultats.",
+      "url": "https://www.france24.com/fr/europe/20250513-albanie-legislatives-large-victoire-premier-ministre-edi-rama",
+      "language": "en",
+      "createdAt": "2025-05-13T23:50:52.000+00:00Z",
+      "pubDate": 1747180252,
+      "translatedTitle": "In Albania, Prime Minister Edi Rama's camp won a large victory",
+      "translatedDescription": "The Socialists of Albanian Prime Minister EDI Rama won a broad victory in the legislative elections on Sunday, according to official results published on the night of Tuesday to Wednesday. The opposition, which denounces fraud and calls for manifesting, suggested that it might not recognize the results.",
+      "ner": [
+        {
+          "entity": "Albania",
+          "label": "LOC",
+          "start": 3,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Edi Rama",
+          "label": "PER",
+          "start": 27,
+          "end": 35,
+          "source": "title"
+        },
+        {
+          "entity": "EDI",
+          "label": "ORG",
+          "start": 42,
+          "end": 45,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "ac23b0c405c6faed311dd4a015f6d702",
+      "providerId": "RTS",
+      "title": "Un Boeing qatari pour Donald Trump : le cadeau qui passe mal",
+      "description": "En dépit des soupçons de corruption et de conflit d'intérêt, Donald Trump se dit prêt à accepter un Boeing 747 que lui offrirait le Qatar. Sa valeur : plus de 400 millions de dollars.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/info-ou-intox/20250513-un-boeing-qatari-pour-donald-trump-le-cadeau-qui-passe-mal",
+      "language": "en",
+      "createdAt": "2025-05-13T20:49:45.000+00:00Z",
+      "pubDate": 1747169385,
+      "translatedTitle": "A Qatari Boeing for Donald Trump: the gift that goes wrong",
+      "translatedDescription": "Despite suspicion of corruption and conflict of interest, Donald Trump says he is ready to accept a Boeing 747 that Qatar would offer him. Its value: more than $ 400 million.",
+      "ner": [
+        {
+          "entity": "Qatar",
+          "label": "LOC",
+          "start": 2,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "Boeing",
+          "label": "ORG",
+          "start": 9,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 20,
+          "end": 32,
+          "source": "title"
+        },
+        {
+          "entity": "Boeing 747",
+          "label": "MISC",
+          "start": 100,
+          "end": 110,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "d13950de0bf82265ebea7a75b6ae6033",
+      "providerId": "RTS",
+      "title": "Mali : les partis et organisations politiques dissous, décision redoutée par l'opposition",
+      "description": "Les militaires au pouvoir au Mali a annoncé la dissolution \"des partis politiques et des organisations à caractère politique\" dans un décret présidentiel lu à la télévision nationale, une décision redoutée depuis plusieurs semaines par les partis d'opposition. Kadida Fofana, ancienne conseillère municipale et militante est notre invitée.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/journal-de-l-afrique/20250513-mali-les-partis-et-organisations-politiques-dissous-d%C3%A9cision-redout%C3%A9e-par-l-opposition",
+      "language": "en",
+      "createdAt": "2025-05-13T20:32:37.000+00:00Z",
+      "pubDate": 1747168357,
+      "translatedTitle": "Mali: dissolved political parties and organizations, a decision dreaded by the opposition",
+      "translatedDescription": "The military in power in Mali announced the dissolution \"of political parties and political organizations\" in a presidential decree read on national television, a dreaded decision for several weeks by the opposition parties. Kadida Fofana, former municipal councilor and activist is our guest.",
+      "ner": [
+        {
+          "entity": "Mali",
+          "label": "LOC",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Kadida Fofana",
+          "label": "PER",
+          "start": 225,
+          "end": 238,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "aacaf355f41f5b7c13f500961cff90eb",
+      "providerId": "RTS",
+      "title": "Sous la pression de Mohammed ben Salmane, Trump annonce la levée des sanctions en Syrie",
+      "description": "Donald Trump a créé la surprise mardi en annonçant depuis l'Arabie saoudite qu'il levait les sanctions américaines contre la Syrie. \"Je vais ordonner l'arrêt des sanctions contre la Syrie pour leur donner une chance de grandeur\", a dit le président américain, en indiquant être parvenu à cette décision après des demandes pressantes de son hôte, Mohammed ben Salmane. Damas s'est félicité d'un \"tournant décisif\".",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250513-trump-annonce-la-lev%C3%A9e-des-sanctions-contre-la-syrie",
+      "language": "en",
+      "createdAt": "2025-05-13T20:10:55.000+00:00Z",
+      "pubDate": 1747167055,
+      "translatedTitle": "Under pressure from Mohammed Ben Salmane, Trump announces the lifting of sanctions in Syria",
+      "translatedDescription": "Donald Trump created surprise on Tuesday by announcing from Saudi Arabia that he raised American sanctions against Syria. \"I will order the cessation of sanctions against Syria to give them a chance of greatness,\" said the American president, saying that he had reached this decision after pressing requests from his host, Mohammed Ben Salmane. Damascus welcomed a \"decisive turning point\".",
+      "ner": [
+        {
+          "entity": "Mohammed Ben Salmane",
+          "label": "PER",
+          "start": 20,
+          "end": 40,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 42,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 86,
+          "end": 91,
+          "source": "title"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "description"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 60,
+          "end": 72,
+          "source": "description"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 88,
+          "end": 96,
+          "source": "description"
+        },
+        {
+          "entity": "Damascus",
+          "label": "LOC",
+          "start": 345,
+          "end": 353,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "8addb807685e5ba20c74497a0fa62fdc",
+      "providerId": "RTS",
+      "title": "Ukraine, Gaza, retraites... Ce qu'il faut retenir de l'entretien d'Emmanuel Macron",
+      "description": "Emmanuel Macron, qui poursuit son entreprise de reconquête de l'opinion, a rendez-vous mardi soir avec les Français dans une émission grand format sur TF1. Durant cet entretien télévisé, le président de la République s'est exprimé sur de nombreux sujets, notamment l'Ukraine, Gaza ou encore les retraites. Voici ce qu'il faut retenir.",
+      "url": "https://www.france24.com/fr/france/20250513-ukraine-europe-retraites-ce-qu-il-faut-retenir-entretien-emmanuel-macron-tf1",
+      "language": "en",
+      "createdAt": "2025-05-13T20:09:22.000+00:00Z",
+      "pubDate": 1747166962,
+      "translatedTitle": "Ukraine, Gaza, pensions ... What to remember from the interview of Emmanuel Macron",
+      "translatedDescription": "Emmanuel Macron, who continues his company to reconquer opinion, has an appointment on Tuesday evening with the French in a large format program on TF1. During this television interview, the President of the Republic spoke on many subjects, notably Ukraine, Gaza or even pensions. Here is what to remember.",
+      "ner": [
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 9,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Emmanuel Macron",
+          "label": "PER",
+          "start": 67,
+          "end": 82,
+          "source": "title"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 112,
+          "end": 118,
+          "source": "description"
+        },
+        {
+          "entity": "TF1",
+          "label": "ORG",
+          "start": 148,
+          "end": 151,
+          "source": "description"
+        },
+        {
+          "entity": "Republic",
+          "label": "LOC",
+          "start": 208,
+          "end": 216,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "452876ec8f438483e04fc701abffebe0",
+      "providerId": "RTS",
+      "title": "Cannes 2025 : Palme d’or d’honneur pour Robert De Niro",
+      "description": "Douze jours de cinéma et de glamour : c’est parti pour le Festival de Cannes ! Dans \"À l’Affiche\", Louise Dupont et Albéric de Gouville passent en revue les moments les plus attendus de cette 78e édition. Vingt-deux films en compétition, un jury présidé par Juliette Binoche et des dizaines de stars foulant le tapis rouge, à commencer par Robert De Niro. L’acteur de légende, habitué de la Croisette, reçoit cette année une Palme d’or d’honneur pour l’ensemble de sa carrière.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/%C3%A0-l-affiche/20250513-cannes-2025-palme-or-honneur-pour-robert-de-niro",
+      "language": "en",
+      "createdAt": "2025-05-13T20:00:59.000+00:00Z",
+      "pubDate": 1747166459,
+      "translatedTitle": "Cannes 2025: Palme d'Or d'Honneur for Robert de Niro",
+      "translatedDescription": "Twelve days of cinema and glamor: let's go for the Cannes Film Festival! In \"On the poster\", Louise Dupont and Albéric de Gouville review the most anticipated moments of this 78th edition. Twenty-two films in competition, a jury chaired by Juliette Binoche and dozens of stars firing the red carpet, starting with Robert de Niro. The legendary actor, accustomed to the Croisette, receives this year a palm of gold of honor for his entire career.",
+      "ner": [
+        {
+          "entity": "Cannes",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Palme d'Or d'Honneur",
+          "label": "MISC",
+          "start": 13,
+          "end": 33,
+          "source": "title"
+        },
+        {
+          "entity": "Robert De Niro",
+          "label": "PER",
+          "start": 38,
+          "end": 52,
+          "source": "title"
+        },
+        {
+          "entity": "Cannes Film Festival",
+          "label": "MISC",
+          "start": 51,
+          "end": 71,
+          "source": "description"
+        },
+        {
+          "entity": "Louise Dupont",
+          "label": "PER",
+          "start": 93,
+          "end": 106,
+          "source": "description"
+        },
+        {
+          "entity": "Al",
+          "label": "PER",
+          "start": 111,
+          "end": 113,
+          "source": "description"
+        },
+        {
+          "entity": "Juliette Binoche",
+          "label": "PER",
+          "start": 240,
+          "end": 256,
+          "source": "description"
+        },
+        {
+          "entity": "Croisette",
+          "label": "MISC",
+          "start": 369,
+          "end": 378,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "5b01746fee2539fe6a7b392bfc1fb372",
+      "providerId": "RTS",
+      "title": "Nissan annonce le pire bilan annuel de son histoire et des milliers de licenciements",
+      "description": "Rien ne va plus pour le constructeur automobile japonais. Nissan annonce une perte annuelle colossale de 4.1 milliards d'euros et la suppression de 20 000 emplois dans le monde. La direction veut consolider ses usines pour réduire sa capacité de production. Les barrières douanières décrétées par Washington ont également compliqué un peu plus la situation de Nissan.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/info-%C3%A9co/20250513-nissan-annonce-le-pire-bilan-annuel-de-son-histoire-et-des-milliers-de-licenciements",
+      "language": "en",
+      "createdAt": "2025-05-13T19:51:25.000+00:00Z",
+      "pubDate": 1747165885,
+      "translatedTitle": "Nissan announces the worst annual assessment of its history and thousands of layoffs",
+      "translatedDescription": "Nothing is going well for the Japanese car manufacturer. Nissan announces a colossal annual loss of 4.1 billion euros and the abolition of 20,000 jobs worldwide. Management wants to consolidate its factories to reduce its production capacity. The customs barriers decreed by Washington also complicated the situation of Nissan a little more.",
+      "ner": [
+        {
+          "entity": "Nissan",
+          "label": "ORG",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Japan",
+          "label": "LOC",
+          "start": 30,
+          "end": 38,
+          "source": "description"
+        },
+        {
+          "entity": "Washington",
+          "label": "LOC",
+          "start": 275,
+          "end": 285,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "9715487c749b9a788b0c932cadfde37f",
+      "providerId": "RTS",
+      "title": "🔴 L'ancien président uruguayen José \"Pepe\" Mujica est mort à l'âge de 89 ans",
+      "description": "",
+      "url": "https://www.france24.com/fr/am%C3%A9riques/20250513-mort-uruguay-pr%C3%A9sident-jos%C3%A9-pepe-mujica-ap%C3%B4tre-sobri%C3%A9t%C3%A9-consum%C3%A9risme",
+      "language": "en",
+      "createdAt": "2025-05-13T19:29:12.000+00:00Z",
+      "pubDate": 1747164552,
+      "translatedTitle": "🔴 Former Uruguayan President José \"Pepe\" Mujica died at the age of 89",
+      "translatedDescription": "",
+      "ner": [
+        {
+          "entity": "Uruguay",
+          "label": "LOC",
+          "start": 9,
+          "end": 18,
+          "source": "title"
+        },
+        {
+          "entity": "José \"Pepe\" Mujica",
+          "label": "PER",
+          "start": 29,
+          "end": 47,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "d63bba8689292175810e758af39657b3",
+      "providerId": "RTS",
+      "title": "Levée des sanctions américaines en Syrie : un \"vrai soulagement\" pour la population",
+      "description": "Donald Trump a annoncé mardi depuis Riyad la levée des sanctions américaines contre la Syrie, avant une rencontre prévue avec le président syrien Ahmed al-Charaa. Un \"vrai soulagement\" pour les Syriens, observe Diana Alboz, correspondante de France 24 à Damas, qui souligne \"l'espoir\" d'un impact sur l'économie du pays et un meilleur accès aux médicaments et à la nourriture, après plus de dix ans de guerre.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250513-fr-nw-grab-alboz-from-20h-pour-22h-perrin-francois",
+      "language": "en",
+      "createdAt": "2025-05-13T18:49:33.000+00:00Z",
+      "pubDate": 1747162173,
+      "translatedTitle": "Lifting American sanctions in Syria: a \"real relief\" for the population",
+      "translatedDescription": "Donald Trump announced Tuesday from Riyadh the lifting of American sanctions against Syria, before a meeting planned with Syrian President Ahmed al-Charaa. A \"real relief\" for the Syrians, observes Diana Alboz, correspondent of France 24 in Damascus, who underlines \"hope\" of an impact on the economy of the country and better access to drugs and food, after more than ten years of war.",
+      "ner": [
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 8,
+          "end": 16,
+          "source": "title"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 30,
+          "end": 35,
+          "source": "title"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "description"
+        },
+        {
+          "entity": "Riyadh",
+          "label": "LOC",
+          "start": 36,
+          "end": 42,
+          "source": "description"
+        },
+        {
+          "entity": "Ahmed Al-Charaa",
+          "label": "PER",
+          "start": 139,
+          "end": 154,
+          "source": "description"
+        },
+        {
+          "entity": "Diana Alboz",
+          "label": "PER",
+          "start": 198,
+          "end": 209,
+          "source": "description"
+        },
+        {
+          "entity": "France",
+          "label": "ORG",
+          "start": 228,
+          "end": 237,
+          "source": "description"
+        },
+        {
+          "entity": "Damascus",
+          "label": "LOC",
+          "start": 241,
+          "end": 249,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "0e32ff3292d4d39b5ad84a5aa2d4efdc",
+      "providerId": "RTS",
+      "title": "Donald Trump / Mohammed ben Salmane : affaires ou diplomatie ?",
+      "description": "Donald Trump est en Arabie Saoudite. Première étape d'une tournée dans les pays du Golfe. Le Président américain s’est entretenu avec Mohammed ben Salmane, le prince héritier saoudien. Washington et Ryad ont signé un contrat de défense de 142 milliards de dollars. Cet accord s'inscrit dans un ensemble plus vaste de promesses d'investissement saoudien de 600 milliards de dollars selon l'exécutif américain.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20250513-donald-trump-mohammed-ben-salmane-affaires-ou-diplomatie",
+      "language": "en",
+      "createdAt": "2025-05-13T18:09:37.000+00:00Z",
+      "pubDate": 1747159777,
+      "translatedTitle": "Donald Trump / Mohammed ben Salmane: Affairs or diplomacy?",
+      "translatedDescription": "Donald Trump is in Saudi Arabia. First stage of a tour in the Gulf countries. The American president spoke with Mohammed bin Salmane, the Saudi crown prince. Washington and Ryad signed a defense contract of $ 142 billion. This agreement is part of a larger set of Saudi investment promises of $ 600 billion according to the American executive.",
+      "ner": [
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "title"
+        },
+        {
+          "entity": "Mohammed Ben Salmane",
+          "label": "PER",
+          "start": 15,
+          "end": 35,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 19,
+          "end": 31,
+          "source": "description"
+        },
+        {
+          "entity": "Gulf",
+          "label": "LOC",
+          "start": 62,
+          "end": 66,
+          "source": "description"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 82,
+          "end": 90,
+          "source": "description"
+        },
+        {
+          "entity": "Mohammed Bin Salmane",
+          "label": "PER",
+          "start": 112,
+          "end": 132,
+          "source": "description"
+        },
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 138,
+          "end": 143,
+          "source": "description"
+        },
+        {
+          "entity": "Washington",
+          "label": "LOC",
+          "start": 158,
+          "end": 168,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "15718664e0373df0e9de9d22d42e0b43",
+      "providerId": "RTS",
+      "title": "Léon Deffontaines (PCF) : \"Notre crainte, c'est que Poutine et Trump se partagent l'Ukraine\"",
+      "description": "Emmanuel Macron était en visite samedi à Kiev en compagnie d'autres dirigeants européens. Ils ont réclamé un \"cessez-le-feu complet\" de 30 jours à Vladimir Poutine, sous peine de nouvelles sanctions. Léon Deffontaines, porte-parole du Parti communiste, \"espère qu'Emmanuel Macron puisse agir plus fortement sur la question ukrainienne\". L'invité de \"Mardi politique\" aborde aussi la guerre à Gaza, sur laquelle il estime que la France a une \"extinction de voix\".",
+      "url": "https://www.france24.com/fr/%C3%A9missions/mardi-politique/20250513-l%C3%A9on-deffontaines-pcf-notre-crainte-poutine-trump-se-partagent-ukraine",
+      "language": "en",
+      "createdAt": "2025-05-13T17:47:47.000+00:00Z",
+      "pubDate": 1747158467,
+      "translatedTitle": "Léon Deffontaines (PCF): \"Our fear is that Putin and Trump share Ukraine\"",
+      "translatedDescription": "Emmanuel Macron was visiting kyiv on Saturday in the company of other European leaders. They asked for a 30-day \"full ceasefire\" from Vladimir Putin, under penalty of new sanctions. Léon Deffontaines, spokesperson for the Communist Party, \"hopes that Emmanuel Macron can act more strongly on the Ukrainian issue\". The guest of \"Political Tuesday\" also tackles war in Gaza, on which he believes that France has a \"extinction of voice\".",
+      "ner": [
+        {
+          "entity": "Léon Deffontaines",
+          "label": "PER",
+          "start": 0,
+          "end": 17,
+          "source": "title"
+        },
+        {
+          "entity": "PCF",
+          "label": "ORG",
+          "start": 19,
+          "end": 22,
+          "source": "title"
+        },
+        {
+          "entity": "Putin",
+          "label": "PER",
+          "start": 43,
+          "end": 48,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 53,
+          "end": 58,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 65,
+          "end": 72,
+          "source": "title"
+        },
+        {
+          "entity": "Emmanuel Macron",
+          "label": "PER",
+          "start": 0,
+          "end": 15,
+          "source": "description"
+        },
+        {
+          "entity": "yiv",
+          "label": "LOC",
+          "start": 30,
+          "end": 33,
+          "source": "description"
+        },
+        {
+          "entity": "European",
+          "label": "MISC",
+          "start": 70,
+          "end": 78,
+          "source": "description"
+        },
+        {
+          "entity": "Vladimir Putin",
+          "label": "PER",
+          "start": 134,
+          "end": 148,
+          "source": "description"
+        },
+        {
+          "entity": "Léon De",
+          "label": "PER",
+          "start": 182,
+          "end": 189,
+          "source": "description"
+        },
+        {
+          "entity": "Communist Party",
+          "label": "ORG",
+          "start": 222,
+          "end": 237,
+          "source": "description"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 367,
+          "end": 371,
+          "source": "description"
+        },
+        {
+          "entity": "France",
+          "label": "LOC",
+          "start": 399,
+          "end": 405,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "b47c7dcd474a053352033e9edbb04f9d",
+      "providerId": "RTS",
+      "title": "Au Mali, la junte dissout les partis politiques et suspend TV5 Monde",
+      "description": "La junte au pouvoir au Mali a annoncé mardi la dissolution des \"partis politiques\" et des \"organisations à caractère politique\", selon un décret présidentiel lu à la télévision publique. Elle a également suspendu \"jusqu'à nouvel ordre\" la chaîne de télévision française TV5 Monde.",
+      "url": "https://www.france24.com/fr/info-en-continu/20250513-mali-la-junte-dissout-les-partis-politiques-et-suspend-la-cha%C3%AEne-tv5-monde",
+      "language": "en",
+      "createdAt": "2025-05-13T17:15:12.000+00:00Z",
+      "pubDate": 1747156512,
+      "translatedTitle": "In Mali, the junta dissolves political parties and suspends TV5 Monde",
+      "translatedDescription": "The power junta in Mali announced on Tuesday the dissolution of \"political parties\" and \"political organizations\", according to a presidential decree read on public television. She also suspended \"until further notice\" the French TV5 TV channel TV5 Monde.",
+      "ner": [
+        {
+          "entity": "Mali",
+          "label": "LOC",
+          "start": 3,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "TV5 Monde",
+          "label": "ORG",
+          "start": 60,
+          "end": 69,
+          "source": "title"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 223,
+          "end": 229,
+          "source": "description"
+        },
+        {
+          "entity": "TV5",
+          "label": "ORG",
+          "start": 230,
+          "end": 233,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "f66dbd36acaab71d271c04050d4fde73",
+      "providerId": "RTS",
+      "title": "Donald Trump annonce la levée des sanctions américaines contre la Syrie",
+      "description": "Le président américain Donald Trump a annoncé mardi la levée des sanctions américaines contre la Syrie, depuis l'Arabie saoudite, première étape de sa tournée au Moyen-Orient. Le gouvernement syrien a salué un \"tournant décisif\".",
+      "url": "https://www.france24.com/fr/moyen-orient/20250513-donald-trump-annonce-lev%C3%A9e-sanctions-am%C3%A9ricaines-contre-syrie",
+      "language": "en",
+      "createdAt": "2025-05-13T17:13:57.000+00:00Z",
+      "pubDate": 1747156437,
+      "translatedTitle": "Donald Trump announces the lifting of American sanctions against Syria",
+      "translatedDescription": "President Donald Trump announced on Tuesday the lifting of American sanctions against Syria, from Saudi Arabia, the first stage of his tour in the Middle East. The Syrian government welcomed a \"decisive turning point\".",
+      "ner": [
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 12,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 38,
+          "end": 46,
+          "source": "title"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 65,
+          "end": 70,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 98,
+          "end": 110,
+          "source": "description"
+        },
+        {
+          "entity": "Middle East",
+          "label": "LOC",
+          "start": 147,
+          "end": 158,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "526394b00d89bf7bc8d0d1f252074b47",
+      "providerId": "RTS",
+      "title": "Qui sont les Afrikaners accueillis comme \"réfugiés\" aux États-Unis par Donald Trump ?",
+      "description": "Une cinquantaine d'Afrikaners, des descendants des premiers colons européens en Afrique du Sud, ont été accueillis aux États-Unis avec la bénédiction de Donald Trump, qui a pris un décret pour les reconnaître comme réfugiés. Cette décision est contestée par les autorités sud-africaines, qui démentent toute persécution.",
+      "url": "https://www.france24.com/fr/am%C3%A9riques/20250513-qui-sont-afrikaners-r%C3%A9fugi%C3%A9s-accueillis-%C3%A9tats-unis-donald-trump-afrique-du-sud",
+      "language": "en",
+      "createdAt": "2025-05-13T17:00:36.000+00:00Z",
+      "pubDate": 1747155636,
+      "translatedTitle": "Who are the Afrikaners welcomed as \"refugees\" in the United States by Donald Trump?",
+      "translatedDescription": "About fifty Afrikaners, descendants of the first European settlers in South Africa, were welcomed in the United States with the blessing of Donald Trump, who took a decree to recognize them as refugees. This decision is challenged by the South African authorities, who deny any persecution.",
+      "ner": [
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 53,
+          "end": 66,
+          "source": "title"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 70,
+          "end": 82,
+          "source": "title"
+        },
+        {
+          "entity": "European",
+          "label": "MISC",
+          "start": 49,
+          "end": 57,
+          "source": "description"
+        },
+        {
+          "entity": "South Africa",
+          "label": "LOC",
+          "start": 70,
+          "end": 82,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "bb0889b6fbed83160c26525127843759",
+      "providerId": "RTS",
+      "title": "Mauritanie : les méharistes, soldats du désert face au jihadisme",
+      "description": "Dans le désert mauritanien, une unité militaire veille, perchée sur des dromadaires. Héritiers d’une tradition coloniale réinventée, les méharistes patrouillent aux confins du Mali, où la menace jihadiste reste vive. Leur mission : protéger, surveiller et maintenir le lien avec des populations nomades trop souvent oubliées.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250513-mauritanie-les-m%C3%A9haristes-soldats-du-d%C3%A9sert-face-au-jihadisme",
+      "language": "en",
+      "createdAt": "2025-05-13T16:41:29.000+00:00Z",
+      "pubDate": 1747154489,
+      "translatedTitle": "Mauritania: meharists, desert soldiers in the face of jihadism",
+      "translatedDescription": "In the Mauritanian desert, a watch military unit, perched on dromedaries. Heirs of a reinvented colonial tradition, the meharists patrol the borders of Mali, where the jihadist threat remains lively. Their mission: to protect, monitor and maintain the link with nomadic populations that are too often forgotten.",
+      "ner": [
+        {
+          "entity": "Mauritania",
+          "label": "LOC",
+          "start": 0,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Mali",
+          "label": "LOC",
+          "start": 152,
+          "end": 156,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "7f106cc928be992d67254baf8780354c",
+      "providerId": "RTS",
+      "title": "\"Ils instrumentalisent l’aide\" : des opérateurs privés pourraient remplacer l’ONU à Gaza",
+      "description": "Un nouveau plan d'aide humanitaire à Gaza faisant appel à une organisation privée et à des sociétés de sécurité américaines pourrait remplacer l’action des Nations unies dans l'enclave palestinienne assiégée. Un plan rejeté par l'ONU, qui estime qu'il \"instrumentalise l'aide\" et menace de provoquer des déplacements massifs de Palestiniens.",
+      "url": "https://www.france24.com/fr/moyen-orient/20250513-ils-militarisent-l-aide-op%C3%A9rateurs-priv%C3%A9s-pourraient-remplacer-onu-gaza",
+      "language": "en",
+      "createdAt": "2025-05-13T16:19:40.000+00:00Z",
+      "pubDate": 1747153180,
+      "translatedTitle": "\"They instrumentalize help\": private operators could replace the UN in Gaza",
+      "translatedDescription": "A new humanitarian aid plan in Gaza using private organization and American security companies could replace the United Nations action in the besieged Palestinian enclave. A plan rejected by the UN, which believes that it \"instrumentalizes aid\" and threatens to cause massive movements of Palestinians.",
+      "ner": [
+        {
+          "entity": "UN",
+          "label": "ORG",
+          "start": 65,
+          "end": 67,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 71,
+          "end": 75,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 67,
+          "end": 75,
+          "source": "description"
+        },
+        {
+          "entity": "United Nations",
+          "label": "ORG",
+          "start": 113,
+          "end": 127,
+          "source": "description"
+        },
+        {
+          "entity": "Palestine",
+          "label": "LOC",
+          "start": 151,
+          "end": 162,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "7498160a0bbf283ae1651f35b761dd51",
+      "providerId": "RTS",
+      "title": "Poumon de l'océan, l'herbier marin de Saya de Malha en danger",
+      "description": "C'est un endroit essentiel pour la planète, et pourtant méconnu. Situé en plein cœur de l'océan Indien, le banc de Saya de Malha compte parmi les plus grands herbiers marins au monde. Poumon de l'océan, il capture le CO2 35 fois plus vite qu'une forêt tropicale et offre un habitat vital à de nombreuses espèces marines. Mais malgré son isolement en haute mer, cet écosystème est aujourd’hui menacé par les activités humaines, notamment la surpêche industrielle. Une enquête d'Outlaw Ocean Project.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/%C3%A9l%C3%A9ment-terre-la-quotidienne/20250513-poumon-de-l-oc%C3%A9an-l-herbier-marin-de-saya-de-malha-en-danger",
+      "language": "en",
+      "createdAt": "2025-05-13T16:14:12.000+00:00Z",
+      "pubDate": 1747152852,
+      "translatedTitle": "Ocean poumon, the marine herber of Saya of Malha in danger",
+      "translatedDescription": "It is an essential place for the planet, and yet unknown. Located in the heart of the Indian Ocean, the bench of Saya de Malha is one of the largest sea herbaries in the world. Ocean lung, it captures CO2 35 times faster than tropical forest and offers vital habitat to many sea species. But despite its isolation on the high seas, this ecosystem is today threatened by human activities, including industrial overfishing. A survey by Outlaw Ocean Project.",
+      "ner": [
+        {
+          "entity": "Saya of Malha",
+          "label": "LOC",
+          "start": 35,
+          "end": 48,
+          "source": "title"
+        },
+        {
+          "entity": "Indian Ocean",
+          "label": "LOC",
+          "start": 86,
+          "end": 98,
+          "source": "description"
+        },
+        {
+          "entity": "Saya de Malha",
+          "label": "LOC",
+          "start": 113,
+          "end": 126,
+          "source": "description"
+        },
+        {
+          "entity": "Outlaw Ocean Project",
+          "label": "ORG",
+          "start": 434,
+          "end": 454,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "ad99e4d27268e204d676cc473dfeb137",
+      "providerId": "RTS",
+      "title": "Festival de Cannes : pour ou contre la nudité sur le tapis rouge ?",
+      "description": "La rédaction mobile de France 24 demande aux festivaliers ce qu'ils pensent de l'interdiction de la nudité sur le tapis rouge, annoncée à J-1 du 78e Festival de Cannes.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250513-festival-de-cannes-pour-ou-contre-la-nudit%C3%A9-sur-le-tapis-rouge",
+      "language": "en",
+      "createdAt": "2025-05-13T15:44:31.000+00:00Z",
+      "pubDate": 1747151071,
+      "translatedTitle": "Cannes festival: for or against nudity on the red carpet?",
+      "translatedDescription": "The mobile writing of France 24 asks festival-goers what they think of the ban on nudity on the red carpet, announced on D-1 of the 78th Cannes Festival.",
+      "ner": [
+        {
+          "entity": "Cannes",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "France",
+          "label": "ORG",
+          "start": 22,
+          "end": 31,
+          "source": "description"
+        },
+        {
+          "entity": "78",
+          "label": "MISC",
+          "start": 132,
+          "end": 134,
+          "source": "description"
+        },
+        {
+          "entity": "Cannes Festival",
+          "label": "MISC",
+          "start": 137,
+          "end": 152,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "690edefa9b50da482483875128349242",
+      "providerId": "RTS",
+      "title": "Arabie saoudite : Donald Trump reçu en grande pompe par Mohammed ben Salmane",
+      "description": "Donald Trump a été reçu avec tous les égards par Mohammed ben Salmane, mardi, en Arabie saoudite. Lors de cette rencontre avec le prince héritier saoudien, le président américain a empoché, selon la Maison Blanche, de pharaoniques promesses d'investissements et d'achats de la part de Riyad, en particulier dans la défense et l'intelligence artificielle.",
+      "url": "https://www.france24.com/fr/moyen-orient/20250513-en-images-arabie-saoudite-donald-trump-re%C3%A7u-en-grande-pompe-par-mohammed-ben-salmane",
+      "language": "en",
+      "createdAt": "2025-05-13T15:40:09.000+00:00Z",
+      "pubDate": 1747150809,
+      "translatedTitle": "Saudi Arabia: Donald Trump received with great fanfare by Mohammed bin Salmane",
+      "translatedDescription": "Donald Trump was received with all respects by Mohammed Ben Salmane on Tuesday in Saudi Arabia. During this meeting with the Saudi Crown Prince, the American president pocketed, according to the White House, Pharaonic promises of investment and purchases from Riyadh, in particular in defense and artificial intelligence.",
+      "ner": [
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 0,
+          "end": 12,
+          "source": "title"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 14,
+          "end": 26,
+          "source": "title"
+        },
+        {
+          "entity": "Mohammed Bin Salmane",
+          "label": "PER",
+          "start": 58,
+          "end": 78,
+          "source": "title"
+        },
+        {
+          "entity": "Mohammed Ben Salmane",
+          "label": "PER",
+          "start": 47,
+          "end": 67,
+          "source": "description"
+        },
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 125,
+          "end": 130,
+          "source": "description"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 149,
+          "end": 157,
+          "source": "description"
+        },
+        {
+          "entity": "White House",
+          "label": "LOC",
+          "start": 195,
+          "end": 206,
+          "source": "description"
+        },
+        {
+          "entity": "Pharaonic",
+          "label": "MISC",
+          "start": 208,
+          "end": 217,
+          "source": "description"
+        },
+        {
+          "entity": "Riyadh",
+          "label": "LOC",
+          "start": 260,
+          "end": 266,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "203dab1c1fde62fc15c26b61e5d1189a",
+      "providerId": "RTS",
+      "title": "Football : Ancelotti au chevet du Brésil en vue du Mondial-2026",
+      "description": "L'Italien Carlo Ancelotti, en fin de cycle au Real Madrid, a été nommé lundi 12 mai sélectionneur du Brésil jusqu'au Mondial-2026, avec pour mission de relancer une Seleçao bien mal en point à un peu plus d'un an du tournoi.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250513-football-ancelotti-au-chevet-du-br%C3%A9sil-en-vue-du-mondial-2026",
+      "language": "en",
+      "createdAt": "2025-05-13T15:24:54.000+00:00Z",
+      "pubDate": 1747149894,
+      "translatedTitle": "Football: Ancelotti at Brazil's bedside for the 20126 World Cup",
+      "translatedDescription": "The Italian Carlo Ancelotti, at the end of the cycle at Real Madrid, was appointed Monday May 12 Brazil coach to the World-2026, with the mission of relaunching a very badly in point in a little over a year of the tournament.",
+      "ner": [
+        {
+          "entity": "Ancelotti",
+          "label": "PER",
+          "start": 10,
+          "end": 19,
+          "source": "title"
+        },
+        {
+          "entity": "Brazil",
+          "label": "LOC",
+          "start": 23,
+          "end": 29,
+          "source": "title"
+        },
+        {
+          "entity": "2012",
+          "label": "MISC",
+          "start": 48,
+          "end": 52,
+          "source": "title"
+        },
+        {
+          "entity": "World Cup",
+          "label": "MISC",
+          "start": 54,
+          "end": 63,
+          "source": "title"
+        },
+        {
+          "entity": "Italy",
+          "label": "LOC",
+          "start": 4,
+          "end": 11,
+          "source": "description"
+        },
+        {
+          "entity": "Carlo Ancelotti",
+          "label": "PER",
+          "start": 12,
+          "end": 27,
+          "source": "description"
+        },
+        {
+          "entity": "Real Madrid",
+          "label": "ORG",
+          "start": 56,
+          "end": 67,
+          "source": "description"
+        },
+        {
+          "entity": "World-",
+          "label": "MISC",
+          "start": 117,
+          "end": 123,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "dd4aebb8670e497943ddc268ccb5ae46",
+      "providerId": "RTS",
+      "title": "Roland-Garros : Gasquet, Wawrinka et Parry vont bénéficier d'invitations",
+      "description": "Les organisateurs du tournoi de Roland-Garros ont annoncé mardi les noms des joueurs et joueuses qui bénéficieront d'invitations pour le Grand Chelem parisien. Le Français Richard Gasquet, dont la retraite est imminente, et le Suisse Stan Wawrinka, victorieux en 2015 Porte d'Auteuil, font partie des heureux bénéficiaires de ces \"wild cards\".",
+      "url": "https://www.france24.com/fr/sports/20250513-roland-garros-gasquet-wawrinka-parry-invitations-wild-cards",
+      "language": "en",
+      "createdAt": "2025-05-13T15:15:42.000+00:00Z",
+      "pubDate": 1747149342,
+      "translatedTitle": "Roland-Garros : Gasquet, Wawrinka et Parry vont bénéficier d'invitations",
+      "translatedDescription": "The organizers of the Roland-Garros tournament announced on Tuesday the names of the players who will benefit from invitations for the Grand Chelem Parisien. The Frenchman Richard Gasquet, whose retirement is imminent, and the Swiss Stan Wawrinka, victorious in 2015 Porte d'Auteuil, are among the happy beneficiaries of these \"Wild Cards\".",
+      "ner": [
+        {
+          "entity": "Roland-Garros",
+          "label": "ORG",
+          "start": 0,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Gasquet",
+          "label": "PER",
+          "start": 16,
+          "end": 23,
+          "source": "title"
+        },
+        {
+          "entity": "Wawrinka",
+          "label": "PER",
+          "start": 25,
+          "end": 33,
+          "source": "title"
+        },
+        {
+          "entity": "Parry",
+          "label": "PER",
+          "start": 37,
+          "end": 42,
+          "source": "title"
+        },
+        {
+          "entity": "Grand Chelem Parisien",
+          "label": "MISC",
+          "start": 135,
+          "end": 156,
+          "source": "description"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 162,
+          "end": 168,
+          "source": "description"
+        },
+        {
+          "entity": "Richard Gasquet",
+          "label": "PER",
+          "start": 172,
+          "end": 187,
+          "source": "description"
+        },
+        {
+          "entity": "Switzerland",
+          "label": "LOC",
+          "start": 227,
+          "end": 232,
+          "source": "description"
+        },
+        {
+          "entity": "Stan Wawrinka",
+          "label": "PER",
+          "start": 233,
+          "end": 246,
+          "source": "description"
+        },
+        {
+          "entity": "Porte d'Auteuil",
+          "label": "LOC",
+          "start": 267,
+          "end": 282,
+          "source": "description"
+        }
+      ]
+    }
+  ],
+  "processedAt": "2025-05-14T04:28:26.782779"
+}
