@@ -4,7 +4,7 @@ import feedparser
 import hashlib
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
 import pytz
 
 # CET timezone
@@ -56,6 +56,13 @@ def get_providers():
         return []
 
 
+def is_from_today(timestamp):
+    """Check if the given timestamp is from today."""
+    article_date = date.fromtimestamp(timestamp)
+    today = date.today()
+    return article_date == today
+
+
 def fetch_and_deduplicate_articles(providers):
     articles_items = []
     seen_urls = set()
@@ -79,6 +86,11 @@ def fetch_and_deduplicate_articles(providers):
 
                 pub_date = item.get('published', '')
                 pub_timestamp = parse_pub_date(pub_date)
+                
+                # Skip articles that are not from today
+                if not is_from_today(pub_timestamp):
+                    continue
+                
                 created_at = datetime.fromtimestamp(pub_timestamp, timezone.utc).isoformat(timespec='milliseconds') + 'Z'
 
                 article = {
@@ -94,6 +106,7 @@ def fetch_and_deduplicate_articles(providers):
                 articles_items.append(article)
                 seen_urls.add(url)
 
+    print(f"Found {len(articles_items)} articles from today.")
     return articles_items
 
 
