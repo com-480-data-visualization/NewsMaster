@@ -101,7 +101,7 @@ const TopicTrendChart: React.FC<TopicTrendChartProps> = ({ data, defaultTopic })
             <LineChart
                 data={chartData}
                 margin={{
-                    top: 5,
+                    top: 25,
                     right: 30,
                     left: 20,
                     bottom: 5,
@@ -119,6 +119,7 @@ const TopicTrendChart: React.FC<TopicTrendChartProps> = ({ data, defaultTopic })
                     stroke="#6B7280"
                     tick={{ fill: 'currentColor' }}
                     className="dark:text-gray-300" 
+                    label={{ value: 'Presence in articles (%)', angle: 0, position: 'top', fill: 'currentColor', dy: -5, dx: 40 }}
                 />
                 <Tooltip 
                     contentStyle={{ 
