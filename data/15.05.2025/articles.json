@@ -1,0 +1,3349 @@
+{
+  "data": [
+    {
+      "id": "2b84e49840e9336bdd4b6cf745f62985",
+      "providerId": "New York Times",
+      "title": "Trump Meets Syria’s President a Day After Promise to Lift U.S. Sanctions",
+      "description": "President Trump’s conversation with President Ahmed al-Shara, who once led a branch of Al Qaeda, was the first time in 25 years that the leaders of the United States and Syria had met.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/trump-syria-president-al-shara-sanctions.html",
+      "language": "en",
+      "createdAt": "2025-05-14T20:56:21.000+00:00Z",
+      "pubDate": 1747256181,
+      "translatedTitle": "Trump Meets Syria’s President a Day After Promise to Lift U.S. Sanctions",
+      "translatedDescription": "President Trump’s conversation with President Ahmed al-Shara, who once led a branch of Al Qaeda, was the first time in 25 years that the leaders of the United States and Syria had met.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 12,
+          "end": 17,
+          "source": "title"
+        },
+        {
+          "entity": "Ahmed Al-Shara",
+          "label": "PER",
+          "start": 46,
+          "end": 60,
+          "source": "description"
+        },
+        {
+          "entity": "Al Qaeda",
+          "label": "ORG",
+          "start": 87,
+          "end": 95,
+          "source": "description"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 152,
+          "end": 165,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "3f15ed3a92b5448a2fa6034eb0ed1006",
+      "providerId": "New York Times",
+      "title": "Gaza Hospital Strike Draws New Attention to Israel’s Medical Facility Attacks",
+      "description": "Aid groups and U.N. investigations have accused Israel of aiming to destroy Gaza’s health infrastructure. Israel says it is forced to strike hospitals it says are used by Hamas for military purposes.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/israel-medical-facility-strikes-gaza-hamas.html",
+      "language": "en",
+      "createdAt": "2025-05-14T19:17:14.000+00:00Z",
+      "pubDate": 1747250234,
+      "translatedTitle": "Gaza Hospital Strike Draws New Attention to Israel’s Medical Facility Attacks",
+      "translatedDescription": "Aid groups and U.N. investigations have accused Israel of aiming to destroy Gaza’s health infrastructure. Israel says it is forced to strike hospitals it says are used by Hamas for military purposes.",
+      "ner": [
+        {
+          "entity": "Gaza Hospital",
+          "label": "LOC",
+          "start": 0,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 44,
+          "end": 50,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 76,
+          "end": 80,
+          "source": "description"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 171,
+          "end": 176,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "88a9a0fb0691845fb583846014df859a",
+      "providerId": "New York Times",
+      "title": "Taking Inches in Battle, Russia Demands Miles in Talks",
+      "description": "Moscow thinks it’s winning in Ukraine and can play hardball diplomatically. Washington sees costly, incremental gains and an unrealistic negotiating position.",
+      "url": "https://www.nytimes.com/2025/05/14/world/europe/russia-ukraine-ceasefire-putin-zelensky-sanctions.html",
+      "language": "en",
+      "createdAt": "2025-05-14T16:11:35.000+00:00Z",
+      "pubDate": 1747239095,
+      "translatedTitle": "Taking Inches in Battle, Russia Demands Miles in Talks",
+      "translatedDescription": "Moscow thinks it’s winning in Ukraine and can play hardball diplomatically. Washington sees costly, incremental gains and an unrealistic negotiating position.",
+      "ner": [
+        {
+          "entity": "Battle",
+          "label": "LOC",
+          "start": 17,
+          "end": 23,
+          "source": "title"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 25,
+          "end": 31,
+          "source": "title"
+        },
+        {
+          "entity": "Moscow",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "description"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 30,
+          "end": 37,
+          "source": "description"
+        },
+        {
+          "entity": "Washington",
+          "label": "LOC",
+          "start": 76,
+          "end": 86,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "e74432e72ef05378fa3a561862433959",
+      "providerId": "New York Times",
+      "title": "Militant’s Death Would Be Blow to Hamas, but May Have Limited Long-Term Consequences",
+      "description": "Israel tried to kill Muhammad Sinwar, a key Hamas leader in Gaza. If confirmed, his death would deprive the group of another top commander, but it might not lead to a strategic shift.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/muhammad-sinwar-hamas-leader-gaza-israel.html",
+      "language": "en",
+      "createdAt": "2025-05-14T14:50:34.000+00:00Z",
+      "pubDate": 1747234234,
+      "translatedTitle": "Militant’s Death Would Be Blow to Hamas, but May Have Limited Long-Term Consequences",
+      "translatedDescription": "Israel tried to kill Muhammad Sinwar, a key Hamas leader in Gaza. If confirmed, his death would deprive the group of another top commander, but it might not lead to a strategic shift.",
+      "ner": [
+        {
+          "entity": "Mi",
+          "label": "ORG",
+          "start": 0,
+          "end": 2,
+          "source": "title"
+        },
+        {
+          "entity": "litant",
+          "label": "ORG",
+          "start": 2,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 34,
+          "end": 39,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "description"
+        },
+        {
+          "entity": "Muhammad Sinwar",
+          "label": "PER",
+          "start": 21,
+          "end": 36,
+          "source": "description"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 60,
+          "end": 64,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "11c811e8408796015ffbfbb7979353d6",
+      "providerId": "New York Times",
+      "title": "Israeli Airstrikes Kill Dozens in Northern Gaza Overnight, Health Officials Say",
+      "description": "Israel on Wednesday ordered residents to flee parts of Gaza City ahead of more attacks.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/gaza-israeli-strikes.html",
+      "language": "en",
+      "createdAt": "2025-05-14T19:01:18.000+00:00Z",
+      "pubDate": 1747249278,
+      "translatedTitle": "Israeli Airstrikes Kill Dozens in Northern Gaza Overnight, Health Officials Say",
+      "translatedDescription": "Israel on Wednesday ordered residents to flee parts of Gaza City ahead of more attacks.",
+      "ner": [
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Northern Gaza",
+          "label": "LOC",
+          "start": 34,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza City",
+          "label": "LOC",
+          "start": 55,
+          "end": 64,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "92b5f42302a34ab971af56ef397a2e4e",
+      "providerId": "New York Times",
+      "title": "South African President Criticizes Afrikaners Seeking Refugee Status in U.S.",
+      "description": "President Cyril Ramaphosa called the white South Africans “cowardly” for leaving for the United States.",
+      "url": "https://www.nytimes.com/2025/05/14/world/africa/ramaphosa-south-africa-refugees-coward-white-trump.html",
+      "language": "en",
+      "createdAt": "2025-05-14T21:28:02.000+00:00Z",
+      "pubDate": 1747258082,
+      "translatedTitle": "South African President Criticizes Afrikaners Seeking Refugee Status in U.S.",
+      "translatedDescription": "President Cyril Ramaphosa called the white South Africans “cowardly” for leaving for the United States.",
+      "ner": [
+        {
+          "entity": "South Africa",
+          "label": "LOC",
+          "start": 0,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Afrikaners",
+          "label": "MISC",
+          "start": 35,
+          "end": 45,
+          "source": "title"
+        },
+        {
+          "entity": "Cyril Ramaphosa",
+          "label": "PER",
+          "start": 10,
+          "end": 25,
+          "source": "description"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 89,
+          "end": 102,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "73c6be1e9888d5c27ae59d778440d7e3",
+      "providerId": "New York Times",
+      "title": "Russian Election Expert Grigory Melkonyants Sentenced to 5 Years in Prison, State Media Report",
+      "description": "Grigory Melkonyants was convicted on charges of working with an “undesirable organization” in relation to his watchdog’s past affiliation with a European election monitoring group.",
+      "url": "https://www.nytimes.com/2025/05/14/world/europe/grigory-melkonyants-russia-golos.html",
+      "language": "en",
+      "createdAt": "2025-05-14T13:53:26.000+00:00Z",
+      "pubDate": 1747230806,
+      "translatedTitle": "Russian Election Expert Grigory Melkonyants Sentenced to 5 Years in Prison, State Media Report",
+      "translatedDescription": "Grigory Melkonyants was convicted on charges of working with an “undesirable organization” in relation to his watchdog’s past affiliation with a European election monitoring group.",
+      "ner": [
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Grigory Melkonyants",
+          "label": "PER",
+          "start": 24,
+          "end": 43,
+          "source": "title"
+        },
+        {
+          "entity": "State Media Report",
+          "label": "ORG",
+          "start": 76,
+          "end": 94,
+          "source": "title"
+        },
+        {
+          "entity": "European",
+          "label": "MISC",
+          "start": 145,
+          "end": 153,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "edd229f131e3b6228b2cee92c817fe97",
+      "providerId": "New York Times",
+      "title": "With Trump Visit, Qatar’s Image Makeover Scores Another Success",
+      "description": "The emirate, once called “a funder of terrorism” by President Trump, has spent lavishly on overhauling its global reputation.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/trump-qatar.html",
+      "language": "en",
+      "createdAt": "2025-05-14T18:57:47.000+00:00Z",
+      "pubDate": 1747249067,
+      "translatedTitle": "With Trump Visit, Qatar’s Image Makeover Scores Another Success",
+      "translatedDescription": "The emirate, once called “a funder of terrorism” by President Trump, has spent lavishly on overhauling its global reputation.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 5,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Qatar",
+          "label": "LOC",
+          "start": 18,
+          "end": 23,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "266adedb41372d7733b4f9c59d8c82e2",
+      "providerId": "New York Times",
+      "title": "Trump’s Vow to Lift Sanctions on Syria Unleashes Hope",
+      "description": "The announcement is a boon for the new government as it looks to rebuild an economy wrecked by a decade of civil war.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/trump-syria-sanctions-us.html",
+      "language": "en",
+      "createdAt": "2025-05-14T15:25:50.000+00:00Z",
+      "pubDate": 1747236350,
+      "translatedTitle": "Trump’s Vow to Lift Sanctions on Syria Unleashes Hope",
+      "translatedDescription": "The announcement is a boon for the new government as it looks to rebuild an economy wrecked by a decade of civil war.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 33,
+          "end": 38,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "fc72d97fd62b98b258682096aa4ee034",
+      "providerId": "New York Times",
+      "title": "Pepe Mujica, the Former Uruguayan President, Removed the Pomp From Politics",
+      "description": "The former Uruguayan president, who died on Tuesday, showed the value in world leaders living like their constituents.",
+      "url": "https://www.nytimes.com/2025/05/14/world/americas/pepe-mujica-uruguay.html",
+      "language": "en",
+      "createdAt": "2025-05-14T21:27:02.000+00:00Z",
+      "pubDate": 1747258022,
+      "translatedTitle": "Pepe Mujica, the Former Uruguayan President, Removed the Pomp From Politics",
+      "translatedDescription": "The former Uruguayan president, who died on Tuesday, showed the value in world leaders living like their constituents.",
+      "ner": [
+        {
+          "entity": "Pepe Mujica",
+          "label": "PER",
+          "start": 0,
+          "end": 11,
+          "source": "title"
+        },
+        {
+          "entity": "Uruguay",
+          "label": "LOC",
+          "start": 24,
+          "end": 33,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "62b2be733ff249f7a7ece87226c21d04",
+      "providerId": "New York Times",
+      "title": "El Chapo’s Family Members Crossed the Border in Apparent Deal With U.S., Official Says",
+      "description": "Mexico’s security secretary confirmed reports that 17 family members of Sinaloa Cartel leaders had entered the United States, likely as part of a deal with the Trump administration.",
+      "url": "https://www.nytimes.com/2025/05/14/world/americas/mexico-cartel-chapo-family.html",
+      "language": "en",
+      "createdAt": "2025-05-14T15:43:43.000+00:00Z",
+      "pubDate": 1747237423,
+      "translatedTitle": "El Chapo’s Family Members Crossed the Border in Apparent Deal With U.S., Official Says",
+      "translatedDescription": "Mexico’s security secretary confirmed reports that 17 family members of Sinaloa Cartel leaders had entered the United States, likely as part of a deal with the Trump administration.",
+      "ner": [
+        {
+          "entity": "El",
+          "label": "PER",
+          "start": 0,
+          "end": 2,
+          "source": "title"
+        },
+        {
+          "entity": "Border",
+          "label": "LOC",
+          "start": 38,
+          "end": 44,
+          "source": "title"
+        },
+        {
+          "entity": "Mexico",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "description"
+        },
+        {
+          "entity": "Sinaloa Cartel",
+          "label": "ORG",
+          "start": 72,
+          "end": 86,
+          "source": "description"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 111,
+          "end": 124,
+          "source": "description"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 160,
+          "end": 165,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "960a07a4998efe3be61c349f3d6efc4d",
+      "providerId": "New York Times",
+      "title": "Court Sides With New York Times Over Access to E.U. Covid Vaccine Messages",
+      "description": "The case revolved around whether texts between a top official and a drug company executive counted as a public record that might need to be disclosed.",
+      "url": "https://www.nytimes.com/2025/05/14/world/europe/eu-texts-covid-new-york-times.html",
+      "language": "en",
+      "createdAt": "2025-05-14T14:47:47.000+00:00Z",
+      "pubDate": 1747234067,
+      "translatedTitle": "Court Sides With New York Times Over Access to E.U. Covid Vaccine Messages",
+      "translatedDescription": "The case revolved around whether texts between a top official and a drug company executive counted as a public record that might need to be disclosed.",
+      "ner": [
+        {
+          "entity": "Court",
+          "label": "ORG",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "New York Times",
+          "label": "ORG",
+          "start": 17,
+          "end": 31,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "bee85ed53aad300bbc191e707c1bc93b",
+      "providerId": "New York Times",
+      "title": "3 Are Arrested in Russia-Linked Sabotage Plot, Germany Says",
+      "description": "The men, Ukrainian nationals, were arrested in Germany and Switzerland, the state prosecutor in Berlin said. They are suspected of planning to sabotage commercial freight infrastructure.",
+      "url": "https://www.nytimes.com/2025/05/14/world/europe/3-are-arrested-in-russia-linked-sabotage-plot-germany-says.html",
+      "language": "en",
+      "createdAt": "2025-05-14T18:59:08.000+00:00Z",
+      "pubDate": 1747249148,
+      "translatedTitle": "3 Are Arrested in Russia-Linked Sabotage Plot, Germany Says",
+      "translatedDescription": "The men, Ukrainian nationals, were arrested in Germany and Switzerland, the state prosecutor in Berlin said. They are suspected of planning to sabotage commercial freight infrastructure.",
+      "ner": [
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 18,
+          "end": 24,
+          "source": "title"
+        },
+        {
+          "entity": "Germany",
+          "label": "LOC",
+          "start": 47,
+          "end": 54,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 9,
+          "end": 18,
+          "source": "description"
+        },
+        {
+          "entity": "Switzerland",
+          "label": "LOC",
+          "start": 59,
+          "end": 70,
+          "source": "description"
+        },
+        {
+          "entity": "Berlin",
+          "label": "LOC",
+          "start": 96,
+          "end": 102,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "d88469c6d23f536e31e0e0f736d0eadf",
+      "providerId": "New York Times",
+      "title": "Harvard Law Paid $27 for a Copy of Magna Carta. Surprise! It’s an Original.",
+      "description": "Two British academics discovered that a “copy” of the medieval text, held in Harvard Law School’s library for 80 years, is one of seven originals dating from 1300.",
+      "url": "https://www.nytimes.com/2025/05/15/world/europe/harvard-law-magna-carta-original.html",
+      "language": "en",
+      "createdAt": "2025-05-15T04:01:20.000+00:00Z",
+      "pubDate": 1747281680,
+      "translatedTitle": "Harvard Law Paid $27 for a Copy of Magna Carta. Surprise! It’s an Original.",
+      "translatedDescription": "Two British academics discovered that a “copy” of the medieval text, held in Harvard Law School’s library for 80 years, is one of seven originals dating from 1300.",
+      "ner": [
+        {
+          "entity": "Harvard Law Pa",
+          "label": "ORG",
+          "start": 0,
+          "end": 14,
+          "source": "title"
+        },
+        {
+          "entity": "Magna Carta",
+          "label": "MISC",
+          "start": 35,
+          "end": 46,
+          "source": "title"
+        },
+        {
+          "entity": "British",
+          "label": "MISC",
+          "start": 4,
+          "end": 11,
+          "source": "description"
+        },
+        {
+          "entity": "Harvard Law School",
+          "label": "ORG",
+          "start": 77,
+          "end": 95,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "78c293003cc7b16213affb993fe697e6",
+      "providerId": "New York Times",
+      "title": "Poland’s Election for President Is a Test of Unwinding Populism",
+      "description": "The government is a centrist parliamentary coalition. To undo its predecessor’s democratic backsliding, it needs the presidency. The election starts next week.",
+      "url": "https://www.nytimes.com/2025/05/15/world/europe/poland-election.html",
+      "language": "en",
+      "createdAt": "2025-05-15T04:01:13.000+00:00Z",
+      "pubDate": 1747281673,
+      "translatedTitle": "Poland’s Election for President Is a Test of Unwinding Populism",
+      "translatedDescription": "The government is a centrist parliamentary coalition. To undo its predecessor’s democratic backsliding, it needs the presidency. The election starts next week.",
+      "ner": [
+        {
+          "entity": "Poland",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "05d4c9ebb3d4ab8c315b32d1d70f8d9d",
+      "providerId": "New York Times",
+      "title": "3 Deals in 3 Countries on Trump’s Trip",
+      "description": "Three countries on President Trump’s Middle East tour this week are also the sites of recent investments in Trump businesses that benefit the president. Eric Lipton, an investigative reporter for The New York Times, describes those investments, and what those countries — Saudi Arabia, Qatar and the United Arab Emirates — are, at the same time, seeking from Mr. Trump and the United States.",
+      "url": "https://www.nytimes.com/video/world/middleeast/100000010166825/3-deals-in-3-countries-on-trumps-trip.html",
+      "language": "en",
+      "createdAt": "2025-05-15T04:01:10.000+00:00Z",
+      "pubDate": 1747281670,
+      "translatedTitle": "3 Deals in 3 Countries on Trump’s Trip",
+      "translatedDescription": "Three countries on President Trump’s Middle East tour this week are also the sites of recent investments in Trump businesses that benefit the president. Eric Lipton, an investigative reporter for The New York Times, describes those investments, and what those countries — Saudi Arabia, Qatar and the United Arab Emirates — are, at the same time, seeking from Mr. Trump and the United States.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "MISC",
+          "start": 26,
+          "end": 31,
+          "source": "title"
+        },
+        {
+          "entity": "Middle East",
+          "label": "LOC",
+          "start": 37,
+          "end": 48,
+          "source": "description"
+        },
+        {
+          "entity": "Eric Lipton",
+          "label": "PER",
+          "start": 153,
+          "end": 164,
+          "source": "description"
+        },
+        {
+          "entity": "The New York Times",
+          "label": "ORG",
+          "start": 196,
+          "end": 214,
+          "source": "description"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 272,
+          "end": 284,
+          "source": "description"
+        },
+        {
+          "entity": "Qatar",
+          "label": "LOC",
+          "start": 286,
+          "end": 291,
+          "source": "description"
+        },
+        {
+          "entity": "United Arab Emirates",
+          "label": "LOC",
+          "start": 300,
+          "end": 320,
+          "source": "description"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 377,
+          "end": 390,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "e27886537d2a3fe08ecbd091bd997785",
+      "providerId": "New York Times",
+      "title": "The Prize-Winning Novel Challenging ‘Ableist Machismo’ in Japan",
+      "description": "Saou Ichikawa is the country’s first severely disabled author to win a top literary prize. Her novel “Hunchback” is an angry cry against “ableist machismo.”",
+      "url": "https://www.nytimes.com/2025/05/15/world/asia/saou-ichikawa-japan-hunchback.html",
+      "language": "en",
+      "createdAt": "2025-05-15T04:01:06.000+00:00Z",
+      "pubDate": 1747281666,
+      "translatedTitle": "The Prize-Winning Novel Challenging ‘Ableist Machismo’ in Japan",
+      "translatedDescription": "Saou Ichikawa is the country’s first severely disabled author to win a top literary prize. Her novel “Hunchback” is an angry cry against “ableist machismo.”",
+      "ner": [
+        {
+          "entity": "Japan",
+          "label": "LOC",
+          "start": 58,
+          "end": 63,
+          "source": "title"
+        },
+        {
+          "entity": "Saou Ichikawa",
+          "label": "PER",
+          "start": 0,
+          "end": 13,
+          "source": "description"
+        },
+        {
+          "entity": "Hunchback",
+          "label": "MISC",
+          "start": 102,
+          "end": 111,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "f4495d245bcc3a8ce08a92adc1103021",
+      "providerId": "New York Times",
+      "title": "Funeral Homes Are Forced to Innovate as Consumer Preferences Shift",
+      "description": "As cremation rates rise and consumer preferences shift, funeral homes are innovating in surprisingly unconventional ways so they don’t die out.",
+      "url": "https://www.nytimes.com/2025/05/15/business/funeral-home-industry-innovations-cremation.html",
+      "language": "en",
+      "createdAt": "2025-05-15T04:00:07.000+00:00Z",
+      "pubDate": 1747281607,
+      "translatedTitle": "Funeral Homes Are Forced to Innovate as Consumer Preferences Shift",
+      "translatedDescription": "As cremation rates rise and consumer preferences shift, funeral homes are innovating in surprisingly unconventional ways so they don’t die out.",
+      "ner": []
+    },
+    {
+      "id": "1124ed104e588f56114051e6b268a583",
+      "providerId": "New York Times",
+      "title": "U.S.-Backed Group Created to Distribute Aid in Gaza Says It’s Ready to Go",
+      "description": "The Gaza Humanitarian Foundation seeks to create an alternative aid system, but other groups have raised doubts about the feasibility of its plan.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/gaza-aid-israel.html",
+      "language": "en",
+      "createdAt": "2025-05-15T02:36:52.000+00:00Z",
+      "pubDate": 1747276612,
+      "translatedTitle": "U.S.-Backed Group Created to Distribute Aid in Gaza Says It’s Ready to Go",
+      "translatedDescription": "The Gaza Humanitarian Foundation seeks to create an alternative aid system, but other groups have raised doubts about the feasibility of its plan.",
+      "ner": [
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 47,
+          "end": 51,
+          "source": "title"
+        },
+        {
+          "entity": "Palestine",
+          "label": "ORG",
+          "start": 4,
+          "end": 32,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "4153a68d45359a3d4732a97e8974aaa8",
+      "providerId": "New York Times",
+      "title": "Trump-Kushner Hotel Project in Serbia Hits a Snag: Alleged Forgery",
+      "description": "Serbian authorities say an official admitted to forging a document allowing a protected site in Belgrade to be demolished and replaced with a Trump hotel.",
+      "url": "https://www.nytimes.com/2025/05/14/us/politics/trump-kushner-hotel-serbia.html",
+      "language": "en",
+      "createdAt": "2025-05-15T02:11:49.000+00:00Z",
+      "pubDate": 1747275109,
+      "translatedTitle": "Trump-Kushner Hotel Project in Serbia Hits a Snag: Alleged Forgery",
+      "translatedDescription": "Serbian authorities say an official admitted to forging a document allowing a protected site in Belgrade to be demolished and replaced with a Trump hotel.",
+      "ner": [
+        {
+          "entity": "Trump-Ku",
+          "label": "MISC",
+          "start": 0,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "Serbia",
+          "label": "LOC",
+          "start": 31,
+          "end": 37,
+          "source": "title"
+        },
+        {
+          "entity": "Belgrade",
+          "label": "LOC",
+          "start": 96,
+          "end": 104,
+          "source": "description"
+        },
+        {
+          "entity": "Trump",
+          "label": "ORG",
+          "start": 142,
+          "end": 147,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "5d18a7691b9db01e55b0a05e7387cf15",
+      "providerId": "New York Times",
+      "title": "The Road to Trump’s Embrace of White South Africans",
+      "description": "The Trump administration’s hostile approach to South Africa was shaped by a convergence of factors.",
+      "url": "https://www.nytimes.com/2025/05/14/us/politics/trump-south-africa-afrikaners.html",
+      "language": "en",
+      "createdAt": "2025-05-15T01:52:15.000+00:00Z",
+      "pubDate": 1747273935,
+      "translatedTitle": "The Road to Trump’s Embrace of White South Africans",
+      "translatedDescription": "The Trump administration’s hostile approach to South Africa was shaped by a convergence of factors.",
+      "ner": [
+        {
+          "entity": "Trump’s Embrace of",
+          "label": "MISC",
+          "start": 12,
+          "end": 30,
+          "source": "title"
+        },
+        {
+          "entity": "South Africa",
+          "label": "LOC",
+          "start": 31,
+          "end": 51,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 4,
+          "end": 9,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "1225dcf68f00b0b2ab38bc5e8288087c",
+      "providerId": "New York Times",
+      "title": "Will Putin Attend Ukraine Peace Talks in Turkey? Kremlin’s List Indicates Not.",
+      "description": "A hard-line aide to the Russian president will instead lead the delegation, according to a Kremlin statement.",
+      "url": "https://www.nytimes.com/2025/05/14/world/europe/putin-ukraine-peace-talks-turkey.html",
+      "language": "en",
+      "createdAt": "2025-05-15T01:43:05.000+00:00Z",
+      "pubDate": 1747273385,
+      "translatedTitle": "Will Putin Attend Ukraine Peace Talks in Turkey? Kremlin’s List Indicates Not.",
+      "translatedDescription": "A hard-line aide to the Russian president will instead lead the delegation, according to a Kremlin statement.",
+      "ner": [
+        {
+          "entity": "Putin",
+          "label": "PER",
+          "start": 5,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 18,
+          "end": 25,
+          "source": "title"
+        },
+        {
+          "entity": "Turkey",
+          "label": "LOC",
+          "start": 41,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Kremlin",
+          "label": "LOC",
+          "start": 49,
+          "end": 56,
+          "source": "title"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 24,
+          "end": 31,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "a904334fdf6b6a4dffc7c19e9d6c3ab2",
+      "providerId": "New York Times",
+      "title": "Valeria Márquez, TikTok Influencer, Shot Dead During Live Stream in Mexico",
+      "description": "The death of Valeria Márquez, 23, was the latest reminder of the rise in violence against women in the country.",
+      "url": "https://www.nytimes.com/2025/05/14/world/americas/valeria-marquez-tiktok-influencer-live-murder-mexico.html",
+      "language": "en",
+      "createdAt": "2025-05-15T00:16:58.000+00:00Z",
+      "pubDate": 1747268218,
+      "translatedTitle": "Valeria Márquez, TikTok Influencer, Shot Dead During Live Stream in Mexico",
+      "translatedDescription": "The death of Valeria Márquez, 23, was the latest reminder of the rise in violence against women in the country.",
+      "ner": [
+        {
+          "entity": "Valeria Márquez",
+          "label": "PER",
+          "start": 0,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "TikTok",
+          "label": "ORG",
+          "start": 17,
+          "end": 23,
+          "source": "title"
+        },
+        {
+          "entity": "Mexico",
+          "label": "LOC",
+          "start": 68,
+          "end": 74,
+          "source": "title"
+        },
+        {
+          "entity": "Vale",
+          "label": "PER",
+          "start": 13,
+          "end": 17,
+          "source": "description"
+        },
+        {
+          "entity": "Ria Márquez",
+          "label": "PER",
+          "start": 17,
+          "end": 28,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "6eb4a30e1d5b53245b44b4effd40247d",
+      "providerId": "New York Times",
+      "title": "Bayesian Superyacht Carrying Mike Lynch Sank After ‘Extreme’ Wind Gust, Report Says",
+      "description": "An official report into last year’s yacht tragedy, which killed seven, found that the boat could easily capsize in high winds. Its towering mast made it more vulnerable.",
+      "url": "https://www.nytimes.com/2025/05/14/world/europe/bayesian-superyacht-sinking-report.html",
+      "language": "en",
+      "createdAt": "2025-05-15T02:24:02.000+00:00Z",
+      "pubDate": 1747275842,
+      "translatedTitle": "Bayesian Superyacht Carrying Mike Lynch Sank After ‘Extreme’ Wind Gust, Report Says",
+      "translatedDescription": "An official report into last year’s yacht tragedy, which killed seven, found that the boat could easily capsize in high winds. Its towering mast made it more vulnerable.",
+      "ner": [
+        {
+          "entity": "Bay",
+          "label": "MISC",
+          "start": 0,
+          "end": 3,
+          "source": "title"
+        },
+        {
+          "entity": "Superyacht",
+          "label": "ORG",
+          "start": 9,
+          "end": 19,
+          "source": "title"
+        },
+        {
+          "entity": "Mike Lynch",
+          "label": "PER",
+          "start": 29,
+          "end": 39,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "37c24ec9c392a151645802fc45405135",
+      "providerId": "New York Times",
+      "title": "Trump’s Pledge to the Middle East: No More ‘Lectures on How to Live’",
+      "description": "In Saudi Arabia, the president denounced Western intervention and nation-building, garnering both praise and eye rolls.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/trump-middle-east-nation-building.html",
+      "language": "en",
+      "createdAt": "2025-05-14T22:31:52.000+00:00Z",
+      "pubDate": 1747261912,
+      "translatedTitle": "Trump’s Pledge to the Middle East: No More ‘Lectures on How to Live’",
+      "translatedDescription": "In Saudi Arabia, the president denounced Western intervention and nation-building, garnering both praise and eye rolls.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Middle East",
+          "label": "LOC",
+          "start": 22,
+          "end": 33,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 3,
+          "end": 15,
+          "source": "description"
+        },
+        {
+          "entity": "Western",
+          "label": "MISC",
+          "start": 41,
+          "end": 48,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "5c9252b23655541ccedd612f92cf57fb",
+      "providerId": "New York Times",
+      "title": "Trump Meets Ahmed al-Shara After Vowing to Lift Sanctions on Syria",
+      "description": "“The sanctions were really crippling,” President Trump said, before he traveled to Qatar, where he was given a lavish welcome.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/trump-syria-al-shara-sanctions.html",
+      "language": "en",
+      "createdAt": "2025-05-14T21:34:13.000+00:00Z",
+      "pubDate": 1747258453,
+      "translatedTitle": "Trump Meets Ahmed al-Shara After Vowing to Lift Sanctions on Syria",
+      "translatedDescription": "“The sanctions were really crippling,” President Trump said, before he traveled to Qatar, where he was given a lavish welcome.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Ahmed Al-Shara",
+          "label": "PER",
+          "start": 12,
+          "end": 26,
+          "source": "title"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 61,
+          "end": 66,
+          "source": "title"
+        },
+        {
+          "entity": "Qatar",
+          "label": "LOC",
+          "start": 83,
+          "end": 88,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "3e11c42fce7c7fa9874aeb38f3d6b94a",
+      "providerId": "New York Times",
+      "title": "Thursday Briefing: Trump Meets Syria’s New Leader",
+      "description": "Plus, the world’s poorest president.",
+      "url": "https://www.nytimes.com/2025/05/14/briefing/trump-syria-gulf-tour-south-africa-cassie-sean-combs.html",
+      "language": "en",
+      "createdAt": "2025-05-14T21:00:06.000+00:00Z",
+      "pubDate": 1747256406,
+      "translatedTitle": "Thursday Briefing: Trump Meets Syria’s New Leader",
+      "translatedDescription": "Plus, the world’s poorest president.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 19,
+          "end": 24,
+          "source": "title"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 31,
+          "end": 36,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "38d17d88566206b8570df11b8dff7171",
+      "providerId": "New York Times",
+      "title": "French Prime Minister Defiant in School Sexual Violence Inquiry",
+      "description": "François Bayrou’s popularity has plunged as his word is doubted on events at a Catholic school to which he had several ties.",
+      "url": "https://www.nytimes.com/2025/05/14/world/europe/france-francois-bayrou-school-scandal.html",
+      "language": "en",
+      "createdAt": "2025-05-14T20:43:41.000+00:00Z",
+      "pubDate": 1747255421,
+      "translatedTitle": "French Prime Minister Defiant in School Sexual Violence Inquiry",
+      "translatedDescription": "François Bayrou’s popularity has plunged as his word is doubted on events at a Catholic school to which he had several ties.",
+      "ner": [
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Defiant",
+          "label": "PER",
+          "start": 22,
+          "end": 29,
+          "source": "title"
+        },
+        {
+          "entity": "François Bayrou",
+          "label": "PER",
+          "start": 0,
+          "end": 15,
+          "source": "description"
+        },
+        {
+          "entity": "Catholic",
+          "label": "MISC",
+          "start": 79,
+          "end": 87,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "51859a54e0fc4befac00974e04c8c4f6",
+      "providerId": "New York Times",
+      "title": "US Lining Up More Countries to Take Its Deportees",
+      "description": "Besides El Salvador, where the United States has already sent detainees, Rwanda and Libya have records of mistreating migrant detainees.",
+      "url": "https://www.nytimes.com/2025/05/14/world/trump-administration-deportees.html",
+      "language": "en",
+      "createdAt": "2025-05-14T20:24:33.000+00:00Z",
+      "pubDate": 1747254273,
+      "translatedTitle": "US Lining Up More Countries to Take Its Deportees",
+      "translatedDescription": "Besides El Salvador, where the United States has already sent detainees, Rwanda and Libya have records of mistreating migrant detainees.",
+      "ner": [
+        {
+          "entity": "US",
+          "label": "LOC",
+          "start": 0,
+          "end": 2,
+          "source": "title"
+        },
+        {
+          "entity": "El Salvador",
+          "label": "LOC",
+          "start": 8,
+          "end": 19,
+          "source": "description"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 31,
+          "end": 44,
+          "source": "description"
+        },
+        {
+          "entity": "Rwanda",
+          "label": "LOC",
+          "start": 73,
+          "end": 79,
+          "source": "description"
+        },
+        {
+          "entity": "Libya",
+          "label": "LOC",
+          "start": 84,
+          "end": 89,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "243fd3a3a2271dddb75522c480fecdbf",
+      "providerId": "New York Times",
+      "title": "Trump Administration to Uphold Some PFAS Limits but Eliminate Others",
+      "description": "The E.P.A. said it would maintain limits on the two most common “forever chemicals” in tap water. Rules for four others will be rolled back.",
+      "url": "https://www.nytimes.com/2025/05/14/climate/pfas-zeldin-trump-administration.html",
+      "language": "en",
+      "createdAt": "2025-05-14T20:29:56.000+00:00Z",
+      "pubDate": 1747254596,
+      "translatedTitle": "Trump Administration to Uphold Some PFAS Limits but Eliminate Others",
+      "translatedDescription": "The E.P.A. said it would maintain limits on the two most common “forever chemicals” in tap water. Rules for four others will be rolled back.",
+      "ner": [
+        {
+          "entity": "Trump Administration",
+          "label": "ORG",
+          "start": 0,
+          "end": 20,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "0d4f21138c816d9dc3114223e7f23ef6",
+      "providerId": "New York Times",
+      "title": "India and Pakistan Swap Detained Soldiers as Cease-Fire Holds",
+      "description": "India exchanged a Pakistani paramilitary fighter for a border security guard that Pakistan had held for weeks. Each officer had been detained before the countries’ military skirmish started.",
+      "url": "https://www.nytimes.com/2025/05/14/world/asia/india-pakistan-soldier-exchange.html",
+      "language": "en",
+      "createdAt": "2025-05-14T11:12:02.000+00:00Z",
+      "pubDate": 1747221122,
+      "translatedTitle": "India and Pakistan Swap Detained Soldiers as Cease-Fire Holds",
+      "translatedDescription": "India exchanged a Pakistani paramilitary fighter for a border security guard that Pakistan had held for weeks. Each officer had been detained before the countries’ military skirmish started.",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 10,
+          "end": 18,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "aac8e0e187beca5db8bca502a4a1ae08",
+      "providerId": "New York Times",
+      "title": "Infantino, FIFA President, Joins Trump on His Middle East Tour",
+      "description": "The FIFA president, Gianni Infantino, is expected to preside over a ceremony in which the emir of Qatar will hand over World Cup hosting duties to Mr. Trump. The U.S. is co-hosting the 2026 tournament.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/trump-fifa-world-cup.html",
+      "language": "en",
+      "createdAt": "2025-05-14T10:19:46.000+00:00Z",
+      "pubDate": 1747217986,
+      "translatedTitle": "Infantino, FIFA President, Joins Trump on His Middle East Tour",
+      "translatedDescription": "The FIFA president, Gianni Infantino, is expected to preside over a ceremony in which the emir of Qatar will hand over World Cup hosting duties to Mr. Trump. The U.S. is co-hosting the 2026 tournament.",
+      "ner": [
+        {
+          "entity": "Infantino",
+          "label": "PER",
+          "start": 0,
+          "end": 9,
+          "source": "title"
+        },
+        {
+          "entity": "FIFA",
+          "label": "ORG",
+          "start": 11,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 33,
+          "end": 38,
+          "source": "title"
+        },
+        {
+          "entity": "Middle",
+          "label": "LOC",
+          "start": 46,
+          "end": 52,
+          "source": "title"
+        },
+        {
+          "entity": "Ianni Infantino",
+          "label": "PER",
+          "start": 21,
+          "end": 36,
+          "source": "description"
+        },
+        {
+          "entity": "Qatar",
+          "label": "LOC",
+          "start": 98,
+          "end": 103,
+          "source": "description"
+        },
+        {
+          "entity": "World Cup",
+          "label": "MISC",
+          "start": 119,
+          "end": 128,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "6d2cd84bf12b4a5ddd55223c38912357",
+      "providerId": "New York Times",
+      "title": "Relatives of Jeju Air Crash Victims File Criminal Complaint",
+      "description": "Dozens of family members filed a joint complaint against 15 aviation officials, accusing them of negligence and violating South Korean law.",
+      "url": "https://www.nytimes.com/2025/05/14/world/asia/jejuair-crash-relatives-complaint.html",
+      "language": "en",
+      "createdAt": "2025-05-14T09:53:14.000+00:00Z",
+      "pubDate": 1747216394,
+      "translatedTitle": "Relatives of Jeju Air Crash Victims File Criminal Complaint",
+      "translatedDescription": "Dozens of family members filed a joint complaint against 15 aviation officials, accusing them of negligence and violating South Korean law.",
+      "ner": [
+        {
+          "entity": "Jeju Air Crash",
+          "label": "MISC",
+          "start": 13,
+          "end": 27,
+          "source": "title"
+        },
+        {
+          "entity": "South Korean",
+          "label": "MISC",
+          "start": 122,
+          "end": 134,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "9c758bec80809ecf8705928dc31195fe",
+      "providerId": "New York Times",
+      "title": "What to Know About Muhammad Sinwar, the Hamas Leader Targeted by Israel",
+      "description": "A top leader in the militant group, he has survived several assassination attempts before.",
+      "url": "https://www.nytimes.com/2025/05/14/world/middleeast/mohammad-sinwar-hamas-who-is.html",
+      "language": "en",
+      "createdAt": "2025-05-14T17:45:56.000+00:00Z",
+      "pubDate": 1747244756,
+      "translatedTitle": "What to Know About Muhammad Sinwar, the Hamas Leader Targeted by Israel",
+      "translatedDescription": "A top leader in the militant group, he has survived several assassination attempts before.",
+      "ner": [
+        {
+          "entity": "Muhammad Sinwar",
+          "label": "PER",
+          "start": 19,
+          "end": 34,
+          "source": "title"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 40,
+          "end": 45,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 65,
+          "end": 71,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "0ea498ff81fa35581d2d23bf08b14f99",
+      "providerId": "New York Times",
+      "title": "Australian Cyclist Rohan Dennis Gets Suspended Sentence Over Death of Wife",
+      "description": "Rohan Dennis had pleaded guilty to a charge of committing an aggravated act likely to cause harm, in a vehicle incident that killed Melissa Hoskins, a fellow Olympian.",
+      "url": "https://www.nytimes.com/2025/05/14/world/australia/dennis-sentence-olympic-cyclist-wife-death.html",
+      "language": "en",
+      "createdAt": "2025-05-14T08:30:49.000+00:00Z",
+      "pubDate": 1747211449,
+      "translatedTitle": "Australian Cyclist Rohan Dennis Gets Suspended Sentence Over Death of Wife",
+      "translatedDescription": "Rohan Dennis had pleaded guilty to a charge of committing an aggravated act likely to cause harm, in a vehicle incident that killed Melissa Hoskins, a fellow Olympian.",
+      "ner": [
+        {
+          "entity": "Australia",
+          "label": "LOC",
+          "start": 0,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Rohan Dennis",
+          "label": "PER",
+          "start": 19,
+          "end": 31,
+          "source": "title"
+        },
+        {
+          "entity": "Roh",
+          "label": "PER",
+          "start": 0,
+          "end": 3,
+          "source": "description"
+        },
+        {
+          "entity": "An Dennis",
+          "label": "PER",
+          "start": 3,
+          "end": 12,
+          "source": "description"
+        },
+        {
+          "entity": "Melissa Hoskins",
+          "label": "PER",
+          "start": 132,
+          "end": 147,
+          "source": "description"
+        },
+        {
+          "entity": "Olympian",
+          "label": "MISC",
+          "start": 158,
+          "end": 166,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "22ddfa72f4477ccd40a656ed030bebf4",
+      "providerId": "New York Times",
+      "title": "Wednesday Briefing",
+      "description": "Israeli messaging on hunger in Gaza.",
+      "url": "https://www.nytimes.com/2025/05/14/briefing/gaza-israel-trump-syria.html",
+      "language": "en",
+      "createdAt": "2025-05-14T05:13:44.000+00:00Z",
+      "pubDate": 1747199624,
+      "translatedTitle": "Wednesday Briefing",
+      "translatedDescription": "Israeli messaging on hunger in Gaza.",
+      "ner": [
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "description"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 31,
+          "end": 35,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "31a7af9e1df844be74e7ade08d22757b",
+      "providerId": "New York Times",
+      "title": "Beyond Tariff Truce, China Readies for a Rocky Time With U.S.",
+      "description": "Beijing is trying to win over other countries with vows of economic cooperation. But it won’t back down from its territorial claims, experts predict.",
+      "url": "https://www.nytimes.com/2025/05/14/world/asia/china-us-tariffs-security.html",
+      "language": "en",
+      "createdAt": "2025-05-14T12:47:42.000+00:00Z",
+      "pubDate": 1747226862,
+      "translatedTitle": "Beyond Tariff Truce, China Readies for a Rocky Time With U.S.",
+      "translatedDescription": "Beijing is trying to win over other countries with vows of economic cooperation. But it won’t back down from its territorial claims, experts predict.",
+      "ner": [
+        {
+          "entity": "China",
+          "label": "LOC",
+          "start": 21,
+          "end": 26,
+          "source": "title"
+        },
+        {
+          "entity": "Beijing",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "2a494ef6efa4fba37a21844dadd8411f",
+      "providerId": "New York Times",
+      "title": "Iran Proposes Novel Path to Nuclear Deal With U.S.",
+      "description": "Iranian officials said their foreign minister had proposed a joint nuclear-enrichment venture, involving Arab countries and American investment.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/iran-us-nuclear-talks.html",
+      "language": "en",
+      "createdAt": "2025-05-14T05:19:36.000+00:00Z",
+      "pubDate": 1747199976,
+      "translatedTitle": "Iran Proposes Novel Path to Nuclear Deal With U.S.",
+      "translatedDescription": "Iranian officials said their foreign minister had proposed a joint nuclear-enrichment venture, involving Arab countries and American investment.",
+      "ner": [
+        {
+          "entity": "Iran",
+          "label": "LOC",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Arab",
+          "label": "MISC",
+          "start": 105,
+          "end": 109,
+          "source": "description"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 124,
+          "end": 132,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "51c29f1547d20cb663c9ec695f10c9ba",
+      "providerId": "New York Times",
+      "title": "Wednesday Briefing: Israeli Officers Warn of Famine",
+      "description": "Plus, a Hollywood takeover at Cannes.",
+      "url": "https://www.nytimes.com/2025/05/13/briefing/israel-gaza-famine-trump-syria-sanctions-ukraine-russia-talks.html",
+      "language": "en",
+      "createdAt": "2025-05-13T21:03:34.000+00:00Z",
+      "pubDate": 1747170214,
+      "translatedTitle": "Wednesday Briefing: Israeli Officers Warn of Famine",
+      "translatedDescription": "Plus, a Hollywood takeover at Cannes.",
+      "ner": [
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 20,
+          "end": 27,
+          "source": "title"
+        },
+        {
+          "entity": "Hollywood",
+          "label": "LOC",
+          "start": 8,
+          "end": 17,
+          "source": "description"
+        },
+        {
+          "entity": "Cannes",
+          "label": "LOC",
+          "start": 30,
+          "end": 36,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "00f864d1d751003a3c5e594fdb6bd247",
+      "providerId": "New York Times",
+      "title": "As Trump Crows Over Ending a Conflict, India’s Leaders Feel Betrayed",
+      "description": "President Trump’s repeated descriptions of U.S. mediation efforts between India and Pakistan have hit sore spots in Indian politics.",
+      "url": "https://www.nytimes.com/2025/05/13/world/asia/trump-india-pakistan-ceasefire.html",
+      "language": "en",
+      "createdAt": "2025-05-14T03:40:45.000+00:00Z",
+      "pubDate": 1747194045,
+      "translatedTitle": "As Trump Crows Over Ending a Conflict, India’s Leaders Feel Betrayed",
+      "translatedDescription": "President Trump’s repeated descriptions of U.S. mediation efforts between India and Pakistan have hit sore spots in Indian politics.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 3,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 39,
+          "end": 44,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 84,
+          "end": 92,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "5bb50a60e81d714299ee76bd1902d69f",
+      "providerId": "New York Times",
+      "title": "Trump Welcomes White South African Refugees as He Shuts Out Afghans and Others",
+      "description": "The Trump administration carved out an exception to its refugee ban for white South Africans. But other groups, including Afghans who helped U.S. forces during the war in their country, are being shut out.",
+      "url": "https://www.nytimes.com/2025/05/13/us/politics/trump-refugees-white-south-africa-aghanistan.html",
+      "language": "en",
+      "createdAt": "2025-05-13T23:08:10.000+00:00Z",
+      "pubDate": 1747177690,
+      "translatedTitle": "Trump Welcomes White South African Refugees as He Shuts Out Afghans and Others",
+      "translatedDescription": "The Trump administration carved out an exception to its refugee ban for white South Africans. But other groups, including Afghans who helped U.S. forces during the war in their country, are being shut out.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "South Africa",
+          "label": "LOC",
+          "start": 15,
+          "end": 34,
+          "source": "title"
+        },
+        {
+          "entity": "Afghanistan",
+          "label": "LOC",
+          "start": 60,
+          "end": 66,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "53b0e7fd9fb341590e2994b250ac3ae0",
+      "providerId": "New York Times",
+      "title": "Saudis Greet Trump to His Tastes, With Pomp, Opulence and Real Estate",
+      "description": "The Saudi crown prince gave President Trump a warm and opulent welcome, reflecting the amity between a royal family and presidential family with diplomatic and business alliances.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/trump-saudi-arabia.html",
+      "language": "en",
+      "createdAt": "2025-05-14T03:49:51.000+00:00Z",
+      "pubDate": 1747194591,
+      "translatedTitle": "Saudis Greet Trump to His Tastes, With Pomp, Opulence and Real Estate",
+      "translatedDescription": "The Saudi crown prince gave President Trump a warm and opulent welcome, reflecting the amity between a royal family and presidential family with diplomatic and business alliances.",
+      "ner": [
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 13,
+          "end": 18,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "c2e8a2a87b65bd8fb1a1f571ecacf4e7",
+      "providerId": "New York Times",
+      "title": "3M to Pay New Jersey Up to $450 Million for Drinking-Water Contamination",
+      "description": "The state claimed “forever chemicals,” also known as PFAS, contaminated groundwater from an industrial park where they were used for decades.",
+      "url": "https://www.nytimes.com/2025/05/13/climate/3m-pfas-forever-chemical-lawsuit-water-new-jersey.html",
+      "language": "en",
+      "createdAt": "2025-05-13T20:21:37.000+00:00Z",
+      "pubDate": 1747167697,
+      "translatedTitle": "3M to Pay New Jersey Up to $450 Million for Drinking-Water Contamination",
+      "translatedDescription": "The state claimed “forever chemicals,” also known as PFAS, contaminated groundwater from an industrial park where they were used for decades.",
+      "ner": [
+        {
+          "entity": "New Jersey",
+          "label": "LOC",
+          "start": 10,
+          "end": 20,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "24b1df81b53dc3be4d25d36a389338e8",
+      "providerId": "New York Times",
+      "title": "Trump Cites $600 Billion in Saudi Deals, but Real Figure Appears Lower",
+      "description": "The White House was shy on details about the agreements, and the projects’ costs totaled less than half the number it announced.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/trump-saudi-economic-forum.html",
+      "language": "en",
+      "createdAt": "2025-05-13T20:01:42.000+00:00Z",
+      "pubDate": 1747166502,
+      "translatedTitle": "Trump Cites $600 Billion in Saudi Deals, but Real Figure Appears Lower",
+      "translatedDescription": "The White House was shy on details about the agreements, and the projects’ costs totaled less than half the number it announced.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 28,
+          "end": 33,
+          "source": "title"
+        },
+        {
+          "entity": "White House",
+          "label": "LOC",
+          "start": 4,
+          "end": 15,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "22525f06a7cac0907bef3a93325cfb6b",
+      "providerId": "New York Times",
+      "title": "Peter Sullivan’s Murder Conviction Is Quashed After 38 Years in Jail",
+      "description": "Peter Sullivan was found guilty of a brutal killing in 1987. But an appeals court overturned his conviction on Tuesday and ordered his immediate release.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/peter-sullivan-murder-appeal-free-uk.html",
+      "language": "en",
+      "createdAt": "2025-05-14T11:33:47.000+00:00Z",
+      "pubDate": 1747222427,
+      "translatedTitle": "Peter Sullivan’s Murder Conviction Is Quashed After 38 Years in Jail",
+      "translatedDescription": "Peter Sullivan was found guilty of a brutal killing in 1987. But an appeals court overturned his conviction on Tuesday and ordered his immediate release.",
+      "ner": [
+        {
+          "entity": "Peter Sullivan",
+          "label": "PER",
+          "start": 0,
+          "end": 14,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "7be3b4ff759f961d569a841ebc4b68cc",
+      "providerId": "New York Times",
+      "title": "Israel Bombards Gaza Seeking to Kill Muhammad Sinwar, a Top Hamas Leader, Officials Say",
+      "description": "Israeli officials said the military had launched an attack targeting Muhammad Sinwar, the brother of a leader killed last year.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/israel-gaza-sinwar-khan-younis.html",
+      "language": "en",
+      "createdAt": "2025-05-13T23:18:05.000+00:00Z",
+      "pubDate": 1747178285,
+      "translatedTitle": "Israel Bombards Gaza Seeking to Kill Muhammad Sinwar, a Top Hamas Leader, Officials Say",
+      "translatedDescription": "Israeli officials said the military had launched an attack targeting Muhammad Sinwar, the brother of a leader killed last year.",
+      "ner": [
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 16,
+          "end": 20,
+          "source": "title"
+        },
+        {
+          "entity": "Muhammad Sinwar",
+          "label": "PER",
+          "start": 37,
+          "end": 52,
+          "source": "title"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 60,
+          "end": 65,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "fcd1b14b48690204837bff4795558bbf",
+      "providerId": "New York Times",
+      "title": "In Private, Some Israeli Officers Admit That Gaza Is on the Brink of Starvation",
+      "description": "Israel’s government has publicly dismissed warnings of extreme food shortages after it blocked aid deliveries, but an internal analysis concluded that a crisis looms if food supplies are not restored.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/gaza-famine-starvation-israel.html",
+      "language": "en",
+      "createdAt": "2025-05-14T03:00:00.000+00:00Z",
+      "pubDate": 1747191600,
+      "translatedTitle": "In Private, Some Israeli Officers Admit That Gaza Is on the Brink of Starvation",
+      "translatedDescription": "Israel’s government has publicly dismissed warnings of extreme food shortages after it blocked aid deliveries, but an internal analysis concluded that a crisis looms if food supplies are not restored.",
+      "ner": [
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 17,
+          "end": 24,
+          "source": "title"
+        },
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 45,
+          "end": 49,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "abadb5d1bdef8061f1f4568ccd64b98f",
+      "providerId": "New York Times",
+      "title": "Trump to Lift Sanctions on Syria and Meet With New President",
+      "description": "President Trump, on a state visit to Saudi Arabia, said he made the decision after speaking to the Saudi crown prince. The president is trying to drum up Saudi investment in the U.S.",
+      "url": "https://www.nytimes.com/2025/05/13/world/middleeast/trump-syria-president-meeting.html",
+      "language": "en",
+      "createdAt": "2025-05-14T00:44:25.000+00:00Z",
+      "pubDate": 1747183465,
+      "translatedTitle": "Trump to Lift Sanctions on Syria and Meet With New President",
+      "translatedDescription": "President Trump, on a state visit to Saudi Arabia, said he made the decision after speaking to the Saudi crown prince. The president is trying to drum up Saudi investment in the U.S.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 27,
+          "end": 32,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 37,
+          "end": 49,
+          "source": "description"
+        },
+        {
+          "entity": "Saudi",
+          "label": "MISC",
+          "start": 99,
+          "end": 104,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "41aaeabb0f5da027eda231c8838c25b2",
+      "providerId": "New York Times",
+      "title": "Kate Middleton Presents 2025 Queen Elizabeth II Award for Design",
+      "description": "The British royal made a surprise appearance on Tuesday to present a fashion award named for Queen Elizabeth II.",
+      "url": "https://www.nytimes.com/2025/05/13/style/kate-middleton-queen-elizabeth-ii-award-design.html",
+      "language": "en",
+      "createdAt": "2025-05-13T15:10:34.000+00:00Z",
+      "pubDate": 1747149034,
+      "translatedTitle": "Kate Middleton Presents 2025 Queen Elizabeth II Award for Design",
+      "translatedDescription": "The British royal made a surprise appearance on Tuesday to present a fashion award named for Queen Elizabeth II.",
+      "ner": [
+        {
+          "entity": "Kate Middleton",
+          "label": "PER",
+          "start": 0,
+          "end": 14,
+          "source": "title"
+        },
+        {
+          "entity": "Queen Elizabeth II Award",
+          "label": "MISC",
+          "start": 29,
+          "end": 53,
+          "source": "title"
+        },
+        {
+          "entity": "British",
+          "label": "MISC",
+          "start": 4,
+          "end": 11,
+          "source": "description"
+        },
+        {
+          "entity": "Elizabeth Ii",
+          "label": "PER",
+          "start": 99,
+          "end": 111,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "9e4d0f7182f19812a1ce50208aa965b2",
+      "providerId": "New York Times",
+      "title": "Tariffs Push Honda to Move Production From Canada to U.S.",
+      "description": "President Trump’s trade war again tests Canada’s new government. Honda is also postponing  a major electric vehicle factory in Canada.",
+      "url": "https://www.nytimes.com/2025/05/13/world/americas/honda-trump-tariffs-us-canada.html",
+      "language": "en",
+      "createdAt": "2025-05-13T18:20:35.000+00:00Z",
+      "pubDate": 1747160435,
+      "translatedTitle": "Tariffs Push Honda to Move Production From Canada to U.S.",
+      "translatedDescription": "President Trump’s trade war again tests Canada’s new government. Honda is also postponing  a major electric vehicle factory in Canada.",
+      "ner": [
+        {
+          "entity": "Honda",
+          "label": "ORG",
+          "start": 13,
+          "end": 18,
+          "source": "title"
+        },
+        {
+          "entity": "Canada",
+          "label": "LOC",
+          "start": 43,
+          "end": 49,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 10,
+          "end": 15,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "d9143a5fe589ce13f47486915fdf3b36",
+      "providerId": "New York Times",
+      "title": "Afrikaners Granted Refugee Status by Trump Arrive in U.S.: What We Know",
+      "description": "The first group of Afrikaners have arrived in the United States, claiming they were victims of persecution or had reason to fear persecution in their home country.",
+      "url": "https://www.nytimes.com/article/afrikaner-refugees-trump-south-africa.html",
+      "language": "en",
+      "createdAt": "2025-05-14T12:22:06.000+00:00Z",
+      "pubDate": 1747225326,
+      "translatedTitle": "Afrikaners Granted Refugee Status by Trump Arrive in U.S.: What We Know",
+      "translatedDescription": "The first group of Afrikaners have arrived in the United States, claiming they were victims of persecution or had reason to fear persecution in their home country.",
+      "ner": [
+        {
+          "entity": "Afrikaners",
+          "label": "MISC",
+          "start": 0,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 37,
+          "end": 42,
+          "source": "title"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 50,
+          "end": 63,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "cfcea0a9ffd15282f110773a98bcc022",
+      "providerId": "New York Times",
+      "title": "Germany Bans Far-Right ‘King of Germany’ Group and Arrests Its Leaders",
+      "description": "Members of a group calling itself the Kingdom of Germany, which was targeted in nationwide raids, reject the existence of the German state and want to set up a parallel one.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/germany-ban-far-right-kingdom.html",
+      "language": "en",
+      "createdAt": "2025-05-13T14:24:17.000+00:00Z",
+      "pubDate": 1747146257,
+      "translatedTitle": "Germany Bans Far-Right ‘King of Germany’ Group and Arrests Its Leaders",
+      "translatedDescription": "Members of a group calling itself the Kingdom of Germany, which was targeted in nationwide raids, reject the existence of the German state and want to set up a parallel one.",
+      "ner": [
+        {
+          "entity": "Germany",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Far",
+          "label": "MISC",
+          "start": 13,
+          "end": 16,
+          "source": "title"
+        },
+        {
+          "entity": "Right",
+          "label": "MISC",
+          "start": 17,
+          "end": 22,
+          "source": "title"
+        },
+        {
+          "entity": "Kingdom of Germany",
+          "label": "LOC",
+          "start": 38,
+          "end": 56,
+          "source": "description"
+        },
+        {
+          "entity": "German",
+          "label": "MISC",
+          "start": 126,
+          "end": 132,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "59a06dd63049f947dfdb7e44593be9b8",
+      "providerId": "New York Times",
+      "title": "Boxes of Nazi Material Are Found After Decades in Basement of Argentina Court",
+      "description": "Thousands of documents in the boxes could result in new information about Nazi activity in Argentina in the early years of World War II.",
+      "url": "https://www.nytimes.com/2025/05/13/world/americas/nazi-documents-argentina.html",
+      "language": "en",
+      "createdAt": "2025-05-13T14:14:56.000+00:00Z",
+      "pubDate": 1747145696,
+      "translatedTitle": "Boxes of Nazi Material Are Found After Decades in Basement of Argentina Court",
+      "translatedDescription": "Thousands of documents in the boxes could result in new information about Nazi activity in Argentina in the early years of World War II.",
+      "ner": [
+        {
+          "entity": "Nazi",
+          "label": "MISC",
+          "start": 9,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "Argentina",
+          "label": "LOC",
+          "start": 62,
+          "end": 71,
+          "source": "title"
+        },
+        {
+          "entity": "World War II",
+          "label": "MISC",
+          "start": 123,
+          "end": 135,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "253f69ad45f60a6ab4d419589a2f35bc",
+      "providerId": "New York Times",
+      "title": "Zelensky Asks Trump to Attend Peace Talks, but Putin’s Plans Remain Unclear",
+      "description": "President Volodymyr Zelensky of Ukraine said that if President Trump attended the talks, it would put pressure on Russia’s leader, Vladimir V. Putin, to meet face-to-face.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/russia-ukraine-putin-zelensky.html",
+      "language": "en",
+      "createdAt": "2025-05-13T19:45:41.000+00:00Z",
+      "pubDate": 1747165541,
+      "translatedTitle": "Zelensky Asks Trump to Attend Peace Talks, but Putin’s Plans Remain Unclear",
+      "translatedDescription": "President Volodymyr Zelensky of Ukraine said that if President Trump attended the talks, it would put pressure on Russia’s leader, Vladimir V. Putin, to meet face-to-face.",
+      "ner": [
+        {
+          "entity": "Zelensky",
+          "label": "PER",
+          "start": 0,
+          "end": 8,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 14,
+          "end": 19,
+          "source": "title"
+        },
+        {
+          "entity": "Putin",
+          "label": "PER",
+          "start": 47,
+          "end": 52,
+          "source": "title"
+        },
+        {
+          "entity": "Volodymyr Zelensky",
+          "label": "PER",
+          "start": 10,
+          "end": 28,
+          "source": "description"
+        },
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 32,
+          "end": 39,
+          "source": "description"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 114,
+          "end": 120,
+          "source": "description"
+        },
+        {
+          "entity": "Vladimir V",
+          "label": "PER",
+          "start": 131,
+          "end": 141,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "08b1b37ed1fee8b763988dd90308ae11",
+      "providerId": "New York Times",
+      "title": "U.K. Retail Giant M&S Says Customer Data Was Compromised in Cyberattack",
+      "description": "The company suspended online orders for weeks after the breach, which may have exposed contact details and birth dates.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/marks-spencer-cyber-attack.html",
+      "language": "en",
+      "createdAt": "2025-05-13T13:16:59.000+00:00Z",
+      "pubDate": 1747142219,
+      "translatedTitle": "U.K. Retail Giant M&S Says Customer Data Was Compromised in Cyberattack",
+      "translatedDescription": "The company suspended online orders for weeks after the breach, which may have exposed contact details and birth dates.",
+      "ner": [
+        {
+          "entity": "M&S",
+          "label": "ORG",
+          "start": 18,
+          "end": 21,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "cae8e4f55e81c5a22fa02bcc444b4bca",
+      "providerId": "New York Times",
+      "title": "Trump Begins Middle East Tour in Saudi Arabia: Photos and Video",
+      "description": "Mr. Trump has few meetings directly about pressing geopolitical challenges. Instead, he’s in the Persian Gulf to make deals.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/trump-middle-east-photos.html",
+      "language": "en",
+      "createdAt": "2025-05-14T15:29:57.000+00:00Z",
+      "pubDate": 1747236597,
+      "translatedTitle": "Trump Begins Middle East Tour in Saudi Arabia: Photos and Video",
+      "translatedDescription": "Mr. Trump has few meetings directly about pressing geopolitical challenges. Instead, he’s in the Persian Gulf to make deals.",
+      "ner": [
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Middle East Tour",
+          "label": "MISC",
+          "start": 13,
+          "end": 29,
+          "source": "title"
+        },
+        {
+          "entity": "Saudi Arabia",
+          "label": "LOC",
+          "start": 33,
+          "end": 45,
+          "source": "title"
+        },
+        {
+          "entity": "Persian Gulf",
+          "label": "LOC",
+          "start": 97,
+          "end": 109,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "d70b83309f42378b033bf42a87716738",
+      "providerId": "New York Times",
+      "title": "Kim Kardashian Testifies in Paris Court About 2016 Robbery Ordeal",
+      "description": "The reality TV star, in emotional testimony at a trial in Paris, described being held at gunpoint as jewelry worth millions was stolen.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/kim-kardashian-testimony-paris-robbery-trial.html",
+      "language": "en",
+      "createdAt": "2025-05-13T17:36:34.000+00:00Z",
+      "pubDate": 1747157794,
+      "translatedTitle": "Kim Kardashian Testifies in Paris Court About 2016 Robbery Ordeal",
+      "translatedDescription": "The reality TV star, in emotional testimony at a trial in Paris, described being held at gunpoint as jewelry worth millions was stolen.",
+      "ner": [
+        {
+          "entity": "Kim Kardashian",
+          "label": "PER",
+          "start": 0,
+          "end": 14,
+          "source": "title"
+        },
+        {
+          "entity": "Paris",
+          "label": "LOC",
+          "start": 28,
+          "end": 33,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "a8e3fa1b31e001d44434e19fd0a1103a",
+      "providerId": "New York Times",
+      "title": "In Augustinian Order, Pope Leo XIV Found Unity, Charity and ‘Eternal Friendship’",
+      "description": "The Order of St. Augustine, with fewer than 3,000 members, shaped the man who would become a cardinal, and then pope to the world’s Roman Catholics.",
+      "url": "https://www.nytimes.com/2025/05/13/world/europe/pope-leo-order-of-st-augustine.html",
+      "language": "en",
+      "createdAt": "2025-05-13T16:43:50.000+00:00Z",
+      "pubDate": 1747154630,
+      "translatedTitle": "In Augustinian Order, Pope Leo XIV Found Unity, Charity and ‘Eternal Friendship’",
+      "translatedDescription": "The Order of St. Augustine, with fewer than 3,000 members, shaped the man who would become a cardinal, and then pope to the world’s Roman Catholics.",
+      "ner": [
+        {
+          "entity": "Augustinian Order",
+          "label": "MISC",
+          "start": 3,
+          "end": 20,
+          "source": "title"
+        },
+        {
+          "entity": "Leo Xiv",
+          "label": "PER",
+          "start": 27,
+          "end": 34,
+          "source": "title"
+        },
+        {
+          "entity": "Unity",
+          "label": "ORG",
+          "start": 41,
+          "end": 46,
+          "source": "title"
+        },
+        {
+          "entity": "Order of St. Augustine",
+          "label": "ORG",
+          "start": 4,
+          "end": 26,
+          "source": "description"
+        },
+        {
+          "entity": "Roman Catholics",
+          "label": "MISC",
+          "start": 132,
+          "end": 147,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "1722d0684107558b3260678f2ff8c0f7",
+      "providerId": "RTS",
+      "title": "Une nouvelle ONG compte distribuer de l'aide humanitaire à Gaza d'ici fin mai",
+      "description": "La Fondation humanitaire de Gaza, une nouvelle ONG soutenue par Washington, va acheminer dès la fin du mois de mai de l'aide humanitaire dans la bande de Gaza, privée de ressources depuis le 2 mars. Elle prévoit la distribution de près de 300 millions de repas pour une période initiale de 90 jours.",
+      "url": "https://www.france24.com/fr/moyen-orient/20250515-gaza-nouvelle-ong-compte-distribuer-aide-humanitaire-israel",
+      "language": "en",
+      "createdAt": "2025-05-15T01:34:49.000+00:00Z",
+      "pubDate": 1747272889,
+      "translatedTitle": "A new NGO plans to distribute humanitarian aid in Gaza by the end of May",
+      "translatedDescription": "The Gaza Humanitarian Foundation, a new NGO supported by Washington, will send humanitarian aid at the end of May to the Gaza Strip, deprived of resources since March 2. It provides for the distribution of nearly 300 million meals for an initial period of 90 days.",
+      "ner": [
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 50,
+          "end": 54,
+          "source": "title"
+        },
+        {
+          "entity": "Palestine",
+          "label": "ORG",
+          "start": 4,
+          "end": 32,
+          "source": "description"
+        },
+        {
+          "entity": "Washington",
+          "label": "LOC",
+          "start": 57,
+          "end": 67,
+          "source": "description"
+        },
+        {
+          "entity": "Gaza Strip",
+          "label": "LOC",
+          "start": 121,
+          "end": 131,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "7747d0558d9c671e718d76a7f1fe9893",
+      "providerId": "RTS",
+      "title": "PDCI : Thaim réélu sans surprise",
+      "description": "Tidjane Thiam a été élu mercredi à la tête du PDCI, principal parti d'opposition ivoirien, dans une élection où il était seul candidat, deux jours après avoir démissionné de ce poste pour se représenter et mettre fin à une saga judiciaire contestant sa légitimité. Cette élection ne règle toutefois pas la question de son inéligibilité à la présidentielle du 25 octobre.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/journal-de-l-afrique/20250514-pdci-thaim-r%C3%A9%C3%A9lu-sans-surprise",
+      "language": "en",
+      "createdAt": "2025-05-14T21:29:43.000+00:00Z",
+      "pubDate": 1747258183,
+      "translatedTitle": "PDCI: Thaim re -elected without surprise",
+      "translatedDescription": "Tidjane Thiam was elected on Wednesday at the head of the PDCI, the main Ivorian opposition party, in an election where he was the sole candidate, two days after having resigned from this position to represent himself and put an end to a judicial saga contesting his legitimacy. However, this election does not settle the question of its ineligibility to the presidential election of October 25.",
+      "ner": [
+        {
+          "entity": "PDCI",
+          "label": "ORG",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Thai",
+          "label": "PER",
+          "start": 6,
+          "end": 10,
+          "source": "title"
+        },
+        {
+          "entity": "Tidjane Thiam",
+          "label": "PER",
+          "start": 0,
+          "end": 13,
+          "source": "description"
+        },
+        {
+          "entity": "vorian",
+          "label": "MISC",
+          "start": 74,
+          "end": 80,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "401c53bc64846bf03ecb6251f785634f",
+      "providerId": "RTS",
+      "title": "En Côte d'Ivoire, l'opposant Tidjane Thiam réélu sans surprise à la tête de son parti",
+      "description": "Deux jours après avoir démissionné de son poste, Tidjane Thiam a été élu mercredi à la tête du PDCI, principal parti d'opposition ivoirien. Ce scrutin joué d'avance était destiné à renforcer sa légitimité après des mois d'imbroglio autour de sa nationalité alors que se profile la présidentielle du 25 octobre.",
+      "url": "https://www.france24.com/fr/afrique/20250514-c%C3%B4te-d-ivoire-opposant-tidjane-thiam-r%C3%A9%C3%A9lu-sans-surprise-pr%C3%A9sidence-parti",
+      "language": "en",
+      "createdAt": "2025-05-14T20:55:18.000+00:00Z",
+      "pubDate": 1747256118,
+      "translatedTitle": "In Côte d'Ivoire, opponent Tidjane Thiam re -elected without surprise at the head of his party",
+      "translatedDescription": "Two days after having resigned from his post, Tidjane Thiam was elected on Wednesday at the head of the PDCI, the main Ivorian opposition party. This election played in advance was intended to strengthen its legitimacy after months of imbroglio around its nationality when the presidential election of October 25 is looming.",
+      "ner": [
+        {
+          "entity": "Côte d'Ivoire",
+          "label": "LOC",
+          "start": 3,
+          "end": 16,
+          "source": "title"
+        },
+        {
+          "entity": "Tidjane Thiam",
+          "label": "PER",
+          "start": 27,
+          "end": 40,
+          "source": "title"
+        },
+        {
+          "entity": "PDCI",
+          "label": "ORG",
+          "start": 104,
+          "end": 108,
+          "source": "description"
+        },
+        {
+          "entity": "vorian",
+          "label": "MISC",
+          "start": 120,
+          "end": 126,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "268c331558f363832f09b5d1482296f8",
+      "providerId": "RTS",
+      "title": "Inde - Pakistan : Pas de cessez-le-feu dans la désinformation",
+      "description": "Si l'heure est au cessez-le-feu entre l'Inde et le Pakistan après plusieurs jours d'affrontements, une guerre a lieu sur le front de la désinformation à coups d'images satellites générées ou retouchées par Intelligence Artificielle.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/info-ou-intox/20250514-inde-pakistan-pas-de-cessez-le-feu-dans-la-d%C3%A9sinformation",
+      "language": "en",
+      "createdAt": "2025-05-14T20:43:05.000+00:00Z",
+      "pubDate": 1747255385,
+      "translatedTitle": "India-Pakistan: no ceasefire in disinformation",
+      "translatedDescription": "If the time is at the ceasefire between India and Pakistan after several days of clashes, a war takes place on the front of disinformation with satellite images generated or retouched by artificial intelligence.",
+      "ner": [
+        {
+          "entity": "India",
+          "label": "LOC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "Pakistan",
+          "label": "LOC",
+          "start": 6,
+          "end": 14,
+          "source": "title"
+        }
+      ]
+    },
+    {
+      "id": "a0d65926a66ef76355d187b09ccfb4ec",
+      "providerId": "RTS",
+      "title": "Pourparlers sur l'Ukraine : Poutine ne se rendra pas à Istanbul, Trump non plus",
+      "description": "La Russie a dévoilé mercredi les membres de la délégation qui participera jeudi aux pourparlers sur le conflit en Ukraine sous l'égide de la Turquie. Le Kremlin n'a pas fait mention du président Vladimir Poutine, qui devrait donc être absent à Istanbul. Selon un représentant américain, Donald Trump ne fera pas non plus le déplacement.",
+      "url": "https://www.france24.com/fr/europe/20250514-vladimir-poutine-ne-se-rendra-pas-istanbul-pourparlers-ukraine-russie-guerre",
+      "language": "en",
+      "createdAt": "2025-05-14T20:39:45.000+00:00Z",
+      "pubDate": 1747255185,
+      "translatedTitle": "Talks on Ukraine: Putin will not go to Istanbul, Trump either",
+      "translatedDescription": "Russia unveiled the members of the delegation on Wednesday who will participate in the talks on the conflict in Ukraine under the aegis of Turkey on Thursday. The Kremlin did not mention President Vladimir Putin, who should therefore be absent in Istanbul. According to an American representative, Donald Trump will not make the trip either.",
+      "ner": [
+        {
+          "entity": "Ukraine",
+          "label": "LOC",
+          "start": 9,
+          "end": 16,
+          "source": "title"
+        },
+        {
+          "entity": "Putin",
+          "label": "PER",
+          "start": 18,
+          "end": 23,
+          "source": "title"
+        },
+        {
+          "entity": "Istanbul",
+          "label": "LOC",
+          "start": 39,
+          "end": 47,
+          "source": "title"
+        },
+        {
+          "entity": "Trump",
+          "label": "PER",
+          "start": 49,
+          "end": 54,
+          "source": "title"
+        },
+        {
+          "entity": "Russia",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "description"
+        },
+        {
+          "entity": "Turkey",
+          "label": "LOC",
+          "start": 139,
+          "end": 145,
+          "source": "description"
+        },
+        {
+          "entity": "Kremlin",
+          "label": "LOC",
+          "start": 163,
+          "end": 170,
+          "source": "description"
+        },
+        {
+          "entity": "Vladimir Putin",
+          "label": "PER",
+          "start": 197,
+          "end": 211,
+          "source": "description"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 273,
+          "end": 281,
+          "source": "description"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 298,
+          "end": 310,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "4f8b884e16e25650a7c732136236a8be",
+      "providerId": "RTS",
+      "title": "Menaces sur le secteur de la cryptomonnaie",
+      "description": "En France, l'inquiétude monte chez les patrons du secteur de la cryptomonnaie. En l'espace de quelques mois, ils sont devenus les cibles de tentatives d'extorsion avec violences, leurs proches sont également pris pour cible. Dernier épisode en date, mardi 13 mai, cette tentative d'enlèvement très violente dans les rues de Paris.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/info-%C3%A9co/20250514-menaces-sur-le-secteur-de-la-cryptomonnaie",
+      "language": "en",
+      "createdAt": "2025-05-14T19:39:17.000+00:00Z",
+      "pubDate": 1747251557,
+      "translatedTitle": "Threats to the cryptocurrency sector",
+      "translatedDescription": "In France, concern rises among the bosses of the cryptocurrency sector. In the space of a few months, they have become the targets of extortion attempts with violence, their loved ones are also targeted. Last episode to date, Tuesday, May 13, this very violent abduction attempt in the streets of Paris.",
+      "ner": [
+        {
+          "entity": "France",
+          "label": "LOC",
+          "start": 3,
+          "end": 9,
+          "source": "description"
+        },
+        {
+          "entity": "Paris",
+          "label": "LOC",
+          "start": 297,
+          "end": 302,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "302b89abc6792f394ccf628e2ef6af55",
+      "providerId": "RTS",
+      "title": "Cannes 2025 : Tom Cruise électrise la Croisette avec le dernier volet de \"Mission impossible\"",
+      "description": "C’est sans doute la star la plus attendue de la 78e édition du Festival de Cannes. Tom Cruise est sur la Croisette avec le huitième volet de \"Mission impossible\". Retour sur l’histoire de cette saga née à la télévision et qui a déjà engendré plus de quatre milliards de dollars de recettes au box-office depuis sa première adaptation sur grand écran en 1996.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/%C3%A0-l-affiche/20250514-cannes-2025-tom-cruise-%C3%A9lectrise-la-croisette-avec-le-dernier-volet-de-mission-impossible",
+      "language": "en",
+      "createdAt": "2025-05-14T19:32:41.000+00:00Z",
+      "pubDate": 1747251161,
+      "translatedTitle": "Cannes 2025: Tom Cruise electrifies the Croisette with the last part of \"Mission Impossible\"",
+      "translatedDescription": "He is undoubtedly the most awaited star of the 78th edition of the Cannes Film Festival. Tom Cruise is on the Croisette with the eighth part of \"Mission Impossible\". Back on the history of this saga born on television and which has already generated more than four billion dollars in box office revenue since its first adaptation on the big screen in 1996.",
+      "ner": [
+        {
+          "entity": "Cannes",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Tom Cruise",
+          "label": "PER",
+          "start": 13,
+          "end": 23,
+          "source": "title"
+        },
+        {
+          "entity": "Croisette",
+          "label": "LOC",
+          "start": 40,
+          "end": 49,
+          "source": "title"
+        },
+        {
+          "entity": "Mission Impossible",
+          "label": "MISC",
+          "start": 73,
+          "end": 91,
+          "source": "title"
+        },
+        {
+          "entity": "Cannes Film Festival",
+          "label": "MISC",
+          "start": 67,
+          "end": 87,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "de4f0f6526d41d4b401d7f6528ef039d",
+      "providerId": "RTS",
+      "title": "Plus de viande rouge et de temps au volant : pourquoi les hommes polluent plus que les femmes",
+      "description": "Selon une étude publiée mercredi, hommes et femmes ne sont pas sur un pied d'égalité en matière de lutte contre le dérèglement climatique, les premiers émettant 26 % de CO2 de plus que les secondes. En cause, \"les normes de genre\" qui poussent la gent masculine à davantage de comportements nocifs pour l'environnement. Explications.",
+      "url": "https://www.france24.com/fr/plan%C3%A8te/20250514-plus-de-viande-rouge-temps-au-volant-pourquoi-les-hommes-polluent-plus-que-les-femmes",
+      "language": "en",
+      "createdAt": "2025-05-14T19:18:06.000+00:00Z",
+      "pubDate": 1747250286,
+      "translatedTitle": "More red meat and time driving: why men pollute more than women",
+      "translatedDescription": "According to a study published on Wednesday, men and women are not on an equal footing in the fight against climate change, the first emitting 26% CO2 more than the seconds. In question, \"gender standards\" that push male gent to more harmful behaviors for the environment. Explanations.",
+      "ner": []
+    },
+    {
+      "id": "6f426155cb518f7fba95af7d05e91ed9",
+      "providerId": "RTS",
+      "title": "L'Uruguay fait ses adieux à son ancien président, le charismatique \"Pepe\" Mujica",
+      "description": "Au lendemain de sa mort, des milliers d'Uruguayens ont salué une dernière fois mercredi leur ancien président, José Mujica, figure charismatique de la gauche latino-américaine.",
+      "url": "https://www.france24.com/fr/info-en-continu/20250514-l-uruguay-dit-adieu-%C3%A0-son-charismatique-ex-pr%C3%A9sident-pepe-mujica",
+      "language": "en",
+      "createdAt": "2025-05-14T18:11:14.000+00:00Z",
+      "pubDate": 1747246274,
+      "translatedTitle": "Uruguay farewell to its former president, the charismatic \"pepe\" Mujica",
+      "translatedDescription": "The day after his death, thousands of Uruguayans praised their former president on Wednesday, José Mujica, a charismatic figure of the Latin American left.",
+      "ner": [
+        {
+          "entity": "Uruguay",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Mujica",
+          "label": "PER",
+          "start": 65,
+          "end": 71,
+          "source": "title"
+        },
+        {
+          "entity": "José Mujica",
+          "label": "PER",
+          "start": 94,
+          "end": 105,
+          "source": "description"
+        },
+        {
+          "entity": "Latin American",
+          "label": "MISC",
+          "start": 135,
+          "end": 149,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "f4c354c823c02d2e06d3ce7696a43f3b",
+      "providerId": "RTS",
+      "title": "France / Algérie : l'escalade sans fin ?",
+      "description": "Le torchon brule une nouvelle fois entre la France et l'Algérie. Paris va expulser de nouveaux diplomates algériens. Une déclaration de Jean-Noël Barrot le chef de la diplomatie française. La France réplique après l’annonce par Alger dimanche du rapatriement de 15 agents français envoyés en mission de renfort temporaire en Algérie.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20250514-france-alg%C3%A9rie-l-escalade-sans-fin",
+      "language": "en",
+      "createdAt": "2025-05-14T18:05:37.000+00:00Z",
+      "pubDate": 1747245937,
+      "translatedTitle": "France / Algeria: endless escalation?",
+      "translatedDescription": "The cloth burns again between France and Algeria. Paris will expel new Algerian diplomats. A declaration by Jean-Noël Barrot The head of French diplomacy. France replied after the announcement by Algiers on Sunday from the repatriation of 15 French agents sent on a temporary reinforcement mission to Algeria.",
+      "ner": [
+        {
+          "entity": "France",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Algeria",
+          "label": "LOC",
+          "start": 9,
+          "end": 16,
+          "source": "title"
+        },
+        {
+          "entity": "Paris",
+          "label": "LOC",
+          "start": 50,
+          "end": 55,
+          "source": "description"
+        },
+        {
+          "entity": "Jean-Noël Barrot",
+          "label": "PER",
+          "start": 108,
+          "end": 124,
+          "source": "description"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 137,
+          "end": 143,
+          "source": "description"
+        },
+        {
+          "entity": "Algiers",
+          "label": "LOC",
+          "start": 196,
+          "end": 203,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "f3604f9c47d435b986e390c470dbf8f6",
+      "providerId": "RTS",
+      "title": "Le Qatar passe une commande record de 96 milliards de dollars à l'Américain Boeing",
+      "description": "La compagnie Qatar Airways a signé mercredi, durant la visite dans l'émirat du président Donald Trump, un accord pour se procurer jusqu'à 210 appareils auprès de Boeing. Un signal fort pour l'avionneur américain qui accumule les déboires depuis plusieurs années.",
+      "url": "https://www.france24.com/fr/info-en-continu/20250514-commande-record-de-96-milliards-de-dollars-du-qatar-%C3%A0-boeing-un-signal-fort-pour-l-avionneur",
+      "language": "en",
+      "createdAt": "2025-05-14T17:57:12.000+00:00Z",
+      "pubDate": 1747245432,
+      "translatedTitle": "Qatar place a record order of $ 96 billion in the American Boeing",
+      "translatedDescription": "The Qatar Airways company signed on Wednesday, during the emirate of President Donald Trump, an agreement to obtain up to 210 aircraft from Boeing. A strong signal for the American aircraft manufacturer that has accumulated setbacks for several years.",
+      "ner": [
+        {
+          "entity": "Qatar",
+          "label": "LOC",
+          "start": 0,
+          "end": 5,
+          "source": "title"
+        },
+        {
+          "entity": "American",
+          "label": "MISC",
+          "start": 50,
+          "end": 58,
+          "source": "title"
+        },
+        {
+          "entity": "Boeing",
+          "label": "ORG",
+          "start": 59,
+          "end": 65,
+          "source": "title"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 79,
+          "end": 91,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "7246a02e2300e97a412bc98682e02044",
+      "providerId": "RTS",
+      "title": "Marathons sexuels, œil au beurre noir : Cassie, l'ex de P. Diddy, n'avait \"plus envie de vivre\"",
+      "description": "L'ancienne petite amie de P. Diddy, jugé pour trafic sexuel à New York, a poursuivi mercredi son témoignage, racontant comment le rappeur et producteur déchu l'avait battue et forcée pendant une décennie à avoir des relations sexuelles avec d'autres hommes.",
+      "url": "https://www.france24.com/fr/info-en-continu/20250514-cassie-continue-son-t%C3%A9moignage-accablant-au-proc%C3%A8s-de-p-diddy",
+      "language": "en",
+      "createdAt": "2025-05-14T16:47:11.000+00:00Z",
+      "pubDate": 1747241231,
+      "translatedTitle": "Sexual marathons, black eye: Cassie, the ex of P. Diddy, did not want to live \"",
+      "translatedDescription": "The former girlfriend of P. Diddy, tried for sex trafficking in New York, continued his testimony on Wednesday, telling how the rapper and fallen producer had beaten and forced him for a decade to have sex with other men.",
+      "ner": [
+        {
+          "entity": "Cassie",
+          "label": "PER",
+          "start": 29,
+          "end": 35,
+          "source": "title"
+        },
+        {
+          "entity": "New York",
+          "label": "LOC",
+          "start": 64,
+          "end": 72,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "d5928b4ee94df1692d902ebc7cb067e3",
+      "providerId": "RTS",
+      "title": "Cannes 2025 : la présidente du jury Juliette Binoche lance la compétition",
+      "description": "40 ans après sa première venue sur la Croisette en 1985 pour le film \"Rendez-vous\" d'André Téchiné, Juliette Binoche est cette année la présidente du jury du festival de Cannes. Elle aura la lourde tâche de départager les 22 films en compétition pour la Palme d'Or.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/%C3%A0-l-affiche/20250514-cannes-2025-la-pr%C3%A9sidente-du-jury-juliette-binoche-lance-la-comp%C3%A9tition",
+      "language": "en",
+      "createdAt": "2025-05-14T16:26:30.000+00:00Z",
+      "pubDate": 1747239990,
+      "translatedTitle": "Cannes 2025: the president of the jury Juliette Binoche launches the competition",
+      "translatedDescription": "40 years after her first coming on La Croisette in 1985 for the film \"Rendez-vous\" by André Téchiné, Juliette Binoche is this year the president of the jury of the Cannes Film Festival. She will have the heavy task of deciding the 22 films in competition for the Palme d'Or.",
+      "ner": [
+        {
+          "entity": "Cannes",
+          "label": "LOC",
+          "start": 0,
+          "end": 6,
+          "source": "title"
+        },
+        {
+          "entity": "Juliette Binoche",
+          "label": "PER",
+          "start": 39,
+          "end": 55,
+          "source": "title"
+        },
+        {
+          "entity": "La Croisette",
+          "label": "LOC",
+          "start": 35,
+          "end": 47,
+          "source": "description"
+        },
+        {
+          "entity": "Rendez-vous",
+          "label": "MISC",
+          "start": 70,
+          "end": 81,
+          "source": "description"
+        },
+        {
+          "entity": "André Téchiné",
+          "label": "PER",
+          "start": 86,
+          "end": 99,
+          "source": "description"
+        },
+        {
+          "entity": "Cannes Film Festival",
+          "label": "MISC",
+          "start": 164,
+          "end": 184,
+          "source": "description"
+        },
+        {
+          "entity": "Palme d'Or",
+          "label": "MISC",
+          "start": 263,
+          "end": 273,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "46bc23807455f2f42489d88e3d62fbc5",
+      "providerId": "RTS",
+      "title": "Festival de Cannes : \"Mission impossible\", une saga (presque) française",
+      "description": "Avec la première internationale de son huitième et peut-être dernier opus \"The Final Reckoning\" au 78e Festival de Cannes, la saga \"Mission impossible\" boucle la boucle d'une longue relation avec la France, qui a débuté dès son tout premier épisode, en 1996.",
+      "url": "https://www.france24.com/fr/france/20250514-festival-de-cannes-2025-mission-impossible-tom-cruise-saga-presque-fran%C3%A7aise",
+      "language": "en",
+      "createdAt": "2025-05-14T16:21:53.000+00:00Z",
+      "pubDate": 1747239713,
+      "translatedTitle": "Cannes Film Festival: \"Mission Impossible\", a French (almost) French saga",
+      "translatedDescription": "With the first international of his eighth and perhaps last opus \"The Final Reckoning\" at the 78th Cannes Film Festival, the \"Mission Impossible\" saga loops a long relationship with France, which started from its very first episode in 1996.",
+      "ner": [
+        {
+          "entity": "Cannes Film Festival",
+          "label": "MISC",
+          "start": 0,
+          "end": 20,
+          "source": "title"
+        },
+        {
+          "entity": "Mission Impossible",
+          "label": "MISC",
+          "start": 23,
+          "end": 41,
+          "source": "title"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 46,
+          "end": 52,
+          "source": "title"
+        },
+        {
+          "entity": "The Final Reckoning",
+          "label": "MISC",
+          "start": 66,
+          "end": 85,
+          "source": "description"
+        },
+        {
+          "entity": "France",
+          "label": "LOC",
+          "start": 182,
+          "end": 188,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "5e86d5e0982c0897f2ab128df8d5e6c3",
+      "providerId": "RTS",
+      "title": "François Bayrou auditionné à l'Assemblée à propos de l'affaire Bétharram",
+      "description": "Le Premier ministre, François Bayrou, est entendu ce mercredi à l'Assemblée nationale sur l'affaire Bétharram, nom d'un établissement catholique béarnais accusé d'avoir été le théâtre de mauvais traitements, dont des agressions sexuelles, sur des élèves.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250514-fran%C3%A7ois-bayrou-auditionn%C3%A9-%C3%A0-l-assembl%C3%A9e-%C3%A0-propos-de-l-affaire-b%C3%A9tharram",
+      "language": "en",
+      "createdAt": "2025-05-14T15:39:41.000+00:00Z",
+      "pubDate": 1747237181,
+      "translatedTitle": "François Bayrou auditioned in the Assembly about the Betharram case",
+      "translatedDescription": "The Prime Minister, François Bayrou, is heard this Wednesday in the National Assembly on the Betharram case, name of a Béarnais Catholic establishment accused of having been the scene of ill -treatment, including sexual assault, on students.",
+      "ner": [
+        {
+          "entity": "François Bayrou",
+          "label": "PER",
+          "start": 0,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "Assembly",
+          "label": "ORG",
+          "start": 34,
+          "end": 42,
+          "source": "title"
+        },
+        {
+          "entity": "Betharram",
+          "label": "PER",
+          "start": 53,
+          "end": 62,
+          "source": "title"
+        },
+        {
+          "entity": "National Assembly",
+          "label": "ORG",
+          "start": 68,
+          "end": 85,
+          "source": "description"
+        },
+        {
+          "entity": "Betharra",
+          "label": "PER",
+          "start": 93,
+          "end": 101,
+          "source": "description"
+        },
+        {
+          "entity": "éarnais",
+          "label": "MISC",
+          "start": 120,
+          "end": 127,
+          "source": "description"
+        },
+        {
+          "entity": "Catholic",
+          "label": "MISC",
+          "start": 128,
+          "end": 136,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "74e4a33decbe849d346a61d6a43c5196",
+      "providerId": "RTS",
+      "title": "Nucléaire iranien : Donald Trump maintient la pression",
+      "description": "Le président américain Donald Trump a appelé mercredi à une application stricte des sanctions américaines visant l'Iran, tout en affirmant espérer parvenir à un accord sur le dossier du nucléaire iranien, dans un contexte d'opposition croissante des Etats-Unis à l'enrichissement de l'uranium par Téhéran.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250514-nucl%C3%A9aire-iranien-donald-trump-maintient-la-pression",
+      "language": "en",
+      "createdAt": "2025-05-14T15:03:18.000+00:00Z",
+      "pubDate": 1747234998,
+      "translatedTitle": "Iranian nuclear: Donald Trump maintains the pressure",
+      "translatedDescription": "President Donald Trump called on a strict application of US sanctions for Iran on Wednesday, while claiming to hope to reach an agreement on the Iranian nuclear file, in a context of increasing opposition from the United States to the enrichment of uranium by Tehran.",
+      "ner": [
+        {
+          "entity": "Iran",
+          "label": "LOC",
+          "start": 0,
+          "end": 7,
+          "source": "title"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 17,
+          "end": 29,
+          "source": "title"
+        },
+        {
+          "entity": "United States",
+          "label": "LOC",
+          "start": 57,
+          "end": 59,
+          "source": "description"
+        },
+        {
+          "entity": "Tehran",
+          "label": "LOC",
+          "start": 260,
+          "end": 266,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "4a82cbb2ffc93b51781e855874ec952e",
+      "providerId": "RTS",
+      "title": "Affaire Bétharram : François Bayrou devant une commission d'enquête de l'Assemblée",
+      "description": "Accusé de mensonges, François Bayrou s'explique mercredi devant une commission d'enquête de l'Assemblée sur ce qu'il savait et son éventuel rôle auprès de la justice dans l'affaire des violences physiques et sexuelles au collège-lycée Notre-Dame de Bétharram. Les précisions de Flore Simon, journaliste politique à France 24.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250514-affaire-b%C3%A9tharram-fran%C3%A7ois-bayrou-devant-une-commission-d-enqu%C3%AAte-de-l-assembl%C3%A9e",
+      "language": "en",
+      "createdAt": "2025-05-14T14:52:16.000+00:00Z",
+      "pubDate": 1747234336,
+      "translatedTitle": "Betharram case: François Bayrou before a committee of inquiry in the Assembly",
+      "translatedDescription": "Accused of lies, François Bayrou explains on Wednesday before a commission of inquiry of the Assembly on what he knew and his possible role with justice in the case of physical and sexual violence at the college-Lycée Notre-Dame de Bétharram. The details of Flore Simon, political journalist at France 24.",
+      "ner": [
+        {
+          "entity": "Betharram",
+          "label": "PER",
+          "start": 0,
+          "end": 9,
+          "source": "title"
+        },
+        {
+          "entity": "François Bayrou",
+          "label": "PER",
+          "start": 16,
+          "end": 31,
+          "source": "title"
+        },
+        {
+          "entity": "Assembly",
+          "label": "ORG",
+          "start": 69,
+          "end": 77,
+          "source": "title"
+        },
+        {
+          "entity": "Lycée Notre-Dame de Bétharram",
+          "label": "LOC",
+          "start": 212,
+          "end": 241,
+          "source": "description"
+        },
+        {
+          "entity": "Flore Simon",
+          "label": "PER",
+          "start": 258,
+          "end": 269,
+          "source": "description"
+        },
+        {
+          "entity": "France",
+          "label": "ORG",
+          "start": 295,
+          "end": 304,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "1ed31e6737938493d99ae66a79a2df4e",
+      "providerId": "RTS",
+      "title": "Emmanuel Macron face aux Français : impuissant, le chef de l'État défend son bilan",
+      "description": "Pendant plus de trois heures, Emmanuel Macron a répondu aux questions des journalistes et des acteurs de la société civile. Une tentative pour le chef de l'État de montrer qu'il était toujours au coeur de l'action politique. Pendant ces trois heures, Emmanuel Macron a défendu son bilan et est apparu comme un président empêché. Pour en parler, Clovis Casali reçoit David Revault-d'Allonnes et Pierre Jacquemain.",
+      "url": "https://www.france24.com/fr/%C3%A9missions/face-%C3%A0-face/20250514-emmanuel-macron-face-aux-fran%C3%A7ais-impuissant-le-chef-de-l-%C3%A9tat-d%C3%A9fend-son-bilan",
+      "language": "en",
+      "createdAt": "2025-05-14T14:47:53.000+00:00Z",
+      "pubDate": 1747234073,
+      "translatedTitle": "Emmanuel Macron in front of the French: helpless, the Head of State defends his record",
+      "translatedDescription": "For more than three hours, Emmanuel Macron answered questions from journalists and actors in civil society. An attempt for the head of state to show that he was always at the heart of political action. During these three hours, Emmanuel Macron defended his record and appeared as a prevented president. To talk about it, Clovis Casali receives David Revault-D'Allonnes and Pierre Jacquemain.",
+      "ner": [
+        {
+          "entity": "Emmanuel Macron",
+          "label": "PER",
+          "start": 0,
+          "end": 15,
+          "source": "title"
+        },
+        {
+          "entity": "French",
+          "label": "MISC",
+          "start": 32,
+          "end": 38,
+          "source": "title"
+        },
+        {
+          "entity": "Clovis Casali",
+          "label": "PER",
+          "start": 321,
+          "end": 334,
+          "source": "description"
+        },
+        {
+          "entity": "David Revault-D'Allonnes",
+          "label": "PER",
+          "start": 344,
+          "end": 368,
+          "source": "description"
+        },
+        {
+          "entity": "Pierre Jacque",
+          "label": "PER",
+          "start": 373,
+          "end": 386,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "12e5a39660e662e2b997d05f55ec4cc0",
+      "providerId": "RTS",
+      "title": "Gaza : l'armée israélienne intensifie ses frappes, un hôpital visé à Khan Younès",
+      "description": "Des frappes israéliennes ont tué au moins 70 Palestiniens à travers la bande de Gaza mercredi, ont déclaré les autorités sanitaires locales. La veille, l'armée israélienne a frappé l'hôpital européen de Khan Younès. Elle assure qu'un centre de commandement du Hamas était situé sous l'établissement et que le chef militaire du Hamas, Mohammed Sinouar, s'y trouvait.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250514-gaza-l-arm%C3%A9e-isra%C3%A9lienne-intensifie-ses-frappes-un-h%C3%B4pital-vis%C3%A9-%C3%A0-khan-youn%C3%A8s",
+      "language": "en",
+      "createdAt": "2025-05-14T14:47:36.000+00:00Z",
+      "pubDate": 1747234056,
+      "translatedTitle": "Gaza: the Israeli army intensifies its strikes, a hospital aimed in Khan Younès",
+      "translatedDescription": "Israeli strikes killed at least 70 Palestinians across the Gaza Strip on Wednesday, local health authorities said. The day before, the Israeli army struck the European hospital of Khan Younès. She assures that a Hamas command center was located under the establishment and that the military leader of Hamas, Mohammed Sinouar, was there.",
+      "ner": [
+        {
+          "entity": "Gaza",
+          "label": "LOC",
+          "start": 0,
+          "end": 4,
+          "source": "title"
+        },
+        {
+          "entity": "Israel",
+          "label": "LOC",
+          "start": 10,
+          "end": 17,
+          "source": "title"
+        },
+        {
+          "entity": "Khan Younès",
+          "label": "LOC",
+          "start": 68,
+          "end": 79,
+          "source": "title"
+        },
+        {
+          "entity": "Palestine",
+          "label": "LOC",
+          "start": 35,
+          "end": 47,
+          "source": "description"
+        },
+        {
+          "entity": "Gaza Strip",
+          "label": "LOC",
+          "start": 59,
+          "end": 69,
+          "source": "description"
+        },
+        {
+          "entity": "European",
+          "label": "MISC",
+          "start": 159,
+          "end": 167,
+          "source": "description"
+        },
+        {
+          "entity": "Hamas",
+          "label": "ORG",
+          "start": 212,
+          "end": 217,
+          "source": "description"
+        },
+        {
+          "entity": "Mohammed Sinouar",
+          "label": "PER",
+          "start": 308,
+          "end": 324,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "584976e9f46c081200e6f1097f76232c",
+      "providerId": "RTS",
+      "title": "Décryptage : qu'est-ce qui a poussé Washington à renouer avec Damas ?",
+      "description": "À Ryad, Donald Trump a rencontré mercredi 14mai le président syrien Ahmed al-Charaa, peu après avoir annoncé la levée spectaculaire des sanctions contre Damas. Cette décision a été qualifiée de \"tournant décisif\" par les autorités syriennes. Quels sont les dossiers communs qui ont convaincu Washington de renouer avec Damas ? Le décryptage de Wassim Nasr, journaliste à France 24.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250514-d%C3%A9cryptage-qu-est-ce-qui-a-pouss%C3%A9-washington-%C3%A0-renouer-avec-damas",
+      "language": "en",
+      "createdAt": "2025-05-14T14:41:49.000+00:00Z",
+      "pubDate": 1747233709,
+      "translatedTitle": "Decryption: What prompted Washington to reconnect with Damascus?",
+      "translatedDescription": "In Ryad, Donald Trump met the Syrian President Ahmed al-Charaa on Wednesday 14th, shortly after announcing the spectacular lifting of sanctions against Damascus. This decision was described as \"decisive turning point\" by the Syrian authorities. What are the common files that convinced Washington to reconnect with Damascus? The decryption of Wassim Nasr, journalist at France 24.",
+      "ner": [
+        {
+          "entity": "Washington",
+          "label": "LOC",
+          "start": 26,
+          "end": 36,
+          "source": "title"
+        },
+        {
+          "entity": "Damascus",
+          "label": "LOC",
+          "start": 55,
+          "end": 63,
+          "source": "title"
+        },
+        {
+          "entity": "Ryad",
+          "label": "LOC",
+          "start": 3,
+          "end": 7,
+          "source": "description"
+        },
+        {
+          "entity": "Donald Trump",
+          "label": "PER",
+          "start": 9,
+          "end": 21,
+          "source": "description"
+        },
+        {
+          "entity": "Syria",
+          "label": "LOC",
+          "start": 30,
+          "end": 36,
+          "source": "description"
+        },
+        {
+          "entity": "Ahmed Al-Charaa",
+          "label": "PER",
+          "start": 47,
+          "end": 62,
+          "source": "description"
+        },
+        {
+          "entity": "Was",
+          "label": "PER",
+          "start": 343,
+          "end": 346,
+          "source": "description"
+        },
+        {
+          "entity": "France",
+          "label": "ORG",
+          "start": 370,
+          "end": 379,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "6e8a338c613708b0f6f3e4b20dc992f1",
+      "providerId": "RTS",
+      "title": "Affaire Bétharram : François Bayrou dénonce une tentative de \"l'obliger à démissionner\"",
+      "description": "Entendu mercredi à l'Assemblée nationale dans le cadre de l'affaire Bétharram, un établissement catholique béarnais accusé d'avoir été le théâtre de violences, y compris d'agressions sexuelles, sur des élèves, François Bayrou a considéré que son audition avait pour but de le \"coincer\" pour l'\"obliger à démissionner\".",
+      "url": "https://www.france24.com/fr/france/20250514-en-direct-affaire-b%C3%A9tharram-fran%C3%A7ois-bayrou-auditionn%C3%A9-assembl%C3%A9e-nationale",
+      "language": "en",
+      "createdAt": "2025-05-14T14:30:39.000+00:00Z",
+      "pubDate": 1747233039,
+      "translatedTitle": "Betharram case: François Bayrou denounces an attempt to \"force him to resign\"",
+      "translatedDescription": "Heard Wednesday in the National Assembly as part of the Betharram case, a Béarnais Catholic establishment accused of having been the scene of violence, including sexual assaults, on students, François Bayrou considered that his hearing was intended to \"wedge\" him to \"force him to resign\".",
+      "ner": [
+        {
+          "entity": "Betharram",
+          "label": "PER",
+          "start": 0,
+          "end": 9,
+          "source": "title"
+        },
+        {
+          "entity": "François Bayrou",
+          "label": "PER",
+          "start": 16,
+          "end": 31,
+          "source": "title"
+        },
+        {
+          "entity": "National Assembly",
+          "label": "ORG",
+          "start": 23,
+          "end": 40,
+          "source": "description"
+        },
+        {
+          "entity": "Béarnais",
+          "label": "MISC",
+          "start": 74,
+          "end": 82,
+          "source": "description"
+        },
+        {
+          "entity": "Catholic",
+          "label": "MISC",
+          "start": 83,
+          "end": 91,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "1fceaf72fb475dc75f66d4172ca521b8",
+      "providerId": "RTS",
+      "title": "Côte d'Ivoire : vote au PDCI pour réélire Tidjane Thiam",
+      "description": "Le principal parti d'opposition en Côte d'Ivoire, le PDCI, élit mercredi son président, une formalité annoncée pour Tidjane Thiam, seul candidat à ce poste dont il a démissionné il y a deux jours pour se représenter et mettre fin à une saga judiciaire contestant sa légitimité. Les précisions de Julia Guggenheim, correspondante de France 24 en Côte d'Ivoire.",
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20250514-c%C3%B4te-d-ivoire-vote-au-pdci-pour-r%C3%A9%C3%A9lire-tidjane-thiam",
+      "language": "en",
+      "createdAt": "2025-05-14T14:26:12.000+00:00Z",
+      "pubDate": 1747232772,
+      "translatedTitle": "Côte d'Ivoire: voting to the PDCI to re -election Tidjane Thiam",
+      "translatedDescription": "The main opposition party in Côte d'Ivoire, the PDCI, elects its president on Wednesday, a formality announced for Tidjane Thiam, the only candidate for this post which he resigned two days ago to represent and end a judicial saga contesting his legitimacy. The details of Julia Guggenheim, correspondent of France 24 in Côte d'Ivoire.",
+      "ner": [
+        {
+          "entity": "Côte d'Ivoire",
+          "label": "LOC",
+          "start": 0,
+          "end": 13,
+          "source": "title"
+        },
+        {
+          "entity": "PDCI",
+          "label": "ORG",
+          "start": 29,
+          "end": 33,
+          "source": "title"
+        },
+        {
+          "entity": "Tidjane Thiam",
+          "label": "PER",
+          "start": 50,
+          "end": 63,
+          "source": "title"
+        },
+        {
+          "entity": "Julia Guggenheim",
+          "label": "PER",
+          "start": 273,
+          "end": 289,
+          "source": "description"
+        },
+        {
+          "entity": "France",
+          "label": "ORG",
+          "start": 308,
+          "end": 317,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "5c6ce6ec12900b04b23fdcbf6842676b",
+      "providerId": "RTS",
+      "title": "Le comté sur le banc des accusés : quand la surproduction fragilise l’environnement",
+      "description": "Le comté est le fromage AOP le plus consommé en France. Mais son succès soulève aujourd’hui des interrogations environnementales. En cause : l’intensification des élevages, les pollutions liées au traitement des eaux usées et la stratégie d’exportation de la filière.",
+      "url": "https://www.france24.com/fr/france/20250514-comt%C3%A9-banc-accus%C3%A9s-quand-surproduction-fragilise-environnement-fromage",
+      "language": "en",
+      "createdAt": "2025-05-14T14:10:20.000+00:00Z",
+      "pubDate": 1747231820,
+      "translatedTitle": "County on the accused bench: when overproduction weakens the environment",
+      "translatedDescription": "County is the most consumed AOP cheese in France. But its success today raises environmental questions. In question: the intensification of farms, pollution linked to wastewater treatment and the export strategy of the sector.",
+      "ner": [
+        {
+          "entity": "AOP",
+          "label": "ORG",
+          "start": 28,
+          "end": 31,
+          "source": "description"
+        },
+        {
+          "entity": "France",
+          "label": "LOC",
+          "start": 42,
+          "end": 48,
+          "source": "description"
+        }
+      ]
+    },
+    {
+      "id": "06d1e3bf64877fade1dc30e6cb112a9c",
+      "providerId": "RTS",
+      "title": "Entre la France et l'Algérie, il y a \"un rapport d'abuseur à abusé\", dit l'archevêque d'Alger",
+      "description": "Le cardinal Jean-Paul Vesco, archevêque d'Alger, a accordé un entretien à France 24. Il salue l'élection du pape Léon XIV, qu’il décrit comme un \"faiseur de paix\" appelé à poursuivre l'œuvre de François, mais en renforçant la \"collégialité\" du pontificat. Sur la crise diplomatique entre la France et l'Algérie, Jean-Paul Vesco estime qu’elle révèle une blessure coloniale toujours ouverte. Il appelle la France à \"regarder en face\" cette histoire, dénonçant un \"rapport d’abuseur à abusé\".",
+      "url": "https://www.france24.com/fr/%C3%A9missions/en-t%C3%AAte-%C3%A0-t%C3%AAte/20250514-entre-la-france-et-l-alg%C3%A9rie-il-y-a-un-rapport-d-abuseur-%C3%A0-abus%C3%A9-dit-l-archev%C3%AAque-d-alger",
+      "language": "en",
+      "createdAt": "2025-05-14T13:41:14.000+00:00Z",
+      "pubDate": 1747230074,
+      "translatedTitle": "Between France and Algeria, there is \"an abuser report to abuse\", says the Archbishop of Algiers",
+      "translatedDescription": "Cardinal Jean-Paul Vesco, archbishop of Algiers, granted an interview to France 24. He salutes the election of Pope Léon XIV, which he described as a \"peacemaker\" called to continue the work of François, but by strengthening the \"collegiality\" of the pontificate. On the diplomatic crisis between France and Algeria, Jean-Paul Vesco believes that it reveals an always open colonial injury. He calls on France to \"look opposite\" this story, denouncing an \"abuser's report to abuse\".",
+      "ner": [
+        {
+          "entity": "France",
+          "label": "LOC",
+          "start": 8,
+          "end": 14,
+          "source": "title"
+        },
+        {
+          "entity": "Algeria",
+          "label": "LOC",
+          "start": 19,
+          "end": 26,
+          "source": "title"
+        },
+        {
+          "entity": "Algiers",
+          "label": "LOC",
+          "start": 89,
+          "end": 96,
+          "source": "title"
+        },
+        {
+          "entity": "Jean-Paul Vesco",
+          "label": "PER",
+          "start": 9,
+          "end": 24,
+          "source": "description"
+        },
+        {
+          "entity": "Pope",
+          "label": "PER",
+          "start": 111,
+          "end": 115,
+          "source": "description"
+        },
+        {
+          "entity": "Léon Xiv",
+          "label": "PER",
+          "start": 116,
+          "end": 124,
+          "source": "description"
+        },
+        {
+          "entity": "François",
+          "label": "PER",
+          "start": 194,
+          "end": 202,
+          "source": "description"
+        }
+      ]
+    }
+  ],
+  "processedAt": "2025-05-15T04:28:53.999943"
+}
