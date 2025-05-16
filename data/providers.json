@@ -3,12 +3,497 @@
         "id": "New York Times",
         "builtin": true,
         "language": "en",
-        "url": ["https://rss.nytimes.com/services/xml/rss/nyt/World.xml"]
+        "url": ["https://rss.nytimes.com/services/xml/rss/nyt/World.xml"],
+        "country": "US"
     },
     {
-        "id": "RTS",
+        "id": "BBC News",
         "builtin": true,
         "language": "en",
-        "url": ["https://www.france24.com/fr/rss"]
+        "url": ["https://feeds.bbci.co.uk/news/world/rss.xml"],
+        "country": "UK"
+    },
+    {
+        "id": "CNN",
+        "builtin": true,
+        "language": "en",
+        "url": ["http://rss.cnn.com/rss/edition_world.rss"],
+        "country": "US"
+    },
+    {
+        "id": "Al Jazeera",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.aljazeera.com/xml/rss/all.xml"],
+        "country": "QA"
+    },
+    {
+        "id": "France 24",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.france24.com/en/rss"],
+        "country": "FR"
+    },
+    {
+        "id": "DW News",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://rss.dw.com/rdf/rss-en-all"],
+        "country": "DE"
+    },
+    {
+        "id": "ABC Australia",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.abc.net.au/news/feed/51120/rss.xml"],
+        "country": "AU"
+    },
+    {
+        "id": "CBC News",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.cbc.ca/cmlink/rss-world"],
+        "country": "CA"
+    },
+    {
+        "id": "The Guardian",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.theguardian.com/world/rss"],
+        "country": "UK"
+    },
+    {
+        "id": "Reuters",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://feeds.reuters.com/reuters/worldNews"],
+        "country": "UK"
+    },
+    {
+        "id": "NPR",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://feeds.npr.org/1004/rss.xml"],
+        "country": "US"
+    },
+    {
+        "id": "The Times of India",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://timesofindia.indiatimes.com/rssfeeds/296589292.cms"],
+        "country": "IN"
+    },
+    {
+        "id": "The Japan Times",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.japantimes.co.jp/feed/topstories"],
+        "country": "JP"
+    },
+    {
+        "id": "South China Morning Post",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.scmp.com/rss/91/feed"],
+        "country": "HK"
+    },
+    {
+        "id": "The Moscow Times",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.themoscowtimes.com/rss/news"],
+        "country": "RU"
+    },
+    {
+        "id": "The Irish Times",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.irishtimes.com/rss/"],
+        "country": "IE"
+    },
+    {
+        "id": "El País English",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada"],
+        "country": "ES"
+    },
+    {
+        "id": "The Korea Herald",
+        "builtin": true,
+        "language": "en",
+        "url": ["http://www.koreaherald.com/rss/current.xml"],
+        "country": "KR"
+    },
+    {
+        "id": "The Jerusalem Post",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.jpost.com/Rss/RssFeedsHeadlines.aspx"],
+        "country": "IL"
+    },
+    {
+        "id": "The Sydney Morning Herald",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.smh.com.au/rss/world.xml"],
+        "country": "AU"
+    },
+    {
+        "id": "News24",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://feeds.24.com/articles/News24/World/rss"],
+        "country": "ZA"
+    },
+    {
+        "id": "El Universal",
+        "builtin": true,
+        "language": "es",
+        "url": ["https://www.eluniversal.com.mx/rss.xml"],
+        "country": "MX"
+    },
+    {
+        "id": "Corriere della Sera",
+        "builtin": true,
+        "language": "it",
+        "url": ["https://xml2.corriereobjects.it/rss/homepage.xml"],
+        "country": "IT"
+    },
+    {
+        "id": "Le Monde",
+        "builtin": true,
+        "language": "fr",
+        "url": ["https://www.lemonde.fr/rss/une.xml"],
+        "country": "FR"
+    },
+    {
+        "id": "Der Spiegel",
+        "builtin": true,
+        "language": "de",
+        "url": ["https://www.spiegel.de/international/index.rss"],
+        "country": "DE"
+    },
+    {
+        "id": "NHK World",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www3.nhk.or.jp/nhkworld/en/news/all.rss"],
+        "country": "JP"
+    },
+    {
+        "id": "Folha de São Paulo",
+        "builtin": true,
+        "language": "pt",
+        "url": ["https://feeds.folha.uol.com.br/mundo/rss091.xml"],
+        "country": "BR"
+    },
+    {
+        "id": "Global Times",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.globaltimes.cn/rss/outbound.xml"],
+        "country": "CN"
+    },
+    {
+        "id": "The Hindu",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.thehindu.com/news/international/feeder/default.rss"],
+        "country": "IN"
+    },
+    {
+        "id": "Channel News Asia",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.channelnewsasia.com/api/v1/rss-feeds/latest-news"],
+        "country": "SG"
+    },
+    {
+        "id": "The Jakarta Post",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.thejakartapost.com/news/feed"],
+        "country": "ID"
+    },
+    {
+        "id": "Bangkok Post",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.bangkokpost.com/rss/data/topstories.xml"],
+        "country": "TH"
+    },
+    {
+        "id": "The Daily Star",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.thedailystar.net/rss.xml"],
+        "country": "BD"
+    },
+    {
+        "id": "Dawn",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.dawn.com/feed"],
+        "country": "PK"
+    },
+    {
+        "id": "Gulf News",
+        "builtin": true, 
+        "language": "en",
+        "url": ["https://gulfnews.com/rss/world"],
+        "country": "AE"
+    },
+    {
+        "id": "Buenos Aires Times",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.batimes.com.ar/feed/"],
+        "country": "AR"
+    },
+    {
+        "id": "Daily Nation",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://nation.africa/kenya/rss.xml"],
+        "country": "KE"
+    },
+    {
+        "id": "The Standard",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.standardmedia.co.ke/rss/world.php"],
+        "country": "KE"
+    },
+    {
+        "id": "The New Times",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.newtimes.co.rw/rss.xml"],
+        "country": "RW"
+    },
+    {
+        "id": "Vanguard Nigeria",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.vanguardngr.com/feed/"],
+        "country": "NG"
+    },
+    {
+        "id": "New Zealand Herald",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.nzherald.co.nz/rss/rss.cfm?content_type=mobile_article&section=1"],
+        "country": "NZ"
+    },
+    {
+        "id": "Svenska Dagbladet",
+        "builtin": true,
+        "language": "sv",
+        "url": ["https://www.svd.se/feed/rss"],
+        "country": "SE"
+    },
+    {
+        "id": "Aftenposten",
+        "builtin": true,
+        "language": "no",
+        "url": ["https://www.aftenposten.no/rss"],
+        "country": "NO"
+    },
+    {
+        "id": "Helsingin Sanomat",
+        "builtin": true,
+        "language": "fi",
+        "url": ["https://www.hs.fi/rss/tuoreimmat.xml"],
+        "country": "FI"
+    },
+    {
+        "id": "Politiken",
+        "builtin": true,
+        "language": "da",
+        "url": ["https://politiken.dk/rss/senestenyt.rss"],
+        "country": "DK"
+    },
+    {
+        "id": "NRC Handelsblad",
+        "builtin": true,
+        "language": "nl",
+        "url": ["https://www.nrc.nl/rss/"],
+        "country": "NL"
+    },
+    {
+        "id": "Le Soir",
+        "builtin": true,
+        "language": "fr",
+        "url": ["https://www.lesoir.be/rss/81851/cible_principale"],
+        "country": "BE"
+    },
+    {
+        "id": "Neue Zürcher Zeitung",
+        "builtin": true,
+        "language": "de",
+        "url": ["https://www.nzz.ch/recent.rss"],
+        "country": "CH"
+    },
+    {
+        "id": "Die Presse",
+        "builtin": true,
+        "language": "de",
+        "url": ["https://www.diepresse.com/rss/"],
+        "country": "AT"
+    },
+    {
+        "id": "Gazeta Wyborcza",
+        "builtin": true,
+        "language": "pl",
+        "url": ["https://wyborcza.pl/rss/wyborcza_pl_wiadomosci.xml"],
+        "country": "PL"
+    },
+    {
+        "id": "Hospodářské Noviny",
+        "builtin": true,
+        "language": "cs",
+        "url": ["https://ihned.cz/rss/zpravodajstvi.xml"],
+        "country": "CZ"
+    },
+    {
+        "id": "Magyar Nemzet",
+        "builtin": true,
+        "language": "hu",
+        "url": ["https://magyarnemzet.hu/feed/"],
+        "country": "HU"
+    },
+    {
+        "id": "Público",
+        "builtin": true,
+        "language": "pt",
+        "url": ["https://feeds.publico.pt/noticiasultimahora"],
+        "country": "PT"
+    },
+    {
+        "id": "Kathimerini English",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.ekathimerini.com/rss"],
+        "country": "GR"
+    },
+    {
+        "id": "Manila Bulletin",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://mb.com.ph/feed/"],
+        "country": "PH"
+    },
+    {
+        "id": "The Star Malaysia",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.thestar.com.my/rss/News"],
+        "country": "MY"
+    },
+    {
+        "id": "Vietnam News",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://vietnamnews.vn/rss/politics-laws.rss"],
+        "country": "VN"
+    },
+    {
+        "id": "Taipei Times",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.taipeitimes.com/xml/index.rss"],
+        "country": "TW"
+    },
+    {
+        "id": "Hürriyet Daily News",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.hurriyetdailynews.com/rss.php"],
+        "country": "TR"
+    },
+    {
+        "id": "Egypt Independent",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://egyptindependent.com/feed/"],
+        "country": "EG"
+    },
+    {
+        "id": "Arab News",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.arabnews.com/rss.xml"],
+        "country": "SA"
+    },
+    {
+        "id": "The Daily Star Lebanon",
+        "builtin": true,
+        "language": "en",
+        "url": ["http://www.dailystar.com.lb/RSS.aspx?live=1"],
+        "country": "LB"
+    },
+    {
+        "id": "Jordan Times",
+        "builtin": true,
+        "language": "en",
+        "url": ["http://www.jordantimes.com/rss.xml"],
+        "country": "JO"
+    },
+    {
+        "id": "Morocco World News",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.moroccoworldnews.com/feed"],
+        "country": "MA"
+    },
+    {
+        "id": "Tunisia Live",
+        "builtin": true,
+        "language": "en",
+        "url": ["https://www.tunisialive.net/feed/"],
+        "country": "TN"
+    },
+    {
+        "id": "El Mercurio",
+        "builtin": true,
+        "language": "es",
+        "url": ["https://www.emol.com/sitios/promocion/rss/rss.xml"],
+        "country": "CL"
+    },
+    {
+        "id": "El Tiempo",
+        "builtin": true,
+        "language": "es",
+        "url": ["https://www.eltiempo.com/rss/mundo.xml"],
+        "country": "CO"
+    },
+    {
+        "id": "El Comercio",
+        "builtin": true,
+        "language": "es",
+        "url": ["https://elcomercio.pe/rss"],
+        "country": "PE"
+    },
+    {
+        "id": "El Nacional",
+        "builtin": true,
+        "language": "es",
+        "url": ["https://www.elnacional.com/feed/"],
+        "country": "VE"
+    },
+    {
+        "id": "La Prensa",
+        "builtin": true,
+        "language": "es",
+        "url": ["https://www.laprensa.com.ni/feed"],
+        "country": "NI"
+    },
+    {
+        "id": "Prensa Libre",
+        "builtin": true,
+        "language": "es",
+        "url": ["https://www.prensalibre.com/feed/"],
+        "country": "GT"
     }
 ] 
