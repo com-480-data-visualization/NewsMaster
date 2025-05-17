@@ -55,7 +55,7 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
                     <tr>
                         <th scope="col" className="px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Rank</th>
                         <th scope="col" className="px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Topic</th>
-                        <th scope="col" className="px-4 py-2 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Presence in articles (%)</th>
+                        <th scope="col" className="px-4 py-2 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Presence in articles</th>
                         <th scope="col" className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Trending</th>
                         <th scope="col" className="px-4 py-2 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Since last week</th>
                     </tr>
@@ -83,7 +83,7 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
                             >
                                 <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">{item.rank}</td>
                                 <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200 capitalize">{item.topic}</td>
-                                <td className="px-4 py-2 whitespace-nowrap text-base font-semibold text-gray-800 dark:text-gray-200 text-right">{item.latestScore}</td>
+                                <td className="px-4 py-2 whitespace-nowrap text-base font-semibold text-gray-800 dark:text-gray-200 text-right">{item.latestScore}%</td>
                                 <td className="px-4 py-2 whitespace-nowrap text-sm text-center">
                                     <TrendIcon isUp={item.isTrendingUp} />
                                 </td>
