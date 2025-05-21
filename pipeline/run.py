@@ -34,34 +34,42 @@ def process_articles(articles):
         
         # Process each article in the batch
         for article, trans_title, trans_desc in zip(batch, translated_titles, translated_descriptions):
-            # Run NER on translated title and description
-            title_entities = ner(trans_title)
-            desc_entities = ner(trans_desc)
-            
-            # Combine entities and add source information
-            combined_entities = []
-            
-            # Add title entities with source
-            for entity in title_entities:
-                entity['source'] = 'title'
-                combined_entities.append(entity)
-            
-            # Add description entities with source
-            for entity in desc_entities:
-                entity['source'] = 'description'
-                combined_entities.append(entity)
-            
-            # Normalize all entities
-            normalized_entities = normalizer(combined_entities)
-            
-            # Add processed data to article
-            processed_article = article.copy()
-            processed_article.update({
-                'translatedTitle': trans_title,
-                'translatedDescription': trans_desc,
-                'ner': normalized_entities
-            })
-            processed_articles.append(processed_article)
+            try:
+                # Run NER on translated title and description
+                title_entities = ner(trans_title)
+                desc_entities = ner(trans_desc)
+                
+                # Combine entities and add source information
+                combined_entities = []
+                
+                # Add title entities with source
+                for entity in title_entities:
+                    entity['source'] = 'title'
+                    combined_entities.append(entity)
+                
+                # Add description entities with source
+                for entity in desc_entities:
+                    entity['source'] = 'description'
+                    combined_entities.append(entity)
+                
+                # Normalize all entities
+                normalized_entities = normalizer(combined_entities)
+                
+                # Add processed data to article
+                processed_article = article.copy()
+                processed_article.update({
+                    'translatedTitle': trans_title,
+                    'translatedDescription': trans_desc,
+                    'ner': normalized_entities
+                })
+                processed_articles.append(processed_article)
+            except Exception as e:
+                print(f"Error processing article: {article.get('title', 'N/A')}")
+                print(f"Translated Title: {trans_title}")
+                print(f"Translated Description: {trans_desc}")
+                print(f"Error details: {e}")
+                # Optionally, re-raise the exception if you want the script to stop
+                # raise 
     
     return processed_articles
 
@@ -114,4 +122,11 @@ def main():
     print("\nPipeline completed successfully!")
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"CRITICAL: An unhandled exception occurred in the main pipeline: {e}")
+        # Optionally, re-raise or exit with a specific code
+        # raise
+        # import sys
+        # sys.exit(1) 

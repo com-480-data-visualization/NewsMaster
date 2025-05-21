@@ -34,9 +34,11 @@ def fetch_all_articles():
         articles_items = fetch_and_deduplicate_articles(providers)
         if not articles_items:
             print("No new articles fetched.")
+            print(f"Total access denied responses: {access_denied_count}")
             return []
 
         print(f"Fetched {len(articles_items)} articles.")
+        print(f"Total access denied responses: {access_denied_count}")
         return articles_items
 
     except Exception as e:
@@ -119,6 +121,7 @@ def fetch_rss(url):
             access_denied_count += 1
             print(f"Access issue ({response.status_code}) on: {url}")
             return []
+        response.raise_for_status()
 
         feed = feedparser.parse(response.content)
         return [{
@@ -127,6 +130,9 @@ def fetch_rss(url):
             'link': entry.link,
             'published': entry.get('published', '')
         } for entry in feed.entries]
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to fetch RSS from {url} due to network issue: {e}")
+        return []
     except Exception as e:
         print(f"Failed to fetch RSS from {url}: {e}")
         return []

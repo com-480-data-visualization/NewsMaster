@@ -149,8 +149,14 @@ def update_current_week_trends():
     
     # Save updated data
     os.makedirs(os.path.dirname(topics_file), exist_ok=True)
-    with open(topics_file, 'w', encoding='utf-8') as f:
-        json.dump(existing_data, f, indent=4)
+    try:
+        with open(topics_file, 'w', encoding='utf-8') as f:
+            json.dump(existing_data, f, indent=4)
+        print(f"Temporal trends updated successfully in {topics_file}")
+    except IOError as e:
+        print(f"Error saving temporal trends to {topics_file}: {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred while saving temporal trends: {e}")
 
 if __name__ == "__main__":
     update_current_week_trends()

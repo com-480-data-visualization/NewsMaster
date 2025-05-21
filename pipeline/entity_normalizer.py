@@ -16,7 +16,8 @@ class EntityNormalizer:
             normalized = self.cc.convert(entity, to='name_short', not_found=None)
             if normalized:
                 return normalized
-        except Exception:
+        except Exception as e:
+            print(f"Error normalizing country '{entity}': {e}")
             pass
         return entity
 
@@ -42,7 +43,8 @@ class EntityNormalizer:
             tagged_address, _ = usaddress.tag(entity)
             if tagged_address:
                 return ' '.join(tagged_address.values())
-        except Exception:
+        except Exception as e:
+            print(f"Error normalizing location '{entity}': {e}")
             pass
         return entity.title()
 

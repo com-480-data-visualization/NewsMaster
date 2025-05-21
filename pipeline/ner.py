@@ -5,9 +5,17 @@ from typing import List, Dict, Union
 class BERTNER:
     def __init__(self):
         """Initialize the BERT-NER model and tokenizer."""
-        self.tokenizer = AutoTokenizer.from_pretrained("dslim/bert-large-NER")
-        self.model = AutoModelForTokenClassification.from_pretrained("dslim/bert-large-NER")
-        self.model.eval()  # Set model to evaluation mode
+        try:
+            self.tokenizer = AutoTokenizer.from_pretrained("dslim/bert-large-NER")
+            self.model = AutoModelForTokenClassification.from_pretrained("dslim/bert-large-NER")
+            self.model.eval()  # Set model to evaluation mode
+        except Exception as e:
+            print(f"CRITICAL: Failed to load BERT NER model or tokenizer: {e}")
+            # Depending on desired behavior, could raise it to stop everything
+            # or set a flag to indicate model is not usable.
+            self.tokenizer = None
+            self.model = None
+            raise # Re-raise to make sure the application knows the model isn't available
         
         # Define the label mapping
         self.label_map = {
@@ -155,4 +163,11 @@ class BERTNER:
         Returns:
             List[Dict]: List of dictionaries containing entity information
         """
-        return self.predict(text)
+        if not self.model or not self.tokenizer: # Check if model loaded successfully
+            print("Error: BERT NER model is not available. Returning empty list of entities.")
+            return []
+        try:
+            return self.predict(text)
+        except Exception as e:
+            print(f"Error during NER prediction for text: '{text[:100]}...': {e}")
+            return [] # Return empty list if an error occurs
