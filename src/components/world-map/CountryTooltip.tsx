@@ -1,10 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import { 
-  importData, exportData, 
   importColorScale, exportColorScale, 
   timeSeriesData, calculateGlobalAverage 
 } from '../../data/mapData';
+
+// Define structure for the data prop
+interface TooltipData {
+  importData: Record<string, number>;
+  exportData: Record<string, number>;
+}
 
 type Props = {
   hoveredCountry: { 
@@ -13,19 +18,20 @@ type Props = {
     position: { x: number; y: number } 
   } | null;
   mode: 'import' | 'export';
+  data: TooltipData;
 };
 
-const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode }) => {
+const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode, data }) => {
   const barChartRef = useRef<HTMLDivElement>(null);
   const trendChartRef = useRef<HTMLDivElement>(null);
 
-  // Create the bar chart when country changes
+  // Create the bar chart when country or data changes
   useEffect(() => {
-    if (!hoveredCountry || !barChartRef.current) return;
+    if (!hoveredCountry || !barChartRef.current || !data) return;
     
     const countryId = hoveredCountry.id;
-    const importValue = importData[countryId] || 0;
-    const exportValue = exportData[countryId] || 0;
+    const importValue = data.importData[countryId] || 0;
+    const exportValue = data.exportData[countryId] || 0;
     
     // Clear previous chart
     d3.select(barChartRef.current).html("");
@@ -83,7 +89,7 @@ const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode }) => {
       .attr("width", x.bandwidth())
       .attr("height", d => chartHeight - y(d.value))
       .attr("fill", d => d.color);
-  }, [hoveredCountry]);
+  }, [hoveredCountry, data]);
 
   // Create the trend chart when country changes
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import type { Feature, GeoJSON } from 'geojson';
-import { importData, exportData, importColorScale, exportColorScale, strokeColor, highlightColor } from '../../data/mapData';
+import { importColorScale, exportColorScale, strokeColor, highlightColor } from '../../data/mapData';
 
 type Country = {
   id: string;
@@ -11,6 +11,7 @@ type Country = {
 
 type Props = {
   mode: 'import' | 'export';
+  data: Record<string, number>;
   setSelectedCountry: (country: string | null) => void;
   setHoveredCountry: (country: { id: string; name: string; position: { x: number; y: number } } | null) => void;
 };
@@ -24,7 +25,7 @@ interface CountryFeature extends Feature {
   };
 }
 
-const WorldMap: React.FC<Props> = ({ mode, setSelectedCountry, setHoveredCountry }) => {
+const WorldMap: React.FC<Props> = ({ mode, data, setSelectedCountry, setHoveredCountry }) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const [mapInitialized, setMapInitialized] = useState(false);
 
@@ -130,31 +131,34 @@ const WorldMap: React.FC<Props> = ({ mode, setSelectedCountry, setHoveredCountry
         });
       
       // Initial coloring of countries
-      updateMapColors(mapGroup, mode);
+      updateMapColors(mapGroup, mode, data);
       setMapInitialized(true);
     });
     
   }, [mapInitialized, setHoveredCountry, setSelectedCountry]);
 
-  // Update map colors when mode changes
+  // Update map colors when mode or data changes
   useEffect(() => {
-    if (!mapInitialized) return;
+    if (!mapInitialized || !data) return;
     
     const svg = d3.select(svgRef.current);
     const mapGroup = svg.select("g");
-    updateMapColors(mapGroup, mode);
+    updateMapColors(mapGroup, mode, data);
     
-  }, [mode, mapInitialized]);
+  }, [mode, data, mapInitialized]);
 
   // Helper function to update map colors
-  const updateMapColors = (mapGroup: d3.Selection<any, unknown, null, undefined>, mode: 'import' | 'export') => {
+  const updateMapColors = (
+    mapGroup: d3.Selection<any, unknown, null, undefined>, 
+    mode: 'import' | 'export', 
+    currentData: Record<string, number>
+  ) => {
     const colorScale = mode === 'import' ? importColorScale : exportColorScale;
-    const data = mode === 'import' ? importData : exportData;
     
     mapGroup.selectAll("path")
       .attr("fill", (d: any) => {
         const id = d.id;
-        return colorScale(data[id] || 0);
+        return colorScale(currentData[id] || 0);
       });
   };
 
