@@ -3,7 +3,12 @@ name: cron_scrap
 on:
   schedule:
     - cron: "0 4 * * *" # every day at 4:00 UTC
-  
+
+  # run on push
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
