@@ -35,31 +35,49 @@ class EntityNormalizer:
         name = ' '.join(entity.split())
         return name.title()
 
-    def normalize_location(self, entity: str) -> str:
+    def normalize_location(self, entity_text: str) -> str:
         """
         Normalize location names to a standard format.
+        Ensures a string is returned.
         """
         try:
-            tagged_address, _ = usaddress.tag(entity)
-            if tagged_address:
-                return ' '.join(tagged_address.values())
+            components, addr_type = usaddress.tag(entity_text)
+
+            if addr_type == "RepeatedLabelError":
+                if components and isinstance(components, list) and components:  # components is a list of OrderedDicts
+                    # Take the first interpretation
+                    first_interpretation = components[0]
+                    if isinstance(first_interpretation, dict):
+                         # Join its values, ensuring they are strings
+                        return " ".join(str(v) for v in first_interpretation.values()).strip()
+                    else:
+                        # Unexpected structure in RepeatedLabelError
+                        print(f"Warning: Unexpected structure in RepeatedLabelError for '{entity_text}': {first_interpretation}")
+                # Fallback for RepeatedLabelError if no components or unexpected structure
+                return entity_text.title()
+            elif components and isinstance(components, dict):  # components is a single OrderedDict
+                # Join its values, ensuring they are strings
+                return " ".join(str(v) for v in components.values()).strip()
+            else:
+                # No components found or unexpected type, fallback
+                return entity_text.title()
         except Exception as e:
-            print(f"Error normalizing location '{entity}': {e}")
-            pass
-        return entity.title()
+            print(f"Error normalizing location '{entity_text}': {e}")
+        # Fallback for any error or if no specific case matched
+        return entity_text.title()
 
     def normalize_entity(self, entity: Dict[str, Union[str, int, int]]) -> Dict[str, Union[str, int, int]]:
         """
         Normalize an entity based on its label.
         """
         normalized_entity = entity.copy()
-        text = entity['entity']
+        text = str(entity['entity']) # Ensure text is initially a string
         label = entity['label']
         
         if label == 'LOC':
             normalized_entity['entity'] = self.normalize_location(text)
         elif label == 'ORG':
-            normalized_entity['entity'] = self.normalize_country(text)
+            normalized_entity['entity'] = self.normalize_organization(text)
         elif label == 'PER':
             normalized_entity['entity'] = self.normalize_person(text)
         elif label == 'MISC':
