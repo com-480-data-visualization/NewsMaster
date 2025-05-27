@@ -52,7 +52,16 @@ class Translator:
             self.last_request_time = time.time()
             
             # Translate all non-English texts at once
-            translations = await translator.translate(to_translate, dest='en')
+            try:
+                translations = await translator.translate(to_translate, dest='en')
+            except Exception as e:
+                print(f"Error during translation batch: {e}. Returning original texts for this batch.")
+                # If translation fails, we need to reconstruct the result with original (untranslated) to_translate texts
+                result = texts.copy()
+                for i, original_text_to_translate in enumerate(to_translate):
+                    original_index = translation_map[i]
+                    result[original_index] = original_text_to_translate # Use original text
+                return result
             
             # Reconstruct the result list
             result = texts.copy()

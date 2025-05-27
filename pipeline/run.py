@@ -5,6 +5,8 @@ from ingestor_clean import fetch_all_articles
 from translate_to_en import Translator
 from ner import BERTNER
 from entity_normalizer import EntityNormalizer
+from temporal_trends import update_current_week_trends
+from aggregate_map_data import aggregate_map_data
 
 def get_today_date_str():
     """Return the current date as DD.MM.YYYY string."""
@@ -33,41 +35,49 @@ def process_articles(articles):
         
         # Process each article in the batch
         for article, trans_title, trans_desc in zip(batch, translated_titles, translated_descriptions):
-            # Run NER on translated title and description
-            title_entities = ner(trans_title)
-            desc_entities = ner(trans_desc)
-            
-            # Combine entities and add source information
-            combined_entities = []
-            
-            # Add title entities with source
-            for entity in title_entities:
-                entity['source'] = 'title'
-                combined_entities.append(entity)
-            
-            # Add description entities with source
-            for entity in desc_entities:
-                entity['source'] = 'description'
-                combined_entities.append(entity)
-            
-            # Normalize all entities
-            normalized_entities = normalizer(combined_entities)
-            
-            # Add processed data to article
-            processed_article = article.copy()
-            processed_article.update({
-                'translatedTitle': trans_title,
-                'translatedDescription': trans_desc,
-                'ner': normalized_entities
-            })
-            processed_articles.append(processed_article)
+            try:
+                # Run NER on translated title and description
+                title_entities = ner(trans_title)
+                desc_entities = ner(trans_desc)
+                
+                # Combine entities and add source information
+                combined_entities = []
+                
+                # Add title entities with source
+                for entity in title_entities:
+                    entity['source'] = 'title'
+                    combined_entities.append(entity)
+                
+                # Add description entities with source
+                for entity in desc_entities:
+                    entity['source'] = 'description'
+                    combined_entities.append(entity)
+                
+                # Normalize all entities
+                normalized_entities = normalizer(combined_entities)
+                
+                # Add processed data to article
+                processed_article = article.copy()
+                processed_article.update({
+                    'translatedTitle': trans_title,
+                    'translatedDescription': trans_desc,
+                    'ner': normalized_entities
+                })
+                processed_articles.append(processed_article)
+            except Exception as e:
+                print(f"Error processing article: {article.get('title', 'N/A')}")
+                print(f"Translated Title: {trans_title}")
+                print(f"Translated Description: {trans_desc}")
+                print(f"Error details: {e}")
+                # Optionally, re-raise the exception if you want the script to stop
+                # raise 
     
     return processed_articles
 
 def save_processed_articles(processed_articles):
     """Save processed articles to a JSON file in a date-specific directory."""
     date_str = get_today_date_str()
-    output_dir = os.path.join('data', date_str)
+    output_dir = os.path.join('public', 'data', date_str)
     output_filename = os.path.join(output_dir, 'articles.json')
     
     output_data = {
@@ -140,6 +150,8 @@ def update_db_json():
 
 def main():
     print("Starting news processing pipeline...")
+
+    # WARNING : Make sure to update the requirements.txt when adding new steps to the pipeline.
     
     # Step 1: Fetch news directly
     print("\n1. Fetching news...")
@@ -163,7 +175,22 @@ def main():
     print("\n4. Updating db.json...")
     update_db_json()
     
+    # Step 5: Update temporal trends
+    print("\n4. Updating temporal trends...")
+    update_current_week_trends()
+
+    # Step 6: Aggregate map data
+    print("\n5. Aggregating map data...")
+    aggregate_map_data()
+
     print("\nPipeline completed successfully!")
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"CRITICAL: An unhandled exception occurred in the main pipeline: {e}")
+        # Optionally, re-raise or exit with a specific code
+        # raise
+        # import sys
+        # sys.exit(1) 

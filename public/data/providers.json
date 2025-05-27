@@ -1,0 +1,1802 @@
+[
+    {
+        "id": "New York Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+        ],
+        "country": "USA"
+    },
+    {
+        "id": "BBC News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://feeds.bbci.co.uk/news/rss.xml"
+        ],
+        "country": "GBR"
+    },
+    {
+        "id": "CNN",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "http://rss.cnn.com/rss/edition.rss"
+        ],
+        "country": "USA"
+    },
+    {
+        "id": "Al Jazeera",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.aljazeera.com/xml/rss/all.xml"
+        ],
+        "country": "QAT"
+    },
+    {
+        "id": "France 24",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.france24.com/en/rss"
+        ],
+        "country": "FRA"
+    },
+    {
+        "id": "DW News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://rss.dw.com/rdf/rss-en-all"
+        ],
+        "country": "DEU"
+    },
+    {
+        "id": "ABC Australia",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.abc.net.au/news/feed/51120/rss.xml"
+        ],
+        "country": "AUS"
+    },
+    {
+        "id": "CBC News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.cbc.ca/cmlink/rss-topstories"
+        ],
+        "country": "CAN"
+    },
+    {
+        "id": "The Guardian",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.theguardian.com/europe/rss"
+        ],
+        "country": "GBR"
+    },
+    {
+        "id": "The Independent",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.independent.co.uk/news/rss"
+        ],
+        "country": "GBR"
+    },
+    {
+        "id": "NPR",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://feeds.npr.org/1004/rss.xml"
+        ],
+        "country": "USA"
+    },
+    {
+        "id": "The Times of India",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://timesofindia.indiatimes.com/rssfeeds/296589292.cms"
+        ],
+        "country": "IND"
+    },
+    {
+        "id": "The Japan Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.japantimes.co.jp/feed/topstories"
+        ],
+        "country": "JPN"
+    },
+    {
+        "id": "South China Morning Post",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.scmp.com/rss/91/feed"
+        ],
+        "country": "HKG"
+    },
+    {
+        "id": "The Moscow Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.themoscowtimes.com/rss/news"
+        ],
+        "country": "RUS"
+    },
+    {
+        "id": "Irish Independent",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.independent.ie/rss/"
+        ],
+        "country": "IRL"
+    },
+    {
+        "id": "El País English",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada"
+        ],
+        "country": "ESP"
+    },
+    {
+        "id": "The Korea Herald",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "http://www.koreaherald.com/rss/current.xml"
+        ],
+        "country": "KOR"
+    },
+    {
+        "id": "The Jerusalem Post",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.jpost.com/Rss/RssFeedsHeadlines.aspx"
+        ],
+        "country": "ISR"
+    },
+    {
+        "id": "The Sydney Morning Herald",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.smh.com.au/rss/feed.xml"
+        ],
+        "country": "AUS"
+    },
+    {
+        "id": "News24",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://feeds.24.com/articles/news24/TopStories/rss"
+        ],
+        "country": "ZAF"
+    },
+    {
+        "id": "Milenio",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.milenio.com/rss"
+        ],
+        "country": "MEX"
+    },
+    {
+        "id": "Corriere della Sera",
+        "builtin": true,
+        "language": "it",
+        "url": [
+            "https://xml2.corriereobjects.it/rss/homepage.xml"
+        ],
+        "country": "ITA"
+    },
+    {
+        "id": "Le Monde",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.lemonde.fr/rss/une.xml"
+        ],
+        "country": "FRA"
+    },
+    {
+        "id": "Der Spiegel",
+        "builtin": true,
+        "language": "de",
+        "url": [
+            "https://www.spiegel.de/index.rss"
+        ],
+        "country": "DEU"
+    },
+    {
+        "id": "Folha de São Paulo",
+        "builtin": true,
+        "language": "pt",
+        "url": [
+            "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml"
+        ],
+        "country": "BRA"
+    },
+    {
+        "id": "Global Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.globaltimes.cn/rss/outbound.xml"
+        ],
+        "country": "CHN"
+    },
+    {
+        "id": "The Hindu",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.thehindu.com/news/international/feeder/default.rss"
+        ],
+        "country": "IND"
+    },
+    {
+        "id": "The Straits Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.straitstimes.com/news/singapore/rss.xml"
+        ],
+        "country": "SGP"
+    },
+    {
+        "id": "Antara News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://en.antaranews.com/rss/news.xml"
+        ],
+        "country": "IDN"
+    },
+    {
+        "id": "Bangkok Post",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.bangkokpost.com/rss/data/topstories.xml"
+        ],
+        "country": "THA"
+    },
+    {
+        "id": "The Daily Star",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.thedailystar.net/rss.xml"
+        ],
+        "country": "BGD"
+    },
+    {
+        "id": "Dawn",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.dawn.com/feed"
+        ],
+        "country": "PAK"
+    },
+    {
+        "id": "The National UAE",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.thenationalnews.com/arc/outboundfeeds/rss/?outputType=xml"
+        ],
+        "country": "ARE"
+    },
+    {
+        "id": "Buenos Aires Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.batimes.com.ar/feed/"
+        ],
+        "country": "ARG"
+    },
+    {
+        "id": "KT Press",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.ktpress.rw/feed/"
+        ],
+        "country": "RWA"
+    },
+    {
+        "id": "Vanguard Nigeria",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.vanguardngr.com/feed/"
+        ],
+        "country": "NGA"
+    },
+    {
+        "id": "RNZ",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.rnz.co.nz/rss/national.xml"
+        ],
+        "country": "NZL"
+    },
+    {
+        "id": "Dagens Nyheter",
+        "builtin": true,
+        "language": "sv",
+        "url": [
+            "https://www.dn.se/rss/"
+        ],
+        "country": "SWE"
+    },
+    {
+        "id": "Aftenposten",
+        "builtin": true,
+        "language": "no",
+        "url": [
+            "https://www.aftenposten.no/rss"
+        ],
+        "country": "NOR"
+    },
+    {
+        "id": "Helsingin Sanomat",
+        "builtin": true,
+        "language": "fi",
+        "url": [
+            "https://www.hs.fi/rss/tuoreimmat.xml"
+        ],
+        "country": "FIN"
+    },
+    {
+        "id": "Politiken",
+        "builtin": true,
+        "language": "da",
+        "url": [
+            "https://politiken.dk/rss/senestenyt.rss"
+        ],
+        "country": "DNK"
+    },
+    {
+        "id": "NRC Handelsblad",
+        "builtin": true,
+        "language": "nl",
+        "url": [
+            "https://www.nrc.nl/rss/"
+        ],
+        "country": "NLD"
+    },
+    {
+        "id": "Le Soir",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.lesoir.be/rss/81851/cible_principale"
+        ],
+        "country": "BEL"
+    },
+    {
+        "id": "Neue Zürcher Zeitung",
+        "builtin": true,
+        "language": "de",
+        "url": [
+            "https://www.nzz.ch/recent.rss"
+        ],
+        "country": "CHE"
+    },
+    {
+        "id": "Die Presse",
+        "builtin": true,
+        "language": "de",
+        "url": [
+            "https://www.diepresse.com/rss/"
+        ],
+        "country": "AUT"
+    },
+    {
+        "id": "Rzeczpospolita",
+        "builtin": true,
+        "language": "pl",
+        "url": [
+            "https://www.rp.pl/rss/1019"
+        ],
+        "country": "POL"
+    },
+    {
+        "id": "iDNES",
+        "builtin": true,
+        "language": "cs",
+        "url": [
+            "https://servis.idnes.cz/rss.aspx?c=zpravodaj"
+        ],
+        "country": "CZE"
+    },
+    {
+        "id": "Magyar Nemzet",
+        "builtin": true,
+        "language": "hu",
+        "url": [
+            "https://magyarnemzet.hu/feed/"
+        ],
+        "country": "HUN"
+    },
+    {
+        "id": "RTP Noticias",
+        "builtin": true,
+        "language": "pt",
+        "url": [
+            "https://www.rtp.pt/noticias/rss/"
+        ],
+        "country": "PRT"
+    },
+    {
+        "id": "To Vima",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.tovima.gr/feed/"
+        ],
+        "country": "GRC"
+    },
+    {
+        "id": "Rappler",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.rappler.com/rss"
+        ],
+        "country": "PHL"
+    },
+    {
+        "id": "The Star Malaysia",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.thestar.com.my/rss/News"
+        ],
+        "country": "MYS"
+    },
+    {
+        "id": "Vietnam News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://vietnamnews.vn/rss/politics-laws.rss"
+        ],
+        "country": "VNM"
+    },
+    {
+        "id": "Taipei Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.taipeitimes.com/xml/index.rss"
+        ],
+        "country": "TWN"
+    },
+    {
+        "id": "Hürriyet Daily News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.hurriyetdailynews.com/rss.php"
+        ],
+        "country": "TUR"
+    },
+    {
+        "id": "Egypt Independent",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://egyptindependent.com/feed/"
+        ],
+        "country": "EGY"
+    },
+    {
+        "id": "Arab News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.arabnews.com/rss.xml"
+        ],
+        "country": "SAU"
+    },
+    {
+        "id": "The961",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.the961.com/feed/"
+        ],
+        "country": "LBN"
+    },
+    {
+        "id": "Jordan Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "http://www.jordantimes.com/rss.xml"
+        ],
+        "country": "JOR"
+    },
+    {
+        "id": "Morocco World News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.moroccoworldnews.com/feed"
+        ],
+        "country": "MAR"
+    },
+    {
+        "id": "Tunisia-Live",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.tunisia-live.net/feed/"
+        ],
+        "country": "TUN"
+    },
+    {
+        "id": "El Tiempo",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.eltiempo.com/rss/mundo.xml"
+        ],
+        "country": "COL"
+    },
+    {
+        "id": "RPP",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://rpp.pe/feed"
+        ],
+        "country": "PER"
+    },
+    {
+        "id": "El Nacional",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.elnacional.com/feed/"
+        ],
+        "country": "VEN"
+    },
+    {
+        "id": "Prensa Libre",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.prensalibre.com/feed/"
+        ],
+        "country": "GTM"
+    },
+    {
+        "id": "Capital FM",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.capitalfm.co.ke/news/feed/"
+        ],
+        "country": "KEN"
+    },
+    {
+        "id": "Khaama Press",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.khaama.com/feed/"
+        ],
+        "country": "AFG"
+    },
+    {
+        "id": "Gulf Daily News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.gdnonline.com/feeds"
+        ],
+        "country": "BHR"
+    },
+    {
+        "id": "Astana Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://astanatimes.com/feed/"
+        ],
+        "country": "KAZ"
+    },
+    {
+        "id": "Iwacu Burundi",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.iwacu-burundi.org/feed/"
+        ],
+        "country": "BDI"
+    },
+    {
+        "id": "La Nouvelle Tribune",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://lanouvelletribune.info/feed/"
+        ],
+        "country": "BEN"
+    },
+    {
+        "id": "Burkina 24",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://burkina24.com/feed/"
+        ],
+        "country": "BFA"
+    },
+    {
+        "id": "Albanian Daily News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://albaniandailynews.com/feed/"
+        ],
+        "country": "ALB"
+    },
+    {
+        "id": "Fiji Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.fijitimes.com/feed/"
+        ],
+        "country": "FJI"
+    },
+    {
+        "id": "Kaselehlie Press",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "http://www.kpress.info/index.php?format=feed&type=rss"
+        ],
+        "country": "FSM"
+    },
+    {
+        "id": "Islands Business",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.islandsbusiness.com/feed/"
+        ],
+        "country": "NRU"
+    },
+    {
+        "id": "Island Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://islandtimes.org/feed/"
+        ],
+        "country": "PLW"
+    },
+    {
+        "id": "Post Courier",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://postcourier.com.pg/feed/"
+        ],
+        "country": "PNG"
+    },
+    {
+        "id": "Solomon Star",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.solomonstarnews.com/feed/"
+        ],
+        "country": "SLB"
+    },
+    {
+        "id": "Matangi Tonga",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://matangitonga.to/rss.xml"
+        ],
+        "country": "TON"
+    },
+    {
+        "id": "Vanuatu Daily Post",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://dailypost.vu/search/?f=rss"
+        ],
+        "country": "VUT"
+    },
+    {
+        "id": "Talamua",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.talamua.com/feed/"
+        ],
+        "country": "WSM"
+    },
+    {
+        "id": "Sunday Standard",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.sundaystandard.info/feed/"
+        ],
+        "country": "BWA"
+    },
+    {
+        "id": "Radio Ndeke Luka",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.radiondekeluka.org/feed/"
+        ],
+        "country": "CAF"
+    },
+    {
+        "id": "Agence Ivoirienne de Presse",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.aip.ci/feed/"
+        ],
+        "country": "CIV"
+    },
+    {
+        "id": "Journal du Cameroun",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.journalducameroun.com/feed/"
+        ],
+        "country": "CMR"
+    },
+    {
+        "id": "Radio Okapi",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.radiookapi.net/feed"
+        ],
+        "country": "COD"
+    },
+    {
+        "id": "The Reporter Ethiopia",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.thereporterethiopia.com/feed/"
+        ],
+        "country": "ETH"
+    },
+    {
+        "id": "Joy Online",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.myjoyonline.com/feed/"
+        ],
+        "country": "GHA"
+    },
+    {
+        "id": "Guinée News",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://guineenews.org/feed/"
+        ],
+        "country": "GIN"
+    },
+    {
+        "id": "Libya Herald",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.libyaherald.com/feed/"
+        ],
+        "country": "LBY"
+    },
+    {
+        "id": "Madagascar Tribune",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.madagascar-tribune.com/spip.php?page=backend"
+        ],
+        "country": "MDG"
+    },
+    {
+        "id": "Club of Mozambique",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://clubofmozambique.com/feed/"
+        ],
+        "country": "MOZ"
+    },
+    {
+        "id": "Le Mauricien",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.lemauricien.com/feed/"
+        ],
+        "country": "MUS"
+    },
+    {
+        "id": "Alwihda Info",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.alwihdainfo.com/xml/syndication.rss"
+        ],
+        "country": "TCD"
+    },
+    {
+        "id": "Lusaka Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.lusakatimes.com/feed/"
+        ],
+        "country": "ZMB"
+    },
+    {
+        "id": "The Herald Zimbabwe",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.herald.co.zw/feed/"
+        ],
+        "country": "ZWE"
+    },
+    {
+        "id": "Antigua News Room",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://antiguanewsroom.com/feed/"
+        ],
+        "country": "ATG"
+    },
+    {
+        "id": "Amandala",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://amandala.com.bz/news/feed/"
+        ],
+        "country": "BLZ"
+    },
+    {
+        "id": "Barbados Advocate",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.barbadosadvocate.com/rss.xml"
+        ],
+        "country": "BRB"
+    },
+    {
+        "id": "Cubadebate",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "http://www.cubadebate.cu/feed/"
+        ],
+        "country": "CUB"
+    },
+    {
+        "id": "Concord Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://slconcordtimes.com/feed/"
+        ],
+        "country": "SLE"
+    },
+    {
+        "id": "Hiiraan Online",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.hiiraan.com/rss.php"
+        ],
+        "country": "SOM"
+    },
+    {
+        "id": "La Nación",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.nacion.com/arc/outboundfeeds/rss/?outputType=xml"
+        ],
+        "country": "CRI"
+    },
+    {
+        "id": "El Nacional",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://elnacional.com.do/feed/"
+        ],
+        "country": "DOM"
+    },
+    {
+        "id": "Now Grenada",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.nowgrenada.com/feed/"
+        ],
+        "country": "GRD"
+    },
+    {
+        "id": "The New Today Grenada",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://thenewtoday.gd/feed/"
+        ],
+        "country": "GRD"
+    },
+    {
+        "id": "La Prensa",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.laprensa.hn/rss/portada.xml"
+        ],
+        "country": "HND"
+    },
+    {
+        "id": "El Heraldo",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.elheraldo.hn/rss/portada.xml"
+        ],
+        "country": "HND"
+    },
+    {
+        "id": "AlterPresse",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.alterpresse.org/spip.php?page=backend"
+        ],
+        "country": "HTI"
+    },
+    {
+        "id": "Jamaica Observer",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.jamaicaobserver.com/feed/"
+        ],
+        "country": "JAM"
+    },
+    {
+        "id": "St. Kitts & Nevis Observer",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.thestkittsnevisobserver.com/feed/"
+        ],
+        "country": "KNA"
+    },
+    {
+        "id": "St. Lucia Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://stluciatimes.com/feed/"
+        ],
+        "country": "LCA"
+    },
+    {
+        "id": "The Voice",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://thevoiceslu.com/feed/"
+        ],
+        "country": "LCA"
+    },
+    {
+        "id": "La Prensa Gráfica",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.laprensagrafica.com/rss/home.xml"
+        ],
+        "country": "SLV"
+    },
+    {
+        "id": "Trinidad Express",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://trinidadexpress.com/search/?f=html&q=&d1=&d2=&s=start_time&sd=desc&nsa=eedition&t=article&f=rss"
+        ],
+        "country": "TTO"
+    },
+    {
+        "id": "Trinidad and Tobago Newsday",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://newsday.co.tt/feed/"
+        ],
+        "country": "TTO"
+    },
+    {
+        "id": "Searchlight",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://searchlight.vc/feed/"
+        ],
+        "country": "VCT"
+    },
+    {
+        "id": "iWitness News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.iwnsvg.com/feed/"
+        ],
+        "country": "VCT"
+    },
+    {
+        "id": "Klix.ba",
+        "builtin": true,
+        "language": "bs",
+        "url": [
+            "https://www.klix.ba/rss"
+        ],
+        "country": "BIH"
+    },
+    {
+        "id": "Sarajevo Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.sarajevotimes.com/feed/"
+        ],
+        "country": "BIH"
+    },
+    {
+        "id": "Belarus News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://eng.belta.by/rss"
+        ],
+        "country": "BLR"
+    },
+    {
+        "id": "ERR News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://news.err.ee/rss"
+        ],
+        "country": "EST"
+    },
+    {
+        "id": "Postimees",
+        "builtin": true,
+        "language": "et",
+        "url": [
+            "https://www.postimees.ee/rss"
+        ],
+        "country": "EST"
+    },
+    {
+        "id": "Croatia Week",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.croatiaweek.com/feed/"
+        ],
+        "country": "HRV"
+    },
+    {
+        "id": "Total Croatia News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.total-croatia-news.com/feed"
+        ],
+        "country": "HRV"
+    },
+    {
+        "id": "Grapevine",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://grapevine.is/feed"
+        ],
+        "country": "ISL"
+    },
+    {
+        "id": "New Era",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://neweralive.na/feed"
+        ],
+        "country": "NAM"
+    },
+    {
+        "id": "15min",
+        "builtin": true,
+        "language": "lt",
+        "url": [
+            "https://www.15min.lt/rss"
+        ],
+        "country": "LTU"
+    },
+    {
+        "id": "Luxembourg Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://luxtimes.lu/rss"
+        ],
+        "country": "LUX"
+    },
+    {
+        "id": "LSM",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://eng.lsm.lv/rss/"
+        ],
+        "country": "LVA"
+    },
+    {
+        "id": "Moldova.org",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.moldova.org/en/feed/"
+        ],
+        "country": "MDA"
+    },
+    {
+        "id": "MIA",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://mia.mk/feed/?lang=en"
+        ],
+        "country": "MKD"
+    },
+    {
+        "id": "Romania Insider",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.romania-insider.com/feed"
+        ],
+        "country": "ROU"
+    },
+    {
+        "id": "Serbian Monitor",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.serbianmonitor.com/feed/"
+        ],
+        "country": "SRB"
+    },
+    {
+        "id": "The Slovak Spectator",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://spectator.sme.sk/rss"
+        ],
+        "country": "SVK"
+    },
+    {
+        "id": "Kyiv Post",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.kyivpost.com/feed"
+        ],
+        "country": "UKR"
+    },
+    {
+        "id": "The Scoop",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://thescoop.co/feed/"
+        ],
+        "country": "BRN"
+    },
+    {
+        "id": "Tehran Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.tehrantimes.com/rss"
+        ],
+        "country": "IRN"
+    },
+    {
+        "id": "Rudaw",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.rudaw.net/feed"
+        ],
+        "country": "IRQ"
+    },
+    {
+        "id": "Cambodia Daily",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://cambodiadaily.com/feed/"
+        ],
+        "country": "KHM"
+    },
+    {
+        "id": "Kathmandu Post",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://kathmandupost.com/rss/"
+        ],
+        "country": "NPL"
+    },
+    {
+        "id": "Muscat Daily",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.muscatdaily.com/feed/"
+        ],
+        "country": "OMN"
+    },
+    {
+        "id": "Times of Oman",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://timesofoman.com/feed"
+        ],
+        "country": "OMN"
+    },
+    {
+        "id": "KCNA Watch",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://kcnawatch.org/feed/"
+        ],
+        "country": "PRK"
+    },
+    {
+        "id": "NK News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.nknews.org/feed/"
+        ],
+        "country": "PRK"
+    },
+    {
+        "id": "SANA",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://sana.sy/en/?feed=rss"
+        ],
+        "country": "SYR"
+    },
+    {
+        "id": "Syria Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "http://syriatimes.sy/index.php/feed"
+        ],
+        "country": "SYR"
+    },
+    {
+        "id": "Asia-Plus",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://asiaplustj.info/en/rss"
+        ],
+        "country": "TJK"
+    },
+    {
+        "id": "Khovar",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://khovar.tj/eng/feed/"
+        ],
+        "country": "TJK"
+    },
+    {
+        "id": "Orient",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://orient.tm/en/feed/"
+        ],
+        "country": "TKM"
+    },
+    {
+        "id": "Los Tiempos",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.lostiempos.com/rss.xml"
+        ],
+        "country": "BOL"
+    },
+    {
+        "id": "El Deber",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://eldeber.com.bo/rss.xml"
+        ],
+        "country": "BOL"
+    },
+    {
+        "id": "Les Dépêches de Brazzaville",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.adiac-congo.com/rss.xml"
+        ],
+        "country": "COG"
+    },
+    {
+        "id": "Comores Infos",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://comoresinfos.net/feed/"
+        ],
+        "country": "COM"
+    },
+    {
+        "id": "A Nação",
+        "builtin": true,
+        "language": "pt",
+        "url": [
+            "https://anacao.cv/feed/"
+        ],
+        "country": "CPV"
+    },
+    {
+        "id": "La Nation Djibouti",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.lanation.dj/feed/"
+        ],
+        "country": "DJI"
+    },
+    {
+        "id": "Shabait",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "http://www.shabait.com/rss"
+        ],
+        "country": "ERI"
+    },
+    {
+        "id": "Gabon Review",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.gabonreview.com/feed/"
+        ],
+        "country": "GAB"
+    },
+    {
+        "id": "Foroyaa",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://foroyaa.net/feed/"
+        ],
+        "country": "GMB"
+    },
+    {
+        "id": "Ditadura do Consenso",
+        "builtin": true,
+        "language": "pt",
+        "url": [
+            "https://ditaduradoconsenso.blogspot.com/feeds/posts/default"
+        ],
+        "country": "GNB"
+    },
+    {
+        "id": "FrontPage Africa",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://frontpageafricaonline.com/feed/"
+        ],
+        "country": "LBR"
+    },
+    {
+        "id": "Lesotho Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://lestimes.com/feed/"
+        ],
+        "country": "LSO"
+    },
+    {
+        "id": "Cridem",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.cridem.org/rss.php"
+        ],
+        "country": "MRT"
+    },
+    {
+        "id": "Nyasa Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.nyasatimes.com/feed/"
+        ],
+        "country": "MWI"
+    },
+    {
+        "id": "Radio Dabanga",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.dabangasudan.org/en/rss"
+        ],
+        "country": "SDN"
+    },
+    {
+        "id": "Eye Radio",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://eyeradio.org/feed/"
+        ],
+        "country": "SSD"
+    },
+    {
+        "id": "Téla Nón",
+        "builtin": true,
+        "language": "pt",
+        "url": [
+            "https://www.telanon.info/feed/"
+        ],
+        "country": "STP"
+    },
+    {
+        "id": "Seychelles News Agency",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "http://www.seychellesnewsagency.com/rss"
+        ],
+        "country": "SYC"
+    },
+    {
+        "id": "TogoWeb",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://togoweb.net/feed/"
+        ],
+        "country": "TGO"
+    },
+    {
+        "id": "El Universo",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.eluniverso.com/arc/outboundfeeds/rss/?outputType=xml"
+        ],
+        "country": "ECU"
+    },
+    {
+        "id": "Stabroek News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.stabroeknews.com/feed/"
+        ],
+        "country": "GUY"
+    },
+    {
+        "id": "Guyana Chronicle",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://guyanachronicle.com/feed/"
+        ],
+        "country": "GUY"
+    },
+    {
+        "id": "Demerara Waves",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://demerarawaves.com/feed/"
+        ],
+        "country": "GUY"
+    },
+    {
+        "id": "Hoy",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.hoy.com.py/feed"
+        ],
+        "country": "PRY"
+    },
+    {
+        "id": "De Ware Tijd",
+        "builtin": true,
+        "language": "nl",
+        "url": [
+            "http://dwtonline.com/feed/"
+        ],
+        "country": "SUR"
+    },
+    {
+        "id": "Suriname Herald",
+        "builtin": true,
+        "language": "nl",
+        "url": [
+            "https://www.srherald.com/feed/"
+        ],
+        "country": "SUR"
+    },
+    {
+        "id": "El País Uruguay",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.elpais.com.uy/rss/"
+        ],
+        "country": "URY"
+    },
+    {
+        "id": "Montevideo Portal",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://www.montevideo.com.uy/anxml.aspx?58"
+        ],
+        "country": "URY"
+    },
+    {
+        "id": "La Diaria",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "https://ladiaria.com.uy/feeds/articulos/"
+        ],
+        "country": "URY"
+    },
+    {
+        "id": "Vientiane Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.vientianetimes.org.la/rss/news.xml"
+        ],
+        "country": "LAO"
+    },
+    {
+        "id": "Maldives Independent",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://maldivesindependent.com/feed"
+        ],
+        "country": "MDV"
+    },
+    {
+        "id": "WAFA",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://english.wafa.ps/Rss"
+        ],
+        "country": "PSE"
+    },
+    {
+        "id": "Tashkent Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://tashkenttimes.uz/feed"
+        ],
+        "country": "UZB"
+    },
+    {
+        "id": "Algeria Press Service",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.aps.dz/en/rss"
+        ],
+        "country": "DZA"
+    },
+    {
+        "id": "Asodegue",
+        "builtin": true,
+        "language": "es",
+        "url": [
+            "http://www.asodegue.org/rss.xml"
+        ],
+        "country": "GNQ"
+    },
+    {
+        "id": "Yemen Press Agency",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://en.ypagency.net/feed/"
+        ],
+        "country": "YEM"
+    },
+    {
+        "id": "Myanmar Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.mmtimes.com/rss.xml"
+        ],
+        "country": "MMR"
+    },
+    {
+        "id": "Daily FT",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.ft.lk/rss/all"
+        ],
+        "country": "LKA"
+    },
+    {
+        "id": "Novinite",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.novinite.com/rss/news.php"
+        ],
+        "country": "BGR"
+    },
+    {
+        "id": "Panama Today",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.panamatoday.com/feed"
+        ],
+        "country": "PAN"
+    },
+    {
+        "id": "The Santiago Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://santiagotimes.cl/feed/"
+        ],
+        "country": "CHL"
+    },
+    {
+        "id": "Total Slovenia News",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.total-slovenia-news.com/feed"
+        ],
+        "country": "SVN"
+    },
+    {
+        "id": "World of Opportunity",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.worldofopportunity.com/feeds/posts/default"
+        ],
+        "country": "MLI"
+    },
+    {
+        "id": "Algeria Press Service",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "http://feeds.aps.dz/aps-algerie"
+        ],
+        "country": "DZA"
+    },
+    {
+        "id": "Le Sahel",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "http://www.lesahel.org/feed/"
+        ],
+        "country": "NER"
+    },
+    {
+        "id": "Nigerdiaspora",
+        "builtin": true,
+        "language": "fr",
+        "url": [
+            "https://www.nigerdiaspora.net/index.php/component/k2/itemlist?format=feed"
+        ],
+        "country": "NER"
+    },
+    {
+        "id": "Independent News Swaziland",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://www.independentnews.co.sz/feed/"
+        ],
+        "country": "SWZ"
+    },
+    {
+        "id": "Business Times",
+        "builtin": true,
+        "language": "en",
+        "url": [
+            "https://businesstimes.co.tz/feed/"
+        ],
+        "country": "TZA"
+    }
+]

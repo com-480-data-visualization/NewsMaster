@@ -4,7 +4,7 @@ import feedparser
 import hashlib
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
 import pytz
 
 # CET timezone
@@ -14,8 +14,8 @@ cet_tz = pytz.timezone("CET")
 access_denied_count = 0
 
 # Paths
-PROVIDERS_JSON_PATH = 'data/providers.json'
-OUTPUT_DIR = 'data'
+PROVIDERS_JSON_PATH = 'public/data/providers.json'
+OUTPUT_DIR = 'public/data'
 
 def fetch_all_articles():
     print("Starting article fetching")
@@ -34,9 +34,11 @@ def fetch_all_articles():
         articles_items = fetch_and_deduplicate_articles(providers)
         if not articles_items:
             print("No new articles fetched.")
+            print(f"Total access denied responses: {access_denied_count}")
             return []
 
         print(f"Fetched {len(articles_items)} articles.")
+        print(f"Total access denied responses: {access_denied_count}")
         return articles_items
 
     except Exception as e:
@@ -54,6 +56,13 @@ def get_providers():
     except Exception as e:
         print(f"Failed to load providers: {e}")
         return []
+
+
+def is_from_today(timestamp):
+    """Check if the given timestamp is from today."""
+    article_date = date.fromtimestamp(timestamp)
+    today = date.today()
+    return article_date == today
 
 
 def fetch_and_deduplicate_articles(providers):
@@ -79,6 +88,11 @@ def fetch_and_deduplicate_articles(providers):
 
                 pub_date = item.get('published', '')
                 pub_timestamp = parse_pub_date(pub_date)
+                
+                # Skip articles that are not from today
+                if not is_from_today(pub_timestamp):
+                    continue
+                
                 created_at = datetime.fromtimestamp(pub_timestamp, timezone.utc).isoformat(timespec='milliseconds') + 'Z'
 
                 article = {
@@ -94,6 +108,7 @@ def fetch_and_deduplicate_articles(providers):
                 articles_items.append(article)
                 seen_urls.add(url)
 
+    print(f"Found {len(articles_items)} articles from today.")
     return articles_items
 
 
@@ -106,6 +121,7 @@ def fetch_rss(url):
             access_denied_count += 1
             print(f"Access issue ({response.status_code}) on: {url}")
             return []
+        response.raise_for_status()
 
         feed = feedparser.parse(response.content)
         return [{
@@ -114,6 +130,9 @@ def fetch_rss(url):
             'link': entry.link,
             'published': entry.get('published', '')
         } for entry in feed.entries]
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to fetch RSS from {url} due to network issue: {e}")
+        return []
     except Exception as e:
         print(f"Failed to fetch RSS from {url}: {e}")
         return []
