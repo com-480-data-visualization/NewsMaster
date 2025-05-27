@@ -1,16 +1,57 @@
 import os
 import json
+import re
 from datetime import datetime
 from ingestor_clean import fetch_all_articles
 from translate_to_en import Translator
 from ner import BERTNER
 from entity_normalizer import EntityNormalizer
 from temporal_trends import update_current_week_trends
-from aggregate_map_data import aggregate_map_data
+from aggregate_map_data import main as aggregate_map_data
 
 def get_today_date_str():
     """Return the current date as DD.MM.YYYY string."""
     return datetime.now().strftime("%d.%m.%Y")
+
+def global_entity_normalization(processed_articles):
+    """
+    Perform global entity normalization across all articles.
+    Replace shorter entity names with longer ones when one is a substring of another.
+    """
+    # Collect all unique entities by label
+    entities_by_label = {}
+    
+    for article in processed_articles:
+        for entity in article.get('ner', []):
+            label = entity['label']
+            entity_text = entity['entity']
+            
+            if label not in entities_by_label:
+                entities_by_label[label] = set()
+            entities_by_label[label].add(entity_text)
+    
+    # For each label, find replacement mappings (short -> long)
+    replacement_mappings = {}
+    
+    for label, entities in entities_by_label.items():
+        entities_list = list(entities)
+        
+        for i, short_entity in enumerate(entities_list):
+            for j, long_entity in enumerate(entities_list):
+                if i != j and short_entity.lower() in long_entity.lower() and len(short_entity) < len(long_entity):
+                    # Check if short_entity is a meaningful substring (word boundary)
+                    pattern = r'\b' + re.escape(short_entity.lower()) + r'\b'
+                    if re.search(pattern, long_entity.lower()):
+                        replacement_mappings[(short_entity, label)] = long_entity
+    
+    # Apply replacements to all articles
+    for article in processed_articles:
+        for entity in article.get('ner', []):
+            key = (entity['entity'], entity['label'])
+            if key in replacement_mappings:
+                entity['entity'] = replacement_mappings[key]
+    
+    return processed_articles
 
 def process_articles(articles):
     """Process articles through translation and NER."""
@@ -71,6 +112,10 @@ def process_articles(articles):
                 print(f"Error details: {e}")
                 # Optionally, re-raise the exception if you want the script to stop
                 # raise 
+    
+    # Perform global entity normalization
+    print("Performing global entity normalization...")
+    processed_articles = global_entity_normalization(processed_articles)
     
     return processed_articles
 
