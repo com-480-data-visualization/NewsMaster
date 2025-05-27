@@ -48,14 +48,14 @@
       "translatedDescription": "During the first major foreign trip of his second term, President Trump has told audiences in the Middle East that he’s willing to set the past aside in the interests of peace and profit.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 18,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "Middle",
+          "entity": "Middle East",
           "label": "LOC",
           "start": 52,
           "end": 58,
@@ -125,7 +125,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 31,
           "end": 35,
@@ -230,7 +230,7 @@
           "source": "title"
         },
         {
-          "entity": "France",
+          "entity": "France 24",
           "label": "LOC",
           "start": 64,
           "end": 70,
@@ -293,7 +293,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 38,
           "end": 43,
@@ -391,7 +391,7 @@
       "translatedDescription": "Two British academics discovered that a “copy” of the medieval text, held in Harvard Law School’s library for 80 years, is one of seven originals dating from 1300.",
       "ner": [
         {
-          "entity": "Harvard",
+          "entity": "Harvard Law School",
           "label": "ORG",
           "start": 0,
           "end": 7,
@@ -517,7 +517,7 @@
       "translatedDescription": "President Trump’s trip to the Middle East.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 10,
           "end": 15,
@@ -614,7 +614,7 @@
       "translatedDescription": "Three countries on President Trump’s Middle East tour this week are also the sites of recent investments in Trump businesses that benefit the president. Eric Lipton, an investigative reporter for The New York Times, describes those investments, and what those countries — Saudi Arabia, Qatar and the United Arab Emirates — are, at the same time, seeking from Mr. Trump and the United States.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Trump’s Embrace of",
           "label": "MISC",
           "start": 26,
           "end": 31,
@@ -697,7 +697,7 @@
       "translatedDescription": "The Gaza Humanitarian Foundation seeks to create an alternative aid system, but other groups have raised doubts about the feasibility of its plan.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 47,
           "end": 51,
@@ -746,7 +746,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Trump Administration",
           "label": "ORG",
           "start": 142,
           "end": 147,
@@ -781,7 +781,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 4,
           "end": 9,
@@ -802,7 +802,7 @@
       "translatedDescription": "A hard-line aide to the Russian president will instead lead the delegation, according to a Kremlin statement.",
       "ner": [
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 5,
           "end": 10,
@@ -935,7 +935,7 @@
       "translatedDescription": "In Saudi Arabia, the president denounced Western intervention and nation-building, garnering both praise and eye rolls.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -977,7 +977,7 @@
       "translatedDescription": "“The sanctions were really crippling,” President Trump said, before he traveled to Qatar, where he was given a lavish welcome.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1019,7 +1019,7 @@
       "translatedDescription": "Plus, the world’s poorest president.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 19,
           "end": 24,
@@ -1103,7 +1103,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 76,
           "end": 80,
@@ -1215,7 +1215,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 160,
           "end": 165,
@@ -1425,7 +1425,7 @@
       "translatedDescription": "The announcement is a boon for the new government as it looks to rebuild an economy wrecked by a decade of civil war.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1516,7 +1516,7 @@
       "translatedDescription": "President Trump’s conversation with President Ahmed al-Shara, who once led a branch of Al Qaeda, was the first time in 25 years that the leaders of the United States and Syria had met.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1565,7 +1565,7 @@
       "translatedDescription": "The FIFA president, Gianni Infantino, is expected to preside over a ceremony in which the emir of Qatar will hand over World Cup hosting duties to Mr. Trump. The U.S. is co-hosting the 2026 tournament.",
       "ner": [
         {
-          "entity": "Infantino",
+          "entity": "Ianni Infantino",
           "label": "PER",
           "start": 0,
           "end": 9,
@@ -1579,14 +1579,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 33,
           "end": 38,
           "source": "title"
         },
         {
-          "entity": "Middle",
+          "entity": "Middle East",
           "label": "LOC",
           "start": 46,
           "end": 52,
@@ -1663,7 +1663,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 60,
           "end": 64,
@@ -1789,7 +1789,7 @@
       "translatedDescription": "The emirate, once called “a funder of terrorism” by President Trump, has spent lavishly on overhauling its global reputation.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 5,
           "end": 10,
@@ -1880,7 +1880,7 @@
           "source": "title"
         },
         {
-          "entity": "New York Times",
+          "entity": "The New York Times",
           "label": "ORG",
           "start": 17,
           "end": 31,
@@ -1908,7 +1908,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 31,
           "end": 35,
@@ -2027,7 +2027,7 @@
       "translatedDescription": "President Trump’s repeated descriptions of U.S. mediation efforts between India and Pakistan have hit sore spots in Indian politics.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 3,
           "end": 8,
@@ -2062,7 +2062,7 @@
       "translatedDescription": "The Trump administration carved out an exception to its refugee ban for white South Africans. But other groups, including Afghans who helped U.S. forces during the war in their country, are being shut out.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -2104,7 +2104,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 13,
           "end": 18,
@@ -2132,14 +2132,14 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 41,
           "end": 45,
           "source": "title"
         },
         {
-          "entity": "France",
+          "entity": "France 24",
           "label": "LOC",
           "start": 63,
           "end": 69,
@@ -2230,7 +2230,7 @@
           "source": "description"
         },
         {
-          "entity": "France",
+          "entity": "France 24",
           "label": "LOC",
           "start": 170,
           "end": 176,
@@ -2489,7 +2489,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 72,
           "end": 76,
@@ -2538,14 +2538,14 @@
       "translatedDescription": "Emmanuel Macron said Thursday that he had exchanged by phone with the new Pope Leon XIV. A first interview devoted to peace efforts in Ukraine and the Gaza Strip.",
       "ner": [
         {
-          "entity": "Macron",
+          "entity": "Emmanuel Macron",
           "label": "PER",
           "start": 18,
           "end": 24,
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Leo",
           "label": "PER",
           "start": 37,
           "end": 41,
@@ -2566,7 +2566,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 78,
           "end": 82,
@@ -2713,7 +2713,7 @@
           "source": "description"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 117,
           "end": 122,
@@ -2741,7 +2741,7 @@
       "translatedDescription": "Palestinian rescue has listed more than 100 dead on Israeli bombing in Gaza on Thursday. According to Claire Duhamel, correspondent for France 24, this assessment has been one of the heaviest for months. Two hypotheses emerge in the face of the intensification of the strikes: an imminent Israeli offensive or the warning signs of a ceasefire. Donald Trump's United States, visiting the Middle East, could impose a ceasefire on Israel, \"a hope to which the Palestinians hang,\" continues our journalist.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 3,
           "end": 7,
@@ -2958,7 +2958,7 @@
       "translatedDescription": "Daniel Bilalian, ex-presenter of the Antenne 2 television newspapers then France 2 and former boss of the France Télévisions sports service, died Wednesday at the age of 78, his family announced at AFP on Thursday.",
       "ner": [
         {
-          "entity": "France",
+          "entity": "France 24",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -3077,7 +3077,7 @@
       "translatedDescription": "This is one of the most consumed cheeses in France: the AOP county is at the heart of a controversy, after the publication of an article accusing environmentalists of wanting to prohibit this cheese, due to the impact of its production on the environment and on animals. An impact documented by studies: agriculture is behind the pollution of rivers and rivers in Franche-Comté, even if it is not the sole responsible for this ecological crisis.",
       "ner": [
         {
-          "entity": "France",
+          "entity": "France 24",
           "label": "LOC",
           "start": 44,
           "end": 50,
@@ -3140,7 +3140,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 115,
           "end": 119,
@@ -3203,7 +3203,7 @@
           "source": "description"
         },
         {
-          "entity": "Congo",
+          "entity": "Democratic Republic of the Congo",
           "label": "LOC",
           "start": 218,
           "end": 223,
@@ -3322,7 +3322,7 @@
       "translatedDescription": "Volodymyr Zelensky always said he was \"ready\" for \"direct discussions\" with Vladimir Putin. \"I am here, we are ready for direct negotiations,\" said the Ukrainian president. \"Unfortunately, [the Russians] do not take the negotiations sufficiently seriously,\" he deplored, to the evocation of the composition of the delegation sent by Moscow.",
       "ner": [
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 8,
           "end": 16,
@@ -3366,5 +3366,5 @@
       ]
     }
   ],
-  "processedAt": "2025-05-16T04:29:14.831247"
+  "processedAt": "2025-05-27T21:39:15.542403"
 }

@@ -13,7 +13,7 @@
       "translatedDescription": "President Trump goes to the Gulf kingdom this week seeking $1 trillion worth of investments in the United States — a sum equivalent to the entire Saudi gross domestic product for a year.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -27,7 +27,7 @@
           "source": "title"
         },
         {
-          "entity": "Gulf",
+          "entity": "Arabian Gulf”",
           "label": "LOC",
           "start": 28,
           "end": 32,
@@ -97,7 +97,7 @@
           "source": "title"
         },
         {
-          "entity": "Leo",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 55,
           "end": 58,
@@ -209,14 +209,14 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 28,
           "end": 36,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 53,
           "end": 57,
@@ -230,7 +230,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 97,
           "end": 102,
@@ -258,7 +258,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 27,
           "end": 35,
@@ -272,7 +272,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 61,
           "end": 65,
@@ -328,7 +328,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 100,
           "end": 105,
@@ -349,21 +349,21 @@
       "translatedDescription": "The papacy is a global platform, so the issues Pope Leo chooses to focus on can resonate far beyond the church.",
       "ner": [
         {
-          "entity": "Catholics",
+          "entity": "World Catholics",
           "label": "MISC",
           "start": 4,
           "end": 13,
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 19,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "Leo",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 52,
           "end": 55,
@@ -419,7 +419,7 @@
       "translatedDescription": "Damage was caused to the entrance of a property belonging to the prime minister in Kentish Town, but nobody was hurt, the police said.",
       "ner": [
         {
-          "entity": "Starmer",
+          "entity": "Keir Starmer",
           "label": "PER",
           "start": 41,
           "end": 48,
@@ -475,7 +475,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 42,
           "end": 47,
@@ -580,7 +580,7 @@
       "translatedDescription": "President Trump seems to think not. The industries he constantly mentions when he pushes his case, including autos, energy and lumber, beg to differ.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -676,7 +676,7 @@
           "source": "title"
         },
         {
-          "entity": "Leo",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 8,
@@ -697,7 +697,7 @@
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 38,
           "end": 45,
@@ -772,7 +772,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 47,
           "end": 52,
@@ -807,7 +807,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 36,
           "end": 44,
@@ -828,7 +828,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 107,
           "end": 112,
@@ -863,7 +863,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 4,
           "end": 9,
@@ -884,7 +884,7 @@
       "translatedDescription": "At a conclave with many new members, a swift, stunning consensus built around an unknown to many outside of the church.",
       "ner": [
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 12,
           "end": 20,
@@ -912,7 +912,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 38,
           "end": 42,
@@ -933,7 +933,7 @@
           "source": "description"
         },
         {
-          "entity": "Francis",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 78,
           "end": 85,
@@ -1031,14 +1031,14 @@
       "translatedDescription": "The Ukrainian president claimed he was ready to travel to Turkey to meet with Russia’s leader, but he also insisted on an immediate truce before negotiations can begin.",
       "ner": [
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 0,
           "end": 8,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 43,
           "end": 48,
@@ -1080,7 +1080,7 @@
       "translatedDescription": "Both men are politically divisive, fiercely combative and have outsize egos. But as Mr. Trump arrives in the Middle East next week, the fate of the region could hinge on their relationship.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 14,
           "end": 19,
@@ -1185,7 +1185,7 @@
           "source": "title"
         },
         {
-          "entity": "Panama",
+          "entity": "Panama City",
           "label": "LOC",
           "start": 62,
           "end": 68,
@@ -1297,7 +1297,7 @@
       "translatedDescription": "His suggestion to call the body of water the “Arabian Gulf” has apparently done the impossible: Unite Iranians.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 4,
           "end": 9,
@@ -1339,7 +1339,7 @@
       "translatedDescription": "European officials call food safety standards a “red line,” as Trump administration officials criticize rules that keep American beef and other meats off grocery shelves.",
       "ner": [
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 4,
           "end": 11,
@@ -1360,14 +1360,14 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 63,
           "end": 68,
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 120,
           "end": 128,
@@ -1388,7 +1388,7 @@
       "translatedDescription": "Jorgen Boassen’s idolization of all things Trump, which has won him friends in Washington and sometimes hostile attention at home, has given him an unlikely new career: political influencer.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1472,7 +1472,7 @@
           "source": "title"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 63,
           "end": 70,
@@ -1493,14 +1493,14 @@
       "translatedDescription": "In terms of geopolitical bromances, this is it. David Pierson, a foreign correspondent for The New York Times covering China, explains how President Vladimir V. Putin of Russia and Xi Jinping, the leader of China, are closer than ever before.",
       "ner": [
         {
-          "entity": "Xi",
+          "entity": "Xi Jinping",
           "label": "PER",
           "start": 4,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 11,
           "end": 16,
@@ -1612,28 +1612,28 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 54,
           "end": 62,
           "source": "title"
         },
         {
-          "entity": "Catholics",
+          "entity": "World Catholics",
           "label": "MISC",
           "start": 0,
           "end": 9,
           "source": "description"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 79,
           "end": 83,
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 84,
           "end": 91,
@@ -1696,7 +1696,7 @@
           "source": "title"
         },
         {
-          "entity": "Francis",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 63,
           "end": 70,
@@ -1751,7 +1751,7 @@
           "source": "title"
         },
         {
-          "entity": "Vladimir V",
+          "entity": "Vladimir V. Putin",
           "label": "PER",
           "start": 50,
           "end": 60,
@@ -1792,7 +1792,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 10,
           "end": 15,
@@ -1820,7 +1820,7 @@
           "source": "title"
         },
         {
-          "entity": "Catholics",
+          "entity": "World Catholics",
           "label": "MISC",
           "start": 4,
           "end": 13,
@@ -1834,7 +1834,7 @@
           "source": "title"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 50,
           "end": 57,
@@ -1855,7 +1855,7 @@
       "translatedDescription": "Russia’s president used the celebration of victory in World War II to highlight the resources he has to keep fighting in Ukraine.",
       "ner": [
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1911,7 +1911,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 10,
           "end": 15,
@@ -1995,7 +1995,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 10,
           "end": 15,
@@ -2009,7 +2009,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 139,
           "end": 147,
@@ -2093,7 +2093,7 @@
       "translatedDescription": "The French and Ukrainian presidents have a particular bond, built on a common goal of protecting Ukraine and deflecting Russia.",
       "ner": [
         {
-          "entity": "Macron",
+          "entity": "Emmanuel Macron",
           "label": "PER",
           "start": 4,
           "end": 10,
@@ -2142,7 +2142,7 @@
       "translatedDescription": "While President Trump welcomed the U.S.-born cardinal as the new pope, top Trump allies criticized Leo XIV for his similarities to Pope Francis.",
       "ner": [
         {
-          "entity": "Pope",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 3,
           "end": 7,
@@ -2156,21 +2156,21 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 16,
           "end": 21,
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 99,
           "end": 106,
           "source": "description"
         },
         {
-          "entity": "Francis",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 136,
           "end": 143,
@@ -2191,21 +2191,21 @@
       "translatedDescription": "One cardinal who cast his ballot said the pope’s choice of the papal name Leo might signal a particular interest in workers’ rights.",
       "ner": [
         {
-          "entity": "Pope Leo",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 19,
           "end": 27,
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 34,
           "end": 42,
           "source": "title"
         },
         {
-          "entity": "Leo",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 74,
           "end": 77,
@@ -2289,14 +2289,14 @@
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 12,
@@ -2324,7 +2324,7 @@
           "source": "title"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 28,
           "end": 35,
@@ -2338,7 +2338,7 @@
           "source": "description"
         },
         {
-          "entity": "Francis",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 47,
           "end": 54,
@@ -2373,14 +2373,14 @@
           "source": "title"
         },
         {
-          "entity": "Gulf",
+          "entity": "Arabian Gulf”",
           "label": "LOC",
           "start": 20,
           "end": 24,
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 4,
           "end": 12,
@@ -2415,7 +2415,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 200,
           "end": 204,
@@ -2436,14 +2436,14 @@
       "translatedDescription": "Zelensky proposed to Putin to meet him personally in Türkiye, but the Ukrainian president requires a complete, sustainable, and reliable total fire. Putin did not respond to Zelensky's offer but the Kremlin describes as unacceptable \"the\" ultimatum \"launched in Moscow by kyiv and his European allies to accept a 30-day cease-fire before direct negotiations between Russia and Ukraine. Kremlin says he wants\" serious \"negotiations to lead to long-term peace.",
       "ner": [
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 6,
           "end": 14,
@@ -2569,7 +2569,7 @@
           "source": "title"
         },
         {
-          "entity": "Niro",
+          "entity": "Robert De Niro",
           "label": "PER",
           "start": 39,
           "end": 43,
@@ -2709,7 +2709,7 @@
           "source": "title"
         },
         {
-          "entity": "Africa",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 31,
           "end": 37,
@@ -2737,7 +2737,7 @@
       "translatedDescription": "The Hamas armed branch announced on Monday May 12 the liberation of the Israeli-American hostage Edan Alexander who was detained in the Gaza Strip. The details of our correspondent, Stéphane Amar.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 0,
           "end": 4,
@@ -2800,7 +2800,7 @@
           "source": "title"
         },
         {
-          "entity": "Assembly",
+          "entity": "National Assembly",
           "label": "ORG",
           "start": 70,
           "end": 78,
@@ -2933,7 +2933,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 52,
           "end": 57,
@@ -2947,7 +2947,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 162,
           "end": 170,
@@ -2982,7 +2982,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 2,
           "end": 6,
@@ -2996,7 +2996,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 16,
           "end": 24,
@@ -3150,7 +3150,7 @@
       "translatedDescription": "The armed branch of the Palestinian Islamist movement Hamas announced that it was going to release the Israeli-American hostage Edan Alexander in the Gaza Strip on Monday, where a temporary suspension of bombings offers a rare respite to its inhabitants.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 0,
           "end": 4,
@@ -3164,7 +3164,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 14,
           "end": 22,
@@ -3269,7 +3269,7 @@
           "source": "description"
         },
         {
-          "entity": "Africa",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 279,
           "end": 285,
@@ -3486,14 +3486,14 @@
       "translatedDescription": "British diplomacy David Lammy called Vladimir Putin to show that he \"took peace seriously\", on the occasion of a meeting on Monday in London with several of his European counterparts, intended to increase the pressure on the Russian president.",
       "ner": [
         {
-          "entity": "London",
+          "entity": "North London",
           "label": "LOC",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 12,
           "end": 17,
@@ -3549,7 +3549,7 @@
       "translatedDescription": "The armed branch of the Palestinian Islamist movement Hamas announced that it was going to release the Israeli-American hostage Edan Alexander in the Gaza Strip on Monday, where a temporary suspension of bombings offers a rare respite to its inhabitants. The details of our correspondent in Jerusalem, Claire Duhamel.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 0,
           "end": 4,
@@ -3570,7 +3570,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 36,
           "end": 44,
@@ -3768,5 +3768,5 @@
       ]
     }
   ],
-  "processedAt": "2025-05-12T19:06:28.926701"
+  "processedAt": "2025-05-27T21:39:15.510043"
 }

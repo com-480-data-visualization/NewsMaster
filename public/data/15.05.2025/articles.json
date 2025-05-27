@@ -13,7 +13,7 @@
       "translatedDescription": "President Trump’s conversation with President Ahmed al-Shara, who once led a branch of Al Qaeda, was the first time in 25 years that the leaders of the United States and Syria had met.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -76,7 +76,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 76,
           "end": 80,
@@ -188,7 +188,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 60,
           "end": 64,
@@ -328,7 +328,7 @@
       "translatedDescription": "The emirate, once called “a funder of terrorism” by President Trump, has spent lavishly on overhauling its global reputation.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 5,
           "end": 10,
@@ -356,7 +356,7 @@
       "translatedDescription": "The announcement is a boon for the new government as it looks to rebuild an economy wrecked by a decade of civil war.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -447,7 +447,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 160,
           "end": 165,
@@ -475,7 +475,7 @@
           "source": "title"
         },
         {
-          "entity": "New York Times",
+          "entity": "The New York Times",
           "label": "ORG",
           "start": 17,
           "end": 31,
@@ -503,7 +503,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 47,
           "end": 54,
@@ -608,7 +608,7 @@
       "translatedDescription": "Three countries on President Trump’s Middle East tour this week are also the sites of recent investments in Trump businesses that benefit the president. Eric Lipton, an investigative reporter for The New York Times, describes those investments, and what those countries — Saudi Arabia, Qatar and the United Arab Emirates — are, at the same time, seeking from Mr. Trump and the United States.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Trump’s Embrace of",
           "label": "MISC",
           "start": 26,
           "end": 31,
@@ -726,7 +726,7 @@
       "translatedDescription": "The Gaza Humanitarian Foundation seeks to create an alternative aid system, but other groups have raised doubts about the feasibility of its plan.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 47,
           "end": 51,
@@ -775,7 +775,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Trump Administration",
           "label": "ORG",
           "start": 142,
           "end": 147,
@@ -810,7 +810,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 4,
           "end": 9,
@@ -831,7 +831,7 @@
       "translatedDescription": "A hard-line aide to the Russian president will instead lead the delegation, according to a Kremlin statement.",
       "ner": [
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 5,
           "end": 10,
@@ -964,7 +964,7 @@
       "translatedDescription": "In Saudi Arabia, the president denounced Western intervention and nation-building, garnering both praise and eye rolls.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1006,7 +1006,7 @@
       "translatedDescription": "“The sanctions were really crippling,” President Trump said, before he traveled to Qatar, where he was given a lavish welcome.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1048,7 +1048,7 @@
       "translatedDescription": "Plus, the world’s poorest president.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 19,
           "end": 24,
@@ -1216,7 +1216,7 @@
       "translatedDescription": "The FIFA president, Gianni Infantino, is expected to preside over a ceremony in which the emir of Qatar will hand over World Cup hosting duties to Mr. Trump. The U.S. is co-hosting the 2026 tournament.",
       "ner": [
         {
-          "entity": "Infantino",
+          "entity": "Ianni Infantino",
           "label": "PER",
           "start": 0,
           "end": 9,
@@ -1230,14 +1230,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 33,
           "end": 38,
           "source": "title"
         },
         {
-          "entity": "Middle",
+          "entity": "Middle East",
           "label": "LOC",
           "start": 46,
           "end": 52,
@@ -1405,7 +1405,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 31,
           "end": 35,
@@ -1468,7 +1468,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 124,
           "end": 132,
@@ -1524,7 +1524,7 @@
       "translatedDescription": "President Trump’s repeated descriptions of U.S. mediation efforts between India and Pakistan have hit sore spots in Indian politics.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 3,
           "end": 8,
@@ -1559,7 +1559,7 @@
       "translatedDescription": "The Trump administration carved out an exception to its refugee ban for white South Africans. But other groups, including Afghans who helped U.S. forces during the war in their country, are being shut out.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1601,7 +1601,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 13,
           "end": 18,
@@ -1643,7 +1643,7 @@
       "translatedDescription": "The White House was shy on details about the agreements, and the projects’ costs totaled less than half the number it announced.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1706,7 +1706,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 16,
           "end": 20,
@@ -1748,7 +1748,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 45,
           "end": 49,
@@ -1769,7 +1769,7 @@
       "translatedDescription": "President Trump, on a state visit to Saudi Arabia, said he made the decision after speaking to the Saudi crown prince. The president is trying to drum up Saudi investment in the U.S.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1867,7 +1867,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 10,
           "end": 15,
@@ -1895,7 +1895,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 37,
           "end": 42,
@@ -1923,7 +1923,7 @@
       "translatedDescription": "Members of a group calling itself the Kingdom of Germany, which was targeted in nationwide raids, reject the existence of the German state and want to set up a parallel one.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -2007,21 +2007,21 @@
       "translatedDescription": "President Volodymyr Zelensky of Ukraine said that if President Trump attended the talks, it would put pressure on Russia’s leader, Vladimir V. Putin, to meet face-to-face.",
       "ner": [
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 0,
           "end": 8,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 14,
           "end": 19,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 47,
           "end": 52,
@@ -2091,7 +2091,7 @@
       "translatedDescription": "Mr. Trump has few meetings directly about pressing geopolitical challenges. Instead, he’s in the Persian Gulf to make deals.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -2210,7 +2210,7 @@
       "translatedDescription": "The Gaza Humanitarian Foundation, a new NGO supported by Washington, will send humanitarian aid at the end of May to the Gaza Strip, deprived of resources since March 2. It provides for the distribution of nearly 300 million meals for an initial period of 90 days.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 50,
           "end": 54,
@@ -2371,7 +2371,7 @@
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 18,
           "end": 23,
@@ -2385,7 +2385,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 49,
           "end": 54,
@@ -2420,7 +2420,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 273,
           "end": 281,
@@ -2490,7 +2490,7 @@
           "source": "title"
         },
         {
-          "entity": "Croisette",
+          "entity": "La Croisette",
           "label": "LOC",
           "start": 40,
           "end": 49,
@@ -2545,7 +2545,7 @@
           "source": "title"
         },
         {
-          "entity": "Mujica",
+          "entity": "José Mujica",
           "label": "PER",
           "start": 65,
           "end": 71,
@@ -2643,7 +2643,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 50,
           "end": 58,
@@ -2825,7 +2825,7 @@
           "source": "title"
         },
         {
-          "entity": "Assembly",
+          "entity": "National Assembly",
           "label": "ORG",
           "start": 34,
           "end": 42,
@@ -2937,7 +2937,7 @@
           "source": "title"
         },
         {
-          "entity": "Assembly",
+          "entity": "National Assembly",
           "label": "ORG",
           "start": 69,
           "end": 77,
@@ -3028,7 +3028,7 @@
       "translatedDescription": "Israeli strikes killed at least 70 Palestinians across the Gaza Strip on Wednesday, local health authorities said. The day before, the Israeli army struck the European hospital of Khan Younès. She assures that a Hamas command center was located under the establishment and that the military leader of Hamas, Mohammed Sinouar, was there.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 0,
           "end": 4,
@@ -3336,7 +3336,7 @@
           "source": "description"
         },
         {
-          "entity": "François",
+          "entity": "François Bayrou",
           "label": "PER",
           "start": 194,
           "end": 202,
@@ -3345,5 +3345,5 @@
       ]
     }
   ],
-  "processedAt": "2025-05-15T04:28:53.999943"
+  "processedAt": "2025-05-27T21:39:15.534306"
 }
