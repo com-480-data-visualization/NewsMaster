@@ -80,7 +80,7 @@ const KeywordNetwork: React.FC = () => {
     }, []);
 
     // Function to load articles data
-    const loadArticlesData = (limitTo1000: boolean = false) => {
+    const loadArticlesData = (limitTo100: boolean = false) => {
         setIsLoading(true);
         setFetchError(null);
         // Format date as DD.MM.YYYY for the path
@@ -96,10 +96,10 @@ const KeywordNetwork: React.FC = () => {
                 return response.json();
             })
             .then((data: NetworkData) => {
-                // Limit to first 1000 articles if requested
-                const processedData = limitTo1000 ? {
+                // Limit to first 100 articles if requested
+                const processedData = limitTo100 ? {
                     ...data,
-                    data: data.data.slice(0, 1000)
+                    data: data.data.slice(0, 100)
                 } : data;
 
                 setNetworkData(processedData);
@@ -281,8 +281,8 @@ const KeywordNetwork: React.FC = () => {
         loadArticlesData(false);
     };
 
-    // Handle loading first 1000 articles
-    const handleLoadFirst1000 = () => {
+    // Handle loading first 100 articles
+    const handleLoadFirst100 = () => {
         loadArticlesData(true);
     };
 
@@ -378,18 +378,18 @@ const KeywordNetwork: React.FC = () => {
                         </Button>
 
                         <Button
-                            onClick={handleLoadFirst1000}
+                            onClick={handleLoadFirst100}
                             disabled={isLoading}
                             variant="outline"
                             className="px-6 py-3 text-lg"
                         >
-                            {isLoading ? 'Loading...' : 'Load First 1000 Articles'}
+                            {isLoading ? 'Loading...' : 'Load First 100 Articles'}
                         </Button>
                     </div>
 
                     <div className="mt-4 text-sm text-gray-600">
                         <p>• <strong>Load All Articles:</strong> Visualize the complete network of all articles for the selected date</p>
-                        <p>• <strong>Load First 1000 Articles:</strong> Visualize a subset for faster performance</p>
+                        <p>• <strong>Load First 100 Articles:</strong> Visualize a subset for faster performance</p>
                     </div>
                 </div>
             ) : (
