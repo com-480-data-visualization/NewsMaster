@@ -6,6 +6,7 @@ from translate_to_en import Translator
 from ner import BERTNER
 from entity_normalizer import EntityNormalizer
 from temporal_trends import update_current_week_trends
+from aggregate_map_data import aggregate_map_data
 
 def get_today_date_str():
     """Return the current date as DD.MM.YYYY string."""
@@ -118,6 +119,10 @@ def main():
     # Step 5: Update temporal trends
     print("\n4. Updating temporal trends...")
     update_current_week_trends()
+
+    # Step 6: Aggregate map data
+    print("\n5. Aggregating map data...")
+    aggregate_map_data()
 
     print("\nPipeline completed successfully!")
 
