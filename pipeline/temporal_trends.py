@@ -7,7 +7,6 @@ from collections import Counter
 def get_current_week_range():
     """Get the current week range in format DD-DD.MM.YYYY"""
     today = datetime.now()
-    # Find Monday of the current week
     monday = today - timedelta(days=today.weekday())
     sunday = monday + timedelta(days=6)
     
@@ -17,13 +16,8 @@ def get_current_week_range():
 
 def get_date_folders_for_current_week():
     """Get all date folders that belong to the current week"""
-    # The date folders are in ./data directory
-    data_dir = "./data"
+    data_dir = "../public/data"
     current_week_range = get_current_week_range()
-    
-    # Parse current week dates
-    # Format is DD-DD.MM.YYYY (e.g., 12-18.05.2025)
-    # Split by parts manually to avoid issues
     parts = current_week_range.split('.')
     
     if len(parts) != 3:  # Should be [DD-DD, MM, YYYY]
@@ -52,7 +46,7 @@ def get_date_folders_for_current_week():
     # Create date objects for the week range
     start_date = datetime(year, month if start_day < end_day else (month - 1) % 12, start_day)
     end_date = datetime(year, month, end_day)
-    
+
     date_folders = []
     
     # Check if the directory exists
@@ -68,7 +62,6 @@ def get_date_folders_for_current_week():
                 day, month, year = map(int, item.split('.'))
                 folder_date = datetime(year, month, day)
                 
-                # Check if the folder date is within the current week
                 if start_date <= folder_date <= end_date:
                     date_folders.append(item)
             except ValueError:
@@ -78,8 +71,7 @@ def get_date_folders_for_current_week():
 
 def extract_entities_from_articles(date_dir):
     """Extract named entities from articles for a specific date"""
-    # The date folders are in ./data directory
-    articles_file = os.path.join("./data", date_dir, "articles.json")
+    articles_file = os.path.join("../public/data", date_dir, "articles.json")
     if not os.path.exists(articles_file):
         return []
     
@@ -93,9 +85,9 @@ def extract_entities_from_articles(date_dir):
                     if 'entity' in ner_item:
                         entities.append(ner_item['entity'].lower())
             
-            return entities
+            return entities, len(articles_data.get('data', []))
         except json.JSONDecodeError:
-            return []
+            return [], 0
 
 def update_current_week_trends():
     """Update topics.json with only the current week's data"""
@@ -107,11 +99,11 @@ def update_current_week_trends():
     
     if not date_folders:
         return
-    
+
     # Collect all entities from the current week
     all_entities = []
     for date_folder in date_folders:
-        entities = extract_entities_from_articles(date_folder)
+        entities, articles_number = extract_entities_from_articles(date_folder)
         all_entities.extend(entities)
     
     if not all_entities:
@@ -119,16 +111,15 @@ def update_current_week_trends():
     
     # Count entity occurrences
     entity_counter = Counter(all_entities)
-    total_entities = len(all_entities)
     
-    # Calculate percentages for top entities
+    # Calculate percentages for all entities
     topics_data = {}
-    for entity, count in entity_counter.most_common(20):  # Take top 20 topics
-        percentage = round((count / total_entities) * 100)
+    for entity, count in entity_counter.items():
+        percentage = round((count / articles_number * 100), 1)
         topics_data[entity] = {current_week: percentage}
-    
+
     # Load existing topics.json - this file is in public/data/temporal_trends
-    topics_file = os.path.join("public", "data", "temporal_trends", "topics.json")
+    topics_file = os.path.join("../public/data", "temporal_trends", "topics.json")
     existing_data = {}
     
     if os.path.exists(topics_file):
@@ -152,7 +143,8 @@ def update_current_week_trends():
     try:
         with open(topics_file, 'w', encoding='utf-8') as f:
             json.dump(existing_data, f, indent=4)
-        print(f"Temporal trends updated successfully in {topics_file}")
+            print(f"Temporal trends updated successfully in {topics_file}")
+            
     except IOError as e:
         print(f"Error saving temporal trends to {topics_file}: {e}")
     except Exception as e:
