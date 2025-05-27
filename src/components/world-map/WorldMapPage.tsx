@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import WorldMap from './WorldMap';
 import CountryTooltip from './CountryTooltip';
-import CountryInfoPanel from './CountryInfoPanel';
 import GlobalRankings from './GlobalRankings';
 import { ImportExportToggle } from './ImportExportToggle';
-import Legend from './Legend';
+
 import TimeRangeToggle, { type TimeRange } from './TimeRangeToggle';
 import { importColorScale, exportColorScale, countryNameMap } from '../../data/mapData';
 import { loadAggregatedData } from '../../data/dataLoader';

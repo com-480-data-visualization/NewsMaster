@@ -1,11 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Chart } from "../components/Chart";
+import dbRaw from "../../data/db.json";
+const db = dbRaw as {
+	total_ner_today: number;
+	total_articles_today: number;
+	total_articles_week: number;
+	total_articles_total: number;
+};
 ---
 
 <Layout title="NewsMaster">
 	<section class="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
-		<div class="max-w-[64rem] flex flex-col items-center gap-4 text-center mx-auto">
+		<div
+			class="max-w-[64rem] flex flex-col items-center gap-4 text-center mx-auto"
+		>
 			<h1
 				class="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
 			>
@@ -14,7 +23,8 @@ import { Chart } from "../components/Chart";
 			<p
 				class="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8"
 			>
-				A dashboard updated daily, featuring the most important statistics in world news.
+				A dashboard updated daily, featuring the most important
+				statistics in world news.
 			</p>
 			<div class="space-x-4">
 				<button
@@ -37,20 +47,28 @@ import { Chart } from "../components/Chart";
 	</section>
 
 	<section class="space-y-6 py-8 md:py-12 lg:py-24">
-		<div class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+		<div
+			class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center"
+		>
 			<p
 				class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
 			>
-				Optimized for the best possible performance and accessibility
+				We are constantly updating our database with the latest news
+				from around the world. Our goal is to provide you with the most
+				accurate and up-to-date information possible. We hope you find
+				this dashboard useful and informative.
 			</p>
 		</div>
-		<div class="mx-auto grid max-w-4xl gap-6 grid-cols-2 md:grid-cols-4 items-start">
+		<div
+			class="mx-auto grid max-w-4xl gap-6 grid-cols-2 md:grid-cols-4 items-start"
+		>
 			<div
 				class="relative overflow-hidden rounded-lg border bg-background p-2"
 			>
 				<div
 					class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
 				>
+					<!-- NER Analysed Today: Brain/AI icon -->
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
@@ -61,81 +79,27 @@ import { Chart } from "../components/Chart";
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="h-12 w-12 mb-4 text-green-500"
-						><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg
-					>
-					<div class="space-y-2">
-						<h3 class="font-bold text-2xl">100</h3>
-						<p class="text-sm text-muted-foreground">Performance</p>
-					</div>
-				</div>
-			</div>
-
-			<div
-				class="relative overflow-hidden rounded-lg border bg-background p-2"
-			>
-				<div
-					class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="h-12 w-12 mb-4 text-green-500"
-						><circle cx="12" cy="12" r="10"></circle><path
-							d="m9 12 2 2 4-4"></path></svg
-					>
-					<div class="space-y-2">
-						<h3 class="font-bold text-2xl">100</h3>
-						<p class="text-sm text-muted-foreground">
-							Accessibility
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div
-				class="relative overflow-hidden rounded-lg border bg-background p-2"
-			>
-				<div
-					class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="h-12 w-12 mb-4 text-green-500"
-						><path
-							d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"
+						class="h-12 w-12 mb-4 text-blue-500"
+						><path d="M17 7a5 5 0 0 0-10 0v10a5 5 0 0 0 10 0V7z"
+						></path><path d="M12 2v2"></path><path d="M12 20v2"
+						></path><path d="M5 7H3"></path><path d="M21 7h-2"
 						></path></svg
 					>
 					<div class="space-y-2">
-						<h3 class="font-bold text-2xl">100</h3>
+						<h3 class="font-bold text-2xl">{db.total_ner_today}</h3>
 						<p class="text-sm text-muted-foreground">
-							Best Practices
+							NER Analysed Today
 						</p>
 					</div>
 				</div>
 			</div>
-
 			<div
 				class="relative overflow-hidden rounded-lg border bg-background p-2"
 			>
 				<div
 					class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
 				>
+					<!-- Articles Today: Newspaper icon -->
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="24"
@@ -147,13 +111,87 @@ import { Chart } from "../components/Chart";
 						stroke-linecap="round"
 						stroke-linejoin="round"
 						class="h-12 w-12 mb-4 text-green-500"
-						><path
-							d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"
-						></path><line x1="4" y1="22" x2="4" y2="15"></line></svg
+						><rect x="2" y="7" width="20" height="15" rx="2"
+						></rect><path d="M16 3v4"></path><path d="M8 3v4"
+						></path><path d="M2 11h20"></path><path d="M6 15h4"
+						></path><path d="M6 19h4"></path></svg
 					>
 					<div class="space-y-2">
-						<h3 class="font-bold text-2xl">100</h3>
-						<p class="text-sm text-muted-foreground">SEO</p>
+						<h3 class="font-bold text-2xl">
+							{db.total_articles_today}
+						</h3>
+						<p class="text-sm text-muted-foreground">
+							Articles Today
+						</p>
+					</div>
+				</div>
+			</div>
+			<div
+				class="relative overflow-hidden rounded-lg border bg-background p-2"
+			>
+				<div
+					class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
+				>
+					<!-- Articles This Week: Calendar/Week icon -->
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="h-12 w-12 mb-4 text-yellow-500"
+						><rect x="3" y="4" width="18" height="18" rx="2"
+						></rect><path d="M16 2v4"></path><path d="M8 2v4"
+						></path><path d="M3 10h18"></path><rect
+							x="7"
+							y="14"
+							width="10"
+							height="4"
+							rx="1"></rect></svg
+					>
+					<div class="space-y-2">
+						<h3 class="font-bold text-2xl">
+							{db.total_articles_week}
+						</h3>
+						<p class="text-sm text-muted-foreground">
+							Articles This Week
+						</p>
+					</div>
+				</div>
+			</div>
+			<div
+				class="relative overflow-hidden rounded-lg border bg-background p-2"
+			>
+				<div
+					class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
+				>
+					<!-- Total Articles: Database/Archive icon -->
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="h-12 w-12 mb-4 text-purple-500"
+						><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path
+							d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"></path><path
+							d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"></path></svg
+					>
+					<div class="space-y-2">
+						<h3 class="font-bold text-2xl">
+							{db.total_articles_total}
+						</h3>
+						<p class="text-sm text-muted-foreground">
+							Total Articles
+						</p>
 					</div>
 				</div>
 			</div>

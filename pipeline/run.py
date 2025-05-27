@@ -1,7 +1,7 @@
 import os
 import json
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from ingestor_clean import fetch_all_articles
 from translate_to_en import Translator
 from ner import BERTNER
@@ -140,6 +140,59 @@ def save_processed_articles(processed_articles):
     except Exception as e:
         print(f"Error saving processed articles: {e}")
 
+def update_db_json():
+    """Aggregate stats from all articles.json files and update db.json with real data."""
+    import glob
+    from collections import defaultdict
+
+    data_dir = os.path.join('data')
+    db_path = os.path.join(data_dir, 'db.json')
+    today_str = get_today_date_str()
+
+    # Find all articles.json files in data/date/ subfolders
+    articles_files = glob.glob(os.path.join(data_dir, '*/articles.json'))
+    stats_per_day = {}
+    total_articles = 0
+    week_dates = []
+    today_articles = 0
+    today_ner = 0
+    week_articles = 0
+    # Get last 7 days including today
+    for i in range(7):
+        d = datetime.now() - timedelta(days=i)
+        week_dates.append(d.strftime('%d.%m.%Y'))
+
+    for file in articles_files:
+        date_folder = os.path.basename(os.path.dirname(file))
+        try:
+            with open(file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            articles = data.get('data', [])
+            n_articles = len(articles)
+            n_ner = sum(len(a.get('ner', [])) for a in articles)
+            stats_per_day[date_folder] = {'date': date_folder, 'articles': n_articles, 'ner': n_ner}
+            total_articles += n_articles
+            if date_folder == today_str:
+                today_articles = n_articles
+                today_ner = n_ner
+            if date_folder in week_dates:
+                week_articles += n_articles
+        except Exception as e:
+            print(f"Error reading {file}: {e}")
+
+    # Sort by date ascending
+    articles_per_day = [stats_per_day[d] for d in sorted(stats_per_day.keys())]
+    db = {
+        'articles_per_day': articles_per_day,
+        'total_ner_today': today_ner,
+        'total_articles_today': today_articles,
+        'total_articles_week': week_articles,
+        'total_articles_total': total_articles
+    }
+    with open(db_path, 'w', encoding='utf-8') as f:
+        json.dump(db, f, indent=4)
+    print(f"db.json updated with real data.")
+
 def main():
     print("Starting news processing pipeline...")
 
@@ -162,6 +215,10 @@ def main():
     # Step 4: Save processed articles
     print("\n3. Saving processed articles...")
     save_processed_articles(processed_articles)
+    
+    # Update db.json with real data
+    print("\n4. Updating db.json...")
+    update_db_json()
     
     # Step 5: Update temporal trends
     print("\n4. Updating temporal trends...")

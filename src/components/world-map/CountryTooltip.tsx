@@ -16,7 +16,7 @@ interface EntityData {
 interface TooltipData {
   importData: Record<string, number>;
   exportData: Record<string, number>;
-  countryEntities: Record<string, EntityData[]>;
+  countryEntities?: Record<string, EntityData[]>;
 }
 
 type Props = {
