@@ -81,9 +81,9 @@ REGION_COUNTRIES = {
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(CURRENT_DIR)
 
-DATA_ROOT_DIR = os.path.join(PROJECT_ROOT, "data")
+DATA_ROOT_DIR = os.path.join(PROJECT_ROOT, "public","data")
 PROVIDERS_FILE_PATH = os.path.join(DATA_ROOT_DIR, "providers.json")
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "public", "data/world_map")
+OUTPUT_DIR = os.path.join(PROJECT_ROOT, "public", "data", "world_map")
 
 # --- Helper Functions ---
 

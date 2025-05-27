@@ -14,8 +14,8 @@ cet_tz = pytz.timezone("CET")
 access_denied_count = 0
 
 # Paths
-PROVIDERS_JSON_PATH = 'data/providers.json'
-OUTPUT_DIR = 'data'
+PROVIDERS_JSON_PATH = 'public/data/providers.json'
+OUTPUT_DIR = 'public/data'
 
 def fetch_all_articles():
     print("Starting article fetching")
