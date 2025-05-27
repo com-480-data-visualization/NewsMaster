@@ -77,7 +77,7 @@ def process_articles(articles):
 def save_processed_articles(processed_articles):
     """Save processed articles to a JSON file in a date-specific directory."""
     date_str = get_today_date_str()
-    output_dir = os.path.join('data', date_str)
+    output_dir = os.path.join('public', 'data', date_str)
     output_filename = os.path.join(output_dir, 'articles.json')
     
     output_data = {
