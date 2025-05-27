@@ -97,6 +97,8 @@ def save_processed_articles(processed_articles):
 
 def main():
     print("Starting news processing pipeline...")
+
+    # WARNING : Make sure to update the requirements.txt when adding new steps to the pipeline.
     
     # Step 1: Fetch news directly
     print("\n1. Fetching news...")
