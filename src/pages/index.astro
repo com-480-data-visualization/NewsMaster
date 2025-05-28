@@ -1,8 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Chart } from "../components/Chart";
-import dbRaw from "../../data/db.json";
-const db = dbRaw as {
+// Fetch the JSON data at build time from the public directory
+const response = await fetch("/data/db.json");
+const db = (await response.json()) as {
 	total_ner_today: number;
 	total_articles_today: number;
 	total_articles_week: number;
