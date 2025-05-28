@@ -79,6 +79,7 @@ const KeywordNetwork: React.FC = () => {
     const [articleDetails, setArticleDetails] = useState<Article[]>([]);
     const [showLinkDialog, setShowLinkDialog] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [isLoadingLabels, setIsLoadingLabels] = useState(false);
 
     const defaultProviders = [
         'BBC News',
@@ -127,6 +128,35 @@ const KeywordNetwork: React.FC = () => {
             });
     }, []);
 
+    const loadNerLabels = () => {
+        setIsLoadingLabels(true);
+        setFetchError(null);
+        const [year, month, day] = selectedDate.split('-');
+        const formattedDate = `${day}.${month}.${year}`;
+        const jsonPath = `/data/${formattedDate}/articles.json`;
+
+        fetch(jsonPath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data: NetworkData) => {
+                const labels = new Set<string>();
+                data.data.forEach(article => {
+                    article.ner.forEach(entity => labels.add(entity.label));
+                });
+                setAllLabels(Array.from(labels).sort().map(label => ({ value: label, label })));
+                setIsLoadingLabels(false);
+            })
+            .catch(error => {
+                setFetchError("No data for this date. Please select another date.");
+                setIsLoadingLabels(false);
+                console.error("Error fetching NER labels:", error);
+            });
+    };
+
     const loadArticlesData = (filterByProviders: boolean = false) => {
         setIsLoading(true);
         setFetchError(null);
@@ -157,12 +187,6 @@ const KeywordNetwork: React.FC = () => {
                 };
 
                 setNetworkData(processedData);
-                const labels = new Set<string>();
-                processedData.data.forEach(article => {
-                    article.ner.forEach(entity => labels.add(entity.label));
-                });
-                setAllLabels(Array.from(labels).sort().map(label => ({ value: label, label })));
-
                 setShowVisualization(true);
                 setIsPlainScreen(true);
                 setIsLoading(false);
@@ -248,6 +272,13 @@ const KeywordNetwork: React.FC = () => {
 
     const handleProviderChange = (selectedOptions: readonly SelectOption[] | null) => {
         setSelectedProviders(selectedOptions ? Array.from(selectedOptions) : []);
+    };
+
+    const handleDateChange = (newDate: string) => {
+        setSelectedDate(newDate);
+        setAllLabels([]);
+        setSelectedLabels([]);
+        setFetchError(null);
     };
 
     const createNodeLabelSprite = (node: CustomNodeObject, isDarkMode: boolean): THREE.Sprite => {
@@ -379,7 +410,7 @@ const KeywordNetwork: React.FC = () => {
                             id="date-picker"
                             type="date"
                             value={selectedDate}
-                            onChange={e => setSelectedDate(e.target.value)}
+                            onChange={e => handleDateChange(e.target.value)}
                             className="border border-gray-300 rounded-md px-3 py-2 text-sm"
                             max={new Date().toISOString().slice(0, 10)}
                         />
@@ -399,6 +430,38 @@ const KeywordNetwork: React.FC = () => {
                             classNamePrefix="react-select"
                             placeholder="Select providers to include..."
                         />
+                    </div>
+
+                    <div className="mb-6">
+                        <div className="flex items-center gap-4 mb-2">
+                            <label htmlFor="ner-select" className="block text-sm font-medium">
+                                Filter by NER Labels (Optional):
+                            </label>
+                            <Button
+                                onClick={loadNerLabels}
+                                disabled={isLoadingLabels}
+                                variant="outline"
+                                size="sm"
+                            >
+                                {isLoadingLabels ? 'Loading...' : 'Load Available Labels'}
+                            </Button>
+                        </div>
+                        <Select
+                            id="ner-select"
+                            isMulti
+                            options={allLabels}
+                            value={selectedLabels}
+                            onChange={handleLabelChange}
+                            className="react-select-container"
+                            classNamePrefix="react-select"
+                            placeholder="First load labels, then select NER labels to filter..."
+                            isDisabled={allLabels.length === 0}
+                        />
+                        {allLabels.length > 0 && (
+                            <p className="text-xs text-gray-500 mt-1">
+                                {allLabels.length} labels available. Leave empty to show all entities.
+                            </p>
+                        )}
                     </div>
 
                     {fetchError && (
@@ -427,8 +490,9 @@ const KeywordNetwork: React.FC = () => {
                     </div>
 
                     <div className="mt-4 text-sm text-gray-600">
-                        <p>• <strong>Load All Articles:</strong> Visualize the complete network of all articles for the selected date (requires good computer) </p>
+                        <p>• <strong>Load All Articles:</strong> Visualize the complete network of all articles for the selected date (requires good computer)</p>
                         <p>• <strong>Load Selected Providers:</strong> Visualize only articles from major news providers (BBC, CNN, NYT, Al Jazeera, Guardian, etc.)</p>
+                        <p>• <strong>NER Filtering:</strong> Optionally filter entities by their types (PERSON, ORG, LOC, etc.) to focus on specific categories</p>
 
                         <div className="mt-3 p-3 bg-gray-50 rounded border">
                             <p className="font-medium mb-2">Selected Providers ({selectedProviders.length}):</p>
@@ -437,6 +501,16 @@ const KeywordNetwork: React.FC = () => {
                                     <span key={provider.value} className="text-gray-700">• {provider.label}</span>
                                 ))}
                             </div>
+                            {selectedLabels.length > 0 && (
+                                <>
+                                    <p className="font-medium mb-2 mt-3">Selected NER Labels ({selectedLabels.length}):</p>
+                                    <div className="grid grid-cols-3 gap-1 text-xs">
+                                        {selectedLabels.map(label => (
+                                            <span key={label.value} className="text-blue-700">• {label.label}</span>
+                                        ))}
+                                    </div>
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -466,14 +540,14 @@ const KeywordNetwork: React.FC = () => {
                         padding: '0 1rem',
                     }}>
                         <label
-                            htmlFor="date-picker"
+                            htmlFor="date-picker-viz"
                             className="text-white whitespace-nowrap"
                             style={{ marginRight: '0.5rem' }}
                         >
                             Date:
                         </label>
                         <input
-                            id="date-picker"
+                            id="date-picker-viz"
                             type="date"
                             value={selectedDate}
                             onChange={e => setSelectedDate(e.target.value)}
@@ -487,26 +561,14 @@ const KeywordNetwork: React.FC = () => {
                             }}
                             max={new Date().toISOString().slice(0, 10)}
                         />
-                        <label
-                            htmlFor="ner-select"
-                            className="text-white whitespace-nowrap"
-                            style={{ marginRight: '0.5rem' }}
-                        >
-                            Filter by NER Label:
-                        </label>
-                        <div style={{ width: '200px', marginRight: '1rem' }}>
-                            <Select
-                                id="ner-select"
-                                isMulti
-                                options={allLabels}
-                                value={selectedLabels}
-                                onChange={handleLabelChange}
-                                className="react-select-container"
-                                classNamePrefix="react-select"
-                                placeholder="Select NER labels..."
-                                styles={plainScreenSelectStyles}
-                            />
-                        </div>
+                        {selectedLabels.length > 0 && (
+                            <div className="text-white text-sm">
+                                <span>NER Filter: </span>
+                                <span className="text-blue-300">
+                                    {selectedLabels.map(label => label.label).join(', ')}
+                                </span>
+                            </div>
+                        )}
                     </div>
 
                     {/* Exit button in top right corner */}
