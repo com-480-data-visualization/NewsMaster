@@ -15,7 +15,8 @@ type TableRowData = {
     rank: number;
     topic: string;
     latestScore: number;
-    isTrendingUp: boolean | null;
+    isTrendingUp: boolean | null; // For rank trend (arrows)
+    isPresenceTrendingUp: boolean | null; // For percentage change colors
     percentageChange: number | null;
 };
 
@@ -39,57 +40,99 @@ const latestDateRange = allDateRanges[allDateRanges.length - 1];
 const previousDateRange = allDateRanges[allDateRanges.length - 2];
 
 // Process data for the table
+// First, create separate arrays for current and previous week data to calculate rankings
+const currentWeekData = Object.entries(typedTopicsData)
+    .map(([topic, dates]) => ({
+        topic,
+        score: dates[latestDateRange] ?? 0
+    }))
+    .filter(item => item.score > 0) // Only include topics with presence > 0
+    .sort((a, b) => b.score - a.score) // Sort by score descending
+    .map((item, index) => ({ ...item, rank: index + 1 })); // Add current rank
+
+const previousWeekData = Object.entries(typedTopicsData)
+    .map(([topic, dates]) => ({
+        topic,
+        score: dates[previousDateRange] ?? 0
+    }))
+    .filter(item => item.score > 0) // Only include topics with presence > 0
+    .sort((a, b) => b.score - a.score) // Sort by score descending
+    .map((item, index) => ({ ...item, rank: index + 1 })); // Add previous rank
+
+// Create lookup maps for easy access
+const currentWeekMap = new Map(currentWeekData.map(item => [item.topic, item]));
+const previousWeekMap = new Map(previousWeekData.map(item => [item.topic, item]));
+
 const tableData: TableRowData[] = Object.entries(typedTopicsData)
-    .map(([topic, dates]) => ({ topic, dates })) // Keep intermediate structure for type safety
-    .map(({ topic, dates }) => {
+    .map(([topic, dates]) => {
         const currentLatestScore = dates[latestDateRange] ?? 0;
-        const originalPreviousScoreValue = dates[previousDateRange]; // Capture original value to check for actual absence
-        const currentPreviousScore = originalPreviousScoreValue ?? 0;
+        const originalPreviousScoreValue = dates[previousDateRange];
         
         let isTrendingUp: boolean | null = null;
+        let isPresenceTrendingUp: boolean | null = null;
         let percentageChange: number | null = null;
 
+        // Calculate percentage change and presence trending
         if (originalPreviousScoreValue === undefined || originalPreviousScoreValue === null) {
-            // Case 1: Previous score was genuinely missing (null/undefined in the data or previousDateRange doesn't exist)
-            // User request: "when the % goes from null to X, the percentage change should be X"
             percentageChange = currentLatestScore;
             if (currentLatestScore > 0) {
-                isTrendingUp = true;
-            } else if (currentLatestScore < 0) { // Handles if scores can be negative
-                isTrendingUp = false;
-            } else { // currentLatestScore is 0 (i.e., went from null/absent to 0)
-                isTrendingUp = null; // Neutral indicator
+                isPresenceTrendingUp = true;
+            } else if (currentLatestScore < 0) {
+                isPresenceTrendingUp = false;
+            } else {
+                isPresenceTrendingUp = null;
             }
         } else {
-            // Case 2: Previous score was present (originalPreviousScoreValue is a number, including 0)
-            // currentPreviousScore is therefore also that number.
+            const currentPreviousScore = originalPreviousScoreValue;
             if (currentLatestScore === currentPreviousScore) {
-                // User request: "when the % doesn't change, a neutral indicator is displayed"
                 percentageChange = 0;
-                isTrendingUp = null; // Neutral indicator
+                isPresenceTrendingUp = null;
             } else {
-                // Scores are different
-                isTrendingUp = currentLatestScore > currentPreviousScore;
+                // Determine presence trending based on score comparison
+                isPresenceTrendingUp = currentLatestScore > currentPreviousScore;
                 if (currentPreviousScore === 0) {
-                    // Previous was 0, current is different.
-                    // Assuming non-negative scores, currentLatestScore must be > 0.
-                    percentageChange = Infinity; 
+                    percentageChange = Infinity;
                 } else {
-                    // Previous score was not 0, and current score is different.
                     percentageChange = parseFloat((currentLatestScore - currentPreviousScore).toFixed(1));
                 }
             }
         }
 
+        // Calculate rank-based trending (new logic for isTrendingUp)
+        const currentWeekItem = currentWeekMap.get(topic);
+        const previousWeekItem = previousWeekMap.get(topic);
+
+        if (currentWeekItem && previousWeekItem) {
+            // Topic exists in both weeks - compare ranks (lower rank number = better position)
+            if (currentWeekItem.rank < previousWeekItem.rank) {
+                isTrendingUp = true; // Improved rank (moved up)
+            } else if (currentWeekItem.rank > previousWeekItem.rank) {
+                isTrendingUp = false; // Worse rank (moved down)
+            } else {
+                isTrendingUp = null; // Same rank
+            }
+        } else if (currentWeekItem && !previousWeekItem) {
+            // Topic is new this week (wasn't ranked last week)
+            isTrendingUp = true;
+        } else if (!currentWeekItem && previousWeekItem) {
+            // Topic dropped out of rankings this week
+            isTrendingUp = false;
+        } else {
+            // Topic not ranked in either week (shouldn't happen due to filtering)
+            isTrendingUp = null;
+        }
+
         return {
             topic,
-            latestScore: currentLatestScore, // Ensure table uses the coalesced score
+            latestScore: currentLatestScore,
             isTrendingUp,
+            isPresenceTrendingUp,
             percentageChange,
         };
     })
+    .filter(item => item.latestScore > 0) // Only include topics with current presence > 0
     .sort((a, b) => b.latestScore - a.latestScore) // Sort by latest score descending for ranking
-    .map((item, index) => ({ ...item, rank: index + 1 })); // Add rank
+    .map((item, index) => ({ ...item, rank: index + 1 })); // Add final rank
 
 // Determine the top topic for default selection
 const topTopicName = tableData.length > 0 ? tableData[0].topic : null;

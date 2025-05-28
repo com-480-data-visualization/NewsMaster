@@ -5,7 +5,8 @@ type TableRowData = {
     rank: number;
     topic: string;
     latestScore: number;
-    isTrendingUp: boolean | null;
+    isTrendingUp: boolean | null; // For rank trend (arrows)
+    isPresenceTrendingUp: boolean | null; // For percentage change colors
     percentageChange: number | null;
 };
 
@@ -33,9 +34,9 @@ const formatPercentage = (change: number | null): string => {
 }
 
 // Helper function to get class for trend values
-const getTrendClass = (isTrendingUp: boolean | null): string => {
-    if (isTrendingUp === null) return 'text-gray-500 dark:text-gray-400';
-    return isTrendingUp ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400';
+const getTrendClass = (isPresenceTrendingUp: boolean | null): string => {
+    if (isPresenceTrendingUp === null) return 'text-gray-500 dark:text-gray-400';
+    return isPresenceTrendingUp ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400';
 }
 
 // Calculate optimal maxLength for topic names based on table width
@@ -131,7 +132,7 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
                         <th scope="col" className="px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Rank</th>
                         <th scope="col" className="px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Topic</th>
                         <th scope="col" className="px-4 py-2 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Presence in articles</th>
-                        <th scope="col" className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Trending</th>
+                        <th scope="col" className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Rank trend</th>
                         <th scope="col" className="px-4 py-2 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Since last week</th>
                     </tr>
                 </thead>
@@ -171,7 +172,7 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
                                 <td className="px-4 py-2 whitespace-nowrap text-sm text-center">
                                     <TrendIcon isUp={item.isTrendingUp} />
                                 </td>
-                                <td className={`px-4 py-2 whitespace-nowrap text-sm text-right ${getTrendClass(item.isTrendingUp)}`}>
+                                <td className={`px-4 py-2 whitespace-nowrap text-sm text-right ${getTrendClass(item.isPresenceTrendingUp)}`}>
                                     {formatPercentage(item.percentageChange)}
                                 </td>
                             </tr>
