@@ -4,7 +4,7 @@ import type { NodeObject, LinkObject } from 'react-force-graph-3d';
 import Select from 'react-select';
 import * as THREE from 'three';
 import { Button } from '@/components/ui/button';
-import { MaximizeIcon, MinimizeIcon } from 'lucide-react';
+import { MinimizeIcon } from 'lucide-react';
 import { formatDistanceToNow, parseISO } from 'date-fns';
 
 interface NerEntity {
@@ -53,10 +53,20 @@ interface SelectOption {
     label: string;
 }
 
+interface Provider {
+    id: string;
+    builtin: boolean;
+    language: string;
+    url: string[];
+    country: string;
+}
+
 const KeywordNetwork: React.FC = () => {
     const [networkData, setNetworkData] = useState<NetworkData | null>(null);
     const [selectedLabels, setSelectedLabels] = useState<SelectOption[]>([]);
     const [allLabels, setAllLabels] = useState<SelectOption[]>([]);
+    const [selectedProviders, setSelectedProviders] = useState<SelectOption[]>([]);
+    const [allProviders, setAllProviders] = useState<SelectOption[]>([]);
     const [isClient, setIsClient] = useState(false);
     const [isPlainScreen, setIsPlainScreen] = useState(false);
     const [showVisualization, setShowVisualization] = useState(false);
@@ -70,7 +80,7 @@ const KeywordNetwork: React.FC = () => {
     const [showLinkDialog, setShowLinkDialog] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
-    const selectedProviders = [
+    const defaultProviders = [
         'BBC News',
         'CNN',
         'New York Times',
@@ -89,6 +99,32 @@ const KeywordNetwork: React.FC = () => {
 
     useEffect(() => {
         setIsClient(true);
+        // Load providers from providers.json
+        fetch('/data/providers.json')
+            .then(response => response.json())
+            .then((providers: Provider[]) => {
+                const providerOptions = providers.map(provider => ({
+                    value: provider.id,
+                    label: provider.id
+                }));
+                setAllProviders(providerOptions);
+
+                // Set default selected providers
+                const defaultSelected = providerOptions.filter(option =>
+                    defaultProviders.includes(option.value)
+                );
+                setSelectedProviders(defaultSelected);
+            })
+            .catch(error => {
+                console.error('Error loading providers:', error);
+                // Fallback to hardcoded list
+                const fallbackProviders = defaultProviders.map(provider => ({
+                    value: provider,
+                    label: provider
+                }));
+                setAllProviders(fallbackProviders);
+                setSelectedProviders(fallbackProviders);
+            });
     }, []);
 
     const loadArticlesData = (filterByProviders: boolean = false) => {
@@ -108,9 +144,10 @@ const KeywordNetwork: React.FC = () => {
             .then((data: NetworkData) => {
                 let filteredData = data.data;
 
-                if (filterByProviders) {
+                if (filterByProviders && selectedProviders.length > 0) {
+                    const selectedProviderIds = selectedProviders.map(p => p.value);
                     filteredData = filteredData.filter(article =>
-                        selectedProviders.includes(article.providerId)
+                        selectedProviderIds.includes(article.providerId)
                     );
                 }
 
@@ -207,6 +244,10 @@ const KeywordNetwork: React.FC = () => {
 
     const handleLabelChange = (selectedOptions: readonly SelectOption[] | null) => {
         setSelectedLabels(selectedOptions ? Array.from(selectedOptions) : []);
+    };
+
+    const handleProviderChange = (selectedOptions: readonly SelectOption[] | null) => {
+        setSelectedProviders(selectedOptions ? Array.from(selectedOptions) : []);
     };
 
     const createNodeLabelSprite = (node: CustomNodeObject, isDarkMode: boolean): THREE.Sprite => {
@@ -344,6 +385,22 @@ const KeywordNetwork: React.FC = () => {
                         />
                     </div>
 
+                    <div className="mb-6">
+                        <label htmlFor="provider-select" className="block text-sm font-medium mb-2">
+                            Select Providers:
+                        </label>
+                        <Select
+                            id="provider-select"
+                            isMulti
+                            options={allProviders}
+                            value={selectedProviders}
+                            onChange={handleProviderChange}
+                            className="react-select-container"
+                            classNamePrefix="react-select"
+                            placeholder="Select providers to include..."
+                        />
+                    </div>
+
                     {fetchError && (
                         <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
                             {fetchError}
@@ -370,14 +427,14 @@ const KeywordNetwork: React.FC = () => {
                     </div>
 
                     <div className="mt-4 text-sm text-gray-600">
-                        <p>• <strong>Load All Articles:</strong> Visualize the complete network of all articles for the selected date</p>
+                        <p>• <strong>Load All Articles:</strong> Visualize the complete network of all articles for the selected date (requires good computer) </p>
                         <p>• <strong>Load Selected Providers:</strong> Visualize only articles from major news providers (BBC, CNN, NYT, Al Jazeera, Guardian, etc.)</p>
 
                         <div className="mt-3 p-3 bg-gray-50 rounded border">
-                            <p className="font-medium mb-2">Selected Providers:</p>
+                            <p className="font-medium mb-2">Selected Providers ({selectedProviders.length}):</p>
                             <div className="grid grid-cols-2 gap-1 text-xs">
                                 {selectedProviders.map(provider => (
-                                    <span key={provider} className="text-gray-700">• {provider}</span>
+                                    <span key={provider.value} className="text-gray-700">• {provider.label}</span>
                                 ))}
                             </div>
                         </div>
@@ -437,7 +494,7 @@ const KeywordNetwork: React.FC = () => {
                         >
                             Filter by NER Label:
                         </label>
-                        <div style={{ flexGrow: 1 }}>
+                        <div style={{ width: '200px', marginRight: '1rem' }}>
                             <Select
                                 id="ner-select"
                                 isMulti
@@ -446,24 +503,30 @@ const KeywordNetwork: React.FC = () => {
                                 onChange={handleLabelChange}
                                 className="react-select-container"
                                 classNamePrefix="react-select"
-                                placeholder="Select NER labels to display..."
+                                placeholder="Select NER labels..."
                                 styles={plainScreenSelectStyles}
                             />
                         </div>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            onClick={togglePlainScreen}
-                            title="Exit visualization"
-                            style={{
-                                backgroundColor: '#2a2a2a',
-                                borderColor: '#555',
-                                color: 'white'
-                            }}
-                        >
-                            <MinimizeIcon className="h-4 w-4" />
-                        </Button>
                     </div>
+
+                    {/* Exit button in top right corner */}
+                    <Button
+                        variant="outline"
+                        size="icon"
+                        onClick={togglePlainScreen}
+                        title="Exit visualization"
+                        style={{
+                            position: 'fixed',
+                            top: '1rem',
+                            right: '1rem',
+                            backgroundColor: '#2a2a2a',
+                            borderColor: '#555',
+                            color: 'white',
+                            zIndex: 1002
+                        }}
+                    >
+                        <MinimizeIcon className="h-4 w-4" />
+                    </Button>
 
                     <div style={{ flexGrow: 1, position: 'relative' }}>
                         {isClient && networkData ? (
