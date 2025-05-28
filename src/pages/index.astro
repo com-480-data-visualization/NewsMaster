@@ -1,14 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Chart } from "../components/Chart";
-// Fetch the JSON data at build time from the public directory
-const response = await fetch("/data/db.json");
-const db = (await response.json()) as {
-	total_ner_today: number;
-	total_articles_today: number;
-	total_articles_week: number;
-	total_articles_total: number;
-};
+import { useEffect, useState } from "react";
+
+const [db, setDb] = useState({
+	total_ner_today: 0,
+	total_articles_today: 0,
+	total_articles_week: 0,
+	total_articles_total: 0,
+});
+
+useEffect(() => {
+	fetch("/data/db.json")
+		.then((res) => res.json())
+		.then((data) => setDb(data));
+}, []);
 ---
 
 <Layout title="NewsMaster">
