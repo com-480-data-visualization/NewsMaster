@@ -180,7 +180,10 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
               <div className="text-xs text-muted-foreground">0%</div>
               <div className="text-xs text-muted-foreground">
                 {/* Display the max value from the current scale domain */}
-                {(importColorScale.domain()[1] * 100).toFixed(1) }
+                {(() => {
+                  const domainValues = importColorScale.domain() as [number, number];
+                  return (domainValues[1] * 100).toFixed(1);
+                })()}
                 %
               </div>
             </div>
