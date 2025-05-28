@@ -1,0 +1,93 @@
+{
+    "articles_per_day": [
+        {
+            "date": "12.05.2025",
+            "articles": 85,
+            "ner": 369
+        },
+        {
+            "date": "13.05.2025",
+            "articles": 85,
+            "ner": 355
+        },
+        {
+            "date": "14.05.2025",
+            "articles": 81,
+            "ner": 306
+        },
+        {
+            "date": "15.05.2025",
+            "articles": 82,
+            "ner": 314
+        },
+        {
+            "date": "16.05.2025",
+            "articles": 82,
+            "ner": 317
+        },
+        {
+            "date": "17.05.2025",
+            "articles": 564,
+            "ner": 2494
+        },
+        {
+            "date": "18.05.2025",
+            "articles": 531,
+            "ner": 2183
+        },
+        {
+            "date": "19.05.2025",
+            "articles": 579,
+            "ner": 2369
+        },
+        {
+            "date": "20.05.2025",
+            "articles": 625,
+            "ner": 2602
+        },
+        {
+            "date": "21.05.2025",
+            "articles": 2770,
+            "ner": 12590
+        },
+        {
+            "date": "22.05.2025",
+            "articles": 1130,
+            "ner": 4703
+        },
+        {
+            "date": "23.05.2025",
+            "articles": 1073,
+            "ner": 4570
+        },
+        {
+            "date": "24.05.2025",
+            "articles": 974,
+            "ner": 4220
+        },
+        {
+            "date": "25.05.2025",
+            "articles": 826,
+            "ner": 3465
+        },
+        {
+            "date": "26.05.2025",
+            "articles": 1002,
+            "ner": 4421
+        },
+        {
+            "date": "27.05.2025",
+            "articles": 1087,
+            "ner": 4435
+        },
+        {
+            "date": "28.05.2025",
+            "articles": 1912,
+            "ner": 8728
+        }
+    ],
+    "total_ner_today": 8728,
+    "total_articles_today": 1912,
+    "total_articles_week": 8004,
+    "total_articles_total": 13488
+}
