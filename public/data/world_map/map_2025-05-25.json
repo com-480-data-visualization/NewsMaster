@@ -1,0 +1,5724 @@
+{
+  "importData": {
+    "QAT": 0.001762114537444934,
+    "EST": 0.012334801762114538,
+    "HUN": 0.012334801762114538,
+    "KWT": 0.000881057268722467,
+    "SGP": 0.000881057268722467,
+    "KHM": 0.000881057268722467,
+    "LVA": 0.012334801762114538,
+    "SRB": 0.013215859030837005,
+    "SSD": 0.000881057268722467,
+    "MMR": 0.0026431718061674008,
+    "BTN": 0.000881057268722467,
+    "IDN": 0.000881057268722467,
+    "MHL": 0.000881057268722467,
+    "BLR": 0.012334801762114538,
+    "ESP": 0.018502202643171806,
+    "CCK": 0.000881057268722467,
+    "CRI": 0.000881057268722467,
+    "ZWE": 0.000881057268722467,
+    "BEL": 0.014096916299559472,
+    "NLD": 0.013215859030837005,
+    "TUR": 0.001762114537444934,
+    "NAM": 0.000881057268722467,
+    "KEN": 0.001762114537444934,
+    "CPV": 0.000881057268722467,
+    "CHE": 0.015859030837004406,
+    "YEM": 0.000881057268722467,
+    "SYR": 0.004405286343612335,
+    "AND": 0.012334801762114538,
+    "PLW": 0.000881057268722467,
+    "MDA": 0.012334801762114538,
+    "TWN": 0.001762114537444934,
+    "NGA": 0.003524229074889868,
+    "VIR": 0.000881057268722467,
+    "LAO": 0.001762114537444934,
+    "IND": 0.024669603524229075,
+    "COL": 0.0052863436123348016,
+    "ZAF": 0.006167400881057269,
+    "ATG": 0.000881057268722467,
+    "VEN": 0.0052863436123348016,
+    "HKG": 0.001762114537444934,
+    "BRA": 0.003524229074889868,
+    "SVN": 0.016740088105726872,
+    "ASM": 0.007048458149779736,
+    "PHL": 0.004405286343612335,
+    "BIH": 0.012334801762114538,
+    "BGD": 0.0026431718061674008,
+    "MNE": 0.013215859030837005,
+    "SLV": 0.000881057268722467,
+    "DMA": 0.000881057268722467,
+    "SWZ": 0.000881057268722467,
+    "ISL": 0.014096916299559472,
+    "POL": 0.014096916299559472,
+    "AUS": 0.0052863436123348016,
+    "JPN": 0.007048458149779736,
+    "ITA": 0.018502202643171806,
+    "UKR": 0.03524229074889868,
+    "DEU": 0.009691629955947136,
+    "HTI": 0.001762114537444934,
+    "ISR": 0.016740088105726872,
+    "JAM": 0.000881057268722467,
+    "HRV": 0.012334801762114538,
+    "NZL": 0.000881057268722467,
+    "CZE": 0.013215859030837005,
+    "AUT": 0.012334801762114538,
+    "PSE": 0.014096916299559472,
+    "ARE": 0.001762114537444934,
+    "PAK": 0.003524229074889868,
+    "MKD": 0.012334801762114538,
+    "UGA": 0.004405286343612335,
+    "CAN": 0.000881057268722467,
+    "TCD": 0.001762114537444934,
+    "DNK": 0.014096916299559472,
+    "GRC": 0.012334801762114538,
+    "IRL": 0.01145374449339207,
+    "NOR": 0.013215859030837005,
+    "LBR": 0.000881057268722467,
+    "MEX": 0.000881057268722467,
+    "MAC": 0.000881057268722467,
+    "TON": 0.001762114537444934,
+    "PRT": 0.01762114537444934,
+    "FIN": 0.012334801762114538,
+    "SLE": 0.000881057268722467,
+    "DOM": 0.004405286343612335,
+    "LUX": 0.013215859030837005,
+    "LIE": 0.012334801762114538,
+    "VCT": 0.000881057268722467,
+    "GHA": 0.0026431718061674008,
+    "SUR": 0.000881057268722467,
+    "AFG": 0.000881057268722467,
+    "KOR": 0.000881057268722467,
+    "ECU": 0.0026431718061674008,
+    "GUY": 0.000881057268722467,
+    "GRD": 0.000881057268722467,
+    "CHN": 0.022026431718061675,
+    "FRA": 0.03612334801762115,
+    "MCO": 0.001762114537444934,
+    "ARG": 0.007048458149779736,
+    "MOZ": 0.000881057268722467,
+    "ROU": 0.015859030837004406,
+    "VAT": 0.003524229074889868,
+    "BHS": 0.001762114537444934,
+    "VNM": 0.0026431718061674008,
+    "USA": 0.08722466960352424,
+    "CHL": 0.001762114537444934,
+    "REU": 0.0026431718061674008,
+    "SAU": 0.003524229074889868,
+    "TUN": 0.000881057268722467,
+    "EGY": 0.000881057268722467,
+    "LTU": 0.013215859030837005,
+    "KIR": 0.000881057268722467,
+    "PRI": 0.001762114537444934,
+    "DZA": 0.000881057268722467,
+    "GIN": 0.004405286343612335,
+    "MYS": 0.003524229074889868,
+    "IRN": 0.004405286343612335,
+    "SVK": 0.012334801762114538,
+    "RUS": 0.039647577092511016,
+    "PRK": 0.004405286343612335,
+    "ALB": 0.013215859030837005,
+    "TTO": 0.000881057268722467,
+    "ATA": 0.000881057268722467,
+    "IRQ": 0.000881057268722467,
+    "KNA": 0.000881057268722467,
+    "AIA": 0.003524229074889868,
+    "BRB": 0.000881057268722467,
+    "CYP": 0.013215859030837005,
+    "PNG": 0.001762114537444934,
+    "CUB": 0.001762114537444934,
+    "MLT": 0.012334801762114538,
+    "SWE": 0.014096916299559472,
+    "CMR": 0.003524229074889868,
+    "GBR": 0.029955947136563875,
+    "BGR": 0.012334801762114538
+  },
+  "exportData": {
+    "EST": 0.009691629955947136,
+    "HUN": 0.04052863436123348,
+    "SGP": 0.000881057268722467,
+    "ESP": 0.007048458149779736,
+    "CRI": 0.000881057268722467,
+    "CPV": 0.001762114537444934,
+    "CHE": 0.0026431718061674008,
+    "TWN": 0.021145374449339206,
+    "NGA": 0.004405286343612335,
+    "IND": 0.028193832599118944,
+    "COL": 0.010572687224669603,
+    "NPL": 0.012334801762114538,
+    "ZAF": 0.0026431718061674008,
+    "BFA": 0.000881057268722467,
+    "HKG": 0.05110132158590308,
+    "BRA": 0.11365638766519824,
+    "POL": 0.000881057268722467,
+    "AUS": 0.01145374449339207,
+    "PER": 0.007048458149779736,
+    "DEU": 0.4422907488986784,
+    "HTI": 0.0052863436123348016,
+    "GNB": 0.007048458149779736,
+    "NZL": 0.001762114537444934,
+    "THA": 0.000881057268722467,
+    "ARE": 0.004405286343612335,
+    "PAK": 0.01762114537444934,
+    "CAN": 0.009691629955947136,
+    "DNK": 0.0052863436123348016,
+    "IRL": 0.04757709251101322,
+    "FJI": 0.007048458149779736,
+    "MEX": 0.018502202643171806,
+    "TJK": 0.000881057268722467,
+    "TON": 0.001762114537444934,
+    "FIN": 0.006167400881057269,
+    "DOM": 0.0026431718061674008,
+    "GHA": 0.003524229074889868,
+    "GTM": 0.0026431718061674008,
+    "URY": 0.000881057268722467,
+    "LCA": 0.012334801762114538,
+    "ECU": 0.000881057268722467,
+    "GUY": 0.000881057268722467,
+    "HND": 0.000881057268722467,
+    "FRA": 0.0052863436123348016,
+    "USA": 0.000881057268722467,
+    "SAU": 0.013215859030837005,
+    "MYS": 0.004405286343612335,
+    "OMN": 0.015859030837004406,
+    "PNG": 0.000881057268722467,
+    "CUB": 0.004405286343612335,
+    "SWE": 0.006167400881057269,
+    "GBR": 0.02026431718061674
+  },
+  "nerData": {
+    "QAT": 0.006802721088435374,
+    "EST": 0.013605442176870748,
+    "HUN": 0.013605442176870748,
+    "LVA": 0.013605442176870748,
+    "SRB": 0.013605442176870748,
+    "BLR": 0.013605442176870748,
+    "ESP": 0.013605442176870748,
+    "BEL": 0.013605442176870748,
+    "NLD": 0.013605442176870748,
+    "TUR": 0.006802721088435374,
+    "CHE": 0.013605442176870748,
+    "SYR": 0.013605442176870748,
+    "AND": 0.013605442176870748,
+    "MDA": 0.013605442176870748,
+    "IND": 0.006802721088435374,
+    "ZAF": 0.006802721088435374,
+    "SVN": 0.013605442176870748,
+    "ASM": 0.027210884353741496,
+    "BIH": 0.013605442176870748,
+    "MNE": 0.013605442176870748,
+    "SLV": 0.006802721088435374,
+    "ISL": 0.013605442176870748,
+    "POL": 0.013605442176870748,
+    "JPN": 0.006802721088435374,
+    "ITA": 0.013605442176870748,
+    "UKR": 0.034013605442176874,
+    "DEU": 0.013605442176870748,
+    "ISR": 0.006802721088435374,
+    "HRV": 0.013605442176870748,
+    "CZE": 0.013605442176870748,
+    "AUT": 0.013605442176870748,
+    "MKD": 0.013605442176870748,
+    "UGA": 0.013605442176870748,
+    "DNK": 0.013605442176870748,
+    "GRC": 0.013605442176870748,
+    "IRL": 0.013605442176870748,
+    "NOR": 0.013605442176870748,
+    "PRT": 0.013605442176870748,
+    "FIN": 0.013605442176870748,
+    "LUX": 0.013605442176870748,
+    "LIE": 0.013605442176870748,
+    "CHN": 0.027210884353741496,
+    "FRA": 0.02040816326530612,
+    "ROU": 0.013605442176870748,
+    "USA": 0.16326530612244897,
+    "SAU": 0.013605442176870748,
+    "LTU": 0.013605442176870748,
+    "KIR": 0.006802721088435374,
+    "MYS": 0.006802721088435374,
+    "SVK": 0.013605442176870748,
+    "RUS": 0.04081632653061224,
+    "ALB": 0.02040816326530612,
+    "AIA": 0.006802721088435374,
+    "CYP": 0.013605442176870748,
+    "PNG": 0.013605442176870748,
+    "MLT": 0.013605442176870748,
+    "SWE": 0.013605442176870748,
+    "CMR": 0.006802721088435374,
+    "GBR": 0.034013605442176874,
+    "BGR": 0.013605442176870748
+  },
+  "TopEntitiesByCountry": {
+    "USA": [
+      {
+        "entity": "Trump",
+        "count": 24,
+        "share": 0.34782608695652173
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 14,
+        "share": 0.2028985507246377
+      },
+      {
+        "entity": "George Floyd",
+        "count": 5,
+        "share": 0.07246376811594203
+      },
+      {
+        "entity": "Putin",
+        "count": 5,
+        "share": 0.07246376811594203
+      },
+      {
+        "entity": "American",
+        "count": 5,
+        "share": 0.07246376811594203
+      },
+      {
+        "entity": "Chinese",
+        "count": 4,
+        "share": 0.057971014492753624
+      },
+      {
+        "entity": "Harvard",
+        "count": 3,
+        "share": 0.043478260869565216
+      },
+      {
+        "entity": "EU",
+        "count": 3,
+        "share": 0.043478260869565216
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 3,
+        "share": 0.043478260869565216
+      },
+      {
+        "entity": "Djokovic",
+        "count": 3,
+        "share": 0.043478260869565216
+      }
+    ],
+    "FRA": [
+      {
+        "entity": "French",
+        "count": 8,
+        "share": 0.16326530612244897
+      },
+      {
+        "entity": "Cannes Film Festival",
+        "count": 7,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "The Secret Agent",
+        "count": 7,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Cannes Festival",
+        "count": 6,
+        "share": 0.12244897959183673
+      },
+      {
+        "entity": "Wagner Moura",
+        "count": 6,
+        "share": 0.12244897959183673
+      },
+      {
+        "entity": "Kleber Mendon\u00e7a Filho",
+        "count": 4,
+        "share": 0.08163265306122448
+      },
+      {
+        "entity": "Kim Kardashian",
+        "count": 3,
+        "share": 0.061224489795918366
+      },
+      {
+        "entity": "Chinese",
+        "count": 3,
+        "share": 0.061224489795918366
+      },
+      {
+        "entity": "Trump",
+        "count": 3,
+        "share": 0.061224489795918366
+      },
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.04081632653061224
+      }
+    ],
+    "UGA": [
+      {
+        "entity": "British",
+        "count": 2,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "French",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "South Western Railways",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Labour",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Ty",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "R Tkachenko",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Vita",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Li Klitschko",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Volodymy",
+        "count": 1,
+        "share": 0.08333333333333333
+      }
+    ],
+    "RUS": [
+      {
+        "entity": "Trump",
+        "count": 6,
+        "share": 0.18181818181818182
+      },
+      {
+        "entity": "Putin",
+        "count": 5,
+        "share": 0.15151515151515152
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 5,
+        "share": 0.15151515151515152
+      },
+      {
+        "entity": "Hungarian",
+        "count": 3,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "EU",
+        "count": 3,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "German",
+        "count": 3,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 3,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.06060606060606061
+      },
+      {
+        "entity": "Western",
+        "count": 2,
+        "share": 0.06060606060606061
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.030303030303030304
+      }
+    ],
+    "GBR": [
+      {
+        "entity": "Trump",
+        "count": 5,
+        "share": 0.21739130434782608
+      },
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.08695652173913043
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.08695652173913043
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.08695652173913043
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.08695652173913043
+      },
+      {
+        "entity": "English",
+        "count": 2,
+        "share": 0.08695652173913043
+      },
+      {
+        "entity": "British",
+        "count": 2,
+        "share": 0.08695652173913043
+      },
+      {
+        "entity": "American",
+        "count": 2,
+        "share": 0.08695652173913043
+      },
+      {
+        "entity": "Vanguard News",
+        "count": 2,
+        "share": 0.08695652173913043
+      },
+      {
+        "entity": "The Fiji Times",
+        "count": 2,
+        "share": 0.08695652173913043
+      }
+    ],
+    "NGA": [
+      {
+        "entity": "Vanguard News",
+        "count": 8,
+        "share": 0.47058823529411764
+      },
+      {
+        "entity": "African",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Provincial Disaster Management Authority",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "PDMA",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Rescue",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "PD",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Ali",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "House of Assembly",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "APC",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Jimitota Onoyume",
+        "count": 1,
+        "share": 0.058823529411764705
+      }
+    ],
+    "DEU": [
+      {
+        "entity": "German",
+        "count": 12,
+        "share": 0.34285714285714286
+      },
+      {
+        "entity": "Merz",
+        "count": 5,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "DW",
+        "count": 3,
+        "share": 0.08571428571428572
+      },
+      {
+        "entity": "EU",
+        "count": 3,
+        "share": 0.08571428571428572
+      },
+      {
+        "entity": "mit",
+        "count": 2,
+        "share": 0.05714285714285714
+      },
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.05714285714285714
+      },
+      {
+        "entity": "Xi",
+        "count": 2,
+        "share": 0.05714285714285714
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 2,
+        "share": 0.05714285714285714
+      },
+      {
+        "entity": "Alexander Dobrindt",
+        "count": 2,
+        "share": 0.05714285714285714
+      },
+      {
+        "entity": "Nazi",
+        "count": 2,
+        "share": 0.05714285714285714
+      }
+    ],
+    "PSE": [
+      {
+        "entity": "Mohamad Hasan",
+        "count": 2,
+        "share": 0.15384615384615385
+      },
+      {
+        "entity": "Hamas",
+        "count": 2,
+        "share": 0.15384615384615385
+      },
+      {
+        "entity": "UN",
+        "count": 2,
+        "share": 0.15384615384615385
+      },
+      {
+        "entity": "mit",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "EU",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Trudeau",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Stephen Harper",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Asean",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Hasan",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Alaa Najjar",
+        "count": 1,
+        "share": 0.07692307692307693
+      }
+    ],
+    "ISR": [
+      {
+        "entity": "Alaa Al-Najjar",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Ham",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Di Al-Najjar",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Mohamad Hasan",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hamas",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "mit",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "EU",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Eurovision",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "German",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "IRN": [
+      {
+        "entity": "Jafar Panahi",
+        "count": 3,
+        "share": 0.21428571428571427
+      },
+      {
+        "entity": "Palme d'Or",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Cannes Festival",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "It Was Just",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Cannes",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Cannes Film Festival",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Nadia Melliti",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "French",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Yu",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "I Suzuki",
+        "count": 1,
+        "share": 0.07142857142857142
+      }
+    ],
+    "MMR": [
+      {
+        "entity": "DW",
+        "count": 1,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Yunus",
+        "count": 1,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Indigenous",
+        "count": 1,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Turaga",
+        "count": 1,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Ratu Nacanieli",
+        "count": 1,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "The Fiji Times",
+        "count": 1,
+        "share": 0.16666666666666666
+      }
+    ],
+    "SSD": [
+      {
+        "entity": "UN",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "UN Security Council",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Amnesty International",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "UKR": [
+      {
+        "entity": "Trump",
+        "count": 5,
+        "share": 0.15625
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 5,
+        "share": 0.15625
+      },
+      {
+        "entity": "EU",
+        "count": 4,
+        "share": 0.125
+      },
+      {
+        "entity": "Putin",
+        "count": 4,
+        "share": 0.125
+      },
+      {
+        "entity": "German",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.0625
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 2,
+        "share": 0.0625
+      },
+      {
+        "entity": "Merz",
+        "count": 2,
+        "share": 0.0625
+      },
+      {
+        "entity": "Xi",
+        "count": 2,
+        "share": 0.0625
+      }
+    ],
+    "MKD": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "EST": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "HUN": [
+      {
+        "entity": "Hungarian",
+        "count": 3,
+        "share": 0.17647058823529413
+      },
+      {
+        "entity": "EU",
+        "count": 3,
+        "share": 0.17647058823529413
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.058823529411764705
+      }
+    ],
+    "SRB": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "LVA": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "ROU": [
+      {
+        "entity": "Nicusor Dan",
+        "count": 3,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Nazi",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Holocaust",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Jewish",
+        "count": 1,
+        "share": 0.05555555555555555
+      }
+    ],
+    "DNK": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "GRC": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "IRL": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "NOR": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "SVN": [
+      {
+        "entity": "Donald Trump",
+        "count": 3,
+        "share": 0.1875
+      },
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.0625
+      }
+    ],
+    "ESP": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "BLR": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "PRT": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "An",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Chega",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.0625
+      }
+    ],
+    "FIN": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "BEL": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "NLD": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Dutch",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "WWI",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Jewish",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "BIH": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "MNE": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "CHE": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "World Cup",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Eurovision",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 1,
+        "share": 0.0625
+      }
+    ],
+    "LUX": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "POL": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Pro-EU",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Trzaskowski",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Donald Tusk",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "ISL": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "LIE": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "LTU": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "NATO",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Bundeswehr",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Armored Brigade 45",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "AND": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "MDA": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "SVK": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "ITA": [
+      {
+        "entity": "Donald Trump",
+        "count": 3,
+        "share": 0.17647058823529413
+      },
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "European",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.058823529411764705
+      }
+    ],
+    "ALB": [
+      {
+        "entity": "Trump",
+        "count": 3,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 3,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "American",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.05555555555555555
+      }
+    ],
+    "HRV": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "CYP": [
+      {
+        "entity": "EU",
+        "count": 3,
+        "share": 0.1875
+      },
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.0625
+      }
+    ],
+    "MLT": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "SWE": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "CZE": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "AUT": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "BGR": [
+      {
+        "entity": "Hungarian",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Hungarians",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nicusor Dan",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Nazi",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Sinti",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "PAK": [
+      {
+        "entity": "UN",
+        "count": 2,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Rescue",
+        "count": 2,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "IP",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "PS",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "IWT",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "United Nations",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Indus Waters Treaty",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Us",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Man Jadoon",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Arria Formula",
+        "count": 1,
+        "share": 0.08333333333333333
+      }
+    ],
+    "IND": [
+      {
+        "entity": "International Booker Prize",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Banu Mushtaq",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Kannada",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Rescue",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "NGC",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Sameer Rizvi",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Delhi Capitals",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Punjab",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Merz",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Xi",
+        "count": 1,
+        "share": 0.05555555555555555
+      }
+    ],
+    "JPN": [
+      {
+        "entity": "Gen Z",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Tianwen-2",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Near-Earth Asteroid",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Son Of",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "WWE",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Worlds Collide",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Saturday Night's Main Event",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Viking",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Triple A",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "CHN": [
+      {
+        "entity": "Trump",
+        "count": 4,
+        "share": 0.2222222222222222
+      },
+      {
+        "entity": "Xi",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Chinese",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Shein",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Harvard",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Merz",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "EU",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Tianwen-2",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Near-Earth Asteroid",
+        "count": 1,
+        "share": 0.05555555555555555
+      }
+    ],
+    "PNG": [
+      {
+        "entity": "Post Courier",
+        "count": 3,
+        "share": 0.23076923076923078
+      },
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.15384615384615385
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.15384615384615385
+      },
+      {
+        "entity": "American",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Western",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Rapa",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Wai Rapa",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Basil",
+        "count": 1,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Sam Basil Jr",
+        "count": 1,
+        "share": 0.07692307692307693
+      }
+    ],
+    "AIA": [
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Michel Tel\u00f3",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Cultural Virada",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Gen",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "SAU": [
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "FIFA Congress",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Infantino",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "World Cup",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "News24",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Young Mandelas",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Young Mandelas of the Future",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "OIC",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "UNIT",
+        "count": 1,
+        "share": 0.08333333333333333
+      }
+    ],
+    "PHL": [
+      {
+        "entity": "Indigenous Americans",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Indigenous",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Calderano",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "World Cup",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Hugo Calderano",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "World Table Tennis Championship",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Chinese",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Liang Jingkun",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Pope",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Leo",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "CMR": [
+      {
+        "entity": "Indigenous Americans",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Indigenous",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Malema",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ramaphosa",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Femi Fani-Kayode",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Cyril Ramaphosa",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "American",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Donald J",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Boer",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "SYR": [
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.18181818181818182
+      },
+      {
+        "entity": "German",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "ISIS",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Thomas Barrack",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Ahmed Al-Shara",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Ahmed Al-Sharaa",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Barrack",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Bashar Al-Assad",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Sharaa",
+        "count": 1,
+        "share": 0.09090909090909091
+      }
+    ],
+    "MOZ": [
+      {
+        "entity": "The Wizard of Oz",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Elton John",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Technicolor",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "VAT": [
+      {
+        "entity": "Pope",
+        "count": 3,
+        "share": 0.21428571428571427
+      },
+      {
+        "entity": "Catholic",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Pope Francis",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Sinner",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Leo Xiv",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Jannik Sinner",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Sin",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Oscar",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Papa Le\u00e3o",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Curia",
+        "count": 1,
+        "share": 0.07142857142857142
+      }
+    ],
+    "COL": [
+      {
+        "entity": "Leon Botstein",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "DW",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Humboldt University",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Son Of",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "WWE",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Worlds Collide",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Saturday Night's Main Event",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Viking",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Triple A",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Carabana",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "MHL": [
+      {
+        "entity": "NASA",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "ESA",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "PRK": [
+      {
+        "entity": "Haenyeo",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "South Korean Island",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Kim Jong Un",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Kim",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Provincial Disaster Management Authority",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "PDMA",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Rescue",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "PD",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ali",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "National News Agency",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "ZAF": [
+      {
+        "entity": "African",
+        "count": 2,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Day of Africa",
+        "count": 2,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Malema",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Ramaphosa",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Femi Fani-Kayode",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Cyril Ramaphosa",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "American",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Donald J",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Boer",
+        "count": 1,
+        "share": 0.08333333333333333
+      }
+    ],
+    "ASM": [
+      {
+        "entity": "Trump",
+        "count": 4,
+        "share": 0.23529411764705882
+      },
+      {
+        "entity": "Portland Thorns",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Con",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Thorns",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "American",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "US Steel-Nippon",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Apple",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "US Steel",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Nippon Steel",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "ean",
+        "count": 1,
+        "share": 0.058823529411764705
+      }
+    ],
+    "VNM": [
+      {
+        "entity": "American",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "Shein",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "D\u00edaz",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "Miguel D\u00edaz-Canel Berm\u00fadez",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "Embassy of the Socialist",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "Ran Duc Luong",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "D\u00edaz-Canel",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "D\u00edaz-Condo",
+        "count": 1,
+        "share": 0.125
+      }
+    ],
+    "BRA": [
+      {
+        "entity": "The Secret Agent",
+        "count": 6,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Wagner Moura",
+        "count": 5,
+        "share": 0.1388888888888889
+      },
+      {
+        "entity": "Kleber Mendon\u00e7a Filho",
+        "count": 4,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Cannes Festival",
+        "count": 4,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Cultural Virada",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Read More",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Lula",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Virada Cultural",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Cannes Film Festival",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Se",
+        "count": 2,
+        "share": 0.05555555555555555
+      }
+    ],
+    "CHL": [
+      {
+        "entity": "Gran Abuelo",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Judicial and National Police",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "PJ",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "PN",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "AUS": [
+      {
+        "entity": "Crow",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Eagles",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Crows",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "John",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "John Griffiths",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Chinese",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "National Archives of Australia",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "World War II",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Jordan",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Midnight Oil",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "HKG": [
+      {
+        "entity": "Lisa Rauch",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Shaw Brothers",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Shaw Foundation",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "GHA": [
+      {
+        "entity": "National Archives of Australia",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "World War II",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Tigres",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Gotham",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Concacaf W",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "igres",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Gotham FC",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "America",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "FIFA 2026 Women's Champions Cup",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "FIFA Women's Club World Cup",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "CAN": [
+      {
+        "entity": "Kay Rempel",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Marie Chipilski",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Trudeau",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Stephen Harper",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Canadian",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Canadians",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Jordan",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "M\u0101ori",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Pasifika",
+        "count": 1,
+        "share": 0.1111111111111111
+      }
+    ],
+    "KIR": [
+      {
+        "entity": "Ty",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "R Tkachenko",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Vita",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Li Klitschko",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Volodymy",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "R Zelenskyy",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Patrick Wintour",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "David Lammy",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "TUR": [
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "ISIS",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Thomas Barrack",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ahmed Al-Shara",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ahmed Al-Sharaa",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Barrack",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Bashar Al-Assad",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Sharaa",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "IS",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "IDN": [
+      {
+        "entity": "Chinese",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Li Qiang",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Prabowo Subianto",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "VEN": [
+      {
+        "entity": "Nico",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Maduro",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Omar Gonz\u00e1lez",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Mar\u00eda Corina Machado",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Teodoro Ventura Labegar",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Yu",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Dy Claribel Carela Cuevas",
+        "count": 1,
+        "share": 0.14285714285714285
+      }
+    ],
+    "ARG": [
+      {
+        "entity": "Maduro",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Omar Gonz\u00e1lez",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "DUBAI",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "The Eternaut\u201d",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Christian Cueva",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Emelec",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Hern\u00e1n Gal\u00edndez",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Hurricane",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "National",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Santiago Hidalgo",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "MYS": [
+      {
+        "entity": "Mohamad Hasan",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Sonexay Si",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Asean Summit",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "46th",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Asean",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Hasan",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Hamas",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "ean",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Tangkara",
+        "count": 1,
+        "share": 0.07142857142857142
+      }
+    ],
+    "BGD": [
+      {
+        "entity": "Yunus",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Garden Reach Shipbuilders and Engineers Ltd",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "GRSE",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ministry of Defence",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "The Hindu",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "National Stock Exchange of India Ltd",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "BSE Ltd",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Securities and Exchange Board of India",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Hasina",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Next Generation Corvette",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "SGP": [
+      {
+        "entity": "Shaw Brothers",
+        "count": 1,
+        "share": 0.5
+      },
+      {
+        "entity": "Shaw Foundation",
+        "count": 1,
+        "share": 0.5
+      }
+    ],
+    "KHM": [
+      {
+        "entity": "Jacob Sims",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "TCD": [
+      {
+        "entity": "Shane Ross",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Ruth",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "C6 Fest",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "DOM": [
+      {
+        "entity": "Mother's Day",
+        "count": 3,
+        "share": 0.2727272727272727
+      },
+      {
+        "entity": "Mark B",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Diana P\u00e9rez",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "God",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "SJM",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Redma",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "French",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Ne-S",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 0.09090909090909091
+      }
+    ],
+    "HTI": [
+      {
+        "entity": "Alterpresse",
+        "count": 2,
+        "share": 0.18181818181818182
+      },
+      {
+        "entity": "Jean H\u00e9nold Buteau",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "National Police in Haiti",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "PNH",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Itenhomme Innocent",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Kraze Bary\u00e8",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "SJM",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Redma",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Catholic",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Jean Willy Bel",
+        "count": 1,
+        "share": 0.09090909090909091
+      }
+    ],
+    "TWN": [
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Court of Human Rights",
+        "count": 1,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "WHO",
+        "count": 1,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Lai",
+        "count": 1,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "AIT",
+        "count": 1,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Qing Dynasty",
+        "count": 1,
+        "share": 0.16666666666666666
+      }
+    ],
+    "MEX": [
+      {
+        "entity": "Disney+",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Torres",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "igres",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Gotham FC",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Em",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Portland Thorns",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "More",
+        "count": 2,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Black Lions",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Jaiba Brava",
+        "count": 1,
+        "share": 0.058823529411764705
+      },
+      {
+        "entity": "Expansion League",
+        "count": 1,
+        "share": 0.058823529411764705
+      }
+    ],
+    "MCO": [
+      {
+        "entity": "Jos\u00e9 Luis Chanito Toledo Medina",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Richard Mille",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Playense",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Richard",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Toledo Medina",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "PRI",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Citizen Movement",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Chanito",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Formula 1",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Charles Leclerc",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "QAT": [
+      {
+        "entity": "American",
+        "count": 2,
+        "share": 0.18181818181818182
+      },
+      {
+        "entity": "Son Of",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "WWE",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Worlds Collide",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Saturday Night's Main Event",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Viking",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Triple A",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Carabana",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Chad Gable",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Alpha Academy",
+        "count": 1,
+        "share": 0.09090909090909091
+      }
+    ],
+    "CUB": [
+      {
+        "entity": "Son Of",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "WWE",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Worlds Collide",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Saturday Night's Main Event",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Viking",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Triple A",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Carabana",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Chad Gable",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Alpha Academy",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "VIKINGO",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "CRI": [
+      {
+        "entity": "Son Of",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "WWE",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Worlds Collide",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Saturday Night's Main Event",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Viking",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Triple A",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Carabana",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Chad Gable",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Alpha Academy",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "VIKINGO",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "DZA": [
+      {
+        "entity": "Nadia Melliti",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Cannes Festival",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "French",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Yu",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "I Suzuki",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Reno",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Fat",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ima Daas",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Melliti",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "English",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "GUY": [
+      {
+        "entity": "Denis Chabrol",
+        "count": 2,
+        "share": 0.2857142857142857
+      },
+      {
+        "entity": "Nico",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Johan Rockstr\u00f6m",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Oil Pollution Bill",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Anil Nandlall",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Oil Pollution Prevention, Preparedness",
+        "count": 1,
+        "share": 0.14285714285714285
+      }
+    ],
+    "SUR": [
+      {
+        "entity": "Bono",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "U2",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Santokhi",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Chan Santokhi",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ad",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Santokh",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "NDP",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ashwin Adhin",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Adhin",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Union of Suriname",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "PRI": [
+      {
+        "entity": "21st",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Itama",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "R Vieira Junior",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Ot",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "ECU": [
+      {
+        "entity": "Daniel Noboa",
+        "count": 2,
+        "share": 0.18181818181818182
+      },
+      {
+        "entity": "Noboa",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Save Ecuador",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "South American",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Christian Cueva",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Emelec",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Political Movement Citizen Revolution",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Luisa Gonz\u00e1lez",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Post Excandidata Presidential",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Hern\u00e1n Gal\u00edndez",
+        "count": 1,
+        "share": 0.09090909090909091
+      }
+    ],
+    "REU": [
+      {
+        "entity": "Reborn Babies",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "IMF",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "ISLAMA",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "International Monetary Fund",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Fund",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Nathan Porter",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Extended Fund Facility",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "EFF",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "RSF",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Nathan",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "ATA": [
+      {
+        "entity": "Lula",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Centr\u00e3o",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Ta",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Presidency",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "THA": [
+      {
+        "entity": "Thai",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "SWZ": [
+      {
+        "entity": "Provincial Disaster Management Authority",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "PDMA",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Rescue",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "PD",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Ali",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "ARE": [
+      {
+        "entity": "NMDC Energy",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Chinese",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ben Sul",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "FIA",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Sporting Code",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Federation Internationale de l\u2019Automobile",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "International Sporting Code",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Mohammed Ben Sulayem",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "UNTWO",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "PABF",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "NZL": [
+      {
+        "entity": "MetS",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "ANZ Tonga",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "MDF",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "David Dudley",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Nicolas Wolf",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Market Development Facility",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "ANZ Unlock",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Palladium Group",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "AN",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "New Zealand",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "SLV": [
+      {
+        "entity": "Isobel Hadley-Kamptz",
+        "count": 1,
+        "share": 0.5
+      },
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.5
+      }
+    ],
+    "SLE": [
+      {
+        "entity": "Barcelona",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Kazincbarcika",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Vasas",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "LAO": [
+      {
+        "entity": "Sonexay Si",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "46th",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Asean Summit",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "KWT": [
+      {
+        "entity": "Asean Summit",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Asena",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "46th",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "EGY": [
+      {
+        "entity": "RIYAD",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Cabinet",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Mostafa Madbouly",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Egyptian General Petroleum Corp.",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Egyptian Natural Gas Holding Co.",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "YEM": [
+      {
+        "entity": "Lufthansa",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Houthi",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Swiss",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Austrian Airlines",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Eurowings",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "ITA Airways",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Brussels Airlines",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Lufthansa Cargo",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Houthis",
+        "count": 1,
+        "share": 0.1111111111111111
+      }
+    ],
+    "BHS": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "PER": [
+      {
+        "entity": "University",
+        "count": 3,
+        "share": 0.2
+      },
+      {
+        "entity": "San Mart\u00edn",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Alianza Lima",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Regatas",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Partidazo",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Final Volleyball League",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Christian Cueva",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Cienciano",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "UTC",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Deportivo Garcilaso",
+        "count": 1,
+        "share": 0.06666666666666667
+      }
+    ],
+    "CPV": [
+      {
+        "entity": "Disney",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Me",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Ryl Streep",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Anne Hat",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Emily Blunt",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "BFA": [
+      {
+        "entity": "National Police",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Fada N",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "\u2019Gour",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "AAMCRE",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "APR-Sahel",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Association Peoples Resilient Sahel",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Peoples Resilient Sahel",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Post O",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "APR -Sahel",
+        "count": 1,
+        "share": 0.1111111111111111
+      }
+    ],
+    "NAM": [
+      {
+        "entity": "Indigenous",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Turaga",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Ratu Nacanieli",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "The Fiji Times",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "FJI": [
+      {
+        "entity": "The Fiji Times",
+        "count": 5,
+        "share": 0.35714285714285715
+      },
+      {
+        "entity": "Indigenous",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Turaga",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Ratu Nacanieli",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Deed of Cession",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "FI",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "HIV",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Sexual Reprod",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Dashika Balak",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Fiji Medical Association",
+        "count": 1,
+        "share": 0.07142857142857142
+      }
+    ],
+    "TON": [
+      {
+        "entity": "The Fiji Times",
+        "count": 2,
+        "share": 0.18181818181818182
+      },
+      {
+        "entity": "Indigenous",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Turaga",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Ratu Nacanieli",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Junior Bati",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Je",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Se Kuruduadua",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "ANZ Tonga",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "MDF",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "David Dudley",
+        "count": 1,
+        "share": 0.09090909090909091
+      }
+    ],
+    "PLW": [
+      {
+        "entity": "Team PNG",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Pacific Mini Games",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "2025",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Post Courier",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "ZMB": [
+      {
+        "entity": "Hakainde Hichilema",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "TUN": [
+      {
+        "entity": "Hanna",
+        "count": 1,
+        "share": 0.5
+      },
+      {
+        "entity": "Milu",
+        "count": 1,
+        "share": 0.5
+      }
+    ],
+    "JAM": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "KNA": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "ATG": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "VIR": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "BRB": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "GRD": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "DMA": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "LCA": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "VCT": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "TTO": [
+      {
+        "entity": "St. Lucia Times",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "NPL": [
+      {
+        "entity": "Contours of Change in",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Patricia Mccormick",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Sukra",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "SAFTA",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "ZWE": [
+      {
+        "entity": "Test",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "LBR": [
+      {
+        "entity": "MSC ELSA",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "IRQ": [
+      {
+        "entity": "FAO",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "TJK": [
+      {
+        "entity": "Vaisiddin Sa",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Tiger Gift\u201d",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "World Football Football Football",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "GNB": [
+      {
+        "entity": "DSP",
+        "count": 4,
+        "share": 0.19047619047619047
+      },
+      {
+        "entity": "An",
+        "count": 3,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Domingos Sim\u00f5es Pereira",
+        "count": 3,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "PAIGC",
+        "count": 2,
+        "share": 0.09523809523809523
+      },
+      {
+        "entity": "Guinea",
+        "count": 2,
+        "share": 0.09523809523809523
+      },
+      {
+        "entity": "Paulo Gomes",
+        "count": 2,
+        "share": 0.09523809523809523
+      },
+      {
+        "entity": "MCCI",
+        "count": 2,
+        "share": 0.09523809523809523
+      },
+      {
+        "entity": "Cabral",
+        "count": 1,
+        "share": 0.047619047619047616
+      },
+      {
+        "entity": "Triangle of Terror",
+        "count": 1,
+        "share": 0.047619047619047616
+      },
+      {
+        "entity": "Chitch",
+        "count": 1,
+        "share": 0.047619047619047616
+      }
+    ],
+    "GIN": [
+      {
+        "entity": "An",
+        "count": 3,
+        "share": 0.21428571428571427
+      },
+      {
+        "entity": "DSP",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Domingos Sim\u00f5es Pereira",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "APANHA",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "SE MAIS DE",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Lambe-Bota",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Bin Laden",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Al-Qaeda",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Isis",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "MCCI",
+        "count": 1,
+        "share": 0.07142857142857142
+      }
+    ],
+    "MAC": [
+      {
+        "entity": "DSP",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Domingos Sim\u00f5es Per",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "An",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ]
+  },
+  "topNer": "Trump"
+}

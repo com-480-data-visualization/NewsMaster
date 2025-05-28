@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import { 
-  importColorScale, exportColorScale, 
-  timeSeriesData, calculateGlobalAverage 
-} from '../../data/mapData';
+  importColorScale, exportColorScale,  
+} from '../../data/mapStyle';
 
 // Define entity structure
 interface EntityData {

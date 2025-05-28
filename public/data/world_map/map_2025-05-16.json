@@ -1,0 +1,560 @@
+{
+  "importData": {
+    "QAT": 0.056338028169014086,
+    "SRB": 0.014084507042253521,
+    "SSD": 0.014084507042253521,
+    "TUR": 0.028169014084507043,
+    "LBY": 0.014084507042253521,
+    "CHE": 0.014084507042253521,
+    "SYR": 0.08450704225352113,
+    "IND": 0.028169014084507043,
+    "COL": 0.014084507042253521,
+    "ZAF": 0.04225352112676056,
+    "SLV": 0.014084507042253521,
+    "POL": 0.014084507042253521,
+    "AUS": 0.014084507042253521,
+    "JPN": 0.014084507042253521,
+    "UKR": 0.08450704225352113,
+    "DEU": 0.014084507042253521,
+    "ISR": 0.11267605633802817,
+    "PSE": 0.07042253521126761,
+    "ARE": 0.014084507042253521,
+    "PAK": 0.028169014084507043,
+    "CAN": 0.014084507042253521,
+    "MEX": 0.028169014084507043,
+    "AFG": 0.014084507042253521,
+    "URY": 0.014084507042253521,
+    "RWA": 0.014084507042253521,
+    "CHN": 0.028169014084507043,
+    "FRA": 0.028169014084507043,
+    "SAU": 0.028169014084507043,
+    "IRN": 0.014084507042253521,
+    "RUS": 0.07042253521126761,
+    "GBR": 0.056338028169014086
+  },
+  "exportData": {
+    "USA": 1.0
+  },
+  "nerData": {
+    "QAT": 0.16,
+    "SRB": 0.04,
+    "SYR": 0.2,
+    "IND": 0.04,
+    "ZAF": 0.08,
+    "ARE": 0.04,
+    "PAK": 0.04,
+    "MEX": 0.04,
+    "AFG": 0.04,
+    "USA": 0.12,
+    "SAU": 0.08,
+    "GBR": 0.12
+  },
+  "TopEntitiesByCountry": {
+    "UKR": [
+      {
+        "entity": "Keir Starmer",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Eurovision",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Putin",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "TUR": [
+      {
+        "entity": "Putin",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "RUS": [
+      {
+        "entity": "Putin",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Grigory Melkonyants",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "State Media Report",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "GBR": [
+      {
+        "entity": "Trump",
+        "count": 3,
+        "share": 0.3
+      },
+      {
+        "entity": "Keir Starmer",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "El",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Sinaloa Cartel",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Infantino",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "FIFA",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ianni Infantino",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "World Cup",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "SYR": [
+      {
+        "entity": "Trump",
+        "count": 5,
+        "share": 0.5
+      },
+      {
+        "entity": "Ahmed Al-Shara",
+        "count": 2,
+        "share": 0.2
+      },
+      {
+        "entity": "Bashar Al-Assad",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Al Qaeda",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
+    "USA": [
+      {
+        "entity": "Trump",
+        "count": 3,
+        "share": 0.25
+      },
+      {
+        "entity": "Bashar Al-Assad",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Eric Lipton",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "The New York Times",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "El",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Sinaloa Cartel",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Afrikaners",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Cyril Ramaphosa",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Ahmed Al-Shara",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Al Qaeda",
+        "count": 1,
+        "share": 0.08333333333333333
+      }
+    ],
+    "PSE": [
+      {
+        "entity": "Hamas",
+        "count": 3,
+        "share": 0.375
+      },
+      {
+        "entity": "Health Ministry",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "Palestine",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "Mi",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "litant",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "Muhammad Sinwar",
+        "count": 1,
+        "share": 0.125
+      }
+    ],
+    "ISR": [
+      {
+        "entity": "Hamas",
+        "count": 4,
+        "share": 0.4444444444444444
+      },
+      {
+        "entity": "Muhammad Sinwar",
+        "count": 2,
+        "share": 0.2222222222222222
+      },
+      {
+        "entity": "Health Ministry",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Mi",
+        "count": 1,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "litant",
+        "count": 1,
+        "share": 0.1111111111111111
+      }
+    ],
+    "FRA": [
+      {
+        "entity": "G\u00e9rard Depardieu",
+        "count": 1,
+        "share": 0.5
+      },
+      {
+        "entity": "French",
+        "count": 1,
+        "share": 0.5
+      }
+    ],
+    "CAN": [
+      {
+        "entity": "Wildfire",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "JPN": [
+      {
+        "entity": "Saou Ichikawa",
+        "count": 1,
+        "share": 0.5
+      },
+      {
+        "entity": "Hunchback",
+        "count": 1,
+        "share": 0.5
+      }
+    ],
+    "COL": [
+      {
+        "entity": "Harvard",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Magna Carta",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "British",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Harvard Law School",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "CHN": [
+      {
+        "entity": "Fu Zai",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "QAT": [
+      {
+        "entity": "Trump",
+        "count": 4,
+        "share": 0.36363636363636365
+      },
+      {
+        "entity": "Eric Lipton",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "The New York Times",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Ahmed Al-Shara",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Infantino",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "FIFA",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Ianni Infantino",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "World Cup",
+        "count": 1,
+        "share": 0.09090909090909091
+      }
+    ],
+    "ARE": [
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Eric Lipton",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "The New York Times",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "SAU": [
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.4
+      },
+      {
+        "entity": "Eric Lipton",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "The New York Times",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Western",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "SRB": [
+      {
+        "entity": "Trump-Ku",
+        "count": 1,
+        "share": 0.5
+      },
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.5
+      }
+    ],
+    "ZAF": [
+      {
+        "entity": "Trump",
+        "count": 2,
+        "share": 0.4
+      },
+      {
+        "entity": "Trump\u2019s Embrace of",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Afrikaners",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Cyril Ramaphosa",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "MEX": [
+      {
+        "entity": "Valeria M\u00e1rquez",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "TikTok",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vale",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Ria M\u00e1rquez",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "El",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Sinaloa Cartel",
+        "count": 1,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 0.14285714285714285
+      }
+    ],
+    "URY": [
+      {
+        "entity": "Pepe Mujica",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "PAK": [
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "IND": [
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "AUS": [
+      {
+        "entity": "Rohan Dennis",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Roh",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "An Dennis",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Melissa Hoskins",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Olympian",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "IRN": [
+      {
+        "entity": "Arab",
+        "count": 1,
+        "share": 0.5
+      },
+      {
+        "entity": "American",
+        "count": 1,
+        "share": 0.5
+      }
+    ],
+    "AFG": [
+      {
+        "entity": "Trump",
+        "count": 1,
+        "share": 1.0
+      }
+    ]
+  },
+  "topNer": "Trump"
+}

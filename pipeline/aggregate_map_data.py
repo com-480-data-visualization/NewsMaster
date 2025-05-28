@@ -1,5 +1,6 @@
 import json
 import os
+import re
 from datetime import datetime, timedelta
 from collections import defaultdict, Counter
 import pycountry
@@ -165,6 +166,34 @@ def load_providers_map():
     print(f"Processed provider map: {len(provider_country_map)} entries")
     return provider_country_map
 
+def sanitize_entity_name(entity: str) -> str:
+    """Sanitize entity name for use in filenames."""
+    return re.sub(r'[^a-z0-9]', '_', entity.lower())
+
+def check_article_mentions_entity(ner_list, target_entity: str) -> bool:
+    """Check if an article mentions the target entity."""
+    if not isinstance(ner_list, list):
+        return False
+    
+    target_entity_lower = target_entity.lower()
+    
+    for entity in ner_list:
+        if not isinstance(entity, dict):
+            continue
+            
+        entity_name = entity.get("entity", "").lower()
+        entity_label = entity.get("label", "")
+        
+        # Check if the entity matches our target entity
+        # We look for exact matches or partial matches for multi-word entities
+        if (entity_label in ["PER", "ORG", "MISC"] and 
+            (entity_name == target_entity_lower or 
+             target_entity_lower in entity_name or 
+             entity_name in target_entity_lower)):
+            return True
+    
+    return False
+
 def process_article_entities(ner_list):
     """Entity processing for a single article."""
     location_entities = []
@@ -172,10 +201,7 @@ def process_article_entities(ner_list):
     
     if not isinstance(ner_list, list):
         return location_entities, other_entities
-    
 
-    location_names = []
-    
     for entity in ner_list:
         if not isinstance(entity, dict):
             continue
@@ -183,36 +209,67 @@ def process_article_entities(ner_list):
         entity_name = entity.get("entity", "")
         entity_label = entity.get("label", "")
         
+        if not entity_name:
+            continue
+            
         if entity_label == "LOC":
-            location_names.append(entity_name)
-        elif entity_label in ["PER", "ORG"]:
-            clean_name = entity_name.strip()
-            if clean_name and len(clean_name) > 1:
-                other_entities.append(clean_name)
-    
-    for location_name in location_names:
-        country_code = get_country_code_for_location(location_name)
-        if country_code:
-            if isinstance(country_code, tuple):
-                list(country_code).map(lambda code: location_entities.append((code, location_name)))
-            else:
-                location_entities.append((country_code, location_name))
+            country_code = get_country_code_for_location(entity_name)
+            if country_code:
+                if isinstance(country_code, str):
+                    location_entities.append((country_code, entity_name))
+                elif isinstance(country_code, tuple):
+                    for code in country_code:
+                        location_entities.append((code, entity_name))
+        elif entity_label in ["PER", "ORG", "MISC"]:
+            other_entities.append(entity_name)
     
     return location_entities, other_entities
 
-# --- Main Processing Function ---
-
-
-def process_files_for_range(time_range_str: str):
+def process_article_entities_locations_only(ner_list):
     """
-    Aggregates NER data into an import and export metric for each country.
+    Process NER list and return only location entities with their country codes.
     
     Args:
-        time_range_str: The time range to process.
+        ner_list: List of NER entities from article
+        
     Returns:
-        A dictionary containing the import and export data for each country, as well as the top entities for each country.
+        List of tuples (country_code, entity_name) for location entities
     """
-    dates = get_dates_for_range(time_range_str)
+    location_entities = []
+    
+    if not isinstance(ner_list, list):
+        return location_entities
+
+    for entity in ner_list:
+        if not isinstance(entity, dict):
+            continue
+            
+        entity_name = entity.get("entity", "")
+        entity_label = entity.get("label", "")
+        
+        if not entity_name or entity_label != "LOC":
+            continue
+            
+        country_code = get_country_code_for_location(entity_name)
+        if country_code:
+            if isinstance(country_code, str):
+                location_entities.append((country_code, entity_name))
+            elif isinstance(country_code, tuple):
+                for code in country_code:
+                    location_entities.append((code, entity_name))
+    
+    return location_entities
+
+def process_single_date(date_str: str):
+    """
+    Process articles for a single date and return aggregated data.
+    
+    Args:
+        date_str: Date string in DD.MM.YYYY format
+        
+    Returns:
+        Dictionary containing importData, exportData, nerData, TopEntitiesByCountry, topNer
+    """
     import_counts = defaultdict(int)
     export_counts = defaultdict(int)
     total_imports = 0
@@ -220,79 +277,100 @@ def process_files_for_range(time_range_str: str):
     
     # Track entities relevant to each country
     country_related_entities = defaultdict(Counter)
+    
+    # Track all NER entities for the day
+    global_ner_counter = Counter()
+    
+    # Track NER entities by country
+    country_ner_entities = defaultdict(Counter)
 
     # Load providers once
     provider_country_map = load_providers_map()
     if not provider_country_map:
-        return {"importData": {}, "exportData": {}, "countryEntities": {}}
+        return {
+            "importData": {},
+            "exportData": {},
+            "nerData": {},
+            "TopEntitiesByCountry": {},
+            "topNer": ""
+        }
 
-    # Process statistics
-    print(f"Processing data for {time_range_str} ({len(dates)} dates)...")
+    articles_file_path = os.path.join(DATA_ROOT_DIR, date_str, "articles.json")
+    if not os.path.exists(articles_file_path):
+        print(f"No data file for {date_str}")
+        return {
+            "importData": {},
+            "exportData": {},
+            "nerData": {},
+            "TopEntitiesByCountry": {},
+            "topNer": ""
+        }
+
+    print(f"Processing data for {date_str}...")
     processed_article_count = 0
     skipped_articles_no_country = 0
 
-    for date_str in dates:
-        articles_file_path = os.path.join(DATA_ROOT_DIR, date_str, "articles.json")
-        if not os.path.exists(articles_file_path):
-            continue
+    try:
+        with open(articles_file_path, 'r', encoding='utf-8') as f:
+            daily_data = json.load(f)
 
-        try:
-            with open(articles_file_path, 'r', encoding='utf-8') as f:
-                daily_data = json.load(f)
+        articles = daily_data.get("data", [])
 
-            articles = daily_data.get("data", [])
+        for article in articles:
+            processed_article_count += 1
+            source_provider_id = article.get("providerId", "").lower()
+            source_country_code = provider_country_map.get(source_provider_id)
 
-            for article in articles:
-                processed_article_count += 1
-                source_provider_id = article.get("providerId", "").lower()
-                source_country_code = provider_country_map.get(source_provider_id)
+            if not source_country_code:
+                skipped_articles_no_country += 1
+                continue
 
-                if not source_country_code:
-                    skipped_articles_no_country += 1
-                    continue
+            ner_list = article.get("ner", [])
+            location_entities, other_entities = process_article_entities(ner_list)
+            
+            # Skip if no countries are mentioned
+            if not location_entities:
+                continue
+            
+            # Get unique country codes
+            mentioned_country_codes = {loc[0] for loc in location_entities}
+            
+            # Process imports and exports
+            for mentioned_code in mentioned_country_codes:
+                if mentioned_code != source_country_code:
+                    import_counts[mentioned_code] += 1
+                    total_imports += 1
+                    export_counts[source_country_code] += 1
+                    total_exports += 1
+            
+            # Associate entities with countries
+            for country_code in mentioned_country_codes:
+                entity_counter = country_related_entities[country_code]
+                ner_counter = country_ner_entities[country_code]
+                for entity in other_entities:
+                    entity_counter[entity] += 1
+                    ner_counter[entity] += 1
+                    global_ner_counter[entity] += 1
 
-                ner_list = article.get("ner", [])
-                location_entities, other_entities = process_article_entities(ner_list)
-                
-                # Skip if no countries are mentioned
-                if not location_entities:
-                    continue
-                
-                # Get unique country codes
-                mentioned_country_codes = {loc[0] for loc in location_entities}
-                
-                # Process imports and exports
-                for mentioned_code in mentioned_country_codes:
-                    if mentioned_code != source_country_code:
-                        import_counts[mentioned_code] += 1
-                        total_imports += 1
-                        export_counts[source_country_code] += 1
-                        total_exports += 1
-                
-                # Associate entities with countries
-                for country_code in mentioned_country_codes:
-                    entity_counter = country_related_entities[country_code]
-                    for entity in other_entities:
-                        entity_counter[entity] += 1
+    except (json.JSONDecodeError, Exception) as e:
+        print(f"ERROR processing {articles_file_path}: {e}")
 
-        except (json.JSONDecodeError, Exception) as e:
-            print(f"ERROR processing {articles_file_path}: {e}")
-
-    print(f"Finished processing. Total articles: {processed_article_count}")
+    print(f"Processed {processed_article_count} articles for {date_str}")
     if skipped_articles_no_country > 0:
         print(f"Warning: Skipped {skipped_articles_no_country} articles due to unknown provider country.")
-    print(f"Total imports: {total_imports}, Total exports: {total_exports}")
 
-    # Normalize data depending on the total number of imports and exports
+    # Normalize data
+    all_codes = set(COUNTRY_CODE_TO_NAME.keys())
+    
     if total_imports > 0:
-        normalized_import_data = {country: count / total_imports for country, count in import_counts.items()}
+        normalized_import_data = {code: import_counts.get(code, 0) / total_imports for code in all_codes}
     else:
-        normalized_import_data = {}
+        normalized_import_data = {code: 0 for code in all_codes}
         
     if total_exports > 0:
-        normalized_export_data = {country: count / total_exports for country, count in export_counts.items()}
+        normalized_export_data = {code: export_counts.get(code, 0) / total_exports for code in all_codes}
     else:
-        normalized_export_data = {}
+        normalized_export_data = {code: 0 for code in all_codes}
 
     # Process top entities for each country
     country_top_entities = {}
@@ -313,39 +391,111 @@ def process_files_for_range(time_range_str: str):
                 ]
                 country_top_entities[country] = formatted_top_10
 
-    # Ensure all countries are present
-    all_codes = set(COUNTRY_CODE_TO_NAME.keys())
-    final_import = {code: normalized_import_data.get(code, 0) for code in all_codes}
-    final_export = {code: normalized_export_data.get(code, 0) for code in all_codes}
+    # Get top global NER entity first
+    top_ner = ""
+    if global_ner_counter:
+        top_ner = global_ner_counter.most_common(1)[0][0]
+
+    # Process NER data - how much each country talks about the top NER entity
+    ner_data = {}
+    if top_ner:
+        # Count how much each country mentions the top NER entity
+        top_ner_by_country = {}
+        total_top_ner_mentions = 0
+        
+        for country_code in all_codes:
+            if country_code in country_ner_entities:
+                count = country_ner_entities[country_code].get(top_ner, 0)
+                top_ner_by_country[country_code] = count
+                total_top_ner_mentions += count
+            else:
+                top_ner_by_country[country_code] = 0
+        
+        # Normalize the counts
+        if total_top_ner_mentions > 0:
+            ner_data = {code: count / total_top_ner_mentions for code, count in top_ner_by_country.items()}
+        else:
+            ner_data = {code: 0 for code in all_codes}
+    else:
+        # No top NER entity, set all to 0
+        ner_data = {code: 0 for code in all_codes}
 
     return {
-        "importData": final_import, 
-        "exportData": final_export,
-        "countryEntities": country_top_entities
+        "importData": normalized_import_data,
+        "exportData": normalized_export_data,
+        "nerData": ner_data,
+        "TopEntitiesByCountry": country_top_entities,
+        "topNer": top_ner
     }
 
-# --- Main Execution ---
+# --- Main Execution Functions ---
 
 def main():
-    """Runs the aggregation for all time ranges and saves the results."""
+    """Runs the aggregation for all dates and saves the results in daily files."""
+    # Get dates for the last 30 days to include all recent data
     time_ranges = ["today", "7days", "30days"]
+    all_dates = set()
+    
+    # Collect all unique dates from all time ranges
+    for tr_str in time_ranges:
+        dates = get_dates_for_range(tr_str)
+        all_dates.update(dates)
     
     print(f"Output directory set to: {OUTPUT_DIR}")
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-    for tr_str in time_ranges:
-        print(f"\n--- Aggregating data for: {tr_str} ---")
-        aggregated_data = process_files_for_range(tr_str)
-        output_file_path = os.path.join(OUTPUT_DIR, f"map_data_{tr_str}.json")
+    
+    # Process each date individually
+    for date_str in sorted(all_dates, reverse=True):  # Most recent first
+        print(f"\n--- Processing date: {date_str} ---")
+        
+        # Convert DD.MM.YYYY to YYYY-MM-DD for filename
+        day, month, year = date_str.split('.')
+        file_date = f"{year}-{month.zfill(2)}-{day.zfill(2)}"
+        
+        # Process this date
+        date_data = process_single_date(date_str)
+        
+        # Filter out 0 values to reduce file size
+        filtered_data = {
+            "importData": {k: v for k, v in date_data["importData"].items() if v > 0},
+            "exportData": {k: v for k, v in date_data["exportData"].items() if v > 0},
+            "nerData": {k: v for k, v in date_data["nerData"].items() if v > 0},
+            "TopEntitiesByCountry": date_data["TopEntitiesByCountry"],  # Keep as is
+            "topNer": date_data["topNer"]  # Keep as is
+        }
+        
+        # Save this date's data to its own file
+        output_file_path = os.path.join(OUTPUT_DIR, f"map_{file_date}.json")
         
         try:
             with open(output_file_path, 'w', encoding='utf-8') as f:
-                json.dump(aggregated_data, f, indent=2)
-            print(f"Successfully wrote aggregated data to {output_file_path}")
+                json.dump(filtered_data, f, indent=2)
+            print(f"Successfully wrote {file_date} data to {output_file_path}")
+            
+            # Show file size for monitoring
+            file_size = os.path.getsize(output_file_path)
+            if file_size > 1024:
+                print(f"File size: {file_size // 1024}KB")
+            else:
+                print(f"File size: {file_size}B")
+                
         except Exception as e:
             print(f"ERROR: Failed to write output file {output_file_path}: {e}")
+    
+    print(f"\nTotal days processed: {len(all_dates)}")
+    print("Daily files created successfully!")
+
+def aggregate_ner_data():
+    """This function is kept for compatibility but now calls the main function."""
+    print("NER data is now included in the main aggregation process.")
+    pass
+
+# Function for compatibility with main pipeline
+def aggregate_map_data():
+    """Wrapper function to be called from the main pipeline."""
+    main()
 
 if __name__ == "__main__":
-    print("Starting optimized map data aggregation...")
+    print("Starting consolidated map data aggregation...")
     main()
     print("\nMap data aggregation finished.")

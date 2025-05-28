@@ -1,31 +1,18 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as d3 from 'd3';
-import type { Feature, GeoJSON } from 'geojson';
-import { importColorScale, exportColorScale, strokeColor, highlightColor } from '../../data/mapData';
-
-type Country = {
-  id: string;
-  name: string;
-  properties: any;
-};
+import type { GeoJSON } from 'geojson';
 
 type Props = {
-  mode: 'import' | 'export';
+  colorScale: (value: number) => string;
+  strokeColor: string;
+  highlightColor: string;
   data: Record<string, number>;
   setSelectedCountry: (country: string | null) => void;
   setHoveredCountry: (country: { id: string; name: string; position: { x: number; y: number } } | null) => void;
 };
 
-// Type for GeoJSON feature properties
-interface CountryFeature extends Feature {
-  id: string;
-  properties: {
-    name: string;
-    [key: string]: any;
-  };
-}
 
-const WorldMap: React.FC<Props> = ({ mode, data, setSelectedCountry, setHoveredCountry }) => {
+const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, data, setSelectedCountry, setHoveredCountry }) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const [mapInitialized, setMapInitialized] = useState(false);
 
@@ -131,11 +118,11 @@ const WorldMap: React.FC<Props> = ({ mode, data, setSelectedCountry, setHoveredC
         });
       
       // Initial coloring of countries
-      updateMapColors(mapGroup, mode, data);
+      updateMapColors(mapGroup, colorScale, data);
       setMapInitialized(true);
     });
     
-  }, [mapInitialized, setHoveredCountry, setSelectedCountry]);
+  }, [mapInitialized, setHoveredCountry, setSelectedCountry, strokeColor, highlightColor, colorScale]);
 
   // Update map colors when mode or data changes
   useEffect(() => {
@@ -143,18 +130,16 @@ const WorldMap: React.FC<Props> = ({ mode, data, setSelectedCountry, setHoveredC
     
     const svg = d3.select(svgRef.current);
     const mapGroup = svg.select("g");
-    updateMapColors(mapGroup, mode, data);
+    updateMapColors(mapGroup, colorScale, data);
     
-  }, [mode, data, mapInitialized]);
+  }, [colorScale, data, mapInitialized]);
 
   // Helper function to update map colors
   const updateMapColors = (
     mapGroup: d3.Selection<any, unknown, null, undefined>, 
-    mode: 'import' | 'export', 
+    colorScale: (value: number) => string, 
     currentData: Record<string, number>
   ) => {
-    const colorScale = mode === 'import' ? importColorScale : exportColorScale;
-    
     mapGroup.selectAll("path")
       .attr("fill", (d: any) => {
         const id = d.id;
@@ -166,7 +151,7 @@ const WorldMap: React.FC<Props> = ({ mode, data, setSelectedCountry, setHoveredC
     <svg 
       ref={svgRef} 
       width="100%" 
-      height="650" 
+      height="500" 
       viewBox="0 0 960 500" 
       className="mx-auto"
     />

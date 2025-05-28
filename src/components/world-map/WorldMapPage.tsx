@@ -5,14 +5,8 @@ import GlobalRankings from './GlobalRankings';
 import { ImportExportToggle } from './ImportExportToggle';
 
 import TimeRangeToggle, { type TimeRange } from './TimeRangeToggle';
-import { importColorScale, exportColorScale, countryNameMap } from '../../data/mapData';
-import { loadAggregatedData } from '../../data/dataLoader';
-
-// Define structure for loaded data state
-interface MapData {
-  importData: Record<string, number>;
-  exportData: Record<string, number>;
-}
+import { createImportColorScale, createExportColorScale, strokeColor, highlightColor } from '../../data/mapStyle';
+import { loadAggregatedData, type MapData } from '../../data/dataLoader';
 
 const WorldMapPage: React.FC = () => {
   // State management
@@ -21,11 +15,40 @@ const WorldMapPage: React.FC = () => {
   const [timeRange, setTimeRange] = useState<TimeRange>('7days');
   const [mapData, setMapData] = useState<MapData | null>(null); // State for loaded data
   const [isLoading, setIsLoading] = useState<boolean>(true); // Loading state
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
   const [hoveredCountry, setHoveredCountry] = useState<{
     id: string;
     name: string;
     position: { x: number; y: number }
   } | null>(null);
+
+  // Detect theme changes
+  useEffect(() => {
+    const checkTheme = () => {
+      setIsDarkMode(document.documentElement.classList.contains('dark'));
+    };
+    
+    // Check initial theme
+    checkTheme();
+    
+    // Listen for theme changes
+    const observer = new MutationObserver(checkTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+    
+    return () => observer.disconnect();
+  }, []);
+
+  // Create theme-aware color scales
+  const importColorScale = React.useMemo(() => {
+    return createImportColorScale(isDarkMode);
+  }, [isDarkMode]);
+
+  const exportColorScale = React.useMemo(() => {
+    return createExportColorScale(isDarkMode);
+  }, [isDarkMode]);
 
   // Get highest and lowest media attention countries
   const getExtremeCountries = (data: Record<string, number>) => {
@@ -78,7 +101,7 @@ const WorldMapPage: React.FC = () => {
       importColorScale.domain([0, maxImport || 0.001]);
       exportColorScale.domain([0, maxExport || 0.001]);
     }
-  }, [mapData]); // Update when mapData changes
+  }, [mapData, importColorScale, exportColorScale]); // Update when mapData or scales change
 
   const { highest, lowest } = getExtremeCountries(currentData);
 
@@ -124,7 +147,7 @@ const WorldMapPage: React.FC = () => {
                     : exportColorScale(highest.value)) : 'transparent' // Handle no highest country
                   }}
                 ></div>
-                <span className="font-medium">{countryNameMap[highest.id] || highest.id || 'N/A'}</span>
+                <span className="font-medium">{highest.id || 'N/A'}</span>
                 <span className="ml-2 text-sm text-muted-foreground">
                   {highest.id ? `(${(highest.value * 100).toFixed(1)}%)` : ''} {/* Assuming value is proportion 0-1 */}
                 </span>
@@ -140,7 +163,7 @@ const WorldMapPage: React.FC = () => {
                     : exportColorScale(lowest.value)) : 'transparent' // Handle no lowest country
                   }}
                 ></div>
-                <span className="font-medium">{countryNameMap[lowest.id] || lowest.id || 'N/A'}</span>
+                <span className="font-medium">{lowest.id || 'N/A'}</span>
                 <span className="ml-2 text-sm text-muted-foreground">
                   {lowest.id ? `(${(lowest.value * 100).toFixed(1)}%)` : ''} {/* Assuming value is proportion 0-1 */}
                 </span>
@@ -169,7 +192,11 @@ const WorldMapPage: React.FC = () => {
               <div className="text-xs text-muted-foreground">0%</div>
               <div className="text-xs text-muted-foreground">
                 {/* Display the max value from the current scale domain */}
-                {( (mode === 'import' ? importColorScale.domain()[1] : exportColorScale.domain()[1]) * 100).toFixed(1) }
+                {(() => {
+                  const currentScale = mode === 'import' ? importColorScale : exportColorScale;
+                  const domainValues = currentScale.domain() as [number, number];
+                  return (domainValues[1] * 100).toFixed(1);
+                })()}
                 %
               </div>
             </div>
@@ -182,7 +209,9 @@ const WorldMapPage: React.FC = () => {
         <div className="p-4 border rounded-lg bg-card shadow-lg">
           <div className="relative">
             <WorldMap 
-              mode={mode} 
+              colorScale={mode === 'import' ? importColorScale : exportColorScale}
+              strokeColor={strokeColor[isDarkMode ? 1 : 0]} // Dynamic theme-based stroke color
+              highlightColor={highlightColor[isDarkMode ? 1 : 0]} // Dynamic theme-based highlight color
               setSelectedCountry={setSelectedCountry} 
               setHoveredCountry={setHoveredCountry} 
               data={currentData} // Pass the dynamically loaded data
