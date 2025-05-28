@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import ForceGraph3D from 'react-force-graph-3d';
-import type { NodeObject, LinkObject } from 'react-force-graph-3d'; // Use type-only import
+import type { NodeObject, LinkObject } from 'react-force-graph-3d';
 import Select from 'react-select';
-import * as THREE from 'three'; // Import THREE for sprite-based labels
-import { Button } from '@/components/ui/button'; // Import Button
-import { MaximizeIcon, MinimizeIcon } from 'lucide-react'; // Import icons
+import * as THREE from 'three';
+import { Button } from '@/components/ui/button';
+import { MaximizeIcon, MinimizeIcon } from 'lucide-react';
 import { formatDistanceToNow, parseISO } from 'date-fns';
 
 interface NerEntity {
@@ -30,20 +30,16 @@ interface NetworkData {
     data: Article[];
 }
 
-// Extend NodeObject from react-force-graph-3d to include our custom properties
 interface CustomNodeObject extends NodeObject {
-    id: string; // Ensure id is always string
+    id: string;
     label: string;
     degree?: number;
-    // color property is added by react-force-graph when nodeAutoColorBy is used
     color?: string;
-    // val property is added by react-force-graph when nodeVal is used
-    __threeObj?: THREE.Object3D; // Internal property used by the library
+    __threeObj?: THREE.Object3D;
 }
-// Extend LinkObject similarly
 interface CustomLinkObject extends LinkObject {
-    source: string | number | CustomNodeObject; // Keep original flexibility but expect CustomNodeObject in callbacks
-    target: string | number | CustomNodeObject; // Keep original flexibility but expect CustomNodeObject in callbacks
+    source: string | number | CustomNodeObject;
+    target: string | number | CustomNodeObject;
     articles: string[];
 }
 
@@ -62,10 +58,9 @@ const KeywordNetwork: React.FC = () => {
     const [selectedLabels, setSelectedLabels] = useState<SelectOption[]>([]);
     const [allLabels, setAllLabels] = useState<SelectOption[]>([]);
     const [isClient, setIsClient] = useState(false);
-    const [isPlainScreen, setIsPlainScreen] = useState(false); // State for plain screen mode
-    const [showVisualization, setShowVisualization] = useState(false); // State to control if visualization is shown
+    const [isPlainScreen, setIsPlainScreen] = useState(false);
+    const [showVisualization, setShowVisualization] = useState(false);
     const [selectedDate, setSelectedDate] = useState<string>(() => {
-        // Default to today's date in yyyy-mm-dd format
         const today = new Date();
         return today.toISOString().slice(0, 10);
     });
@@ -73,17 +68,15 @@ const KeywordNetwork: React.FC = () => {
     const [linkDetails, setLinkDetails] = useState<CustomLinkObject | null>(null);
     const [articleDetails, setArticleDetails] = useState<Article[]>([]);
     const [showLinkDialog, setShowLinkDialog] = useState(false);
-    const [isLoading, setIsLoading] = useState(false); // State for loading indicator
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         setIsClient(true);
     }, []);
 
-    // Function to load articles data
     const loadArticlesData = (limitTo100: boolean = false) => {
         setIsLoading(true);
         setFetchError(null);
-        // Format date as DD.MM.YYYY for the path
         const [year, month, day] = selectedDate.split('-');
         const formattedDate = `${day}.${month}.${year}`;
         const jsonPath = `/data/${formattedDate}/articles.json`;
@@ -96,21 +89,18 @@ const KeywordNetwork: React.FC = () => {
                 return response.json();
             })
             .then((data: NetworkData) => {
-                // Limit to first 100 articles if requested
                 const processedData = limitTo100 ? {
                     ...data,
                     data: data.data.slice(0, 100)
                 } : data;
 
                 setNetworkData(processedData);
-                // Extract all unique NER labels for the select options
                 const labels = new Set<string>();
                 processedData.data.forEach(article => {
                     article.ner.forEach(entity => labels.add(entity.label));
                 });
                 setAllLabels(Array.from(labels).sort().map(label => ({ value: label, label })));
 
-                // Show visualization in plain screen mode
                 setShowVisualization(true);
                 setIsPlainScreen(true);
                 setIsLoading(false);
@@ -127,33 +117,26 @@ const KeywordNetwork: React.FC = () => {
         if (!networkData) return { nodes: [], links: [] };
 
         const nodesMap = new Map<string, CustomNodeObject>();
-        const links: CustomLinkObject[] = []; // Use CustomLinkObject here
+        const links: CustomLinkObject[] = [];
         const activeLabels = new Set(selectedLabels.map(opt => opt.value));
-        const nodeDegrees = new Map<string, number>(); // Map to store node degrees
+        const nodeDegrees = new Map<string, number>();
 
         networkData.data.forEach(article => {
             const articleEntities = article.ner
                 .filter(entity => activeLabels.size === 0 || activeLabels.has(entity.label));
 
-            // Add nodes
             articleEntities.forEach(entity => {
                 if (!nodesMap.has(entity.entity)) {
-                    // Initialize degree to 0 when adding the node
-                    // Ensure id is string and other properties match CustomNodeObject
                     nodesMap.set(entity.entity, { id: entity.entity, label: entity.label, degree: 0 });
                 }
             });
 
-            // Add links and update degrees
             for (let i = 0; i < articleEntities.length; i++) {
                 for (let j = i + 1; j < articleEntities.length; j++) {
                     const source = articleEntities[i].entity;
                     const target = articleEntities[j].entity;
                     const linkKey = [source, target].sort().join('--');
-                    // Find existing link more efficiently
                     const existingLinkIndex = links.findIndex(l => {
-                        // Ensure source/target are treated as strings for comparison if they are objects
-                        // The source/target in the links array *should* be strings here based on creation
                         const linkSourceId = typeof l.source === 'object' && l.source !== null && 'id' in l.source ? l.source.id : l.source;
                         const linkTargetId = typeof l.target === 'object' && l.target !== null && 'id' in l.target ? l.target.id : l.target;
                         return [linkSourceId, linkTargetId].sort().join('--') === linkKey;
@@ -161,23 +144,18 @@ const KeywordNetwork: React.FC = () => {
 
 
                     if (existingLinkIndex === -1) {
-                        // Ensure source/target are strings when creating the link object
                         links.push({ source: source, target: target, articles: [article.title] });
-                        // Increment degree for both source and target nodes
                         nodeDegrees.set(source, (nodeDegrees.get(source) || 0) + 1);
                         nodeDegrees.set(target, (nodeDegrees.get(target) || 0) + 1);
                     } else {
-                        // If the link already exists, add the article title if it's not already there
                         if (!links[existingLinkIndex].articles.includes(article.title)) {
                             links[existingLinkIndex].articles.push(article.title);
                         }
-                        // Note: Degree is only incremented when a *new* link is added
                     }
                 }
             }
         });
 
-        // Add calculated degrees to the nodes in nodesMap
         nodeDegrees.forEach((degree, nodeId) => {
             const node = nodesMap.get(nodeId);
             if (node) {
@@ -186,23 +164,19 @@ const KeywordNetwork: React.FC = () => {
         });
 
 
-        // Filter nodes that are actually part of the selected links
         const nodesInLinks = new Set<string>();
         links.forEach(link => {
-            // Ensure source/target are treated as strings for adding to the set
             const sourceId = typeof link.source === 'object' && link.source !== null && 'id' in link.source ? link.source.id : link.source;
             const targetId = typeof link.target === 'object' && link.target !== null && 'id' in link.target ? link.target.id : link.target;
             nodesInLinks.add(sourceId as string);
             nodesInLinks.add(targetId as string);
         });
 
-        // Ensure nodes have degree property, default to 0 if not in nodeDegrees
         const filteredNodes = Array.from(nodesMap.values())
             .filter(node => nodesInLinks.has(node.id))
-            .map(node => ({ ...node, degree: node.degree ?? 0 })); // Ensure degree is always a number
+            .map(node => ({ ...node, degree: node.degree ?? 0 }));
 
 
-        // Cast links back to CustomLinkObject[] if needed, though it should already be correct
         return { nodes: filteredNodes, links: links as CustomLinkObject[] };
     }, [networkData, selectedLabels]);
 
@@ -210,35 +184,29 @@ const KeywordNetwork: React.FC = () => {
         setSelectedLabels(selectedOptions ? Array.from(selectedOptions) : []);
     };
 
-    // Function to create sprite-based labels - now accepts isDarkMode
     const createNodeLabelSprite = (node: CustomNodeObject, isDarkMode: boolean): THREE.Sprite => {
-        const sprite = new THREE.Sprite() as any; // Use 'as any' for custom properties
+        const sprite = new THREE.Sprite() as any;
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
-        if (!ctx) return sprite; // Return empty sprite if context fails
+        if (!ctx) return sprite;
 
-        const fontSize = 24; // Increased font size further (was 20)
-        const fontWeight = 'bold'; // Make text bolder
+        const fontSize = 24;
+        const fontWeight = 'bold';
         const fontFamily = 'sans-serif';
         ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
-        const text = node.id; // Use node.id which is the NER text
+        const text = node.id;
         const textMetrics = ctx.measureText(text);
         const textWidth = textMetrics.width;
 
-        // Base scale factor - will be multiplied by node size later
         const baseScale = 0.1;
-        const padding = 6; // Increased padding
+        const padding = 6;
         const canvasWidth = textWidth + padding * 2;
         const canvasHeight = fontSize + padding * 2;
 
         canvas.width = canvasWidth;
         canvas.height = canvasHeight;
 
-        // Background - Transparent
-        // No background fill
-
-        // Text - Color depends on dark mode
-        ctx.fillStyle = isDarkMode ? 'white' : 'dark'; // White text on dark, red on light
+        ctx.fillStyle = isDarkMode ? 'white' : 'dark';
         ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -246,63 +214,53 @@ const KeywordNetwork: React.FC = () => {
 
         const texture = new THREE.CanvasTexture(canvas);
         texture.needsUpdate = true;
-        // texture.minFilter = THREE.LinearFilter; // Optional: improve texture quality
 
         const material = new THREE.SpriteMaterial({
             map: texture,
-            depthWrite: false, // Don't write to depth buffer
-            transparent: true, // Enable transparency
-            // sizeAttenuation: false // Optional: Keep size constant regardless of distance
+            depthWrite: false,
+            transparent: true,
         });
         sprite.material = material;
 
-        // Set base scale - final scaling happens in nodeThreeObject
         sprite.scale.set(canvasWidth * baseScale, canvasHeight * baseScale, 1.0);
 
-        // Store node id for potential interaction later
         sprite.nodeId = node.id;
 
-        return sprite; // Return the sprite itself
+        return sprite;
     };
 
     const togglePlainScreen = () => {
         if (isPlainScreen) {
-            // Exit plain screen and hide visualization
             setIsPlainScreen(false);
             setShowVisualization(false);
-            setNetworkData(null); // Clear data when exiting
+            setNetworkData(null);
         } else {
             setIsPlainScreen(!isPlainScreen);
         }
     };
 
-    // Handle loading all articles
     const handleLoadAllArticles = () => {
         loadArticlesData(false);
     };
 
-    // Handle loading first 100 articles
     const handleLoadFirst100 = () => {
         loadArticlesData(true);
     };
 
-    // Helper to get article details for a link
     const getArticlesForLink = (link: CustomLinkObject): Article[] => {
         if (!networkData) return [];
-        // Find articles whose title matches any in link.articles
         return networkData.data.filter(article => link.articles.includes(article.title));
     };
 
-    // Define styles for react-select in dark mode
     const plainScreenSelectStyles = isPlainScreen ? {
         control: (baseStyles: any) => ({
             ...baseStyles,
-            backgroundColor: '#1a1a1a', // Dark background
+            backgroundColor: '#1a1a1a',
             borderColor: '#444',
         }),
         menu: (baseStyles: any) => ({
             ...baseStyles,
-            backgroundColor: '#1a1a1a', // Dark background
+            backgroundColor: '#1a1a1a',
         }),
         option: (baseStyles: any, state: { isFocused: boolean; }) => ({
             ...baseStyles,
@@ -314,7 +272,7 @@ const KeywordNetwork: React.FC = () => {
         }),
         multiValue: (baseStyles: any) => ({
             ...baseStyles,
-            backgroundColor: '#007bff', // Keep primary color or adjust
+            backgroundColor: '#007bff',
         }),
         multiValueLabel: (baseStyles: any) => ({
             ...baseStyles,
@@ -338,7 +296,7 @@ const KeywordNetwork: React.FC = () => {
         }),
         placeholder: (baseStyles: any) => ({
             ...baseStyles,
-            color: '#ccc', // Lighter placeholder text for dark bg
+            color: '#ccc',
         }),
     } : {};
 
@@ -346,7 +304,6 @@ const KeywordNetwork: React.FC = () => {
     return (
         <>
             {!showVisualization ? (
-                // Show date picker and buttons when visualization is not active
                 <div className="container mx-auto px-4 py-8">
                     <div className="mb-6">
                         <label htmlFor="date-picker" className="block text-sm font-medium mb-2">
@@ -393,7 +350,6 @@ const KeywordNetwork: React.FC = () => {
                     </div>
                 </div>
             ) : (
-                // Show full visualization in plain screen mode
                 <div
                     style={{
                         position: 'fixed',
@@ -408,7 +364,6 @@ const KeywordNetwork: React.FC = () => {
                         flexDirection: 'column',
                     }}
                 >
-                    {/* Controls container */}
                     <div style={{
                         marginBottom: '1rem',
                         zIndex: 1001,
@@ -419,7 +374,6 @@ const KeywordNetwork: React.FC = () => {
                         flexShrink: 0,
                         padding: '0 1rem',
                     }}>
-                        {/* Date selector */}
                         <label
                             htmlFor="date-picker"
                             className="text-white whitespace-nowrap"
@@ -442,7 +396,6 @@ const KeywordNetwork: React.FC = () => {
                             }}
                             max={new Date().toISOString().slice(0, 10)}
                         />
-                        {/* NER label filter */}
                         <label
                             htmlFor="ner-select"
                             className="text-white whitespace-nowrap"
@@ -463,7 +416,6 @@ const KeywordNetwork: React.FC = () => {
                                 styles={plainScreenSelectStyles}
                             />
                         </div>
-                        {/* Exit button */}
                         <Button
                             variant="outline"
                             size="icon"
@@ -479,7 +431,6 @@ const KeywordNetwork: React.FC = () => {
                         </Button>
                     </div>
 
-                    {/* Graph container */}
                     <div style={{ flexGrow: 1, position: 'relative' }}>
                         {isClient && networkData ? (
                             <ForceGraph3D
@@ -539,7 +490,6 @@ const KeywordNetwork: React.FC = () => {
                         )}
                     </div>
 
-                    {/* Link Details Dialog */}
                     {showLinkDialog && linkDetails && (
                         <div style={{
                             position: 'fixed',
