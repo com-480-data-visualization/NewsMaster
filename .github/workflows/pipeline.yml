@@ -3,6 +3,7 @@ name: cron_scrap
 on:
   schedule:
     - cron: "0 4 * * *" # every day at 4:00 UTC
+  workflow_dispatch: # allows manual triggering
 
 jobs:
   build:
