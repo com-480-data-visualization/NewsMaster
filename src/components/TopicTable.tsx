@@ -67,7 +67,7 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
                     </tr>
                 </thead>
                 <tbody className="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700">
-                    {data.map((item) => {
+                    {data.filter(item => item.latestScore > 0).map((item) => {
                         const maxLength = 20;
                         const isDefaultSelected = defaultSelectedTopic === item.topic;
                         const truncatedTopic = truncateText(item.topic, maxLength);
