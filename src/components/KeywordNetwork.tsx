@@ -63,6 +63,7 @@ const KeywordNetwork: React.FC = () => {
     const [allLabels, setAllLabels] = useState<SelectOption[]>([]);
     const [isClient, setIsClient] = useState(false);
     const [isPlainScreen, setIsPlainScreen] = useState(false); // State for plain screen mode
+    const [showVisualization, setShowVisualization] = useState(false); // State to control if visualization is shown
     const [selectedDate, setSelectedDate] = useState<string>(() => {
         // Default to today's date in yyyy-mm-dd format
         const today = new Date();
@@ -72,14 +73,21 @@ const KeywordNetwork: React.FC = () => {
     const [linkDetails, setLinkDetails] = useState<CustomLinkObject | null>(null);
     const [articleDetails, setArticleDetails] = useState<Article[]>([]);
     const [showLinkDialog, setShowLinkDialog] = useState(false);
+    const [isLoading, setIsLoading] = useState(false); // State for loading indicator
 
     useEffect(() => {
         setIsClient(true);
-        setFetchError(null); // Reset error on date change
+    }, []);
+
+    // Function to load articles data
+    const loadArticlesData = (limitTo100: boolean = false) => {
+        setIsLoading(true);
+        setFetchError(null);
         // Format date as DD.MM.YYYY for the path
         const [year, month, day] = selectedDate.split('-');
         const formattedDate = `${day}.${month}.${year}`;
         const jsonPath = `/data/${formattedDate}/articles.json`;
+
         fetch(jsonPath)
             .then(response => {
                 if (!response.ok) {
@@ -88,22 +96,32 @@ const KeywordNetwork: React.FC = () => {
                 return response.json();
             })
             .then((data: NetworkData) => {
-                setNetworkData(data);
+                // Limit to first 100 articles if requested
+                const processedData = limitTo100 ? {
+                    ...data,
+                    data: data.data.slice(0, 100)
+                } : data;
+
+                setNetworkData(processedData);
                 // Extract all unique NER labels for the select options
                 const labels = new Set<string>();
-                data.data.forEach(article => {
+                processedData.data.forEach(article => {
                     article.ner.forEach(entity => labels.add(entity.label));
                 });
                 setAllLabels(Array.from(labels).sort().map(label => ({ value: label, label })));
-                // Optionally pre-select all labels initially
-                // setSelectedLabels(Array.from(labels).sort().map(label => ({ value: label, label })));
+
+                // Show visualization in plain screen mode
+                setShowVisualization(true);
+                setIsPlainScreen(true);
+                setIsLoading(false);
             })
             .catch(error => {
                 setNetworkData(null);
                 setFetchError("No data for this date. Please select another date.");
+                setIsLoading(false);
                 console.error("Error fetching network data:", error);
             });
-    }, [selectedDate]);
+    };
 
     const graphData = useMemo<GraphData>(() => {
         if (!networkData) return { nodes: [], links: [] };
@@ -247,7 +265,26 @@ const KeywordNetwork: React.FC = () => {
         return sprite; // Return the sprite itself
     };
 
-    const togglePlainScreen = () => setIsPlainScreen(!isPlainScreen);
+    const togglePlainScreen = () => {
+        if (isPlainScreen) {
+            // Exit plain screen and hide visualization
+            setIsPlainScreen(false);
+            setShowVisualization(false);
+            setNetworkData(null); // Clear data when exiting
+        } else {
+            setIsPlainScreen(!isPlainScreen);
+        }
+    };
+
+    // Handle loading all articles
+    const handleLoadAllArticles = () => {
+        loadArticlesData(false);
+    };
+
+    // Handle loading first 100 articles
+    const handleLoadFirst100 = () => {
+        loadArticlesData(true);
+    };
 
     // Helper to get article details for a link
     const getArticlesForLink = (link: CustomLinkObject): Article[] => {
@@ -307,272 +344,268 @@ const KeywordNetwork: React.FC = () => {
 
 
     return (
-        <div
-            style={isPlainScreen ? {
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                width: '100vw',
-                height: '100vh',
-                backgroundColor: '#000', // Force dark background
-                zIndex: 1000, // Ensure it's on top
-                padding: '1rem', // Add some padding
-                display: 'flex',
-                flexDirection: 'column', // Stack controls and graph
-            } : {
-                height: '80vh',
-                width: '100%',
-                position: 'relative', // Keep original layout flow
-            }}
-        >
-            {/* Controls container */}
-            <div style={{
-                marginBottom: '1rem',
-                zIndex: 1001, // Above graph
-                position: isPlainScreen ? 'relative' : 'relative',
-                display: 'flex',
-                gap: '0.5rem', // Reduced gap slightly for better alignment
-                alignItems: 'center',
-                flexShrink: 0,
-                padding: isPlainScreen ? '0 1rem' : '0',
-            }}>
-                {/* Date selector */}
-                <label
-                    htmlFor="date-picker"
-                    className={`${isPlainScreen ? 'text-white' : ''} whitespace-nowrap`}
-                    style={{ marginRight: '0.5rem' }}
-                >
-                    Date:
-                </label>
-                <input
-                    id="date-picker"
-                    type="date"
-                    value={selectedDate}
-                    onChange={e => setSelectedDate(e.target.value)}
-                    style={{
-                        marginRight: '1rem',
-                        background: isPlainScreen ? '#1a1a1a' : undefined,
-                        color: isPlainScreen ? 'white' : undefined,
-                        border: isPlainScreen ? '1px solid #444' : undefined,
-                        borderRadius: 4,
-                        padding: '0.25rem 0.5rem',
-                    }}
-                    max={new Date().toISOString().slice(0, 10)}
-                />
-                {/* NER label filter */}
-                <label
-                    htmlFor="ner-select"
-                    className={`${isPlainScreen ? 'text-white' : ''} whitespace-nowrap`}
-                    style={{ marginRight: '0.5rem' }}
-                >
-                    Filter by NER Label:
-                </label>
-                <div style={{ flexGrow: 1 }}>
-                    <Select
-                        id="ner-select"
-                        isMulti
-                        options={allLabels}
-                        value={selectedLabels}
-                        onChange={handleLabelChange}
-                        className="react-select-container"
-                        classNamePrefix="react-select"
-                        placeholder="Select NER labels to display..."
-                        styles={plainScreenSelectStyles}
-                    />
-                </div>
-                {/* Button remains the last item */}
-                <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={togglePlainScreen}
-                    title={isPlainScreen ? "Exit plain screen" : "Enter plain screen"}
-                    style={isPlainScreen ? {
-                        backgroundColor: '#2a2a2a',
-                        borderColor: '#555',
-                        color: 'white'
-                    } : {}}
-                >
-                    {isPlainScreen ? <MinimizeIcon className="h-4 w-4" /> : <MaximizeIcon className="h-4 w-4" />}
-                </Button>
-            </div>
+        <>
+            {!showVisualization ? (
+                // Show date picker and buttons when visualization is not active
+                <div className="container mx-auto px-4 py-8">
+                    <div className="mb-6">
+                        <label htmlFor="date-picker" className="block text-sm font-medium mb-2">
+                            Select Date:
+                        </label>
+                        <input
+                            id="date-picker"
+                            type="date"
+                            value={selectedDate}
+                            onChange={e => setSelectedDate(e.target.value)}
+                            className="border border-gray-300 rounded-md px-3 py-2 text-sm"
+                            max={new Date().toISOString().slice(0, 10)}
+                        />
+                    </div>
 
-            {/* Graph container */}
-            <div style={{ flexGrow: 1, position: 'relative' }}> {/* Make graph take remaining space */}
-                {isClient && networkData ? (
-                    <ForceGraph3D
-                        graphData={graphData}
-                        nodeAutoColorBy="label"
-                        nodeVal={node => {
-                            // Increase scaling factor for bubble size
-                            const degree = (node as CustomNodeObject).degree ?? 1;
-                            return Math.max(2, degree * 3); // Make bubbles much bigger for higher degree
-                        }}
-                        nodeThreeObject={(node): THREE.Object3D => {
-                            const customNode = node as CustomNodeObject;
-                            if (!customNode.id) {
-                                console.warn("Node missing id:", customNode);
-                                return new THREE.Object3D();
-                            }
-                            const nodeVal = customNode.degree ?? 1;
-                            // Increase radius scaling for more visible difference
-                            const radius = Math.cbrt(Math.max(2, nodeVal * 3)) * 2.5;
-                            const geometry = new THREE.SphereGeometry(radius, 16, 8);
-                            const material = new THREE.MeshLambertMaterial({
-                                color: customNode.color || '#ffffaa',
-                                transparent: true,
-                                opacity: 0.75
-                            });
-                            const sphere = new THREE.Mesh(geometry, material);
-                            // Pass isPlainScreen to label creation
-                            const sprite = createNodeLabelSprite(customNode, isPlainScreen);
-                            const spriteScaleMultiplier = radius * 0.5;
-                            sprite.scale.multiplyScalar(spriteScaleMultiplier);
-                            // Position the label sprite above the bubble
-                            sprite.position.set(0, radius + (sprite.scale.y / 2) + 2, 0);
-                            const group = new THREE.Group();
-                            group.add(sphere);
-                            group.add(sprite);
-                            customNode.__threeObj = group;
-                            return group;
-                        }}
-                        linkLabel={(link: CustomLinkObject) => {
-                            const sourceNode = link.source as CustomNodeObject;
-                            const targetNode = link.target as CustomNodeObject;
-                            const sourceId = sourceNode?.id ?? 'Unknown Source';
-                            const targetId = targetNode?.id ?? 'Unknown Target';
-                            const articleTitles = link.articles?.join(', ') ?? 'No articles';
-                            // Use light text color for tooltip in dark mode
-                            const linkLabelColor = isPlainScreen ? 'color: white;' : '';
-                            return `<div style="${linkLabelColor}">${sourceId} &harr; ${targetId}<br/>Articles: ${articleTitles}</div>`;
-                        }}
-                        linkDirectionalParticles={1}
-                        linkDirectionalParticleWidth={1.5}
-                        linkWidth={0.5}
-                        // Set background based on plain screen mode
-                        backgroundColor={isPlainScreen ? '#000000' : 'rgba(0,0,0,0)'}
-                        // Ensure graph fills its container
-                        height={isPlainScreen ? undefined : undefined} // Let parent div control height
-                        width={isPlainScreen ? undefined : undefined} // Let parent div control width
-                        onLinkClick={(link: CustomLinkObject, event: MouseEvent) => {
-                            setLinkDetails(link);
-                            setArticleDetails(getArticlesForLink(link));
-                            setShowLinkDialog(true);
-                        }}
-                    />
-                ) : (
-                    <div className={isPlainScreen ? 'text-white' : ''}>
-                        {fetchError ? fetchError : 'Loading graph data...'}
-                    </div>
-                )}
-            </div>
-            {/* Link Details Dialog */}
-            {showLinkDialog && linkDetails && (
-                <div style={{
-                    position: 'fixed',
-                    top: 0,
-                    left: 0,
-                    width: '100vw',
-                    height: '100vh',
-                    background: 'rgba(0,0,0,0.6)',
-                    zIndex: 2000,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                }}
-                    onClick={() => setShowLinkDialog(false)}
-                >
-                    <div style={{
-                        background: '#222',
-                        color: 'white',
-                        borderRadius: 12,
-                        padding: 32,
-                        minWidth: 400,
-                        maxWidth: 600,
-                        boxShadow: '0 4px 32px #000a',
-                        position: 'relative',
-                    }} onClick={e => e.stopPropagation()}>
-                        <button
-                            style={{
-                                position: 'absolute',
-                                top: 12,
-                                right: 16,
-                                background: 'transparent',
-                                border: 'none',
-                                color: '#fff',
-                                fontSize: 24,
-                                cursor: 'pointer',
-                            }}
-                            onClick={() => setShowLinkDialog(false)}
-                            aria-label="Close"
-                        >×</button>
-                        <h2 style={{ marginBottom: 12, fontSize: 22, fontWeight: 700 }}>
-                            Link: {((linkDetails.source as CustomNodeObject)?.id ?? linkDetails.source)} &harr; {((linkDetails.target as CustomNodeObject)?.id ?? linkDetails.target)}
-                        </h2>
-                        <div style={{ marginBottom: 16 }}>
-                            <strong>Articles ({articleDetails.length}):</strong><br /><br />
-                            <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
-                                {articleDetails.map(article => (
-                                    <li key={article.id} style={{ marginBottom: 18, borderBottom: '1px solid #444', paddingBottom: 10 }}>
-                                        <div style={{ fontWeight: 600, fontSize: 17 }}>{article.title}</div>
-                                        <div style={{ fontSize: 14, color: '#ccc', margin: '4px 0' }}>{article.description}</div>
-                                        <div style={{ fontSize: 13, color: '#aaa' }}>
-                                            <span>Provider: {article.providerId}</span>
-                                        </div>
-                                        <div style={{ fontSize: 13, color: '#aaa' }}>
-                                            <span>Published: {formatDistanceToNow(parseISO(article.createdAt), { addSuffix: true })}</span>
-                                        </div>
-                                        <a href={article.url} target="_blank" rel="noopener noreferrer" style={{ color: '#4ea1ff', fontSize: 14, textDecoration: 'underline' }}>Read full article</a>
-                                    </li>
-                                ))}
-                            </ul>
+                    {fetchError && (
+                        <div className="mb-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
+                            {fetchError}
                         </div>
+                    )}
+
+                    <div className="flex gap-4">
+                        <Button
+                            onClick={handleLoadAllArticles}
+                            disabled={isLoading}
+                            className="px-6 py-3 text-lg"
+                        >
+                            {isLoading ? 'Loading...' : 'Load All Articles'}
+                        </Button>
+
+                        <Button
+                            onClick={handleLoadFirst100}
+                            disabled={isLoading}
+                            variant="outline"
+                            className="px-6 py-3 text-lg"
+                        >
+                            {isLoading ? 'Loading...' : 'Load First 100 Articles'}
+                        </Button>
+                    </div>
+
+                    <div className="mt-4 text-sm text-gray-600">
+                        <p>• <strong>Load All Articles:</strong> Visualize the complete network of all articles for the selected date</p>
+                        <p>• <strong>Load First 100 Articles:</strong> Visualize a subset for faster performance</p>
                     </div>
                 </div>
+            ) : (
+                // Show full visualization in plain screen mode
+                <div
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        width: '100vw',
+                        height: '100vh',
+                        backgroundColor: '#000',
+                        zIndex: 1000,
+                        padding: '1rem',
+                        display: 'flex',
+                        flexDirection: 'column',
+                    }}
+                >
+                    {/* Controls container */}
+                    <div style={{
+                        marginBottom: '1rem',
+                        zIndex: 1001,
+                        position: 'relative',
+                        display: 'flex',
+                        gap: '0.5rem',
+                        alignItems: 'center',
+                        flexShrink: 0,
+                        padding: '0 1rem',
+                    }}>
+                        {/* Date selector */}
+                        <label
+                            htmlFor="date-picker"
+                            className="text-white whitespace-nowrap"
+                            style={{ marginRight: '0.5rem' }}
+                        >
+                            Date:
+                        </label>
+                        <input
+                            id="date-picker"
+                            type="date"
+                            value={selectedDate}
+                            onChange={e => setSelectedDate(e.target.value)}
+                            style={{
+                                marginRight: '1rem',
+                                background: '#1a1a1a',
+                                color: 'white',
+                                border: '1px solid #444',
+                                borderRadius: 4,
+                                padding: '0.25rem 0.5rem',
+                            }}
+                            max={new Date().toISOString().slice(0, 10)}
+                        />
+                        {/* NER label filter */}
+                        <label
+                            htmlFor="ner-select"
+                            className="text-white whitespace-nowrap"
+                            style={{ marginRight: '0.5rem' }}
+                        >
+                            Filter by NER Label:
+                        </label>
+                        <div style={{ flexGrow: 1 }}>
+                            <Select
+                                id="ner-select"
+                                isMulti
+                                options={allLabels}
+                                value={selectedLabels}
+                                onChange={handleLabelChange}
+                                className="react-select-container"
+                                classNamePrefix="react-select"
+                                placeholder="Select NER labels to display..."
+                                styles={plainScreenSelectStyles}
+                            />
+                        </div>
+                        {/* Exit button */}
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            onClick={togglePlainScreen}
+                            title="Exit visualization"
+                            style={{
+                                backgroundColor: '#2a2a2a',
+                                borderColor: '#555',
+                                color: 'white'
+                            }}
+                        >
+                            <MinimizeIcon className="h-4 w-4" />
+                        </Button>
+                    </div>
+
+                    {/* Graph container */}
+                    <div style={{ flexGrow: 1, position: 'relative' }}>
+                        {isClient && networkData ? (
+                            <ForceGraph3D
+                                graphData={graphData}
+                                nodeAutoColorBy="label"
+                                nodeVal={node => {
+                                    const degree = (node as CustomNodeObject).degree ?? 1;
+                                    return Math.max(2, degree * 3);
+                                }}
+                                nodeThreeObject={(node): THREE.Object3D => {
+                                    const customNode = node as CustomNodeObject;
+                                    if (!customNode.id) {
+                                        console.warn("Node missing id:", customNode);
+                                        return new THREE.Object3D();
+                                    }
+                                    const nodeVal = customNode.degree ?? 1;
+                                    const radius = Math.cbrt(Math.max(2, nodeVal * 3)) * 2.5;
+                                    const geometry = new THREE.SphereGeometry(radius, 16, 8);
+                                    const material = new THREE.MeshLambertMaterial({
+                                        color: customNode.color || '#ffffaa',
+                                        transparent: true,
+                                        opacity: 0.75
+                                    });
+                                    const sphere = new THREE.Mesh(geometry, material);
+                                    const sprite = createNodeLabelSprite(customNode, true);
+                                    const spriteScaleMultiplier = radius * 0.5;
+                                    sprite.scale.multiplyScalar(spriteScaleMultiplier);
+                                    sprite.position.set(0, radius + (sprite.scale.y / 2) + 2, 0);
+                                    const group = new THREE.Group();
+                                    group.add(sphere);
+                                    group.add(sprite);
+                                    customNode.__threeObj = group;
+                                    return group;
+                                }}
+                                linkLabel={(link: CustomLinkObject) => {
+                                    const sourceNode = link.source as CustomNodeObject;
+                                    const targetNode = link.target as CustomNodeObject;
+                                    const sourceId = sourceNode?.id ?? 'Unknown Source';
+                                    const targetId = targetNode?.id ?? 'Unknown Target';
+                                    const articleTitles = link.articles?.join(', ') ?? 'No articles';
+                                    return `<div style="color: white;">${sourceId} &harr; ${targetId}<br/>Articles: ${articleTitles}</div>`;
+                                }}
+                                linkDirectionalParticles={1}
+                                linkDirectionalParticleWidth={1.5}
+                                linkWidth={0.5}
+                                backgroundColor="#000000"
+                                onLinkClick={(link: CustomLinkObject, event: MouseEvent) => {
+                                    setLinkDetails(link);
+                                    setArticleDetails(getArticlesForLink(link));
+                                    setShowLinkDialog(true);
+                                }}
+                            />
+                        ) : (
+                            <div className="text-white">
+                                {fetchError ? fetchError : 'Loading graph data...'}
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Link Details Dialog */}
+                    {showLinkDialog && linkDetails && (
+                        <div style={{
+                            position: 'fixed',
+                            top: 0,
+                            left: 0,
+                            width: '100vw',
+                            height: '100vh',
+                            background: 'rgba(0,0,0,0.6)',
+                            zIndex: 2000,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                        }}
+                            onClick={() => setShowLinkDialog(false)}
+                        >
+                            <div style={{
+                                background: '#222',
+                                color: 'white',
+                                borderRadius: 12,
+                                padding: 32,
+                                minWidth: 400,
+                                maxWidth: 600,
+                                boxShadow: '0 4px 32px #000a',
+                                position: 'relative',
+                            }} onClick={e => e.stopPropagation()}>
+                                <button
+                                    style={{
+                                        position: 'absolute',
+                                        top: 12,
+                                        right: 16,
+                                        background: 'transparent',
+                                        border: 'none',
+                                        color: '#fff',
+                                        fontSize: 24,
+                                        cursor: 'pointer',
+                                    }}
+                                    onClick={() => setShowLinkDialog(false)}
+                                    aria-label="Close"
+                                >×</button>
+                                <h2 style={{ marginBottom: 12, fontSize: 22, fontWeight: 700 }}>
+                                    Link: {((linkDetails.source as CustomNodeObject)?.id ?? linkDetails.source)} &harr; {((linkDetails.target as CustomNodeObject)?.id ?? linkDetails.target)}
+                                </h2>
+                                <div style={{ marginBottom: 16 }}>
+                                    <strong>Articles ({articleDetails.length}):</strong><br /><br />
+                                    <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
+                                        {articleDetails.map(article => (
+                                            <li key={article.id} style={{ marginBottom: 18, borderBottom: '1px solid #444', paddingBottom: 10 }}>
+                                                <div style={{ fontWeight: 600, fontSize: 17 }}>{article.title}</div>
+                                                <div style={{ fontSize: 14, color: '#ccc', margin: '4px 0' }}>{article.description}</div>
+                                                <div style={{ fontSize: 13, color: '#aaa' }}>
+                                                    <span>Provider: {article.providerId}</span>
+                                                </div>
+                                                <div style={{ fontSize: 13, color: '#aaa' }}>
+                                                    <span>Published: {formatDistanceToNow(parseISO(article.createdAt), { addSuffix: true })}</span>
+                                                </div>
+                                                <a href={article.url} target="_blank" rel="noopener noreferrer" style={{ color: '#4ea1ff', fontSize: 14, textDecoration: 'underline' }}>Read full article</a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
             )}
-            {/* Keep original styles for non-plain screen mode */}
-            {!isPlainScreen && (
-                <style>{`
-                    .react-select-container .react-select__control {
-                    background-color: var(--background);
-                    border-color: var(--border);
-                    }
-                    .react-select-container .react-select__menu {
-                    background-color: var(--background);
-                    color: var(--foreground); /* Ensure text color uses variable */
-                    }
-                    .react-select-container .react-select__option--is-focused {
-                    background-color: var(--accent);
-                    }
-                     .react-select-container .react-select__option--is-selected {
-                        background-color: var(--primary); /* Style for selected option */
-                        color: var(--primary-foreground);
-                    }
-                    .react-select-container .react-select__multi-value {
-                    background-color: var(--primary);
-                    color: var(--primary-foreground);
-                    }
-                    .react-select-container .react-select__multi-value__label {
-                        color: var(--primary-foreground);
-                    }
-                    .react-select-container .react-select__multi-value__remove {
-                        color: var(--primary-foreground);
-                    }
-                    .react-select-container .react-select__multi-value__remove:hover {
-                        background-color: hsl(var(--primary) / 0.8); /* Use HSL variable */
-                        color: var(--primary-foreground);
-                    }
-                    .react-select-container .react-select__input-container {
-                        color: var(--foreground);
-                    }
-                    .react-select-container .react-select__placeholder {
-                         color: var(--muted-foreground); /* Style placeholder */
-                    }
-                     .react-select-container .react-select__single-value {
-                         color: var(--foreground); /* Style single selected value */
-                    }
-                `}</style>
-            )}
-        </div>
+        </>
     );
 };
 
