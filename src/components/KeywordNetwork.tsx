@@ -70,11 +70,28 @@ const KeywordNetwork: React.FC = () => {
     const [showLinkDialog, setShowLinkDialog] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
+    const selectedProviders = [
+        'BBC News',
+        'CNN',
+        'New York Times',
+        'Al Jazeera',
+        'The Guardian',
+        'France 24',
+        'DW News',
+        'NPR',
+        'The Times of India',
+        'South China Morning Post',
+        'The Japan Times',
+        'El País',
+        'Le Monde',
+        'Der Spiegel'
+    ];
+
     useEffect(() => {
         setIsClient(true);
     }, []);
 
-    const loadArticlesData = (limitTo100: boolean = false) => {
+    const loadArticlesData = (limitTo100: boolean = false, filterByProviders: boolean = false) => {
         setIsLoading(true);
         setFetchError(null);
         const [year, month, day] = selectedDate.split('-');
@@ -89,10 +106,21 @@ const KeywordNetwork: React.FC = () => {
                 return response.json();
             })
             .then((data: NetworkData) => {
+                let filteredData = data.data;
+
+                if (filterByProviders) {
+                    filteredData = filteredData.filter(article =>
+                        selectedProviders.includes(article.providerId)
+                    );
+                }
+
                 const processedData = limitTo100 ? {
                     ...data,
-                    data: data.data.slice(0, 100)
-                } : data;
+                    data: filteredData.slice(0, 100)
+                } : {
+                    ...data,
+                    data: filteredData
+                };
 
                 setNetworkData(processedData);
                 const labels = new Set<string>();
@@ -247,6 +275,10 @@ const KeywordNetwork: React.FC = () => {
         loadArticlesData(true);
     };
 
+    const handleLoadSelectedProviders = () => {
+        loadArticlesData(false, true);
+    };
+
     const getArticlesForLink = (link: CustomLinkObject): Article[] => {
         if (!networkData) return [];
         return networkData.data.filter(article => link.articles.includes(article.title));
@@ -342,11 +374,30 @@ const KeywordNetwork: React.FC = () => {
                         >
                             {isLoading ? 'Loading...' : 'Load First 100 Articles'}
                         </Button>
+
+                        <Button
+                            onClick={handleLoadSelectedProviders}
+                            disabled={isLoading}
+                            variant="secondary"
+                            className="px-6 py-3 text-lg"
+                        >
+                            {isLoading ? 'Loading...' : 'Load Selected Providers'}
+                        </Button>
                     </div>
 
                     <div className="mt-4 text-sm text-gray-600">
                         <p>• <strong>Load All Articles:</strong> Visualize the complete network of all articles for the selected date</p>
                         <p>• <strong>Load First 100 Articles:</strong> Visualize a subset for faster performance</p>
+                        <p>• <strong>Load Selected Providers:</strong> Visualize only articles from major news providers (BBC, CNN, NYT, Al Jazeera, Guardian, etc.)</p>
+
+                        <div className="mt-3 p-3 bg-gray-50 rounded border">
+                            <p className="font-medium mb-2">Selected Providers:</p>
+                            <div className="grid grid-cols-2 gap-1 text-xs">
+                                {selectedProviders.map(provider => (
+                                    <span key={provider} className="text-gray-700">• {provider}</span>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             ) : (
