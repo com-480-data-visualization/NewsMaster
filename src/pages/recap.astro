@@ -1,0 +1,148 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+
+---
+
+<Layout title="News Landscape Recap">
+  <main class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Hero Section -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">
+        <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          TODAY THE WORLD IS OBSESSED BY
+        </span>
+        <br>
+        <span id="top-ner-display" class="text-6xl font-black bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent drop-shadow-lg">
+          Loading...
+        </span>
+      </h1>
+      <!-- World map showing how much each country talks about the top NER -->
+      <div id="world-map-recap" class=""></div>
+    </div>
+
+    <!-- Temporal Trends Section -->
+    <div class="mt-16 text-center">
+      <h1 id="temporal-question" class="text-3xl font-bold mb-8">
+        Has <span id="top-ner-temporal" class="text-purple-600">...</span> always been so hot?
+      </h1>
+      <!-- Topic trend graph for the top NER -->
+      <div id="temporal-trends-recap" class="h-[400px] border rounded-xl bg-card shadow-lg"></div>
+    </div>
+
+    <!-- Network Section -->
+    <div class="mt-16 text-center">
+      <h1 id="network-title" class="text-3xl font-bold mb-4">
+        <span id="top-ner-network" class="text-green-600">...</span> POWER WEB
+      </h1>
+      <p class="text-muted-foreground mb-8">
+        Click and drag to explore • Mouse wheel to zoom • Click nodes for details
+      </p>
+      <!-- Network graph filtered to only show nodes connected to the top NER -->
+      <div id="network-recap" class="w-full h-[600px] border rounded-xl bg-card shadow-lg"></div>
+    </div>
+
+    <!-- Insights Section -->
+    <div class="mt-16 text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/10 dark:to-purple-950/10 rounded-xl border p-8">
+      <h2 class="text-2xl font-bold mb-4">Key Insights</h2>
+      <div id="insights-content" class="text-muted-foreground">
+        <p>Loading insights about today's top story...</p>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  import React from 'react';
+  import ReactDOM from 'react-dom/client';
+  import WorldMapNER from '../components/world-map/WorldMapNER';
+  
+
+  // Function to create a custom world map that shows coverage of the top entity
+  function createCustomWorldMap(topEntity: string) {
+    const worldMapElement = document.getElementById('world-map-recap');
+    if (worldMapElement && topEntity) {
+      // For now, we'll use the existing WorldMapPage but we could enhance it
+      // to show entity-specific data in the future
+      const root = ReactDOM.createRoot(worldMapElement);
+      root.render(React.createElement(WorldMapNER, { entity: topEntity }));
+    }
+  }
+
+  
+  // Function to create filtered network showing only connections to the top entity
+  function createFilteredNetwork(topEntity: string) {
+    const networkElement = document.getElementById('network-recap');
+    if (networkElement && topEntity) {
+      const root = ReactDOM.createRoot(networkElement);
+      // TODO: Implement filtered network
+    }
+  }
+
+
+  // Main initialization function
+  async function initializeRecap() {
+    const topEntityInfo =  {entity: "Ukraine", count: 100, totalArticles: 1000}
+
+    const topEntity = topEntityInfo.entity;
+    
+    // Update all the dynamic text elements
+    const topNerDisplay = document.getElementById('top-ner-display');
+    const topNerTemporal = document.getElementById('top-ner-temporal');
+    const topNerNetwork = document.getElementById('top-ner-network');
+    
+    if (topNerDisplay) topNerDisplay.textContent = topEntity.toUpperCase();
+    if (topNerTemporal) topNerTemporal.textContent = topEntity.toUpperCase();
+    if (topNerNetwork) topNerNetwork.textContent = topEntity.toUpperCase();
+    
+    // Initialize all visualizations
+    createCustomWorldMap(topEntity);
+
+    createFilteredNetwork(topEntity);
+ 
+  }
+
+  // Start the initialization when the page loads
+  document.addEventListener('DOMContentLoaded', initializeRecap);
+</script>
+
+<style>
+  /* Ensure visualizations fit properly */
+  #world-map-recap,
+  #network-recap,
+  #temporal-trends-recap {
+    overflow: hidden;
+  }
+  
+  /* Smooth scrolling for internal links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Loading animation for the top NER */
+  #top-ner-display {
+    transition: all 0.5s ease;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    #top-ner-display {
+      font-size: 3rem;
+    }
+    
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  
+  /* Custom animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+</style>

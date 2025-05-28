@@ -8,11 +8,13 @@ import {
   Book,
   Globe,
   Share2,
-  LineChart
+  LineChart,
+  Newspaper
 } from 'lucide-react'
 
 const navigation = [
   { title: "Home", path: "/", icon: Home },
+  { title: "Recap", path: "/recap", icon: Newspaper },
   { title: "Temporal Trends", path: "/temporal-trends", icon: LineChart },
   { title: "World Map", path: "/world-map", icon: Globe },
   { title: "Network", path: "/network", icon: Share2 },
