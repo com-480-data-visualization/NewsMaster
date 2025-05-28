@@ -1,20 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Chart } from "../components/Chart";
-import { useEffect, useState } from "react";
+import fs from "fs";
+import path from "path";
 
-const [db, setDb] = useState({
+// Fetch data server-side in Astro
+let db = {
 	total_ner_today: 0,
 	total_articles_today: 0,
 	total_articles_week: 0,
 	total_articles_total: 0,
-});
+};
 
-useEffect(() => {
-	fetch("/data/db.json")
-		.then((res) => res.json())
-		.then((data) => setDb(data));
-}, []);
+try {
+	const dbPath = path.join(process.cwd(), "public", "data", "db.json");
+	const dbData = fs.readFileSync(dbPath, "utf-8");
+	db = JSON.parse(dbData);
+} catch (error) {
+	console.error("Error loading db.json:", error);
+}
 ---
 
 <Layout title="NewsMaster">
