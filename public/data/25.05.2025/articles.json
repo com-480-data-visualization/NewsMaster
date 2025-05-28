@@ -13,7 +13,7 @@
       "translatedDescription": "The agency plans to argue that carbon emissions from power plants do not contribute “significantly” to climate change. Scientists disagree.",
       "ner": [
         {
-          "entity": "Green",
+          "entity": "Green Card",
           "label": "MISC",
           "start": 37,
           "end": 42,
@@ -76,14 +76,14 @@
       "translatedDescription": "The first service under new public ownership will be partially operated by a rail replacement bus.",
       "ner": [
         {
-          "entity": "South Western",
+          "entity": "South Western Railways",
           "label": "ORG",
           "start": 0,
           "end": 13,
           "source": "title"
         },
         {
-          "entity": "Labour",
+          "entity": "Inside Labour",
           "label": "ORG",
           "start": 59,
           "end": 65,
@@ -132,7 +132,7 @@
       "translatedDescription": "The British ship is diverted to the port of Boulogne after being stopped by a French patrol boat.",
       "ner": [
         {
-          "entity": "France",
+          "entity": "Stade de France",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -160,7 +160,7 @@
           "source": "description"
         },
         {
-          "entity": "French",
+          "entity": "French Cup",
           "label": "MISC",
           "start": 78,
           "end": 84,
@@ -228,7 +228,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -249,7 +249,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 6,
           "end": 11,
@@ -326,7 +326,7 @@
           "source": "title"
         },
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -340,7 +340,7 @@
           "source": "description"
         },
         {
-          "entity": "Labour",
+          "entity": "Inside Labour",
           "label": "ORG",
           "start": 102,
           "end": 108,
@@ -417,14 +417,14 @@
           "source": "description"
         },
         {
-          "entity": "Bielefeld",
+          "entity": "Arminia Bielefeld",
           "label": "ORG",
           "start": 23,
           "end": 32,
           "source": "description"
         },
         {
-          "entity": "Leverkusen",
+          "entity": "Bayer Leverkusen",
           "label": "ORG",
           "start": 184,
           "end": 194,
@@ -459,7 +459,7 @@
           "source": "title"
         },
         {
-          "entity": "Harvard",
+          "entity": "Harvard University",
           "label": "ORG",
           "start": 10,
           "end": 17,
@@ -494,7 +494,7 @@
       "translatedDescription": "After more than two months of a total blockade of humanitarian aid to Gaza, Israel is now allowing a very limited number of trucks in. Aid agencies say it's not enough and warn of famine in the coming weeks.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 16,
           "end": 20,
@@ -522,7 +522,7 @@
       "translatedDescription": "The strike occured in the southern Gaza Strip city of Khan Younis. Meanwhile, Germany's antisemitism chief questioned the \"proportionality\" of Israeli's military actions in Gaza.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 0,
           "end": 4,
@@ -550,7 +550,7 @@
           "source": "description"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 78,
           "end": 85,
@@ -662,7 +662,7 @@
           "source": "title"
         },
         {
-          "entity": "Black",
+          "entity": "Black Mirror",
           "label": "MISC",
           "start": 35,
           "end": 40,
@@ -676,7 +676,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 120,
           "end": 125,
@@ -704,7 +704,7 @@
           "source": "title"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 32,
           "end": 34,
@@ -739,14 +739,14 @@
       "translatedDescription": "German police do not consider the knife attack at Hamburg Central Station to be politically motivated and believe the attacker has a mental illness. The magistrate ordered to place the suspect in psychiatric clinic.",
       "ner": [
         {
-          "entity": "Hamburg",
+          "entity": "Hamburg Central Station",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -774,7 +774,7 @@
       "translatedDescription": "A power outage hit the glitzy resort on the French Riviera as the Cannes Film Festival was drawing to a close. Officials have said the outage came after a substation and an electricity pylon were vandalized.",
       "ner": [
         {
-          "entity": "France",
+          "entity": "Stade de France",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -844,7 +844,7 @@
       "translatedDescription": "Economics Minister Katherina Reiche wants to secure energy supplies with gas-fired power plants and fewer heat pumps. Climate activists have reacted with sharp criticism.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 3,
           "end": 10,
@@ -963,21 +963,21 @@
       "translatedDescription": "Germany's defense minister says the draft could be brought back unless more volunteers sign up for the military. Meanwhile, the suspect in a stabbing in Hamburg will be placed in psychiatric care. DW has more.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Pistorius",
+          "entity": "Boris Pistorius",
           "label": "PER",
           "start": 46,
           "end": 55,
           "source": "title"
         },
         {
-          "entity": "Hamburg",
+          "entity": "Hamburg Central Station",
           "label": "LOC",
           "start": 153,
           "end": 160,
@@ -1012,7 +1012,7 @@
           "source": "title"
         },
         {
-          "entity": "Hegseth",
+          "entity": "Pete Hegseth",
           "label": "PER",
           "start": 12,
           "end": 19,
@@ -1026,7 +1026,7 @@
           "source": "title"
         },
         {
-          "entity": "Defense",
+          "entity": "US Defense Intelligence Agency",
           "label": "ORG",
           "start": 3,
           "end": 10,
@@ -1068,7 +1068,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 54,
           "end": 59,
@@ -1194,7 +1194,7 @@
       "translatedDescription": "US President Donald Trump has threatened the European Union with a 50% tariff on goods, saying current negotiations with the bloc were \"going nowhere.\" Can the EU still step back from a major tariff war?",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 4,
           "end": 6,
@@ -1208,7 +1208,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 38,
           "end": 43,
@@ -1334,7 +1334,7 @@
       "translatedDescription": "No internet, no electricity, no water — cyberattacks on state agencies, hospitals, or power plants can endanger lives or bring everyday operations to a standstill. What is Germany doing to counter the danger?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 4,
           "end": 11,
@@ -1355,7 +1355,7 @@
       "translatedDescription": "Washington plans a 5% tax on remittance transfers that would cover millions of foreigners living in the US. With about $160 billion sent by Latin Americans alone, their home countries would be among the hardest hit.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1397,7 +1397,7 @@
       "translatedDescription": "Chancellor Merz spoke with China's Xi for the first time since taking office to discuss the war in Ukraine and trade. Meanwhile, Germany's top diplomat met his Indian counterpart to discuss EU-India trade.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -1418,7 +1418,7 @@
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 11,
           "end": 15,
@@ -1439,7 +1439,7 @@
           "source": "description"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 190,
           "end": 192,
@@ -1467,7 +1467,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 24,
           "end": 31,
@@ -1537,7 +1537,7 @@
       "translatedDescription": "The foreign ministers of Germany and Nigeria pledged to strengthen their countries' partnership in areas such as the economy, energy, and migration.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -1565,7 +1565,7 @@
       "translatedDescription": "The new German government wants to revive the German economy by introducing an urgent recovery program. However, the crisis is so severe that economic experts see little chance of a rapid upturn.",
       "ner": [
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -1586,14 +1586,14 @@
       "translatedDescription": "German Chancellor Friedrich Merz and Defense Minister Boris Pistorius are attending a ceremony to mark the start of Germany’s first permanent foreign troop deployment since WWII.",
       "ner": [
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 25,
           "end": 31,
@@ -1614,7 +1614,7 @@
           "source": "description"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 116,
           "end": 123,
@@ -1684,7 +1684,7 @@
       "translatedDescription": "Sixteen consumer groups have called on the EU to take action against seven low-cost airlines over their baggage fees. The carriers include easyJet, Norwegian, Ryanair, Transavia, Volotea, Vueling and Wizz Air.",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 21,
           "end": 23,
@@ -1754,7 +1754,7 @@
       "translatedDescription": "Can the EU rein in the Hungarian government and discourage it once again from pushing through a \"transparency law\" that critics say amounts to a crackdown on activists and media?",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 0,
           "end": 2,
@@ -1880,7 +1880,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -1922,7 +1922,7 @@
       "translatedDescription": "The Bundeswehr has sent its new Armored Brigade 45 to Lithuania, Germany's first permanent foreign troop deployment since World War II. Chancellor Friedrich Merz will attend the ceremonial roll call this week.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -1985,14 +1985,14 @@
       "translatedDescription": "Donald Trump's recent visit to the Middle East was defined by a flurry of artificial intelligence investment deals involving Saudi Arabia and the UAE. Critics say it could help China gain access to critical technology.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Gulf",
+          "entity": "Gulf of Suez",
           "label": "LOC",
           "start": 12,
           "end": 16,
@@ -2062,7 +2062,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 42,
           "end": 48,
@@ -2202,14 +2202,14 @@
       "translatedDescription": "German authorities have launched multiple raids and arrested five suspected far-right extremists. Meanwhile, a panel of experts is presenting their economic projections for this year and the next.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -2292,7 +2292,7 @@
       "translatedDescription": "Amid growing pressure over Gaza, EU foreign ministers say they want to review their trade relations with Israel, but they have stopped short of announcing firm action.",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 0,
           "end": 2,
@@ -2306,7 +2306,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 53,
           "end": 57,
@@ -2334,7 +2334,7 @@
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 12,
           "end": 17,
@@ -2453,14 +2453,14 @@
       "translatedDescription": "Germany aims to support embattled industrial companies with lower electricity prices, but critics say the plan could threaten market stability and climate goals.",
       "ner": [
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -2481,7 +2481,7 @@
       "translatedDescription": "As a supporter of Ukraine, Germany is being targeted by foreign intelligence services. But that's not just since the Ukraine war began. Here's a reminder of some prominent spy cases.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 13,
           "end": 20,
@@ -2530,14 +2530,14 @@
       "translatedDescription": "A new report on global migration appeals to Germany's new government to reconsider restrictive immigration policies, such as border controls and limits on family reunification.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 22,
           "end": 26,
@@ -2586,7 +2586,7 @@
       "translatedDescription": "New figures show a \"dramatic\" increase in racist, antisemitic and Islamophobic crimes in Germany. Meanwhile, three men in Munich are going on trial for allegedly spying for Russia.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -2691,7 +2691,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 9,
           "end": 14,
@@ -2726,7 +2726,7 @@
           "source": "description"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 106,
           "end": 111,
@@ -2754,7 +2754,7 @@
           "source": "title"
         },
         {
-          "entity": "pro",
+          "entity": "Pro League",
           "label": "MISC",
           "start": 30,
           "end": 33,
@@ -2838,14 +2838,14 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 34,
           "end": 42,
           "source": "title"
         },
         {
-          "entity": "Black",
+          "entity": "Black Mirror",
           "label": "MISC",
           "start": 92,
           "end": 97,
@@ -2922,7 +2922,7 @@
       "translatedDescription": "Cognac is considered by many to be the best brandy in the world. But those who make it are under pressure from Chinese and US duties, as well as global warming — all of which are forcing them to rethink their approach.",
       "ner": [
         {
-          "entity": "France",
+          "entity": "Stade de France",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -2998,14 +2998,14 @@
       "translatedDescription": "An internal survey about extremist attitudes in the German military now found that it does not have \"systemic\" extremism in the ranks. But some researchers are skeptical of the safeguards in place.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 26,
           "end": 33,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 52,
           "end": 58,
@@ -3026,7 +3026,7 @@
       "translatedDescription": "Interior Minister Alexander Dobrindt appeared at the Austro-German border to explain the government's new tougher border controls. The new government has made immigration policy a key part of its agenda.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -3068,14 +3068,14 @@
           "source": "title"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 64,
           "end": 68,
           "source": "description"
         },
         {
-          "entity": "North",
+          "entity": "North Korea",
           "label": "LOC",
           "start": 72,
           "end": 77,
@@ -3089,7 +3089,7 @@
           "source": "description"
         },
         {
-          "entity": "Indigenous",
+          "entity": "Indigenous Americans",
           "label": "MISC",
           "start": 139,
           "end": 149,
@@ -3110,14 +3110,14 @@
       "translatedDescription": "The new German government has agreed to stop family members of refugees with subsidiary protection status from moving to Germany. The controversial move will particularly affect Syrian families.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 8,
           "end": 14,
@@ -3145,7 +3145,7 @@
       "translatedDescription": "Despite the efforts of its organizers, the Eurovision Song Contest in Switzerland's Basel has not been free of politics. Here's an overview of an unusual start, protests against Israel's artist and controversial songs.",
       "ner": [
         {
-          "entity": "Eurovision",
+          "entity": "Eurovision Song Contest",
           "label": "MISC",
           "start": 0,
           "end": 10,
@@ -3194,7 +3194,7 @@
       "translatedDescription": "Germany and the United Kingdom are increasing their military cooperation, aiming to jointly develop long-range precision weapons. The aim is to protect Europe from potential attacks.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -3299,7 +3299,7 @@
           "source": "description"
         },
         {
-          "entity": "Roma",
+          "entity": "Roma Resistance Day",
           "label": "MISC",
           "start": 21,
           "end": 25,
@@ -3390,7 +3390,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 123,
           "end": 128,
@@ -3411,7 +3411,7 @@
       "translatedDescription": "Germany and Israel established diplomatic relations 60 years ago. To commemorate the occasion, Israeli President Herzog visited Berlin and German President Steinmeier went to Jerusalem. DW's Christoph Strack was there.",
       "ner": [
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -3425,7 +3425,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -3522,7 +3522,7 @@
       "translatedDescription": "Pope Leo XIV was gifted a tennis racket by world number one player Jannik Sinner on Wednesday. Sinner offered to volley with the pontiff, who declined saying, \"we might break something.\"",
       "ner": [
         {
-          "entity": "Sinner",
+          "entity": "Jannik Sinner",
           "label": "PER",
           "start": 26,
           "end": 32,
@@ -3536,7 +3536,7 @@
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -3592,7 +3592,7 @@
           "source": "description"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 118,
           "end": 120,
@@ -3627,7 +3627,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -3669,7 +3669,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 26,
           "end": 31,
@@ -3683,7 +3683,7 @@
           "source": "title"
         },
         {
-          "entity": "World Cup",
+          "entity": "FIFA Women's Club World Cup",
           "label": "MISC",
           "start": 37,
           "end": 46,
@@ -3711,7 +3711,7 @@
       "translatedDescription": "Trump's departure from decades of established trade practices is leaving a lasting impact on the German auto industry. Carmakers can do little but wait and hope things won't turn out as badly as feared.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -3732,7 +3732,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 97,
           "end": 103,
@@ -3753,14 +3753,14 @@
       "translatedDescription": "In a wide-ranging speech in the Bundestag, the German Chancellor outlined his new government's priorities, including a plan to revive Germany's struggling economy and transform it once again into a \"growth locomotive.\"",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 9,
           "end": 13,
@@ -3781,7 +3781,7 @@
           "source": "description"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 47,
           "end": 53,
@@ -3830,7 +3830,7 @@
           "source": "description"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 47,
           "end": 53,
@@ -3865,7 +3865,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 29,
           "end": 36,
@@ -3928,7 +3928,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 181,
           "end": 189,
@@ -3956,21 +3956,21 @@
           "source": "title"
         },
         {
-          "entity": "pro",
+          "entity": "Pro League",
           "label": "MISC",
           "start": 17,
           "end": 20,
           "source": "title"
         },
         {
-          "entity": "Hitler",
+          "entity": "Adolf Hitler",
           "label": "PER",
           "start": 21,
           "end": 27,
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 47,
           "end": 54,
@@ -4012,7 +4012,7 @@
       "translatedDescription": "The founder of a banned faction of the far-right \"Reich Citizens\" group has been taken into custody. For more than ten years, Peter Fitzek has been at the head of a fantasy state calling itself the \"Kingdom of Germany.\"",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -4180,14 +4180,14 @@
       "translatedDescription": "The new German chancellor held talks with the Greek premier in Berlin. Meanwhile, Germany has banned the far-right anti-constitutional group \"Kingdom of Germany.\"",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 28,
           "end": 32,
@@ -4208,7 +4208,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 8,
           "end": 14,
@@ -4264,7 +4264,7 @@
       "translatedDescription": "The Reichsbürger are often radical and violent and do not recognize Germany as a legitimate state, and have increasingly drawn the attention of authorities. Who are they, and what kind of danger do they pose?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 8,
           "end": 15,
@@ -4312,14 +4312,14 @@
       "translatedDescription": "German Interior Minister Alexander Dobrindt has ordered asylum seekers to be turned away at the border. The move is legally and politically controversial.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -4410,7 +4410,7 @@
           "source": "title"
         },
         {
-          "entity": "Kohli",
+          "entity": "Virat Kohli",
           "label": "PER",
           "start": 131,
           "end": 136,
@@ -4445,7 +4445,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 53,
           "end": 58,
@@ -4506,14 +4506,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 63,
           "end": 68,
           "source": "description"
         },
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 119,
           "end": 126,
@@ -4688,7 +4688,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 127,
           "end": 132,
@@ -4772,7 +4772,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 40,
           "end": 47,
@@ -4869,7 +4869,7 @@
       "translatedDescription": "Climate issues took a back seat during Germany's election campaign. Is that likely to change under the incoming coalition government?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 9,
           "end": 16,
@@ -4903,14 +4903,14 @@
       "translatedDescription": "Fewer and fewer young people in Germany are sticking with football at a crucial age in their sporting development. Why is this happening and what does it mean?",
       "ner": [
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 4,
           "end": 10,
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 32,
           "end": 39,
@@ -4931,7 +4931,7 @@
       "translatedDescription": "The European Commission has unveiled a delayed roadmap to phase out Russian fossil fuels by 2027. But as Europe scrambles to diversify supplies, experts warn that new dependencies and old divisions could derail the plan.",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 8,
           "end": 10,
@@ -4980,14 +4980,14 @@
           "source": "title"
         },
         {
-          "entity": "Barcelona",
+          "entity": "Barcelona SC",
           "label": "ORG",
           "start": 15,
           "end": 24,
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 40,
           "end": 47,
@@ -5043,7 +5043,7 @@
       "translatedDescription": "A generations-long culture of deep-diving among women on a South Korean Island may have changed their genetic evolution. A study shows potential for medical discoveries.",
       "ner": [
         {
-          "entity": "Korea",
+          "entity": "North Korea",
           "label": "LOC",
           "start": 0,
           "end": 5,
@@ -5078,7 +5078,7 @@
       "translatedDescription": "From Wieland Wagner to Arno Breker, many musicians and artists benefited from Nazism. Some had shining careers after the war. How did this happen?",
       "ner": [
         {
-          "entity": "Hitler",
+          "entity": "Adolf Hitler",
           "label": "PER",
           "start": 4,
           "end": 10,
@@ -5211,7 +5211,7 @@
           "source": "title"
         },
         {
-          "entity": "Black",
+          "entity": "Black Mirror",
           "label": "MISC",
           "start": 5,
           "end": 10,
@@ -5281,7 +5281,7 @@
       "translatedDescription": "So far, Russia's economy has proven surprisingly resilient despite sweeping Western sanctions. But what happens if the United States ramps up the pressure with secondary sanctions?",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 4,
           "end": 9,
@@ -5295,21 +5295,21 @@
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 48,
           "end": 53,
           "source": "title"
         },
         {
-          "entity": "Western",
+          "entity": "Western Conference",
           "label": "MISC",
           "start": 76,
           "end": 83,
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 119,
           "end": 132,
@@ -5357,7 +5357,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -5434,7 +5434,7 @@
           "source": "description"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 77,
           "end": 79,
@@ -5539,7 +5539,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 46,
           "end": 53,
@@ -5644,7 +5644,7 @@
           "source": "description"
         },
         {
-          "entity": "Supreme Court",
+          "entity": "Supreme Court of Justice of the Nation",
           "label": "ORG",
           "start": 76,
           "end": 89,
@@ -5665,7 +5665,7 @@
       "translatedDescription": "What did sport mean to the Nazis? How did they view the Olympic Games? And what sporting opportunities did Jews have?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 9,
           "end": 16,
@@ -5714,21 +5714,21 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 4,
           "end": 10,
           "source": "description"
         },
         {
-          "entity": "Hamburg",
+          "entity": "Hamburg Central Station",
           "label": "LOC",
           "start": 53,
           "end": 60,
           "source": "description"
         },
         {
-          "entity": "Fröhlich",
+          "entity": "Alexandra Fröhlich",
           "label": "PER",
           "start": 72,
           "end": 80,
@@ -5798,7 +5798,7 @@
       "translatedDescription": "Trump’s first 100 days unleashed chaos with tariffs and executive orders, tanking markets and waning global trust. As the dust settles, has he strengthened America's hand or deepened economic risks?",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 12,
           "end": 17,
@@ -5812,7 +5812,7 @@
           "source": "title"
         },
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 156,
           "end": 163,
@@ -5840,7 +5840,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 50,
           "end": 58,
@@ -5868,7 +5868,7 @@
           "source": "title"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 133,
           "end": 137,
@@ -5882,7 +5882,7 @@
           "source": "description"
         },
         {
-          "entity": "Pacific",
+          "entity": "Pacific Ocean",
           "label": "LOC",
           "start": 163,
           "end": 170,
@@ -5945,7 +5945,7 @@
       "translatedDescription": "For many young people in Germany, getting a driver's license has become almost unaffordable. Calls for reform are growing louder, but will it be enough?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 32,
           "end": 39,
@@ -5973,14 +5973,14 @@
           "source": "title"
         },
         {
-          "entity": "Rüdiger",
+          "entity": "Antonio Rüdiger",
           "label": "PER",
           "start": 14,
           "end": 21,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -6008,7 +6008,7 @@
       "translatedDescription": "More than 100 cardinals will join a Vatican conclave to elect Pope Francis' successor. The subject of an Oscar-winning film and best-selling book, papal elections are now a pop-culture sensation.",
       "ner": [
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 12,
           "end": 16,
@@ -6119,7 +6119,7 @@
       "translatedDescription": "Novak Djokovic is in decline even as he grabbed more tennis history in Geneva. What remains to be seen is whether he still can get through a two-week major with his mind and body intact.",
       "ner": [
         {
-          "entity": "Djokovic",
+          "entity": "Novak Djokovic",
           "label": "PER",
           "start": 0,
           "end": 8,
@@ -6224,7 +6224,7 @@
           "source": "title"
         },
         {
-          "entity": "Eagles",
+          "entity": "Wamp Nga Mt Hagen Eagles",
           "label": "ORG",
           "start": 34,
           "end": 40,
@@ -6238,7 +6238,7 @@
           "source": "title"
         },
         {
-          "entity": "Adelaide",
+          "entity": "Adelaide Oval",
           "label": "LOC",
           "start": 26,
           "end": 34,
@@ -6280,7 +6280,7 @@
           "source": "description"
         },
         {
-          "entity": "Labor",
+          "entity": "Labor Party",
           "label": "ORG",
           "start": 25,
           "end": 30,
@@ -6399,7 +6399,7 @@
       "translatedDescription": "John Griffiths fears the only way to avoid a long battle with dementia is flying to Switzerland to end his life. With voluntary assisted dying now legal across almost of Australia, why does it remain off limits to those with dementia?",
       "ner": [
         {
-          "entity": "John",
+          "entity": "John Woeltz",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -6420,7 +6420,7 @@
           "source": "description"
         },
         {
-          "entity": "Australia",
+          "entity": "Western Australia",
           "label": "LOC",
           "start": 170,
           "end": 179,
@@ -6476,7 +6476,7 @@
           "source": "description"
         },
         {
-          "entity": "Pheobe",
+          "entity": "Pheobe Bishop",
           "label": "PER",
           "start": 144,
           "end": 150,
@@ -6924,7 +6924,7 @@
           "source": "title"
         },
         {
-          "entity": "It Was Just",
+          "entity": "It Was Just An Accident",
           "label": "MISC",
           "start": 25,
           "end": 36,
@@ -6938,7 +6938,7 @@
           "source": "title"
         },
         {
-          "entity": "Cannes",
+          "entity": "Cannes Festival",
           "label": "MISC",
           "start": 68,
           "end": 74,
@@ -7001,7 +7001,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 260,
           "end": 264,
@@ -7085,7 +7085,7 @@
           "source": "description"
         },
         {
-          "entity": "Bellefeuille",
+          "entity": "Alain Bellefeuille",
           "label": "PER",
           "start": 234,
           "end": 246,
@@ -7155,7 +7155,7 @@
       "translatedDescription": "Determined to continue their studies despite the ongoing war that has destroyed all the universities in Gaza, many students are attending online classes through a patchwork of apps, internet cafes and committed professors who record lessons as drones buzz.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 12,
           "end": 16,
@@ -7344,7 +7344,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 1138,
           "end": 1143,
@@ -7400,7 +7400,7 @@
           "source": "description"
         },
         {
-          "entity": "Black",
+          "entity": "Black Mirror",
           "label": "MISC",
           "start": 1931,
           "end": 1936,
@@ -7449,21 +7449,21 @@
       "translatedDescription": "Short shrift for Trump’s ‘50% tariff’ outburst; thousands of Americans want to become British for good – key US politics stories from Saturday 24 May at a glance As he continued his on-again, off-again tariff war with much of the world, Donald Trump went on social media to complain that the EU was “taking advantage of the United States on trade” and not coming to the table about it. “Therefore I am recommending a straight 50% Tariff on the European Union , starting on June 1, 2025.” The EU’s trade commissioner had a call with the US trade representative Jamieson Greer and Trump’s commerce secretary, Howard Lutnick. Maroš Šefčovič said afterwards: “The EU’s fully engaged, committed to securing a deal that works for both.” Continue reading...",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 53,
           "end": 55,
           "source": "title"
         },
         {
-          "entity": "Americans",
+          "entity": "Latin Americans",
           "label": "MISC",
           "start": 61,
           "end": 70,
@@ -7491,7 +7491,7 @@
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 324,
           "end": 337,
@@ -7547,7 +7547,7 @@
       "translatedDescription": "Thomas Barrack also stresses temporary lifting of sanctions for first time since 1979 after meeting with Ahmed al-Sharaa Donald Trump’s old friend Thomas Barrack, now serving as the US ambassador to Turkey and special envoy for Syria, praised Syria’s interim president, Ahmed al-Sharaa, after a meeting in Istanbul on Saturday. “I stressed the cessation of sanctions against Syria will preserve the integrity of our primary objective – the enduring defeat of ISIS – and will give the people of Syria a chance for a better future,” Barrack said in a statement , referring to actions taken on Friday by the Trump administration to temporarily suspend sanctions imposed on the government of the former president, Bashar al-Assad, who was deposed by rebel forces led by Sharaa late last year. Continue reading...",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -7617,7 +7617,7 @@
           "source": "description"
         },
         {
-          "entity": "Barrack",
+          "entity": "Thomas Barrack",
           "label": "PER",
           "start": 531,
           "end": 538,
@@ -7631,7 +7631,7 @@
           "source": "description"
         },
         {
-          "entity": "Sharaa",
+          "entity": "Ahmed Al-Sharaa",
           "label": "PER",
           "start": 766,
           "end": 772,
@@ -7771,7 +7771,7 @@
           "source": "title"
         },
         {
-          "entity": "Floyd",
+          "entity": "George Floyd",
           "label": "PER",
           "start": 149,
           "end": 154,
@@ -7995,7 +7995,7 @@
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 124,
           "end": 137,
@@ -8142,7 +8142,7 @@
           "source": "title"
         },
         {
-          "entity": "Starmer",
+          "entity": "Keir Starmer",
           "label": "PER",
           "start": 100,
           "end": 107,
@@ -8247,7 +8247,7 @@
           "source": "title"
         },
         {
-          "entity": "Americans",
+          "entity": "Latin Americans",
           "label": "MISC",
           "start": 0,
           "end": 9,
@@ -8268,7 +8268,7 @@
           "source": "description"
         },
         {
-          "entity": "Floyd",
+          "entity": "George Floyd",
           "label": "PER",
           "start": 126,
           "end": 131,
@@ -8310,7 +8310,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 37,
           "end": 41,
@@ -8324,7 +8324,7 @@
           "source": "description"
         },
         {
-          "entity": "Asean",
+          "entity": "Asean Community Vision",
           "label": "MISC",
           "start": 78,
           "end": 83,
@@ -8338,7 +8338,7 @@
           "source": "description"
         },
         {
-          "entity": "Hasan",
+          "entity": "Mohamad Hasan",
           "label": "PER",
           "start": 164,
           "end": 169,
@@ -8401,7 +8401,7 @@
           "source": "description"
         },
         {
-          "entity": "Arias Cristobal",
+          "entity": "A Arias Cristobal",
           "label": "PER",
           "start": 287,
           "end": 302,
@@ -8464,7 +8464,7 @@
           "source": "description"
         },
         {
-          "entity": "Kim",
+          "entity": "Kim Jong Un",
           "label": "PER",
           "start": 271,
           "end": 274,
@@ -8485,7 +8485,7 @@
       "translatedDescription": "A major power outage struck France's Alpes-Maritimes region, including Cannes, during the final day of the prestigious film festival. Authorities suspect arson after a fire at an electrical substation and damage to a pylon. Despite the disruption, which local officials believe was intentional sabotage, the Cannes Film Festival's closing ceremony proceeded as scheduled, thanks to an independent power supply.",
       "ner": [
         {
-          "entity": "France",
+          "entity": "Stade de France",
           "label": "LOC",
           "start": 18,
           "end": 24,
@@ -8527,7 +8527,7 @@
       "translatedDescription": "Former President Joe Biden, recently diagnosed with prostate cancer, made a public appearance at his grandson Robert Hunter Biden II's high school graduation in Connecticut. The family, including Jill and Ashley Biden, celebrated the milestone.",
       "ner": [
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -8674,7 +8674,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Musk",
+          "entity": "Elon Musk",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -8695,7 +8695,7 @@
       "translatedDescription": "In Cyprus, a language called Cypriot Maronite Arabic, or Sanna, faces extinction, with only 900 speakers remaining. Originating from Syrian Arabic and containing traces of Aramaic, the language was brought to Cyprus by Arab Christians centuries ago. Now, the Maronite community, with support from the government and the EU, is working to revitalize Sanna through schools, textbooks, and language classes.",
       "ner": [
         {
-          "entity": "Cypriot",
+          "entity": "Cypriot Maronite Arabic",
           "label": "MISC",
           "start": 0,
           "end": 7,
@@ -8744,14 +8744,14 @@
           "source": "description"
         },
         {
-          "entity": "Maronite",
+          "entity": "Cypriot Maronite Arabic",
           "label": "MISC",
           "start": 259,
           "end": 267,
           "source": "description"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 320,
           "end": 322,
@@ -8786,7 +8786,7 @@
           "source": "title"
         },
         {
-          "entity": "Se",
+          "entity": "Se Kuruduadua",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -8807,7 +8807,7 @@
           "source": "description"
         },
         {
-          "entity": "Salgado",
+          "entity": "Sebastião Salgado",
           "label": "PER",
           "start": 298,
           "end": 305,
@@ -8828,7 +8828,7 @@
       "translatedDescription": "President Trump announced a partnership between US Steel and Nippon Steel, aiming to keep the company in America and its headquarters in Pittsburgh. While not explicitly endorsing Nippon Steel's takeover bid, the announcement boosted US Steel's stock. Trump also addressed Apple's plans to build plants in India, stating that products sold in the US would face tariffs.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -8856,7 +8856,7 @@
           "source": "title"
         },
         {
-          "entity": "US Steel",
+          "entity": "US Steel-Nippon",
           "label": "ORG",
           "start": 48,
           "end": 56,
@@ -8870,7 +8870,7 @@
           "source": "description"
         },
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 105,
           "end": 112,
@@ -8912,7 +8912,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 0,
           "end": 4,
@@ -8947,7 +8947,7 @@
       "translatedDescription": "Official data reveals a surge in Americans seeking British citizenship, reaching record highs in the first quarter of this year. The increase follows President Trump's reelection, prompting many Americans to explore relocation options. A significant number of Americans were also granted the right to settle in Britain, primarily through family ties or skilled worker visas.",
       "ner": [
         {
-          "entity": "Americans",
+          "entity": "Latin Americans",
           "label": "MISC",
           "start": 16,
           "end": 25,
@@ -8968,14 +8968,14 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 160,
           "end": 165,
           "source": "description"
         },
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 311,
           "end": 318,
@@ -9038,7 +9038,7 @@
           "source": "title"
         },
         {
-          "entity": "Harvard",
+          "entity": "Harvard University",
           "label": "ORG",
           "start": 20,
           "end": 27,
@@ -9059,7 +9059,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 43,
           "end": 48,
@@ -9115,7 +9115,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 42,
           "end": 46,
@@ -9199,7 +9199,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 40,
           "end": 45,
@@ -9304,14 +9304,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 43,
           "end": 48,
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 8,
           "end": 16,
@@ -9325,7 +9325,7 @@
           "source": "description"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 99,
           "end": 104,
@@ -9395,7 +9395,7 @@
       "translatedDescription": "As the US bullies trade partners and undermines multilateral norms, Hong Kong can help Beijing uphold a cooperative global system.",
       "ner": [
         {
-          "entity": "Hong Kong",
+          "entity": "Hong Kong Palace Museum",
           "label": "LOC",
           "start": 4,
           "end": 13,
@@ -9437,7 +9437,7 @@
           "source": "title"
         },
         {
-          "entity": "Hong Kong",
+          "entity": "Hong Kong Palace Museum",
           "label": "LOC",
           "start": 51,
           "end": 60,
@@ -9689,7 +9689,7 @@
       "translatedDescription": "A young journalist from Gaza who was evacuated from the war-torn territory last month and fled to Ireland believes his life remains under threat because he continues to speak out against the Israeli regime.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 47,
           "end": 51,
@@ -9752,7 +9752,7 @@
           "source": "description"
         },
         {
-          "entity": "Ie",
+          "entity": "Ie Cornelius",
           "label": "PER",
           "start": 62,
           "end": 64,
@@ -9927,7 +9927,7 @@
       "translatedDescription": "When Leonie Cornelius travelled to Italy earlier this year, she fell in love. But unlike many a holiday romance, she decided there was no way she could handle the thought of never seeing the object of her affection once again.",
       "ner": [
         {
-          "entity": "Leon",
+          "entity": "Leon Botstein",
           "label": "PER",
           "start": 15,
           "end": 19,
@@ -9983,7 +9983,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 55,
           "end": 59,
@@ -10359,7 +10359,7 @@
           "source": "description"
         },
         {
-          "entity": "French",
+          "entity": "French Cup",
           "label": "MISC",
           "start": 161,
           "end": 167,
@@ -10422,14 +10422,14 @@
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 83,
           "end": 96,
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 191,
           "end": 199,
@@ -10457,14 +10457,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 9,
           "end": 14,
           "source": "title"
         },
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 17,
           "end": 24,
@@ -10576,7 +10576,7 @@
           "source": "title"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 16,
           "end": 18,
@@ -10779,7 +10779,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 47,
           "end": 55,
@@ -10835,14 +10835,14 @@
           "source": "title"
         },
         {
-          "entity": "Harvard",
+          "entity": "Harvard University",
           "label": "ORG",
           "start": 17,
           "end": 24,
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 118,
           "end": 123,
@@ -10863,7 +10863,7 @@
       "translatedDescription": "Floodlights offer a gritty aesthetic that more tenderly echoes Midnight Oil and The Triffids – bands that tried to make sense of a country and its shadows.",
       "ner": [
         {
-          "entity": "Melbourne",
+          "entity": "South Melbourne",
           "label": "LOC",
           "start": 37,
           "end": 46,
@@ -10975,7 +10975,7 @@
       "translatedDescription": "South Melbourne residents are on edge a day after gunshots shattered the peace in a suburban street where a woman was killed after ramming a policeman with a car.",
       "ner": [
         {
-          "entity": "South",
+          "entity": "South Western Railways",
           "label": "ORG",
           "start": 0,
           "end": 5,
@@ -11052,7 +11052,7 @@
       "translatedDescription": "The teen star is expected to be Belmore-bound as Parramatta miss out and the Tigers bring another tumultuous chapter in their history to a close.",
       "ner": [
         {
-          "entity": "Galvin",
+          "entity": "An Galvin",
           "label": "PER",
           "start": 0,
           "end": 6,
@@ -11080,14 +11080,14 @@
           "source": "description"
         },
         {
-          "entity": "Parramatta",
+          "entity": "Parramatta Eels",
           "label": "ORG",
           "start": 49,
           "end": 59,
           "source": "description"
         },
         {
-          "entity": "Tigers",
+          "entity": "Wests Tigers",
           "label": "ORG",
           "start": 77,
           "end": 83,
@@ -11108,7 +11108,7 @@
       "translatedDescription": "Police arrest kidnapping suspect John Woeltz in New York.",
       "ner": [
         {
-          "entity": "New York",
+          "entity": "New York City",
           "label": "LOC",
           "start": 36,
           "end": 44,
@@ -11150,7 +11150,7 @@
           "source": "title"
         },
         {
-          "entity": "Australia",
+          "entity": "Western Australia",
           "label": "LOC",
           "start": 12,
           "end": 22,
@@ -11192,14 +11192,14 @@
       "translatedDescription": "In a galaxy long ago and far away, there was shame attached to selling your office. But as the past week has shown, the president is a pro at quid pro quo.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 23,
           "end": 31,
@@ -11269,14 +11269,14 @@
       "translatedDescription": "From power outages to lobster-stealing seagulls, here are the best, weirdest and most notable moments from La Croisette this year.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 30,
           "end": 35,
           "source": "title"
         },
         {
-          "entity": "78",
+          "entity": "Boeing 78",
           "label": "MISC",
           "start": 66,
           "end": 68,
@@ -11423,7 +11423,7 @@
       "translatedDescription": "Deputy Nationals leader Kevin Hogan reveals David Littleproud did not ask the partyroom’s permission for a proposal that the Nationals end cabinet solidarity.",
       "ner": [
         {
-          "entity": "Hogan",
+          "entity": "Kevin Hogan",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -11493,7 +11493,7 @@
           "source": "description"
         },
         {
-          "entity": "Geneva Open",
+          "entity": "Gonet Geneva Open",
           "label": "MISC",
           "start": 85,
           "end": 96,
@@ -11521,7 +11521,7 @@
           "source": "title"
         },
         {
-          "entity": "French",
+          "entity": "French Cup",
           "label": "MISC",
           "start": 94,
           "end": 100,
@@ -11570,7 +11570,7 @@
           "source": "title"
         },
         {
-          "entity": "Samsung",
+          "entity": "Samsung South Africa",
           "label": "ORG",
           "start": 21,
           "end": 28,
@@ -11605,7 +11605,7 @@
           "source": "title"
         },
         {
-          "entity": "The",
+          "entity": "The Post",
           "label": "ORG",
           "start": 21,
           "end": 24,
@@ -11675,7 +11675,7 @@
           "source": "title"
         },
         {
-          "entity": "Young Mandelas",
+          "entity": "Young Mandelas of the Future",
           "label": "MISC",
           "start": 66,
           "end": 80,
@@ -11717,7 +11717,7 @@
           "source": "title"
         },
         {
-          "entity": "Lotto",
+          "entity": "Daily Lotto",
           "label": "MISC",
           "start": 22,
           "end": 27,
@@ -11766,7 +11766,7 @@
           "source": "title"
         },
         {
-          "entity": "French",
+          "entity": "French Cup",
           "label": "MISC",
           "start": 50,
           "end": 56,
@@ -11836,7 +11836,7 @@
           "source": "title"
         },
         {
-          "entity": "Powerball",
+          "entity": "Powerball Plus",
           "label": "MISC",
           "start": 22,
           "end": 31,
@@ -11899,14 +11899,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 46,
           "end": 51,
           "source": "title"
         },
         {
-          "entity": "Ramaphosa",
+          "entity": "Cyril Ramaphosa",
           "label": "PER",
           "start": 55,
           "end": 64,
@@ -11962,14 +11962,14 @@
           "source": "description"
         },
         {
-          "entity": "Jalisco",
+          "entity": "Jalisco Stadium",
           "label": "LOC",
           "start": 293,
           "end": 300,
           "source": "description"
         },
         {
-          "entity": "Clausura",
+          "entity": "Clausura Tournament",
           "label": "MISC",
           "start": 352,
           "end": 360,
@@ -12116,14 +12116,14 @@
           "source": "description"
         },
         {
-          "entity": "López",
+          "entity": "Manuel Vega López",
           "label": "PER",
           "start": 1543,
           "end": 1548,
           "source": "description"
         },
         {
-          "entity": "Sánchez",
+          "entity": "Pablo Sánchez",
           "label": "PER",
           "start": 1550,
           "end": 1557,
@@ -12235,7 +12235,7 @@
           "source": "description"
         },
         {
-          "entity": "Soto",
+          "entity": "Omar Soto",
           "label": "PER",
           "start": 1697,
           "end": 1701,
@@ -12270,7 +12270,7 @@
           "source": "description"
         },
         {
-          "entity": "Pérez",
+          "entity": "Karlen Pérez",
           "label": "PER",
           "start": 1740,
           "end": 1745,
@@ -12361,7 +12361,7 @@
           "source": "description"
         },
         {
-          "entity": "Noroña",
+          "entity": "Gerardo Fernández Noroña",
           "label": "PER",
           "start": 1085,
           "end": 1091,
@@ -12445,7 +12445,7 @@
           "source": "description"
         },
         {
-          "entity": "Commission",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 552,
           "end": 562,
@@ -12543,21 +12543,21 @@
       "translatedDescription": "Tigres female wants to make history, and for that he will have to overcome a strong rival like Gotham FC, a team that eliminated America in the other semifinal. The winner will also win a ticket to the FIFA 2026 Women's Champions Cup and the FIFA Women's Club World Cup 2028.The Amazon Semifinals as this grand final are played in the volcano, at home and with their people. What time does the female tigers vs. Gotham begin? This match corresponding to the Concacaf final W Champions Cup between the Amazons and Bat 2025 Hora: 20:00 hours (Time of central Mexico) Place: University Stadium. Nuevo León View This post on Instagram A Post Shared By Club Tigres Women's (@clubigresfemenil)\nWhere to see live the female tigers vs Gotham? The Grand Final of the Concachampions W can be followed live through the Paga Television Channel Sign Concacaf club level, Gotham starts as a favorite to take the game at the end of the regulation time, and thus keep the cup. A draw is the second most likely result, while the victory of the Amazon looks like the least favorite. The previous one is based on the mums available on the hot page.mx, although it should be remembered that these can change at any time. Female Tigres +375 Empate +185gotham -110 How do they reach this game? The Amazons eliminated the Portland Thorns in the semifinals with a blunt 2-0 that they got from the first half of the game, which allowed them to administer the advantage of the rest of the meeting.        View this post on instagram a post share by W Champions cup (@wchampionscup)\nFor its part, the New York team eliminated the Eagles of America in a match where they overwhelmed the rival in a few minutes, because in a period of 12 minutes they had already put three goals, an advantage of which it was no longer known Kgatlaagothamberger, Reale, Sonnet, Carter, Freeman, Torres, Howell, Purce, Da Silva Ferreira, Schupansky and Gonzálezminuto to Minute",
       "ner": [
         {
-          "entity": "Tigres",
+          "entity": "Club Tigres",
           "label": "ORG",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Gotham",
+          "entity": "Gotham FC",
           "label": "ORG",
           "start": 10,
           "end": 16,
           "source": "title"
         },
         {
-          "entity": "Concacaf W",
+          "entity": "Concacaf W Champions Cup",
           "label": "MISC",
           "start": 23,
           "end": 33,
@@ -12578,7 +12578,7 @@
           "source": "description"
         },
         {
-          "entity": "America",
+          "entity": "Eagles of America",
           "label": "ORG",
           "start": 129,
           "end": 136,
@@ -12606,14 +12606,14 @@
           "source": "description"
         },
         {
-          "entity": "Concacaf",
+          "entity": "CONCACAF W",
           "label": "MISC",
           "start": 458,
           "end": 466,
           "source": "description"
         },
         {
-          "entity": "W Champions Cup",
+          "entity": "Concaf W Champions Cup",
           "label": "MISC",
           "start": 473,
           "end": 488,
@@ -12634,14 +12634,14 @@
           "source": "description"
         },
         {
-          "entity": "Ho",
+          "entity": "Ho Chi Minh",
           "label": "LOC",
           "start": 522,
           "end": 524,
           "source": "description"
         },
         {
-          "entity": "Mexico",
+          "entity": "Mexico City",
           "label": "LOC",
           "start": 557,
           "end": 563,
@@ -12718,7 +12718,7 @@
           "source": "description"
         },
         {
-          "entity": "W Champions cup",
+          "entity": "Concaf W Champions Cup",
           "label": "MISC",
           "start": 1523,
           "end": 1538,
@@ -12802,14 +12802,14 @@
           "source": "description"
         },
         {
-          "entity": "Da",
+          "entity": "Gabriel Ferreira Messias Da Silva",
           "label": "PER",
           "start": 1872,
           "end": 1874,
           "source": "description"
         },
         {
-          "entity": "Silva",
+          "entity": "Gabriel Ferreira Messias Da Silva",
           "label": "PER",
           "start": 1875,
           "end": 1880,
@@ -12837,7 +12837,7 @@
           "source": "description"
         },
         {
-          "entity": "González",
+          "entity": "Luisa González",
           "label": "PER",
           "start": 1906,
           "end": 1914,
@@ -12991,7 +12991,7 @@
           "source": "description"
         },
         {
-          "entity": "Lucero",
+          "entity": "Lucero Zapién Urbina",
           "label": "PER",
           "start": 263,
           "end": 269,
@@ -13005,7 +13005,7 @@
           "source": "description"
         },
         {
-          "entity": "Pro",
+          "entity": "Pro Triunfo de Orense",
           "label": "ORG",
           "start": 463,
           "end": 466,
@@ -13054,7 +13054,7 @@
           "source": "description"
         },
         {
-          "entity": "Disney",
+          "entity": "Disney+",
           "label": "ORG",
           "start": 99,
           "end": 105,
@@ -13110,7 +13110,7 @@
           "source": "description"
         },
         {
-          "entity": "She",
+          "entity": "Tashi Gyalzen She",
           "label": "PER",
           "start": 549,
           "end": 552,
@@ -13145,14 +13145,14 @@
           "source": "description"
         },
         {
-          "entity": "Blunt",
+          "entity": "Emily Blunt",
           "label": "PER",
           "start": 928,
           "end": 933,
           "source": "description"
         },
         {
-          "entity": "Hathaway",
+          "entity": "Anne Hathaway",
           "label": "PER",
           "start": 938,
           "end": 946,
@@ -13173,14 +13173,14 @@
           "source": "description"
         },
         {
-          "entity": "Priestly",
+          "entity": "Miranda Priestly",
           "label": "PER",
           "start": 1044,
           "end": 1052,
           "source": "description"
         },
         {
-          "entity": "Streep",
+          "entity": "Ryl Streep",
           "label": "PER",
           "start": 1355,
           "end": 1361,
@@ -13243,7 +13243,7 @@
           "source": "description"
         },
         {
-          "entity": "Díaz Ávila",
+          "entity": "Ramón Díaz Ávila",
           "label": "PER",
           "start": 584,
           "end": 594,
@@ -13397,7 +13397,7 @@
           "source": "description"
         },
         {
-          "entity": "Toledo Medina",
+          "entity": "José Luis Chanito Toledo Medina",
           "label": "PER",
           "start": 501,
           "end": 514,
@@ -13411,7 +13411,7 @@
           "source": "description"
         },
         {
-          "entity": "De",
+          "entity": "Oaxaca de Salina Cruz",
           "label": "LOC",
           "start": 573,
           "end": 575,
@@ -13425,14 +13425,14 @@
           "source": "description"
         },
         {
-          "entity": "Mexico",
+          "entity": "Mexico City",
           "label": "LOC",
           "start": 1109,
           "end": 1116,
           "source": "description"
         },
         {
-          "entity": "Chanito",
+          "entity": "José Luis Chanito Toledo Medina",
           "label": "PER",
           "start": 1147,
           "end": 1154,
@@ -13551,7 +13551,7 @@
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 498,
           "end": 511,
@@ -13572,7 +13572,7 @@
           "source": "description"
         },
         {
-          "entity": "Australia",
+          "entity": "Western Australia",
           "label": "LOC",
           "start": 625,
           "end": 634,
@@ -13663,7 +13663,7 @@
           "source": "description"
         },
         {
-          "entity": "Olympic",
+          "entity": "Olympic Games",
           "label": "MISC",
           "start": 1298,
           "end": 1305,
@@ -13754,7 +13754,7 @@
           "source": "description"
         },
         {
-          "entity": "El",
+          "entity": "El I Unicu",
           "label": "ORG",
           "start": 1813,
           "end": 1815,
@@ -13768,14 +13768,14 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 1823,
           "end": 1831,
           "source": "description"
         },
         {
-          "entity": "Mexico",
+          "entity": "Mexico City",
           "label": "LOC",
           "start": 1880,
           "end": 1887,
@@ -13796,7 +13796,7 @@
           "source": "description"
         },
         {
-          "entity": "Én",
+          "entity": "Én Rocha Moya",
           "label": "PER",
           "start": 1913,
           "end": 1915,
@@ -13845,14 +13845,14 @@
           "source": "title"
         },
         {
-          "entity": "Claudia Sheinbaum",
+          "entity": "Claudia Sheinbaum Pardo",
           "label": "PER",
           "start": 10,
           "end": 27,
           "source": "description"
         },
         {
-          "entity": "Mexico",
+          "entity": "Mexico City",
           "label": "LOC",
           "start": 277,
           "end": 283,
@@ -13880,7 +13880,7 @@
           "source": "description"
         },
         {
-          "entity": "House",
+          "entity": "Upper House",
           "label": "ORG",
           "start": 454,
           "end": 459,
@@ -14020,7 +14020,7 @@
           "source": "description"
         },
         {
-          "entity": "Mexico",
+          "entity": "Mexico City",
           "label": "LOC",
           "start": 100,
           "end": 106,
@@ -14062,7 +14062,7 @@
           "source": "description"
         },
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 603,
           "end": 610,
@@ -14083,7 +14083,7 @@
           "source": "description"
         },
         {
-          "entity": "New York",
+          "entity": "New York City",
           "label": "LOC",
           "start": 805,
           "end": 813,
@@ -14097,14 +14097,14 @@
           "source": "description"
         },
         {
-          "entity": "Oaxaca",
+          "entity": "Oaxaca de Salina Cruz",
           "label": "LOC",
           "start": 1236,
           "end": 1242,
           "source": "description"
         },
         {
-          "entity": "Adal Jair",
+          "entity": "Marino Adal Jair",
           "label": "PER",
           "start": 1336,
           "end": 1345,
@@ -14125,7 +14125,7 @@
       "translatedDescription": "América Women had to settle for fourth place in the women's conception of this 2025 after they fell 3-0 against Portland Thorns in another exhibition that leaves much to be desired from those led by Ángel Villacampa, who recently lost the final of the 2025 Clausura Clausura of the MX League Women's MX. The first half saw how the Coapa painting had better goal options, but not the forcefulness to be able to open the score Strikes First for The Thorns! pic.twitter.com/uucpjo5tkx— Concacaf W (@Concacafw) May 24, 2025\n\n\nAt minute 16, Portland was close to the goal when Payton Linnehan appeared in the area and took a shot placed that for his bad fortune hit the crossbar. Priscila Da Silva had a chance at minute 20, when they sent a center from the left wing and made a movement to finish off the ball, only did not give him. The lead ended out minutes later due to injury. Camberos reappeared at minute 27 with a getaway through the left profile of the field, entered the area in goal position, but took a shot that ended up going to the position of goalkeeper Morgan Messner.A Moment of Brilliance by Payton Linnehan! Thorns Now Lead 2–0! ??? pic.twitter.com/5skj0be8ws— Concacaf W (@Concacafw) May 25, 2025\n\n\nThe goal finally fell to minute 43, when Carissa Boeckman grabbed a long pass through the right wing and sent a center that Pietra Tordin had all the time in the world to control, accommodate and send it to the bottom of the networks. The second goal fell to the 51st minute, already in the second half, when Payton Linnehan got into the area, he cut a rival and took a shot to beat the porter Itzel Velasco. Irene Guerrero tried to discount 54, when she stole a ball in three quarters from the field and took a long distance shot that went above the Portland arch. The American had the third goal at minute 78, when Caiya Hanks had a ball in the area in front of the archera, but her shot crashed into Itzel Velasco. It was finally Olivia Mourtie at minute 80 with a shot in the area that achieved the 3-0 on the scoreboard.olivia Moultrie Makes It 3-0 for Thorns ⚽ Pic.twitter.com/mnwwmav3ep— Concacaf W (@Concacafw) May 25, 2025\n\n\nNow we will see the continuity of Villacampa as coach of America, who ends a contract and there have already been polls with other strategists, only that the directive is turning to see technical directors with licenses from the United States and UEFA, not those who did the course in Mexico, which is the endit.rgs",
       "ner": [
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -14195,7 +14195,7 @@
           "source": "description"
         },
         {
-          "entity": "Portland",
+          "entity": "Portland Thorns",
           "label": "ORG",
           "start": 536,
           "end": 544,
@@ -14237,7 +14237,7 @@
           "source": "description"
         },
         {
-          "entity": "Thorns",
+          "entity": "The Thorns",
           "label": "ORG",
           "start": 1124,
           "end": 1130,
@@ -14286,7 +14286,7 @@
           "source": "description"
         },
         {
-          "entity": "Ne",
+          "entity": "Ne Brosh Mckenna",
           "label": "PER",
           "start": 1535,
           "end": 1537,
@@ -14335,7 +14335,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 1786,
           "end": 1794,
@@ -14433,7 +14433,7 @@
           "source": "description"
         },
         {
-          "entity": "French",
+          "entity": "French Cup",
           "label": "MISC",
           "start": 111,
           "end": 117,
@@ -14496,7 +14496,7 @@
           "source": "description"
         },
         {
-          "entity": "Melliti",
+          "entity": "Nadia Melliti",
           "label": "PER",
           "start": 887,
           "end": 894,
@@ -14545,7 +14545,7 @@
       "translatedDescription": "América and Portland Thorns will define this Saturday to the third place of the Concacaf W Champions Cup in a duel practically consolation after both fell into their semifinals and now they want a place on the podium. América vs Portland Thorns at the Concacaf W Champions Cup? América and Portland Thorns will be measured by third place of the Concacaf W Champions Cup is a May 24 in the volcano, where the actions will begin at 5:00 p.m., time of central Mexico. Thele First Ever W Champions Cup Final is set. ???????? Tigres vs Gotham FC ??????? Get Your Tickets Now! pic.twitter.com/GLD3U0HODH— CONCACAF W (@Concacafw) May 23, 2025\n\n\nWhere to see America vs. Portland Thorns of the Concacaf W Champions Cup? The match between Águilas and Portland will be broadcast by ESPN 2, cable television channel, but it will also be available on the Disney+streaming platform. ???? America vs. Thorns ???? ️ University Stadium. ??? 17:00 hours. pic.twitter.com/s2dae7bxpc— Club América Women\n\n\nHow do America and Portland Thorns arrive to the match for third place? America fell by 3-1 score against Gotham FC in the first semifinal of the Concacaf W Champions Cup, so it ran out of the opportunity to win a title in the first half of 2025 and will seek comfort this weekend.The Águilas left with a clear defeat before the NWSL box The continuity of Ángel Villcampa on the blue bench, which is why the result will attract more attention. Portland Thorns was eliminated by the Tigers, which were imposed with a 2-0 score at home, so they had a complicated task that they could not overcome, and now they will want the consolation prize. Hot bets.MX shows that Portland Thorns is the favorite team to win the game for the third place of the Concacaf Champions Cup, but the mummies can change before and during the game against America. Women's America +275 Empate +295PORTLAND THORNS -134 ALLINEATIONS AMERIC R., Enciso, Antonio, Hernández, Jana R.Portland Thorssmessner, Kelley, Obaze, Hiatt, Clums, Hirst, Boeckmann, Alidou, SpaStra, Linnehan, Tordinminuto to Minute",
       "ner": [
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -14566,7 +14566,7 @@
           "source": "title"
         },
         {
-          "entity": "América",
+          "entity": "América Women",
           "label": "ORG",
           "start": 0,
           "end": 7,
@@ -14580,7 +14580,7 @@
           "source": "description"
         },
         {
-          "entity": "Mexico",
+          "entity": "Mexico City",
           "label": "LOC",
           "start": 457,
           "end": 463,
@@ -14601,7 +14601,7 @@
           "source": "description"
         },
         {
-          "entity": "CONCACAF W",
+          "entity": "Concacaf W Champions Cup",
           "label": "MISC",
           "start": 599,
           "end": 609,
@@ -14643,7 +14643,7 @@
           "source": "description"
         },
         {
-          "entity": "Thorns",
+          "entity": "The Thorns",
           "label": "ORG",
           "start": 887,
           "end": 893,
@@ -14678,7 +14678,7 @@
           "source": "description"
         },
         {
-          "entity": "Tigers",
+          "entity": "Wests Tigers",
           "label": "ORG",
           "start": 1469,
           "end": 1475,
@@ -14699,21 +14699,21 @@
           "source": "description"
         },
         {
-          "entity": "Cup",
+          "entity": "German Cup",
           "label": "MISC",
           "start": 1751,
           "end": 1754,
           "source": "description"
         },
         {
-          "entity": "Em",
+          "entity": "Pierre-Em",
           "label": "PER",
           "start": 1848,
           "end": 1850,
           "source": "description"
         },
         {
-          "entity": "AL",
+          "entity": "Al Nowais",
           "label": "ORG",
           "start": 1880,
           "end": 1882,
@@ -14727,14 +14727,14 @@
           "source": "description"
         },
         {
-          "entity": "Antonio",
+          "entity": "Antonio Rüdiger",
           "label": "PER",
           "start": 1912,
           "end": 1919,
           "source": "description"
         },
         {
-          "entity": "Hernández",
+          "entity": "América Yamilet Sánchez Hernández",
           "label": "PER",
           "start": 1921,
           "end": 1930,
@@ -14762,14 +14762,14 @@
       "translatedDescription": "The president of the Political Coordination Board of the Chamber of Deputies, Ricardo Monreal Ávila, said that it is necessary Edition of the Training Seminar \"Young legislating 2025\", Monreal said that this is the idea of ​​the seminars that are carried out in the Chamber of Deputies and in the facilities where the laws are created at the headquarters of the Legislative Power, and asked the young people to defend their ideas and their purposes, fight because the country is better. May younger learn and sow the seed of a new generation that we need. The coordinator of the Morena Parliamentary Group commented that personally, he likes to live with young people, train them and influence them to be better, since they are the relay. \"I would like to deliver the post to the best, the best, to those who think that our duty is the country, it is the homeland, it is the people, it is our community, our municipality, our state, our freedoms, our rights; therefore, it is important that you are in this three -week seminar,\" he added.\tLearning the legislativoricardo monreal process clarified that what they will learn is how to legislate, how to write a point of agreement or an initiative, what is the legislative process. At the end, discussion and debate simulations will be made, where they will be grouped as parliamentary groups, with the parties that exist in Mexico and will defend their ideas and their initiatives. Therefore, she asked the general director of the Training and Permanent Training Unit of the Chamber of Deputies, Cynthia Murrieta Morena, organizing these meetings; there are 120 young people admitted to 604 requests from different parts of the country and of different faculties and schools. \"It is a good call and they are more women now.\" We do not want it to be a course where you do not learn and where we are only the meeting, we are not interested in Training so that young people face the new challenges that this century and this moment implies, \"he added. To you here to deliberate freely, to discuss with freedom and also to defend your principles, your thesis and your ideal, \"he said. Books, and remains a teacher in front of the group. \"That is why his chair is very important, because for me he is one of the most brilliant teachers,\" said votes for the seminar to help renew the political class and the leading class in the country. \" General Secretariat of the Chamber of Deputies, Cynthia Murrieta Morena, thanked Deputy Ricardo Monreal for this effort to support the young people. \"The great ally of the youth in Parliament is called Ricardo Monreal and, therefore, we thank you for that we are here organizing this forum for you and that the young people continue to prepare,\" said the general director. The Board is genuine and always wants the best prepared people to transmit knowledge and leave a legacy to the youth; He said to talk about youth, is to talk about the future, but also of the present; Mexico.\n\n\nRTG",
       "ner": [
         {
-          "entity": "Monreal",
+          "entity": "Ricardo Monreal Ávila",
           "label": "PER",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Mexico",
+          "entity": "Mexico City",
           "label": "LOC",
           "start": 18,
           "end": 24,
@@ -14839,14 +14839,14 @@
           "source": "description"
         },
         {
-          "entity": "Chamber",
+          "entity": "Chamber of Deputies",
           "label": "ORG",
           "start": 2409,
           "end": 2416,
           "source": "description"
         },
         {
-          "entity": "Cynthia",
+          "entity": "Cynthia Quaite",
           "label": "PER",
           "start": 2430,
           "end": 2437,
@@ -14944,7 +14944,7 @@
           "source": "description"
         },
         {
-          "entity": "State",
+          "entity": "Paulista State University",
           "label": "ORG",
           "start": 85,
           "end": 90,
@@ -14979,7 +14979,7 @@
           "source": "title"
         },
         {
-          "entity": "Champions League",
+          "entity": "Female Champions League",
           "label": "MISC",
           "start": 53,
           "end": 69,
@@ -15063,7 +15063,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 107,
           "end": 111,
@@ -15175,7 +15175,7 @@
           "source": "description"
         },
         {
-          "entity": "Cultural Virada",
+          "entity": "Cultural Virada Night",
           "label": "MISC",
           "start": 169,
           "end": 184,
@@ -15203,7 +15203,7 @@
       "translatedDescription": "Closing the first wave of Anhangabau stage headliners, singer Silva began his presentation at Virada Cultural at 10:25 pm, a 25 -minute delay in relation to the expected. Read more (05/25/2025 - 00h12)",
       "ner": [
         {
-          "entity": "Silva",
+          "entity": "Gabriel Ferreira Messias Da Silva",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -15245,7 +15245,7 @@
           "source": "title"
         },
         {
-          "entity": "Cultural Virada",
+          "entity": "Cultural Virada Night",
           "label": "MISC",
           "start": 40,
           "end": 55,
@@ -15273,7 +15273,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 177,
           "end": 186,
@@ -15301,14 +15301,14 @@
           "source": "title"
         },
         {
-          "entity": "Somos",
+          "entity": "Union, Somos",
           "label": "ORG",
           "start": 88,
           "end": 93,
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 137,
           "end": 146,
@@ -15336,7 +15336,7 @@
           "source": "title"
         },
         {
-          "entity": "For",
+          "entity": "General Authority for Statistics",
           "label": "ORG",
           "start": 20,
           "end": 23,
@@ -15357,7 +15357,7 @@
           "source": "title"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 65,
           "end": 74,
@@ -15406,7 +15406,7 @@
           "source": "description"
         },
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 87,
           "end": 91,
@@ -15420,7 +15420,7 @@
           "source": "description"
         },
         {
-          "entity": "Rio",
+          "entity": "Rio de Janeiro",
           "label": "LOC",
           "start": 202,
           "end": 205,
@@ -15469,14 +15469,14 @@
           "source": "title"
         },
         {
-          "entity": "Daniel",
+          "entity": "Daniel Noboa",
           "label": "PER",
           "start": 1,
           "end": 7,
           "source": "description"
         },
         {
-          "entity": "Gloria",
+          "entity": "Gloria Groove",
           "label": "PER",
           "start": 11,
           "end": 17,
@@ -15630,7 +15630,7 @@
       "translatedDescription": "The six largest state -owned companies controlled by the federal government expanded their sponsorship funds in the third term of President Lula (PT). The contracts signed by Petrobras, Caixa, Banco do Brasil, Banco do Nordeste, Correios and BNDES approached the $ 1 billion mark last year. Read more (05/24/2025 - 23h00)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 85,
           "end": 89,
@@ -15651,7 +15651,7 @@
           "source": "description"
         },
         {
-          "entity": "Caixa",
+          "entity": "Caixa Econômica Federal",
           "label": "ORG",
           "start": 186,
           "end": 191,
@@ -15777,14 +15777,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 81,
           "end": 86,
           "source": "title"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 96,
           "end": 109,
@@ -15987,7 +15987,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 52,
           "end": 61,
@@ -16064,7 +16064,7 @@
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 214,
           "end": 227,
@@ -16162,7 +16162,7 @@
           "source": "title"
         },
         {
-          "entity": "uera",
+          "entity": "uera Park",
           "label": "LOC",
           "start": 68,
           "end": 72,
@@ -16204,14 +16204,14 @@
           "source": "title"
         },
         {
-          "entity": "Freddie",
+          "entity": "Freddie Mercury",
           "label": "PER",
           "start": 39,
           "end": 46,
           "source": "description"
         },
         {
-          "entity": "Mercury",
+          "entity": "Freddie Mercury",
           "label": "PER",
           "start": 63,
           "end": 70,
@@ -16253,7 +16253,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 147,
           "end": 155,
@@ -16351,7 +16351,7 @@
       "translatedDescription": "The approval of Bill 2.159 of 2021, by a large majority of the Senate, showed the lack of unit of the government Luiz Inacio Lula da Silva (PT) in the environmental theme. Read more (05/24/2025 - 22h00)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -16483,14 +16483,14 @@
       "translatedDescription": "\"Walking on the street/ hitting those who do not move/ the troop UCBR/ kicking the baby reborn.\" This song from the so -called União Chute Baby Reborn is already viralizing on social networks. But here, at the Reborn mothers meeting at Villa-Lobos Park West Zone of São Paulo, this Saturday (24), the song awakened surprise, fear and indignation. Read More (05/24/2025 - 21h46)",
       "ner": [
         {
-          "entity": "Villa-Lobos Park",
+          "entity": "Villa-Lobos Park West Zone",
           "label": "LOC",
           "start": 61,
           "end": 77,
           "source": "title"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 81,
           "end": 90,
@@ -16511,7 +16511,7 @@
           "source": "description"
         },
         {
-          "entity": "Reborn",
+          "entity": "Reborn Babies",
           "label": "MISC",
           "start": 210,
           "end": 216,
@@ -16616,7 +16616,7 @@
           "source": "title"
         },
         {
-          "entity": "Cultural Virada",
+          "entity": "Cultural Virada Night",
           "label": "MISC",
           "start": 60,
           "end": 75,
@@ -16630,7 +16630,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 90,
           "end": 99,
@@ -16713,7 +16713,7 @@
           "source": "description"
         },
         {
-          "entity": "SP",
+          "entity": "Greater SP",
           "label": "LOC",
           "start": 678,
           "end": 680,
@@ -16804,7 +16804,7 @@
           "source": "description"
         },
         {
-          "entity": "Cultural Virada",
+          "entity": "Cultural Virada Night",
           "label": "MISC",
           "start": 104,
           "end": 119,
@@ -16839,7 +16839,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 265,
           "end": 274,
@@ -16867,7 +16867,7 @@
           "source": "title"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 63,
           "end": 72,
@@ -16930,7 +16930,7 @@
           "source": "description"
         },
         {
-          "entity": "Anhangabaú",
+          "entity": "Anhangabaú Valley",
           "label": "LOC",
           "start": 123,
           "end": 133,
@@ -17042,7 +17042,7 @@
           "source": "description"
         },
         {
-          "entity": "Praça Brasil",
+          "entity": "Praça Brasil Stage",
           "label": "LOC",
           "start": 149,
           "end": 161,
@@ -17056,7 +17056,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 190,
           "end": 199,
@@ -17105,7 +17105,7 @@
           "source": "description"
         },
         {
-          "entity": "New York",
+          "entity": "New York City",
           "label": "LOC",
           "start": 169,
           "end": 177,
@@ -17203,7 +17203,7 @@
           "source": "title"
         },
         {
-          "entity": "C6",
+          "entity": "C6 Festival",
           "label": "MISC",
           "start": 27,
           "end": 29,
@@ -17280,7 +17280,7 @@
           "source": "description"
         },
         {
-          "entity": "France",
+          "entity": "Stade de France",
           "label": "LOC",
           "start": 116,
           "end": 122,
@@ -17308,7 +17308,7 @@
       "translatedDescription": "Germany police said on Saturday (24) that the alleged author of the knife attack at the Hamburg Central Station, which left 18 injured on Friday (23), has \"very concrete evidence of psychic disease\" and again ruled out political motivations. Read More (05/24/2025 - 19h22)",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 42,
           "end": 49,
@@ -17385,7 +17385,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 196,
           "end": 205,
@@ -17406,7 +17406,7 @@
       "translatedDescription": "São Paulo has a variety of leisure spaces for fans of geek culture? Or nerd. There are shops, bars and restaurants that offer customers an experience focused on contact with movies, games, series, manga and anime, for example. Read More (05/24/2025 - 19h00)",
       "ner": [
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 18,
           "end": 27,
@@ -17531,7 +17531,7 @@
           "source": "title"
         },
         {
-          "entity": "Gas",
+          "entity": "Egyptian Natural Gas Holding Co.",
           "label": "ORG",
           "start": 42,
           "end": 45,
@@ -17587,7 +17587,7 @@
       "translatedDescription": "Ecuador President Daniel Noboa took office on Saturday (24) to his second term with the promise of \"saving the mafias\" the South American country, shaken by the violence of drug traffickers coupled with foreign criminal organizations. Read more (05/24/2025 - 17h51)",
       "ner": [
         {
-          "entity": "Noboa",
+          "entity": "Daniel Noboa",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -17601,7 +17601,7 @@
           "source": "title"
         },
         {
-          "entity": "Ecuador",
+          "entity": "Republic of Ecuador",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -17643,7 +17643,7 @@
           "source": "title"
         },
         {
-          "entity": "SP",
+          "entity": "Greater SP",
           "label": "LOC",
           "start": 58,
           "end": 60,
@@ -17713,7 +17713,7 @@
           "source": "title"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 104,
           "end": 113,
@@ -17769,7 +17769,7 @@
       "translatedDescription": "Simba Safari, in São Paulo, is considering closing its monkey park after only 25 days of operation because of the irresponsibility of visitors. Read more (05/24/2025 - 17h00)",
       "ner": [
         {
-          "entity": "Park",
+          "entity": "Good Night National Park",
           "label": "LOC",
           "start": 54,
           "end": 58,
@@ -17783,7 +17783,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "São Paulo International Airport",
           "label": "LOC",
           "start": 17,
           "end": 26,
@@ -17881,21 +17881,21 @@
           "source": "title"
         },
         {
-          "entity": "Curia",
+          "entity": "Roman Curia",
           "label": "ORG",
           "start": 61,
           "end": 66,
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "description"
         },
         {
-          "entity": "Leo",
+          "entity": "Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 8,
@@ -17944,7 +17944,7 @@
           "source": "title"
         },
         {
-          "entity": "French",
+          "entity": "French Cup",
           "label": "MISC",
           "start": 94,
           "end": 100,
@@ -17993,7 +17993,7 @@
           "source": "description"
         },
         {
-          "entity": "France",
+          "entity": "Stade de France",
           "label": "LOC",
           "start": 401,
           "end": 407,
@@ -18014,7 +18014,7 @@
       "translatedDescription": "Kleber Mendonça Filho met with journalists shortly after Brazil's double victory at this Cannes Festival. His movie, \"The Secret Agent,\" was laureate with the best direction and best actor award for Wagner Moura, who could not be present to receive the trophy. That's why the filmmaker called the actor for video to talk to the press. Read More (05/24/2025 - 16h38)",
       "ner": [
         {
-          "entity": "Kleber Mendonça",
+          "entity": "Kleber Mendonça Fi",
           "label": "PER",
           "start": 0,
           "end": 15,
@@ -18084,7 +18084,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 61,
           "end": 65,
@@ -18175,14 +18175,14 @@
       "translatedDescription": "Governor Tarcisio de Freitas well tried to escape another stage set by the centrão to projection of his name to the Presidency of the Republic. Read more (05/24/2025 - 16h30)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 14,
           "end": 18,
           "source": "title"
         },
         {
-          "entity": "Centrão",
+          "entity": "Centrão Preside",
           "label": "ORG",
           "start": 35,
           "end": 42,
@@ -18224,14 +18224,14 @@
       "translatedDescription": "Great personalities of cinema, television and even Brazilian politics congratulated Wagner Moura and Kleber Mendonça Filho on Saturday (24). The artist was elected the best actor at the 78th edition of the Cannes Film Festival for his performance in \"The Secret Agent\", while the director was laureate with the best direction trophy. Read more (05/24/2025 - 16h27)",
       "ner": [
         {
-          "entity": "Corinthians",
+          "entity": "Glorious Sport Club Corinthians Paulista",
           "label": "ORG",
           "start": 0,
           "end": 11,
           "source": "title"
         },
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 13,
           "end": 17,
@@ -18252,7 +18252,7 @@
           "source": "title"
         },
         {
-          "entity": "Kleber Mendonça",
+          "entity": "Kleber Mendonça Fi",
           "label": "PER",
           "start": 69,
           "end": 84,
@@ -18427,7 +18427,7 @@
       "translatedDescription": "President Lula's account (PT) on social networks published a message of celebration of the victories of Wagner Moura and Kleber Mendonça Filho at the Cannes Festival. This Saturday (24), the two received the awards for best actor and best direction for the movie \"The Secret Agent\". Read More (05/24/2025 - 16h08)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -18518,7 +18518,7 @@
           "source": "title"
         },
         {
-          "entity": "Barcelona",
+          "entity": "Barcelona SC",
           "label": "ORG",
           "start": 82,
           "end": 91,
@@ -18581,7 +18581,7 @@
       "translatedDescription": "A star of several films and series set in the old West American, such as the success \"Yellowstone\", Kevin Costner is debuting as History Channel host. She will command the documentary series \"The West\". Read more (05/24/2025 - 15h30)",
       "ner": [
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 5,
           "end": 13,
@@ -18685,14 +18685,14 @@
       "translatedDescription": "United States President Donald Trump made strong attacks on diversity policies in the Armed Forces in a long speech on Saturday (24) during the graduation of Cadets of the West Point Military Academy, a prestigious Officer Training Institution in the State of New York. Read more (05/24/2025 - 15h25)",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 18,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 0,
           "end": 13,
@@ -18727,7 +18727,7 @@
           "source": "description"
         },
         {
-          "entity": "New York",
+          "entity": "New York City",
           "label": "LOC",
           "start": 260,
           "end": 268,
@@ -18769,7 +18769,7 @@
           "source": "description"
         },
         {
-          "entity": "Ia",
+          "entity": "Ia Herzi",
           "label": "PER",
           "start": 188,
           "end": 190,
@@ -18790,7 +18790,7 @@
       "translatedDescription": "President Luiz Inacio Lula da Silva (PT) criticized this Saturday (24) the price of gas cylinder in Brazil. He even said that someone is \"making a lot of money\" with the value of the product over $ 100. Read more (05/24/2025 - 15h08)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -18958,7 +18958,7 @@
       "translatedDescription": "The Lula government argues that the CPMI presidency of the INSS has the largest party bloc in the Senate, today formed by MDB, Union, Somos and PSDB, with 25 members. Read more (05/24/2025 - 15h00)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -19105,14 +19105,14 @@
           "source": "description"
         },
         {
-          "entity": "Mexico",
+          "entity": "Mexico City",
           "label": "LOC",
           "start": 110,
           "end": 116,
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 124,
           "end": 137,
@@ -19252,7 +19252,7 @@
       "translatedDescription": "President Lula (PT) said on Saturday (24) that he will \"do politics\" and walk around the country from next month to fight what he called \"Lie\", \"Canalhice\" and \"Fake News\". Read more (05/24/2025 - 14h23)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -19364,7 +19364,7 @@
           "source": "title"
         },
         {
-          "entity": "Moraes",
+          "entity": "Alexandre De Moraes",
           "label": "PER",
           "start": 17,
           "end": 23,
@@ -19475,21 +19475,21 @@
       "translatedDescription": "Hugo Calderano, 28, advanced on Saturday (24) to the decision of the World Table Tennis Championship. In the semifinal dispute, he beat Chinese Liang Jingkun (5th place in the world ranking) by 4 sets to 3. Read more (05/24/2025 - 1:35 pm)",
       "ner": [
         {
-          "entity": "Calderano",
+          "entity": "Hugo Calderano",
           "label": "PER",
           "start": 0,
           "end": 9,
           "source": "title"
         },
         {
-          "entity": "World Cup",
+          "entity": "FIFA Women's Club World Cup",
           "label": "MISC",
           "start": 43,
           "end": 52,
           "source": "title"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 70,
           "end": 74,
@@ -19601,7 +19601,7 @@
           "source": "title"
         },
         {
-          "entity": "Se",
+          "entity": "Se Kuruduadua",
           "label": "PER",
           "start": 29,
           "end": 31,
@@ -19629,14 +19629,14 @@
           "source": "description"
         },
         {
-          "entity": "Salgado",
+          "entity": "Sebastião Salgado",
           "label": "PER",
           "start": 140,
           "end": 147,
           "source": "description"
         },
         {
-          "entity": "French",
+          "entity": "French Cup",
           "label": "MISC",
           "start": 205,
           "end": 211,
@@ -19678,14 +19678,14 @@
           "source": "title"
         },
         {
-          "entity": "Real",
+          "entity": "Real Sociedad",
           "label": "ORG",
           "start": 26,
           "end": 30,
           "source": "title"
         },
         {
-          "entity": "Bernabéu",
+          "entity": "Bernabéu Stadium",
           "label": "LOC",
           "start": 58,
           "end": 66,
@@ -19748,7 +19748,7 @@
       "translatedDescription": "Save Sebastião Salgado, great artist, humanist and environmentalist who united action, reality and the dream. Read more (05/24/2025 - 13h13)",
       "ner": [
         {
-          "entity": "Se",
+          "entity": "Se Kuruduadua",
           "label": "PER",
           "start": 5,
           "end": 7,
@@ -19769,7 +19769,7 @@
       "translatedDescription": "The decision of the Supreme Federal Court (STF) that expanded the special forum, keeping in the court cases of authorities after they left the positions, made room for a series of criminal actions against politicians who were being processed in the first instance to return to the court. Read more (05/24/2025 - 13h02)",
       "ner": [
         {
-          "entity": "Supreme Court",
+          "entity": "Supreme Court of Justice of the Nation",
           "label": "ORG",
           "start": 81,
           "end": 94,
@@ -20048,7 +20048,7 @@
           "source": "title"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 39,
           "end": 41,
@@ -20069,7 +20069,7 @@
           "source": "description"
         },
         {
-          "entity": "United Nations",
+          "entity": "United Nations World Trade Organisation",
           "label": "ORG",
           "start": 153,
           "end": 167,
@@ -20111,28 +20111,28 @@
           "source": "description"
         },
         {
-          "entity": "Treaty",
+          "entity": "Indus Waters Treaty",
           "label": "MISC",
           "start": 901,
           "end": 907,
           "source": "description"
         },
         {
-          "entity": "Jadoon",
+          "entity": "Man Jadoon",
           "label": "PER",
           "start": 1147,
           "end": 1153,
           "source": "description"
         },
         {
-          "entity": "Security Council",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 1500,
           "end": 1516,
           "source": "description"
         },
         {
-          "entity": "Council",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 1604,
           "end": 1611,
@@ -20223,7 +20223,7 @@
           "source": "description"
         },
         {
-          "entity": "Khyber",
+          "entity": "Khyber Pakhtunkhwa",
           "label": "LOC",
           "start": 909,
           "end": 915,
@@ -20447,7 +20447,7 @@
           "source": "description"
         },
         {
-          "entity": "Fund",
+          "entity": "International Monetary Fund",
           "label": "ORG",
           "start": 1123,
           "end": 1127,
@@ -20496,7 +20496,7 @@
           "source": "description"
         },
         {
-          "entity": "Nathan",
+          "entity": "Nathan Porter",
           "label": "PER",
           "start": 1773,
           "end": 1779,
@@ -20510,14 +20510,14 @@
           "source": "description"
         },
         {
-          "entity": "Federal",
+          "entity": "Caixa Econômica Federal",
           "label": "ORG",
           "start": 2302,
           "end": 2309,
           "source": "description"
         },
         {
-          "entity": "Board",
+          "entity": "Securities and Exchange Board of India",
           "label": "ORG",
           "start": 2310,
           "end": 2315,
@@ -20650,7 +20650,7 @@
       "translatedDescription": "LAHORE: Federal Minister for Water Resources Muhammad Moeen Wattoo has warned India that holding the Indus Water Treaty (IWC) in abeyance unilaterally is “absolutely unlawful and an act of war”. He further said that the treaty still exists despite New Delhi holding it in abeyance “unilaterally and illegally”. “The words ‘holding in abeyance’ used by India doesn’t exist anywhere in the law. Therefore, the Indus Water Treaty exist as it is, as these words cannot abolish it,” Mr Wattoo said while speaking at a seminar on Saturday. “Holding the treaty in abeyance is absolutely illegal immoral. It is a violation of all international agreements,” the minister added. Ex-Indus water commissioner warns China and other upstream countries may block flow of water to India Talking about the background of the issue, the federal minister said the correspondence between the two countries were underway since 2024. India wrote a letter to Pakistan, seeking some modification in the treaty under the Article 12 (3) of the treaty. Under the treaty, the minor issues related to water can be discussed and resolved on the level of commissioner of Indus waters representing Pakistan and India under Articles 8 to 11. But if the issues are more important, these can be discussed and resolved by both the parties, Pakistan and India. “In its April 8 letter, they [India] sought us to tell the place where parties can sit and discuss the issue [related to modification]. In the letter, they also asked us to respond till May 8. But on April 24, India unilaterally suspended it,” he revealed, adding that holding treaty in abeyance doesn’t have any legal cover. “The treaty cannot be held in abeyance or suspended unilaterally by anyone. It cannot be changed, modified, amended or cancelled by anyone. The treaty still exists.” Mr Wattoo said Pakistan also wrote in response to India’s letter, stating to sit and discuss. “We told them for holding negotiations on this, saying to reach results if we reach mutual understandings. But the aggression India did by taking action unilaterally is equal to act of war. The water is our lifeline and on this issue, we can neither compromise nor show any flexibility,” the minister warned. “Currently, Pakistan is receiving normal flow of water from Indian side,” he said. Talking about the canals issue in the country, Mr Wattoo said he wrote to all provinces to come forward and devise an action plan in this regard. “We have told the provinces to constitute a committee of independent experts and take a final decision mutually. In this way, the misunderstandings on the part of provinces would also be no more,” he maintained. Former Indus water commissioner Asif Baig said that India had transboundary agreements on water with China, Nepal, Bangladesh and other neighbours. “Because China is sitting on upstream level from where water flows down to Indian located at downstream position. Similarly, in Pakistan case, India is on upstream location which is being bragged by Indian government. If India dubbing its upstream status as authority to stop water follow to Pakistan transgressing treaty, then what will happen if China and other upstream country block flow of water to India,” he said. Speaking on the occasion, former Indus Water commissioner,   Sheraz Memon said that even if India tried to block water flow toward Pakistan, it would be an exercise in futility due to the country’s insufficient capacity to water maneuverability. “IWT survived in Pak-India two wars and barrage of terrorism allegations,” he said and suggested that sagacity demanded that treaty should go unaffected in all worst scenarios. Former Punjab irrigation minister Mohsin Laghari categorically ruled out any one-sided suspension of IWT. He said if India was given liberty to do so, none of international treaties would stand exist and will lose their holistic merits. “If India remains hell-bent on [stopping the flow of water coming to Pakistan], it will cost billions of dollars to build the infrastructure on rivers,” he added. Published in Dawn, May 25th, 2025",
       "ner": [
         {
-          "entity": "Indus",
+          "entity": "Indus Waters Treaty",
           "label": "MISC",
           "start": 8,
           "end": 13,
@@ -20692,7 +20692,7 @@
           "source": "description"
         },
         {
-          "entity": "Wattoo",
+          "entity": "Muhammad Moeen Wattoo",
           "label": "PER",
           "start": 481,
           "end": 487,
@@ -20909,7 +20909,7 @@
           "source": "description"
         },
         {
-          "entity": "Leghari",
+          "entity": "Awais Leghari",
           "label": "PER",
           "start": 1274,
           "end": 1281,
@@ -20965,14 +20965,14 @@
           "source": "description"
         },
         {
-          "entity": "Energy",
+          "entity": "Energy Fitness",
           "label": "ORG",
           "start": 2072,
           "end": 2078,
           "source": "description"
         },
         {
-          "entity": "Power",
+          "entity": "Legislative Power",
           "label": "ORG",
           "start": 2178,
           "end": 2183,
@@ -20993,7 +20993,7 @@
           "source": "description"
         },
         {
-          "entity": "Energy Institute",
+          "entity": "LUMS Energy Institute",
           "label": "ORG",
           "start": 2242,
           "end": 2258,
@@ -21014,7 +21014,7 @@
           "source": "description"
         },
         {
-          "entity": "Ahmad",
+          "entity": "Im Iftikhar Ahmad",
           "label": "PER",
           "start": 2348,
           "end": 2353,
@@ -21049,7 +21049,7 @@
           "source": "description"
         },
         {
-          "entity": "Muhammad",
+          "entity": "Muhammad Moeen Wattoo",
           "label": "PER",
           "start": 2448,
           "end": 2456,
@@ -21063,7 +21063,7 @@
           "source": "description"
         },
         {
-          "entity": "Electric",
+          "entity": "K-Electric",
           "label": "ORG",
           "start": 2474,
           "end": 2482,
@@ -21112,14 +21112,14 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 26,
           "end": 30,
           "source": "title"
         },
         {
-          "entity": "UNIT",
+          "entity": "Technical Unit of the Electoral Contentious",
           "label": "ORG",
           "start": 0,
           "end": 4,
@@ -21140,7 +21140,7 @@
           "source": "description"
         },
         {
-          "entity": "New York",
+          "entity": "New York City",
           "label": "LOC",
           "start": 143,
           "end": 151,
@@ -21168,7 +21168,7 @@
           "source": "description"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 538,
           "end": 540,
@@ -21196,7 +21196,7 @@
           "source": "description"
         },
         {
-          "entity": "France",
+          "entity": "Stade de France",
           "label": "LOC",
           "start": 1318,
           "end": 1324,
@@ -21224,28 +21224,28 @@
           "source": "description"
         },
         {
-          "entity": "Arab",
+          "entity": "Arab Christians",
           "label": "MISC",
           "start": 2175,
           "end": 2179,
           "source": "description"
         },
         {
-          "entity": "West",
+          "entity": "West American",
           "label": "MISC",
           "start": 2211,
           "end": 2215,
           "source": "description"
         },
         {
-          "entity": "Bank",
+          "entity": "European Central Bank",
           "label": "ORG",
           "start": 2216,
           "end": 2220,
           "source": "description"
         },
         {
-          "entity": "Al",
+          "entity": "Al Nowais",
           "label": "ORG",
           "start": 2548,
           "end": 2550,
@@ -21405,7 +21405,7 @@
       "translatedDescription": "By Femi Fani-Kayode It was quite a show at the Oval office in the White House a few days ago when South African President Cyril Ramaphosa met with American President Donald J. Trump to discuss bilateral issues and world affairs. It began with Trump’s unsubstantiated and frankly asinine allegation that the white Boers of South […] The post Trump, Malema, Ramaphosa and the Oval Office grill appeared first on Vanguard News .",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -21419,7 +21419,7 @@
           "source": "title"
         },
         {
-          "entity": "Ramaphosa",
+          "entity": "Cyril Ramaphosa",
           "label": "PER",
           "start": 15,
           "end": 24,
@@ -21468,7 +21468,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 147,
           "end": 155,
@@ -21489,7 +21489,7 @@
           "source": "description"
         },
         {
-          "entity": "South",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 322,
           "end": 330,
@@ -21769,7 +21769,7 @@
       "translatedDescription": "Convener and Chairperson of Asiwaju Renewed Hope Agenda, ARH, Kemi Olokode-Ayelabola, has said President Bola Tinubu is the best person to lead Nigeria in these difficult times. Olokode-Ayelabola expressed optimism that the Tinubu’s administration would build on its initial successes by addressing issues of security, unemployment and economic stability. She said this while congratulating Tinubu […] The post ‘Tinubu best man to lead Nigeria in these difficult times’ appeared first on Vanguard News .",
       "ner": [
         {
-          "entity": "Tinubu",
+          "entity": "Bola Tinubu",
           "label": "PER",
           "start": 1,
           "end": 7,
@@ -21818,7 +21818,7 @@
           "source": "description"
         },
         {
-          "entity": "Olokode-Ayelabola",
+          "entity": "Mi Olokode-Ayelabola",
           "label": "PER",
           "start": 178,
           "end": 195,
@@ -21846,7 +21846,7 @@
       "translatedDescription": "By Dickson Omobola Mr Ehiogie West-Idahosa, counsel to the senator representing Kogi Central, Natasha Akpoti-Uduaghan, yesterday, confirmed receipt of details of a suit filed against the lawmaker by the Federal Government, saying her legal team is ready to present credible evidence before the court during trial. West-Idahosa, in a statement, said the suit was received […] The post Natasha to defend allegations of defaming Akpabio – Lawyer appeared first on Vanguard News .",
       "ner": [
         {
-          "entity": "Natasha",
+          "entity": "Natasha Akpoti-Uduaghan",
           "label": "PER",
           "start": 0,
           "end": 7,
@@ -21895,7 +21895,7 @@
           "source": "description"
         },
         {
-          "entity": "West",
+          "entity": "Ehiogie West-Idahosa",
           "label": "PER",
           "start": 314,
           "end": 318,
@@ -22014,7 +22014,7 @@
           "source": "title"
         },
         {
-          "entity": "Ojukwu",
+          "entity": "Dim Chukwuemeka Odumegwu Ojukwu",
           "label": "PER",
           "start": 38,
           "end": 44,
@@ -22133,7 +22133,7 @@
           "source": "title"
         },
         {
-          "entity": "Tinubu",
+          "entity": "Bola Tinubu",
           "label": "PER",
           "start": 14,
           "end": 20,
@@ -22147,7 +22147,7 @@
           "source": "title"
         },
         {
-          "entity": "Uwazurike",
+          "entity": "Dy Uwazurike",
           "label": "PER",
           "start": 78,
           "end": 87,
@@ -22364,7 +22364,7 @@
           "source": "title"
         },
         {
-          "entity": "David",
+          "entity": "David Simms",
           "label": "PER",
           "start": 30,
           "end": 35,
@@ -22385,7 +22385,7 @@
           "source": "description"
         },
         {
-          "entity": "Doyin",
+          "entity": "Doyin David",
           "label": "PER",
           "start": 205,
           "end": 210,
@@ -22469,7 +22469,7 @@
           "source": "title"
         },
         {
-          "entity": "Timothy",
+          "entity": "Ejoh Timothy",
           "label": "PER",
           "start": 34,
           "end": 41,
@@ -22609,7 +22609,7 @@
           "source": "title"
         },
         {
-          "entity": "Tinubu",
+          "entity": "Bola Tinubu",
           "label": "PER",
           "start": 128,
           "end": 134,
@@ -22672,7 +22672,7 @@
           "source": "description"
         },
         {
-          "entity": "Effah",
+          "entity": "Grace Charis Bassey Effah",
           "label": "PER",
           "start": 228,
           "end": 233,
@@ -22728,7 +22728,7 @@
           "source": "title"
         },
         {
-          "entity": "Sa",
+          "entity": "Vaisiddin Sa",
           "label": "PER",
           "start": 55,
           "end": 57,
@@ -22959,21 +22959,21 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 31,
           "end": 36,
           "source": "title"
         },
         {
-          "entity": "El Salvador",
+          "entity": "Villa El Salvador",
           "label": "LOC",
           "start": 70,
           "end": 81,
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 128,
           "end": 141,
@@ -23043,7 +23043,7 @@
           "source": "title"
         },
         {
-          "entity": "Gelephu",
+          "entity": "Gelephu Mindfulness City",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -23057,7 +23057,7 @@
           "source": "description"
         },
         {
-          "entity": "Kingdom",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 63,
           "end": 70,
@@ -23210,7 +23210,7 @@
           "source": "description"
         },
         {
-          "entity": "Disney",
+          "entity": "Disney+",
           "label": "MISC",
           "start": 41,
           "end": 47,
@@ -23280,7 +23280,7 @@
       "translatedDescription": "X's operational operations need to be significantly improved, Musk says.",
       "ner": [
         {
-          "entity": "Musk",
+          "entity": "Elon Musk",
           "label": "PER",
           "start": 23,
           "end": 27,
@@ -23301,7 +23301,7 @@
       "translatedDescription": "The Gaza authorities tell Al-Jazeera that a four-year-old boy has died of starvation in the city of Gaza.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 0,
           "end": 4,
@@ -23343,7 +23343,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 46,
           "end": 53,
@@ -23595,14 +23595,14 @@
       "translatedDescription": "Prostate carcinoma in late stage was discovered at the American ex-president Joe Biden-although such tumors can be found early with the PSA test. Does this speak for an attempted cover-up or the weaknesses of the early identification examination?",
       "ner": [
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 13,
           "end": 18,
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 55,
           "end": 63,
@@ -23651,7 +23651,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 116,
           "end": 123,
@@ -23840,7 +23840,7 @@
       "translatedDescription": "Forbidden churches, indebted freedoms in Ukraine.",
       "ner": [
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 0,
           "end": 8,
@@ -24078,7 +24078,7 @@
       "translatedDescription": "The Kazincbarcika can now press so much to the Vasas, which they are shaking in Angyalföld.",
       "ner": [
         {
-          "entity": "Barcelona",
+          "entity": "Barcelona SC",
           "label": "ORG",
           "start": 5,
           "end": 14,
@@ -24211,7 +24211,7 @@
           "source": "description"
         },
         {
-          "entity": "Djokovic",
+          "entity": "Novak Djokovic",
           "label": "PER",
           "start": 46,
           "end": 54,
@@ -24398,21 +24398,21 @@
       "translatedDescription": "Archbishop Bernardito Cleopas Auza of Talibon, Bohol, occupies pride of place as the Pope’s ambassador to the European Union",
       "ner": [
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 3,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Leo",
+          "entity": "Leo Xiv",
           "label": "PER",
           "start": 8,
           "end": 11,
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 27,
           "end": 29,
@@ -24468,7 +24468,7 @@
       "translatedDescription": "Deputy House Speaker Jayjay Suarez says the 'Speakership in the 20th Congress is effectively over,' as House Speaker Martin Romualdez enjoys the majority of support",
       "ner": [
         {
-          "entity": "House",
+          "entity": "Upper House",
           "label": "ORG",
           "start": 39,
           "end": 44,
@@ -24489,7 +24489,7 @@
           "source": "description"
         },
         {
-          "entity": "Congress",
+          "entity": "All Progressives Congress",
           "label": "ORG",
           "start": 69,
           "end": 77,
@@ -24670,7 +24670,7 @@
           "source": "title"
         },
         {
-          "entity": "Cross",
+          "entity": "Cross David Idukomose",
           "label": "PER",
           "start": 88,
           "end": 93,
@@ -24796,7 +24796,7 @@
           "source": "title"
         },
         {
-          "entity": "Azam Baki",
+          "entity": "Tan Sri Azam Baki",
           "label": "PER",
           "start": 68,
           "end": 77,
@@ -24845,7 +24845,7 @@
           "source": "title"
         },
         {
-          "entity": "Perdana Putra",
+          "entity": "Perdana Putra Complex",
           "label": "LOC",
           "start": 36,
           "end": 49,
@@ -24985,7 +24985,7 @@
           "source": "description"
         },
         {
-          "entity": "Asean",
+          "entity": "Asean Community Vision",
           "label": "MISC",
           "start": 194,
           "end": 199,
@@ -25020,7 +25020,7 @@
       "translatedDescription": "KUALA LUMPUR: Asean has a voice and must use it to speak up for the oppressed and offer solutions grounded in principles and international law, says Datuk Seri Mohamad Hasan. Read full story",
       "ner": [
         {
-          "entity": "Asean",
+          "entity": "Asean Community Vision",
           "label": "MISC",
           "start": 0,
           "end": 5,
@@ -25090,14 +25090,14 @@
           "source": "description"
         },
         {
-          "entity": "Asean",
+          "entity": "Asean Community Vision",
           "label": "MISC",
           "start": 14,
           "end": 19,
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 85,
           "end": 98,
@@ -25160,7 +25160,7 @@
           "source": "description"
         },
         {
-          "entity": "Kuala Lumpur",
+          "entity": "Kuala Lumpur Convention Centre",
           "label": "LOC",
           "start": 175,
           "end": 187,
@@ -25264,7 +25264,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -25285,14 +25285,14 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 31,
           "end": 33,
@@ -25778,7 +25778,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -25980,14 +25980,14 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 0,
           "end": 4,
           "source": "title"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 30,
           "end": 32,
@@ -26036,7 +26036,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 9,
           "end": 11,
@@ -26064,7 +26064,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 16,
           "end": 18,
@@ -26224,7 +26224,7 @@
       "translatedDescription": "DOHA: US President Donald Trump on Thursday said he wanted to \"end conflicts not start them\" as he addressed troops at the United States' sprawling Al Udeid Air Base in Qatar.\n\n\tTrump visited a US base installation at the center of American involvement in the Middle East as he uses his four-day visit to Gulf states to reject the “interventionism” of America’s past in the region.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -26245,14 +26245,14 @@
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 123,
           "end": 136,
           "source": "description"
         },
         {
-          "entity": "Al",
+          "entity": "Al-Ain Convention Center",
           "label": "LOC",
           "start": 148,
           "end": 150,
@@ -26266,7 +26266,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "West American",
           "label": "MISC",
           "start": 232,
           "end": 240,
@@ -26280,14 +26280,14 @@
           "source": "description"
         },
         {
-          "entity": "Gulf",
+          "entity": "Gulf of Suez",
           "label": "LOC",
           "start": 305,
           "end": 309,
           "source": "description"
         },
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 352,
           "end": 359,
@@ -26490,7 +26490,7 @@
           "source": "description"
         },
         {
-          "entity": "City",
+          "entity": "Man City",
           "label": "ORG",
           "start": 217,
           "end": 221,
@@ -26518,7 +26518,7 @@
           "source": "description"
         },
         {
-          "entity": "Guardiola",
+          "entity": "Pep Guardiola",
           "label": "PER",
           "start": 355,
           "end": 364,
@@ -26539,7 +26539,7 @@
           "source": "description"
         },
         {
-          "entity": "Champions League",
+          "entity": "Female Champions League",
           "label": "MISC",
           "start": 499,
           "end": 515,
@@ -26574,7 +26574,7 @@
           "source": "title"
         },
         {
-          "entity": "Sporting Code",
+          "entity": "International Sporting Code",
           "label": "MISC",
           "start": 61,
           "end": 74,
@@ -26714,7 +26714,7 @@
           "source": "description"
         },
         {
-          "entity": "Western",
+          "entity": "Western Conference",
           "label": "MISC",
           "start": 451,
           "end": 458,
@@ -26735,7 +26735,7 @@
       "translatedDescription": "BERLIN: Airline group Lufthansa will suspend its flights to Tel Aviv through May 25, it said on Thursday, citing the “current situation.”\n\tThis affects flights operated by Lufthansa, Swiss, Austrian Airlines, Eurowings, ITA Airways, Brussels Airlines and Lufthansa Cargo, it added.\n\tGlobal airlines have again halted their flights to and from Tel Aviv after a missile fired by Yemen’s Houthis toward Israel on May 4 landed near the country’s main international airport in Tel Aviv.",
       "ner": [
         {
-          "entity": "Lufthansa",
+          "entity": "Lufthansa Cargo",
           "label": "ORG",
           "start": 0,
           "end": 9,
@@ -26833,7 +26833,7 @@
       "translatedDescription": "ABU DHABI: The UAE Jiu-Jitsu and Mixed Martial Arts Federation has announced that the sixth IMMAF Youth World Championships will be held in Al-Ain Region for the first time from July 21-27.\n\n\tThe tournament will be staged at the Al-Ain Convention Center with more than 1,000 male and female athletes from 60 countries competing in the championship’s largest event to date.",
       "ner": [
         {
-          "entity": "Al",
+          "entity": "Al Nowais",
           "label": "ORG",
           "start": 0,
           "end": 2,
@@ -26931,7 +26931,7 @@
           "source": "title"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 82,
           "end": 95,
@@ -27098,7 +27098,7 @@
           "source": "title"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 86,
           "end": 99,
@@ -27154,7 +27154,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 100,
           "end": 105,
@@ -27280,7 +27280,7 @@
           "source": "title"
         },
         {
-          "entity": "University",
+          "entity": "Humboldt University",
           "label": "ORG",
           "start": 101,
           "end": 111,
@@ -27420,7 +27420,7 @@
           "source": "description"
         },
         {
-          "entity": "South",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 56,
           "end": 61,
@@ -27476,7 +27476,7 @@
       "translatedDescription": "University and San Martín faced the extra game for third place in the Peruvian Volleyball League.",
       "ner": [
         {
-          "entity": "University",
+          "entity": "Humboldt University",
           "label": "ORG",
           "start": 0,
           "end": 10,
@@ -27658,7 +27658,7 @@
       "translatedDescription": "Follow the movement in the standings so far in the Opening 2025 Tournament of the League1 I bet, after the triumph of University over Sporting Cristal.",
       "ner": [
         {
-          "entity": "League1",
+          "entity": "League1 I",
           "label": "MISC",
           "start": 80,
           "end": 87,
@@ -27679,7 +27679,7 @@
           "source": "description"
         },
         {
-          "entity": "University",
+          "entity": "Humboldt University",
           "label": "ORG",
           "start": 118,
           "end": 128,
@@ -27798,7 +27798,7 @@
           "source": "title"
         },
         {
-          "entity": "Ecuador",
+          "entity": "Republic of Ecuador",
           "label": "LOC",
           "start": 81,
           "end": 91,
@@ -27819,7 +27819,7 @@
       "translatedDescription": "Disney confirmed that the expected sequel to the fashion classic will arrive at the Salas next year; It is still unknown if Meryl Streep, Anne Hathaway and Emily Blunt will return to their iconic roles.",
       "ner": [
         {
-          "entity": "Disney",
+          "entity": "Disney+",
           "label": "ORG",
           "start": 0,
           "end": 6,
@@ -27910,7 +27910,7 @@
           "source": "description"
         },
         {
-          "entity": "University",
+          "entity": "Humboldt University",
           "label": "ORG",
           "start": 112,
           "end": 122,
@@ -27945,7 +27945,7 @@
           "source": "description"
         },
         {
-          "entity": "National",
+          "entity": "National Police",
           "label": "ORG",
           "start": 452,
           "end": 460,
@@ -27966,7 +27966,7 @@
       "translatedDescription": "Aquarium horoscope from May 25 to 31, 2025 cycles closure, some things must come to an end, and although you cannot see it at this time they are for the better. Stay away from everything that weakens and cause tension, do not pay attention to things and people who are not […] the aquarium entry: changes are presented in your life, bringing opportunities that drive you to grow and explore new horizons was published first in the National.",
       "ner": [
         {
-          "entity": "National",
+          "entity": "National Police",
           "label": "ORG",
           "start": 431,
           "end": 439,
@@ -27987,7 +27987,7 @@
       "translatedDescription": "Sagittarius horoscope from May 25 to 31, 2025 new relationships, and contacts appear bringing opportunities and new situations where you can show what material you are made, the triumph in what you propose is at the level of your will, effort, dedication and commitment, while still putting the magical touch of your […] the Sagittarius entry: what you deserve comes. Open your arms to receive the good that the Universe has for you now was published first in the National.",
       "ner": [
         {
-          "entity": "Sa",
+          "entity": "Vaisiddin Sa",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -28008,7 +28008,7 @@
           "source": "description"
         },
         {
-          "entity": "National",
+          "entity": "National Police",
           "label": "ORG",
           "start": 464,
           "end": 472,
@@ -28043,7 +28043,7 @@
           "source": "description"
         },
         {
-          "entity": "National",
+          "entity": "National Police",
           "label": "ORG",
           "start": 445,
           "end": 453,
@@ -28064,7 +28064,7 @@
       "translatedDescription": "Scorpio horoscope from May 25 to 31, 2025 Do not get carried away by comments or allow some situations that arise from controlling you.  Put your ideas in order, see where you are and who are you really where you want to be and who you want to be, and from [...] the Escorpio entry: keep your attention in what surrounds you and take out your magnetism and charm. Unexpected twists and surprises arrive, it was published first in El Nacional.",
       "ner": [
         {
-          "entity": "Sc",
+          "entity": "Barcelona SC",
           "label": "ORG",
           "start": 0,
           "end": 2,
@@ -28112,7 +28112,7 @@
       "translatedDescription": "Virgo's horoscope from May 25 to 31, 2025 Go to where you want, put in order of priorities what you want to materialize, focus on giving life to those ideas you have in mind. Your intuition will guide your path, keep your balance, do not dispersed, or dilute in doing a thousand things at the same time, [...] the virgo entry: new doors open, it is the ideal time to materialize the light of your dreams with innovative ideas was first published in the National.",
       "ner": [
         {
-          "entity": "National",
+          "entity": "National Police",
           "label": "ORG",
           "start": 453,
           "end": 461,
@@ -28133,14 +28133,14 @@
       "translatedDescription": "Leo horoscope from May 25 to 31, 2025 handles energies well and works to achieve the necessary harmony that you need to manifest your wishes and goals. Remember that you are the engine that gives life and materialization to your dreams, through each achievement you can improve and make your […] the entry Leo: you are the creator and responsible for creating the circumstances of each achievement that you want in your life was first published in the National.",
       "ner": [
         {
-          "entity": "Leo",
+          "entity": "Leo Xiv",
           "label": "PER",
           "start": 0,
           "end": 3,
           "source": "title"
         },
         {
-          "entity": "National",
+          "entity": "National Police",
           "label": "ORG",
           "start": 452,
           "end": 460,
@@ -28161,7 +28161,7 @@
       "translatedDescription": "Cancer horoscope from May 25, 2025 works from what moves you, from what your heart feels, let yourself be guided by your inner magic and flow in harmony with the good times that arise before you. Difficulty times are already left behind, it is time for regeneration and transformation. […] Cancer entrance: a new dawn awaits you, full of energy. Let your grace and spontaneity flow, you will see how the doors open first in the National.",
       "ner": [
         {
-          "entity": "National",
+          "entity": "National Climate Assessment",
           "label": "MISC",
           "start": 428,
           "end": 436,
@@ -28273,7 +28273,7 @@
       "translatedDescription": "Manuel Vega López, a 51 -year -old Latin American gardener, died with a shot to allegedly be confused with a \"criminal\" in Arizona, where the trees of a neighbor who hired him was prepared.",
       "ner": [
         {
-          "entity": "Latin",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 28,
           "end": 33,
@@ -28329,7 +28329,7 @@
           "source": "description"
         },
         {
-          "entity": "French",
+          "entity": "French Cup",
           "label": "MISC",
           "start": 122,
           "end": 128,
@@ -28392,7 +28392,7 @@
           "source": "description"
         },
         {
-          "entity": "National Police",
+          "entity": "National Police in Haiti",
           "label": "ORG",
           "start": 52,
           "end": 67,
@@ -28427,7 +28427,7 @@
           "source": "title"
         },
         {
-          "entity": "East",
+          "entity": "Middle East",
           "label": "LOC",
           "start": 79,
           "end": 83,
@@ -28490,7 +28490,7 @@
           "source": "description"
         },
         {
-          "entity": "Peoples Resilient Sahel",
+          "entity": "Association Peoples Resilient Sahel",
           "label": "ORG",
           "start": 317,
           "end": 340,
@@ -28560,7 +28560,7 @@
           "source": "description"
         },
         {
-          "entity": "Indigenous",
+          "entity": "Indigenous Americans",
           "label": "MISC",
           "start": 181,
           "end": 191,
@@ -28763,7 +28763,7 @@
           "source": "description"
         },
         {
-          "entity": "Natave",
+          "entity": "Livai Natave",
           "label": "PER",
           "start": 221,
           "end": 227,
@@ -28868,7 +28868,7 @@
           "source": "description"
         },
         {
-          "entity": "Qarua",
+          "entity": "Sitiveni Qarua",
           "label": "PER",
           "start": 152,
           "end": 157,
@@ -28896,7 +28896,7 @@
       "translatedDescription": "This story was published in The Fiji Times on Saturday, May 26, 2001. The high flying Ba side was back to earth when Navua held them to a draw at the Fiji Bitter Fiji FACT yesterday. Coming into the tournament as pre favourties for the title, the Men in Black failed to penetrate the Navua […] The post LOOK BACK – Qarua stands tall in goal appeared first on The Fiji Times .",
       "ner": [
         {
-          "entity": "Qarua",
+          "entity": "Sitiveni Qarua",
           "label": "PER",
           "start": 12,
           "end": 17,
@@ -29197,14 +29197,14 @@
       "translatedDescription": "Western Highlands Province has seen significant services and developments within a very short two-and-a-half-year period under the capable leadership of first-time Western Highlands Governor Wai Rapa. The post Western Highlands sees rapid development under governor Rapa appeared first on Post Courier .",
       "ner": [
         {
-          "entity": "Western",
+          "entity": "South Western Railways",
           "label": "ORG",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Rapa",
+          "entity": "Wai Rapa",
           "label": "PER",
           "start": 56,
           "end": 60,
@@ -29246,14 +29246,14 @@
       "translatedDescription": "The Moni Plus Port Moresby Vipers delivered a dominant performance in Round 7 of the Digicel ExxonMobil Cup on Saturday, defeating reigning premiers Wamp Nga Mt Hagen Eagles 20-12 in Minj. The post Vipers soar past Eagles in round 7 thriller appeared first on Post Courier .",
       "ner": [
         {
-          "entity": "Vipers",
+          "entity": "Moni Plus Port Moresby Vipers",
           "label": "ORG",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Eagles",
+          "entity": "Wamp Nga Mt Hagen Eagles",
           "label": "ORG",
           "start": 17,
           "end": 23,
@@ -29267,7 +29267,7 @@
           "source": "description"
         },
         {
-          "entity": "Di",
+          "entity": "Fidju di Terra",
           "label": "MISC",
           "start": 85,
           "end": 87,
@@ -29302,7 +29302,7 @@
       "translatedDescription": "Bulolo MP Sam Basil Jr has expressed disappointment that power was cut off due to transformer issues last year and the District has been without power for well over 6 months. The post Basil disappointed on electricity supply to Bulolo district appeared first on Post Courier .",
       "ner": [
         {
-          "entity": "Basil",
+          "entity": "Sam Basil Jr",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -29351,7 +29351,7 @@
       "translatedDescription": "SOLOMON Islands Foreign Minister Peter Shanel Agovaka will join counterparts and representatives from other Pacific Islands Countries (PICs) with diplomatic relations with China for the third China-PICs Foreign Ministers Meeting in China this week. The two-day meeting, to be held on Wednesday 28 May and Thursday 29 May in Xiamen City, Fujian Province. It will…",
       "ner": [
         {
-          "entity": "Agovaka",
+          "entity": "Peter Shanel Agovaka",
           "label": "PER",
           "start": 0,
           "end": 7,
@@ -29470,14 +29470,14 @@
           "source": "description"
         },
         {
-          "entity": "AN",
+          "entity": "It Was Just An Accident",
           "label": "MISC",
           "start": 361,
           "end": 363,
           "source": "description"
         },
         {
-          "entity": "Australia",
+          "entity": "Western Australia",
           "label": "LOC",
           "start": 478,
           "end": 488,
@@ -29491,7 +29491,7 @@
           "source": "description"
         },
         {
-          "entity": "Palladium",
+          "entity": "Palladium Group",
           "label": "ORG",
           "start": 1024,
           "end": 1033,
@@ -29505,14 +29505,14 @@
           "source": "description"
         },
         {
-          "entity": "ANZ",
+          "entity": "ANZ Unlock",
           "label": "ORG",
           "start": 1784,
           "end": 1787,
           "source": "description"
         },
         {
-          "entity": "David",
+          "entity": "David Simms",
           "label": "PER",
           "start": 2023,
           "end": 2028,
@@ -29526,28 +29526,28 @@
           "source": "description"
         },
         {
-          "entity": "Nicolas",
+          "entity": "Nicolas Wolf",
           "label": "PER",
           "start": 2068,
           "end": 2075,
           "source": "description"
         },
         {
-          "entity": "Wolf",
+          "entity": "Janto Wolf Kuban",
           "label": "PER",
           "start": 2076,
           "end": 2080,
           "source": "description"
         },
         {
-          "entity": "Market",
+          "entity": "Market Development Facility",
           "label": "ORG",
           "start": 2101,
           "end": 2107,
           "source": "description"
         },
         {
-          "entity": "New",
+          "entity": "New Hope",
           "label": "MISC",
           "start": 2227,
           "end": 2230,
@@ -29631,7 +29631,7 @@
           "source": "description"
         },
         {
-          "entity": "Agyapong",
+          "entity": "Kwabena Agyapong",
           "label": "PER",
           "start": 285,
           "end": 293,
@@ -29652,7 +29652,7 @@
       "translatedDescription": "President Donald Trump’s sweeping tariffs have given many Americans whiplash. The list of companies announcing price changes as a result is equally daunting.\n\nAmong the levies Trump has imposed is a 10% baseline tariff for most imports and a 30% tariff on most Chinese goods. Some goods, such as steel and aluminum, face higher rates.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 45,
           "end": 50,
@@ -29666,7 +29666,7 @@
           "source": "description"
         },
         {
-          "entity": "Americans",
+          "entity": "Latin Americans",
           "label": "MISC",
           "start": 58,
           "end": 67,
@@ -29708,7 +29708,7 @@
           "source": "title"
         },
         {
-          "entity": "Africa",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 27,
           "end": 33,
@@ -29764,7 +29764,7 @@
           "source": "description"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 314,
           "end": 316,
@@ -29855,7 +29855,7 @@
       "translatedDescription": "On the occasion of the Day of Africa, Cubadebate premieres this space to share life stories related to that brother's continent. Today we share the testimony of Dr. Elizabeth Hernández González, who worked as an infestologist in the pulmonary tuberculosis program. The post The reader's story: everyday stories of a doctor in Africa First Appeared on Cubadebate.",
       "ner": [
         {
-          "entity": "Africa",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 52,
           "end": 58,
@@ -29904,7 +29904,7 @@
           "source": "title"
         },
         {
-          "entity": "Africa",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 64,
           "end": 70,
@@ -29932,7 +29932,7 @@
           "source": "description"
         },
         {
-          "entity": "Fidel",
+          "entity": "Fidel Castro Ruz",
           "label": "PER",
           "start": 209,
           "end": 214,
@@ -29960,7 +29960,7 @@
       "translatedDescription": "On another return of the Sun, we return to celebrate the day of Africa, the continent of all, the first place of life. As unique as diverse, Africa falls in love from pain to charm. It is a planet in itself of stories that expect to be heard and apprehended. Africa is a teacher who hopes to teach the student who is ready to learn. The post Africa in its day: magic and truth stories (+video) First appeared on Cubadebate.",
       "ner": [
         {
-          "entity": "Africa",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -29988,7 +29988,7 @@
       "translatedDescription": "The president of the Political Movement Citizen Revolution and former candidate for the Presidency of the Republic of Ecuador, Luisa González, shared a letter to the Ecuadorian people on Saturday, where she declares that they do not recognize or recognize the results of an electoral process \"that was not legal, constitutional, free and worse still democratic.\" The Post Excandidata Presidential Ecuadorian affirms not to recognize Daniel Noboa as the new president First Appeared On Cubadebate.",
       "ner": [
         {
-          "entity": "Ecuador",
+          "entity": "Republic of Ecuador",
           "label": "LOC",
           "start": 0,
           "end": 10,
@@ -30051,7 +30051,7 @@
       "translatedDescription": "Cuban President Miguel Díaz-Canel Bermúdez was on Saturday afternoon to the Embassy of the Socialist Republic of Vietnam in Havana to sign the book of condolences for the death of fellow Tran Duc Luong. In dialogue with El Ambassador, Díaz-Canel exalted the links between the two socialist countries. The Post Signature Díaz-Condolence Book for the death of exmandatario Vietnamese First Appeared on Cubadebate.",
       "ner": [
         {
-          "entity": "Díaz",
+          "entity": "Miguel Díaz-Canel Bermúdez",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -30100,7 +30100,7 @@
           "source": "description"
         },
         {
-          "entity": "Díaz-Canel",
+          "entity": "Miguel Díaz-Canel Bermúdez",
           "label": "PER",
           "start": 235,
           "end": 245,
@@ -30149,7 +30149,7 @@
           "source": "title"
         },
         {
-          "entity": "Pérez",
+          "entity": "Karlen Pérez",
           "label": "PER",
           "start": 316,
           "end": 321,
@@ -30184,14 +30184,14 @@
           "source": "title"
         },
         {
-          "entity": "Elite League",
+          "entity": "III Elite League of",
           "label": "MISC",
           "start": 64,
           "end": 76,
           "source": "title"
         },
         {
-          "entity": "Tunas",
+          "entity": "Las Tunas",
           "label": "ORG",
           "start": 46,
           "end": 51,
@@ -30219,7 +30219,7 @@
           "source": "description"
         },
         {
-          "entity": "Elite",
+          "entity": "Elite League",
           "label": "MISC",
           "start": 398,
           "end": 403,
@@ -30310,7 +30310,7 @@
       "translatedDescription": "Alajuelense Sports League and the Heredian Sport Club play this Sunday, May 25, the first leg of the Grand Final of the 2025 Clausura Tournament.",
       "ner": [
         {
-          "entity": "Alajuelense",
+          "entity": "Alajuelense Sports League",
           "label": "ORG",
           "start": 0,
           "end": 11,
@@ -30448,7 +30448,7 @@
           "source": "title"
         },
         {
-          "entity": "Alajuelense",
+          "entity": "Alajuelense Sports League",
           "label": "ORG",
           "start": 80,
           "end": 91,
@@ -31281,14 +31281,14 @@
           "source": "title"
         },
         {
-          "entity": "French",
+          "entity": "French Cup",
           "label": "MISC",
           "start": 98,
           "end": 104,
           "source": "title"
         },
         {
-          "entity": "France",
+          "entity": "Stade de France",
           "label": "LOC",
           "start": 115,
           "end": 121,
@@ -31393,7 +31393,7 @@
           "source": "title"
         },
         {
-          "entity": "Military",
+          "entity": "Naval Military School",
           "label": "ORG",
           "start": 52,
           "end": 60,
@@ -31575,7 +31575,7 @@
       "translatedDescription": "Medal owners will be revealed at the World Ice Hockey World Championships. Switzerland and the US will face the final. The TV channel Duo 5 and Postimees live at 9.10 pm.",
       "ner": [
         {
-          "entity": "World Cup",
+          "entity": "FIFA Women's Club World Cup",
           "label": "MISC",
           "start": 10,
           "end": 19,
@@ -31694,7 +31694,7 @@
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 17,
           "end": 22,
@@ -31792,7 +31792,7 @@
       "translatedDescription": "About 32,000 residents remained isolated due to floodwaters, which were slowly starting to recede, the state’s Emergency Services said.",
       "ner": [
         {
-          "entity": "Australia",
+          "entity": "Western Australia",
           "label": "LOC",
           "start": 0,
           "end": 10,
@@ -32105,7 +32105,7 @@
           "source": "title"
         },
         {
-          "entity": "France",
+          "entity": "Stade de France",
           "label": "LOC",
           "start": 67,
           "end": 73,
@@ -32266,7 +32266,7 @@
           "source": "title"
         },
         {
-          "entity": "Koshi",
+          "entity": "Koshi Province",
           "label": "LOC",
           "start": 62,
           "end": 67,
@@ -32300,7 +32300,7 @@
       "translatedDescription": "Some US lawmakers, many of them Republicans, have expressed worries that China is manipulating Harvard to gain access to US advanced technology, to circumvent US security laws and to stifle criticism of it in the United States.",
       "ner": [
         {
-          "entity": "Harvard",
+          "entity": "Harvard University",
           "label": "ORG",
           "start": 19,
           "end": 26,
@@ -32328,7 +32328,7 @@
           "source": "description"
         },
         {
-          "entity": "United States",
+          "entity": "United States of America",
           "label": "LOC",
           "start": 159,
           "end": 161,
@@ -32552,7 +32552,7 @@
       "translatedDescription": "Nullifying two separate amendments to the Tribhuvan University rules related to teacher-staff recruitment, the Supreme Court warns the institution against such provisions to avoid free competition.",
       "ner": [
         {
-          "entity": "Supreme Court",
+          "entity": "Supreme Court of Justice of the Nation",
           "label": "ORG",
           "start": 0,
           "end": 13,
@@ -33032,7 +33032,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza City",
           "label": "LOC",
           "start": 38,
           "end": 42,
@@ -33116,7 +33116,7 @@
           "source": "title"
         },
         {
-          "entity": "Union",
+          "entity": "Indian Union",
           "label": "ORG",
           "start": 7,
           "end": 12,
@@ -33242,7 +33242,7 @@
       "translatedDescription": "Geneva: Novak Djokovic claimed his 100th tour-level trophy on Saturday at the Gonet Geneva Open, battling past Hubert Hurkacz in a dramatic final. The...",
       "ner": [
         {
-          "entity": "Djokovic",
+          "entity": "Novak Djokovic",
           "label": "PER",
           "start": 0,
           "end": 8,
@@ -33319,7 +33319,7 @@
       "translatedDescription": "New York City: Members of the all-party delegation led by Congress MP Shashi Tharoor paid their respects at the 9/11 memorial after their arrival in the US...",
       "ner": [
         {
-          "entity": "Congress",
+          "entity": "All Progressives Congress",
           "label": "ORG",
           "start": 39,
           "end": 47,
@@ -33347,7 +33347,7 @@
           "source": "description"
         },
         {
-          "entity": "9/11",
+          "entity": "9/11 Memorial",
           "label": "MISC",
           "start": 112,
           "end": 116,
@@ -33522,7 +33522,7 @@
       "translatedDescription": "António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "Cabral",
+          "entity": "Iva Cabral",
           "label": "PER",
           "start": 0,
           "end": 6,
@@ -33543,7 +33543,7 @@
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -33599,7 +33599,7 @@
           "source": "description"
         },
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 161,
           "end": 164,
@@ -33655,7 +33655,7 @@
           "source": "description"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 802,
           "end": 804,
@@ -33683,14 +33683,14 @@
           "source": "title"
         },
         {
-          "entity": "Guinea",
+          "entity": "Papua New Guinea",
           "label": "LOC",
           "start": 144,
           "end": 151,
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -33767,7 +33767,7 @@
           "source": "description"
         },
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 303,
           "end": 306,
@@ -33788,7 +33788,7 @@
           "source": "description"
         },
         {
-          "entity": "Congress",
+          "entity": "All Progressives Congress",
           "label": "ORG",
           "start": 1178,
           "end": 1186,
@@ -33823,7 +33823,7 @@
           "source": "description"
         },
         {
-          "entity": "Paulo",
+          "entity": "Paulo Gomes",
           "label": "PER",
           "start": 1776,
           "end": 1781,
@@ -33872,7 +33872,7 @@
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 9,
           "end": 11,
@@ -33907,7 +33907,7 @@
           "source": "title"
         },
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 0,
           "end": 3,
@@ -33921,7 +33921,7 @@
           "source": "description"
         },
         {
-          "entity": "Guinea",
+          "entity": "Papua New Guinea",
           "label": "LOC",
           "start": 403,
           "end": 409,
@@ -34047,14 +34047,14 @@
           "source": "description"
         },
         {
-          "entity": "All",
+          "entity": "All Progressives Congress",
           "label": "ORG",
           "start": 1719,
           "end": 1722,
           "source": "description"
         },
         {
-          "entity": "Ku",
+          "entity": "Guineenses Ku Udjus Fitchadu",
           "label": "ORG",
           "start": 1736,
           "end": 1738,
@@ -34103,7 +34103,7 @@
           "source": "description"
         },
         {
-          "entity": "Man",
+          "entity": "Man City",
           "label": "ORG",
           "start": 1803,
           "end": 1806,
@@ -34117,7 +34117,7 @@
           "source": "description"
         },
         {
-          "entity": "AL",
+          "entity": "Al Nowais",
           "label": "ORG",
           "start": 1824,
           "end": 1826,
@@ -34138,7 +34138,7 @@
       "translatedDescription": "António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 572,
           "end": 575,
@@ -34159,7 +34159,7 @@
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -34180,7 +34180,7 @@
       "translatedDescription": "António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 72,
           "end": 75,
@@ -34194,7 +34194,7 @@
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -34236,7 +34236,7 @@
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -34257,14 +34257,14 @@
       "translatedDescription": "Document Document António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "Cabral",
+          "entity": "Iva Cabral",
           "label": "PER",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 18,
           "end": 20,
@@ -34285,7 +34285,7 @@
       "translatedDescription": "António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 0,
           "end": 3,
@@ -34306,7 +34306,7 @@
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -34327,7 +34327,7 @@
       "translatedDescription": "Documentos: 1 bag 2 bags of 4 bags of 5 bags of António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 48,
           "end": 50,
@@ -34362,7 +34362,7 @@
           "source": "title"
         },
         {
-          "entity": "Euroatlantic",
+          "entity": "Euroatlantic Airways",
           "label": "ORG",
           "start": 138,
           "end": 150,
@@ -34376,7 +34376,7 @@
           "source": "title"
         },
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 454,
           "end": 457,
@@ -34418,7 +34418,7 @@
       "translatedDescription": "The media are also the most used forms of manipulation by political powers, given their social impact. The information is manipulated not only in view of omitting relevant facts, but also distorting the content of the information conveyed, producing or forging public opinion, so that it adjusts to the ideas of the greedy. The only way for citizens to avoid falling into these manipulation processes is to become more vigilant in relation to democratic institutions and information bodies, adopting an attitude of permanent critical reflection on the information provided to them. In Guinea-Bissau, in recent years, the number of mediocre people has grown exponentially, unscrupulous people linked to the production of radios and other media with influence on our society, people who despite their enormous influence on society, work on more complete impunity and without any ethical/democratic control. Obsessed with power, aware of the difficulty of the Guinean people in evaluating information, aware of the power of communication instruments, Domingos Simões Pereira (DSP) has never belittled these instruments to achieve their goal, always used them dishonestly how it is now doing everything to keep in control of these vehicles, even if it costs the lives of others. He ruled in corruption, nepotism and deviations from astronomical sums of people's money, which would serve much for investments in health, education and other public services, to benefit family and friends. It pretends to worry about the problems of the country, but only deceives the honest, humble and worker people who are unfortunately suffering a lot, I don't know how long, due to their patience and tolerance to rulers like DSP, a politician-crossed criminal who lives at the expense of people and above all they still do so. He stole and disappointed so much not only to the Guineans as well as the international community that always believed that the subject was ideal to help these people get out of the suffering cycle that seems infinite. He was fired, did not conform and is doing everything as far as possible to continue to complicate the life of the Guineans. Reason for this is that after losing the battle in the most modern media, namely the blogs where it invested great sums of people's money, to make the brainwash of the less educated and beyond. He ran away from Facebook where he always attended and communicated with everyone attempted to give the message of a modern politician and open to dialogue/opinions, but after all he was simply a false modernist. The mask fell and can no longer fool anyone, because its credibility is below zero, not to say something else. Comrades, for general knowledge, with the stolen money that cost Guinean people sweat, DSP decided to advance with another new Machiavellian plan, to create his own radio station. Document António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 0,
           "end": 3,
@@ -34432,7 +34432,7 @@
           "source": "description"
         },
         {
-          "entity": "Guinea",
+          "entity": "Papua New Guinea",
           "label": "LOC",
           "start": 957,
           "end": 964,
@@ -34488,7 +34488,7 @@
       "translatedDescription": "[#] One of the elements of the PN, the Blog of the Ganaciao DSP that so much insulted the first magistrate of the nation without anything being done so far. António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 11,
           "end": 14,
@@ -34523,7 +34523,7 @@
           "source": "description"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 157,
           "end": 159,
@@ -34544,7 +34544,7 @@
       "translatedDescription": "António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 0,
           "end": 3,
@@ -34607,7 +34607,7 @@
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -34628,14 +34628,14 @@
       "translatedDescription": "António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 43,
           "end": 46,
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -34663,7 +34663,7 @@
           "source": "title"
         },
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 23,
           "end": 26,
@@ -34691,7 +34691,7 @@
           "source": "description"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 421,
           "end": 423,
@@ -34712,7 +34712,7 @@
       "translatedDescription": "António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -34733,14 +34733,14 @@
       "translatedDescription": "António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "DSP",
+          "entity": "Ganaciao DSP",
           "label": "ORG",
           "start": 20,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -34761,7 +34761,7 @@
       "translatedDescription": "António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -34782,14 +34782,14 @@
       "translatedDescription": "Please have pity from the Guinean people António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "Guinea",
+          "entity": "Papua New Guinea",
           "label": "LOC",
           "start": 26,
           "end": 33,
           "source": "description"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 41,
           "end": 43,
@@ -34817,7 +34817,7 @@
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 85,
           "end": 87,
@@ -34838,14 +34838,14 @@
       "translatedDescription": "António Aly Silva »aaly.silva@gmail.com» aaly_silva@hotmail.com »Tel. (+245) 668 31 13",
       "ner": [
         {
-          "entity": "Guinea",
+          "entity": "Papua New Guinea",
           "label": "LOC",
           "start": 78,
           "end": 85,
           "source": "title"
         },
         {
-          "entity": "An",
+          "entity": "Carlo An",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -34928,7 +34928,7 @@
           "source": "description"
         },
         {
-          "entity": "Orense",
+          "entity": "Pro Triunfo de Orense",
           "label": "ORG",
           "start": 90,
           "end": 96,
@@ -34956,7 +34956,7 @@
       "translatedDescription": "The Bananeros hit at the exact moments and despite spending pressing, they managed to keep the three points at home.",
       "ner": [
         {
-          "entity": "Orense",
+          "entity": "Pro Triunfo de Orense",
           "label": "ORG",
           "start": 0,
           "end": 6,
@@ -35179,14 +35179,14 @@
           "source": "title"
         },
         {
-          "entity": "Ecuador",
+          "entity": "Republic of Ecuador",
           "label": "LOC",
           "start": 30,
           "end": 40,
           "source": "description"
         },
         {
-          "entity": "National",
+          "entity": "National Police",
           "label": "ORG",
           "start": 41,
           "end": 49,
@@ -35506,7 +35506,7 @@
       "translatedDescription": "President Chan Santokhi has called on the people of Suriname to ensure that the elections of Sunday 25 May 2025 run into rest, respect and mutual connection. In a speech, he emphasizes the importance of worthy voting behavior and the respect of the democratic rules, regardless of the result.",
       "ner": [
         {
-          "entity": "Santokhi",
+          "entity": "Chan Santokhi",
           "label": "PER",
           "start": 10,
           "end": 18,
@@ -35597,7 +35597,7 @@
           "source": "description"
         },
         {
-          "entity": "Adhin",
+          "entity": "Ashwin Adhin",
           "label": "PER",
           "start": 321,
           "end": 326,
@@ -35639,7 +35639,7 @@
           "source": "description"
         },
         {
-          "entity": "Brunswijk",
+          "entity": "Ronnie Brunswijk",
           "label": "PER",
           "start": 269,
           "end": 278,
@@ -35767,5 +35767,5 @@
       ]
     }
   ],
-  "processedAt": "2025-05-25T04:44:20.533071"
+  "processedAt": "2025-05-27T21:39:19.434286"
 }

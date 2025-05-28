@@ -90,7 +90,7 @@
           "source": "title"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 27,
           "end": 34,
@@ -174,7 +174,7 @@
       "translatedDescription": "The White House was shy on details about the agreements, and the projects’ costs totaled less than half the number it announced.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -216,7 +216,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 37,
           "end": 42,
@@ -244,21 +244,21 @@
       "translatedDescription": "President Volodymyr Zelensky of Ukraine said that if President Trump attended the talks, it would put pressure on Russia’s leader, Vladimir V. Putin, to meet face-to-face.",
       "ner": [
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 0,
           "end": 8,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 14,
           "end": 19,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 47,
           "end": 52,
@@ -307,7 +307,7 @@
       "translatedDescription": "The Chinese leader, Xi Jinping, has suggested expanding trade ties beyond buying commodities as he continues to rally nations in the face of President Trump’s tariffs.",
       "ner": [
         {
-          "entity": "Xi",
+          "entity": "Xi Jinping",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -335,7 +335,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 151,
           "end": 156,
@@ -370,7 +370,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 10,
           "end": 15,
@@ -419,7 +419,7 @@
       "translatedDescription": "Members of a group calling itself the Kingdom of Germany, which was targeted in nationwide raids, reject the existence of the German state and want to set up a parallel one.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -517,7 +517,7 @@
       "translatedDescription": "Mr. Trump has few meetings directly about pressing geopolitical challenges. Instead, he’s in the Persian Gulf to make deals.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -594,7 +594,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 14,
           "end": 22,
@@ -650,7 +650,7 @@
       "translatedDescription": "President Trump’s repeated descriptions of U.S. mediation efforts between India and Pakistan have hit sore spots in Indian politics.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 3,
           "end": 8,
@@ -685,7 +685,7 @@
       "translatedDescription": "The Trump administration carved out an exception to its refugee ban for white South Africans. But other groups, including Afghans who helped U.S. forces during the war in their country, are being shut out.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -727,7 +727,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 13,
           "end": 18,
@@ -769,7 +769,7 @@
       "translatedDescription": "President Trump, on a state visit to Saudi Arabia, said he made the decision after speaking to the Saudi crown prince. The president is trying to drum up Saudi investment in the U.S.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -944,7 +944,7 @@
       "translatedDescription": "The police said a 21-year-old man was held in connection with three fires, including two at properties linked to the British prime minister.",
       "ner": [
         {
-          "entity": "Starmer",
+          "entity": "Keir Starmer",
           "label": "PER",
           "start": 26,
           "end": 33,
@@ -979,7 +979,7 @@
       "translatedDescription": "President Trump’s visit to the Gulf region.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 10,
           "end": 15,
@@ -1084,14 +1084,14 @@
       "translatedDescription": "Plus, a big week for the art world.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 18,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "Gulf",
+          "entity": "Persian Gulf",
           "label": "LOC",
           "start": 39,
           "end": 43,
@@ -1112,14 +1112,14 @@
       "translatedDescription": "Damage was caused to the entrance of a property belonging to the prime minister in Kentish Town, but nobody was hurt, the police said.",
       "ner": [
         {
-          "entity": "Starmer",
+          "entity": "Keir Starmer",
           "label": "PER",
           "start": 41,
           "end": 48,
           "source": "title"
         },
         {
-          "entity": "North London",
+          "entity": "North London House",
           "label": "LOC",
           "start": 51,
           "end": 63,
@@ -1161,7 +1161,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 28,
           "end": 36,
@@ -1182,7 +1182,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 97,
           "end": 102,
@@ -1266,7 +1266,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 100,
           "end": 105,
@@ -1294,7 +1294,7 @@
           "source": "title"
         },
         {
-          "entity": "Leo",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 55,
           "end": 58,
@@ -1329,7 +1329,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 27,
           "end": 35,
@@ -1447,21 +1447,21 @@
       "translatedDescription": "The papacy is a global platform, so the issues Pope Leo chooses to focus on can resonate far beyond the church.",
       "ner": [
         {
-          "entity": "Catholics",
+          "entity": "Roman Catholics",
           "label": "MISC",
           "start": 4,
           "end": 13,
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 19,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "Leo",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 52,
           "end": 55,
@@ -1482,7 +1482,7 @@
       "translatedDescription": "President Trump seems to think not. The industries he constantly mentions when he pushes his case, including autos, energy and lumber, beg to differ.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1510,7 +1510,7 @@
       "translatedDescription": "President Trump goes to the Gulf kingdom this week seeking $1 trillion worth of investments in the United States — a sum equivalent to the entire Saudi gross domestic product for a year.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -1524,7 +1524,7 @@
           "source": "title"
         },
         {
-          "entity": "Gulf",
+          "entity": "Persian Gulf",
           "label": "LOC",
           "start": 28,
           "end": 32,
@@ -1579,7 +1579,7 @@
           "source": "title"
         },
         {
-          "entity": "Leo",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 8,
@@ -1600,7 +1600,7 @@
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 38,
           "end": 45,
@@ -1690,7 +1690,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 42,
           "end": 47,
@@ -1829,7 +1829,7 @@
       "translatedDescription": "Dozens of Afrikaners who claim discrimination in their home country flew out of Johannesburg on Sunday. Their departure for the U.S. came as the Trump administration was halting virtually all refugee admissions.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 42,
           "end": 47,
@@ -1864,7 +1864,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 36,
           "end": 44,
@@ -1885,7 +1885,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 107,
           "end": 112,
@@ -1920,7 +1920,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 4,
           "end": 9,
@@ -1941,7 +1941,7 @@
       "translatedDescription": "At a conclave with many new members, a swift, stunning consensus built around an unknown to many outside of the church.",
       "ner": [
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 12,
           "end": 20,
@@ -2053,7 +2053,7 @@
           "source": "title"
         },
         {
-          "entity": "Pepe\" Mujica",
+          "entity": "José \"Pepe\" Mujica",
           "label": "PER",
           "start": 51,
           "end": 63,
@@ -2074,7 +2074,7 @@
           "source": "description"
         },
         {
-          "entity": "Lula",
+          "entity": "Luiz Inácio Lula Da Silva",
           "label": "PER",
           "start": 165,
           "end": 169,
@@ -2270,7 +2270,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 42,
           "end": 47,
@@ -2298,7 +2298,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 88,
           "end": 96,
@@ -2417,7 +2417,7 @@
           "source": "description"
         },
         {
-          "entity": "Al",
+          "entity": "Ahmed Al-Charaa",
           "label": "PER",
           "start": 111,
           "end": 113,
@@ -2515,7 +2515,7 @@
       "translatedDescription": "Donald Trump announced Tuesday from Riyadh the lifting of American sanctions against Syria, before a meeting planned with Syrian President Ahmed al-Charaa. A \"real relief\" for the Syrians, observes Diana Alboz, correspondent of France 24 in Damascus, who underlines \"hope\" of an impact on the economy of the country and better access to drugs and food, after more than ten years of war.",
       "ner": [
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 8,
           "end": 16,
@@ -2606,14 +2606,14 @@
           "source": "description"
         },
         {
-          "entity": "Gulf",
+          "entity": "Persian Gulf",
           "label": "LOC",
           "start": 62,
           "end": 66,
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 82,
           "end": 90,
@@ -2669,14 +2669,14 @@
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 43,
           "end": 48,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 53,
           "end": 58,
@@ -2781,7 +2781,7 @@
           "source": "description"
         },
         {
-          "entity": "TV5",
+          "entity": "TV5 Monde",
           "label": "ORG",
           "start": 230,
           "end": 233,
@@ -2809,7 +2809,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 38,
           "end": 46,
@@ -2935,7 +2935,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 67,
           "end": 75,
@@ -3089,7 +3089,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 149,
           "end": 157,
@@ -3131,7 +3131,7 @@
       "translatedDescription": "The Italian Carlo Ancelotti, at the end of the cycle at Real Madrid, was appointed Monday May 12 Brazil coach to the World-2026, with the mission of relaunching a very badly in point in a little over a year of the tournament.",
       "ner": [
         {
-          "entity": "Ancelotti",
+          "entity": "Carlo Ancelotti",
           "label": "PER",
           "start": 10,
           "end": 19,
@@ -3208,14 +3208,14 @@
           "source": "title"
         },
         {
-          "entity": "Gasquet",
+          "entity": "Richard Gasquet",
           "label": "PER",
           "start": 16,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "Wawrinka",
+          "entity": "Stan Wawrinka",
           "label": "PER",
           "start": 25,
           "end": 33,
@@ -3273,5 +3273,5 @@
       ]
     }
   ],
-  "processedAt": "2025-05-14T04:28:26.782779"
+  "processedAt": "2025-05-27T21:39:15.524373"
 }

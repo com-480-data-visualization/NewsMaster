@@ -13,7 +13,7 @@
       "translatedDescription": "President Trump’s tariffs on auto parts are already causing job losses in Windsor, Ontario, the heart of an industry that makes components for vehicles bound for the United States.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 5,
           "end": 10,
@@ -104,7 +104,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 38,
           "end": 43,
@@ -153,7 +153,7 @@
       "translatedDescription": "President Trump’s conversation with Vladimir Putin.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 10,
           "end": 15,
@@ -209,7 +209,7 @@
       "translatedDescription": "Qatar had been trying to sell off a luxury jet for years, with no luck. Then President Trump’s team set its sights on it.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 4,
           "end": 9,
@@ -251,7 +251,7 @@
       "translatedDescription": "President Trump once vowed to broker peace between Russia and Ukraine in 24 hours. Now he says the two sides should work it out themselves.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -293,7 +293,7 @@
           "source": "title"
         },
         {
-          "entity": "Brooklyn Bridge",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 63,
           "end": 78,
@@ -363,14 +363,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 64,
           "end": 69,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 66,
           "end": 71,
@@ -391,7 +391,7 @@
       "translatedDescription": "The former US president has been diagnosed with an aggressive form of prostate cancer that has spread to his bones, his office says.",
       "ner": [
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 28,
           "end": 33,
@@ -505,14 +505,14 @@
       "translatedDescription": "Former US president likely has had cancer for years, some doctors say.",
       "ner": [
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 53,
           "end": 58,
@@ -554,7 +554,7 @@
           "source": "title"
         },
         {
-          "entity": "Bolsonaro",
+          "entity": "R Bolsonaro",
           "label": "PER",
           "start": 55,
           "end": 64,
@@ -582,7 +582,7 @@
       "translatedDescription": "US President Donald Trump on Monday signed the Take It Down Act, imposing penalties for online sexual exploitation. First lady Melania Trump, who championed the bill, also signed it despite apparent reluctance. The measure passed Congress with bipartisan support.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -596,7 +596,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 13,
           "end": 25,
@@ -624,7 +624,7 @@
           "source": "description"
         },
         {
-          "entity": "Congress",
+          "entity": "Trinamool Congress",
           "label": "ORG",
           "start": 230,
           "end": 238,
@@ -736,7 +736,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 9,
           "end": 14,
@@ -771,7 +771,7 @@
           "source": "description"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 106,
           "end": 111,
@@ -841,7 +841,7 @@
           "source": "title"
         },
         {
-          "entity": "pro",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 30,
           "end": 33,
@@ -988,7 +988,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 34,
           "end": 42,
@@ -1065,7 +1065,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 27,
           "end": 31,
@@ -1100,7 +1100,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 4,
           "end": 6,
@@ -1121,7 +1121,7 @@
           "source": "description"
         },
         {
-          "entity": "Starmer",
+          "entity": "Ir Starmer",
           "label": "PER",
           "start": 166,
           "end": 173,
@@ -1219,7 +1219,7 @@
           "source": "description"
         },
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 132,
           "end": 139,
@@ -1254,7 +1254,7 @@
           "source": "title"
         },
         {
-          "entity": "Lissu",
+          "entity": "Tundu Lissu",
           "label": "PER",
           "start": 137,
           "end": 142,
@@ -1275,7 +1275,7 @@
       "translatedDescription": "Germany has tightened its border controls, turning away asylum seekers — but police say this can't last. Meanwhile, an Iraqi couple is on trial in Bavaria, accused of enslaving two Yazidi girls. Follow DW for the latest.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -1492,14 +1492,14 @@
           "source": "title"
         },
         {
-          "entity": "Pro",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 18,
           "end": 21,
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 22,
           "end": 24,
@@ -1548,7 +1548,7 @@
       "translatedDescription": "Pope Leo XIV has met with Ukrainian leader Volodymyr Zelenskyy to discuss ending the war in Ukraine. Zelenskyy also met with US Vice President JD Vance ahead of talks between Donald Trump and Vladimir Putin.",
       "ner": [
         {
-          "entity": "Pope Leo",
+          "entity": "Pope Leo 14",
           "label": "PER",
           "start": 18,
           "end": 26,
@@ -1562,7 +1562,7 @@
           "source": "title"
         },
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 46,
           "end": 54,
@@ -1583,7 +1583,7 @@
           "source": "description"
         },
         {
-          "entity": "Zelenskyy",
+          "entity": "Volodymyr Zelenskyy",
           "label": "PER",
           "start": 101,
           "end": 110,
@@ -1604,7 +1604,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 175,
           "end": 187,
@@ -1632,21 +1632,21 @@
       "translatedDescription": "New German Chancellor Friedrich Merz has attended the inaugural Mass of Pope Leo XIV in the Vatican. Meanwhile, a new study showed workers in Germany work fewer hours than most international counterparts. DW has more.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 17,
           "end": 21,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 4,
           "end": 10,
@@ -1708,14 +1708,14 @@
       "translatedDescription": "An internal survey about extremist attitudes in the German military now found that it does not have \"systemic\" extremism in the ranks. But some researchers are skeptical of the safeguards in place.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 26,
           "end": 33,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 52,
           "end": 58,
@@ -1736,21 +1736,21 @@
       "translatedDescription": "German Chancellor Friedrich Merz plans to make the Bundeswehr the \"strongest conventional army in Europe.\" Other EU countries also have ambitious plans for their armed forces. DW takes a closer look.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 23,
           "end": 25,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -1799,7 +1799,7 @@
       "translatedDescription": "The hard-right \"sovereignist\" George Simion is going head-to-head with the pro-EU liberal Nicusor Dan in Sunday's presidential runoff in Romania. A Simion victory could trigger a crisis in the European Union.",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 0,
           "end": 2,
@@ -1827,7 +1827,7 @@
           "source": "description"
         },
         {
-          "entity": "Simion",
+          "entity": "George Simion",
           "label": "PER",
           "start": 148,
           "end": 154,
@@ -1883,7 +1883,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 41,
           "end": 47,
@@ -1904,7 +1904,7 @@
           "source": "description"
         },
         {
-          "entity": "Americans",
+          "entity": "Indigenous Americans",
           "label": "MISC",
           "start": 122,
           "end": 131,
@@ -1953,21 +1953,21 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 17,
           "end": 22,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 31,
           "end": 36,
           "source": "title"
         },
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 38,
           "end": 46,
@@ -2037,7 +2037,7 @@
       "translatedDescription": "Interior Minister Alexander Dobrindt appeared at the Austro-German border to explain the government's new tougher border controls. The new government has made immigration policy a key part of its agenda.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -2079,14 +2079,14 @@
           "source": "title"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 64,
           "end": 68,
           "source": "description"
         },
         {
-          "entity": "North",
+          "entity": "North Waziristan",
           "label": "LOC",
           "start": 72,
           "end": 77,
@@ -2100,7 +2100,7 @@
           "source": "description"
         },
         {
-          "entity": "Indigenous",
+          "entity": "Indigenous Americans",
           "label": "MISC",
           "start": 139,
           "end": 149,
@@ -2163,7 +2163,7 @@
           "source": "title"
         },
         {
-          "entity": "Erdogan",
+          "entity": "Recep Tayyip Erdogan",
           "label": "PER",
           "start": 40,
           "end": 47,
@@ -2226,14 +2226,14 @@
       "translatedDescription": "The new German government has agreed to stop family members of refugees with subsidiary protection status from moving to Germany. The controversial move will particularly affect Syrian families.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 8,
           "end": 14,
@@ -2261,7 +2261,7 @@
       "translatedDescription": "Despite the efforts of its organizers, the Eurovision Song Contest in Switzerland's Basel has not been free of politics. Here's an overview of an unusual start, protests against Israel's artist and controversial songs.",
       "ner": [
         {
-          "entity": "Eurovision",
+          "entity": "Eurovision Song Contest",
           "label": "MISC",
           "start": 0,
           "end": 10,
@@ -2310,7 +2310,7 @@
       "translatedDescription": "Germany and the United Kingdom are increasing their military cooperation, aiming to jointly develop long-range precision weapons. The aim is to protect Europe from potential attacks.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -2415,7 +2415,7 @@
           "source": "description"
         },
         {
-          "entity": "Roma",
+          "entity": "Roma Resistance Day",
           "label": "MISC",
           "start": 21,
           "end": 25,
@@ -2450,14 +2450,14 @@
       "translatedDescription": "The US and China have stepped back from a major tariff war, while Britain quickly struck a limited deal with Donald Trump. Can EU nations glean insights to secure their future trade with the US?",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 4,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 36,
           "end": 41,
@@ -2485,14 +2485,14 @@
           "source": "description"
         },
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 66,
           "end": 73,
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 109,
           "end": 121,
@@ -2569,7 +2569,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 123,
           "end": 128,
@@ -2632,7 +2632,7 @@
       "translatedDescription": "Germany and Israel established diplomatic relations 60 years ago. To commemorate the occasion, Israeli President Herzog visited Berlin and German President Steinmeier went to Jerusalem. DW's Christoph Strack was there.",
       "ner": [
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -2646,7 +2646,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -2716,14 +2716,14 @@
           "source": "title"
         },
         {
-          "entity": "Zelenskyy",
+          "entity": "Volodymyr Zelenskyy",
           "label": "PER",
           "start": 17,
           "end": 26,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 33,
           "end": 38,
@@ -2862,7 +2862,7 @@
       "translatedDescription": "Germany's newly elected chancellor, Friedrich Merz, called for Berlin to transform its Bundeswehr into the \"strongest conventional army in Europe\" in his first major speech to parliament.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -2932,7 +2932,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 16,
           "end": 18,
@@ -2981,7 +2981,7 @@
       "translatedDescription": "Pope Leo XIV was gifted a tennis racket by world number one player Jannik Sinner on Wednesday. Sinner offered to volley with the pontiff, who declined saying, \"we might break something.\"",
       "ner": [
         {
-          "entity": "Sinner",
+          "entity": "Jannik Sinner",
           "label": "PER",
           "start": 26,
           "end": 32,
@@ -2995,14 +2995,14 @@
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Leo 14",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 12,
@@ -3051,7 +3051,7 @@
           "source": "description"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 118,
           "end": 120,
@@ -3086,7 +3086,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -3128,7 +3128,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 26,
           "end": 31,
@@ -3149,7 +3149,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 124,
           "end": 136,
@@ -3170,7 +3170,7 @@
       "translatedDescription": "Trump's departure from decades of established trade practices is leaving a lasting impact on the German auto industry. Carmakers can do little but wait and hope things won't turn out as badly as feared.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -3191,7 +3191,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 97,
           "end": 103,
@@ -3212,14 +3212,14 @@
       "translatedDescription": "In a wide-ranging speech in the Bundestag, the German Chancellor outlined his new government's priorities, including a plan to revive Germany's struggling economy and transform it once again into a \"growth locomotive.\"",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 9,
           "end": 13,
@@ -3240,7 +3240,7 @@
           "source": "description"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 47,
           "end": 53,
@@ -3289,7 +3289,7 @@
           "source": "description"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 47,
           "end": 53,
@@ -3324,7 +3324,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 29,
           "end": 36,
@@ -3380,14 +3380,14 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 18,
           "end": 30,
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 181,
           "end": 189,
@@ -3415,21 +3415,21 @@
           "source": "title"
         },
         {
-          "entity": "pro",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 17,
           "end": 20,
           "source": "title"
         },
         {
-          "entity": "Hitler",
+          "entity": "Adolf Hitler",
           "label": "PER",
           "start": 21,
           "end": 27,
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 47,
           "end": 54,
@@ -3471,7 +3471,7 @@
       "translatedDescription": "The founder of a banned faction of the far-right \"Reich Citizens\" group has been taken into custody. For more than ten years, Peter Fitzek has been at the head of a fantasy state calling itself the \"Kingdom of Germany.\"",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -3639,14 +3639,14 @@
       "translatedDescription": "The new German chancellor held talks with the Greek premier in Berlin. Meanwhile, Germany has banned the far-right anti-constitutional group \"Kingdom of Germany.\"",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 28,
           "end": 32,
@@ -3667,7 +3667,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 8,
           "end": 14,
@@ -3716,7 +3716,7 @@
       "translatedDescription": "The Reichsbürger are often radical and violent and do not recognize Germany as a legitimate state, and have increasingly drawn the attention of authorities. Who are they, and what kind of danger do they pose?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 8,
           "end": 15,
@@ -3764,14 +3764,14 @@
       "translatedDescription": "German Interior Minister Alexander Dobrindt has ordered asylum seekers to be turned away at the border. The move is legally and politically controversial.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -3799,7 +3799,7 @@
       "translatedDescription": "Germany's aging population is putting the country's pension system under strain. The new Labor Minister Bärbel Bas has ruffled feathers with a proposal for how to fix it.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 40,
           "end": 47,
@@ -3897,7 +3897,7 @@
           "source": "title"
         },
         {
-          "entity": "Kohli",
+          "entity": "Virat Kohli",
           "label": "PER",
           "start": 131,
           "end": 136,
@@ -3932,7 +3932,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 53,
           "end": 58,
@@ -3973,7 +3973,7 @@
       "translatedDescription": "Germany and Israel are commemorating the beginning of their postwar relationship, with the war in Gaza omnipresent.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -3987,7 +3987,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 98,
           "end": 102,
@@ -4050,7 +4050,7 @@
       "translatedDescription": "There's growing concern that German society is becoming increasingly polarized. The question of how to treat the AfD party threatens to further deepen the divide.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 11,
           "end": 18,
@@ -4064,7 +4064,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 29,
           "end": 35,
@@ -4085,14 +4085,14 @@
       "translatedDescription": "In the two days since the new German government under Chancellor Friedrich Merz tightened border controls, 19 people who had applied for asylum have reportedly been turned away.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 30,
           "end": 36,
@@ -4120,14 +4120,14 @@
       "translatedDescription": "No sooner had Friedrich Merz announced new government positions than accusations of \"lobbyism\" began to fly. How is lobbying regulated in Germany — and how big a problem is it?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 13,
           "end": 17,
@@ -4155,7 +4155,7 @@
       "translatedDescription": "The work of the new German government has begun. For the CDU, the CSU and the SPD, the challenges ahead are enormous. The economy is in a slump and the far-right AfD is the strongest opposition party.",
       "ner": [
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 28,
           "end": 34,
@@ -4217,7 +4217,7 @@
       "translatedDescription": "The AfD and its supporters claim that Germany's domestic intelligence agency no longer classifies the party as \"right-wing extremist.\" The facts, however, tell a different story.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 12,
           "end": 19,
@@ -4252,14 +4252,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 63,
           "end": 68,
           "source": "description"
         },
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 119,
           "end": 126,
@@ -4392,7 +4392,7 @@
       "translatedDescription": "China made a deal to buy Russian oil and gas after Europe cut supplies during the Ukraine war. As China takes a major hit from Trump's tariffs, Beijing's ties with the Kremlin increasingly intertwine.",
       "ner": [
         {
-          "entity": "Xi",
+          "entity": "Xi Jinping",
           "label": "PER",
           "start": 0,
           "end": 2,
@@ -4434,7 +4434,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 127,
           "end": 132,
@@ -4518,7 +4518,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 40,
           "end": 47,
@@ -4615,7 +4615,7 @@
       "translatedDescription": "Climate issues took a back seat during Germany's election campaign. Is that likely to change under the incoming coalition government?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 9,
           "end": 16,
@@ -4649,14 +4649,14 @@
       "translatedDescription": "Fewer and fewer young people in Germany are sticking with football at a crucial age in their sporting development. Why is this happening and what does it mean?",
       "ner": [
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 4,
           "end": 10,
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 32,
           "end": 39,
@@ -4677,7 +4677,7 @@
       "translatedDescription": "The European Commission has unveiled a delayed roadmap to phase out Russian fossil fuels by 2027. But as Europe scrambles to diversify supplies, experts warn that new dependencies and old divisions could derail the plan.",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 8,
           "end": 10,
@@ -4733,7 +4733,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 40,
           "end": 47,
@@ -4754,7 +4754,7 @@
       "translatedDescription": "The US president's dismissal of authors behind the sixth National Climate Assessment is the latest in a series of cuts to climate science. What could this mean beyond its borders?",
       "ner": [
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 0,
           "end": 12,
@@ -4789,7 +4789,7 @@
       "translatedDescription": "A generations-long culture of deep-diving among women on a South Korean Island may have changed their genetic evolution. A study shows potential for medical discoveries.",
       "ner": [
         {
-          "entity": "Korea",
+          "entity": "South Korea",
           "label": "LOC",
           "start": 0,
           "end": 5,
@@ -4824,7 +4824,7 @@
       "translatedDescription": "From Wieland Wagner to Arno Breker, many musicians and artists benefited from Nazism. Some had shining careers after the war. How did this happen?",
       "ner": [
         {
-          "entity": "Hitler",
+          "entity": "Adolf Hitler",
           "label": "PER",
           "start": 4,
           "end": 10,
@@ -4901,7 +4901,7 @@
           "source": "title"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 0,
           "end": 12,
@@ -5027,7 +5027,7 @@
       "translatedDescription": "So far, Russia's economy has proven surprisingly resilient despite sweeping Western sanctions. But what happens if the United States ramps up the pressure with secondary sanctions?",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 4,
           "end": 9,
@@ -5041,7 +5041,7 @@
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 48,
           "end": 53,
@@ -5103,7 +5103,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -5180,7 +5180,7 @@
           "source": "description"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 77,
           "end": 79,
@@ -5285,7 +5285,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 46,
           "end": 53,
@@ -5411,7 +5411,7 @@
       "translatedDescription": "What did sport mean to the Nazis? How did they view the Olympic Games? And what sporting opportunities did Jews have?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 9,
           "end": 16,
@@ -5460,7 +5460,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 4,
           "end": 10,
@@ -5474,7 +5474,7 @@
           "source": "description"
         },
         {
-          "entity": "Fröhlich",
+          "entity": "Alexandra Fröhlich",
           "label": "PER",
           "start": 72,
           "end": 80,
@@ -5544,7 +5544,7 @@
       "translatedDescription": "Trump’s first 100 days unleashed chaos with tariffs and executive orders, tanking markets and waning global trust. As the dust settles, has he strengthened America's hand or deepened economic risks?",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 12,
           "end": 17,
@@ -5558,7 +5558,7 @@
           "source": "title"
         },
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 156,
           "end": 163,
@@ -5586,7 +5586,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 50,
           "end": 58,
@@ -5614,7 +5614,7 @@
           "source": "title"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 133,
           "end": 137,
@@ -5691,7 +5691,7 @@
       "translatedDescription": "For many young people in Germany, getting a driver's license has become almost unaffordable. Calls for reform are growing louder, but will it be enough?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 32,
           "end": 39,
@@ -5719,14 +5719,14 @@
           "source": "title"
         },
         {
-          "entity": "Rüdiger",
+          "entity": "Antonio Rüdiger",
           "label": "PER",
           "start": 14,
           "end": 21,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -5754,7 +5754,7 @@
       "translatedDescription": "More than 100 cardinals will join a Vatican conclave to elect Pope Francis' successor. The subject of an Oscar-winning film and best-selling book, papal elections are now a pop-culture sensation.",
       "ner": [
         {
-          "entity": "Pope",
+          "entity": "Pope Leo 14",
           "label": "PER",
           "start": 12,
           "end": 16,
@@ -5879,14 +5879,14 @@
           "source": "title"
         },
         {
-          "entity": "Goethe",
+          "entity": "Johann Wolfgang Von Goethe",
           "label": "PER",
           "start": 28,
           "end": 34,
           "source": "title"
         },
         {
-          "entity": "Luther",
+          "entity": "Martin Luther",
           "label": "PER",
           "start": 36,
           "end": 42,
@@ -5928,7 +5928,7 @@
       "translatedDescription": "Many countries have dropped low-denomination coins in the past. But can cash-loving Germany follow suit and stop accepting the smallest euro coins? Other European nations are showing the way.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 4,
           "end": 11,
@@ -5963,7 +5963,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 19,
           "end": 26,
@@ -5998,14 +5998,14 @@
       "translatedDescription": "Germany was the only G7 economy that failed to grow for the last two years, and is on track for a third year without growth in 2025.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 44,
           "end": 49,
@@ -6054,7 +6054,7 @@
           "source": "description"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 160,
           "end": 167,
@@ -6159,7 +6159,7 @@
       "translatedDescription": "The US president has ordered a review of US-funded international organizations, which he claims unfairly benefit other nations. As the IMF and World Bank hold their Spring summits this week, are their futures secure?",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -6250,7 +6250,7 @@
       "translatedDescription": "Argentina's libertarian president, Javier Milei, has now been in office for 500 days, and his radical pro-market agenda continues to draw global attention. But is it working?",
       "ner": [
         {
-          "entity": "Milei",
+          "entity": "Javier Milei",
           "label": "PER",
           "start": 5,
           "end": 10,
@@ -6347,7 +6347,7 @@
       "translatedDescription": "The production company YouTuber James \"MrBeast\" Donaldson used while filing at Mexican ruins has been accused of violating its permit.",
       "ner": [
         {
-          "entity": "Mrbeast",
+          "entity": "Mrbeast\" Donaldson",
           "label": "PER",
           "start": 9,
           "end": 16,
@@ -6396,7 +6396,7 @@
       "translatedDescription": "The head of the inquiry into Bruce Lehrmann's prosecution is fighting findings that he engaged in \"serious corrupt conduct\". But the Federal Court has heard that the watchdog's damning report may be protected by parliamentary privilege.",
       "ner": [
         {
-          "entity": "Lehrmann",
+          "entity": "Bruce Lehrmann",
           "label": "PER",
           "start": 35,
           "end": 43,
@@ -6410,7 +6410,7 @@
           "source": "description"
         },
         {
-          "entity": "Federal Court",
+          "entity": "Supreme Federal Court",
           "label": "ORG",
           "start": 133,
           "end": 146,
@@ -6807,7 +6807,7 @@
       "translatedDescription": "Backyard chefs such as Callan Buchholz are brushing up on their low and slow barbecue skills, with the American-style trend of meat smoking feeding the whole tribe.",
       "ner": [
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 0,
           "end": 8,
@@ -6933,14 +6933,14 @@
       "translatedDescription": "Vladimir Putin was trained in the KGB world of working out the psychology of your opponent, so it is not surprising he is outfoxing Donald Trump. The US president is now talking about walking away from peace talks.",
       "ner": [
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 10,
           "end": 15,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 27,
           "end": 32,
@@ -6968,7 +6968,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 132,
           "end": 144,
@@ -6996,7 +6996,7 @@
       "translatedDescription": "Australian F1 driver Jack Doohan has made a plea for the online abuse of his family to stop, following the circulation of a post from an account falsely portraying his father.",
       "ner": [
         {
-          "entity": "Doohan",
+          "entity": "Jack Doohan",
           "label": "PER",
           "start": 28,
           "end": 34,
@@ -7066,7 +7066,7 @@
       "translatedDescription": "Soccer legend Gary Lineker apologises for sharing a post about Zionism with a picture of a rat, and will step down from the BBC at the end of the EPL season.",
       "ner": [
         {
-          "entity": "Lineker",
+          "entity": "Gary Lineker",
           "label": "PER",
           "start": 19,
           "end": 26,
@@ -7150,14 +7150,14 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 21,
           "end": 26,
@@ -7192,7 +7192,7 @@
           "source": "title"
         },
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 8,
           "end": 15,
@@ -7241,14 +7241,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 61,
           "end": 66,
           "source": "title"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 184,
           "end": 196,
@@ -7262,7 +7262,7 @@
           "source": "description"
         },
         {
-          "entity": "Kamal",
+          "entity": "Syed Mustafa Kamal",
           "label": "PER",
           "start": 261,
           "end": 266,
@@ -7346,7 +7346,7 @@
           "source": "title"
         },
         {
-          "entity": "Regeneron",
+          "entity": "Regeneron Pharmaceuticals",
           "label": "ORG",
           "start": 53,
           "end": 62,
@@ -7409,7 +7409,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 86,
           "end": 90,
@@ -7458,7 +7458,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Charles",
+          "entity": "Charles Kushhner",
           "label": "PER",
           "start": 9,
           "end": 16,
@@ -7514,14 +7514,14 @@
           "source": "title"
         },
         {
-          "entity": "pro",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 48,
           "end": 51,
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 52,
           "end": 54,
@@ -7570,14 +7570,14 @@
       "translatedDescription": "An election that many viewed as a geopolitical choice between East and West comes months after the cancellation of the previous vote, which plunged Romania into its worst political crisis in decades.",
       "ner": [
         {
-          "entity": "Pro",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 0,
           "end": 3,
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 4,
           "end": 6,
@@ -7591,7 +7591,7 @@
           "source": "title"
         },
         {
-          "entity": "East",
+          "entity": "Middle East",
           "label": "LOC",
           "start": 62,
           "end": 66,
@@ -7661,7 +7661,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 35,
           "end": 39,
@@ -7689,7 +7689,7 @@
       "translatedDescription": "Nathan Tidridge, an author and expert on Canadian democracy, discusses the significance of Harvard University discovering its Magna Carta replica was authentic.",
       "ner": [
         {
-          "entity": "The",
+          "entity": "Attorney General of the Republic",
           "label": "ORG",
           "start": 1,
           "end": 4,
@@ -7773,28 +7773,28 @@
       "translatedDescription": "Pope Leo XIV officially opened his pontificate as history's first American pope on Sunday, presiding over an inaugural mass in St. Peter's Square before tens of thousands of people, presidents, patriarchs and princes in a ceremony that blended ancient ritual, evocative symbols and a nod to modern-day celebrity.",
       "ner": [
         {
-          "entity": "Pope",
+          "entity": "Pope Leo 14",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "title"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 12,
           "source": "title"
         },
         {
-          "entity": "Carney",
+          "entity": "Mark Carney",
           "label": "PER",
           "start": 71,
           "end": 77,
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 66,
           "end": 74,
@@ -7829,14 +7829,14 @@
           "source": "title"
         },
         {
-          "entity": "Brooklyn Bridge",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 60,
           "end": 75,
           "source": "title"
         },
         {
-          "entity": "New York",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 84,
           "end": 92,
@@ -7857,7 +7857,7 @@
       "translatedDescription": "Ukrainian President Volodymyr Zelenskyy asked Prime Minister Mark Carney on Saturday to add Canada’s weight behind global pressure on Russian President Vladimir Putin to sit at the negotiating table and agree to “an unconditional ceasefire.\"",
       "ner": [
         {
-          "entity": "Zelenskyy",
+          "entity": "Volodymyr Zelenskyy",
           "label": "PER",
           "start": 0,
           "end": 9,
@@ -7871,7 +7871,7 @@
           "source": "title"
         },
         {
-          "entity": "Carney",
+          "entity": "Mark Carney",
           "label": "PER",
           "start": 76,
           "end": 82,
@@ -7955,7 +7955,7 @@
           "source": "description"
         },
         {
-          "entity": "Cecco",
+          "entity": "Leyland Cecco",
           "label": "PER",
           "start": 363,
           "end": 368,
@@ -8025,7 +8025,7 @@
           "source": "description"
         },
         {
-          "entity": "Coalition",
+          "entity": "Civic Coalition",
           "label": "ORG",
           "start": 89,
           "end": 98,
@@ -8039,7 +8039,7 @@
           "source": "description"
         },
         {
-          "entity": "Liberal",
+          "entity": "Liberal Party",
           "label": "ORG",
           "start": 141,
           "end": 148,
@@ -8060,7 +8060,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 607,
           "end": 611,
@@ -8123,7 +8123,7 @@
           "source": "description"
         },
         {
-          "entity": "Met",
+          "entity": "Met Department",
           "label": "ORG",
           "start": 59,
           "end": 62,
@@ -8389,14 +8389,14 @@
           "source": "description"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Leo 14",
           "label": "PER",
           "start": 206,
           "end": 210,
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 211,
           "end": 218,
@@ -8438,21 +8438,21 @@
           "source": "description"
         },
         {
-          "entity": "Vance",
+          "entity": "D Vance",
           "label": "PER",
           "start": 426,
           "end": 431,
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 447,
           "end": 455,
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 475,
           "end": 487,
@@ -8515,7 +8515,7 @@
           "source": "description"
         },
         {
-          "entity": "Leo",
+          "entity": "Leo Xiv",
           "label": "PER",
           "start": 932,
           "end": 935,
@@ -8536,7 +8536,7 @@
           "source": "description"
         },
         {
-          "entity": "Francis",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 1273,
           "end": 1280,
@@ -8592,14 +8592,14 @@
           "source": "description"
         },
         {
-          "entity": "Commission",
+          "entity": "National Population Commission",
           "label": "ORG",
           "start": 2156,
           "end": 2166,
           "source": "description"
         },
         {
-          "entity": "Ursula",
+          "entity": "Ursula Von Der Leyen",
           "label": "PER",
           "start": 2177,
           "end": 2183,
@@ -8620,7 +8620,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 2348,
           "end": 2353,
@@ -8641,7 +8641,7 @@
       "translatedDescription": "President signs bill with first lady Melania Trump to criminalize sharing intimate images without consent President Donald Trump on Monday signed into law the Take It Down Act, a measure that imposes penalties for online sexual exploitation that first lady Melania Trump helped usher through Congress, and he had her sign it, too, despite what sounded like a mild objection on her part. “C’mon, sign it anyway,” the president told his wife. “She deserves to sign it.” Continue reading...",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -8669,14 +8669,14 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 116,
           "end": 128,
           "source": "description"
         },
         {
-          "entity": "Congress",
+          "entity": "Trinamool Congress",
           "label": "ORG",
           "start": 292,
           "end": 300,
@@ -8711,7 +8711,7 @@
           "source": "title"
         },
         {
-          "entity": "Columbia",
+          "entity": "Columbia University",
           "label": "ORG",
           "start": 58,
           "end": 66,
@@ -8746,7 +8746,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 471,
           "end": 476,
@@ -8795,7 +8795,7 @@
       "translatedDescription": "The Trump administration will pay Babbitt's family around $5 million. This settles a wrongful death lawsuit. Ashli Babbitt died during the Capitol Hill riots on January 6, 2021. She was shot by a Capitol police officer. Investigations determined the shooting was self-defense. The settlement has faced criticism. Some call it a 'slap in the face'.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 7,
           "end": 12,
@@ -8823,7 +8823,7 @@
           "source": "description"
         },
         {
-          "entity": "Capitol",
+          "entity": "Capitol Hill",
           "label": "LOC",
           "start": 196,
           "end": 203,
@@ -8844,14 +8844,14 @@
       "translatedDescription": "Jason Kao, a former Bloomberg News reporter and Columbia University alumnus, was arrested and charged with criminal trespass during anti-Israel protests at Columbia's Butler Library. The incident, which resulted in 81 arrests, involved property damage and disruptions, leading to interim suspensions for over 65 students. Kao's past social media activity regarding the Israel-Hamas conflict has also surfaced.",
       "ner": [
         {
-          "entity": "Bloomberg",
+          "entity": "Bloomberg News",
           "label": "ORG",
           "start": 0,
           "end": 9,
           "source": "title"
         },
         {
-          "entity": "anti-",
+          "entity": "anti-Semitic",
           "label": "MISC",
           "start": 43,
           "end": 48,
@@ -8886,7 +8886,7 @@
           "source": "description"
         },
         {
-          "entity": "Columbia",
+          "entity": "Columbia University",
           "label": "ORG",
           "start": 156,
           "end": 164,
@@ -8900,7 +8900,7 @@
           "source": "description"
         },
         {
-          "entity": "Kao",
+          "entity": "Jason Kao",
           "label": "PER",
           "start": 322,
           "end": 325,
@@ -8977,7 +8977,7 @@
           "source": "description"
         },
         {
-          "entity": "Newark",
+          "entity": "Newark Liberty International Airport",
           "label": "LOC",
           "start": 160,
           "end": 166,
@@ -9012,7 +9012,7 @@
       "translatedDescription": "Sean 'Diddy' Combs' federal trial revealed shocking images from his hotel room, showing preparations for intimate activities despite an impending arrest. Cassie's testimony detailed coercion and mistreatment, while law enforcement found drugs, lubricants, and mood lighting. Combs maintains innocence, claiming consensual gatherings, but evidence included photos of Cassie's injuries.",
       "ner": [
         {
-          "entity": "Diddy",
+          "entity": "Sean 'Diddy",
           "label": "PER",
           "start": 54,
           "end": 59,
@@ -9026,14 +9026,14 @@
           "source": "description"
         },
         {
-          "entity": "Cassie",
+          "entity": "Cassie Ventura",
           "label": "PER",
           "start": 154,
           "end": 160,
           "source": "description"
         },
         {
-          "entity": "Combs",
+          "entity": "Sean Combs",
           "label": "PER",
           "start": 275,
           "end": 280,
@@ -9075,14 +9075,14 @@
           "source": "description"
         },
         {
-          "entity": "Ortega",
+          "entity": "Daniel Ortega",
           "label": "PER",
           "start": 343,
           "end": 349,
           "source": "description"
         },
         {
-          "entity": "Quinonez",
+          "entity": "Edgar Quinonez",
           "label": "PER",
           "start": 354,
           "end": 362,
@@ -9131,7 +9131,7 @@
           "source": "description"
         },
         {
-          "entity": "Diop",
+          "entity": "Salimata Diop",
           "label": "PER",
           "start": 123,
           "end": 127,
@@ -9159,7 +9159,7 @@
       "translatedDescription": "When armed immigration agents made a surprise visit earlier this month to Pupatella, a trendy pizzeria in the US capital's Dupont neighborhood, they may not have made any arrests, but they delivered a clear message. Neely said employees at Pupatella were startled by the surprise ICE visit, but that the restaurant was taking steps to address the situation.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -9348,14 +9348,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 257,
           "end": 262,
           "source": "description"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 320,
           "end": 325,
@@ -9383,7 +9383,7 @@
           "source": "title"
         },
         {
-          "entity": "Zelenskyy",
+          "entity": "Volodymyr Zelenskyy",
           "label": "PER",
           "start": 45,
           "end": 54,
@@ -9411,7 +9411,7 @@
       "translatedDescription": "Newark Liberty International Airport faced another air traffic control outage due to a brief radio system failure at the Philadelphia center, marking the fourth disruption since late April.",
       "ner": [
         {
-          "entity": "Newark",
+          "entity": "Newark Liberty International Airport",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -9495,7 +9495,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 161,
           "end": 166,
@@ -9544,7 +9544,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 44,
           "end": 49,
@@ -9572,7 +9572,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 28,
           "end": 33,
@@ -9649,7 +9649,7 @@
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 58,
           "end": 63,
@@ -9691,7 +9691,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 41,
           "end": 43,
@@ -9705,7 +9705,7 @@
           "source": "title"
         },
         {
-          "entity": "Zelenskyy",
+          "entity": "Volodymyr Zelenskyy",
           "label": "PER",
           "start": 50,
           "end": 59,
@@ -9726,7 +9726,7 @@
       "translatedDescription": "The US government has agreed to pay nearly $5 million to the family of Ashli Babbitt, who was fatally shot during the Capitol riots on January 6, 2021. This settlement resolves a wrongful death lawsuit alleging negligence by Officer Michael Byrd, despite a prior DOJ ruling of no wrongdoing.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -9747,7 +9747,7 @@
           "source": "description"
         },
         {
-          "entity": "Capitol",
+          "entity": "Capitol Hill",
           "label": "LOC",
           "start": 118,
           "end": 125,
@@ -9789,7 +9789,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 11,
           "end": 13,
@@ -9866,7 +9866,7 @@
           "source": "title"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 71,
           "end": 75,
@@ -9943,7 +9943,7 @@
           "source": "title"
         },
         {
-          "entity": "Zhang",
+          "entity": "Zhang Chengqi",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -10034,7 +10034,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 13,
           "end": 18,
@@ -10055,7 +10055,7 @@
           "source": "description"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 122,
           "end": 126,
@@ -10139,14 +10139,14 @@
       "translatedDescription": "Joe Biden’s cancer diagnosis prompts new questions about his health while in the White House.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 12,
           "end": 17,
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 38,
           "end": 43,
@@ -10503,7 +10503,7 @@
       "translatedDescription": "For days, the president has been raging about Beyoncé, Bruce Springsteen and Taylor Swift endorsing Kamala Harris last year. Has he forgotten that he won?",
       "ner": [
         {
-          "entity": "Donald",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 7,
           "end": 13,
@@ -10587,14 +10587,14 @@
       "translatedDescription": "Warren Stephens put $9m towards Trump’s re-election. And his first public appearance in London on Monday involved Australia.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Starmer",
+          "entity": "Ir Starmer",
           "label": "PER",
           "start": 32,
           "end": 39,
@@ -10657,7 +10657,7 @@
           "source": "title"
         },
         {
-          "entity": "Masra",
+          "entity": "Es Masra",
           "label": "PER",
           "start": 21,
           "end": 26,
@@ -10713,14 +10713,14 @@
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 9,
           "end": 14,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 27,
           "end": 32,
@@ -10755,7 +10755,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 65,
           "end": 77,
@@ -10797,28 +10797,28 @@
           "source": "title"
         },
         {
-          "entity": "Vance",
+          "entity": "D Vance",
           "label": "PER",
           "start": 27,
           "end": 32,
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Leo 14",
           "label": "PER",
           "start": 41,
           "end": 45,
           "source": "title"
         },
         {
-          "entity": "Leo",
+          "entity": "Leo Xiv",
           "label": "PER",
           "start": 46,
           "end": 49,
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 54,
           "end": 62,
@@ -10839,7 +10839,7 @@
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 66,
           "end": 73,
@@ -10888,7 +10888,7 @@
           "source": "title"
         },
         {
-          "entity": "Americans",
+          "entity": "Indigenous Americans",
           "label": "MISC",
           "start": 37,
           "end": 46,
@@ -10944,7 +10944,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 164,
           "end": 176,
@@ -10986,7 +10986,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 25,
           "end": 27,
@@ -11014,7 +11014,7 @@
           "source": "description"
         },
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 132,
           "end": 139,
@@ -11049,7 +11049,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 35,
           "end": 39,
@@ -11084,7 +11084,7 @@
           "source": "title"
         },
         {
-          "entity": "Joe",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 10,
           "end": 13,
@@ -11098,21 +11098,21 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 36,
           "end": 41,
           "source": "title"
         },
         {
-          "entity": "Harris",
+          "entity": "Kamala Harris",
           "label": "PER",
           "start": 43,
           "end": 49,
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 65,
           "end": 70,
@@ -11161,7 +11161,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 23,
           "end": 27,
@@ -11203,14 +11203,14 @@
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Leo 14",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 12,
@@ -11273,7 +11273,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 57,
           "end": 61,
@@ -11315,7 +11315,7 @@
           "source": "title"
         },
         {
-          "entity": "Brooklyn Bridge",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 46,
           "end": 61,
@@ -11357,7 +11357,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 34,
           "end": 38,
@@ -11399,14 +11399,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 36,
           "end": 41,
           "source": "title"
         },
         {
-          "entity": "Gulf",
+          "entity": "Gulf of Suez",
           "label": "LOC",
           "start": 60,
           "end": 64,
@@ -11427,7 +11427,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 60,
           "end": 72,
@@ -11490,7 +11490,7 @@
           "source": "description"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 49,
           "end": 51,
@@ -11525,7 +11525,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 9,
           "end": 13,
@@ -11686,7 +11686,7 @@
           "source": "title"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 54,
           "end": 56,
@@ -11700,7 +11700,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 75,
           "end": 79,
@@ -11742,14 +11742,14 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 19,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 54,
           "end": 56,
@@ -11812,14 +11812,14 @@
           "source": "title"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 55,
           "end": 67,
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 4,
           "end": 12,
@@ -11868,7 +11868,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 31,
           "end": 39,
@@ -11924,7 +11924,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 159,
           "end": 167,
@@ -11945,7 +11945,7 @@
       "translatedDescription": "The US President spoke to the Kreml ruler for two hours. Conversation and atmosphere were \"very good\", says Donald Trump. Wladimir Putin should be even more satisfied with the course.",
       "ner": [
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 0,
           "end": 12,
@@ -12001,7 +12001,7 @@
       "translatedDescription": "The results of the call of US President Trump with Kreml ruler Putin. The new sanction package of Europeans against Russia. And: a sabotage process in Munich. That is the situation on Tuesday morning.",
       "ner": [
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 6,
           "end": 18,
@@ -12015,7 +12015,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 48,
           "end": 50,
@@ -12043,7 +12043,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 40,
           "end": 45,
@@ -12057,7 +12057,7 @@
           "source": "description"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 63,
           "end": 68,
@@ -12092,7 +12092,7 @@
           "source": "title"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 10,
           "end": 22,
@@ -12113,14 +12113,14 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 141,
           "end": 146,
           "source": "description"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 148,
           "end": 153,
@@ -12148,7 +12148,7 @@
       "translatedDescription": "It is about 350,000 Venezuelans in the United States: According to the Supreme Court, immigrants can generally be deported. President Trump wants to correct the policy of his predecessor Biden.",
       "ner": [
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 0,
           "end": 12,
@@ -12176,14 +12176,14 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 134,
           "end": 139,
           "source": "description"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 187,
           "end": 192,
@@ -12260,7 +12260,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 122,
           "end": 126,
@@ -12281,7 +12281,7 @@
       "translatedDescription": "The figures at the spouse's reunification fall to the Federal Republic. A sticking point is the language test, here more visa attendants failed here. A left -wing politician speaks of harassment.",
       "ner": [
         {
-          "entity": "German",
+          "entity": "Austro-German",
           "label": "MISC",
           "start": 50,
           "end": 56,
@@ -12365,7 +12365,7 @@
       "translatedDescription": "Under the interference of President Lula, the CNB (building a new Brazil) sacrament on Monday (19) support for the candidacy of former mayor Edinho Silva to the command of the party, ending a dispute in the greatest petista force. Read more (05/19/2025 - 23h03)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Iz Inácio Lula Da Silva Do Brasil",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -12547,7 +12547,7 @@
           "source": "title"
         },
         {
-          "entity": "Moraes",
+          "entity": "Alexandre De Moraes",
           "label": "PER",
           "start": 104,
           "end": 110,
@@ -12645,7 +12645,7 @@
           "source": "title"
         },
         {
-          "entity": "SP",
+          "entity": "SP Metro",
           "label": "ORG",
           "start": 67,
           "end": 69,
@@ -12806,7 +12806,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 167,
           "end": 179,
@@ -12827,7 +12827,7 @@
       "translatedDescription": "The Tarcísio de Freitas (Republican) government will launch on Tuesday (20) a social inclusion program that involves nine secretariats from the state of São Paulo and aims to break the poverty cycle of 35,000 families in two years from personalized plans for each of them. Read more (05/19/2025 - 23h00)",
       "ner": [
         {
-          "entity": "SP",
+          "entity": "SP Metro",
           "label": "ORG",
           "start": 0,
           "end": 2,
@@ -12848,7 +12848,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "Greater São Paulo",
           "label": "LOC",
           "start": 153,
           "end": 162,
@@ -12889,7 +12889,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 58,
           "end": 60,
@@ -12938,7 +12938,7 @@
           "source": "description"
         },
         {
-          "entity": "Marina",
+          "entity": "Marina Ruy Barbosa",
           "label": "PER",
           "start": 121,
           "end": 127,
@@ -12966,14 +12966,14 @@
       "translatedDescription": "United States President Donald Trump said on Monday that he was surprised that the country was not warned for a long time about the prostate cancer diagnosis of former President Joe Biden-insinuating that the Democrat knew of the disease and hid his existence. Read more (05/19/2025 - 22h10)",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 19,
           "end": 24,
@@ -12987,7 +12987,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 24,
           "end": 36,
@@ -13022,7 +13022,7 @@
       "translatedDescription": "A group of drug users was expelled on the night of Monday (19) by metropolitan coal guards of the sidewalk of General General Júlio Marcondes Street, in the region of Campos Elíseos, in downtown São Paulo. Read more (05/19/2025 - 22h04)",
       "ner": [
         {
-          "entity": "SP",
+          "entity": "SP Metro",
           "label": "ORG",
           "start": 55,
           "end": 57,
@@ -13050,7 +13050,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "Greater São Paulo",
           "label": "LOC",
           "start": 195,
           "end": 204,
@@ -13330,7 +13330,7 @@
           "source": "title"
         },
         {
-          "entity": "Lula",
+          "entity": "Iz Inácio Lula Da Silva Do Brasil",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -13344,7 +13344,7 @@
           "source": "description"
         },
         {
-          "entity": "Commission",
+          "entity": "National Population Commission",
           "label": "ORG",
           "start": 110,
           "end": 120,
@@ -13435,7 +13435,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 100,
           "end": 112,
@@ -13512,21 +13512,21 @@
           "source": "description"
         },
         {
-          "entity": "Do",
+          "entity": "Iz Inácio Lula Da Silva Do Brasil",
           "label": "PER",
           "start": 76,
           "end": 78,
           "source": "description"
         },
         {
-          "entity": "Central Bank",
+          "entity": "European Central Bank",
           "label": "ORG",
           "start": 166,
           "end": 178,
           "source": "description"
         },
         {
-          "entity": "Lu",
+          "entity": "Lu Grimaldi",
           "label": "PER",
           "start": 180,
           "end": 182,
@@ -13757,14 +13757,14 @@
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Leo 14",
           "label": "PER",
           "start": 64,
           "end": 68,
           "source": "description"
         },
         {
-          "entity": "Francis",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 69,
           "end": 76,
@@ -13903,7 +13903,7 @@
           "source": "title"
         },
         {
-          "entity": "São Paulo",
+          "entity": "Greater São Paulo",
           "label": "LOC",
           "start": 0,
           "end": 9,
@@ -14105,7 +14105,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 174,
           "end": 182,
@@ -14182,7 +14182,7 @@
       "translatedDescription": "The PSOL Directory in São Paulo filed an ADI (Direct Unconstitutionality Action) at the Court of Justice on Monday (19) against Caraguatatuba City Hall, which sanctioned a law allowing companies to stamp logos in the uniforms and school supplies of students from the municipal network. Read more (05/19/2025 - 19h30)",
       "ner": [
         {
-          "entity": "PSOL",
+          "entity": "PSOL Directory",
           "label": "ORG",
           "start": 0,
           "end": 4,
@@ -14196,7 +14196,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "Greater São Paulo",
           "label": "LOC",
           "start": 22,
           "end": 31,
@@ -14210,7 +14210,7 @@
           "source": "description"
         },
         {
-          "entity": "Court of Justice",
+          "entity": "Minas Gerais Court of Justice",
           "label": "ORG",
           "start": 88,
           "end": 104,
@@ -14238,14 +14238,14 @@
       "translatedDescription": "Never before in history is one of Lula's dear slogans. Read more (05/19/2025 - 19h30)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Iz Inácio Lula Da Silva Do Brasil",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "title"
         },
         {
-          "entity": "Bolsonaro",
+          "entity": "R Bolsonaro",
           "label": "PER",
           "start": 51,
           "end": 60,
@@ -14266,7 +14266,7 @@
       "translatedDescription": "The first session of hearings with witnesses of the 2022 coup plot in the Supreme Court (STF) on Monday (19) had a clash of Minister Alexandre de Moraes with the lawyer of former Justice Minister Anderson Torres Eumar Novacki. Read More (05/19/2025 - 19h25)",
       "ner": [
         {
-          "entity": "Moraes",
+          "entity": "Alexandre De Moraes",
           "label": "PER",
           "start": 0,
           "end": 6,
@@ -14294,7 +14294,7 @@
           "source": "description"
         },
         {
-          "entity": "Justice",
+          "entity": "Ministry of Justice",
           "label": "ORG",
           "start": 179,
           "end": 186,
@@ -14391,7 +14391,7 @@
           "source": "title"
         },
         {
-          "entity": "Foz do Amazonas",
+          "entity": "Foz do Amazonas Basin",
           "label": "LOC",
           "start": 62,
           "end": 77,
@@ -14454,7 +14454,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "Greater São Paulo",
           "label": "LOC",
           "start": 66,
           "end": 75,
@@ -14475,7 +14475,7 @@
       "translatedDescription": "The court of the Federal District gave 20 days for the government of Luiz Inacio Lula da Silva (PT) to comment on an action that asks for explanations of the spending of the first lady Rosângela Lula da Silva, Janja, on international trips. Read more (05/19/2025 - 18h54)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Iz Inácio Lula Da Silva Do Brasil",
           "label": "PER",
           "start": 25,
           "end": 29,
@@ -14580,7 +14580,7 @@
       "translatedDescription": "The INSS (National Institute of Social Security) reached 1.6 million requests for reimbursements for undue discounts on benefits until 5 pm on Monday (19). Read more (05/19/2025 - 18h49)",
       "ner": [
         {
-          "entity": "INSS",
+          "entity": "INSS CPMI",
           "label": "ORG",
           "start": 30,
           "end": 34,
@@ -14720,28 +14720,28 @@
       "translatedDescription": "São Paulo councilwoman Luana Alves (PSOL) says that the management Ricardo Nunes (MDB) did not go to a approved amendment to rent four buses, which would carry users of CAPS (Psychosocial Care Center) to the São Paulo Assembly for an act of antimanicomial struggle on Friday (16). Read more (05/19/2025 - 18h30)",
       "ner": [
         {
-          "entity": "PSOL",
+          "entity": "PSOL Directory",
           "label": "ORG",
           "start": 0,
           "end": 4,
           "source": "title"
         },
         {
-          "entity": "Nunes",
+          "entity": "Ricardo Nunes",
           "label": "PER",
           "start": 23,
           "end": 28,
           "source": "title"
         },
         {
-          "entity": "Assembly",
+          "entity": "State Assembly",
           "label": "ORG",
           "start": 62,
           "end": 70,
           "source": "title"
         },
         {
-          "entity": "São Paulo",
+          "entity": "Greater São Paulo",
           "label": "LOC",
           "start": 0,
           "end": 9,
@@ -14811,7 +14811,7 @@
           "source": "title"
         },
         {
-          "entity": "Lula",
+          "entity": "Iz Inácio Lula Da Silva Do Brasil",
           "label": "PER",
           "start": 51,
           "end": 55,
@@ -14839,7 +14839,7 @@
       "translatedDescription": "President Lula (PT) signed on Monday (19) a decree with new rules for distance learning (EAD) in higher education. Changes limit the offer of online education in health and undergraduate degrees, which have had the largest enrollment in recent years. Read more (05/19/2025 - 18h28)",
       "ner": [
         {
-          "entity": "Lula",
+          "entity": "Iz Inácio Lula Da Silva Do Brasil",
           "label": "PER",
           "start": 18,
           "end": 22,
@@ -14867,14 +14867,14 @@
       "translatedDescription": "Under the guidance of President Hugo Motta (Republicans -PB), the House of Representatives filed an appeal on Monday to try to reverse the Supreme Court's decision to apply, to the current legislature, the change in so -called electoral leftovers, which will lead to the exchange of seven elected deputies. Read more (05/19/2025 - 18h27)",
       "ner": [
         {
-          "entity": "Motta",
+          "entity": "Hugo Motta",
           "label": "PER",
           "start": 29,
           "end": 34,
           "source": "title"
         },
         {
-          "entity": "House",
+          "entity": "House of Representatives",
           "label": "ORG",
           "start": 54,
           "end": 59,
@@ -14958,7 +14958,7 @@
           "source": "description"
         },
         {
-          "entity": "El",
+          "entity": "El Bas",
           "label": "PER",
           "start": 94,
           "end": 96,
@@ -15196,7 +15196,7 @@
       "translatedDescription": "The INSS (National Institute of Social Security) and the Ministry of Social Security will pay up to R $ 17.1 thousand for the agency's servers to unlock the retirement, pension and other benefits, and revise the BCP (continuing benefit). Read more (05/19/2025 - 18h00)",
       "ner": [
         {
-          "entity": "INSS",
+          "entity": "INSS CPMI",
           "label": "ORG",
           "start": 0,
           "end": 4,
@@ -15273,7 +15273,7 @@
       "translatedDescription": "After comings and goings on the PT's internal elections, the mayor of Maricá (RJ) and national vice president of the acronym, Washington Quaquá, announced again on Monday (19), his withdrawal from running for the party's presidency. Read more (05/19/2025 - 17h54)",
       "ner": [
         {
-          "entity": "Quaquá",
+          "entity": "Washington Quaquá",
           "label": "PER",
           "start": 0,
           "end": 6,
@@ -15287,7 +15287,7 @@
           "source": "title"
         },
         {
-          "entity": "Lula",
+          "entity": "Iz Inácio Lula Da Silva Do Brasil",
           "label": "PER",
           "start": 55,
           "end": 59,
@@ -15420,7 +15420,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "Greater São Paulo",
           "label": "LOC",
           "start": 106,
           "end": 115,
@@ -15455,7 +15455,7 @@
       "translatedDescription": "The deprived president of the CBF (Brazilian Football Confederation), Ednaldo Rodrigues, presented a petition to the Supreme Court (STF) on Monday (19) in which he gives up trying to resume the command of the entity. Ednaldo was removed from office on Thursday (15). Read more (05/19/2025 - 17h47)",
       "ner": [
         {
-          "entity": "Ednaldo",
+          "entity": "Ednaldo Rod",
           "label": "PER",
           "start": 0,
           "end": 7,
@@ -15511,14 +15511,14 @@
       "translatedDescription": "Former army commander, General Marco Antonio Freire Gomes publicly gave publicly his version of the coup plot that unfolded in the government of Jair Bolsonaro (PL). Read more (05/19/2025 - 17h46)",
       "ner": [
         {
-          "entity": "Bolsonaro",
+          "entity": "R Bolsonaro",
           "label": "PER",
           "start": 28,
           "end": 37,
           "source": "title"
         },
         {
-          "entity": "Moraes",
+          "entity": "Alexandre De Moraes",
           "label": "PER",
           "start": 84,
           "end": 90,
@@ -15693,7 +15693,7 @@
       "translatedDescription": "A debate about the new Civil Code, which would take place at Rio de Janeiro's OAB headquarters next Wednesday (21), was rescheduled for the PUC campus in the city, on the same date. Read more (05/19/2025 - 17h16)",
       "ner": [
         {
-          "entity": "OAB",
+          "entity": "OAB -SP",
           "label": "ORG",
           "start": 0,
           "end": 3,
@@ -15707,7 +15707,7 @@
           "source": "title"
         },
         {
-          "entity": "Rio de Janeiro",
+          "entity": "Rio de Janeiro Municipal Theater",
           "label": "LOC",
           "start": 61,
           "end": 75,
@@ -15763,7 +15763,7 @@
           "source": "description"
         },
         {
-          "entity": "Rio de Janeiro",
+          "entity": "Rio de Janeiro Municipal Theater",
           "label": "LOC",
           "start": 74,
           "end": 88,
@@ -15777,7 +15777,7 @@
           "source": "description"
         },
         {
-          "entity": "Rio",
+          "entity": "Rio de Janeiro Municipal Theater",
           "label": "LOC",
           "start": 269,
           "end": 272,
@@ -15847,7 +15847,7 @@
       "translatedDescription": "Pastor Silas Malafaia, a faithful ally of former President Jair Bolsonaro (PL), says he does not intend to dispute any political office in 2026, especially the presidency of the Republic. \"I am not a candidate or a third condominium stamp.\" Read more (05/19/2025 - 17h10)",
       "ner": [
         {
-          "entity": "Malafaia",
+          "entity": "Silas Malafaia",
           "label": "PER",
           "start": 58,
           "end": 66,
@@ -15882,7 +15882,7 @@
           "source": "description"
         },
         {
-          "entity": "Republic",
+          "entity": "Czech Republic",
           "label": "LOC",
           "start": 178,
           "end": 186,
@@ -15972,7 +15972,7 @@
           "source": "description"
         },
         {
-          "entity": "Mato Grosso",
+          "entity": "Mato Grosso do Sul",
           "label": "LOC",
           "start": 137,
           "end": 148,
@@ -16007,7 +16007,7 @@
       "translatedDescription": "The singers Lenine and Lauana Prado F Arão a presentation at the delivery ceremony of the BTG Pactual Award for Brazilian Music, which will be held on June 4 at the Rio de Janeiro Municipal Theater. Read more (05/19/2025 - 16h57)",
       "ner": [
         {
-          "entity": "Lauana Prado",
+          "entity": "Lauana Prado F Arão",
           "label": "PER",
           "start": 0,
           "end": 12,
@@ -16070,7 +16070,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 28,
           "end": 33,
@@ -16084,7 +16084,7 @@
           "source": "title"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 72,
           "end": 84,
@@ -16154,7 +16154,7 @@
           "source": "title"
         },
         {
-          "entity": "Public Defender's Office",
+          "entity": "Public Defender's Office of",
           "label": "ORG",
           "start": 52,
           "end": 76,
@@ -16175,7 +16175,7 @@
           "source": "description"
         },
         {
-          "entity": "Rio de Janeiro",
+          "entity": "Rio de Janeiro Municipal Theater",
           "label": "LOC",
           "start": 130,
           "end": 144,
@@ -16252,7 +16252,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "Greater São Paulo",
           "label": "LOC",
           "start": 74,
           "end": 83,
@@ -16287,7 +16287,7 @@
       "translatedDescription": "Influencer Vitor Vieira Belarmino surrendered to the police on Monday (19), ten months after running over and killing physiotherapist Fabio Toshiro Kikuta, 42, on the edge of Recreio dos Bandeirantes, West Zone of Rio de Janeiro. He performed at the 42nd DP, responsible for investigating the case. Read more (05/19/2025 - 16h38)",
       "ner": [
         {
-          "entity": "Rio",
+          "entity": "Rio de Janeiro Municipal Theater",
           "label": "LOC",
           "start": 48,
           "end": 51,
@@ -16322,7 +16322,7 @@
           "source": "description"
         },
         {
-          "entity": "Rio de Janeiro",
+          "entity": "Rio de Janeiro Municipal Theater",
           "label": "LOC",
           "start": 214,
           "end": 228,
@@ -16350,14 +16350,14 @@
           "source": "title"
         },
         {
-          "entity": "Lula",
+          "entity": "Iz Inácio Lula Da Silva Do Brasil",
           "label": "PER",
           "start": 46,
           "end": 50,
           "source": "title"
         },
         {
-          "entity": "Bolsonaro",
+          "entity": "R Bolsonaro",
           "label": "PER",
           "start": 55,
           "end": 64,
@@ -16448,7 +16448,7 @@
           "source": "title"
         },
         {
-          "entity": "Regeneron",
+          "entity": "Regeneron Pharmaceuticals",
           "label": "ORG",
           "start": 46,
           "end": 55,
@@ -16483,7 +16483,7 @@
       "translatedDescription": "With 182 restaurants in Brazil, the Outback Steakhouse chain opens next Monday (26), at Shopping Metro Tatuapé, a unit with new design concept in São Paulo. Read more (05/19/2025 - 16h28)",
       "ner": [
         {
-          "entity": "Outback",
+          "entity": "Outback Steakhouse",
           "label": "ORG",
           "start": 0,
           "end": 7,
@@ -16518,7 +16518,7 @@
           "source": "description"
         },
         {
-          "entity": "São Paulo",
+          "entity": "Greater São Paulo",
           "label": "LOC",
           "start": 146,
           "end": 155,
@@ -16539,7 +16539,7 @@
       "translatedDescription": "Former intelligence analist at the Ministry of Justice, Clebson Ferreira de Paula Vieira told the STF (Supreme Court) that suspected the high-level orders of former Minister Anderson Torres to map the municipalities where Lula and Jair Bolsonaro had received more than 70% of the votes in the first round of the 2022.",
       "ner": [
         {
-          "entity": "Bolsonaro",
+          "entity": "R Bolsonaro",
           "label": "PER",
           "start": 22,
           "end": 31,
@@ -16581,14 +16581,14 @@
           "source": "description"
         },
         {
-          "entity": "Anderson Torres",
+          "entity": "Anderson Torres Eumar Novacki",
           "label": "PER",
           "start": 174,
           "end": 189,
           "source": "description"
         },
         {
-          "entity": "Lula",
+          "entity": "Iz Inácio Lula Da Silva Do Brasil",
           "label": "PER",
           "start": 222,
           "end": 226,
@@ -16630,7 +16630,7 @@
           "source": "title"
         },
         {
-          "entity": "Maria Zilda",
+          "entity": "Maria Zilda Bethlem",
           "label": "PER",
           "start": 14,
           "end": 25,
@@ -16756,7 +16756,7 @@
           "source": "description"
         },
         {
-          "entity": "Lu",
+          "entity": "Lu Grimaldi",
           "label": "PER",
           "start": 360,
           "end": 362,
@@ -16896,7 +16896,7 @@
           "source": "title"
         },
         {
-          "entity": "Diddy",
+          "entity": "Sean 'Diddy",
           "label": "PER",
           "start": 18,
           "end": 23,
@@ -16917,7 +16917,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 87,
           "end": 95,
@@ -16931,14 +16931,14 @@
           "source": "description"
         },
         {
-          "entity": "Richard",
+          "entity": "Dawn Richard",
           "label": "PER",
           "start": 178,
           "end": 185,
           "source": "description"
         },
         {
-          "entity": "Combs",
+          "entity": "Sean Combs",
           "label": "PER",
           "start": 191,
           "end": 196,
@@ -16959,7 +16959,7 @@
       "translatedDescription": "A 53 -year -old driver was arrested in the act after losing control of the steering, invading the wrong way and running over three cyclists on the Cajamar Highway, Greater São Paulo. Read more (05/19/2025 - 16h02)",
       "ner": [
         {
-          "entity": "Cajamar",
+          "entity": "Cajamar Highway",
           "label": "LOC",
           "start": 53,
           "end": 60,
@@ -17140,7 +17140,7 @@
       "translatedDescription": "A civil police officer from Core (Special Resources Coordination), the institution's elite troop, was killed on the morning of Monday (19) during an operation in the City of God, in the West Zone of Rio. Read More (05/19/2025 - 15h44)",
       "ner": [
         {
-          "entity": "Rio",
+          "entity": "Rio de Janeiro Municipal Theater",
           "label": "LOC",
           "start": 0,
           "end": 3,
@@ -17273,7 +17273,7 @@
           "source": "description"
         },
         {
-          "entity": "Agency",
+          "entity": "National Cinema Agency",
           "label": "ORG",
           "start": 246,
           "end": 252,
@@ -17294,7 +17294,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -17322,7 +17322,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 53,
           "end": 57,
@@ -17343,7 +17343,7 @@
       "translatedDescription": "Many states have already banned the dissemination of sexually explicit deepfakes or revenge porn, but the ‘Take It Down Act’ is a rare example of federal regulators imposing on internet companies.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -17385,7 +17385,7 @@
           "source": "title"
         },
         {
-          "entity": "Shehbaz",
+          "entity": "Shehbaz Sharif",
           "label": "PER",
           "start": 51,
           "end": 58,
@@ -17399,14 +17399,14 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 134,
           "end": 139,
           "source": "description"
         },
         {
-          "entity": "Kashmir",
+          "entity": "Azad Kashmir",
           "label": "LOC",
           "start": 154,
           "end": 161,
@@ -17448,7 +17448,7 @@
           "source": "description"
         },
         {
-          "entity": "Operation",
+          "entity": "Operation Whirl Stroke",
           "label": "MISC",
           "start": 1390,
           "end": 1399,
@@ -17483,7 +17483,7 @@
           "source": "description"
         },
         {
-          "entity": "Man",
+          "entity": "Man City",
           "label": "ORG",
           "start": 2456,
           "end": 2459,
@@ -17497,7 +17497,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald",
+          "entity": "Donald Trump",
           "label": "PER",
           "start": 2498,
           "end": 2504,
@@ -17602,7 +17602,7 @@
           "source": "title"
         },
         {
-          "entity": "Aminuddin",
+          "entity": "Aminuddin Khan",
           "label": "PER",
           "start": 66,
           "end": 75,
@@ -17742,7 +17742,7 @@
           "source": "title"
         },
         {
-          "entity": "Mir Ali",
+          "entity": "Mir Ali Chowk",
           "label": "LOC",
           "start": 134,
           "end": 141,
@@ -17784,7 +17784,7 @@
           "source": "description"
         },
         {
-          "entity": "Na",
+          "entity": "Vinay Na",
           "label": "PER",
           "start": 945,
           "end": 947,
@@ -17833,7 +17833,7 @@
           "source": "description"
         },
         {
-          "entity": "DELHI",
+          "entity": "New Delhi",
           "label": "LOC",
           "start": 24,
           "end": 29,
@@ -17917,7 +17917,7 @@
           "source": "description"
         },
         {
-          "entity": "Na",
+          "entity": "Vinay Na",
           "label": "PER",
           "start": 986,
           "end": 988,
@@ -17945,7 +17945,7 @@
           "source": "description"
         },
         {
-          "entity": "Congress",
+          "entity": "Trinamool Congress",
           "label": "ORG",
           "start": 1256,
           "end": 1264,
@@ -17959,7 +17959,7 @@
           "source": "description"
         },
         {
-          "entity": "Kharge",
+          "entity": "Malliakrjun Kharge",
           "label": "PER",
           "start": 1323,
           "end": 1329,
@@ -18050,7 +18050,7 @@
           "source": "description"
         },
         {
-          "entity": "Pradesh",
+          "entity": "Madhya Pradesh",
           "label": "LOC",
           "start": 1827,
           "end": 1834,
@@ -18162,7 +18162,7 @@
           "source": "description"
         },
         {
-          "entity": "Delhi",
+          "entity": "New Delhi",
           "label": "LOC",
           "start": 1301,
           "end": 1306,
@@ -18190,7 +18190,7 @@
           "source": "description"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 1765,
           "end": 1772,
@@ -18218,7 +18218,7 @@
           "source": "description"
         },
         {
-          "entity": "Air",
+          "entity": "Air Force One",
           "label": "MISC",
           "start": 2544,
           "end": 2547,
@@ -18337,7 +18337,7 @@
           "source": "description"
         },
         {
-          "entity": "Po",
+          "entity": "Ponta Po",
           "label": "LOC",
           "start": 1771,
           "end": 1773,
@@ -18421,14 +18421,14 @@
           "source": "description"
         },
         {
-          "entity": "World",
+          "entity": "World Family Doctor Day",
           "label": "MISC",
           "start": 322,
           "end": 327,
           "source": "description"
         },
         {
-          "entity": "Geneva",
+          "entity": "Lake Geneva",
           "label": "LOC",
           "start": 347,
           "end": 353,
@@ -18449,7 +18449,7 @@
           "source": "description"
         },
         {
-          "entity": "Kamal",
+          "entity": "Syed Mustafa Kamal",
           "label": "PER",
           "start": 1055,
           "end": 1060,
@@ -18484,14 +18484,14 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 37,
           "end": 41,
           "source": "title"
         },
         {
-          "entity": "Netanyahu",
+          "entity": "Benjamin Netanyahu",
           "label": "PER",
           "start": 43,
           "end": 52,
@@ -18512,7 +18512,7 @@
           "source": "description"
         },
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 115,
           "end": 122,
@@ -18603,7 +18603,7 @@
           "source": "description"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 1193,
           "end": 1195,
@@ -18631,7 +18631,7 @@
           "source": "description"
         },
         {
-          "entity": "Khan",
+          "entity": "Shah Rukh Khan",
           "label": "PER",
           "start": 1892,
           "end": 1896,
@@ -18743,7 +18743,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 249,
           "end": 254,
@@ -18806,14 +18806,14 @@
           "source": "description"
         },
         {
-          "entity": "New",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 2148,
           "end": 2151,
           "source": "description"
         },
         {
-          "entity": "Delhi",
+          "entity": "New Delhi",
           "label": "LOC",
           "start": 2152,
           "end": 2157,
@@ -19000,7 +19000,7 @@
           "source": "title"
         },
         {
-          "entity": "Mihic",
+          "entity": "Sinisa Mihic",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -19098,7 +19098,7 @@
       "translatedDescription": "By Kingsley Omonobi Troops of the Joint Task Force, JTF, Operation Whirl Stroke, OPWS, in synergy with other security agencies have stormed and destroyed identified bandits’ camps linked to a bandit leader in Konyo Gbise around Akwaza in Katsina-Ala Local Government Area of Benue State. A statement by the Army said the operation was in […] The post Army storms bandits’ camps in Benue, destroys kingpin’s hideout appeared first on Vanguard News .",
       "ner": [
         {
-          "entity": "Benue",
+          "entity": "Benue State",
           "label": "LOC",
           "start": 30,
           "end": 35,
@@ -19161,7 +19161,7 @@
           "source": "description"
         },
         {
-          "entity": "Army",
+          "entity": "Baloch Liberation Army",
           "label": "ORG",
           "start": 307,
           "end": 311,
@@ -19189,7 +19189,7 @@
       "translatedDescription": "The Obidient Movement says Mr Peter Obi, the Labour  Party (LP) standard bearer of the 2023 general election is still with the party and has not joined any coalition. The Director, Strategic Communication and Media, Obidient Movement, Nana Kazaure, made this known in a statement signed on Monday in Abuja while reacting to speculations by […] The post Coalition: Obi remains with Labour Party – Obedient Movement appeared first on Vanguard News .",
       "ner": [
         {
-          "entity": "Obi",
+          "entity": "Peter Obi",
           "label": "PER",
           "start": 11,
           "end": 14,
@@ -19294,7 +19294,7 @@
           "source": "title"
         },
         {
-          "entity": "Africa",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -19525,7 +19525,7 @@
           "source": "description"
         },
         {
-          "entity": "Ajah",
+          "entity": "Patrick Ajah",
           "label": "PER",
           "start": 304,
           "end": 308,
@@ -19700,14 +19700,14 @@
           "source": "title"
         },
         {
-          "entity": "Abia",
+          "entity": "Abia State",
           "label": "LOC",
           "start": 54,
           "end": 58,
           "source": "title"
         },
         {
-          "entity": "Ikpeazu",
+          "entity": "Okezie Ikpeazu",
           "label": "PER",
           "start": 69,
           "end": 76,
@@ -19756,7 +19756,7 @@
           "source": "description"
         },
         {
-          "entity": "South",
+          "entity": "South Asian",
           "label": "MISC",
           "start": 329,
           "end": 334,
@@ -19868,7 +19868,7 @@
           "source": "title"
         },
         {
-          "entity": "Hausa",
+          "entity": "Hausa Film Series",
           "label": "MISC",
           "start": 55,
           "end": 60,
@@ -19903,7 +19903,7 @@
           "source": "description"
         },
         {
-          "entity": "Board",
+          "entity": "Kano State Censorship Board",
           "label": "ORG",
           "start": 135,
           "end": 140,
@@ -20085,7 +20085,7 @@
           "source": "description"
         },
         {
-          "entity": "Fund",
+          "entity": "International Monetary Fund",
           "label": "ORG",
           "start": 344,
           "end": 348,
@@ -20120,7 +20120,7 @@
           "source": "title"
         },
         {
-          "entity": "Zinox",
+          "entity": "Zinox Technologies",
           "label": "ORG",
           "start": 35,
           "end": 40,
@@ -20134,7 +20134,7 @@
           "source": "description"
         },
         {
-          "entity": "Justice",
+          "entity": "Ministry of Justice",
           "label": "ORG",
           "start": 61,
           "end": 68,
@@ -20365,7 +20365,7 @@
           "source": "title"
         },
         {
-          "entity": "Benue",
+          "entity": "Benue State",
           "label": "LOC",
           "start": 53,
           "end": 58,
@@ -20428,7 +20428,7 @@
           "source": "title"
         },
         {
-          "entity": "THE",
+          "entity": "Attorney General of the Republic",
           "label": "ORG",
           "start": 0,
           "end": 3,
@@ -20463,7 +20463,7 @@
       "translatedDescription": "The stop order for the offshore wind project Empire Wind has been abolished. The Equinor boss thanks both Trump and the government here at home.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 4,
           "end": 9,
@@ -20477,7 +20477,7 @@
           "source": "title"
         },
         {
-          "entity": "New York",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 93,
           "end": 101,
@@ -20589,7 +20589,7 @@
       "translatedDescription": "Amalie Iuel (31) does not know how long she has left of her career, but sees a new pers first.",
       "ner": [
         {
-          "entity": "Iuel",
+          "entity": "Amalie Iuel",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -20685,7 +20685,7 @@
       "translatedDescription": "On Tuesday, the Foreign Ministers of EU countries will discuss whether they can launch an assessment of Israel's human rights situation.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 0,
           "end": 4,
@@ -20699,7 +20699,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 45,
           "end": 47,
@@ -20727,7 +20727,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 8,
           "end": 13,
@@ -20782,14 +20782,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 15,
           "end": 20,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 25,
           "end": 30,
@@ -20852,14 +20852,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 15,
           "end": 20,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 25,
           "end": 30,
@@ -20880,7 +20880,7 @@
       "translatedDescription": "Israeli Prime Minister Benjamin Netanjahu criticized the announcement of Britain, Canada and France for possible sanctions as a \"reward\" for its enemies.",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 0,
           "end": 4,
@@ -20908,7 +20908,7 @@
           "source": "description"
         },
         {
-          "entity": "Britain",
+          "entity": "Great Britain",
           "label": "LOC",
           "start": 73,
           "end": 80,
@@ -20943,7 +20943,7 @@
       "translatedDescription": "The President of the United States has fired without warning the respected librarian for the world's largest library and given the job to the man who defended Trump in the case of illegal payments to a porn star.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -21062,21 +21062,21 @@
       "translatedDescription": "Donald Trump thinks it takes 'long' to reach the stage on which Joe's bite's prostate cancer is on.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 0,
           "end": 12,
           "source": "description"
         },
         {
-          "entity": "Joe",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 64,
           "end": 67,
@@ -21285,14 +21285,14 @@
       "translatedDescription": "Daily updated survey values ​​show how the Americans are currently on the office of their president.",
       "ner": [
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 31,
           "end": 43,
           "source": "title"
         },
         {
-          "entity": "Americans",
+          "entity": "Indigenous Americans",
           "label": "MISC",
           "start": 43,
           "end": 52,
@@ -21327,14 +21327,14 @@
           "source": "title"
         },
         {
-          "entity": "Africa",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 122,
           "end": 128,
           "source": "title"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 133,
           "end": 137,
@@ -21355,7 +21355,7 @@
           "source": "description"
         },
         {
-          "entity": "West",
+          "entity": "West Bank",
           "label": "LOC",
           "start": 76,
           "end": 80,
@@ -21659,7 +21659,7 @@
           "source": "title"
         },
         {
-          "entity": "Erdogan",
+          "entity": "Recep Tayyip Erdogan",
           "label": "PER",
           "start": 10,
           "end": 17,
@@ -21784,7 +21784,7 @@
       "translatedDescription": "After years of war and isolation, Syria's economy is on the ground. Now the US President's decision to cancel the sanctions ensures hope-also in the retail metropolis of Aleppo.",
       "ner": [
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 34,
           "end": 46,
@@ -21868,7 +21868,7 @@
       "translatedDescription": "Trump's Middle East trip irritates Israel, old customs no longer seem to apply. That could change the region.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -21952,21 +21952,21 @@
           "source": "title"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 83,
           "end": 95,
           "source": "title"
         },
         {
-          "entity": "Springsteen",
+          "entity": "Bruce Springsteen",
           "label": "PER",
           "start": 6,
           "end": 17,
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 44,
           "end": 52,
@@ -21980,7 +21980,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 88,
           "end": 93,
@@ -22064,7 +22064,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 96,
           "end": 103,
@@ -22113,14 +22113,14 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 55,
           "end": 63,
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 155,
           "end": 160,
@@ -22141,7 +22141,7 @@
       "translatedDescription": "MP Lamonica Mciver has been charged with the member of New Jersey because she supposedly attacked a federal police officer. The democrat denies the accusation. Your party assumes political motives for the prosecutor.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 39,
           "end": 44,
@@ -22211,7 +22211,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 134,
           "end": 139,
@@ -22246,7 +22246,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 57,
           "end": 62,
@@ -22260,7 +22260,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 56,
           "end": 68,
@@ -22343,14 +22343,14 @@
       "translatedDescription": "The US President suggests a possible coverage of the diagnosis of his predecessor: it takes a long time for someone to go to level 9 of cancer. Such a test is actually a standard for men at a routine check.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 12,
           "end": 17,
@@ -22413,7 +22413,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 84,
           "end": 88,
@@ -22756,7 +22756,7 @@
       "translatedDescription": "In 2005 Charles Kushhner declared himself guilty of tax evasion, retaliation measures against a federal witness and lies to the Federal Election Commission.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 10,
           "end": 15,
@@ -22860,7 +22860,7 @@
           "source": "title"
         },
         {
-          "entity": "Szoboszlai",
+          "entity": "Dominik Szoboszlai",
           "label": "PER",
           "start": 62,
           "end": 72,
@@ -22937,7 +22937,7 @@
           "source": "description"
         },
         {
-          "entity": "Milos",
+          "entity": "Milos Kerka",
           "label": "PER",
           "start": 41,
           "end": 46,
@@ -23111,7 +23111,7 @@
       "translatedDescription": "It may easily start for another Ronaldo in Madrid.",
       "ner": [
         {
-          "entity": "Real",
+          "entity": "Real Madrid",
           "label": "ORG",
           "start": 0,
           "end": 4,
@@ -23132,7 +23132,7 @@
           "source": "title"
         },
         {
-          "entity": "Ronaldo",
+          "entity": "Cristiano Ronaldo",
           "label": "PER",
           "start": 32,
           "end": 39,
@@ -23265,7 +23265,7 @@
       "translatedDescription": "The summer of great changes follows the royal guard.",
       "ner": [
         {
-          "entity": "Alonso",
+          "entity": "Xabi Alonso",
           "label": "PER",
           "start": 0,
           "end": 6,
@@ -23307,7 +23307,7 @@
           "source": "title"
         },
         {
-          "entity": "Academy",
+          "entity": "Hungarian Academy of Sciences",
           "label": "ORG",
           "start": 110,
           "end": 117,
@@ -23328,7 +23328,7 @@
       "translatedDescription": "\"I'm not saying we are very sad, but not the result of what we imagined.\"",
       "ner": [
         {
-          "entity": "Szoboszlai",
+          "entity": "Dominik Szoboszlai",
           "label": "PER",
           "start": 19,
           "end": 29,
@@ -23391,7 +23391,7 @@
       "translatedDescription": "The President of the Turkish Republic is one of the most protected leaders in the world.",
       "ner": [
         {
-          "entity": "Erdogan",
+          "entity": "Recep Tayyip Erdogan",
           "label": "PER",
           "start": 33,
           "end": 40,
@@ -23454,7 +23454,7 @@
       "translatedDescription": "It looks more and more that Union leaders want to continue the Russian-Ukrainian war better than the overwhelming Zelensky himself.",
       "ner": [
         {
-          "entity": "Union",
+          "entity": "European Union",
           "label": "ORG",
           "start": 28,
           "end": 33,
@@ -23475,7 +23475,7 @@
           "source": "description"
         },
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 114,
           "end": 122,
@@ -23600,14 +23600,14 @@
           "source": "title"
         },
         {
-          "entity": "Fadhlina",
+          "entity": "Fadhlina Sidek",
           "label": "PER",
           "start": 53,
           "end": 61,
           "source": "title"
         },
         {
-          "entity": "Rodziah",
+          "entity": "Rodziah Ismail",
           "label": "PER",
           "start": 65,
           "end": 72,
@@ -23656,7 +23656,7 @@
           "source": "title"
         },
         {
-          "entity": "Onn Hafiz",
+          "entity": "Onn Hafiz Ghazi",
           "label": "PER",
           "start": 68,
           "end": 77,
@@ -23831,7 +23831,7 @@
           "source": "title"
         },
         {
-          "entity": "KOTA",
+          "entity": "KOTA KINABALU",
           "label": "ORG",
           "start": 0,
           "end": 4,
@@ -23880,7 +23880,7 @@
           "source": "title"
         },
         {
-          "entity": "State Assembly",
+          "entity": "Penang State Assembly",
           "label": "ORG",
           "start": 49,
           "end": 63,
@@ -24006,7 +24006,7 @@
           "source": "description"
         },
         {
-          "entity": "Mildef",
+          "entity": "Mildef International Technologies Sdn Bhd",
           "label": "ORG",
           "start": 208,
           "end": 214,
@@ -24027,7 +24027,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Taiwan",
+          "entity": "Taiwan Strait",
           "label": "LOC",
           "start": 16,
           "end": 22,
@@ -24096,7 +24096,7 @@
           "source": "title"
         },
         {
-          "entity": "Dan",
+          "entity": "Nicusor Dan",
           "label": "PER",
           "start": 7,
           "end": 10,
@@ -24131,7 +24131,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 29,
           "end": 31,
@@ -24166,7 +24166,7 @@
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Taiwan Strait",
           "label": "LOC",
           "start": 43,
           "end": 49,
@@ -24194,7 +24194,7 @@
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Taiwan Strait",
           "label": "LOC",
           "start": 19,
           "end": 25,
@@ -24460,7 +24460,7 @@
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Taiwan Strait",
           "label": "LOC",
           "start": 40,
           "end": 46,
@@ -24572,7 +24572,7 @@
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Taiwan Strait",
           "label": "LOC",
           "start": 20,
           "end": 29,
@@ -24614,7 +24614,7 @@
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Taiwan Strait",
           "label": "LOC",
           "start": 64,
           "end": 70,
@@ -24683,7 +24683,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 71,
           "end": 76,
@@ -24711,7 +24711,7 @@
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Taiwan Strait",
           "label": "LOC",
           "start": 25,
           "end": 31,
@@ -24938,7 +24938,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -25092,7 +25092,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Taiwan",
+          "entity": "Taiwan Strait",
           "label": "LOC",
           "start": 33,
           "end": 73,
@@ -25176,7 +25176,7 @@
       "translatedDescription": "DOHA: US President Donald Trump on Thursday said he wanted to \"end conflicts not start them\" as he addressed troops at the United States' sprawling Al Udeid Air Base in Qatar.\n\n\tTrump visited a US base installation at the center of American involvement in the Middle East as he uses his four-day visit to Gulf states to reject the “interventionism” of America’s past in the region.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -25190,7 +25190,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 19,
           "end": 31,
@@ -25204,7 +25204,7 @@
           "source": "description"
         },
         {
-          "entity": "Al",
+          "entity": "Al-Ain Convention Center",
           "label": "LOC",
           "start": 148,
           "end": 150,
@@ -25218,7 +25218,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "Latin American",
           "label": "MISC",
           "start": 232,
           "end": 240,
@@ -25232,14 +25232,14 @@
           "source": "description"
         },
         {
-          "entity": "Gulf",
+          "entity": "Gulf of Suez",
           "label": "LOC",
           "start": 305,
           "end": 309,
           "source": "description"
         },
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 352,
           "end": 359,
@@ -25428,7 +25428,7 @@
           "source": "description"
         },
         {
-          "entity": "City",
+          "entity": "Man City",
           "label": "ORG",
           "start": 217,
           "end": 221,
@@ -25456,7 +25456,7 @@
           "source": "description"
         },
         {
-          "entity": "Guardiola",
+          "entity": "Pep Guardiola",
           "label": "PER",
           "start": 355,
           "end": 364,
@@ -25512,7 +25512,7 @@
           "source": "title"
         },
         {
-          "entity": "Sporting Code",
+          "entity": "International Sporting Code",
           "label": "MISC",
           "start": 61,
           "end": 74,
@@ -25673,7 +25673,7 @@
       "translatedDescription": "BERLIN: Airline group Lufthansa will suspend its flights to Tel Aviv through May 25, it said on Thursday, citing the “current situation.”\n\tThis affects flights operated by Lufthansa, Swiss, Austrian Airlines, Eurowings, ITA Airways, Brussels Airlines and Lufthansa Cargo, it added.\n\tGlobal airlines have again halted their flights to and from Tel Aviv after a missile fired by Yemen’s Houthis toward Israel on May 4 landed near the country’s main international airport in Tel Aviv.",
       "ner": [
         {
-          "entity": "Lufthansa",
+          "entity": "Lufthansa Cargo",
           "label": "ORG",
           "start": 0,
           "end": 9,
@@ -25862,14 +25862,14 @@
       "translatedDescription": "According to the authorities, the school ship lost power. Captain said the helm stopped working.",
       "ner": [
         {
-          "entity": "Brooklyn",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 26,
           "end": 34,
           "source": "title"
         },
         {
-          "entity": "New York",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 45,
           "end": 53,
@@ -26156,7 +26156,7 @@
           "source": "title"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 0,
           "end": 12,
@@ -26268,7 +26268,7 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 302,
           "end": 314,
@@ -26359,14 +26359,14 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 162,
           "end": 174,
           "source": "description"
         },
         {
-          "entity": "Internal Security",
+          "entity": "Department of Internal Security",
           "label": "ORG",
           "start": 279,
           "end": 296,
@@ -26457,21 +26457,21 @@
           "source": "description"
         },
         {
-          "entity": "Diddy",
+          "entity": "Sean 'Diddy",
           "label": "PER",
           "start": 122,
           "end": 127,
           "source": "description"
         },
         {
-          "entity": "Cassie",
+          "entity": "Cassie Ventura",
           "label": "PER",
           "start": 206,
           "end": 212,
           "source": "description"
         },
         {
-          "entity": "National",
+          "entity": "National Population Commission",
           "label": "ORG",
           "start": 436,
           "end": 444,
@@ -26527,21 +26527,21 @@
           "source": "description"
         },
         {
-          "entity": "Donald Trump",
+          "entity": "Donald Trump Jr",
           "label": "PER",
           "start": 144,
           "end": 156,
           "source": "description"
         },
         {
-          "entity": "Salazar",
+          "entity": "María Elvira Salazar",
           "label": "PER",
           "start": 274,
           "end": 281,
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 292,
           "end": 297,
@@ -26806,7 +26806,7 @@
           "source": "title"
         },
         {
-          "entity": "Central America Festival",
+          "entity": "Central America Festival Count",
           "label": "MISC",
           "start": 22,
           "end": 46,
@@ -26913,5 +26913,5 @@
       ]
     }
   ],
-  "processedAt": "2025-05-20T04:36:10.811125"
+  "processedAt": "2025-05-27T21:39:15.920820"
 }

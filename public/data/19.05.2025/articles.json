@@ -20,7 +20,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 38,
           "end": 43,
@@ -83,7 +83,7 @@
           "source": "description"
         },
         {
-          "entity": "European Union",
+          "entity": "European Union Agency for Asylum",
           "label": "ORG",
           "start": 35,
           "end": 49,
@@ -153,7 +153,7 @@
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -174,7 +174,7 @@
       "translatedDescription": "Nicusor Dan fights off a strong challenge from a right-wing nationalist after months of political turbulence.",
       "ner": [
         {
-          "entity": "Dan",
+          "entity": "Dan Bongino",
           "label": "PER",
           "start": 14,
           "end": 17,
@@ -400,14 +400,14 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 47,
           "end": 49,
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 51,
           "end": 57,
@@ -449,7 +449,7 @@
           "source": "title"
         },
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 41,
           "end": 49,
@@ -463,7 +463,7 @@
           "source": "description"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 99,
           "end": 105,
@@ -484,7 +484,7 @@
       "translatedDescription": "Wildfires in Europe are becoming more severe. With climate change intensifying droughts and reducing summer rain, wildfire risk is predicted to more than double by 2100. Do we have to learn to live with fires?",
       "ner": [
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 13,
           "end": 19,
@@ -512,7 +512,7 @@
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 20,
           "end": 25,
@@ -596,7 +596,7 @@
           "source": "title"
         },
         {
-          "entity": "Trzaskowski",
+          "entity": "L Trzaskowski",
           "label": "PER",
           "start": 20,
           "end": 31,
@@ -645,14 +645,14 @@
           "source": "title"
         },
         {
-          "entity": "Pro",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 18,
           "end": 21,
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 22,
           "end": 24,
@@ -708,7 +708,7 @@
           "source": "title"
         },
         {
-          "entity": "California",
+          "entity": "Southern California",
           "label": "LOC",
           "start": 20,
           "end": 30,
@@ -743,7 +743,7 @@
       "translatedDescription": "Pope Leo XIV has met with Ukrainian leader Volodymyr Zelenskyy to discuss ending the war in Ukraine. Zelenskyy also met with US Vice President JD Vance ahead of talks between Donald Trump and Vladimir Putin.",
       "ner": [
         {
-          "entity": "Pope Leo",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 18,
           "end": 26,
@@ -757,7 +757,7 @@
           "source": "title"
         },
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 46,
           "end": 54,
@@ -778,7 +778,7 @@
           "source": "description"
         },
         {
-          "entity": "Zelenskyy",
+          "entity": "Volodymyr Zelenskyy",
           "label": "PER",
           "start": 101,
           "end": 110,
@@ -834,14 +834,14 @@
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 13,
           "end": 19,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 54,
           "end": 58,
@@ -876,21 +876,21 @@
       "translatedDescription": "New German Chancellor Friedrich Merz has attended the inaugural Mass of Pope Leo XIV in the Vatican. Meanwhile, a new study showed workers in Germany work fewer hours than most international counterparts. DW has more.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 17,
           "end": 21,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 4,
           "end": 10,
@@ -911,7 +911,7 @@
           "source": "description"
         },
         {
-          "entity": "Vatican",
+          "entity": "Vatican City",
           "label": "LOC",
           "start": 92,
           "end": 99,
@@ -987,7 +987,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 34,
           "end": 42,
@@ -1015,14 +1015,14 @@
       "translatedDescription": "An internal survey about extremist attitudes in the German military now found that it does not have \"systemic\" extremism in the ranks. But some researchers are skeptical of the safeguards in place.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 26,
           "end": 33,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 52,
           "end": 58,
@@ -1043,21 +1043,21 @@
       "translatedDescription": "German Chancellor Friedrich Merz plans to make the Bundeswehr the \"strongest conventional army in Europe.\" Other EU countries also have ambitious plans for their armed forces. DW takes a closer look.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 18,
           "end": 20,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -1078,7 +1078,7 @@
           "source": "description"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 98,
           "end": 104,
@@ -1120,7 +1120,7 @@
           "source": "title"
         },
         {
-          "entity": "Brooklyn Bridge",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 50,
           "end": 65,
@@ -1148,7 +1148,7 @@
       "translatedDescription": "Austria's JJ has won the Eurovision Song Contest 2025 with \"Wasted Love.\" An estimated 160 million people from Europe and beyond were expected to tune in.",
       "ner": [
         {
-          "entity": "Eurovision",
+          "entity": "Eurovision Song Contest",
           "label": "MISC",
           "start": 0,
           "end": 10,
@@ -1183,7 +1183,7 @@
           "source": "description"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 111,
           "end": 117,
@@ -1253,7 +1253,7 @@
       "translatedDescription": "The hard-right \"sovereignist\" George Simion is going head-to-head with the pro-EU liberal Nicusor Dan in Sunday's presidential runoff in Romania. A Simion victory could trigger a crisis in the European Union.",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 0,
           "end": 2,
@@ -1281,14 +1281,14 @@
           "source": "description"
         },
         {
-          "entity": "Simion",
+          "entity": "George Simion",
           "label": "PER",
           "start": 148,
           "end": 154,
           "source": "description"
         },
         {
-          "entity": "European Union",
+          "entity": "European Union Agency for Asylum",
           "label": "ORG",
           "start": 193,
           "end": 207,
@@ -1316,7 +1316,7 @@
           "source": "title"
         },
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 12,
           "end": 20,
@@ -1337,7 +1337,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 41,
           "end": 47,
@@ -1351,14 +1351,14 @@
           "source": "description"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 85,
           "end": 91,
           "source": "description"
         },
         {
-          "entity": "Americans",
+          "entity": "Indigenous Americans",
           "label": "MISC",
           "start": 122,
           "end": 131,
@@ -1407,21 +1407,21 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 17,
           "end": 22,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 31,
           "end": 36,
           "source": "title"
         },
         {
-          "entity": "Zelensky",
+          "entity": "Volodymyr Zelensky",
           "label": "PER",
           "start": 38,
           "end": 46,
@@ -1491,7 +1491,7 @@
       "translatedDescription": "Interior Minister Alexander Dobrindt appeared at the Austro-German border to explain the government's new tougher border controls. The new government has made immigration policy a key part of its agenda.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -1533,14 +1533,14 @@
           "source": "title"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 64,
           "end": 68,
           "source": "description"
         },
         {
-          "entity": "North",
+          "entity": "North America",
           "label": "LOC",
           "start": 72,
           "end": 77,
@@ -1554,7 +1554,7 @@
           "source": "description"
         },
         {
-          "entity": "Indigenous",
+          "entity": "Indigenous Americans",
           "label": "MISC",
           "start": 139,
           "end": 149,
@@ -1617,7 +1617,7 @@
           "source": "title"
         },
         {
-          "entity": "Erdogan",
+          "entity": "Recep Tayyip Erdogan",
           "label": "PER",
           "start": 40,
           "end": 47,
@@ -1680,14 +1680,14 @@
       "translatedDescription": "The new German government has agreed to stop family members of refugees with subsidiary protection status from moving to Germany. The controversial move will particularly affect Syrian families.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 8,
           "end": 14,
@@ -1750,7 +1750,7 @@
       "translatedDescription": "Despite the efforts of its organizers, the Eurovision Song Contest in Switzerland's Basel has not been free of politics. Here's an overview of an unusual start, protests against Israel's artist and controversial songs.",
       "ner": [
         {
-          "entity": "Eurovision",
+          "entity": "Eurovision Song Contest",
           "label": "MISC",
           "start": 0,
           "end": 10,
@@ -1778,7 +1778,7 @@
           "source": "description"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 178,
           "end": 184,
@@ -1799,7 +1799,7 @@
       "translatedDescription": "Germany and the United Kingdom are increasing their military cooperation, aiming to jointly develop long-range precision weapons. The aim is to protect Europe from potential attacks.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -1820,7 +1820,7 @@
           "source": "description"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 152,
           "end": 158,
@@ -1904,14 +1904,14 @@
           "source": "description"
         },
         {
-          "entity": "Roma",
+          "entity": "Roma Resistance Day",
           "label": "MISC",
           "start": 21,
           "end": 25,
           "source": "description"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 33,
           "end": 39,
@@ -1939,14 +1939,14 @@
       "translatedDescription": "The US and China have stepped back from a major tariff war, while Britain quickly struck a limited deal with Donald Trump. Can EU nations glean insights to secure their future trade with the US?",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 4,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 36,
           "end": 41,
@@ -2058,7 +2058,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 123,
           "end": 128,
@@ -2121,21 +2121,21 @@
       "translatedDescription": "Germany and Israel established diplomatic relations 60 years ago. To commemorate the occasion, Israeli President Herzog visited Berlin and German President Steinmeier went to Jerusalem. DW's Christoph Strack was there.",
       "ner": [
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 7,
           "end": 14,
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -2205,14 +2205,14 @@
           "source": "title"
         },
         {
-          "entity": "Zelenskyy",
+          "entity": "Volodymyr Zelenskyy",
           "label": "PER",
           "start": 17,
           "end": 26,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 33,
           "end": 38,
@@ -2351,14 +2351,14 @@
       "translatedDescription": "Germany's newly elected chancellor, Friedrich Merz, called for Berlin to transform its Bundeswehr into the \"strongest conventional army in Europe\" in his first major speech to parliament.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 45,
           "end": 51,
@@ -2421,7 +2421,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 16,
           "end": 18,
@@ -2470,28 +2470,28 @@
       "translatedDescription": "Pope Leo XIV was gifted a tennis racket by world number one player Jannik Sinner on Wednesday. Sinner offered to volley with the pontiff, who declined saying, \"we might break something.\"",
       "ner": [
         {
-          "entity": "Sinner",
+          "entity": "Jannik Sinner",
           "label": "PER",
           "start": 26,
           "end": 32,
           "source": "title"
         },
         {
-          "entity": "Vatican",
+          "entity": "Vatican City",
           "label": "LOC",
           "start": 36,
           "end": 43,
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 12,
@@ -2540,7 +2540,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 54,
           "end": 56,
@@ -2568,14 +2568,14 @@
           "source": "title"
         },
         {
-          "entity": "European Union",
+          "entity": "European Union Agency for Asylum",
           "label": "ORG",
           "start": 44,
           "end": 58,
           "source": "description"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 118,
           "end": 120,
@@ -2610,7 +2610,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -2652,7 +2652,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 26,
           "end": 31,
@@ -2666,7 +2666,7 @@
           "source": "title"
         },
         {
-          "entity": "World Cup",
+          "entity": "Club World Cup",
           "label": "MISC",
           "start": 37,
           "end": 46,
@@ -2694,14 +2694,14 @@
       "translatedDescription": "Trump's departure from decades of established trade practices is leaving a lasting impact on the German auto industry. Carmakers can do little but wait and hope things won't turn out as badly as feared.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 25,
           "end": 33,
@@ -2715,7 +2715,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 97,
           "end": 103,
@@ -2736,21 +2736,21 @@
       "translatedDescription": "In a wide-ranging speech in the Bundestag, the German Chancellor outlined his new government's priorities, including a plan to revive Germany's struggling economy and transform it once again into a \"growth locomotive.\"",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 9,
           "end": 13,
           "source": "title"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 28,
           "end": 34,
@@ -2764,7 +2764,7 @@
           "source": "description"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 47,
           "end": 53,
@@ -2792,7 +2792,7 @@
           "source": "title"
         },
         {
-          "entity": "Cannes",
+          "entity": "Cannes Red Carpet",
           "label": "LOC",
           "start": 54,
           "end": 60,
@@ -2813,7 +2813,7 @@
           "source": "description"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 47,
           "end": 53,
@@ -2848,7 +2848,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 29,
           "end": 36,
@@ -2862,7 +2862,7 @@
           "source": "title"
         },
         {
-          "entity": "Ka",
+          "entity": "Li Ka",
           "label": "PER",
           "start": 92,
           "end": 94,
@@ -2911,7 +2911,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 181,
           "end": 189,
@@ -2939,21 +2939,21 @@
           "source": "title"
         },
         {
-          "entity": "pro",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 17,
           "end": 20,
           "source": "title"
         },
         {
-          "entity": "Hitler",
+          "entity": "Adolf Hitler",
           "label": "PER",
           "start": 21,
           "end": 27,
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 47,
           "end": 54,
@@ -3009,7 +3009,7 @@
           "source": "title"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 51,
           "end": 57,
@@ -3086,14 +3086,14 @@
           "source": "title"
         },
         {
-          "entity": "Zelenskyy",
+          "entity": "Volodymyr Zelenskyy",
           "label": "PER",
           "start": 9,
           "end": 18,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 39,
           "end": 44,
@@ -3156,7 +3156,7 @@
       "translatedDescription": "The founder of a banned faction of the far-right \"Reich Citizens\" group has been taken into custody. For more than ten years, Peter Fitzek has been at the head of a fantasy state calling itself the \"Kingdom of Germany.\"",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -3303,7 +3303,7 @@
       "translatedDescription": "The WHO recommends vaccination against 12 deadly diseases in childhood, but how long does protection last, and how do they work?",
       "ner": [
         {
-          "entity": "WHO",
+          "entity": "The Who",
           "label": "ORG",
           "start": 4,
           "end": 7,
@@ -3324,14 +3324,14 @@
       "translatedDescription": "The new German chancellor held talks with the Greek premier in Berlin. Meanwhile, Germany has banned the far-right anti-constitutional group \"Kingdom of Germany.\"",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 28,
           "end": 32,
@@ -3352,7 +3352,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 8,
           "end": 14,
@@ -3401,7 +3401,7 @@
       "translatedDescription": "The Reichsbürger are often radical and violent and do not recognize Germany as a legitimate state, and have increasingly drawn the attention of authorities. Who are they, and what kind of danger do they pose?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 8,
           "end": 15,
@@ -3449,14 +3449,14 @@
       "translatedDescription": "German Interior Minister Alexander Dobrindt has ordered asylum seekers to be turned away at the border. The move is legally and politically controversial.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -3484,7 +3484,7 @@
       "translatedDescription": "Germany's aging population is putting the country's pension system under strain. The new Labor Minister Bärbel Bas has ruffled feathers with a proposal for how to fix it.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 40,
           "end": 47,
@@ -3519,7 +3519,7 @@
       "translatedDescription": "Wes Anderson, Diane Kruger, Spike Lee: These are just some big names featured at the world's most important film festival. But while celebrating cinema, attendees will also grapple with an uncertain future to come.",
       "ner": [
         {
-          "entity": "Cannes",
+          "entity": "Cannes Red Carpet",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -3582,7 +3582,7 @@
           "source": "title"
         },
         {
-          "entity": "Kohli",
+          "entity": "Virat Kohli",
           "label": "PER",
           "start": 131,
           "end": 136,
@@ -3617,7 +3617,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 53,
           "end": 58,
@@ -3658,21 +3658,21 @@
       "translatedDescription": "Germany and Israel are commemorating the beginning of their postwar relationship, with the war in Gaza omnipresent.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 12,
           "end": 18,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 98,
           "end": 102,
@@ -3707,7 +3707,7 @@
           "source": "title"
         },
         {
-          "entity": "Supreme Court",
+          "entity": "US Supreme Court",
           "label": "ORG",
           "start": 12,
           "end": 25,
@@ -3735,7 +3735,7 @@
       "translatedDescription": "There's growing concern that German society is becoming increasingly polarized. The question of how to treat the AfD party threatens to further deepen the divide.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 11,
           "end": 18,
@@ -3749,7 +3749,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 29,
           "end": 35,
@@ -3770,14 +3770,14 @@
       "translatedDescription": "In the two days since the new German government under Chancellor Friedrich Merz tightened border controls, 19 people who had applied for asylum have reportedly been turned away.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 30,
           "end": 36,
@@ -3805,14 +3805,14 @@
       "translatedDescription": "No sooner had Friedrich Merz announced new government positions than accusations of \"lobbyism\" began to fly. How is lobbying regulated in Germany — and how big a problem is it?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Merz",
+          "entity": "Friedrich Merz",
           "label": "PER",
           "start": 13,
           "end": 17,
@@ -3840,7 +3840,7 @@
       "translatedDescription": "The work of the new German government has begun. For the CDU, the CSU and the SPD, the challenges ahead are enormous. The economy is in a slump and the far-right AfD is the strongest opposition party.",
       "ner": [
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 28,
           "end": 34,
@@ -3902,7 +3902,7 @@
       "translatedDescription": "The AfD and its supporters claim that Germany's domestic intelligence agency no longer classifies the party as \"right-wing extremist.\" The facts, however, tell a different story.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 12,
           "end": 19,
@@ -3937,7 +3937,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 24,
           "end": 31,
@@ -3965,7 +3965,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 63,
           "end": 68,
@@ -4133,7 +4133,7 @@
           "source": "title"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 51,
           "end": 57,
@@ -4147,7 +4147,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 127,
           "end": 132,
@@ -4231,7 +4231,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 40,
           "end": 47,
@@ -4307,7 +4307,7 @@
           "source": "description"
         },
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 103,
           "end": 111,
@@ -4328,7 +4328,7 @@
       "translatedDescription": "Climate issues took a back seat during Germany's election campaign. Is that likely to change under the incoming coalition government?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 9,
           "end": 16,
@@ -4362,14 +4362,14 @@
       "translatedDescription": "Fewer and fewer young people in Germany are sticking with football at a crucial age in their sporting development. Why is this happening and what does it mean?",
       "ner": [
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 4,
           "end": 10,
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 32,
           "end": 39,
@@ -4390,7 +4390,7 @@
       "translatedDescription": "The European Commission has unveiled a delayed roadmap to phase out Russian fossil fuels by 2027. But as Europe scrambles to diversify supplies, experts warn that new dependencies and old divisions could derail the plan.",
       "ner": [
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 8,
           "end": 10,
@@ -4411,7 +4411,7 @@
           "source": "description"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 105,
           "end": 111,
@@ -4446,7 +4446,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 40,
           "end": 47,
@@ -4502,7 +4502,7 @@
       "translatedDescription": "A generations-long culture of deep-diving among women on a South Korean Island may have changed their genetic evolution. A study shows potential for medical discoveries.",
       "ner": [
         {
-          "entity": "Korea",
+          "entity": "South Korea",
           "label": "LOC",
           "start": 0,
           "end": 5,
@@ -4537,7 +4537,7 @@
       "translatedDescription": "From Wieland Wagner to Arno Breker, many musicians and artists benefited from Nazism. Some had shining careers after the war. How did this happen?",
       "ner": [
         {
-          "entity": "Hitler",
+          "entity": "Adolf Hitler",
           "label": "PER",
           "start": 4,
           "end": 10,
@@ -4607,7 +4607,7 @@
           "source": "title"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 31,
           "end": 37,
@@ -4705,7 +4705,7 @@
       "translatedDescription": "Under Pope Francis, the Vatican called upon Catholic institutions to divest from fossil fuels. How far did they get?",
       "ner": [
         {
-          "entity": "Catholic",
+          "entity": "Roman Catholic",
           "label": "MISC",
           "start": 4,
           "end": 12,
@@ -4719,7 +4719,7 @@
           "source": "description"
         },
         {
-          "entity": "Vatican",
+          "entity": "Vatican City",
           "label": "LOC",
           "start": 24,
           "end": 31,
@@ -4740,7 +4740,7 @@
       "translatedDescription": "So far, Russia's economy has proven surprisingly resilient despite sweeping Western sanctions. But what happens if the United States ramps up the pressure with secondary sanctions?",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 4,
           "end": 9,
@@ -4754,7 +4754,7 @@
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 48,
           "end": 53,
@@ -4816,7 +4816,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
@@ -4858,7 +4858,7 @@
       "translatedDescription": "Visa, Mastercard, and PayPal dominate the cashless payments landscape in the EU and the European Central Bank warns about the region's reliance on US payment giants. But what alternative does Europe have?",
       "ner": [
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 4,
           "end": 10,
@@ -4893,7 +4893,7 @@
           "source": "description"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 77,
           "end": 79,
@@ -4998,7 +4998,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 46,
           "end": 53,
@@ -5089,7 +5089,7 @@
           "source": "title"
         },
         {
-          "entity": "English",
+          "entity": "Natural English",
           "label": "MISC",
           "start": 30,
           "end": 37,
@@ -5103,7 +5103,7 @@
           "source": "description"
         },
         {
-          "entity": "Supreme Court",
+          "entity": "US Supreme Court",
           "label": "ORG",
           "start": 76,
           "end": 89,
@@ -5124,7 +5124,7 @@
       "translatedDescription": "What did sport mean to the Nazis? How did they view the Olympic Games? And what sporting opportunities did Jews have?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 9,
           "end": 16,
@@ -5173,7 +5173,7 @@
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 4,
           "end": 10,
@@ -5187,7 +5187,7 @@
           "source": "description"
         },
         {
-          "entity": "Fröhlich",
+          "entity": "Alexandra Fröhlich",
           "label": "PER",
           "start": 72,
           "end": 80,
@@ -5257,7 +5257,7 @@
       "translatedDescription": "Trump’s first 100 days unleashed chaos with tariffs and executive orders, tanking markets and waning global trust. As the dust settles, has he strengthened America's hand or deepened economic risks?",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 12,
           "end": 17,
@@ -5271,7 +5271,7 @@
           "source": "title"
         },
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 156,
           "end": 163,
@@ -5299,7 +5299,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 50,
           "end": 58,
@@ -5327,7 +5327,7 @@
           "source": "title"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 133,
           "end": 137,
@@ -5404,7 +5404,7 @@
       "translatedDescription": "For many young people in Germany, getting a driver's license has become almost unaffordable. Calls for reform are growing louder, but will it be enough?",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 32,
           "end": 39,
@@ -5432,14 +5432,14 @@
           "source": "title"
         },
         {
-          "entity": "Rüdiger",
+          "entity": "Antonio Rüdiger",
           "label": "PER",
           "start": 14,
           "end": 21,
           "source": "title"
         },
         {
-          "entity": "German",
+          "entity": "Porsche German",
           "label": "MISC",
           "start": 0,
           "end": 6,
@@ -5467,14 +5467,14 @@
       "translatedDescription": "More than 100 cardinals will join a Vatican conclave to elect Pope Francis' successor. The subject of an Oscar-winning film and best-selling book, papal elections are now a pop-culture sensation.",
       "ner": [
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 12,
           "end": 16,
           "source": "title"
         },
         {
-          "entity": "Vatican",
+          "entity": "Vatican City",
           "label": "LOC",
           "start": 36,
           "end": 43,
@@ -5592,14 +5592,14 @@
           "source": "title"
         },
         {
-          "entity": "Goethe",
+          "entity": "Johann Wolfgang Von Goethe",
           "label": "PER",
           "start": 28,
           "end": 34,
           "source": "title"
         },
         {
-          "entity": "Luther",
+          "entity": "Martin Luther",
           "label": "PER",
           "start": 36,
           "end": 42,
@@ -5641,14 +5641,14 @@
       "translatedDescription": "Many countries have dropped low-denomination coins in the past. But can cash-loving Germany follow suit and stop accepting the smallest euro coins? Other European nations are showing the way.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 4,
           "end": 11,
           "source": "title"
         },
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 154,
           "end": 162,
@@ -5676,7 +5676,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 19,
           "end": 26,
@@ -5711,14 +5711,14 @@
       "translatedDescription": "Germany was the only G7 economy that failed to grow for the last two years, and is on track for a third year without growth in 2025.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 44,
           "end": 49,
@@ -5767,7 +5767,7 @@
           "source": "description"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 160,
           "end": 167,
@@ -5872,7 +5872,7 @@
       "translatedDescription": "The US president has ordered a review of US-funded international organizations, which he claims unfairly benefit other nations. As the IMF and World Bank hold their Spring summits this week, are their futures secure?",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -5963,7 +5963,7 @@
       "translatedDescription": "Argentina's libertarian president, Javier Milei, has now been in office for 500 days, and his radical pro-market agenda continues to draw global attention. But is it working?",
       "ner": [
         {
-          "entity": "Milei",
+          "entity": "Javier Milei",
           "label": "PER",
           "start": 5,
           "end": 10,
@@ -6157,7 +6157,7 @@
       "translatedDescription": "Turbulent waters and mechanical issues are two of the possible reasons officials say a Mexican navy ship crashed into New York's Brooklyn Bridge, killing two people.",
       "ner": [
         {
-          "entity": "Brooklyn Bridge",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 47,
           "end": 62,
@@ -6171,7 +6171,7 @@
           "source": "description"
         },
         {
-          "entity": "New York",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 118,
           "end": 126,
@@ -6248,7 +6248,7 @@
       "translatedDescription": "Police allege a 21-year-old man entered tents and stole children's underwear on multiple occasions, and spied on children in bathrooms at a Queensland campsite.",
       "ner": [
         {
-          "entity": "Queensland",
+          "entity": "Far North Queensland",
           "label": "LOC",
           "start": 140,
           "end": 150,
@@ -6269,14 +6269,14 @@
       "translatedDescription": "Nicole Kidman has received an award at the Cannes Film Festival honouring groundbreaking women both on and off the screen.",
       "ner": [
         {
-          "entity": "Kidman",
+          "entity": "Nicole Kidman",
           "label": "PER",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Cannes",
+          "entity": "Cannes Red Carpet",
           "label": "LOC",
           "start": 19,
           "end": 25,
@@ -6325,7 +6325,7 @@
           "source": "title"
         },
         {
-          "entity": "Mount",
+          "entity": "Mount Everest",
           "label": "LOC",
           "start": 36,
           "end": 41,
@@ -6415,7 +6415,7 @@
           "source": "title"
         },
         {
-          "entity": "Eagles",
+          "entity": "West Coast Eagles",
           "label": "ORG",
           "start": 13,
           "end": 19,
@@ -6464,7 +6464,7 @@
           "source": "description"
         },
         {
-          "entity": "Korean",
+          "entity": "South Korean Island",
           "label": "MISC",
           "start": 141,
           "end": 147,
@@ -6485,7 +6485,7 @@
       "translatedDescription": "Queensland experts Chris Hay and Christina Zdenek run snake handling courses to bust myths and teach professionals how to stay safe around venomous snakes.",
       "ner": [
         {
-          "entity": "Queensland",
+          "entity": "Far North Queensland",
           "label": "LOC",
           "start": 0,
           "end": 10,
@@ -6646,7 +6646,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 0,
           "end": 8,
@@ -6681,7 +6681,7 @@
           "source": "title"
         },
         {
-          "entity": "Mount",
+          "entity": "Mount Everest",
           "label": "LOC",
           "start": 93,
           "end": 98,
@@ -6911,14 +6911,14 @@
       "translatedDescription": "An election that many viewed as a geopolitical choice between East and West comes months after the cancellation of the previous vote, which plunged Romania into its worst political crisis in decades.",
       "ner": [
         {
-          "entity": "Pro",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 0,
           "end": 3,
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 4,
           "end": 6,
@@ -6932,7 +6932,7 @@
           "source": "title"
         },
         {
-          "entity": "East",
+          "entity": "Middle East",
           "label": "LOC",
           "start": 62,
           "end": 66,
@@ -6960,14 +6960,14 @@
       "translatedDescription": "Israel said on Sunday it launched \"extensive\" new ground operations in its offensive in Gaza and announced it will allow a limited amount of aid into the Palestinian enclave after global experts warned of a famine there due to Israel's nearly three-month blockade.",
       "ner": [
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 35,
           "end": 39,
@@ -6995,7 +6995,7 @@
       "translatedDescription": "Nathan Tidridge, an author and expert on Canadian democracy, discusses the significance of Harvard University discovering its Magna Carta replica was authentic.",
       "ner": [
         {
-          "entity": "The",
+          "entity": "The Mafia of Tigers",
           "label": "ORG",
           "start": 1,
           "end": 4,
@@ -7051,7 +7051,7 @@
       "translatedDescription": "The FBI said on Sunday that it believes the suspect in Saturday's explosion at a California fertility clinic, which it described as an \"intentional act of terrorism,\" was the only person killed in the incident.",
       "ner": [
         {
-          "entity": "California",
+          "entity": "Southern California",
           "label": "LOC",
           "start": 45,
           "end": 55,
@@ -7079,28 +7079,28 @@
       "translatedDescription": "Pope Leo XIV officially opened his pontificate as history's first American pope on Sunday, presiding over an inaugural mass in St. Peter's Square before tens of thousands of people, presidents, patriarchs and princes in a ceremony that blended ancient ritual, evocative symbols and a nod to modern-day celebrity.",
       "ner": [
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "title"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 12,
           "source": "title"
         },
         {
-          "entity": "Carney",
+          "entity": "Mark Carney",
           "label": "PER",
           "start": 71,
           "end": 77,
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 66,
           "end": 74,
@@ -7135,14 +7135,14 @@
           "source": "title"
         },
         {
-          "entity": "Brooklyn Bridge",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 60,
           "end": 75,
           "source": "title"
         },
         {
-          "entity": "New York",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 84,
           "end": 92,
@@ -7163,7 +7163,7 @@
       "translatedDescription": "Ukrainian President Volodymyr Zelenskyy asked Prime Minister Mark Carney on Saturday to add Canada’s weight behind global pressure on Russian President Vladimir Putin to sit at the negotiating table and agree to “an unconditional ceasefire.\"",
       "ner": [
         {
-          "entity": "Zelenskyy",
+          "entity": "Volodymyr Zelenskyy",
           "label": "PER",
           "start": 0,
           "end": 9,
@@ -7177,7 +7177,7 @@
           "source": "title"
         },
         {
-          "entity": "Carney",
+          "entity": "Mark Carney",
           "label": "PER",
           "start": 76,
           "end": 82,
@@ -7233,7 +7233,7 @@
       "translatedDescription": "King Charles has been to Canada 19 times, but his first visit as monarch later this month to read the speech from the throne will be an unprecedented outing on multiple fronts.",
       "ner": [
         {
-          "entity": "Charles",
+          "entity": "Charles Howell Iii",
           "label": "PER",
           "start": 9,
           "end": 16,
@@ -7275,7 +7275,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 0,
           "end": 8,
@@ -7310,7 +7310,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 2,
           "end": 7,
@@ -7345,7 +7345,7 @@
           "source": "title"
         },
         {
-          "entity": "South",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 100,
           "end": 105,
@@ -7415,14 +7415,14 @@
       "translatedDescription": "Ukrainian President Volodymyr Zelenskyy called on Saturday for stronger sanctions on Moscow after a Russian drone killed nine bus passengers in northeastern Ukraine just hours after the two countries held their first peace talks in three years of war. Meanwhile, U.S. President Donald Trump said he plans to speak by phone Monday with Russian leader Vladimir Putin, followed by Zelenskyy and leaders of various NATO countries, about ending the war in Ukraine.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 28,
           "end": 33,
@@ -7527,7 +7527,7 @@
           "source": "title"
         },
         {
-          "entity": "Eurovision",
+          "entity": "Eurovision Song Contest",
           "label": "MISC",
           "start": 18,
           "end": 28,
@@ -7646,14 +7646,14 @@
           "source": "title"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 74,
           "end": 80,
           "source": "description"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 183,
           "end": 185,
@@ -7821,7 +7821,7 @@
           "source": "title"
         },
         {
-          "entity": "The",
+          "entity": "The Mafia of Tigers",
           "label": "ORG",
           "start": 0,
           "end": 3,
@@ -7947,7 +7947,7 @@
           "source": "description"
         },
         {
-          "entity": "Patterson",
+          "entity": "Erin Patterson",
           "label": "PER",
           "start": 132,
           "end": 141,
@@ -8010,7 +8010,7 @@
           "source": "description"
         },
         {
-          "entity": "Roberts",
+          "entity": "Ben Roberts-Smith",
           "label": "PER",
           "start": 594,
           "end": 601,
@@ -8136,7 +8136,7 @@
           "source": "title"
         },
         {
-          "entity": "Wales",
+          "entity": "New South Wales",
           "label": "LOC",
           "start": 42,
           "end": 47,
@@ -8171,7 +8171,7 @@
           "source": "description"
         },
         {
-          "entity": "Gulf",
+          "entity": "Exmouth Gulf",
           "label": "LOC",
           "start": 599,
           "end": 603,
@@ -8234,14 +8234,14 @@
       "translatedDescription": "The band’s drummer since 1996 says there have been ‘weeks of mayhem’ since he was fired then reinstated three days later The Who’s drummer Zak Starkey has been fired from the band for a second time, just one month after he was fired then quickly reinstated. In an Instagram post on Monday , the group’s guitarist, Pete Townshend, announced that Starkey was no longer part of the band, just months shy of their farewell tour across North America. Continue reading...",
       "ner": [
         {
-          "entity": "The",
+          "entity": "The Mafia of Tigers",
           "label": "ORG",
           "start": 0,
           "end": 3,
           "source": "title"
         },
         {
-          "entity": "Who",
+          "entity": "The Who",
           "label": "ORG",
           "start": 4,
           "end": 7,
@@ -8283,7 +8283,7 @@
           "source": "description"
         },
         {
-          "entity": "Starkey",
+          "entity": "Ak Starkey",
           "label": "PER",
           "start": 345,
           "end": 352,
@@ -8381,14 +8381,14 @@
       "translatedDescription": "House Republicans advanced their tax and border security package after deficit hawks secured spending cut commitments. Speaker Johnson downplayed the changes as minor, while Democrats criticized the lack of transparency. The bill, facing opposition from both deficit hawks and centrists, includes tax cuts, increased border security spending, and modifications to Medicaid and other programs. Its fate in the Senate remains uncertain.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "House",
+          "entity": "House of Commons Foreign Affairs Commi­ttee",
           "label": "ORG",
           "start": 0,
           "end": 5,
@@ -8402,7 +8402,7 @@
           "source": "description"
         },
         {
-          "entity": "Johnson",
+          "entity": "Michael Johnson",
           "label": "PER",
           "start": 127,
           "end": 134,
@@ -8535,7 +8535,7 @@
       "translatedDescription": "A 25-year-old man, Guy Edward Bartkus, is suspected of bombing a Southern California fertility clinic, leaving behind writings expressing anti-pro-life and anti-natalist views. The FBI is treating the incident as an act of terrorism. The explosion, which injured four, gutted the American Reproductive Centers clinic in Palm Springs. Bartkus, who died in the blast, attempted to livestream the event.",
       "ner": [
         {
-          "entity": "California",
+          "entity": "Southern California",
           "label": "LOC",
           "start": 27,
           "end": 37,
@@ -8577,7 +8577,7 @@
           "source": "description"
         },
         {
-          "entity": "Bartkus",
+          "entity": "Guy Edward Bartkus",
           "label": "PER",
           "start": 334,
           "end": 341,
@@ -8647,7 +8647,7 @@
           "source": "title"
         },
         {
-          "entity": "Ka",
+          "entity": "Li Ka",
           "label": "PER",
           "start": 18,
           "end": 20,
@@ -8675,7 +8675,7 @@
           "source": "description"
         },
         {
-          "entity": "Epstein",
+          "entity": "Jeffry Epstein",
           "label": "PER",
           "start": 239,
           "end": 246,
@@ -8696,14 +8696,14 @@
       "translatedDescription": "Amid growing international pressure, Israel will allow a \"basic amount\" of food into Gaza, following warnings of a hunger crisis. This decision coincides with intensified military operations and ongoing ceasefire talks with Hamas in Qatar. Negotiations aim for hostage release and disarmament of Gaza, but disagreements persist over ceasefire terms.",
       "ner": [
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 26,
           "end": 30,
@@ -8738,7 +8738,7 @@
       "translatedDescription": "Israel has recovered the official Syrian archive of spy Eli Cohen, executed in 1965, in a covert Mossad operation. The archive, containing 2,500 documents, photos, and personal items, was presented to Cohen's widow. Recovered materials include handwritten letters, forged passports, and the original death sentence, offering insights into Cohen's intelligence work and final days.",
       "ner": [
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -8766,7 +8766,7 @@
           "source": "description"
         },
         {
-          "entity": "Cohen",
+          "entity": "Eli Cohen",
           "label": "PER",
           "start": 201,
           "end": 206,
@@ -8787,14 +8787,14 @@
       "translatedDescription": "Taiwanese President Lai Ching-te promised to stand up to China and defend democracy when he took office in 2024. Lai, a staunch defender of Taiwan's sovereignty and detested by Beijing, was elected in January 2024 with 40 per cent of the vote, but his Democratic Progressive Party (DPP) lost its majority in parliament.",
       "ner": [
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Lai",
+          "entity": "Lai Ching-Te",
           "label": "PER",
           "start": 9,
           "end": 12,
@@ -8850,14 +8850,14 @@
       "translatedDescription": "US President Donald Trump will hold a phone call with Russia's Vladimir Putin on Monday as part of his long-running effort to end the war set off by Moscow's 2022 invasion of Ukraine. After the negotiations, Trump announced that he would speak by phone with the Russian president in a bid to end the \"bloodbath\" in Ukraine, which has destroyed large swathes of the country and displaced millions of people.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 24,
           "end": 29,
@@ -8934,7 +8934,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 67,
           "end": 69,
@@ -8948,7 +8948,7 @@
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 81,
           "end": 87,
@@ -8962,7 +8962,7 @@
           "source": "description"
         },
         {
-          "entity": "European Union",
+          "entity": "European Union Agency for Asylum",
           "label": "ORG",
           "start": 114,
           "end": 128,
@@ -8990,7 +8990,7 @@
       "translatedDescription": "The Mexican Navy training vessel Cuauhtémoc crashed into the Brooklyn Bridge, resulting in two cadet fatalities and multiple injuries. A mechanical failure is suspected to have caused the ship to lose power and drift into the bridge during a farewell ceremony. Investigations are underway, raising concerns about potential staffing issues within the US Coast Guard.",
       "ner": [
         {
-          "entity": "Brooklyn Bridge",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 0,
           "end": 15,
@@ -9088,28 +9088,28 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 242,
           "end": 247,
           "source": "description"
         },
         {
-          "entity": "Harris",
+          "entity": "Kamala Harris",
           "label": "PER",
           "start": 249,
           "end": 255,
           "source": "description"
         },
         {
-          "entity": "Obama",
+          "entity": "Barack Obama",
           "label": "PER",
           "start": 257,
           "end": 262,
           "source": "description"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 339,
           "end": 344,
@@ -9144,7 +9144,7 @@
           "source": "description"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 196,
           "end": 201,
@@ -9263,7 +9263,7 @@
           "source": "description"
         },
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 228,
           "end": 235,
@@ -9319,7 +9319,7 @@
           "source": "description"
         },
         {
-          "entity": "Covid",
+          "entity": "Covid-19",
           "label": "MISC",
           "start": 225,
           "end": 230,
@@ -9361,7 +9361,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 173,
           "end": 178,
@@ -9375,7 +9375,7 @@
           "source": "description"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 230,
           "end": 235,
@@ -9417,7 +9417,7 @@
           "source": "description"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 74,
           "end": 80,
@@ -9494,7 +9494,7 @@
       "translatedDescription": "The US president and his allies pocketed US$320 million in trading fees, as the cryptocurrency $TRUMP surged in value ahead of the dinner.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -9606,7 +9606,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 76,
           "end": 78,
@@ -9879,14 +9879,14 @@
       "translatedDescription": "Russia unleashed one of the biggest drone barrages against Ukraine – a show of force ahead of talks between President Vladimir Putin and his US counterpart Donald Trump.",
       "ner": [
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 13,
           "end": 18,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 30,
           "end": 35,
@@ -9942,14 +9942,14 @@
       "translatedDescription": "Facing mounting pressure over the risk of famine, Israel has stepped up its campaign in Gaza, where Palestinian officials said 130 people were killed in attacks overnight.",
       "ner": [
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 38,
           "end": 42,
@@ -9984,14 +9984,14 @@
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 9,
           "end": 15,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 23,
           "end": 27,
@@ -10033,14 +10033,14 @@
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 12,
@@ -10096,14 +10096,14 @@
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 37,
           "end": 43,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 57,
           "end": 61,
@@ -10145,7 +10145,7 @@
           "source": "title"
         },
         {
-          "entity": "Brooklyn Bridge",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 46,
           "end": 61,
@@ -10180,14 +10180,14 @@
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 9,
           "end": 15,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 34,
           "end": 38,
@@ -10229,14 +10229,14 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 36,
           "end": 41,
           "source": "title"
         },
         {
-          "entity": "Gulf",
+          "entity": "Exmouth Gulf",
           "label": "LOC",
           "start": 60,
           "end": 64,
@@ -10320,7 +10320,7 @@
           "source": "description"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 49,
           "end": 51,
@@ -10355,7 +10355,7 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 9,
           "end": 13,
@@ -10376,7 +10376,7 @@
           "source": "description"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 50,
           "end": 57,
@@ -10516,7 +10516,7 @@
           "source": "title"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 54,
           "end": 56,
@@ -10530,14 +10530,14 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 75,
           "end": 79,
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 142,
           "end": 148,
@@ -10572,14 +10572,14 @@
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 19,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 54,
           "end": 56,
@@ -10593,7 +10593,7 @@
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 144,
           "end": 150,
@@ -10635,7 +10635,7 @@
           "source": "title"
         },
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 9,
           "end": 16,
@@ -10649,7 +10649,7 @@
           "source": "title"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 125,
           "end": 131,
@@ -10754,7 +10754,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 184,
           "end": 192,
@@ -10803,7 +10803,7 @@
           "source": "title"
         },
         {
-          "entity": "Macron",
+          "entity": "Emmanuel Macron",
           "label": "PER",
           "start": 87,
           "end": 93,
@@ -10915,7 +10915,7 @@
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 29,
           "end": 34,
@@ -10992,7 +10992,7 @@
           "source": "title"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 9,
           "end": 11,
@@ -11027,14 +11027,14 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 115,
           "end": 119,
           "source": "description"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 154,
           "end": 160,
@@ -11195,7 +11195,7 @@
       "translatedDescription": "A telephone interview must take place on Monday between the American president, Donald Trump, and his Russian counterpart, Vladimir Putin. Volodymyr Zelensky met Pope Leon XIV on Sunday and the American vice-president, J. D. Vance, in Rome.",
       "ner": [
         {
-          "entity": "War",
+          "entity": "World War",
           "label": "MISC",
           "start": 6,
           "end": 9,
@@ -11223,7 +11223,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 60,
           "end": 68,
@@ -11251,7 +11251,7 @@
           "source": "description"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 162,
           "end": 166,
@@ -11286,7 +11286,7 @@
       "translatedDescription": "The Israeli army announced on Sunday that it had started a \"vast land operation in the north and south of the Gaza Strip in the last twenty-four hours\", as part of the operation called \"Les trouts de Gédéon\".",
       "ner": [
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 13,
           "end": 17,
@@ -11300,7 +11300,7 @@
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 4,
           "end": 11,
@@ -11349,7 +11349,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 80,
           "end": 82,
@@ -11412,7 +11412,7 @@
           "source": "description"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 161,
           "end": 167,
@@ -11482,7 +11482,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 13,
           "end": 18,
@@ -11496,7 +11496,7 @@
           "source": "description"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 58,
           "end": 63,
@@ -11510,7 +11510,7 @@
           "source": "description"
         },
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 97,
           "end": 105,
@@ -11559,7 +11559,7 @@
       "translatedDescription": "Increasing energy costs put a strain on many people in Germany. Those who heat with gas or oil are particularly concerned about the future price development, shows a survey. Much suggests that this is justified.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 55,
           "end": 62,
@@ -11587,7 +11587,7 @@
           "source": "title"
         },
         {
-          "entity": "Klingbeil",
+          "entity": "Lars Klingbeil",
           "label": "PER",
           "start": 17,
           "end": 26,
@@ -11901,7 +11901,7 @@
           "source": "description"
         },
         {
-          "entity": "Supreme Court",
+          "entity": "US Supreme Court",
           "label": "ORG",
           "start": 140,
           "end": 153,
@@ -12136,7 +12136,7 @@
       "translatedDescription": "Aren't there many certainties in such a volatile market? And the Donald Trump government is proof one of the few that have been standing over the last few decades. Read more (05/18/2025 - 23h00)",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 6,
           "end": 11,
@@ -12185,7 +12185,7 @@
           "source": "title"
         },
         {
-          "entity": "Supreme Court",
+          "entity": "US Supreme Court",
           "label": "ORG",
           "start": 4,
           "end": 17,
@@ -12199,7 +12199,7 @@
           "source": "description"
         },
         {
-          "entity": "Court",
+          "entity": "Federal Administrative Court Roger Sc",
           "label": "ORG",
           "start": 146,
           "end": 151,
@@ -12262,7 +12262,7 @@
           "source": "description"
         },
         {
-          "entity": "Blue",
+          "entity": "Blue Zone",
           "label": "LOC",
           "start": 309,
           "end": 313,
@@ -12276,7 +12276,7 @@
           "source": "description"
         },
         {
-          "entity": "UN",
+          "entity": "UN Security Council",
           "label": "ORG",
           "start": 338,
           "end": 340,
@@ -12353,7 +12353,7 @@
           "source": "description"
         },
         {
-          "entity": "Congress",
+          "entity": "National Congress",
           "label": "ORG",
           "start": 288,
           "end": 296,
@@ -12738,7 +12738,7 @@
           "source": "title"
         },
         {
-          "entity": "Cannes",
+          "entity": "Cannes Red Carpet",
           "label": "LOC",
           "start": 35,
           "end": 41,
@@ -12787,7 +12787,7 @@
           "source": "title"
         },
         {
-          "entity": "Buenos Aires",
+          "entity": "City of Buenos Aires",
           "label": "LOC",
           "start": 30,
           "end": 42,
@@ -12927,7 +12927,7 @@
       "translatedDescription": "After receiving effusive applause at the Great Lumière Theater, the main Cannes Festival, the team of \"The Secret Agent\" met with the Brazilian press a few meters from the Festivals Palace, at a time of celebration for the delivery of the film in the most important film show in the world. Read more (05/18/2025 - 18h10)",
       "ner": [
         {
-          "entity": "Kleber Mendonça",
+          "entity": "Kleber Mendonça Fi",
           "label": "PER",
           "start": 0,
           "end": 15,
@@ -12990,14 +12990,14 @@
           "source": "title"
         },
         {
-          "entity": "Xuxa",
+          "entity": "Xuxa Meneghel",
           "label": "PER",
           "start": 17,
           "end": 21,
           "source": "title"
         },
         {
-          "entity": "Ministry of Culture",
+          "entity": "Delegation of the Ministry of Culture",
           "label": "ORG",
           "start": 58,
           "end": 77,
@@ -13122,7 +13122,7 @@
           "source": "title"
         },
         {
-          "entity": "Cannes",
+          "entity": "Cannes Red Carpet",
           "label": "LOC",
           "start": 28,
           "end": 34,
@@ -13205,7 +13205,7 @@
       "translatedDescription": "Former United States President Joe Biden, 82, received diagnosis on Friday (16) in an aggressive way of prostate cancer, according to a statement issued on Sunday by a spokesman. The cancer has already spread to the bones, according to the former president's office read Mais (05/18/2025 - 17h30)",
       "ner": [
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -13324,7 +13324,7 @@
       "translatedDescription": "Germany Foreign Minister Gustav Stresemann spoke for two hours in Parliament on Tuesday (19). He renewed his loyalty oath to the Dawes Plan (an initiative that attempts to create conditions for the country to be able to pay repairs to World War) and stressed the need for financial assistance in the United States. Read more (05/18/2025 - 17h00)",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 6,
           "end": 13,
@@ -13352,7 +13352,7 @@
           "source": "description"
         },
         {
-          "entity": "World War",
+          "entity": "Third World War",
           "label": "MISC",
           "start": 235,
           "end": 244,
@@ -13401,7 +13401,7 @@
           "source": "title"
         },
         {
-          "entity": "European Union",
+          "entity": "European Union Agency for Asylum",
           "label": "ORG",
           "start": 66,
           "end": 80,
@@ -13443,7 +13443,7 @@
           "source": "description"
         },
         {
-          "entity": "Ka",
+          "entity": "Li Ka",
           "label": "PER",
           "start": 345,
           "end": 347,
@@ -13667,7 +13667,7 @@
           "source": "title"
         },
         {
-          "entity": "United",
+          "entity": "United Nations",
           "label": "ORG",
           "start": 0,
           "end": 6,
@@ -13681,7 +13681,7 @@
           "source": "description"
         },
         {
-          "entity": "Congress",
+          "entity": "National Congress",
           "label": "ORG",
           "start": 154,
           "end": 162,
@@ -13800,14 +13800,14 @@
           "source": "title"
         },
         {
-          "entity": "Luís",
+          "entity": "Luís Montenegro",
           "label": "PER",
           "start": 7,
           "end": 11,
           "source": "description"
         },
         {
-          "entity": "Luis",
+          "entity": "Luis Montenegro",
           "label": "PER",
           "start": 41,
           "end": 45,
@@ -13954,7 +13954,7 @@
           "source": "description"
         },
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 385,
           "end": 393,
@@ -13989,7 +13989,7 @@
           "source": "title"
         },
         {
-          "entity": "Buenos Aires",
+          "entity": "City of Buenos Aires",
           "label": "LOC",
           "start": 114,
           "end": 126,
@@ -14017,7 +14017,7 @@
           "source": "title"
         },
         {
-          "entity": "Alckmin",
+          "entity": "Geraldo Alckmin",
           "label": "PER",
           "start": 49,
           "end": 56,
@@ -14135,7 +14135,7 @@
           "source": "description"
         },
         {
-          "entity": "The",
+          "entity": "The Phoenician Scheme",
           "label": "MISC",
           "start": 147,
           "end": 150,
@@ -14156,7 +14156,7 @@
       "translatedDescription": "Spaniard Carlos Alcaraz beat Italian Jannik Sinner by 2 sets at 0 on Sunday (18), with 7-6 and 6-1 partials, and won the title of the Masters 1000 of Rome. The match lasted about an hour and a half. Read more (05/18/2025 - 15h22)",
       "ner": [
         {
-          "entity": "Sinner",
+          "entity": "Jannik Sinner",
           "label": "PER",
           "start": 17,
           "end": 23,
@@ -14170,7 +14170,7 @@
           "source": "title"
         },
         {
-          "entity": "Alcaraz",
+          "entity": "Carlos Alcaraz",
           "label": "PER",
           "start": 58,
           "end": 65,
@@ -14233,14 +14233,14 @@
       "translatedDescription": "In a surprising turn, centrist Nicosur Dan, mayor of Bucharest, won the ultranationalist George Simion in the second round of the presidential election in Romania. The election of this Sunday (18), considered by analysts the most important in the country in the post-communism phase, takes the country out of a collision route with European Union and NATO. He also brakes the rise of the pro-Russian block in the region, which already has Hungary and Slovakia. Read more (05/18/2025 - 15h15)",
       "ner": [
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 0,
           "end": 8,
           "source": "title"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 34,
           "end": 39,
@@ -14275,7 +14275,7 @@
           "source": "description"
         },
         {
-          "entity": "European Union",
+          "entity": "European Union Agency for Asylum",
           "label": "ORG",
           "start": 332,
           "end": 346,
@@ -14359,7 +14359,7 @@
           "source": "title"
         },
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 42,
           "end": 46,
@@ -14583,7 +14583,7 @@
           "source": "title"
         },
         {
-          "entity": "Lula",
+          "entity": "Luiz Inacio Lula Da Silva",
           "label": "PER",
           "start": 40,
           "end": 44,
@@ -14708,7 +14708,7 @@
           "source": "title"
         },
         {
-          "entity": "Quebrada",
+          "entity": "Canoa Quebrada",
           "label": "LOC",
           "start": 46,
           "end": 54,
@@ -14806,7 +14806,7 @@
           "source": "description"
         },
         {
-          "entity": "Tucci",
+          "entity": "Stanley Tucci",
           "label": "PER",
           "start": 38,
           "end": 43,
@@ -14820,7 +14820,7 @@
           "source": "description"
         },
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 116,
           "end": 124,
@@ -14862,7 +14862,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 407,
           "end": 415,
@@ -14918,21 +14918,21 @@
           "source": "title"
         },
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 22,
           "end": 26,
           "source": "title"
         },
         {
-          "entity": "Leo",
+          "entity": "Leo Xiv",
           "label": "PER",
           "start": 27,
           "end": 30,
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 50,
           "end": 58,
@@ -14960,7 +14960,7 @@
           "source": "description"
         },
         {
-          "entity": "Vatican",
+          "entity": "Vatican City",
           "label": "LOC",
           "start": 253,
           "end": 260,
@@ -15002,7 +15002,7 @@
           "source": "title"
         },
         {
-          "entity": "Kleber Mendonça",
+          "entity": "Kleber Mendonça Fi",
           "label": "PER",
           "start": 23,
           "end": 38,
@@ -15079,7 +15079,7 @@
       "translatedDescription": "Author of decisions that contradicted the National Congress, the Supreme Court Minister Flávio Dino gave an order on Sunday (18) calling a public hearing to June 27 with the purpose of dealing with the obligation by the Federal Government of the execution of parliamentary amendments. Read more (05/18/2025 - 12:34 pm)",
       "ner": [
         {
-          "entity": "Dino",
+          "entity": "Vio Dino",
           "label": "PER",
           "start": 0,
           "end": 4,
@@ -15093,7 +15093,7 @@
           "source": "description"
         },
         {
-          "entity": "Supreme Court",
+          "entity": "US Supreme Court",
           "label": "ORG",
           "start": 65,
           "end": 78,
@@ -15142,7 +15142,7 @@
           "source": "title"
         },
         {
-          "entity": "Supreme Court",
+          "entity": "US Supreme Court",
           "label": "ORG",
           "start": 23,
           "end": 36,
@@ -15408,7 +15408,7 @@
           "source": "title"
         },
         {
-          "entity": "Nunes",
+          "entity": "Ricardo Nunes",
           "label": "PER",
           "start": 13,
           "end": 18,
@@ -15527,7 +15527,7 @@
           "source": "title"
         },
         {
-          "entity": "Eurovision",
+          "entity": "Eurovision Song Contest",
           "label": "MISC",
           "start": 62,
           "end": 72,
@@ -15555,7 +15555,7 @@
           "source": "description"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 147,
           "end": 153,
@@ -15659,7 +15659,7 @@
           "source": "title"
         },
         {
-          "entity": "Popó",
+          "entity": "Popó\" Freitas",
           "label": "PER",
           "start": 63,
           "end": 67,
@@ -16093,7 +16093,7 @@
           "source": "title"
         },
         {
-          "entity": "Cannes",
+          "entity": "Cannes Red Carpet",
           "label": "LOC",
           "start": 74,
           "end": 80,
@@ -16184,7 +16184,7 @@
           "source": "description"
         },
         {
-          "entity": "Leo",
+          "entity": "Leo Xiv",
           "label": "PER",
           "start": 93,
           "end": 96,
@@ -16268,14 +16268,14 @@
       "translatedDescription": "The Israeli army said on Sunday (18) that he began extensive land operations throughout the north and south of the Gaza Strip. The announcement was made after a new round of indirect negotiations between Israel and the terrorist group Hamas in Qatar did not advance, according to sources on both sides heard by Reuters agency. Read more (05/18/2025 - 09h09)",
       "ner": [
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 34,
           "end": 40,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 89,
           "end": 93,
@@ -16338,7 +16338,7 @@
           "source": "description"
         },
         {
-          "entity": "California",
+          "entity": "Southern California",
           "label": "LOC",
           "start": 85,
           "end": 95,
@@ -16394,7 +16394,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "WHO",
+          "entity": "The Who",
           "label": "ORG",
           "start": 0,
           "end": 3,
@@ -16429,14 +16429,14 @@
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 64,
           "end": 70,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 85,
           "end": 89,
@@ -16485,14 +16485,14 @@
       "translatedDescription": "Former U.S. president Joe Biden “is a fighter,” his vice president Kamala Harris said on Sunday after he announced that he had been diagnosed with an aggressive form of prostate cancer that had spread to his bones.",
       "ner": [
         {
-          "entity": "Obama",
+          "entity": "Barack Obama",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 11,
           "end": 16,
@@ -16534,14 +16534,14 @@
       "translatedDescription": "It was not immediately clear when aid would enter Gaza, or how. The Israeli military body in charge of overseeing aid did not comment.",
       "ner": [
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 43,
           "end": 47,
@@ -16611,7 +16611,7 @@
           "source": "description"
         },
         {
-          "entity": "Kashmir",
+          "entity": "Azad Kashmir",
           "label": "LOC",
           "start": 173,
           "end": 180,
@@ -16681,14 +16681,14 @@
           "source": "description"
         },
         {
-          "entity": "Saudi",
+          "entity": "Saudi Noor Campaign",
           "label": "MISC",
           "start": 1852,
           "end": 1857,
           "source": "description"
         },
         {
-          "entity": "Arabia",
+          "entity": "Saudi Arabia",
           "label": "LOC",
           "start": 1858,
           "end": 1864,
@@ -16779,7 +16779,7 @@
           "source": "description"
         },
         {
-          "entity": "Commission",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 2319,
           "end": 2329,
@@ -16800,7 +16800,7 @@
       "translatedDescription": "NEW DELHI:  In light of the ceasefire reached between Pakistan and India last week after days of hostilities, demands are growing in India to reopen the Kartarpur corridor to allow devotees to visit the shrine of Guru Nanak in Pakistan, reports said on Sunday. The demands gain heft from the permission granted to truckers, carrying perishables from Afghanistan, to cross into India from Pakistan via Wagah. After the Pahalgam attack, India shut down the Wagah-Attari border crossing, a move reciprocated by Pakistan. The officiating Jathedar of Sri Akal Takht Sahib, Giani Kuldeep Singh Gargajj, also joined the calls, urging the governments of India and Pakistan to reopen the Kartarpur corridor, especially now that the “atmosphere between the two countries is becoming more peaceful”. Sikhs pray daily for open access to the gurdwaras from which they were separated, and therefore, keeping the Kartarpur Sahib Corridor closed is not justified, he said, adding that the corridor would further contribute to peace and harmony between the two nations and strengthen mutual ties. New Delhi allows trucks from Afghanistan carrying perishable items to enter country via Wagah Since its inauguration in 2019 , a large number of Sikh devotees have been visiting the holy site in Narowal, where they bow in reverence and receive the blessings of Guru Nanak Dev Ji. Hence, reopening the corridor without delay would reflect and honour the sentiments of the Sikh community. According to Jathedar Gargajj, both nations — and the region as a whole — are in greater need of peace, progress, mutual love, and cooperation, rather than tension and conflict. He praised those national and international leaders who played a wise and compassionate role in defusing the war-like situation and promoting calm. A separate report in Indian newspaper The Hindustan Times said the ceasefire between India and Pakistan brought renewed hope to Indian devotees, eager to visit Gurdwara Darbar Sahib in Kartarpur, the final resting place of Sikhism’s founder Guru Nanak. Although Pakistan continued to keep its side of the corridor open, India suspended the pilgrimage on May 7. Approximately 150 Sikh pilgrims, who had arrived at the Dera Baba Nanak Integrated Check Post in India’s Gurdaspur district, were turned back after waiting over 90 minutes, as the corridor was abruptly shut after tensions rose due to the Pahalgam attack . Nevertheless, the Sikh community remains optimistic. Dera Baba Nanak resident Baba Sukhdeep Singh Bedi, a descendant of Guru Nanak, echoed this sentiment: “The recent hostilities cast a shadow over the future of the corridor. This ceasefire is welcome news for us. We struggled for many years to see this corridor become a reality.” The Kartarpur corridor was jointly inaugurated by the Pakistan and Indian prime ministers on November 9, 2019. It grants Indian pilgrims visa-free, dawn-to-dusk access to the revered shrine. Stretching 4.7 km, it connects Dera Baba Nanak Sahib in India’s Punjab with Gurdwara Darbar Sahib in Pakistan. Wagah-Attari border While the Kartarpur corridor remains shut, the Indian government has allowed the entry of freight trucks from Taliban-ruled Afghanistan into India through the Wagah-Attari border. Official sources said the Afghan authorities had requested the Indian Ministry of External Affairs to facilitate 162 freight trucks stuck in Pakistan due to the border closure. “In this regard, it is intimated that the Government of India has given necessary permission to allow the aforementioned 162 trucks into India through the Wagah-Attari Border. It is further intimated that Indian Customs have made necessary arrangements to facilitate the movement of cargo in aforesaid 162 trucks,” an official document revealed. Mukesh Sidhwani, a dry fruit trader from Amritsar, welcomed the development. “The trucks have started crossing over. So far, five trucks have crossed. This is a huge relief. The goods are semi-perishable, and every day’s delay translates into massive losses,” the report quoted him as saying. Nearly 90 per cent of India’s trade with Afghanistan is routed through the Attari-Wagah border, which is also the only land link allowed for trade between India and Pakistan. The development came a few days after Indian External Affairs Minister S. Jaishankar held his first-ever conversation with Afghanistan’s interim Foreign Minister Amir Khan Muttaqi and underlined India’s friendship with the Afghan people and its support for their development needs. Published in Dawn, May 19th, 2025",
       "ner": [
         {
-          "entity": "Kartarpur",
+          "entity": "Kartarpur Sahib Corridor",
           "label": "LOC",
           "start": 17,
           "end": 26,
@@ -16821,7 +16821,7 @@
           "source": "description"
         },
         {
-          "entity": "Guru Nanak",
+          "entity": "Guru Nanak Dev Ji",
           "label": "PER",
           "start": 213,
           "end": 223,
@@ -16940,7 +16940,7 @@
           "source": "description"
         },
         {
-          "entity": "Sahib",
+          "entity": "Kartarpur Sahib Corridor",
           "label": "LOC",
           "start": 1969,
           "end": 1974,
@@ -16954,7 +16954,7 @@
           "source": "description"
         },
         {
-          "entity": "Guru",
+          "entity": "Guru Nanak",
           "label": "PER",
           "start": 2034,
           "end": 2038,
@@ -17010,7 +17010,7 @@
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 166,
           "end": 171,
@@ -17045,7 +17045,7 @@
           "source": "description"
         },
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 1197,
           "end": 1202,
@@ -17073,7 +17073,7 @@
           "source": "description"
         },
         {
-          "entity": "Ania",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 1385,
           "end": 1389,
@@ -17087,7 +17087,7 @@
           "source": "description"
         },
         {
-          "entity": "Joe",
+          "entity": "Joe Exotic",
           "label": "PER",
           "start": 1586,
           "end": 1589,
@@ -17101,7 +17101,7 @@
           "source": "description"
         },
         {
-          "entity": "Obama",
+          "entity": "Barack Obama",
           "label": "PER",
           "start": 1743,
           "end": 1748,
@@ -17136,14 +17136,14 @@
           "source": "description"
         },
         {
-          "entity": "Chris",
+          "entity": "Chris Hay",
           "label": "PER",
           "start": 2291,
           "end": 2296,
           "source": "description"
         },
         {
-          "entity": "George",
+          "entity": "George Simion",
           "label": "PER",
           "start": 2297,
           "end": 2303,
@@ -17171,7 +17171,7 @@
           "source": "title"
         },
         {
-          "entity": "Kashmir",
+          "entity": "Azad Kashmir",
           "label": "LOC",
           "start": 37,
           "end": 44,
@@ -17332,21 +17332,21 @@
           "source": "title"
         },
         {
-          "entity": "Supreme Court",
+          "entity": "US Supreme Court",
           "label": "ORG",
           "start": 4,
           "end": 17,
           "source": "description"
         },
         {
-          "entity": "Noor",
+          "entity": "Noor Mukadam",
           "label": "PER",
           "start": 155,
           "end": 159,
           "source": "description"
         },
         {
-          "entity": "Zahir",
+          "entity": "Zahir Jaffer",
           "label": "PER",
           "start": 198,
           "end": 203,
@@ -17402,7 +17402,7 @@
           "source": "description"
         },
         {
-          "entity": "Jaffer",
+          "entity": "Zahir Jaffer",
           "label": "PER",
           "start": 1277,
           "end": 1283,
@@ -17437,14 +17437,14 @@
           "source": "description"
         },
         {
-          "entity": "Adam",
+          "entity": "Adam Selwood",
           "label": "PER",
           "start": 1572,
           "end": 1576,
           "source": "description"
         },
         {
-          "entity": "HC",
+          "entity": "HC CJ",
           "label": "ORG",
           "start": 2053,
           "end": 2055,
@@ -17472,7 +17472,7 @@
       "translatedDescription": "ISLAMABAD: Pakis­tan, China and Afgha­nistan are set to hold tripartite talks in Beijing on Tuesday (tomorrow) to disc­uss regional peace and security in the wake of a military standoff between Pakistan and India. According to media reports, the foreign ministers of the three nations will meet to discuss issues of mutual interest, including regional stability and cooperation. Deputy Prime Minister and Foreign Minister Ishaq Dar is set to leave today (Monday) for an official visit to Beijing from May 19 to 22 to hold in-depth discussions with Chinese Foreign Minister Wang Yi on the evolving situation in South Asia and its implications for peace and stability, the Foreign Office said on Sunday. Afghanistan’s interim Foreign Minister Amir Khan Muttaqi is expected to arrive in Beijing tomorrow. The talks follow the recently brokered ceasefire between Pakistan and India, and amid reports that Afghanistan was supporting India in the conflict with Pakistan. Pakis­tan’s Defence Minister Khawaja Asif said in a statement on Sunday that no country was supporting India except Israel and Afghanistan. Mr Dar’s visit is being seen as significant as tensions remained high in the region following a tense military standoff between Pakistan and India over the Pahalgam attack in occupied Kashmir. India blamed the attack on Pakistan without evidence. On the night of May 6-7, Indian air strikes in Punjab and Azad Kashmir killed civilians, prompting Islamabad to shoot down six Indian jets. After drone interceptions and airbase strikes, US intervention on May 10 led to a ceasefire . India has maintained its aggressive stance, while Paki­stan has warned against further escalation and offered dialogue. China had also reaffirmed its support for Pakistan amid the escalation with India in a meeting with President Asif Ali Zardari on May 5. According to the Foreign Office, Mr Dar will travel to China today at the invitation of the Chinese foreign minister and will hold in-depth discussions there. “The pair will discuss the evolving regional situation in South Asia and its implications for peace and stability,” the Foreign Office said. “The two sides will also review the entire spectrum of Pakistan-China bilateral relations and exchange views on regional and global developments of mutual interest.” It added that the visit was part of the ongoing high-level exchanges between the two countries. Pakistan and China share longstanding strategic ties, with economic cooperation at the core of their relationship. The China-Pakistan Economic Corridor (CPEC), a flagship project under China’s Belt and Road Initiative, continues to be described by Pakistani officials as a “lifeline” for the national economy. In March, China further extended its financial support by rolling over a $2 billion loan for one year, easing pressure on Pakistan’s foreign exch­ange reserves and offering critical relief amid economic challenges. Published in Dawn, May 19th, 2025",
       "ner": [
         {
-          "entity": "Dar",
+          "entity": "Q Dar",
           "label": "PER",
           "start": 0,
           "end": 3,
@@ -17584,14 +17584,14 @@
           "source": "description"
         },
         {
-          "entity": "Asif",
+          "entity": "Asif Ali Zardari",
           "label": "PER",
           "start": 1002,
           "end": 1006,
           "source": "description"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 1081,
           "end": 1087,
@@ -17605,7 +17605,7 @@
           "source": "description"
         },
         {
-          "entity": "Kashmir",
+          "entity": "Azad Kashmir",
           "label": "LOC",
           "start": 1289,
           "end": 1296,
@@ -17654,21 +17654,21 @@
           "source": "description"
         },
         {
-          "entity": "South",
+          "entity": "South Africa",
           "label": "LOC",
           "start": 2060,
           "end": 2065,
           "source": "description"
         },
         {
-          "entity": "Asia",
+          "entity": "South Asia",
           "label": "LOC",
           "start": 2066,
           "end": 2070,
           "source": "description"
         },
         {
-          "entity": "Office",
+          "entity": "Foreign, Common­wealth and Development Office",
           "label": "ORG",
           "start": 2130,
           "end": 2136,
@@ -17717,7 +17717,7 @@
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 247,
           "end": 251,
@@ -17780,7 +17780,7 @@
           "source": "description"
         },
         {
-          "entity": "Kashmir",
+          "entity": "Azad Kashmir",
           "label": "LOC",
           "start": 494,
           "end": 501,
@@ -17801,14 +17801,14 @@
           "source": "description"
         },
         {
-          "entity": "Modi",
+          "entity": "Narendra Modi",
           "label": "PER",
           "start": 1843,
           "end": 1847,
           "source": "description"
         },
         {
-          "entity": "Delhi",
+          "entity": "New Delhi",
           "label": "LOC",
           "start": 2301,
           "end": 2306,
@@ -17857,7 +17857,7 @@
           "source": "description"
         },
         {
-          "entity": "Delhi",
+          "entity": "New Delhi",
           "label": "LOC",
           "start": 67,
           "end": 72,
@@ -17878,7 +17878,7 @@
           "source": "description"
         },
         {
-          "entity": "Kashmir",
+          "entity": "Azad Kashmir",
           "label": "LOC",
           "start": 435,
           "end": 442,
@@ -17892,7 +17892,7 @@
           "source": "description"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 718,
           "end": 726,
@@ -17913,14 +17913,14 @@
           "source": "description"
         },
         {
-          "entity": "Sin",
+          "entity": "Original Sin",
           "label": "MISC",
           "start": 1047,
           "end": 1050,
           "source": "description"
         },
         {
-          "entity": "Mahmudabad",
+          "entity": "Ali Khan Mahmudabad",
           "label": "PER",
           "start": 1080,
           "end": 1090,
@@ -17983,7 +17983,7 @@
           "source": "description"
         },
         {
-          "entity": "Ma",
+          "entity": "Ma Cruz",
           "label": "PER",
           "start": 2110,
           "end": 2112,
@@ -17997,7 +17997,7 @@
           "source": "description"
         },
         {
-          "entity": "Commission",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 2388,
           "end": 2398,
@@ -18060,7 +18060,7 @@
       "translatedDescription": "Javier Milei cements his hold on Argentina’s political right months before pivotal midterm elections. Leer más",
       "ner": [
         {
-          "entity": "Milei",
+          "entity": "Javier Milei",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -18116,7 +18116,7 @@
       "translatedDescription": "Javier Milei gave the baton to his top spokesman and the candidate delivered; Manuel Adorni calls for allies to join La Libertad Avanza in order to “end Kirchnerism.” Leer más",
       "ner": [
         {
-          "entity": "Adorni",
+          "entity": "Manuel Adorni",
           "label": "PER",
           "start": 0,
           "end": 6,
@@ -18179,7 +18179,7 @@
       "translatedDescription": "Victory for President Milei’s La Libertad Avanza; PRO suffers worst defeat since taking power in Buenos Aires City almost two decades ago; Peronism finishes second. Leer más",
       "ner": [
         {
-          "entity": "Milei",
+          "entity": "Javier Milei",
           "label": "PER",
           "start": 22,
           "end": 27,
@@ -18368,7 +18368,7 @@
       "translatedDescription": "Deputy President Kindiki and CS Murkomen accuse Mr Gachagua of fanning violence ahead of the...",
       "ner": [
         {
-          "entity": "Ruto",
+          "entity": "Ruto IEBC",
           "label": "ORG",
           "start": 18,
           "end": 22,
@@ -18396,7 +18396,7 @@
           "source": "description"
         },
         {
-          "entity": "Gachagua",
+          "entity": "Rigathi Gachagua",
           "label": "PER",
           "start": 51,
           "end": 59,
@@ -18417,7 +18417,7 @@
       "translatedDescription": "Preparations for the launch of the African Energy Bank (AEB) have entered their final phase following a high-level review meeting in Abuja, as the Minister of State Petroleum Resources (Oil), Senator Heineken Lokpobiri, hosted the President of Afreximbank, Prof. Benedict Oramah and the Secretary General of the African Petroleum Producers’ Organisation (APPO), Dr Omar Farouk Ibrahim. The post Preparation in top gear as Minister Lokpobiri confirms African Energy Bank launch appeared first on Vanguard News .",
       "ner": [
         {
-          "entity": "Lokpobiri",
+          "entity": "Heineken Lokpobiri",
           "label": "PER",
           "start": 36,
           "end": 45,
@@ -18627,7 +18627,7 @@
           "source": "title"
         },
         {
-          "entity": "Kano",
+          "entity": "Kano State",
           "label": "LOC",
           "start": 53,
           "end": 57,
@@ -18690,7 +18690,7 @@
       "translatedDescription": "By Evelyn Usman & Olasunkanmi Akoni A two-storey building under construction collapsed, yesterday, on Ishaga Road, opposite the Central Mosque in the Idi Araba area of Mushin, Lagos State. One body was recovered from the rubble, while three persons were rescued and rushed to a nearby hospital for medical attention.The cause of the collapse could […] The post One dead, 3 rescued in Lagos building collapse appeared first on Vanguard News .",
       "ner": [
         {
-          "entity": "Lagos",
+          "entity": "Lagos State",
           "label": "LOC",
           "start": 23,
           "end": 28,
@@ -18858,7 +18858,7 @@
           "source": "title"
         },
         {
-          "entity": "Lagos",
+          "entity": "Lagos State",
           "label": "LOC",
           "start": 44,
           "end": 49,
@@ -19019,7 +19019,7 @@
       "translatedDescription": "Lafarge Africa Plc’s plea contesting the court’s authority to hear a lawsuit against its planned sale of its shareholding to a Chinese investor has been dismissed by a Federal High Court in Ikoyi, Lagos. Strategic Consultancy Limited, a Nigerian business and shareholder in Lafarge Africa, had sued the cement company over its intention to sell […] The post Court strikes out Lafarge’s motion over planned shares sales appeared first on Vanguard News .",
       "ner": [
         {
-          "entity": "Lafarge",
+          "entity": "Lafarge Africa",
           "label": "ORG",
           "start": 18,
           "end": 25,
@@ -19054,7 +19054,7 @@
           "source": "description"
         },
         {
-          "entity": "Lagos",
+          "entity": "Lagos State",
           "label": "LOC",
           "start": 197,
           "end": 202,
@@ -19075,7 +19075,7 @@
           "source": "description"
         },
         {
-          "entity": "Lafarge Africa",
+          "entity": "Lafarge Africa Plc",
           "label": "ORG",
           "start": 274,
           "end": 288,
@@ -19117,7 +19117,7 @@
           "source": "title"
         },
         {
-          "entity": "Tinubu",
+          "entity": "Bola Tinubu",
           "label": "PER",
           "start": 81,
           "end": 87,
@@ -19131,7 +19131,7 @@
           "source": "description"
         },
         {
-          "entity": "St",
+          "entity": "St. Louis",
           "label": "LOC",
           "start": 64,
           "end": 66,
@@ -19152,7 +19152,7 @@
           "source": "description"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 148,
           "end": 155,
@@ -19285,7 +19285,7 @@
           "source": "title"
         },
         {
-          "entity": "Tinubu",
+          "entity": "Bola Tinubu",
           "label": "PER",
           "start": 46,
           "end": 52,
@@ -19341,7 +19341,7 @@
       "translatedDescription": "4400 billion kroner. That's the overall fortune that Donald Trump and his hand -picked people are leading the United States sitting on.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -19466,7 +19466,7 @@
           "source": "title"
         },
         {
-          "entity": "Cannes",
+          "entity": "Cannes Red Carpet",
           "label": "LOC",
           "start": 33,
           "end": 39,
@@ -19542,7 +19542,7 @@
           "source": "title"
         },
         {
-          "entity": "Ka",
+          "entity": "Li Ka",
           "label": "PER",
           "start": 77,
           "end": 79,
@@ -19640,14 +19640,14 @@
           "source": "title"
         },
         {
-          "entity": "Macron",
+          "entity": "Emmanuel Macron",
           "label": "PER",
           "start": 17,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 25,
           "end": 30,
@@ -19822,7 +19822,7 @@
       "translatedDescription": "Trump received a gift from Qatar: a Boeing worth 400 million dollars. Editor Merijn de Waal sees how Trump uses presidency more and more emphatically for ...",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 7,
           "end": 12,
@@ -19864,7 +19864,7 @@
       "translatedDescription": "Marcel",
       "ner": [
         {
-          "entity": "Marcel",
+          "entity": "Marcel Asli",
           "label": "PER",
           "start": 0,
           "end": 6,
@@ -19961,7 +19961,7 @@
           "source": "description"
         },
         {
-          "entity": "Starmer",
+          "entity": "Keir Starmer",
           "label": "PER",
           "start": 70,
           "end": 77,
@@ -20010,7 +20010,7 @@
       "translatedDescription": "The radical black leader is one of the most famous and notorious figures in American history, even 100 years after his birth. Especially in times of Donald Trump.",
       "ner": [
         {
-          "entity": "America",
+          "entity": "Latin America",
           "label": "LOC",
           "start": 22,
           "end": 29,
@@ -20024,7 +20024,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 76,
           "end": 84,
@@ -20080,7 +20080,7 @@
       "translatedDescription": "He is the architect of Trump's hard migration policy and the souffleur of his nationalist rhetoric. Now the hardliner is considered a favorite for the post of a consultant for national security. About the life of a political missionary.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -20164,7 +20164,7 @@
           "source": "description"
         },
         {
-          "entity": "GTS",
+          "entity": "Panamera GTS",
           "label": "MISC",
           "start": 51,
           "end": 54,
@@ -20178,7 +20178,7 @@
           "source": "description"
         },
         {
-          "entity": "Panamera GTS",
+          "entity": "Porsche Panamera GTS",
           "label": "MISC",
           "start": 142,
           "end": 154,
@@ -20206,14 +20206,14 @@
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 54,
           "end": 60,
           "source": "description"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 87,
           "end": 91,
@@ -20304,7 +20304,7 @@
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 89,
           "end": 94,
@@ -20520,7 +20520,7 @@
       "translatedDescription": "Anyone who makes jokes over Islam lives dangerously. Those who express themselves bitingly about politicians can get trouble with the public prosecutor. Free speech is in danger.",
       "ner": [
         {
-          "entity": "Germany",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 42,
           "end": 49,
@@ -20569,7 +20569,7 @@
           "source": "description"
         },
         {
-          "entity": "Li",
+          "entity": "Li Ka",
           "label": "PER",
           "start": 104,
           "end": 106,
@@ -20639,7 +20639,7 @@
           "source": "title"
         },
         {
-          "entity": "American",
+          "entity": "South American",
           "label": "MISC",
           "start": 40,
           "end": 48,
@@ -20660,7 +20660,7 @@
       "translatedDescription": "Raphaël Tschanz suspects that other companies are now being left the canton of Zurich.",
       "ner": [
         {
-          "entity": "Zurich",
+          "entity": "Lake Zurich",
           "label": "LOC",
           "start": 21,
           "end": 27,
@@ -20695,14 +20695,14 @@
       "translatedDescription": "For 25 summer, Baba grilled sausages in the pumping station on Lake Zurich. Then an accident stops him.",
       "ner": [
         {
-          "entity": "Zurich",
+          "entity": "Lake Zurich",
           "label": "LOC",
           "start": 60,
           "end": 66,
           "source": "title"
         },
         {
-          "entity": "Baba",
+          "entity": "Abdullahi Baba-Arah",
           "label": "PER",
           "start": 15,
           "end": 19,
@@ -20744,14 +20744,14 @@
           "source": "title"
         },
         {
-          "entity": "pro",
+          "entity": "Pro-EU",
           "label": "MISC",
           "start": 55,
           "end": 58,
           "source": "title"
         },
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 60,
           "end": 68,
@@ -20793,21 +20793,21 @@
           "source": "title"
         },
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 32,
           "end": 39,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 83,
           "end": 87,
           "source": "title"
         },
         {
-          "entity": "Hague",
+          "entity": "The Hague",
           "label": "LOC",
           "start": 131,
           "end": 136,
@@ -20974,7 +20974,7 @@
       "translatedDescription": "Its main time is to be successful in cooling the mood. Trump struck hard, waking the world.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
@@ -21002,7 +21002,7 @@
           "source": "title"
         },
         {
-          "entity": "Hungarian",
+          "entity": "Hungarian Nation's Economic Week",
           "label": "MISC",
           "start": 22,
           "end": 31,
@@ -21058,7 +21058,7 @@
       "translatedDescription": "Levente Boros Bánk's opinion is that not only activists but also voters are mobilized by the event.",
       "ner": [
         {
-          "entity": "The",
+          "entity": "The Mafia of Tigers",
           "label": "ORG",
           "start": 0,
           "end": 3,
@@ -21184,7 +21184,7 @@
           "source": "title"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 60,
           "end": 62,
@@ -21226,7 +21226,7 @@
           "source": "description"
         },
         {
-          "entity": "Saudi",
+          "entity": "Saudi Noor Campaign",
           "label": "MISC",
           "start": 86,
           "end": 91,
@@ -21387,7 +21387,7 @@
           "source": "description"
         },
         {
-          "entity": "European",
+          "entity": "Eastern European",
           "label": "MISC",
           "start": 65,
           "end": 73,
@@ -21471,7 +21471,7 @@
           "source": "title"
         },
         {
-          "entity": "Hungarian",
+          "entity": "Hungarian Nation's Economic Week",
           "label": "MISC",
           "start": 14,
           "end": 23,
@@ -21492,7 +21492,7 @@
       "translatedDescription": "Loic Nego's team, Le Havre, remained miraculously in the French lead.",
       "ner": [
         {
-          "entity": "Hungarian",
+          "entity": "Hungarian Nation's Economic Week",
           "label": "MISC",
           "start": 4,
           "end": 13,
@@ -21562,7 +21562,7 @@
       "translatedDescription": "The shady side of the Earth - Brussels, besides the press and the Ombudsman, neglected us and Europeans.",
       "ner": [
         {
-          "entity": "Ursula",
+          "entity": "Ursula Von Der Leyen",
           "label": "PER",
           "start": 0,
           "end": 6,
@@ -21618,7 +21618,7 @@
           "source": "title"
         },
         {
-          "entity": "Rafizi",
+          "entity": "Rafizi Ramli",
           "label": "PER",
           "start": 88,
           "end": 94,
@@ -21751,7 +21751,7 @@
       "translatedDescription": "IPOH: The claim made by Kedah Mentri Besar Datuk Seri Muhammad Sanusi Md Nor that the Federal Government is deliberately delaying rare earth mining procedures is incorrect, says Nik Nazmi Nik Ahmad. Read full story",
       "ner": [
         {
-          "entity": "Federal",
+          "entity": "Federal Administrative Court Roger Sc",
           "label": "ORG",
           "start": 0,
           "end": 7,
@@ -22178,14 +22178,14 @@
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 20,
           "end": 26,
           "source": "title"
         },
         {
-          "entity": "Lai",
+          "entity": "Lai Ching-Te",
           "label": "PER",
           "start": 35,
           "end": 38,
@@ -22227,14 +22227,14 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Pope",
+          "entity": "Pope Francis",
           "label": "PER",
           "start": 0,
           "end": 4,
           "source": "title"
         },
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 12,
@@ -22268,14 +22268,14 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Putin",
+          "entity": "Vladimir Putin",
           "label": "PER",
           "start": 22,
           "end": 27,
@@ -22317,7 +22317,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -22345,7 +22345,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 34,
           "end": 40,
@@ -22373,7 +22373,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Lai",
+          "entity": "Lai Ching-Te",
           "label": "PER",
           "start": 0,
           "end": 3,
@@ -22401,7 +22401,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -22543,7 +22543,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 11,
           "end": 17,
@@ -22590,7 +22590,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 0,
           "end": 6,
@@ -22694,7 +22694,7 @@
           "source": "title"
         },
         {
-          "entity": "Moody",
+          "entity": "Moody's",
           "label": "ORG",
           "start": 52,
           "end": 57,
@@ -22748,7 +22748,7 @@
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 20,
           "end": 26,
@@ -22816,7 +22816,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 23,
           "end": 28,
@@ -23004,7 +23004,7 @@
           "source": "title"
         },
         {
-          "entity": "Eurovision",
+          "entity": "Eurovision Song Contest",
           "label": "MISC",
           "start": 24,
           "end": 34,
@@ -23025,7 +23025,7 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Brooklyn Bridge",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 0,
           "end": 15,
@@ -23080,14 +23080,14 @@
       "translatedDescription": "",
       "ner": [
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 23,
           "end": 27,
@@ -23115,7 +23115,7 @@
           "source": "title"
         },
         {
-          "entity": "Taiwan",
+          "entity": "Central Taiwan",
           "label": "LOC",
           "start": 30,
           "end": 36,
@@ -23171,7 +23171,7 @@
           "source": "title"
         },
         {
-          "entity": "Saudi",
+          "entity": "Saudi Noor Campaign",
           "label": "MISC",
           "start": 12,
           "end": 17,
@@ -23248,7 +23248,7 @@
           "source": "title"
         },
         {
-          "entity": "New York",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 27,
           "end": 35,
@@ -23283,7 +23283,7 @@
           "source": "description"
         },
         {
-          "entity": "Rodriguez",
+          "entity": "Georgina Rodriguez",
           "label": "PER",
           "start": 166,
           "end": 175,
@@ -23332,21 +23332,21 @@
       "translatedDescription": "INCHEON: Crushers GC Captain Bryson DeChambeau finally converted a 36-hole lead into a LIV Golf victory on Sunday but his teammate Charles Howell III did not make it easy for him.\n\n\tDeChambeau countered Howell’s final-round nine-under 63 with a six-under 66 in a spirited back-nine final-group duel to win the individual title by two shots at LIV Golf Korea presented by Coupang Play.\n\n\tHis Crushers made it a sweep of the trophies at Jack Nicklaus Golf Club Korea by rallying past Smash GC to win the team title.",
       "ner": [
         {
-          "entity": "Dechambeau",
+          "entity": "Ryson Dechambeau",
           "label": "PER",
           "start": 0,
           "end": 10,
           "source": "title"
         },
         {
-          "entity": "Howell",
+          "entity": "Charles Howell Iii",
           "label": "PER",
           "start": 21,
           "end": 27,
           "source": "title"
         },
         {
-          "entity": "Korea",
+          "entity": "South Korea",
           "label": "LOC",
           "start": 55,
           "end": 60,
@@ -23388,7 +23388,7 @@
           "source": "description"
         },
         {
-          "entity": "Crushers",
+          "entity": "Crushers GC",
           "label": "ORG",
           "start": 391,
           "end": 399,
@@ -23430,14 +23430,14 @@
           "source": "title"
         },
         {
-          "entity": "Europe",
+          "entity": "Eastern Europe",
           "label": "LOC",
           "start": 28,
           "end": 34,
           "source": "title"
         },
         {
-          "entity": "European Union",
+          "entity": "European Union Agency for Asylum",
           "label": "ORG",
           "start": 54,
           "end": 68,
@@ -23458,7 +23458,7 @@
           "source": "description"
         },
         {
-          "entity": "EU",
+          "entity": "EU Commission",
           "label": "ORG",
           "start": 164,
           "end": 166,
@@ -23612,14 +23612,14 @@
           "source": "title"
         },
         {
-          "entity": "Saudi",
+          "entity": "Saudi Noor Campaign",
           "label": "MISC",
           "start": 12,
           "end": 17,
           "source": "description"
         },
         {
-          "entity": "Arab",
+          "entity": "Gulf Arab",
           "label": "MISC",
           "start": 92,
           "end": 96,
@@ -23647,7 +23647,7 @@
       "translatedDescription": "RIYADH: Saudi Arabia’s banking sector continued its robust lending expansion in March, with total credit reaching SR3.1 trillion ($827.2 billion), marking a 16.26 percent year-on-year increase. \n\n\tAccording to data from the Saudi Central Bank, also known as SAMA, this represents the highest annual rise in three years and eight months.",
       "ner": [
         {
-          "entity": "Saudi",
+          "entity": "Saudi Noor Campaign",
           "label": "MISC",
           "start": 0,
           "end": 5,
@@ -23724,14 +23724,14 @@
           "source": "description"
         },
         {
-          "entity": "Mohammed",
+          "entity": "Mohammed Bin Rashid",
           "label": "PER",
           "start": 228,
           "end": 236,
           "source": "description"
         },
         {
-          "entity": "Artificial Intelligence",
+          "entity": "Artificial Intelligence Law of",
           "label": "MISC",
           "start": 313,
           "end": 336,
@@ -23773,7 +23773,7 @@
           "source": "description"
         },
         {
-          "entity": "Alexander-Arnold",
+          "entity": "Trent Alexander-Arnold",
           "label": "PER",
           "start": 230,
           "end": 246,
@@ -23801,7 +23801,7 @@
           "source": "description"
         },
         {
-          "entity": "English",
+          "entity": "Natural English",
           "label": "MISC",
           "start": 416,
           "end": 423,
@@ -23822,7 +23822,7 @@
       "translatedDescription": "Dar Wa Emaar Real Estate Investment and Development Company has announced the launch of its latest residential development, “Saraya Al-Sharq,” in partnership with the National Housing Company. The project involves an investment valued at SR750 million ($200 million) in Al-Wajeha destination, Dammam, as part of the company’s ongoing commitment to meeting the evolving needs of Saudi families and supporting the Kingdom’s Vision 2030 goal of increasing homeownership to 70 percent.",
       "ner": [
         {
-          "entity": "Dar Wa Emaar",
+          "entity": "Dar Wa Emaar Real Estate Investment and Development Company",
           "label": "ORG",
           "start": 0,
           "end": 12,
@@ -23871,14 +23871,14 @@
           "source": "description"
         },
         {
-          "entity": "Saudi",
+          "entity": "Saudi Noor Campaign",
           "label": "MISC",
           "start": 378,
           "end": 383,
           "source": "description"
         },
         {
-          "entity": "Kingdom",
+          "entity": "Kingdom of Germany",
           "label": "LOC",
           "start": 412,
           "end": 419,
@@ -23920,7 +23920,7 @@
           "source": "title"
         },
         {
-          "entity": "Buenos Aires",
+          "entity": "City of Buenos Aires",
           "label": "LOC",
           "start": 66,
           "end": 78,
@@ -23976,7 +23976,7 @@
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 29,
           "end": 34,
@@ -24039,14 +24039,14 @@
           "source": "title"
         },
         {
-          "entity": "Brooklyn",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 77,
           "end": 85,
           "source": "title"
         },
         {
-          "entity": "New York",
+          "entity": "New York Brooklyn Bridge",
           "label": "LOC",
           "start": 97,
           "end": 105,
@@ -24095,14 +24095,14 @@
       "translatedDescription": "Multilateral organisms have been warning of a risk of famine if Israel continues the blockade.",
       "ner": [
         {
-          "entity": "Israel",
+          "entity": "Israel Gaza",
           "label": "LOC",
           "start": 0,
           "end": 6,
           "source": "title"
         },
         {
-          "entity": "Gaza",
+          "entity": "Gaza Strip",
           "label": "LOC",
           "start": 78,
           "end": 82,
@@ -24123,7 +24123,7 @@
       "translatedDescription": "In the enthronement Mass, the Pontiff marked the route of his pontificate emphasizing the social.",
       "ner": [
         {
-          "entity": "Leo Xiv",
+          "entity": "Pope Leo Xiv",
           "label": "PER",
           "start": 5,
           "end": 12,
@@ -24172,7 +24172,7 @@
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 32,
           "end": 37,
@@ -24235,14 +24235,14 @@
       "translatedDescription": "The president of the United States, Donald Trump, wished on Sunday a \"prompt and successful recovery\" to his predecessor, Joe Biden, who announced that he has prostate cancer with metastasis in the bones. «Melania and I are sad when we find out about the recent medical diagnosis of Joe Biden. We express our best wishes to Jill and […] Trump entry wishes Biden a \"prompt and successful\" recovery of his prostate cancer: \"Melania and I are sad\" was first published in El Nacional.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 13,
           "end": 18,
@@ -24256,7 +24256,7 @@
           "source": "title"
         },
         {
-          "entity": "Ania",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 82,
           "end": 86,
@@ -24347,7 +24347,7 @@
           "source": "description"
         },
         {
-          "entity": "European Union",
+          "entity": "European Union Agency for Asylum",
           "label": "ORG",
           "start": 303,
           "end": 317,
@@ -24375,14 +24375,14 @@
       "translatedDescription": "The Argentine President's party, Javier Milei, won this Sunday in the legislative elections of the City of Buenos Aires, a traditional bastion of the center -right movement that was in third place behind Peronism (center -left), according to the electoral body. The result places La Libertad advances, Milei's young party, such as [...] Milei's entry is imposed on legislative elections in Buenos Aires: \"The yellow bastion was painted violet\" \"was first published in El Nacional.",
       "ner": [
         {
-          "entity": "Milei",
+          "entity": "Javier Milei",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Buenos Aires",
+          "entity": "City of Buenos Aires",
           "label": "LOC",
           "start": 53,
           "end": 65,
@@ -24417,7 +24417,7 @@
           "source": "description"
         },
         {
-          "entity": "La Libertad",
+          "entity": "La Libertad Avanza",
           "label": "ORG",
           "start": 280,
           "end": 291,
@@ -24445,14 +24445,14 @@
       "translatedDescription": "In the decisive duel of the series, the Oklahoma City Thunder crushed this Sunday 125-93 to the Nikola Jokic denverts and qualified to the final of the NBA west conference for the first time since 2016. The team led by Shai Gilgeous-Alxander They liquidate Jokic's nuggets and advance to the west final was first published in the National.",
       "ner": [
         {
-          "entity": "Thunder",
+          "entity": "Oklahoma City Thunder",
           "label": "ORG",
           "start": 0,
           "end": 7,
           "source": "title"
         },
         {
-          "entity": "Jokic",
+          "entity": "Nikola Jokic",
           "label": "PER",
           "start": 18,
           "end": 23,
@@ -24501,7 +24501,7 @@
           "source": "description"
         },
         {
-          "entity": "National",
+          "entity": "National Geographic",
           "label": "ORG",
           "start": 330,
           "end": 338,
@@ -24522,28 +24522,28 @@
       "translatedDescription": "Donald Trump, Kamala Harris and Barack Obama expressed words of support for Joe Biden, who was diagnosed with prostate cancer.",
       "ner": [
         {
-          "entity": "Trump",
+          "entity": "Ania Trump",
           "label": "PER",
           "start": 0,
           "end": 5,
           "source": "title"
         },
         {
-          "entity": "Harris",
+          "entity": "Kamala Harris",
           "label": "PER",
           "start": 7,
           "end": 13,
           "source": "title"
         },
         {
-          "entity": "Obama",
+          "entity": "Barack Obama",
           "label": "PER",
           "start": 18,
           "end": 23,
           "source": "title"
         },
         {
-          "entity": "Biden",
+          "entity": "Joe Biden",
           "label": "PER",
           "start": 50,
           "end": 55,
@@ -24643,5 +24643,5 @@
       ]
     }
   ],
-  "processedAt": "2025-05-19T04:40:19.331381"
+  "processedAt": "2025-05-27T21:39:15.802602"
 }
