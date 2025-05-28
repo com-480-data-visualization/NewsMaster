@@ -157,7 +157,7 @@ const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode, data }) => {
       return (
         <div className="text-sm text-muted-foreground mt-3">
           <p>No significant entities found for this country.</p>
-          <p className="text-xs mt-1">Country ID: {countryId}</p>
+         
         </div>
       );
     }

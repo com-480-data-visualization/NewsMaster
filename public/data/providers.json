@@ -1305,15 +1305,6 @@
         "country": "OMN"
     },
     {
-        "id": "KCNA Watch",
-        "builtin": true,
-        "language": "en",
-        "url": [
-            "https://kcnawatch.org/feed/"
-        ],
-        "country": "PRK"
-    },
-    {
         "id": "NK News",
         "builtin": true,
         "language": "en",

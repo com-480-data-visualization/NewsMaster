@@ -308,7 +308,8 @@ def process_single_date(date_str: str, top_ner: str):
                     total_exports += 1
             # Associate entities with countries
             for country_code in mentioned_country_codes:
-                entity_counter = country_related_entities[country_code]
+                if country_code != source_country_code:
+                    entity_counter = country_related_entities[country_code]
 
                 for entity in other_entities:
                     entity_counter[entity] += 1
@@ -323,6 +324,20 @@ def process_single_date(date_str: str, top_ner: str):
 
     # Normalize data by articles per country instead of global totals
     all_codes = set(COUNTRY_CODE_TO_NAME.keys())
+    
+    # Minimum mention threshold to filter out noise
+    MIN_MENTIONS = 2
+
+    # Count providers per country for both export and NER normalization
+    providers_per_country = defaultdict(set)
+    for article in articles:
+        source_provider_id = article.get("providerId", "").lower()
+        source_country_code = provider_country_map.get(source_provider_id)
+        if source_country_code:
+            providers_per_country[source_country_code].add(source_provider_id)
+    
+    # Convert sets to counts
+    providers_per_country = {code: len(providers) for code, providers in providers_per_country.items()}
 
     # For import data: normalize by total articles across all countries (since imports are received mentions)
     if total_imports > 0:
@@ -330,23 +345,43 @@ def process_single_date(date_str: str, top_ner: str):
     else:
         normalized_import_data = {code: 0 for code in all_codes}
         
-    # For export data: normalize by articles per source country (since exports are what each country mentions)
-    normalized_export_data = {}
+    # For export data: normalize by providers per source country (since exports are what each country mentions)
+    # Then globally normalize to sum to 1
+    export_ratios = {}
     for code in all_codes:
-        if articles_per_country.get(code, 0) > 0:
-            # Export ratio = mentions made by this country / articles published by this country
-            normalized_export_data[code] = export_counts.get(code, 0) / articles_per_country[code]
+        export_count = export_counts.get(code, 0)
+        provider_count = providers_per_country.get(code, 0)
+        if provider_count > 0:
+            # Export ratio = mentions made by this country / number of providers in this country
+            export_ratios[code] = export_count / provider_count
         else:
-            normalized_export_data[code] = 0
+            export_ratios[code] = 0
+    
+    # Globally normalize export ratios to sum to 1
+    total_export_ratio = sum(export_ratios.values())
+    if total_export_ratio > 0:
+        normalized_export_data = {code: ratio / total_export_ratio for code, ratio in export_ratios.items()}
+    else:
+        normalized_export_data = {code: 0 for code in all_codes}
 
-    # For NER data: normalize by articles per country
-    normalized_ner_data = {}
+    # For NER data: normalize by number of providers per country
+    # Then globally normalize to sum to 1
+    ner_ratios = {}
     for code in all_codes:
-        if articles_per_country.get(code, 0) > 0:
-            # NER ratio = entity mentions by this country / articles published by this country
-            normalized_ner_data[code] = ner_counts.get(code, 0) / articles_per_country[code]
+        ner_count = ner_counts.get(code, 0)
+        provider_count = providers_per_country.get(code, 0)
+        if provider_count > 0 and ner_count >= MIN_MENTIONS:
+            # NER ratio = entity mentions by this country / number of providers in this country
+            ner_ratios[code] = ner_count / provider_count
         else:
-            normalized_ner_data[code] = 0
+            ner_ratios[code] = 0
+    
+    # Globally normalize NER ratios to sum to 1
+    total_ner_ratio = sum(ner_ratios.values())
+    if total_ner_ratio > 0:
+        normalized_ner_data = {code: ratio / total_ner_ratio for code, ratio in ner_ratios.items()}
+    else:
+        normalized_ner_data = {code: 0 for code in all_codes}
 
     # Process top entities for each country
     country_top_entities = {}

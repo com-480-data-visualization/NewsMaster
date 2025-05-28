@@ -1,148 +1,143 @@
 {
   "importData": {
-    "AUT": 0.021435228331780055,
-    "CZE": 0.016775396085740912,
-    "URY": 0.0009319664492078285,
-    "EST": 0.016775396085740912,
-    "BRA": 0.0009319664492078285,
-    "PAN": 0.0009319664492078285,
-    "SYR": 0.003727865796831314,
-    "HRV": 0.015843429636533086,
-    "LUX": 0.015843429636533086,
-    "IDN": 0.0009319664492078285,
-    "JPN": 0.005591798695246971,
-    "NLD": 0.016775396085740912,
-    "YEM": 0.003727865796831314,
-    "COL": 0.0027958993476234857,
-    "ISR": 0.0027958993476234857,
-    "BGR": 0.015843429636533086,
-    "PCN": 0.0009319664492078285,
-    "HUN": 0.016775396085740912,
-    "NZL": 0.0009319664492078285,
-    "ALB": 0.015843429636533086,
-    "SRB": 0.021435228331780055,
-    "VNM": 0.0009319664492078285,
-    "CHE": 0.01863932898415657,
-    "ITA": 0.02050326188257223,
-    "UKR": 0.0391425908667288,
-    "BEL": 0.02050326188257223,
-    "KOR": 0.0027958993476234857,
-    "QAT": 0.0009319664492078285,
-    "TWN": 0.001863932898415657,
-    "VEN": 0.003727865796831314,
-    "SVN": 0.015843429636533086,
-    "HND": 0.0009319664492078285,
-    "MYS": 0.0009319664492078285,
-    "IND": 0.0130475302889096,
-    "PER": 0.001863932898415657,
-    "POL": 0.01863932898415657,
-    "VAT": 0.004659832246039142,
-    "PHL": 0.0009319664492078285,
-    "MNE": 0.017707362534948742,
+    "BIH": 0.015843429636533086,
     "AFG": 0.0027958993476234857,
-    "ROU": 0.02050326188257223,
-    "UGA": 0.009319664492078284,
-    "EGY": 0.0009319664492078285,
-    "GHA": 0.0009319664492078285,
-    "PRK": 0.001863932898415657,
-    "TUR": 0.007455731593662628,
-    "BLR": 0.016775396085740912,
-    "AUS": 0.001863932898415657,
-    "CHN": 0.0195712954333644,
-    "GEO": 0.0009319664492078285,
-    "COG": 0.001863932898415657,
-    "PRT": 0.01863932898415657,
-    "GRC": 0.016775396085740912,
-    "AIA": 0.0009319664492078285,
-    "KEN": 0.001863932898415657,
-    "GBR": 0.02702702702702703,
-    "MOZ": 0.0009319664492078285,
-    "LIE": 0.016775396085740912,
-    "NAM": 0.0009319664492078285,
-    "MEX": 0.0130475302889096,
-    "ESP": 0.021435228331780055,
-    "FIN": 0.017707362534948742,
-    "SSD": 0.0009319664492078285,
-    "RUS": 0.04100652376514446,
-    "LTU": 0.015843429636533086,
-    "IRL": 0.015843429636533086,
-    "BOL": 0.0027958993476234857,
-    "CUB": 0.0009319664492078285,
-    "TON": 0.0009319664492078285,
-    "ARG": 0.004659832246039142,
-    "DEU": 0.0065237651444548,
-    "PAK": 0.004659832246039142,
+    "MYS": 0.0009319664492078285,
+    "BGR": 0.015843429636533086,
     "MDA": 0.016775396085740912,
+    "LIE": 0.016775396085740912,
+    "GHA": 0.0009319664492078285,
+    "KOR": 0.0027958993476234857,
+    "IRL": 0.015843429636533086,
+    "SOM": 0.0009319664492078285,
     "USA": 0.05312208760484623,
-    "SVK": 0.015843429636533086,
-    "CHL": 0.001863932898415657,
+    "URY": 0.0009319664492078285,
+    "AUS": 0.001863932898415657,
     "CYP": 0.015843429636533086,
-    "NGA": 0.001863932898415657,
-    "IRN": 0.004659832246039142,
-    "MMR": 0.0009319664492078285,
-    "AND": 0.015843429636533086,
-    "GTM": 0.0009319664492078285,
-    "HKG": 0.0009319664492078285,
-    "RWA": 0.001863932898415657,
-    "SEN": 0.0009319664492078285,
-    "ARE": 0.005591798695246971,
-    "MHL": 0.0009319664492078285,
-    "FRA": 0.0260950605778192,
-    "DNK": 0.015843429636533086,
     "ZAF": 0.007455731593662628,
-    "ISL": 0.015843429636533086,
-    "LVA": 0.015843429636533086,
-    "SAU": 0.001863932898415657,
+    "VEN": 0.003727865796831314,
+    "POL": 0.01863932898415657,
+    "VNM": 0.0009319664492078285,
+    "MKD": 0.015843429636533086,
+    "BRA": 0.0009319664492078285,
+    "VAT": 0.004659832246039142,
     "MLT": 0.015843429636533086,
     "SWE": 0.017707362534948742,
+    "TUR": 0.007455731593662628,
+    "UGA": 0.009319664492078284,
+    "NAM": 0.0009319664492078285,
+    "COL": 0.0027958993476234857,
+    "HUN": 0.016775396085740912,
+    "SVN": 0.015843429636533086,
+    "RWA": 0.001863932898415657,
+    "TON": 0.0009319664492078285,
+    "PRT": 0.01863932898415657,
+    "MNE": 0.017707362534948742,
+    "BLR": 0.016775396085740912,
+    "MOZ": 0.0009319664492078285,
+    "GTM": 0.0009319664492078285,
+    "PER": 0.001863932898415657,
+    "PRK": 0.001863932898415657,
+    "IND": 0.0130475302889096,
+    "NZL": 0.0009319664492078285,
+    "ARG": 0.004659832246039142,
+    "LVA": 0.015843429636533086,
+    "DNK": 0.015843429636533086,
+    "BOL": 0.0027958993476234857,
+    "PAK": 0.004659832246039142,
+    "ARE": 0.005591798695246971,
+    "COG": 0.001863932898415657,
+    "RUS": 0.04100652376514446,
+    "ALB": 0.015843429636533086,
+    "ITA": 0.02050326188257223,
+    "EST": 0.016775396085740912,
+    "AIA": 0.0009319664492078285,
+    "MMR": 0.0009319664492078285,
+    "SSD": 0.0009319664492078285,
+    "TWN": 0.001863932898415657,
+    "BEL": 0.02050326188257223,
+    "NLD": 0.016775396085740912,
+    "CHL": 0.001863932898415657,
+    "PAN": 0.0009319664492078285,
+    "HND": 0.0009319664492078285,
+    "PHL": 0.0009319664492078285,
+    "PCN": 0.0009319664492078285,
+    "SEN": 0.0009319664492078285,
+    "FRA": 0.0260950605778192,
+    "AUT": 0.021435228331780055,
+    "MHL": 0.0009319664492078285,
+    "DEU": 0.0065237651444548,
+    "EGY": 0.0009319664492078285,
+    "KEN": 0.001863932898415657,
+    "IRN": 0.004659832246039142,
+    "ISL": 0.015843429636533086,
+    "FIN": 0.017707362534948742,
+    "JPN": 0.005591798695246971,
     "NOR": 0.015843429636533086,
-    "BIH": 0.015843429636533086,
-    "MKD": 0.015843429636533086,
     "MLI": 0.0009319664492078285,
-    "SOM": 0.0009319664492078285
+    "GEO": 0.0009319664492078285,
+    "UKR": 0.0391425908667288,
+    "ESP": 0.021435228331780055,
+    "GRC": 0.016775396085740912,
+    "SAU": 0.001863932898415657,
+    "ROU": 0.02050326188257223,
+    "SVK": 0.015843429636533086,
+    "SRB": 0.021435228331780055,
+    "CZE": 0.016775396085740912,
+    "HRV": 0.015843429636533086,
+    "IDN": 0.0009319664492078285,
+    "QAT": 0.0009319664492078285,
+    "CHN": 0.0195712954333644,
+    "GBR": 0.02702702702702703,
+    "ISR": 0.0027958993476234857,
+    "CHE": 0.01863932898415657,
+    "LTU": 0.015843429636533086,
+    "LUX": 0.015843429636533086,
+    "NGA": 0.001863932898415657,
+    "HKG": 0.0009319664492078285,
+    "MEX": 0.0130475302889096,
+    "YEM": 0.003727865796831314,
+    "AND": 0.015843429636533086,
+    "CUB": 0.0009319664492078285,
+    "SYR": 0.003727865796831314
   },
   "exportData": {
-    "BRA": 0.64,
-    "NLD": 1.3333333333333333,
-    "COL": 0.9,
-    "ISR": 0.5,
-    "HUN": 0.2,
-    "CHE": 0.9166666666666666,
-    "TWN": 0.28888888888888886,
-    "MYS": 1.0,
-    "IND": 0.9565217391304348,
-    "DOM": 0.1,
-    "AUS": 0.48148148148148145,
-    "GBR": 7.142857142857143,
-    "ESP": 5.111111111111111,
-    "FIN": 0.3333333333333333,
-    "DEU": 3.8461538461538463,
-    "PAK": 4.583333333333333,
-    "USA": 4.416666666666667,
-    "NGA": 0.06666666666666667,
-    "GTM": 1.3333333333333333,
-    "HKG": 1.1176470588235294,
-    "FRA": 1.25,
-    "DNK": 1.25,
-    "ZAF": 3.25,
-    "SAU": 1.2
+    "MYS": 0.010307507301151006,
+    "USA": 0.018209929565366777,
+    "AUS": 0.006699879745748154,
+    "ZAF": 0.06699879745748154,
+    "BRA": 0.06596804672736643,
+    "COL": 0.009276756571035905,
+    "HUN": 0.002061501460230201,
+    "GTM": 0.004123002920460402,
+    "IND": 0.011338258031266106,
+    "DNK": 0.005153753650575503,
+    "PAK": 0.05669129015633053,
+    "TWN": 0.013399759491496308,
+    "NLD": 0.004123002920460402,
+    "DOM": 0.0010307507301151005,
+    "FRA": 0.010307507301151006,
+    "DEU": 0.5669129015633053,
+    "FIN": 0.0030922521903453018,
+    "ESP": 0.04741453358529463,
+    "SAU": 0.012369008761381207,
+    "GBR": 0.05153753650575503,
+    "ISR": 0.0010307507301151005,
+    "CHE": 0.011338258031266106,
+    "NGA": 0.0010307507301151005,
+    "HKG": 0.01958426387218691
   },
   "nerData": {
-    "BRA": 0.1,
-    "COL": 0.2,
-    "TWN": 0.022222222222222223,
-    "MYS": 0.1,
-    "IND": 0.391304347826087,
-    "GBR": 0.14285714285714285,
-    "ESP": 0.1111111111111111,
-    "DEU": 0.13986013986013987,
-    "PAK": 0.16666666666666666,
-    "USA": 0.16666666666666666,
-    "GTM": 0.3333333333333333,
-    "HKG": 0.058823529411764705,
-    "FRA": 0.25,
-    "ZAF": 0.4,
-    "SAU": 0.2
+    "USA": 0.012779552715654952,
+    "ZAF": 0.15335463258785942,
+    "BRA": 0.1916932907348243,
+    "COL": 0.038338658146964855,
+    "IND": 0.08626198083067094,
+    "PAK": 0.038338658146964855,
+    "FRA": 0.038338658146964855,
+    "DEU": 0.3833865814696486,
+    "SAU": 0.038338658146964855,
+    "GBR": 0.019169329073482427
   },
   "TopEntitiesByCountry": {
     "YEM": [
@@ -197,6 +192,53 @@
         "share": 0.09090909090909091
       }
     ],
+    "SYR": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.2
+      },
+      {
+        "entity": "Netanyahu",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Gulf Tour",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Austro-German",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Bashar Al-Assad",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Ahmad Al-Charaa",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Old",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Lucio",
+        "count": 1,
+        "share": 0.1
+      },
+      {
+        "entity": "Lucimar Da Silva Ferreira",
+        "count": 1,
+        "share": 0.1
+      }
+    ],
     "IRN": [
       {
         "entity": "Donald Trump",
@@ -247,2019 +289,6 @@
         "entity": "Fox News",
         "count": 1,
         "share": 0.07692307692307693
-      }
-    ],
-    "SYR": [
-      {
-        "entity": "Donald Trump",
-        "count": 2,
-        "share": 0.25
-      },
-      {
-        "entity": "Netanyahu",
-        "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "Gulf Tour",
-        "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "Austro-German",
-        "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "Bashar Al-Assad",
-        "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "Ahmad Al-Charaa",
-        "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "Old",
-        "count": 1,
-        "share": 0.125
-      }
-    ],
-    "AUT": [
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 6,
-        "share": 0.16666666666666666
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.1388888888888889
-      },
-      {
-        "entity": "Jj",
-        "count": 4,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Wasted Love",
-        "count": 4,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.05555555555555555
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.05555555555555555
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.05555555555555555
-      }
-    ],
-    "BEL": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.16129032258064516
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.12903225806451613
-      },
-      {
-        "entity": "EU Commission",
-        "count": 4,
-        "share": 0.12903225806451613
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.12903225806451613
-      },
-      {
-        "entity": "EU",
-        "count": 3,
-        "share": 0.0967741935483871
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.0967741935483871
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Trump Gulf",
-        "count": 2,
-        "share": 0.06451612903225806
-      }
-    ],
-    "CZE": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "SVK": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "EST": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.1724137931034483
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.13793103448275862
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.13793103448275862
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 3,
-        "share": 0.10344827586206896
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10344827586206896
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Wasted Love",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.06896551724137931
-      }
-    ],
-    "CYP": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "PRT": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "SVN": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "GRC": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "AND": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "GBR": [
-      {
-        "entity": "Donald Trump",
-        "count": 9,
-        "share": 0.24324324324324326
-      },
-      {
-        "entity": "EU Commission",
-        "count": 5,
-        "share": 0.13513513513513514
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.10810810810810811
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.10810810810810811
-      },
-      {
-        "entity": "British",
-        "count": 3,
-        "share": 0.08108108108108109
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.08108108108108109
-      },
-      {
-        "entity": "Manchester City",
-        "count": 3,
-        "share": 0.08108108108108109
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.05405405405405406
-      },
-      {
-        "entity": "Keir Starmer",
-        "count": 2,
-        "share": 0.05405405405405406
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.05405405405405406
-      }
-    ],
-    "HRV": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "LUX": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "LIE": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "POL": [
-      {
-        "entity": "Donald Trump",
-        "count": 6,
-        "share": 0.1935483870967742
-      },
-      {
-        "entity": "European",
-        "count": 4,
-        "share": 0.12903225806451613
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.12903225806451613
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.12903225806451613
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.0967741935483871
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Polish",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06451612903225806
-      }
-    ],
-    "ESP": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.1724137931034483
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.13793103448275862
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.13793103448275862
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10344827586206896
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.10344827586206896
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "French",
-        "count": 2,
-        "share": 0.06896551724137931
-      }
-    ],
-    "NLD": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "FRA": [
-      {
-        "entity": "Donald Trump",
-        "count": 6,
-        "share": 0.17142857142857143
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.11428571428571428
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.11428571428571428
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 3,
-        "share": 0.08571428571428572
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.08571428571428572
-      },
-      {
-        "entity": "Austro-German",
-        "count": 3,
-        "share": 0.08571428571428572
-      },
-      {
-        "entity": "French",
-        "count": 3,
-        "share": 0.08571428571428572
-      },
-      {
-        "entity": "Emmanuel Macron",
-        "count": 3,
-        "share": 0.08571428571428572
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.08571428571428572
-      },
-      {
-        "entity": "News24",
-        "count": 3,
-        "share": 0.08571428571428572
-      }
-    ],
-    "FIN": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "DNK": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "MNE": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "UGA": [
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.21428571428571427
-      },
-      {
-        "entity": "British",
-        "count": 2,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 2,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "EU",
-        "count": 1,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Keir Starmer",
-        "count": 1,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 1,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Jj",
-        "count": 1,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Wasted Love",
-        "count": 1,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "David Lammy",
-        "count": 1,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "ghan",
-        "count": 1,
-        "share": 0.07142857142857142
-      }
-    ],
-    "ROU": [
-      {
-        "entity": "Donald Trump",
-        "count": 8,
-        "share": 0.22857142857142856
-      },
-      {
-        "entity": "George Simion",
-        "count": 4,
-        "share": 0.11428571428571428
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.11428571428571428
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.11428571428571428
-      },
-      {
-        "entity": "EU",
-        "count": 3,
-        "share": 0.08571428571428572
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.08571428571428572
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.08571428571428572
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.05714285714285714
-      },
-      {
-        "entity": "European Union",
-        "count": 2,
-        "share": 0.05714285714285714
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.05714285714285714
-      }
-    ],
-    "RUS": [
-      {
-        "entity": "Vladimir Putin",
-        "count": 16,
-        "share": 0.25806451612903225
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 12,
-        "share": 0.1935483870967742
-      },
-      {
-        "entity": "Volodymyr Zelenskyy",
-        "count": 7,
-        "share": 0.11290322580645161
-      },
-      {
-        "entity": "Volodymyr Zelensky",
-        "count": 5,
-        "share": 0.08064516129032258
-      },
-      {
-        "entity": "News24",
-        "count": 5,
-        "share": 0.08064516129032258
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 4,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.04838709677419355
-      },
-      {
-        "entity": "Austro-German",
-        "count": 3,
-        "share": 0.04838709677419355
-      },
-      {
-        "entity": "Emmanuel Macron",
-        "count": 3,
-        "share": 0.04838709677419355
-      }
-    ],
-    "BGR": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "ISL": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "LTU": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "IRL": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "HUN": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "LVA": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "ALB": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "MLT": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "SRB": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.1724137931034483
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.13793103448275862
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.13793103448275862
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10344827586206896
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.10344827586206896
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.06896551724137931
-      }
-    ],
-    "NOR": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "CHE": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.15625
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 4,
-        "share": 0.125
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.125
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.125
-      },
-      {
-        "entity": "Jj",
-        "count": 3,
-        "share": 0.09375
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.09375
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 3,
-        "share": 0.09375
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.0625
-      },
-      {
-        "entity": "Wasted Love",
-        "count": 2,
-        "share": 0.0625
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.0625
-      }
-    ],
-    "DEU": [
-      {
-        "entity": "Austro-German",
-        "count": 5,
-        "share": 0.15151515151515152
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 5,
-        "share": 0.15151515151515152
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.15151515151515152
-      },
-      {
-        "entity": "European",
-        "count": 4,
-        "share": 0.12121212121212122
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.12121212121212122
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.06060606060606061
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.06060606060606061
-      },
-      {
-        "entity": "DW",
-        "count": 2,
-        "share": 0.06060606060606061
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06060606060606061
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.06060606060606061
-      }
-    ],
-    "ITA": [
-      {
-        "entity": "Friedrich Merz",
-        "count": 6,
-        "share": 0.1875
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.15625
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.125
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.09375
-      },
-      {
-        "entity": "Austro-German",
-        "count": 3,
-        "share": 0.09375
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.09375
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.0625
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.0625
-      },
-      {
-        "entity": "Georgia Meloni",
-        "count": 2,
-        "share": 0.0625
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.0625
-      }
-    ],
-    "BLR": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.1724137931034483
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.13793103448275862
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.13793103448275862
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10344827586206896
-      },
-      {
-        "entity": "Austro-German",
-        "count": 3,
-        "share": 0.10344827586206896
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.06896551724137931
       }
     ],
     "UKR": [
@@ -2366,7 +395,7 @@
         "share": 0.07142857142857142
       }
     ],
-    "MKD": [
+    "PRT": [
       {
         "entity": "Donald Trump",
         "count": 5,
@@ -2418,7 +447,7 @@
         "share": 0.07142857142857142
       }
     ],
-    "SWE": [
+    "MNE": [
       {
         "entity": "Donald Trump",
         "count": 5,
@@ -2455,7 +484,54 @@
         "share": 0.07142857142857142
       },
       {
-        "entity": "Recep Tayyip Erdogan",
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "BGR": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
         "count": 2,
         "share": 0.07142857142857142
       },
@@ -2466,6 +542,11 @@
       },
       {
         "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
         "count": 2,
         "share": 0.07142857142857142
       }
@@ -2522,160 +603,2049 @@
         "share": 0.06666666666666667
       }
     ],
-    "USA": [
+    "BLR": [
       {
         "entity": "Donald Trump",
-        "count": 14,
-        "share": 0.35
+        "count": 5,
+        "share": 0.1724137931034483
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.13793103448275862
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.13793103448275862
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10344827586206896
+      },
+      {
+        "entity": "Austro-German",
+        "count": 3,
+        "share": 0.10344827586206896
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.06896551724137931
+      }
+    ],
+    "BEL": [
+      {
+        "entity": "Donald Trump",
+        "count": 6,
+        "share": 0.18181818181818182
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 5,
+        "share": 0.15151515151515152
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.12121212121212122
+      },
+      {
+        "entity": "EU Commission",
+        "count": 4,
+        "share": 0.12121212121212122
+      },
+      {
+        "entity": "EU",
+        "count": 3,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.06060606060606061
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.06060606060606061
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.06060606060606061
+      },
+      {
+        "entity": "Trump Gulf",
+        "count": 2,
+        "share": 0.06060606060606061
+      }
+    ],
+    "ESP": [
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14814814814814814
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 4,
+        "share": 0.14814814814814814
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 3,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07407407407407407
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07407407407407407
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07407407407407407
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07407407407407407
+      },
+      {
+        "entity": "French",
+        "count": 2,
+        "share": 0.07407407407407407
+      }
+    ],
+    "NLD": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "GRC": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "LIE": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "IRL": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "ROU": [
+      {
+        "entity": "Donald Trump",
+        "count": 8,
+        "share": 0.21621621621621623
+      },
+      {
+        "entity": "George Simion",
+        "count": 4,
+        "share": 0.10810810810810811
+      },
+      {
+        "entity": "European",
+        "count": 4,
+        "share": 0.10810810810810811
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.10810810810810811
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.10810810810810811
+      },
+      {
+        "entity": "EU",
+        "count": 3,
+        "share": 0.08108108108108109
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 3,
+        "share": 0.08108108108108109
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.08108108108108109
+      },
+      {
+        "entity": "European Union",
+        "count": 2,
+        "share": 0.05405405405405406
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.05405405405405406
+      }
+    ],
+    "LVA": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "FRA": [
+      {
+        "entity": "Donald Trump",
+        "count": 6,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 5,
+        "share": 0.1388888888888889
+      },
+      {
+        "entity": "Austro-German",
+        "count": 4,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "French",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Emmanuel Macron",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "News24",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.05555555555555555
+      }
+    ],
+    "SVK": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "AUT": [
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 6,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.1388888888888889
+      },
+      {
+        "entity": "Jj",
+        "count": 4,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Wasted Love",
+        "count": 4,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.05555555555555555
+      }
+    ],
+    "DNK": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "CYP": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "SRB": [
+      {
+        "entity": "Friedrich Merz",
+        "count": 7,
+        "share": 0.16279069767441862
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 7,
+        "share": 0.16279069767441862
+      },
+      {
+        "entity": "EU Commission",
+        "count": 5,
+        "share": 0.11627906976744186
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 4,
+        "share": 0.09302325581395349
+      },
+      {
+        "entity": "European",
+        "count": 4,
+        "share": 0.09302325581395349
+      },
+      {
+        "entity": "Austro-German",
+        "count": 4,
+        "share": 0.09302325581395349
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 4,
+        "share": 0.09302325581395349
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.09302325581395349
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.046511627906976744
+      },
+      {
+        "entity": "Jj",
+        "count": 2,
+        "share": 0.046511627906976744
+      }
+    ],
+    "DEU": [
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.2222222222222222
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 3,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "European",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "British",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Keir Starmer",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Trump Gulf",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Volodymy",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "R Zelenskyy",
+        "count": 1,
+        "share": 0.05555555555555555
+      }
+    ],
+    "POL": [
+      {
+        "entity": "Donald Trump",
+        "count": 6,
+        "share": 0.1935483870967742
+      },
+      {
+        "entity": "European",
+        "count": 4,
+        "share": 0.12903225806451613
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.12903225806451613
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.12903225806451613
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.0967741935483871
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Polish",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.06451612903225806
+      }
+    ],
+    "CZE": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "HRV": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "MKD": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "MLT": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "SWE": [
+      {
+        "entity": "Donald Trump",
+        "count": 7,
+        "share": 0.1794871794871795
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 7,
+        "share": 0.1794871794871795
+      },
+      {
+        "entity": "European",
+        "count": 5,
+        "share": 0.1282051282051282
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 5,
+        "share": 0.1282051282051282
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 4,
+        "share": 0.10256410256410256
+      },
+      {
+        "entity": "EU",
+        "count": 3,
+        "share": 0.07692307692307693
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.05128205128205128
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.05128205128205128
+      },
+      {
+        "entity": "Recep Tayyip Erdogan",
+        "count": 2,
+        "share": 0.05128205128205128
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.05128205128205128
+      }
+    ],
+    "GBR": [
+      {
+        "entity": "Donald Trump",
+        "count": 7,
+        "share": 0.21875
+      },
+      {
+        "entity": "EU Commission",
+        "count": 5,
+        "share": 0.15625
+      },
+      {
+        "entity": "British",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "Austro-German",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "Manchester City",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "Keir Starmer",
+        "count": 2,
+        "share": 0.0625
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.0625
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.0625
+      },
+      {
+        "entity": "English",
+        "count": 2,
+        "share": 0.0625
+      }
+    ],
+    "ISL": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "CHE": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 4,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.1
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Jj",
+        "count": 2,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Wasted Love",
+        "count": 2,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.06666666666666667
+      }
+    ],
+    "LTU": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "LUX": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "UGA": [
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.1875
+      },
+      {
+        "entity": "British",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Johann Wolfgang Von Goethe",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "Martin Luther",
+        "count": 2,
+        "share": 0.125
+      },
+      {
+        "entity": "EU",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Keir Starmer",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Jj",
+        "count": 1,
+        "share": 0.0625
+      },
+      {
+        "entity": "Wasted Love",
+        "count": 1,
+        "share": 0.0625
+      }
+    ],
+    "FIN": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "NOR": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "HUN": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "AND": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "RUS": [
+      {
+        "entity": "Vladimir Putin",
+        "count": 16,
+        "share": 0.25
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 12,
+        "share": 0.1875
+      },
+      {
+        "entity": "Volodymyr Zelenskyy",
+        "count": 7,
+        "share": 0.109375
+      },
+      {
+        "entity": "Volodymyr Zelensky",
+        "count": 5,
+        "share": 0.078125
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 5,
+        "share": 0.078125
       },
       {
         "entity": "News24",
         "count": 5,
+        "share": 0.078125
+      },
+      {
+        "entity": "Austro-German",
+        "count": 4,
+        "share": 0.0625
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.0625
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.046875
+      },
+      {
+        "entity": "Emmanuel Macron",
+        "count": 3,
+        "share": 0.046875
+      }
+    ],
+    "SVN": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "ALB": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "ITA": [
+      {
+        "entity": "Friedrich Merz",
+        "count": 6,
+        "share": 0.1875
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.15625
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
         "share": 0.125
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "Austro-German",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.0625
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.0625
+      },
+      {
+        "entity": "Georgia Meloni",
+        "count": 2,
+        "share": 0.0625
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.0625
+      }
+    ],
+    "EST": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.1724137931034483
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.13793103448275862
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.13793103448275862
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 3,
+        "share": 0.10344827586206896
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10344827586206896
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Wasted Love",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.06896551724137931
+      }
+    ],
+    "USA": [
+      {
+        "entity": "Donald Trump",
+        "count": 16,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "News24",
+        "count": 5,
+        "share": 0.10416666666666667
       },
       {
         "entity": "Mexico",
         "count": 4,
-        "share": 0.1
+        "share": 0.08333333333333333
       },
       {
         "entity": "UN Security Council",
         "count": 4,
-        "share": 0.1
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Carlo An",
+        "count": 4,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Carlos Alberto Parreira",
+        "count": 4,
+        "share": 0.08333333333333333
       },
       {
         "entity": "FBI",
         "count": 3,
-        "share": 0.075
+        "share": 0.0625
       },
-      {
-        "entity": "Eric Adams",
-        "count": 2,
-        "share": 0.05
-      },
-      {
-        "entity": "United Nations Food and Agriculture Organization",
-        "count": 2,
-        "share": 0.05
-      },
-      {
-        "entity": "FIFA Club World Cup",
-        "count": 2,
-        "share": 0.05
-      },
-      {
-        "entity": "Carlo An",
-        "count": 2,
-        "share": 0.05
-      },
-      {
-        "entity": "Carlos Alberto Parreira",
-        "count": 2,
-        "share": 0.05
-      }
-    ],
-    "PAK": [
       {
         "entity": "Manzer Ali Gill",
         "count": 3,
-        "share": 0.15
+        "share": 0.0625
       },
       {
         "entity": "Aliya Hamza Malik",
         "count": 3,
-        "share": 0.15
+        "share": 0.0625
       },
       {
-        "entity": "Imran Khan",
+        "entity": "Eric Adams",
         "count": 2,
-        "share": 0.1
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 2,
-        "share": 0.1
-      },
-      {
-        "entity": "Convention on International Trade in Endangered Species of Wild Fauna and Flora",
-        "count": 2,
-        "share": 0.1
-      },
-      {
-        "entity": "Faez Isa",
-        "count": 2,
-        "share": 0.1
-      },
-      {
-        "entity": "Shehbaz Sharif",
-        "count": 2,
-        "share": 0.1
-      },
-      {
-        "entity": "Fazle Akbar",
-        "count": 2,
-        "share": 0.1
-      },
-      {
-        "entity": "BBC",
-        "count": 1,
-        "share": 0.05
-      },
-      {
-        "entity": "IP",
-        "count": 1,
-        "share": 0.05
+        "share": 0.041666666666666664
       }
     ],
-    "IND": [
-      {
-        "entity": "Virat Kohli",
-        "count": 2,
-        "share": 0.16666666666666666
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 2,
-        "share": 0.16666666666666666
-      },
+    "PAK": [
       {
         "entity": "BBC",
         "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Pk Rosy",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Malayalam",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Jay Shah",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "International Cricket Council",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "DW",
-        "count": 1,
-        "share": 0.08333333333333333
+        "share": 0.3333333333333333
       },
       {
         "entity": "IP",
         "count": 1,
-        "share": 0.08333333333333333
+        "share": 0.3333333333333333
       },
       {
         "entity": "Palestine",
         "count": 1,
-        "share": 0.08333333333333333
+        "share": 0.3333333333333333
+      }
+    ],
+    "IND": [
+      {
+        "entity": "Vanguard News",
+        "count": 4,
+        "share": 0.26666666666666666
+      },
+      {
+        "entity": "Virat Kohli",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "BBC",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Pk Rosy",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Malayalam",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Jay Shah",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "International Cricket Council",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "DW",
+        "count": 1,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "IP",
+        "count": 1,
+        "share": 0.06666666666666667
       }
     ],
     "TUR": [
@@ -2739,54 +2709,54 @@
     ],
     "CHN": [
       {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.20833333333333334
+        "entity": "Mainland Chinese",
+        "count": 6,
+        "share": 0.2222222222222222
       },
       {
-        "entity": "Mainland Chinese",
-        "count": 4,
-        "share": 0.16666666666666666
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.18518518518518517
       },
       {
         "entity": "EU Commission",
         "count": 2,
-        "share": 0.08333333333333333
+        "share": 0.07407407407407407
       },
       {
         "entity": "Xi",
         "count": 2,
-        "share": 0.08333333333333333
+        "share": 0.07407407407407407
       },
       {
         "entity": "Fu Wa",
         "count": 2,
-        "share": 0.08333333333333333
+        "share": 0.07407407407407407
       },
       {
         "entity": "Feng Yi",
         "count": 2,
-        "share": 0.08333333333333333
+        "share": 0.07407407407407407
+      },
+      {
+        "entity": "CBRE",
+        "count": 2,
+        "share": 0.07407407407407407
       },
       {
         "entity": "A Lula Da Silva",
         "count": 2,
-        "share": 0.08333333333333333
+        "share": 0.07407407407407407
       },
       {
         "entity": "Tiktok CPI",
         "count": 2,
-        "share": 0.08333333333333333
+        "share": 0.07407407407407407
       },
       {
         "entity": "Portugal",
         "count": 2,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Latin American",
-        "count": 1,
-        "share": 0.041666666666666664
+        "share": 0.07407407407407407
       }
     ],
     "MOZ": [
@@ -2860,54 +2830,54 @@
     ],
     "ISR": [
       {
+        "entity": "News24",
+        "count": 2,
+        "share": 0.15384615384615385
+      },
+      {
+        "entity": "Episcopal Church",
+        "count": 2,
+        "share": 0.15384615384615385
+      },
+      {
         "entity": "Lufthansa Cargo",
         "count": 2,
-        "share": 0.18181818181818182
+        "share": 0.15384615384615385
       },
       {
         "entity": "Austro-German",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.07692307692307693
       },
       {
         "entity": "Herzog",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.07692307692307693
       },
       {
         "entity": "Steinmeier",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.07692307692307693
       },
       {
         "entity": "DW",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.07692307692307693
       },
       {
         "entity": "Christoph Strack",
         "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "News24",
-        "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.07692307692307693
       },
       {
         "entity": "Bedouins",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.07692307692307693
       },
       {
-        "entity": "Houthi",
+        "entity": "Afrikaners",
         "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Switzerland",
-        "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.07692307692307693
       }
     ],
     "VAT": [
@@ -2966,104 +2936,94 @@
       {
         "entity": "Donald Trump",
         "count": 2,
-        "share": 0.18181818181818182
+        "share": 0.2222222222222222
       },
       {
         "entity": "FIFA Congress",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.1111111111111111
       },
       {
         "entity": "Infantino",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.1111111111111111
       },
       {
         "entity": "FIFA Club World Cup",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.1111111111111111
       },
       {
         "entity": "Sarah Game",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.1111111111111111
       },
       {
         "entity": "Pauline Hanson",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.1111111111111111
       },
       {
         "entity": "One Nation",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.1111111111111111
       },
       {
         "entity": "South",
         "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Gabon",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "General Authority for Statistics",
-        "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.1111111111111111
       }
     ],
     "ARG": [
       {
         "entity": "Javier Milei",
         "count": 2,
-        "share": 0.18181818181818182
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Me",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Rca",
+        "count": 2,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Regis Na",
+        "count": 2,
+        "share": 0.13333333333333333
       },
       {
         "entity": "Nazi",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.06666666666666667
       },
       {
         "entity": "US Supreme Court",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.06666666666666667
       },
       {
         "entity": "World War II",
         "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "EU Commission",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Me",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Rca",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Regis Na",
-        "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.06666666666666667
       },
       {
         "entity": "DUBAI",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.06666666666666667
       },
       {
         "entity": "The Eternaut\u201d",
         "count": 1,
-        "share": 0.09090909090909091
+        "share": 0.06666666666666667
       }
     ],
     "COL": [
@@ -3149,54 +3109,54 @@
     ],
     "ZAF": [
       {
-        "entity": "Episcopal Church",
-        "count": 2,
-        "share": 0.15384615384615385
-      },
-      {
         "entity": "Jazz in the Cold War",
         "count": 2,
-        "share": 0.15384615384615385
+        "share": 0.16666666666666666
       },
       {
         "entity": "Andy Beshear",
         "count": 2,
-        "share": 0.15384615384615385
+        "share": 0.16666666666666666
       },
       {
         "entity": "Super Netball",
         "count": 1,
-        "share": 0.07692307692307693
-      },
-      {
-        "entity": "News24",
-        "count": 1,
-        "share": 0.07692307692307693
-      },
-      {
-        "entity": "Afrikaners",
-        "count": 1,
-        "share": 0.07692307692307693
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.08333333333333333
       },
       {
         "entity": "Chat",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.08333333333333333
       },
       {
         "entity": "Dom Odilo",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.08333333333333333
       },
       {
         "entity": "Oscar",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Johan Grimonprez",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Louis Armstrong",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Max Roach",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "CIA",
+        "count": 1,
+        "share": 0.08333333333333333
       }
     ],
     "VNM": [
@@ -3204,58 +3164,6 @@
         "entity": "South American",
         "count": 1,
         "share": 1.0
-      }
-    ],
-    "BRA": [
-      {
-        "entity": "Carlo An",
-        "count": 3,
-        "share": 0.13636363636363635
-      },
-      {
-        "entity": "Union-PP Federation",
-        "count": 3,
-        "share": 0.13636363636363635
-      },
-      {
-        "entity": "Folha",
-        "count": 2,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "R Bolsonaro",
-        "count": 2,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Maria de F",
-        "count": 2,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "South American",
-        "count": 2,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Carlos Alberto Parreira",
-        "count": 2,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "CBF",
-        "count": 2,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "House of Representatives",
-        "count": 2,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Jos\u00e9 Mujica",
-        "count": 2,
-        "share": 0.09090909090909091
       }
     ],
     "CHL": [
@@ -3269,84 +3177,84 @@
       {
         "entity": "Johann Wolfgang Von Goethe",
         "count": 2,
-        "share": 0.15384615384615385
+        "share": 0.16666666666666666
       },
       {
         "entity": "Martin Luther",
         "count": 2,
-        "share": 0.15384615384615385
-      },
-      {
-        "entity": "Elizabeth Szczepanska",
-        "count": 2,
-        "share": 0.15384615384615385
+        "share": 0.16666666666666666
       },
       {
         "entity": "Robert Schumann",
         "count": 1,
-        "share": 0.07692307692307693
-      },
-      {
-        "entity": "Fashion Week",
-        "count": 1,
-        "share": 0.07692307692307693
-      },
-      {
-        "entity": "Step",
-        "count": 1,
-        "share": 0.07692307692307693
-      },
-      {
-        "entity": "ACT Revenue Office",
-        "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.08333333333333333
       },
       {
         "entity": "Albanese",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.08333333333333333
       },
       {
         "entity": "Ursula Von Der Leyen",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.08333333333333333
       },
       {
         "entity": "EU Commission",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Liberals",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Rust",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Ovy On The Drums",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Scott Morrison",
+        "count": 1,
+        "share": 0.08333333333333333
       }
     ],
     "AFG": [
       {
         "entity": "Taliban",
         "count": 2,
-        "share": 0.25
+        "share": 0.2
       },
       {
         "entity": "Nazira Khairzad",
         "count": 2,
-        "share": 0.25
+        "share": 0.2
+      },
+      {
+        "entity": "David Lammy",
+        "count": 2,
+        "share": 0.2
+      },
+      {
+        "entity": "ghan",
+        "count": 2,
+        "share": 0.2
       },
       {
         "entity": "Sadia Bromand",
         "count": 1,
-        "share": 0.125
+        "share": 0.1
       },
       {
         "entity": "Nazima",
         "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "David Lammy",
-        "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "ghan",
-        "count": 1,
-        "share": 0.125
+        "share": 0.1
       }
     ],
     "RWA": [
@@ -3360,18 +3268,30 @@
       {
         "entity": "Mainland Chinese",
         "count": 1,
-        "share": 0.5
+        "share": 0.3333333333333333
       },
       {
         "entity": "Lin Fu Z",
         "count": 1,
-        "share": 0.5
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Fashion Week",
+        "count": 1,
+        "share": 0.3333333333333333
       }
     ],
     "NZL": [
       {
         "entity": "Super Netball",
         "count": 1,
+        "share": 1.0
+      }
+    ],
+    "AIA": [
+      {
+        "entity": "Elizabeth Szczepanska",
+        "count": 2,
         "share": 1.0
       }
     ],
@@ -3431,32 +3351,12 @@
       {
         "entity": "Myki",
         "count": 1,
-        "share": 0.16666666666666666
+        "share": 0.5
       },
       {
         "entity": "Australia",
         "count": 1,
-        "share": 0.16666666666666666
-      },
-      {
-        "entity": "FPS",
-        "count": 1,
-        "share": 0.16666666666666666
-      },
-      {
-        "entity": "China",
-        "count": 1,
-        "share": 0.16666666666666666
-      },
-      {
-        "entity": "Mainland Chinese",
-        "count": 1,
-        "share": 0.16666666666666666
-      },
-      {
-        "entity": "CBRE",
-        "count": 1,
-        "share": 0.16666666666666666
+        "share": 0.5
       }
     ],
     "PER": [
@@ -3602,12 +3502,12 @@
         "share": 0.08333333333333333
       },
       {
-        "entity": "French Polynesia",
+        "entity": "Carlo An",
         "count": 1,
         "share": 0.08333333333333333
       },
       {
-        "entity": "PCC",
+        "entity": "\u00d4nio F\u00e9lix De Souza",
         "count": 1,
         "share": 0.08333333333333333
       }
@@ -3615,38 +3515,13 @@
     "MYS": [
       {
         "entity": "Fu Wa",
-        "count": 2,
-        "share": 0.2
+        "count": 1,
+        "share": 0.5
       },
       {
         "entity": "Feng Yi",
-        "count": 2,
-        "share": 0.2
-      },
-      {
-        "entity": "Nek Abd Rahman",
-        "count": 2,
-        "share": 0.2
-      },
-      {
-        "entity": "Xi",
         "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "Liang Liang",
-        "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "Panda",
-        "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "Ng Xing",
-        "count": 1,
-        "share": 0.1
+        "share": 0.5
       }
     ],
     "ARE": [
@@ -3738,18 +3613,18 @@
     "VEN": [
       {
         "entity": "Nicol\u00e1s Maduro",
-        "count": 2,
-        "share": 0.5
+        "count": 3,
+        "share": 0.6
       },
       {
         "entity": "News24",
         "count": 1,
-        "share": 0.25
+        "share": 0.2
       },
       {
         "entity": "South American",
         "count": 1,
-        "share": 0.25
+        "share": 0.2
       }
     ],
     "MLI": [
@@ -3761,54 +3636,19 @@
     ],
     "NGA": [
       {
-        "entity": "Vanguard News",
-        "count": 7,
-        "share": 0.3888888888888889
-      },
-      {
-        "entity": "Bola Tinubu",
-        "count": 2,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Alhaji Sule Lamido",
-        "count": 2,
-        "share": 0.1111111111111111
-      },
-      {
         "entity": "News24",
         "count": 1,
-        "share": 0.05555555555555555
+        "share": 0.3333333333333333
       },
       {
         "entity": "World Bank",
         "count": 1,
-        "share": 0.05555555555555555
+        "share": 0.3333333333333333
       },
       {
-        "entity": "Genevieve",
+        "entity": "Bola Tinubu",
         "count": 1,
-        "share": 0.05555555555555555
-      },
-      {
-        "entity": "Sounds of Colour",
-        "count": 1,
-        "share": 0.05555555555555555
-      },
-      {
-        "entity": "Kingsley Omonobi",
-        "count": 1,
-        "share": 0.05555555555555555
-      },
-      {
-        "entity": "Aka",
-        "count": 1,
-        "share": 0.05555555555555555
-      },
-      {
-        "entity": "Ri Abubakar",
-        "count": 1,
-        "share": 0.05555555555555555
+        "share": 0.3333333333333333
       }
     ],
     "SEN": [
@@ -3827,34 +3667,54 @@
     ],
     "TWN": [
       {
-        "entity": "Mainland Chinese",
-        "count": 1,
-        "share": 0.16666666666666666
+        "entity": "Union-PP Federation",
+        "count": 2,
+        "share": 0.18181818181818182
       },
       {
-        "entity": "Sean Baker",
+        "entity": "Donald Trump",
         "count": 1,
-        "share": 0.16666666666666666
+        "share": 0.09090909090909091
       },
       {
-        "entity": "Cinema Night",
+        "entity": "Green Card",
         "count": 1,
-        "share": 0.16666666666666666
+        "share": 0.09090909090909091
       },
       {
-        "entity": "Tsai",
+        "entity": "D4U Immigration",
         "count": 1,
-        "share": 0.16666666666666666
+        "share": 0.09090909090909091
       },
       {
-        "entity": "Nvidia",
+        "entity": "General Balance SP",
         "count": 1,
-        "share": 0.16666666666666666
+        "share": 0.09090909090909091
       },
       {
-        "entity": "Blackwell",
+        "entity": "Secretariat of Agriculture",
         "count": 1,
-        "share": 0.16666666666666666
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Brazil",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Aguin",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Aldo Ribeiro",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Daniella Ribeiro",
+        "count": 1,
+        "share": 0.09090909090909091
       }
     ],
     "HND": [
@@ -3872,32 +3732,32 @@
     "NAM": [
       {
         "entity": "Convention on International Trade in Endangered Species of Wild Fauna and Flora",
-        "count": 2,
+        "count": 4,
         "share": 0.2857142857142857
       },
       {
         "entity": "WWF",
-        "count": 1,
+        "count": 2,
         "share": 0.14285714285714285
       },
       {
         "entity": "Iceland",
-        "count": 1,
+        "count": 2,
         "share": 0.14285714285714285
       },
       {
         "entity": "Ministry of Climate Change and Environmental Coordination",
-        "count": 1,
+        "count": 2,
         "share": 0.14285714285714285
       },
       {
         "entity": "IUCN Red List",
-        "count": 1,
+        "count": 2,
         "share": 0.14285714285714285
       },
       {
         "entity": "CITES",
-        "count": 1,
+        "count": 2,
         "share": 0.14285714285714285
       }
     ],
@@ -3951,43 +3811,53 @@
     "PAN": [
       {
         "entity": "Alhaji Sule Lamido",
-        "count": 2,
-        "share": 0.2222222222222222
-      },
-      {
-        "entity": "Afenifere",
-        "count": 1,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Yoruba",
-        "count": 1,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Lucimar Da Silva Ferreira",
-        "count": 1,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Po Akinrefon",
-        "count": 1,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Femi Okurounmu",
-        "count": 1,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Sule Lamido",
-        "count": 1,
-        "share": 0.1111111111111111
+        "count": 4,
+        "share": 0.18181818181818182
       },
       {
         "entity": "Vanguard News",
+        "count": 4,
+        "share": 0.18181818181818182
+      },
+      {
+        "entity": "Afenifere",
+        "count": 2,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Yoruba",
+        "count": 2,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Lucimar Da Silva Ferreira",
+        "count": 2,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Po Akinrefon",
+        "count": 2,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Femi Okurounmu",
+        "count": 2,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Sule Lamido",
+        "count": 2,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "APC",
         "count": 1,
-        "share": 0.1111111111111111
+        "share": 0.045454545454545456
+      },
+      {
+        "entity": "Nwosu",
+        "count": 1,
+        "share": 0.045454545454545456
       }
     ],
     "QAT": [
