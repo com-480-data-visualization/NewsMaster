@@ -38,6 +38,12 @@ const getTrendClass = (isTrendingUp: boolean | null): string => {
     return isTrendingUp ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400';
 }
 
+// Helper function to truncate text
+const truncateText = (text: string, maxLength: number = 25): string => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + '...';
+}
+
 // Define the styles
 const tableWrapperStyle = {
     maxHeight: 'calc(100% - 4rem)' /* Adjust based on header height */
@@ -63,6 +69,9 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
                 <tbody className="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700">
                     {data.map((item) => {
                         const isDefaultSelected = defaultSelectedTopic === item.topic;
+                        const truncatedTopic = truncateText(item.topic);
+                        const isTopicTruncated = item.topic.length > 25;
+                        
                         return (
                             <tr
                                 key={item.topic}
@@ -82,7 +91,19 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
                                 }}
                             >
                                 <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">{item.rank}</td>
-                                <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200 capitalize">{item.topic}</td>
+                                <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200 capitalize">
+                                    <span 
+                                        className="relative group"
+                                        title={isTopicTruncated ? item.topic : undefined}
+                                    >
+                                        {truncatedTopic}
+                                        {isTopicTruncated && (
+                                            <div className="absolute left-0 top-full mt-1 px-2 py-1 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 text-xs rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-50 whitespace-nowrap">
+                                                {item.topic}
+                                            </div>
+                                        )}
+                                    </span>
+                                </td>
                                 <td className="px-4 py-2 whitespace-nowrap text-base font-semibold text-gray-800 dark:text-gray-200 text-right">{item.latestScore}%</td>
                                 <td className="px-4 py-2 whitespace-nowrap text-sm text-center">
                                     <TrendIcon isUp={item.isTrendingUp} />
