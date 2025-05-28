@@ -5,14 +5,15 @@ import GlobalRankings from './GlobalRankings';
 import { ImportExportToggle } from './ImportExportToggle';
 
 import TimeRangeToggle, { type TimeRange } from './TimeRangeToggle';
-import { createImportColorScale, createExportColorScale, strokeColor, highlightColor } from '../../data/mapStyle';
+import { createImportColorScale, createExportColorScale, getImportColorRange, getExportColorRange, strokeColor, highlightColor } from '../../data/mapStyle';
 import { loadAggregatedData, type MapData } from '../../data/dataLoader';
+import { alpha3ToAlpha2, getName } from 'i18n-iso-countries';
 
 const WorldMapPage: React.FC = () => {
   // State management
   const [mode, setMode] = useState<'import' | 'export'>('import');
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
-  const [timeRange, setTimeRange] = useState<TimeRange>('7days');
+  const [timeRange, setTimeRange] = useState<TimeRange>('today');
   const [mapData, setMapData] = useState<MapData | null>(null); // State for loaded data
   const [isLoading, setIsLoading] = useState<boolean>(true); // Loading state
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
@@ -41,17 +42,51 @@ const WorldMapPage: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Create theme-aware color scales
-  const importColorScale = React.useMemo(() => {
-    return createImportColorScale(isDarkMode);
-  }, [isDarkMode]);
+  // Calculate domains and create color scales using useMemo for performance
+  const { importColorScale, exportColorScale, currentDomain, currentRange } = React.useMemo(() => {
+    if (!mapData) {
+      return {
+        importColorScale: createImportColorScale(isDarkMode, [0, 0.001]),
+        exportColorScale: createExportColorScale(isDarkMode, [0, 0.001]),
+        currentDomain: [0, 0.001] as [number, number],
+        currentRange: isDarkMode ? getImportColorRange(true) : getImportColorRange(false)
+      };
+    }
 
-  const exportColorScale = React.useMemo(() => {
-    return createExportColorScale(isDarkMode);
-  }, [isDarkMode]);
+    const maxImport = Math.max(...Object.values(mapData.importData), 0);
+    const maxExport = Math.max(...Object.values(mapData.exportData), 0);
+    const importDomain: [number, number] = [0, maxImport || 0.001];
+    const exportDomain: [number, number] = [0, maxExport || 0.001];
 
-  // Get highest and lowest media attention countries
-  const getExtremeCountries = (data: Record<string, number>) => {
+    return {
+      importColorScale: createImportColorScale(isDarkMode, importDomain),
+      exportColorScale: createExportColorScale(isDarkMode, exportDomain),
+      currentDomain: mode === 'import' ? importDomain : exportDomain,
+      currentRange: mode === 'import' 
+        ? getImportColorRange(isDarkMode) 
+        : getExportColorRange(isDarkMode)
+    };
+  }, [mapData, isDarkMode, mode]);
+
+  // Get country name from ISO code - memoized
+  const getCountryName = React.useCallback((code: string): string => {
+    if (!code || code.length !== 3) return code;
+    
+    try {
+      // Convert alpha-3 to alpha-2 for compatibility with the library
+      const alpha2 = alpha3ToAlpha2(code);
+      if (alpha2) {
+        return getName(alpha2, 'en') || code;
+      }
+      return code;
+    } catch (error) {
+      console.warn(`Could not find country name for code: ${code}`);
+      return code;
+    }
+  }, []);
+
+  // Get highest and lowest media attention countries - memoized
+  const getExtremeCountries = React.useCallback((data: Record<string, number>) => {
     // Handle empty data case
     const entries = Object.entries(data);
     if (entries.length === 0) {
@@ -67,10 +102,34 @@ const WorldMapPage: React.FC = () => {
       current[1] < min[1] ? current : min, entries[0]);
     
     return {
-      highest: { id: highest[0], value: highest[1] },
-      lowest: { id: lowest[0], value: lowest[1] }
+      highest: { id: getCountryName(highest[0]), value: highest[1] },
+      lowest: { id: getCountryName(lowest[0]), value: lowest[1] }
     };
-  };
+  }, [getCountryName]);
+
+  // Memoize current data to prevent unnecessary recalculations
+  const currentData = React.useMemo(() => {
+    return mapData ? (mode === 'import' ? mapData.importData : mapData.exportData) : {};
+  }, [mapData, mode]);
+  
+  // Memoize extreme countries calculation
+  const { highest, lowest } = React.useMemo(() => 
+    getExtremeCountries(currentData), 
+    [currentData, getExtremeCountries]
+  );
+
+  // Stable callback references to prevent WorldMap re-renders
+  const handleSetSelectedCountry = React.useCallback((country: string | null) => {
+    setSelectedCountry(country);
+  }, []);
+
+  const handleSetHoveredCountry = React.useCallback((country: {
+    id: string;
+    name: string;
+    position: { x: number; y: number }
+  } | null) => {
+    setHoveredCountry(country);
+  }, []);
 
   // Effect to load data when timeRange changes
   useEffect(() => {
@@ -88,22 +147,6 @@ const WorldMapPage: React.FC = () => {
     };
     fetchData();
   }, [timeRange]); // Dependency array ensures this runs when timeRange changes
-
-  // Determine current data slice based on mode and loaded data
-  const currentData = mapData ? (mode === 'import' ? mapData.importData : mapData.exportData) : {};
-  
-  // Update color scale domains dynamically based on loaded data
-  useEffect(() => {
-    if (mapData) {
-      const maxImport = Math.max(...Object.values(mapData.importData), 0);
-      const maxExport = Math.max(...Object.values(mapData.exportData), 0);
-      // Add a small epsilon to prevent domain [0, 0] if all values are 0
-      importColorScale.domain([0, maxImport || 0.001]);
-      exportColorScale.domain([0, maxExport || 0.001]);
-    }
-  }, [mapData, importColorScale, exportColorScale]); // Update when mapData or scales change
-
-  const { highest, lowest } = getExtremeCountries(currentData);
 
   // Display loading indicator or error message
   if (isLoading) {
@@ -181,23 +224,13 @@ const WorldMapPage: React.FC = () => {
             {/* Mini gradient legend - Uses color scales which are now dynamic */}
             <div className="w-full h-3 mt-2 rounded-sm overflow-hidden" 
               style={{ 
-                background: `linear-gradient(to right, 
-                  ${mode === 'import' 
-                    ? `${importColorScale.range()[0]}, ${importColorScale.range()[1]}` // Use scale range
-                    : `${exportColorScale.range()[0]}, ${exportColorScale.range()[1]}` // Use scale range
-                  })`
+                background: `linear-gradient(to right, ${currentRange[0]}, ${currentRange[1]})`
               }}>
             </div>
             <div className="flex justify-between w-full mt-1">
               <div className="text-xs text-muted-foreground">0%</div>
               <div className="text-xs text-muted-foreground">
-                {/* Display the max value from the current scale domain */}
-                {(() => {
-                  const currentScale = mode === 'import' ? importColorScale : exportColorScale;
-                  const domainValues = currentScale.domain() as [number, number];
-                  return (domainValues[1] * 100).toFixed(1);
-                })()}
-                %
+                {(currentDomain[1] * 100).toFixed(1)}%
               </div>
             </div>
           </div>
@@ -212,8 +245,8 @@ const WorldMapPage: React.FC = () => {
               colorScale={mode === 'import' ? importColorScale : exportColorScale}
               strokeColor={strokeColor[isDarkMode ? 1 : 0]} // Dynamic theme-based stroke color
               highlightColor={highlightColor[isDarkMode ? 1 : 0]} // Dynamic theme-based highlight color
-              setSelectedCountry={setSelectedCountry} 
-              setHoveredCountry={setHoveredCountry} 
+              setSelectedCountry={handleSetSelectedCountry} 
+              setHoveredCountry={handleSetHoveredCountry} 
               data={currentData} // Pass the dynamically loaded data
             />
             {hoveredCountry && mapData && (
@@ -229,8 +262,8 @@ const WorldMapPage: React.FC = () => {
       
       {/* Top 10 Exporters and Importers */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <GlobalRankings mode="import" data={mapData.importData} /> {/* Pass specific data */}
-        <GlobalRankings mode="export" data={mapData.exportData} /> {/* Pass specific data */}
+        <GlobalRankings mode="import" data={mapData.importData} /> 
+        <GlobalRankings mode="export" data={mapData.exportData} /> 
       </div>
     </div>
   );

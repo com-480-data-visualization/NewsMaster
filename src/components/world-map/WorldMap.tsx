@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import * as d3 from 'd3';
 import type { GeoJSON } from 'geojson';
 
@@ -11,12 +11,28 @@ type Props = {
   setHoveredCountry: (country: { id: string; name: string; position: { x: number; y: number } } | null) => void;
 };
 
-
 const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, data, setSelectedCountry, setHoveredCountry }) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const [mapInitialized, setMapInitialized] = useState(false);
 
-  // Initialize map when component mounts
+  // Stable references to avoid re-initialization
+  const stableSetSelectedCountry = useCallback(setSelectedCountry, [setSelectedCountry]);
+  const stableSetHoveredCountry = useCallback(setHoveredCountry, [setHoveredCountry]);
+
+  // Helper function to update map colors - memoized to prevent recreation
+  const updateMapColors = useCallback((
+    mapGroup: d3.Selection<any, unknown, null, undefined>, 
+    colorFunction: (value: number) => string, 
+    currentData: Record<string, number>
+  ) => {
+    mapGroup.selectAll("path")
+      .attr("fill", (d: any) => {
+        const id = d.id;
+        return colorFunction(currentData[id] || 0);
+      });
+  }, []);
+
+  // Initialize map ONCE when component mounts (no dependencies on changing props)
   useEffect(() => {
     if (!svgRef.current || mapInitialized) return;
 
@@ -63,8 +79,6 @@ const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, da
           return path(d as any) || '';
         })
         .attr("class", "country")
-        .style("stroke", strokeColor)
-        .style("stroke-width", 0.5)
         .style("cursor", "pointer")
         .style("filter", "drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15))")
         .on("mouseover", function(event, d) {
@@ -74,14 +88,13 @@ const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, da
           // Get SVG element position
           const svgRect = svgRef.current?.getBoundingClientRect();
           
-          // Highlight country
+          // Highlight country - use current stroke color from closure
           d3.select(this)
-            .style("stroke", highlightColor)
             .style("stroke-width", 1.5)
             .style("filter", "drop-shadow(0px 0px 5px rgba(0, 102, 204, 0.3))");
           
           // Update hovered country
-          setHoveredCountry({
+          stableSetHoveredCountry({
             id: countryId,
             name: countryName,
             position: { 
@@ -92,60 +105,82 @@ const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, da
         })
         .on("mouseout", function() {
           d3.select(this)
-            .style("stroke", strokeColor)
             .style("stroke-width", 0.5)
             .style("filter", "drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15))");
           
-          setHoveredCountry(null);
+          stableSetHoveredCountry(null);
         })
         .on("click", function(_, d) {
           const id = (d as any).id;
-          // Not using name, so removing the unused variable
-          // const name = (d as any).properties.name;
           
           // Highlight clicked country with stronger effect
           mapGroup.selectAll("path")
-            .style("stroke", strokeColor)
             .style("stroke-width", 0.5)
             .style("filter", "drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15))");
           
           d3.select(this)
-            .style("stroke", highlightColor)
             .style("stroke-width", 2)
             .style("filter", "drop-shadow(0px 0px 8px rgba(0, 102, 204, 0.5))");
           
-          setSelectedCountry(id);
+          stableSetSelectedCountry(id);
         });
       
-      // Initial coloring of countries
-      updateMapColors(mapGroup, colorScale, data);
       setMapInitialized(true);
     });
     
-  }, [mapInitialized, setHoveredCountry, setSelectedCountry, strokeColor, highlightColor, colorScale]);
+  }, []); // Only run once on mount
 
-  // Update map colors when mode or data changes
+  // Update stroke and highlight colors when they change
   useEffect(() => {
-    if (!mapInitialized || !data) return;
+    if (!mapInitialized) return;
+    
+    const svg = d3.select(svgRef.current);
+    const mapGroup = svg.select("g");
+    
+    mapGroup.selectAll("path")
+      .style("stroke", strokeColor)
+      .style("stroke-width", 0.5);
+      
+    // Update hover effects to use current highlight color
+    mapGroup.selectAll("path")
+      .on("mouseover", function(event, d) {
+        const countryId = (d as any).id;
+        const countryName = (d as any).properties.name;
+        
+        d3.select(this)
+          .style("stroke", highlightColor)
+          .style("stroke-width", 1.5)
+          .style("filter", "drop-shadow(0px 0px 5px rgba(0, 102, 204, 0.3))");
+        
+        stableSetHoveredCountry({
+          id: countryId,
+          name: countryName,
+          position: { 
+            x: event.pageX, 
+            y: event.pageY 
+          }
+        });
+      })
+      .on("mouseout", function() {
+        d3.select(this)
+          .style("stroke", strokeColor)
+          .style("stroke-width", 0.5)
+          .style("filter", "drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15))");
+        
+        stableSetHoveredCountry(null);
+      });
+    
+  }, [mapInitialized, strokeColor, highlightColor, stableSetHoveredCountry]);
+
+  // Update map colors when colorScale or data changes (separate from initialization)
+  useEffect(() => {
+    if (!mapInitialized) return;
     
     const svg = d3.select(svgRef.current);
     const mapGroup = svg.select("g");
     updateMapColors(mapGroup, colorScale, data);
     
-  }, [colorScale, data, mapInitialized]);
-
-  // Helper function to update map colors
-  const updateMapColors = (
-    mapGroup: d3.Selection<any, unknown, null, undefined>, 
-    colorScale: (value: number) => string, 
-    currentData: Record<string, number>
-  ) => {
-    mapGroup.selectAll("path")
-      .attr("fill", (d: any) => {
-        const id = d.id;
-        return colorScale(currentData[id] || 0);
-      });
-  };
+  }, [colorScale, data, mapInitialized, updateMapColors]);
 
   return (
     <svg 
@@ -158,4 +193,5 @@ const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, da
   );
 };
 
-export default WorldMap; 
+// Memoize the component to prevent unnecessary re-renders
+export default React.memo(WorldMap); 

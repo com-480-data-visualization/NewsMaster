@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import WorldMap from './WorldMap';
-import { createImportColorScale, strokeColor, highlightColor } from '../../data/mapStyle';
+import { createImportColorScale, getImportColorRange, strokeColor, highlightColor } from '../../data/mapStyle';
 import { loadNERData, type TimeRange } from '../../data/dataLoader';
 
 // Define structure for loaded NER data state
@@ -41,10 +41,25 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
     return () => observer.disconnect();
   }, []);
 
-  // Create theme-aware color scale
-  const importColorScale = React.useMemo(() => {
-    return createImportColorScale(isDarkMode);
-  }, [isDarkMode]);
+  // Calculate domain and create color scale using useMemo for performance
+  const { importColorScale, currentDomain, currentRange } = React.useMemo(() => {
+    if (!mapData) {
+      return {
+        importColorScale: createImportColorScale(isDarkMode, [0, 0.001]),
+        currentDomain: [0, 0.001] as [number, number],
+        currentRange: getImportColorRange(isDarkMode)
+      };
+    }
+
+    const maxEntityMentions = Math.max(...Object.values(mapData.entityMentions), 0);
+    const domain: [number, number] = [0, maxEntityMentions || 0.001];
+
+    return {
+      importColorScale: createImportColorScale(isDarkMode, domain),
+      currentDomain: domain,
+      currentRange: getImportColorRange(isDarkMode)
+    };
+  }, [mapData, isDarkMode]);
 
   // Effect to load NER data
   useEffect(() => {
@@ -86,16 +101,8 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
   };
 
 
-  // Determine current data slice based on loaded data (always use import data for NER)
-  const currentData = mapData ? mapData.importData : {};
-  
-  // Update color scale domains dynamically based on loaded data
-  useEffect(() => {
-    if (mapData) {
-      const maxImport = Math.max(...Object.values(mapData.importData), 0);
-      importColorScale.domain([0, maxImport || 0.001]);
-    }
-  }, [mapData, importColorScale]); // Update when mapData changes
+  // Determine current data slice based on loaded data (use entity mentions for NER)
+  const currentData = mapData ? mapData.entityMentions : {};
 
   const { highest, lowest } = getExtremeCountries(currentData);
 
@@ -107,17 +114,6 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
     return <div className="text-center p-10 text-red-600">Failed to load NER map data for {entity}. Please try again later.</div>;
   }
 
-  // Check if we have any data for this entity
-  const hasData = mapData.totalArticles > 0;
-  if (!hasData) {
-    return (
-      <div className="text-center p-10">
-        <p className="text-muted-foreground">No articles found mentioning "{entity}" for the selected time range.</p>
-        <p className="text-sm text-muted-foreground mt-2">This entity may not have been processed yet or may not appear in recent news.</p>
-      </div>
-    );
-  }
-
   return (
     <div className="max-w-5xl w-full mx-auto px-4 py-4">
       
@@ -127,9 +123,7 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
         <div className="bg-card p-4 border rounded-lg shadow-sm col-span-1 md:col-span-2">
           <p className="text-sm">
             <span className="font-medium">Who is talking about {entity}?</span>
-            <span className="ml-2 text-xs text-muted-foreground">
-              ({mapData.totalArticles} articles found)
-            </span>
+           
             </p>
           <div className="grid grid-cols-2 gap-4 mt-3">
             <div className="flex flex-col">
@@ -172,19 +166,13 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
             {/* Mini gradient legend - Uses color scales which are now dynamic */}
             <div className="w-full h-3 mt-2 rounded-sm overflow-hidden" 
               style={{ 
-                background: `linear-gradient(to right, 
-                  ${importColorScale.range()[0]}, ${importColorScale.range()[1]})`
+                background: `linear-gradient(to right, ${currentRange[0]}, ${currentRange[1]})`
               }}>
             </div>
             <div className="flex justify-between w-full mt-1">
               <div className="text-xs text-muted-foreground">0%</div>
               <div className="text-xs text-muted-foreground">
-                {/* Display the max value from the current scale domain */}
-                {(() => {
-                  const domainValues = importColorScale.domain() as [number, number];
-                  return (domainValues[1] * 100).toFixed(1);
-                })()}
-                %
+                {(currentDomain[1] * 100).toFixed(1)}%
               </div>
             </div>
           </div>
