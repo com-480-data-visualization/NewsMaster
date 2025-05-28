@@ -534,36 +534,30 @@ const KeywordNetwork: React.FC = () => {
                         zIndex: 1001,
                         position: 'relative',
                         display: 'flex',
-                        gap: '0.5rem',
+                        gap: '1rem',
                         alignItems: 'center',
                         flexShrink: 0,
                         padding: '0 1rem',
+                        flexWrap: 'wrap',
                     }}>
-                        <label
-                            htmlFor="date-picker-viz"
-                            className="text-white whitespace-nowrap"
-                            style={{ marginRight: '0.5rem' }}
-                        >
-                            Date:
-                        </label>
-                        <input
-                            id="date-picker-viz"
-                            type="date"
-                            value={selectedDate}
-                            onChange={e => setSelectedDate(e.target.value)}
-                            style={{
-                                marginRight: '1rem',
-                                background: '#1a1a1a',
-                                color: 'white',
-                                border: '1px solid #444',
-                                borderRadius: 4,
-                                padding: '0.25rem 0.5rem',
-                            }}
-                            max={new Date().toISOString().slice(0, 10)}
-                        />
+                        <div className="text-white text-sm">
+                            <span className="font-medium">Date: </span>
+                            <span className="text-blue-300">{new Date(selectedDate).toLocaleDateString()}</span>
+                        </div>
+                        
+                        <div className="text-white text-sm">
+                            <span className="font-medium">Providers ({selectedProviders.length}): </span>
+                            <span className="text-green-300">
+                                {selectedProviders.length > 0 
+                                    ? selectedProviders.map(provider => provider.label).join(', ')
+                                    : 'All providers'
+                                }
+                            </span>
+                        </div>
+
                         {selectedLabels.length > 0 && (
                             <div className="text-white text-sm">
-                                <span>NER Filter: </span>
+                                <span className="font-medium">NER Filter: </span>
                                 <span className="text-blue-300">
                                     {selectedLabels.map(label => label.label).join(', ')}
                                 </span>
