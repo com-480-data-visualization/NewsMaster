@@ -18,11 +18,14 @@ import {
     ChartTooltip,
     ChartTooltipContent,
 } from "@/components/ui/chart"
-import dbRaw from "../../data/db.json";
-const db = dbRaw as {
+
+interface DBData {
     articles_per_day: { date: string; articles: number; ner: number }[];
-};
-const chartData = db.articles_per_day;
+    total_ner_today: number;
+    total_articles_today: number;
+    total_articles_week: number;
+    total_articles_total: number;
+}
 
 const chartConfig = {
     articles: {
@@ -38,14 +41,74 @@ const chartConfig = {
 export function Chart() {
     const [activeChart, setActiveChart] =
         React.useState<keyof typeof chartConfig>("articles");
+    const [dbData, setDbData] = React.useState<DBData | null>(null);
+    const [loading, setLoading] = React.useState(true);
+    const [error, setError] = React.useState<string | null>(null);
+
+    React.useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/data/db.json');
+                if (!response.ok) {
+                    throw new Error(`Failed to load db.json: ${response.statusText}`);
+                }
+                const data = await response.json();
+                setDbData(data);
+                setError(null);
+            } catch (err) {
+                console.error('Error fetching db.json:', err);
+                setError(err instanceof Error ? err.message : 'Unknown error');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    const chartData = dbData?.articles_per_day || [];
 
     const total = React.useMemo(
         () => ({
             articles: chartData.reduce((acc, curr) => acc + curr.articles, 0),
             ner: chartData.reduce((acc, curr) => acc + curr.ner, 0),
         }),
-        []
-    )
+        [chartData]
+    );
+
+    if (loading) {
+        return (
+            <Card>
+                <CardHeader>
+                    <CardTitle>Articles & NER per Day</CardTitle>
+                    <CardDescription>Loading chart data...</CardDescription>
+                </CardHeader>
+                <CardContent className="px-2 sm:p-6">
+                    <div className="flex items-center justify-center h-[250px]">
+                        <div className="text-muted-foreground">Loading...</div>
+                    </div>
+                </CardContent>
+            </Card>
+        );
+    }
+
+    if (error || !dbData) {
+        return (
+            <Card>
+                <CardHeader>
+                    <CardTitle>Articles & NER per Day</CardTitle>
+                    <CardDescription>Error loading chart data</CardDescription>
+                </CardHeader>
+                <CardContent className="px-2 sm:p-6">
+                    <div className="flex items-center justify-center h-[250px]">
+                        <div className="text-red-500">
+                            {error || 'Failed to load data'}
+                        </div>
+                    </div>
+                </CardContent>
+            </Card>
+        );
+    }
 
     return (
         <Card>
