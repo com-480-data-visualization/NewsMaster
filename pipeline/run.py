@@ -145,7 +145,7 @@ def update_db_json():
     import glob
     from collections import defaultdict
 
-    data_dir = os.path.join('data')
+    data_dir = os.path.join('public', 'data')
     db_path = os.path.join(data_dir, 'db.json')
     today_str = get_today_date_str()
 
