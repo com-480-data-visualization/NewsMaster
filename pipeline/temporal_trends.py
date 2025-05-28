@@ -3,18 +3,19 @@ import json
 import re
 from collections import Counter
 
+DATA_DIR = "public/data"
+
 def get_all_date_folders():
     """Get all date folders in the data directory"""
-    data_dir = "../public/data"
     date_folders = []
     
     # Check if the directory exists
-    if not os.path.exists(data_dir):
+    if not os.path.exists(DATA_DIR):
         return []
     
     # Check all items in the data directory
-    for item in os.listdir(data_dir):
-        item_path = os.path.join(data_dir, item)
+    for item in os.listdir(DATA_DIR):
+        item_path = os.path.join(DATA_DIR, item)
         # Check if it's a directory and matches date format DD.MM.YYYY
         if os.path.isdir(item_path) and re.match(r'\d{2}\.\d{2}\.\d{4}', item):
             date_folders.append(item)
@@ -23,7 +24,7 @@ def get_all_date_folders():
 
 def extract_entities_from_articles(date_folder):
     """Extract named entities from articles for a specific date"""
-    articles_file = os.path.join("../public/data", date_folder, "articles.json")
+    articles_file = os.path.join(DATA_DIR, date_folder, "articles.json")
     
     if not os.path.exists(articles_file):
         print(f"Articles file not found for {date_folder}")
@@ -72,7 +73,7 @@ def calculate_daily_ner_percentages(date_folder):
 
 def save_daily_topics(date_folder, ner_percentages):
     """Save the NER percentages to topics.json in the daily folder"""
-    topics_file = os.path.join("../public/data", date_folder, "topics.json")
+    topics_file = os.path.join(DATA_DIR, date_folder, "topics.json")
     
     try:
         with open(topics_file, 'w', encoding='utf-8') as f:
@@ -136,7 +137,7 @@ def process_specific_day(date_folder):
         print(f"Invalid date format: {date_folder}. Expected format: DD.MM.YYYY")
         return False
     
-    data_path = os.path.join("../public/data", date_folder)
+    data_path = os.path.join(DATA_DIR, date_folder)
     if not os.path.exists(data_path):
         print(f"Date folder not found: {date_folder}")
         return False
