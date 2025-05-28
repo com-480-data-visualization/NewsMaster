@@ -91,7 +91,7 @@ const KeywordNetwork: React.FC = () => {
         setIsClient(true);
     }, []);
 
-    const loadArticlesData = (limitTo100: boolean = false, filterByProviders: boolean = false) => {
+    const loadArticlesData = (filterByProviders: boolean = false) => {
         setIsLoading(true);
         setFetchError(null);
         const [year, month, day] = selectedDate.split('-');
@@ -114,10 +114,7 @@ const KeywordNetwork: React.FC = () => {
                     );
                 }
 
-                const processedData = limitTo100 ? {
-                    ...data,
-                    data: filteredData.slice(0, 100)
-                } : {
+                const processedData = {
                     ...data,
                     data: filteredData
                 };
@@ -268,15 +265,11 @@ const KeywordNetwork: React.FC = () => {
     };
 
     const handleLoadAllArticles = () => {
-        loadArticlesData(false);
-    };
-
-    const handleLoadFirst100 = () => {
-        loadArticlesData(true);
+        loadArticlesData();
     };
 
     const handleLoadSelectedProviders = () => {
-        loadArticlesData(false, true);
+        loadArticlesData(true);
     };
 
     const getArticlesForLink = (link: CustomLinkObject): Article[] => {
@@ -359,35 +352,25 @@ const KeywordNetwork: React.FC = () => {
 
                     <div className="flex gap-4">
                         <Button
-                            onClick={handleLoadAllArticles}
+                            onClick={handleLoadSelectedProviders}
                             disabled={isLoading}
                             className="px-6 py-3 text-lg"
                         >
-                            {isLoading ? 'Loading...' : 'Load All Articles'}
+                            {isLoading ? 'Loading...' : 'Load Selected Providers'}
                         </Button>
 
                         <Button
-                            onClick={handleLoadFirst100}
+                            onClick={handleLoadAllArticles}
                             disabled={isLoading}
                             variant="outline"
                             className="px-6 py-3 text-lg"
                         >
-                            {isLoading ? 'Loading...' : 'Load First 100 Articles'}
-                        </Button>
-
-                        <Button
-                            onClick={handleLoadSelectedProviders}
-                            disabled={isLoading}
-                            variant="secondary"
-                            className="px-6 py-3 text-lg"
-                        >
-                            {isLoading ? 'Loading...' : 'Load Selected Providers'}
+                            {isLoading ? 'Loading...' : 'Load All Articles (Requires Good Computer)'}
                         </Button>
                     </div>
 
                     <div className="mt-4 text-sm text-gray-600">
                         <p>• <strong>Load All Articles:</strong> Visualize the complete network of all articles for the selected date</p>
-                        <p>• <strong>Load First 100 Articles:</strong> Visualize a subset for faster performance</p>
                         <p>• <strong>Load Selected Providers:</strong> Visualize only articles from major news providers (BBC, CNN, NYT, Al Jazeera, Guardian, etc.)</p>
 
                         <div className="mt-3 p-3 bg-gray-50 rounded border">
