@@ -1,82 +1,46 @@
 {
   "importData": {
-    "QAT": 0.056338028169014086,
-    "SRB": 0.014084507042253521,
-    "SSD": 0.014084507042253521,
-    "TUR": 0.028169014084507043,
-    "LBY": 0.014084507042253521,
-    "CHE": 0.014084507042253521,
-    "SYR": 0.08450704225352113,
-    "IND": 0.028169014084507043,
-    "COL": 0.014084507042253521,
-    "ZAF": 0.04225352112676056,
-    "SLV": 0.014084507042253521,
-    "POL": 0.014084507042253521,
-    "AUS": 0.014084507042253521,
-    "JPN": 0.014084507042253521,
-    "UKR": 0.08450704225352113,
-    "DEU": 0.014084507042253521,
-    "ISR": 0.11267605633802817,
-    "PSE": 0.07042253521126761,
-    "ARE": 0.014084507042253521,
-    "PAK": 0.028169014084507043,
-    "CAN": 0.014084507042253521,
-    "MEX": 0.028169014084507043,
-    "AFG": 0.014084507042253521,
-    "URY": 0.014084507042253521,
-    "RWA": 0.014084507042253521,
-    "CHN": 0.028169014084507043,
-    "FRA": 0.028169014084507043,
-    "SAU": 0.028169014084507043,
-    "IRN": 0.014084507042253521,
-    "RUS": 0.07042253521126761,
-    "GBR": 0.056338028169014086
+    "URY": 0.015873015873015872,
+    "CAN": 0.015873015873015872,
+    "SYR": 0.09523809523809523,
+    "JPN": 0.015873015873015872,
+    "COL": 0.015873015873015872,
+    "ISR": 0.12698412698412698,
+    "SRB": 0.015873015873015872,
+    "CHE": 0.015873015873015872,
+    "UKR": 0.09523809523809523,
+    "QAT": 0.06349206349206349,
+    "IND": 0.031746031746031744,
+    "POL": 0.015873015873015872,
+    "AFG": 0.015873015873015872,
+    "TUR": 0.031746031746031744,
+    "AUS": 0.015873015873015872,
+    "CHN": 0.031746031746031744,
+    "GBR": 0.031746031746031744,
+    "MEX": 0.031746031746031744,
+    "SSD": 0.015873015873015872,
+    "RUS": 0.07936507936507936,
+    "DEU": 0.015873015873015872,
+    "SLV": 0.015873015873015872,
+    "PAK": 0.031746031746031744,
+    "LBY": 0.015873015873015872,
+    "IRN": 0.015873015873015872,
+    "RWA": 0.015873015873015872,
+    "ARE": 0.015873015873015872,
+    "FRA": 0.015873015873015872,
+    "ZAF": 0.047619047619047616,
+    "SAU": 0.031746031746031744
   },
   "exportData": {
-    "USA": 1.0
+    "USA": 1.0862068965517242
   },
   "nerData": {
-    "QAT": 0.16,
-    "SRB": 0.04,
-    "SYR": 0.2,
-    "IND": 0.04,
-    "ZAF": 0.08,
-    "ARE": 0.04,
-    "PAK": 0.04,
-    "MEX": 0.04,
-    "AFG": 0.04,
-    "USA": 0.12,
-    "SAU": 0.08,
-    "GBR": 0.12
+    "USA": 0.25862068965517243
   },
   "TopEntitiesByCountry": {
-    "UKR": [
-      {
-        "entity": "Keir Starmer",
-        "count": 1,
-        "share": 0.3333333333333333
-      },
-      {
-        "entity": "Eurovision",
-        "count": 1,
-        "share": 0.3333333333333333
-      },
-      {
-        "entity": "Putin",
-        "count": 1,
-        "share": 0.3333333333333333
-      }
-    ],
-    "TUR": [
-      {
-        "entity": "Putin",
-        "count": 1,
-        "share": 1.0
-      }
-    ],
     "RUS": [
       {
-        "entity": "Putin",
+        "entity": "Vladimir Putin",
         "count": 1,
         "share": 0.25
       },
@@ -96,51 +60,85 @@
         "share": 0.25
       }
     ],
-    "GBR": [
-      {
-        "entity": "Trump",
-        "count": 3,
-        "share": 0.3
-      },
+    "UKR": [
       {
         "entity": "Keir Starmer",
         "count": 1,
-        "share": 0.1
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Eurovision",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "TUR": [
+      {
+        "entity": "Vladimir Putin",
+        "count": 1,
+        "share": 1.0
+      }
+    ],
+    "USA": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.18181818181818182
+      },
+      {
+        "entity": "Bashar Al-Assad",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Trump\u2019s Embrace of",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Eric Lipton",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "The New York Times",
+        "count": 1,
+        "share": 0.09090909090909091
       },
       {
         "entity": "El",
         "count": 1,
-        "share": 0.1
+        "share": 0.09090909090909091
       },
       {
         "entity": "Sinaloa Cartel",
         "count": 1,
-        "share": 0.1
+        "share": 0.09090909090909091
       },
       {
-        "entity": "Infantino",
+        "entity": "Afrikaners",
         "count": 1,
-        "share": 0.1
+        "share": 0.09090909090909091
       },
       {
-        "entity": "FIFA",
+        "entity": "Cyril Ramaphosa",
         "count": 1,
-        "share": 0.1
+        "share": 0.09090909090909091
       },
       {
-        "entity": "Ianni Infantino",
+        "entity": "Ahmed Al-Shara",
         "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "World Cup",
-        "count": 1,
-        "share": 0.1
+        "share": 0.09090909090909091
       }
     ],
     "SYR": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 5,
         "share": 0.5
       },
@@ -163,90 +161,6 @@
         "entity": "Al Qaeda",
         "count": 1,
         "share": 0.1
-      }
-    ],
-    "USA": [
-      {
-        "entity": "Trump",
-        "count": 3,
-        "share": 0.25
-      },
-      {
-        "entity": "Bashar Al-Assad",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Eric Lipton",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "The New York Times",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "El",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Sinaloa Cartel",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Afrikaners",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Cyril Ramaphosa",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Ahmed Al-Shara",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Al Qaeda",
-        "count": 1,
-        "share": 0.08333333333333333
-      }
-    ],
-    "PSE": [
-      {
-        "entity": "Hamas",
-        "count": 3,
-        "share": 0.375
-      },
-      {
-        "entity": "Health Ministry",
-        "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "Palestine",
-        "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "Mi",
-        "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "litant",
-        "count": 1,
-        "share": 0.125
-      },
-      {
-        "entity": "Muhammad Sinwar",
-        "count": 1,
-        "share": 0.125
       }
     ],
     "ISR": [
@@ -276,16 +190,26 @@
         "share": 0.1111111111111111
       }
     ],
-    "FRA": [
+    "GBR": [
       {
-        "entity": "G\u00e9rard Depardieu",
+        "entity": "Keir Starmer",
         "count": 1,
-        "share": 0.5
+        "share": 0.25
       },
       {
-        "entity": "French",
+        "entity": "El",
         "count": 1,
-        "share": 0.5
+        "share": 0.25
+      },
+      {
+        "entity": "Sinaloa Cartel",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.25
       }
     ],
     "CAN": [
@@ -309,9 +233,9 @@
     ],
     "COL": [
       {
-        "entity": "Harvard",
-        "count": 1,
-        "share": 0.25
+        "entity": "Harvard Law School",
+        "count": 2,
+        "share": 0.5
       },
       {
         "entity": "Magna Carta",
@@ -320,11 +244,6 @@
       },
       {
         "entity": "British",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "Harvard Law School",
         "count": 1,
         "share": 0.25
       }
@@ -336,11 +255,65 @@
         "share": 1.0
       }
     ],
+    "ARE": [
+      {
+        "entity": "Trump\u2019s Embrace of",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "Eric Lipton",
+        "count": 1,
+        "share": 0.3333333333333333
+      },
+      {
+        "entity": "The New York Times",
+        "count": 1,
+        "share": 0.3333333333333333
+      }
+    ],
+    "SAU": [
+      {
+        "entity": "Trump\u2019s Embrace of",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Eric Lipton",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "The New York Times",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Western",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
     "QAT": [
       {
-        "entity": "Trump",
-        "count": 4,
-        "share": 0.36363636363636365
+        "entity": "Donald Trump",
+        "count": 3,
+        "share": 0.2727272727272727
+      },
+      {
+        "entity": "Ianni Infantino",
+        "count": 2,
+        "share": 0.18181818181818182
+      },
+      {
+        "entity": "Trump\u2019s Embrace of",
+        "count": 1,
+        "share": 0.09090909090909091
       },
       {
         "entity": "Eric Lipton",
@@ -358,17 +331,7 @@
         "share": 0.09090909090909091
       },
       {
-        "entity": "Infantino",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
         "entity": "FIFA",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Ianni Infantino",
         "count": 1,
         "share": 0.09090909090909091
       },
@@ -378,45 +341,6 @@
         "share": 0.09090909090909091
       }
     ],
-    "ARE": [
-      {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.3333333333333333
-      },
-      {
-        "entity": "Eric Lipton",
-        "count": 1,
-        "share": 0.3333333333333333
-      },
-      {
-        "entity": "The New York Times",
-        "count": 1,
-        "share": 0.3333333333333333
-      }
-    ],
-    "SAU": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.4
-      },
-      {
-        "entity": "Eric Lipton",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "The New York Times",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Western",
-        "count": 1,
-        "share": 0.2
-      }
-    ],
     "SRB": [
       {
         "entity": "Trump-Ku",
@@ -424,14 +348,14 @@
         "share": 0.5
       },
       {
-        "entity": "Trump",
+        "entity": "Trump Administration",
         "count": 1,
         "share": 0.5
       }
     ],
     "ZAF": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.4
       },
@@ -483,7 +407,7 @@
         "share": 0.14285714285714285
       },
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.14285714285714285
       }
@@ -497,14 +421,14 @@
     ],
     "PAK": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 1.0
       }
     ],
     "IND": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 1.0
       }
@@ -550,11 +474,11 @@
     ],
     "AFG": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 1.0
       }
     ]
   },
-  "topNer": "Trump"
+  "topNer": "Donald Trump"
 }

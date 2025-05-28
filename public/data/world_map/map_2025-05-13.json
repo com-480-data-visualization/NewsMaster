@@ -1,177 +1,91 @@
 {
   "importData": {
-    "GRL": 0.00625,
-    "EST": 0.0125,
-    "HUN": 0.0125,
-    "LVA": 0.0125,
-    "SRB": 0.0125,
-    "BLR": 0.0125,
-    "ESP": 0.0125,
-    "BEL": 0.0125,
-    "NLD": 0.0125,
-    "TUR": 0.0125,
-    "CHE": 0.0125,
-    "AND": 0.0125,
-    "MDA": 0.0125,
-    "VIR": 0.00625,
-    "IND": 0.05,
-    "COL": 0.00625,
-    "ZAF": 0.00625,
-    "ATG": 0.00625,
-    "BRA": 0.0125,
-    "NIC": 0.00625,
-    "SVN": 0.0125,
-    "ASM": 0.00625,
-    "PHL": 0.00625,
-    "BIH": 0.0125,
-    "BGD": 0.00625,
-    "MNE": 0.0125,
-    "DMA": 0.00625,
-    "ISL": 0.0125,
-    "POL": 0.0125,
-    "PER": 0.00625,
-    "ITA": 0.0125,
-    "UKR": 0.05625,
-    "PAN": 0.00625,
-    "DEU": 0.01875,
-    "HTI": 0.00625,
-    "ISR": 0.0125,
-    "JAM": 0.00625,
-    "HRV": 0.0125,
-    "CZE": 0.0125,
-    "AUT": 0.0125,
-    "PSE": 0.01875,
-    "PAK": 0.05,
-    "MKD": 0.0125,
-    "CAN": 0.0125,
-    "DNK": 0.0125,
-    "GRC": 0.0125,
-    "IRL": 0.0125,
-    "NOR": 0.0125,
-    "PRT": 0.0125,
-    "FIN": 0.0125,
-    "DOM": 0.00625,
-    "LUX": 0.0125,
-    "LIE": 0.0125,
-    "VCT": 0.00625,
-    "KOR": 0.00625,
-    "LCA": 0.00625,
-    "GRD": 0.00625,
-    "CHN": 0.03125,
-    "FRA": 0.0125,
-    "ROU": 0.0125,
-    "BHS": 0.00625,
-    "SAU": 0.00625,
-    "LTU": 0.0125,
-    "PRI": 0.00625,
-    "STP": 0.00625,
-    "IRN": 0.00625,
-    "SVK": 0.0125,
-    "RUS": 0.05,
-    "ALB": 0.0125,
-    "TTO": 0.00625,
-    "KNA": 0.00625,
-    "BRB": 0.00625,
-    "CYP": 0.0125,
-    "PNG": 0.0125,
-    "CUB": 0.00625,
-    "MLT": 0.0125,
-    "SWE": 0.0125,
-    "GBR": 0.0125,
-    "BGR": 0.0125
+    "AUT": 0.013071895424836602,
+    "CZE": 0.013071895424836602,
+    "VCT": 0.006535947712418301,
+    "EST": 0.013071895424836602,
+    "BRA": 0.013071895424836602,
+    "CAN": 0.013071895424836602,
+    "HRV": 0.013071895424836602,
+    "LUX": 0.013071895424836602,
+    "NLD": 0.013071895424836602,
+    "COL": 0.006535947712418301,
+    "ISR": 0.013071895424836602,
+    "BGR": 0.013071895424836602,
+    "HUN": 0.013071895424836602,
+    "ALB": 0.013071895424836602,
+    "SRB": 0.013071895424836602,
+    "CHE": 0.013071895424836602,
+    "ITA": 0.013071895424836602,
+    "UKR": 0.058823529411764705,
+    "BEL": 0.013071895424836602,
+    "KOR": 0.006535947712418301,
+    "VIR": 0.006535947712418301,
+    "HTI": 0.006535947712418301,
+    "SVN": 0.013071895424836602,
+    "IND": 0.05228758169934641,
+    "DOM": 0.006535947712418301,
+    "PER": 0.006535947712418301,
+    "POL": 0.013071895424836602,
+    "PHL": 0.006535947712418301,
+    "MNE": 0.013071895424836602,
+    "GRD": 0.006535947712418301,
+    "ROU": 0.013071895424836602,
+    "KNA": 0.006535947712418301,
+    "TUR": 0.013071895424836602,
+    "BLR": 0.013071895424836602,
+    "NIC": 0.006535947712418301,
+    "CHN": 0.032679738562091505,
+    "BHS": 0.006535947712418301,
+    "PRT": 0.013071895424836602,
+    "GRC": 0.013071895424836602,
+    "LCA": 0.006535947712418301,
+    "GRL": 0.006535947712418301,
+    "GBR": 0.013071895424836602,
+    "BRB": 0.006535947712418301,
+    "LIE": 0.013071895424836602,
+    "JAM": 0.006535947712418301,
+    "ESP": 0.013071895424836602,
+    "FIN": 0.013071895424836602,
+    "STP": 0.006535947712418301,
+    "RUS": 0.05228758169934641,
+    "LTU": 0.013071895424836602,
+    "IRL": 0.013071895424836602,
+    "CUB": 0.006535947712418301,
+    "DEU": 0.0196078431372549,
+    "PAK": 0.05228758169934641,
+    "DMA": 0.006535947712418301,
+    "MDA": 0.013071895424836602,
+    "SVK": 0.013071895424836602,
+    "CYP": 0.013071895424836602,
+    "IRN": 0.006535947712418301,
+    "AND": 0.013071895424836602,
+    "ATG": 0.006535947712418301,
+    "TTO": 0.006535947712418301,
+    "FRA": 0.013071895424836602,
+    "DNK": 0.013071895424836602,
+    "ZAF": 0.006535947712418301,
+    "ISL": 0.013071895424836602,
+    "LVA": 0.013071895424836602,
+    "SAU": 0.006535947712418301,
+    "MLT": 0.013071895424836602,
+    "SWE": 0.013071895424836602,
+    "PRI": 0.006535947712418301,
+    "NOR": 0.013071895424836602,
+    "BGD": 0.006535947712418301,
+    "BIH": 0.013071895424836602,
+    "MKD": 0.013071895424836602
   },
   "exportData": {
-    "USA": 1.0
+    "USA": 2.467741935483871
   },
   "nerData": {
-    "GRL": 0.00819672131147541,
-    "EST": 0.01639344262295082,
-    "HUN": 0.01639344262295082,
-    "LVA": 0.01639344262295082,
-    "SRB": 0.01639344262295082,
-    "BLR": 0.01639344262295082,
-    "ESP": 0.01639344262295082,
-    "BEL": 0.01639344262295082,
-    "NLD": 0.01639344262295082,
-    "CHE": 0.01639344262295082,
-    "AND": 0.01639344262295082,
-    "MDA": 0.01639344262295082,
-    "VIR": 0.00819672131147541,
-    "IND": 0.01639344262295082,
-    "ZAF": 0.00819672131147541,
-    "ATG": 0.00819672131147541,
-    "BRA": 0.00819672131147541,
-    "SVN": 0.01639344262295082,
-    "ASM": 0.00819672131147541,
-    "BIH": 0.01639344262295082,
-    "MNE": 0.01639344262295082,
-    "DMA": 0.00819672131147541,
-    "ISL": 0.01639344262295082,
-    "POL": 0.01639344262295082,
-    "ITA": 0.01639344262295082,
-    "UKR": 0.02459016393442623,
-    "DEU": 0.01639344262295082,
-    "HTI": 0.00819672131147541,
-    "ISR": 0.00819672131147541,
-    "JAM": 0.00819672131147541,
-    "HRV": 0.01639344262295082,
-    "CZE": 0.01639344262295082,
-    "AUT": 0.01639344262295082,
-    "PSE": 0.00819672131147541,
-    "PAK": 0.01639344262295082,
-    "MKD": 0.01639344262295082,
-    "CAN": 0.01639344262295082,
-    "DNK": 0.01639344262295082,
-    "GRC": 0.01639344262295082,
-    "IRL": 0.01639344262295082,
-    "NOR": 0.01639344262295082,
-    "PRT": 0.01639344262295082,
-    "FIN": 0.01639344262295082,
-    "DOM": 0.00819672131147541,
-    "LUX": 0.01639344262295082,
-    "LIE": 0.01639344262295082,
-    "VCT": 0.00819672131147541,
-    "LCA": 0.00819672131147541,
-    "GRD": 0.00819672131147541,
-    "CHN": 0.00819672131147541,
-    "FRA": 0.01639344262295082,
-    "ROU": 0.01639344262295082,
-    "BHS": 0.00819672131147541,
-    "USA": 0.03278688524590164,
-    "SAU": 0.00819672131147541,
-    "LTU": 0.01639344262295082,
-    "PRI": 0.00819672131147541,
-    "IRN": 0.00819672131147541,
-    "SVK": 0.01639344262295082,
-    "RUS": 0.02459016393442623,
-    "ALB": 0.01639344262295082,
-    "TTO": 0.00819672131147541,
-    "KNA": 0.00819672131147541,
-    "BRB": 0.00819672131147541,
-    "CYP": 0.01639344262295082,
-    "PNG": 0.01639344262295082,
-    "CUB": 0.00819672131147541,
-    "MLT": 0.01639344262295082,
-    "SWE": 0.01639344262295082,
-    "GBR": 0.01639344262295082,
-    "BGR": 0.01639344262295082
+    "USA": 0.27419354838709675
   },
   "TopEntitiesByCountry": {
-    "PNG": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.6666666666666666
-      },
-      {
-        "entity": "Saudi",
-        "count": 1,
-        "share": 0.3333333333333333
-      }
-    ],
     "USA": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 4,
         "share": 0.5
       },
@@ -191,14 +105,14 @@
         "share": 0.125
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.125
       }
     ],
     "SAU": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.5
       },
@@ -210,7 +124,7 @@
     ],
     "PAK": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.3333333333333333
       },
@@ -230,14 +144,14 @@
         "share": 0.16666666666666666
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.16666666666666666
       }
     ],
     "IND": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.3333333333333333
       },
@@ -257,61 +171,61 @@
         "share": 0.16666666666666666
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.16666666666666666
       }
     ],
     "UKR": [
       {
+        "entity": "Pope Leo Xiv",
+        "count": 3,
+        "share": 0.16666666666666666
+      },
+      {
         "entity": "European",
         "count": 3,
-        "share": 0.1875
+        "share": 0.16666666666666666
       },
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 3,
-        "share": 0.1875
+        "share": 0.16666666666666666
       },
       {
-        "entity": "Pope Leo Xiv",
-        "count": 2,
-        "share": 0.125
-      },
-      {
-        "entity": "Putin",
-        "count": 2,
-        "share": 0.125
-      },
-      {
-        "entity": "Leo",
-        "count": 1,
-        "share": 0.0625
+        "entity": "Vladimir V. Putin",
+        "count": 3,
+        "share": 0.16666666666666666
       },
       {
         "entity": "Francis",
         "count": 1,
-        "share": 0.0625
+        "share": 0.05555555555555555
       },
       {
-        "entity": "Zelensky",
+        "entity": "Volodymyr Zelensky",
         "count": 1,
-        "share": 0.0625
+        "share": 0.05555555555555555
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
-        "share": 0.0625
-      },
-      {
-        "entity": "Vladimir V",
-        "count": 1,
-        "share": 0.0625
+        "share": 0.05555555555555555
       },
       {
         "entity": "World War II",
         "count": 1,
-        "share": 0.0625
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Emmanuel Macron",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Close",
+        "count": 1,
+        "share": 0.05555555555555555
       }
     ],
     "TUR": [
@@ -326,46 +240,14 @@
         "share": 0.25
       },
       {
-        "entity": "Zelensky",
+        "entity": "Volodymyr Zelensky",
         "count": 1,
         "share": 0.25
       },
       {
-        "entity": "Putin",
+        "entity": "Vladimir V. Putin",
         "count": 1,
         "share": 0.25
-      }
-    ],
-    "PSE": [
-      {
-        "entity": "Hamas",
-        "count": 2,
-        "share": 0.2222222222222222
-      },
-      {
-        "entity": "Edan Alexander",
-        "count": 2,
-        "share": 0.2222222222222222
-      },
-      {
-        "entity": "American",
-        "count": 2,
-        "share": 0.2222222222222222
-      },
-      {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Pope Leo Xiv",
-        "count": 1,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Francis",
-        "count": 1,
-        "share": 0.1111111111111111
       }
     ],
     "ISR": [
@@ -380,130 +262,76 @@
         "share": 0.2857142857142857
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 2,
         "share": 0.2857142857142857
       },
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.14285714285714285
       }
     ],
     "RUS": [
       {
+        "entity": "Vladimir V. Putin",
+        "count": 5,
+        "share": 0.2631578947368421
+      },
+      {
         "entity": "European",
         "count": 3,
-        "share": 0.1875
+        "share": 0.15789473684210525
       },
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 3,
-        "share": 0.1875
+        "share": 0.15789473684210525
       },
       {
-        "entity": "Putin",
-        "count": 3,
-        "share": 0.1875
+        "entity": "Xi Jinping",
+        "count": 2,
+        "share": 0.10526315789473684
       },
       {
-        "entity": "Zelensky",
+        "entity": "Volodymyr Zelensky",
         "count": 1,
-        "share": 0.0625
+        "share": 0.05263157894736842
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
-        "share": 0.0625
-      },
-      {
-        "entity": "Xi",
-        "count": 1,
-        "share": 0.0625
+        "share": 0.05263157894736842
       },
       {
         "entity": "David Pierson",
         "count": 1,
-        "share": 0.0625
+        "share": 0.05263157894736842
       },
       {
         "entity": "The New York Times",
         "count": 1,
-        "share": 0.0625
+        "share": 0.05263157894736842
       },
       {
-        "entity": "Vladimir V. Putin",
+        "entity": "World War II",
         "count": 1,
-        "share": 0.0625
+        "share": 0.05263157894736842
       },
       {
-        "entity": "Xi Jinping",
+        "entity": "Emmanuel Macron",
         "count": 1,
-        "share": 0.0625
+        "share": 0.05263157894736842
       }
     ],
-    "JAM": [
+    "VCT": [
       {
         "entity": "Lu",
         "count": 1,
         "share": 0.2
       },
       {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Luiz In\u00e1cio Lula Da Silva",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Xi Jinping",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Latin American",
-        "count": 1,
-        "share": 0.2
-      }
-    ],
-    "KNA": [
-      {
-        "entity": "Lu",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Luiz In\u00e1cio Lula Da Silva",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Xi Jinping",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Latin American",
-        "count": 1,
-        "share": 0.2
-      }
-    ],
-    "ATG": [
-      {
-        "entity": "Lu",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.2
       },
@@ -530,115 +358,7 @@
         "share": 0.2
       },
       {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Luiz In\u00e1cio Lula Da Silva",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Xi Jinping",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Latin American",
-        "count": 1,
-        "share": 0.2
-      }
-    ],
-    "BRB": [
-      {
-        "entity": "Lu",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Luiz In\u00e1cio Lula Da Silva",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Xi Jinping",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Latin American",
-        "count": 1,
-        "share": 0.2
-      }
-    ],
-    "GRD": [
-      {
-        "entity": "Lu",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Luiz In\u00e1cio Lula Da Silva",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Xi Jinping",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Latin American",
-        "count": 1,
-        "share": 0.2
-      }
-    ],
-    "DMA": [
-      {
-        "entity": "Lu",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Luiz In\u00e1cio Lula Da Silva",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Xi Jinping",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Latin American",
-        "count": 1,
-        "share": 0.2
-      }
-    ],
-    "CUB": [
-      {
-        "entity": "Lu",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.2
       },
@@ -665,7 +385,88 @@
         "share": 0.2
       },
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Luiz In\u00e1cio Lula Da Silva",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Xi Jinping",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "PRI": [
+      {
+        "entity": "Lu",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Luiz In\u00e1cio Lula Da Silva",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Xi Jinping",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "ATG": [
+      {
+        "entity": "Lu",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Luiz In\u00e1cio Lula Da Silva",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Xi Jinping",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "BRB": [
+      {
+        "entity": "Lu",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.2
       },
@@ -692,7 +493,88 @@
         "share": 0.2
       },
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Luiz In\u00e1cio Lula Da Silva",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Xi Jinping",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "GRD": [
+      {
+        "entity": "Lu",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Luiz In\u00e1cio Lula Da Silva",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Xi Jinping",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "HTI": [
+      {
+        "entity": "Lu",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Luiz In\u00e1cio Lula Da Silva",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Xi Jinping",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "LCA": [
+      {
+        "entity": "Lu",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.2
       },
@@ -719,7 +601,7 @@
         "share": 0.14285714285714285
       },
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.14285714285714285
       },
@@ -749,95 +631,14 @@
         "share": 0.14285714285714285
       }
     ],
-    "LCA": [
+    "JAM": [
       {
         "entity": "Lu",
         "count": 1,
         "share": 0.2
       },
       {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Luiz In\u00e1cio Lula Da Silva",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Xi Jinping",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Latin American",
-        "count": 1,
-        "share": 0.2
-      }
-    ],
-    "VCT": [
-      {
-        "entity": "Lu",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Luiz In\u00e1cio Lula Da Silva",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Xi Jinping",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Latin American",
-        "count": 1,
-        "share": 0.2
-      }
-    ],
-    "PRI": [
-      {
-        "entity": "Lu",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Luiz In\u00e1cio Lula Da Silva",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Xi Jinping",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Latin American",
-        "count": 1,
-        "share": 0.2
-      }
-    ],
-    "HTI": [
-      {
-        "entity": "Lu",
-        "count": 1,
-        "share": 0.2
-      },
-      {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.2
       },
@@ -864,7 +665,34 @@
         "share": 0.2
       },
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Luiz In\u00e1cio Lula Da Silva",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Xi Jinping",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "CUB": [
+      {
+        "entity": "Lu",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.2
       },
@@ -887,53 +715,107 @@
     "CHN": [
       {
         "entity": "Xi Jinping",
-        "count": 3,
-        "share": 0.25
+        "count": 4,
+        "share": 0.2857142857142857
+      },
+      {
+        "entity": "Vladimir V. Putin",
+        "count": 2,
+        "share": 0.14285714285714285
       },
       {
         "entity": "Lu",
         "count": 1,
-        "share": 0.08333333333333333
+        "share": 0.07142857142857142
       },
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
-        "share": 0.08333333333333333
+        "share": 0.07142857142857142
       },
       {
         "entity": "Luiz In\u00e1cio Lula Da Silva",
         "count": 1,
-        "share": 0.08333333333333333
+        "share": 0.07142857142857142
       },
       {
         "entity": "Latin American",
         "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Xi",
-        "count": 1,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Putin",
-        "count": 1,
-        "share": 0.08333333333333333
+        "share": 0.07142857142857142
       },
       {
         "entity": "David Pierson",
         "count": 1,
-        "share": 0.08333333333333333
+        "share": 0.07142857142857142
       },
       {
         "entity": "The New York Times",
         "count": 1,
-        "share": 0.08333333333333333
+        "share": 0.07142857142857142
       },
       {
-        "entity": "Vladimir V. Putin",
+        "entity": "Trade Wars",
         "count": 1,
-        "share": 0.08333333333333333
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Americans",
+        "count": 1,
+        "share": 0.07142857142857142
+      }
+    ],
+    "DMA": [
+      {
+        "entity": "Lu",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Luiz In\u00e1cio Lula Da Silva",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Xi Jinping",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.2
+      }
+    ],
+    "KNA": [
+      {
+        "entity": "Lu",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Luiz In\u00e1cio Lula Da Silva",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Xi Jinping",
+        "count": 1,
+        "share": 0.2
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.2
       }
     ],
     "PHL": [
@@ -945,31 +827,26 @@
     ],
     "CAN": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 1.0
       }
     ],
     "PER": [
       {
+        "entity": "Pope Leo Xiv",
+        "count": 2,
+        "share": 0.6666666666666666
+      },
+      {
         "entity": "Pope",
-        "count": 1,
-        "share": 0.3333333333333333
-      },
-      {
-        "entity": "Leo",
-        "count": 1,
-        "share": 0.3333333333333333
-      },
-      {
-        "entity": "Leo Xiv",
         "count": 1,
         "share": 0.3333333333333333
       }
     ],
     "ZAF": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 1.0
       }
@@ -1022,13 +899,6 @@
         "share": 1.0
       }
     ],
-    "PAN": [
-      {
-        "entity": "Ricardo Martinelli",
-        "count": 1,
-        "share": 1.0
-      }
-    ],
     "NIC": [
       {
         "entity": "Ricardo Martinelli",
@@ -1038,14 +908,14 @@
     ],
     "IRN": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 1.0
       }
     ],
-    "FRA": [
+    "AUT": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1055,286 +925,14 @@
         "share": 0.25
       },
       {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "MKD": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "EST": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "HUN": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "SRB": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "LVA": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "ROU": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "DNK": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "GRC": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "IRL": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "NOR": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "SVN": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "ESP": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "BLR": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "PRT": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "ASM": [
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.3333333333333333
-      },
-      {
-        "entity": "Trump",
-        "count": 1,
-        "share": 0.3333333333333333
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.3333333333333333
-      }
-    ],
-    "FIN": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
     "BEL": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1344,14 +942,14 @@
         "share": 0.25
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
-    "NLD": [
+    "CZE": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1361,184 +959,14 @@
         "share": 0.25
       },
       {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "BIH": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "MNE": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "CHE": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "LUX": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "POL": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "ISL": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "LIE": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "LTU": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "AND": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "MDA": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
     "SVK": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1548,14 +976,14 @@
         "share": 0.25
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
-    "ITA": [
+    "EST": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1565,14 +993,490 @@
         "share": 0.25
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "CYP": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "PRT": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "SVN": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "GRC": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "AND": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "GBR": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "HRV": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "LUX": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "LIE": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "POL": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "ESP": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "NLD": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "FRA": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "FIN": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "DNK": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "MNE": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "ROU": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "BGR": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "ISL": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "LTU": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "IRL": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "HUN": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "LVA": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "ALB": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "MLT": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "SRB": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "NOR": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.25
+      }
+    ],
+    "CHE": [
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.5
+      },
+      {
+        "entity": "European",
+        "count": 1,
+        "share": 0.25
+      },
+      {
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
     "DEU": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.3333333333333333
       },
@@ -1582,7 +1486,7 @@
         "share": 0.16666666666666666
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.16666666666666666
       },
@@ -1597,9 +1501,9 @@
         "share": 0.16666666666666666
       }
     ],
-    "ALB": [
+    "ITA": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1609,14 +1513,14 @@
         "share": 0.25
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
-    "HRV": [
+    "BLR": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1626,14 +1530,14 @@
         "share": 0.25
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
-    "CYP": [
+    "BIH": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1643,14 +1547,14 @@
         "share": 0.25
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
-    "MLT": [
+    "MKD": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1660,14 +1564,14 @@
         "share": 0.25
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
     "SWE": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1677,14 +1581,14 @@
         "share": 0.25
       },
       {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
-    "CZE": [
+    "MDA": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 2,
         "share": 0.5
       },
@@ -1694,65 +1598,14 @@
         "share": 0.25
       },
       {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "AUT": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "GBR": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
-        "count": 1,
-        "share": 0.25
-      }
-    ],
-    "BGR": [
-      {
-        "entity": "Trump",
-        "count": 2,
-        "share": 0.5
-      },
-      {
-        "entity": "European",
-        "count": 1,
-        "share": 0.25
-      },
-      {
-        "entity": "American",
+        "entity": "Latin American",
         "count": 1,
         "share": 0.25
       }
     ],
     "GRL": [
       {
-        "entity": "Trump",
+        "entity": "Donald Trump",
         "count": 1,
         "share": 0.5
       },
@@ -1763,5 +1616,5 @@
       }
     ]
   },
-  "topNer": "Trump"
+  "topNer": "Donald Trump"
 }
