@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { 
   createImportColorScale, createExportColorScale
-} from '../../data/mapStyle';
+} from '../../lib/mapStyle';
 
 // Define entity structure
 interface EntityData {
@@ -15,7 +15,7 @@ interface EntityData {
 interface TooltipData {
   importData: Record<string, number>;
   exportData: Record<string, number>;
-  TopEntitiesByCountry?: Record<string, EntityData[]>;
+  topEntitiesByCountry?: Record<string, EntityData[]>;
 }
 
 type Props = {
@@ -146,12 +146,12 @@ const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode, data }) => {
     // Debug logging
     console.log('Tooltip Debug:', {
       countryId,
-      hasTopEntitiesByCountry: !!data.TopEntitiesByCountry,
-      availableCountries: data.TopEntitiesByCountry ? Object.keys(data.TopEntitiesByCountry) : [],
-      entitiesForCountry: data.TopEntitiesByCountry?.[countryId]
+      hastopEntitiesByCountry: !!data.topEntitiesByCountry,
+      availableCountries: data.topEntitiesByCountry ? Object.keys(data.topEntitiesByCountry) : [],
+      entitiesForCountry: data.topEntitiesByCountry?.[countryId]
     });
     
-    const entities = data.TopEntitiesByCountry?.[countryId] || [];
+    const entities = data.topEntitiesByCountry?.[countryId] || [];
     
     if (entities.length === 0) {
       return (

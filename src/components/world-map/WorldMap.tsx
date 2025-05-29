@@ -2,6 +2,21 @@ import React, { useRef, useEffect, useState, useCallback } from 'react';
 import * as d3 from 'd3';
 import type { GeoJSON } from 'geojson';
 
+// Legend configuration type
+export type LegendConfig = {
+  title: string;
+  colorRange: [string, string]; // [start color, end color]
+  valueRange: [number, number]; // [min value, max value]
+  unit?: string; // e.g., '%', 'articles', etc.
+};
+
+// Map size configuration
+export type MapSize = {
+  width: number;
+  height: number;
+  scale: number;
+};
+
 type Props = {
   colorScale: (value: number) => string;
   strokeColor: string;
@@ -9,9 +24,20 @@ type Props = {
   data: Record<string, number>;
   setSelectedCountry: (country: string | null) => void;
   setHoveredCountry: (country: { id: string; name: string; position: { x: number; y: number } } | null) => void;
+  legend?: LegendConfig; // Optional legend configuration
+  mapSize?: MapSize; // Optional map size configuration
 };
 
-const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, data, setSelectedCountry, setHoveredCountry }) => {
+const WorldMap: React.FC<Props> = ({ 
+  colorScale, 
+  strokeColor, 
+  highlightColor, 
+  data, 
+  setSelectedCountry, 
+  setHoveredCountry,
+  legend,
+  mapSize = { width: 960, height: 500, scale: 160 } // Default values
+}) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const [mapInitialized, setMapInitialized] = useState(false);
 
@@ -36,11 +62,11 @@ const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, da
   useEffect(() => {
     if (!svgRef.current || mapInitialized) return;
 
-    const width = 960, height = 500;
+    const { width, height, scale } = mapSize;
     const svg = d3.select(svgRef.current);
     
     const projection = d3.geoNaturalEarth1()
-      .scale(160)
+      .scale(scale)
       .translate([width / 2, height / 2]);
     
     const path = d3.geoPath().projection(projection);
@@ -85,9 +111,6 @@ const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, da
           const countryId = (d as any).id;
           const countryName = (d as any).properties.name;
           
-          // Get SVG element position
-          const svgRect = svgRef.current?.getBoundingClientRect();
-          
           // Highlight country - use current stroke color from closure
           d3.select(this)
             .style("stroke-width", 1.5)
@@ -128,7 +151,7 @@ const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, da
       setMapInitialized(true);
     });
     
-  }, []); // Only run once on mount
+  }, [mapSize]); // Add mapSize as dependency
 
   // Update stroke and highlight colors when they change
   useEffect(() => {
@@ -183,13 +206,46 @@ const WorldMap: React.FC<Props> = ({ colorScale, strokeColor, highlightColor, da
   }, [colorScale, data, mapInitialized, updateMapColors]);
 
   return (
-    <svg 
-      ref={svgRef} 
-      width="100%" 
-      height="500" 
-      viewBox="0 0 960 500" 
-      className="mx-auto"
-    />
+    <div className="relative w-full h-full">
+      <svg 
+        ref={svgRef} 
+        width="100%" 
+        height={mapSize.height} 
+        viewBox={`0 0 ${mapSize.width} ${mapSize.height}`} 
+        className="mx-auto"
+      />
+      
+      {/* Optional Legend - positioned at bottom center where Antarctica would be */}
+      {legend && (
+        <div 
+          className="absolute bg-card/90 backdrop-blur-sm p-3 rounded-lg border shadow-lg transform -translate-x-1/2"
+          style={{ 
+            left: '50%', 
+            bottom: `${Math.max(20, mapSize.height * 0.08)}px` // Y offset relative to map size
+          }}
+        >
+          <div className="space-y-2">
+            <p className="text-xs font-medium text-foreground text-center">
+              {legend.title}
+            </p>
+            <div 
+              className="w-32 h-3 rounded-sm overflow-hidden" 
+              style={{ 
+                background: `linear-gradient(to right, ${legend.colorRange[0]}, ${legend.colorRange[1]})`
+              }}
+            />
+            <div className="flex justify-between w-32">
+              <span className="text-xs text-muted-foreground">
+                {legend.valueRange[0]}{legend.unit || ''}
+              </span>
+              <span className="text-xs text-muted-foreground">
+                {legend.valueRange[1]}{legend.unit || ''}
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 

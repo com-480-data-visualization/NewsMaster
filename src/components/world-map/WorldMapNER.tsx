@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import WorldMap from './WorldMap';
-import { createImportColorScale, getImportColorRange, strokeColor, highlightColor } from '../../data/mapStyle';
-import { loadNERData, type TimeRange } from '../../data/dataLoader';
-
-// Define structure for loaded NER data state
-interface NERMapData {
-  importData: Record<string, number>;
-  exportData: Record<string, number>;
-  entityMentions: Record<string, number>;
-  totalArticles: number;
-}
+import { createImportColorScale, getImportColorRange, strokeColor, highlightColor } from '../../lib/mapStyle';
+import { loadAggregatedData, type MapData, type TimeRange } from '../../lib/worldMapHelper.ts';
 
 interface WorldMapPageProps {
   entity?: string;
@@ -17,7 +9,7 @@ interface WorldMapPageProps {
 
 const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
   // State management
-  const [mapData, setMapData] = useState<NERMapData | null>(null); // State for loaded NER data
+  const [mapData, setMapData] = useState<MapData | null>(null); // State for loaded map data
   const [isLoading, setIsLoading] = useState<boolean>(true); // Loading state
   const [timeRange] = useState<TimeRange>('today'); // Default to today for NER view
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
@@ -51,7 +43,7 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
       };
     }
 
-    const maxEntityMentions = Math.max(...Object.values(mapData.entityMentions), 0);
+    const maxEntityMentions = Math.max(...Object.values(mapData.nerData), 0);
     const domain: [number, number] = [0, maxEntityMentions || 0.001];
 
     return {
@@ -66,8 +58,8 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const data = await loadNERData(entity, timeRange);
-        setMapData(data);
+        const aggregatedData = await loadAggregatedData(timeRange);
+        setMapData(aggregatedData);
       } catch (error) {
         console.error("Error loading NER map data:", error);
         setMapData(null);
@@ -101,8 +93,9 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
   };
 
 
-  // Determine current data slice based on loaded data (use entity mentions for NER)
-  const currentData = mapData ? mapData.entityMentions : {};
+  // Determine current data slice based on loaded data (use nerData for NER)
+  const currentData = mapData ? mapData.nerData : {};
+  const totalArticles = mapData ? Object.values(mapData.nerData).reduce((sum, count) => sum + count, 0) : 0;
 
   const { highest, lowest } = getExtremeCountries(currentData);
 
