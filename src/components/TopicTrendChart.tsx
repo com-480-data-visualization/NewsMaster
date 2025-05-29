@@ -131,11 +131,6 @@ const TopicTrendChart: React.FC<TopicTrendChartProps> = ({ data, defaultTopic })
 
     return (
         <div className="h-full flex flex-col">
-            {selectedTopics.length > 1 && (
-                <div className="mb-2 text-sm text-gray-600 dark:text-gray-400 flex-shrink-0">
-                    Comparing {selectedTopics.length} topics over the last 7 days
-                </div>
-            )}
             <div className="flex-1 min-h-0">
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart
