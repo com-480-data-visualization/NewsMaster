@@ -726,73 +726,6 @@ try {
 		if (animationController) {
 			animationController.destroy();
 		}
-		window.removeEventListener('wheel', handleWheelScroll);
-	});
-
-	// Smooth scrolling logic
-	let isScrolling = false;
-	let scrollTimeout: number | undefined;
-	const scrollCooldown = 800;
-	let currentSectionIndex = 0;
-	const sections = ['hero-section', 'recap-section', 'temporal-section', 'network-section', 'statistics-section', 'exploration-section'];
-
-	function scrollToSection(index: number) {
-		if (index >= 0 && index < sections.length) {
-			const sectionId = sections[index];
-			const sectionElement = document.getElementById(sectionId);
-			if (sectionElement) {
-				isScrolling = true;
-				sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-				currentSectionIndex = index;
-				setTimeout(() => {
-					isScrolling = false;
-				}, scrollCooldown);
-			}
-		}
-	}
-
-	function handleWheelScroll(event: WheelEvent) {
-		if (isScrolling) {
-			event.preventDefault();
-			return;
-		}
-
-		clearTimeout(scrollTimeout);
-
-		scrollTimeout = window.setTimeout(() => {
-			if (event.deltaY > 0) {
-				// Scrolling down
-				if (currentSectionIndex < sections.length - 1) {
-					scrollToSection(currentSectionIndex + 1);
-				}
-			} else if (event.deltaY < 0) {
-				// Scrolling up
-				if (currentSectionIndex > 0) {
-					scrollToSection(currentSectionIndex - 1);
-				}
-			}
-		}, 50);
-		
-		event.preventDefault(); 
-	}
-
-	// Add event listener after DOM is ready
-	document.addEventListener("DOMContentLoaded", () => {
-		// Initialize currentSectionIndex based on initial scroll position or default to 0
-		const initialScrollY = window.scrollY;
-		for(let i=0; i < sections.length; i++){
-			const sectionElement = document.getElementById(sections[i]);
-			if(sectionElement && sectionElement.offsetTop >= initialScrollY){
-				currentSectionIndex = i;
-				break;
-			}
-		}
-		// Make sure the first section is visible on load
-		if (window.scrollY < document.getElementById(sections[0])!.offsetHeight * 0.5 ) {
-			 scrollToSection(0);
-		}
-
-		window.addEventListener('wheel', handleWheelScroll, { passive: false });
 	});
 </script>
 
@@ -800,7 +733,7 @@ try {
 	html {
 		box-sizing: border-box;
 		height: 100%;
-		overflow-y: hidden;
+		scroll-behavior: smooth;
 	}
 
 	*, *::before, *::after {
@@ -809,8 +742,8 @@ try {
 
 	body {
 		height: 100%;
-		overflow-y: scroll;
 		margin: 0;
+		overflow-x: hidden; /* Prevent horizontal scroll */
 	}
 </style>
 

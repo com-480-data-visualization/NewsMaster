@@ -11,6 +11,15 @@ export class ScrollAnimationController {
   private scrollIndicator: HTMLElement | null = null;
   private topEntitySpan: HTMLElement | null = null;
   private headerHeight = 0;
+  
+  // Enhanced scroll detection properties
+  private scrollAccumulator = 0;
+  private scrollThreshold = 100;
+  private lastScrollTime = 0;
+  private scrollDirection = 0;
+  private isTrackpad = false;
+  private trackpadDetectionTimeout: NodeJS.Timeout | null = null;
+  private momentumTimeout: NodeJS.Timeout | null = null;
 
   constructor() {
     this.init();
@@ -28,6 +37,58 @@ export class ScrollAnimationController {
     
     // Setup intersection observer for animations
     this.setupIntersectionObserver();
+    
+    // Detect trackpad vs mouse wheel
+    this.detectInputDevice();
+  }
+
+  private detectInputDevice() {
+    let wheelEventCount = 0;
+    let wheelEventTime = 0;
+    let consecutiveSmallDeltas = 0;
+    
+    const detectHandler = (e: WheelEvent) => {
+      const now = Date.now();
+      
+      // Reset counter if too much time has passed
+      if (now - wheelEventTime > 100) {
+        wheelEventCount = 0;
+        consecutiveSmallDeltas = 0;
+      }
+      
+      wheelEventCount++;
+      wheelEventTime = now;
+      
+      // Count small delta events (typical of trackpads)
+      if (Math.abs(e.deltaY) < 30) {
+        consecutiveSmallDeltas++;
+      } else {
+        consecutiveSmallDeltas = 0;
+      }
+      
+      // Enhanced trackpad detection
+      // Trackpads: many small events in quick succession with decimal values
+      // Mouse wheels: fewer, larger events with integer values
+      const hasDecimalDelta = e.deltaY % 1 !== 0;
+      const isSmallDelta = Math.abs(e.deltaY) < 50;
+      const isManyEvents = wheelEventCount > 3;
+      const hasConsecutiveSmallDeltas = consecutiveSmallDeltas > 2;
+      
+      if ((hasDecimalDelta && isSmallDelta) || (isManyEvents && hasConsecutiveSmallDeltas)) {
+        this.isTrackpad = true;
+        this.scrollThreshold = 40; // Lower threshold for trackpads
+      } else if (Math.abs(e.deltaY) > 80 && !hasDecimalDelta) {
+        this.isTrackpad = false;
+        this.scrollThreshold = 100; // Higher threshold for mouse wheels
+      }
+    };
+    
+    window.addEventListener('wheel', detectHandler, { passive: true });
+    
+    // Remove detection after 3 seconds
+    setTimeout(() => {
+      window.removeEventListener('wheel', detectHandler);
+    }, 3000);
   }
 
   private calculateHeaderHeight() {
@@ -134,39 +195,94 @@ export class ScrollAnimationController {
   }
 
   private setupScrollListeners() {
-    let scrollTimeout: NodeJS.Timeout;
-
-    window.addEventListener('wheel', (e) => {
+    let lastWheelEvent = 0;
+    let scrollCooldown = false;
+    
+    const handleWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      
+      const now = Date.now();
+      const timeDelta = now - lastWheelEvent;
+      lastWheelEvent = now;
+      
+      // Skip if we're already scrolling to a section
       if (this.isScrolling) {
-        e.preventDefault();
         return;
       }
-
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        if (e.deltaY > 0) {
-          this.nextSection();
-        } else {
-          this.previousSection();
+      
+      // Skip if we're in cooldown period
+      if (scrollCooldown) {
+        return;
+      }
+      
+      // Determine scroll direction
+      const direction = e.deltaY > 0 ? 1 : -1;
+      
+      // For trackpads, use accumulator approach with momentum detection
+      if (this.isTrackpad) {
+        // Reset accumulator if direction changed or too much time passed
+        if (this.scrollDirection !== direction || timeDelta > 200) {
+          this.scrollAccumulator = 0;
         }
-      }, 50);
-    }, { passive: false });
+        
+        this.scrollDirection = direction;
+        this.scrollAccumulator += Math.abs(e.deltaY);
+        
+        // Clear any existing momentum timeout
+        if (this.momentumTimeout) {
+          clearTimeout(this.momentumTimeout);
+        }
+        
+        // Set momentum timeout to detect end of trackpad gesture
+        this.momentumTimeout = setTimeout(() => {
+          // If we have accumulated enough scroll, trigger section change
+          if (this.scrollAccumulator >= this.scrollThreshold) {
+            this.triggerSectionChange(direction);
+            this.scrollAccumulator = 0;
+            
+            // Set cooldown to prevent rapid section changes
+            scrollCooldown = true;
+            setTimeout(() => {
+              scrollCooldown = false;
+            }, 700);
+          } else {
+            // Reset accumulator if threshold wasn't reached
+            this.scrollAccumulator = 0;
+          }
+          this.momentumTimeout = null;
+        }, 100); // Wait for momentum to settle
+        
+      } else {
+        // For mouse wheels, use immediate response with debouncing
+        if (timeDelta > 50) { // Debounce mouse wheel events
+          this.triggerSectionChange(direction);
+          
+          // Set cooldown
+          scrollCooldown = true;
+          setTimeout(() => {
+            scrollCooldown = false;
+          }, 600);
+        }
+      }
+    };
+
+    window.addEventListener('wheel', handleWheel, { passive: false });
 
     // Keyboard navigation
     window.addEventListener('keydown', (e) => {
-      if (this.isScrolling) return;
+      if (this.isScrolling || scrollCooldown) return;
 
       switch (e.key) {
         case 'ArrowDown':
         case 'PageDown':
         case ' ':
           e.preventDefault();
-          this.nextSection();
+          this.triggerSectionChange(1);
           break;
         case 'ArrowUp':
         case 'PageUp':
           e.preventDefault();
-          this.previousSection();
+          this.triggerSectionChange(-1);
           break;
         case 'Home':
           e.preventDefault();
@@ -178,6 +294,46 @@ export class ScrollAnimationController {
           break;
       }
     });
+
+    // Handle manual scrolling (when user scrolls normally)
+    let manualScrollTimeout: NodeJS.Timeout;
+    window.addEventListener('scroll', () => {
+      // Clear any existing timeout
+      clearTimeout(manualScrollTimeout);
+      
+      // Set a timeout to update current section after manual scrolling stops
+      manualScrollTimeout = setTimeout(() => {
+        if (!this.isScrolling) {
+          this.updateCurrentSectionFromScroll();
+        }
+      }, 150);
+    }, { passive: true });
+  }
+
+  private triggerSectionChange(direction: number) {
+    if (direction > 0) {
+      this.nextSection();
+    } else {
+      this.previousSection();
+    }
+  }
+
+  private updateCurrentSectionFromScroll() {
+    const scrollY = window.scrollY + this.headerHeight + 100; // Add some offset
+    
+    for (let i = 0; i < this.sections.length; i++) {
+      const section = this.sections[i];
+      const sectionTop = section.element.offsetTop;
+      const sectionBottom = sectionTop + section.element.offsetHeight;
+      
+      if (scrollY >= sectionTop && scrollY < sectionBottom) {
+        if (this.currentSectionIndex !== i) {
+          this.currentSectionIndex = i;
+          this.updateScrollIndicator();
+        }
+        break;
+      }
+    }
   }
 
   private setupIntersectionObserver() {
@@ -266,7 +422,7 @@ export class ScrollAnimationController {
 
     // Calculate proper scroll position accounting for header
     const elementTop = targetElement.offsetTop;
-    const scrollPosition = elementTop - (this.headerHeight + 24); // 24px for some padding
+    const scrollPosition = elementTop - (this.headerHeight - 100); // 24px for some padding
 
     // Smooth scroll to section with proper offset
     window.scrollTo({
@@ -317,6 +473,15 @@ export class ScrollAnimationController {
   public destroy() {
     if (this.scrollIndicator) {
       this.scrollIndicator.remove();
+    }
+    
+    // Clear any pending timeouts
+    if (this.trackpadDetectionTimeout) {
+      clearTimeout(this.trackpadDetectionTimeout);
+    }
+    
+    if (this.momentumTimeout) {
+      clearTimeout(this.momentumTimeout);
     }
     
     this.sections.forEach(section => {
