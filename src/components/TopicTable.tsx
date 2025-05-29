@@ -34,7 +34,8 @@ const formatPercentage = (change: number | null): string => {
 }
 
 // Helper function to get class for trend values
-const getTrendClass = (isPresenceTrendingUp: boolean | null): string => {
+const getTrendClass = (isPresenceTrendingUp: boolean | null, percentageChange: number | null): string => {
+    if (percentageChange === 0) return 'text-gray-500 dark:text-gray-400';
     if (isPresenceTrendingUp === null) return 'text-gray-500 dark:text-gray-400';
     return isPresenceTrendingUp ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400';
 }
@@ -88,16 +89,13 @@ const truncateText = (text: string, maxLength: number = 20): string => {
 
 // Define the styles
 const tableWrapperStyle = {
-    maxHeight: 'calc(100% - 4rem)' /* Adjust based on header height */
-};
-
-const tableHeaderStyle = {
-    backgroundColor: '#f9fafb' /* Keep header visible */
+    maxHeight: 'calc(100vh - 300px)' /* Adjust based on header height */
 };
 
 const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) => {
     const tableWrapperRef = useRef<HTMLDivElement>(null);
     const [maxLength, setMaxLength] = useState<number>(calculateOptimalMaxLength());
+    const [selectedTopics, setSelectedTopics] = useState<string[]>(defaultSelectedTopic ? [defaultSelectedTopic] : []);
 
     useEffect(() => {
         const handleResize = () => {
@@ -119,11 +117,35 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
         };
     }, []);
 
+    useEffect(() => {
+        setSelectedTopics(defaultSelectedTopic ? [defaultSelectedTopic] : []);
+    }, [defaultSelectedTopic]);
+
+    const handleRowClick = (topic: string) => {
+        console.log(`Table: Row clicked, dispatching topicSelected for topic: ${topic}`);
+        
+        // Update local selection state - toggle topic in array
+        setSelectedTopics(prevSelected => {
+            if (prevSelected.includes(topic)) {
+                // Remove topic if already selected
+                return prevSelected.filter(t => t !== topic);
+            } else {
+                // Add topic if not selected
+                return [...prevSelected, topic];
+            }
+        });
+        
+        // Dispatch custom event for chart component
+        document.dispatchEvent(new CustomEvent('topicSelected', {
+            detail: { topic }
+        }));
+    };
+
     return (
         <div 
             ref={tableWrapperRef}
             id="topic-table-wrapper" 
-            className="overflow-x-auto" 
+            className="overflow-x-auto overflow-y-auto" 
             style={tableWrapperStyle}
         >
             <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
@@ -132,13 +154,13 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
                         <th scope="col" className="px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Rank</th>
                         <th scope="col" className="px-4 py-2 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Topic</th>
                         <th scope="col" className="px-4 py-2 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Presence in articles</th>
-                        <th scope="col" className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Rank trend</th>
-                        <th scope="col" className="px-4 py-2 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Since last week</th>
+                        <th scope="col" className="px-4 py-2 text-center text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Trend</th>
+                        <th scope="col" className="px-4 py-2 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Since yesterday</th>
                     </tr>
                 </thead>
                 <tbody className="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-700">
                     {data.filter(item => item.latestScore > 0).map((item) => {
-                        const isDefaultSelected = defaultSelectedTopic === item.topic;
+                        const isSelected = selectedTopics.includes(item.topic);
                         const truncatedTopic = truncateText(item.topic, maxLength);
                         const isTopicTruncated = item.topic.length > maxLength;
                         
@@ -147,18 +169,9 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
                                 key={item.topic}
                                 data-topic={item.topic}
                                 className={`hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer topic-row ${
-                                    isDefaultSelected ? 'bg-blue-100 dark:bg-blue-900/40' : ''
+                                    isSelected ? 'bg-blue-100 dark:bg-blue-900/40' : ''
                                 }`}
-                                onClick={(event) => {
-                                    // Dispatch a custom event that the parent page can listen to
-                                    console.log(`Table: Row clicked, dispatching topicSelected for topic: ${item.topic}`);
-                                    document.dispatchEvent(new CustomEvent('topicSelected', {
-                                        detail: { topic: item.topic }
-                                    }));
-                                    // Toggle selection on the current row
-                                    event.currentTarget.classList.toggle('bg-blue-100');
-                                    event.currentTarget.classList.toggle('dark:bg-blue-900/40');
-                                }}
+                                onClick={() => handleRowClick(item.topic)}
                             >
                                 <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">{item.rank}</td>
                                 <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
@@ -172,7 +185,7 @@ const TopicTable: React.FC<TopicTableProps> = ({ data, defaultSelectedTopic }) =
                                 <td className="px-4 py-2 whitespace-nowrap text-sm text-center">
                                     <TrendIcon isUp={item.isTrendingUp} />
                                 </td>
-                                <td className={`px-4 py-2 whitespace-nowrap text-sm text-right ${getTrendClass(item.isPresenceTrendingUp)}`}>
+                                <td className={`px-4 py-2 whitespace-nowrap text-sm text-right ${getTrendClass(item.isPresenceTrendingUp, item.percentageChange)}`}>
                                     {formatPercentage(item.percentageChange)}
                                 </td>
                             </tr>

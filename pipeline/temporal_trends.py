@@ -1,154 +1,149 @@
 import os
 import json
-from datetime import datetime, timedelta
 import re
 from collections import Counter
 
-def get_current_week_range():
-    """Get the current week range in format DD-DD.MM.YYYY"""
-    today = datetime.now()
-    monday = today - timedelta(days=today.weekday())
-    sunday = monday + timedelta(days=6)
-    
-    # Format as DD-DD.MM.YYYY
-    week_range = f"{monday.day:02d}-{sunday.day:02d}.{sunday.month:02d}.{sunday.year}"
-    return week_range
+DATA_DIR = "public/data"
 
-def get_date_folders_for_current_week():
-    """Get all date folders that belong to the current week"""
-    data_dir = "../public/data"
-    current_week_range = get_current_week_range()
-    parts = current_week_range.split('.')
-    
-    if len(parts) != 3:  # Should be [DD-DD, MM, YYYY]
-        return []
-    
-    day_range = parts[0]  # DD-DD
-    month = parts[1]      # MM
-    year = parts[2]       # YYYY
-    
-    # Split the day range
-    day_parts = day_range.split('-')
-    if len(day_parts) != 2:
-        return []
-    
-    start_day = day_parts[0]
-    end_day = day_parts[1]
-    
-    try:
-        start_day = int(start_day)
-        end_day = int(end_day)
-        month = int(month)
-        year = int(year)
-    except ValueError as e:
-        return []
-    
-    # Create date objects for the week range
-    start_date = datetime(year, month if start_day < end_day else (month - 1) % 12, start_day)
-    end_date = datetime(year, month, end_day)
-
+def get_all_date_folders():
+    """Get all date folders in the data directory"""
     date_folders = []
     
     # Check if the directory exists
-    if not os.path.exists(data_dir):
+    if not os.path.exists(DATA_DIR):
         return []
     
     # Check all items in the data directory
-    for item in os.listdir(data_dir):
-        item_path = os.path.join(data_dir, item)
+    for item in os.listdir(DATA_DIR):
+        item_path = os.path.join(DATA_DIR, item)
         # Check if it's a directory and matches date format DD.MM.YYYY
         if os.path.isdir(item_path) and re.match(r'\d{2}\.\d{2}\.\d{4}', item):
-            try:
-                day, month, year = map(int, item.split('.'))
-                folder_date = datetime(year, month, day)
-                
-                if start_date <= folder_date <= end_date:
-                    date_folders.append(item)
-            except ValueError:
-                continue
+            date_folders.append(item)
     
-    return date_folders
+    return sorted(date_folders)
 
-def extract_entities_from_articles(date_dir):
+def extract_entities_from_articles(date_folder):
     """Extract named entities from articles for a specific date"""
-    articles_file = os.path.join("../public/data", date_dir, "articles.json")
-    if not os.path.exists(articles_file):
-        return []
+    articles_file = os.path.join(DATA_DIR, date_folder, "articles.json")
     
-    with open(articles_file, 'r', encoding='utf-8') as f:
-        try:
+    if not os.path.exists(articles_file):
+        print(f"Articles file not found for {date_folder}")
+        return [], 0
+    
+    try:
+        with open(articles_file, 'r', encoding='utf-8') as f:
             articles_data = json.load(f)
             entities = []
+            articles_count = len(articles_data.get('data', []))
             
             for article in articles_data.get('data', []):
                 for ner_item in article.get('ner', []):
                     if 'entity' in ner_item:
-                        entities.append(ner_item['entity'].lower())
+                        # Normalize entity names to lowercase for consistency
+                        entities.append(ner_item['entity'].lower().strip())
             
-            return entities, len(articles_data.get('data', []))
-        except json.JSONDecodeError:
-            return [], 0
+            return entities, articles_count
+            
+    except json.JSONDecodeError as e:
+        print(f"Error parsing JSON for {date_folder}: {e}")
+        return [], 0
+    except Exception as e:
+        print(f"Error processing articles for {date_folder}: {e}")
+        return [], 0
 
-def update_current_week_trends():
-    """Update topics.json with only the current week's data"""
-    # Get the current week range
-    current_week = get_current_week_range()
+def calculate_daily_ner_percentages(date_folder):
+    """Calculate NER percentages for a specific day"""
+    entities, total_articles = extract_entities_from_articles(date_folder)
     
-    # Get date folders for the current week
-    date_folders = get_date_folders_for_current_week()
-    
-    if not date_folders:
-        return
-
-    # Collect all entities from the current week
-    all_entities = []
-    for date_folder in date_folders:
-        entities, articles_number = extract_entities_from_articles(date_folder)
-        all_entities.extend(entities)
-    
-    if not all_entities:
-        return
+    if not entities or total_articles == 0:
+        print(f"No entities or articles found for {date_folder}")
+        return {}
     
     # Count entity occurrences
-    entity_counter = Counter(all_entities)
+    entity_counter = Counter(entities)
     
-    # Calculate percentages for all entities
-    topics_data = {}
+    # Calculate percentages
+    ner_percentages = {}
     for entity, count in entity_counter.items():
-        percentage = round((count / articles_number * 100), 1)
-        topics_data[entity] = {current_week: percentage}
+        # Calculate percentage based on total articles
+        percentage = round((count / total_articles) * 100, 2)
+        ner_percentages[entity] = percentage
+    
+    return ner_percentages
 
-    # Load existing topics.json - this file is in public/data/temporal_trends
-    topics_file = os.path.join("../public/data", "temporal_trends", "topics.json")
-    existing_data = {}
+def save_daily_topics(date_folder, ner_percentages):
+    """Save the NER percentages to topics.json in the daily folder"""
+    topics_file = os.path.join(DATA_DIR, date_folder, "topics.json")
     
-    if os.path.exists(topics_file):
-        try:
-            with open(topics_file, 'r', encoding='utf-8') as f:
-                existing_data = json.load(f)
-        except json.JSONDecodeError:
-            pass
-    
-    # Update existing data with new week data
-    for topic, weeks in topics_data.items():
-        if topic in existing_data:
-            # Update only the current week for existing topics
-            existing_data[topic][current_week] = weeks[current_week]
-        else:
-            # Add new topic with current week data
-            existing_data[topic] = {current_week: weeks[current_week]}
-    
-    # Save updated data
-    os.makedirs(os.path.dirname(topics_file), exist_ok=True)
     try:
         with open(topics_file, 'w', encoding='utf-8') as f:
-            json.dump(existing_data, f, indent=4)
-            print(f"Temporal trends updated successfully in {topics_file}")
-            
-    except IOError as e:
-        print(f"Error saving temporal trends to {topics_file}: {e}")
+            json.dump(ner_percentages, f, indent=2, ensure_ascii=False)
+        print(f"Topics saved successfully for {date_folder}")
+        return True
+        
     except Exception as e:
-        print(f"An unexpected error occurred while saving temporal trends: {e}")
+        print(f"Error saving topics for {date_folder}: {e}")
+        return False
+
+def process_single_day(date_folder):
+    """Process a single day's data and create topics.json"""
+    print(f"Processing {date_folder}...")
+    
+    # Calculate NER percentages for the day
+    ner_percentages = calculate_daily_ner_percentages(date_folder)
+    
+    if not ner_percentages:
+        print(f"No NER data to process for {date_folder}")
+        return False
+    
+    # Save to topics.json
+    success = save_daily_topics(date_folder, ner_percentages)
+    
+    if success:
+        print(f"Successfully processed {date_folder} with {len(ner_percentages)} entities")
+    
+    return success
+
+def process_all_days():
+    """Process all available days and create topics.json for each"""
+    date_folders = get_all_date_folders()
+    
+    if not date_folders:
+        print("No date folders found in the data directory")
+        return
+    
+    print(f"Found {len(date_folders)} date folders to process")
+    
+    successful_count = 0
+    failed_count = 0
+    
+    for date_folder in date_folders:
+        try:
+            if process_single_day(date_folder):
+                successful_count += 1
+            else:
+                failed_count += 1
+        except Exception as e:
+            print(f"Unexpected error processing {date_folder}: {e}")
+            failed_count += 1
+    
+    print(f"\nProcessing complete:")
+    print(f"Successfully processed: {successful_count} days")
+    print(f"Failed to process: {failed_count} days")
+
+def process_specific_day(date_folder):
+    """Process a specific day's data"""
+    if not re.match(r'\d{2}\.\d{2}\.\d{4}', date_folder):
+        print(f"Invalid date format: {date_folder}. Expected format: DD.MM.YYYY")
+        return False
+    
+    data_path = os.path.join(DATA_DIR, date_folder)
+    if not os.path.exists(data_path):
+        print(f"Date folder not found: {date_folder}")
+        return False
+    
+    return process_single_day(date_folder)
 
 if __name__ == "__main__":
-    update_current_week_trends()
+    # Process all available days
+    process_all_days()

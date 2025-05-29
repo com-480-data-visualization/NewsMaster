@@ -6,7 +6,7 @@ from ingestor_clean import fetch_all_articles
 from translate_to_en import Translator
 from ner import BERTNER
 from entity_normalizer import EntityNormalizer
-from temporal_trends import update_current_week_trends
+from temporal_trends import process_specific_day
 from aggregate_map_data import main as aggregate_map_data
 
 def get_today_date_str():
@@ -220,12 +220,17 @@ def main():
     print("\n4. Updating db.json...")
     update_db_json()
     
-    # Step 5: Update temporal trends
-    print("\n4. Updating temporal trends...")
-    update_current_week_trends()
+    # Step 5: Update daily topics (NER percentages)
+    print("\n5. Updating daily topics...")
+    today_date = get_today_date_str()
+    success = process_specific_day(today_date)
+    if success:
+        print(f"Successfully created topics.json for {today_date}")
+    else:
+        print(f"Failed to create topics.json for {today_date}")
 
     # Step 6: Aggregate map data
-    print("\n5. Aggregating map data...")
+    print("\n6. Aggregating map data...")
     aggregate_map_data()
 
     print("\nPipeline completed successfully!")
