@@ -126,12 +126,10 @@ try {
 		<!-- Statistics Section (replaces Insights) -->
 		<div
 			id="statistics-section"
-			class="mt-16 text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/10 dark:to-purple-950/10 rounded-xl border p-8 min-h-screen flex flex-col justify-center"
+			class="mt-16 text-center min-h-screen flex flex-col justify-center"
 		>
-			<h2 class="text-2xl font-bold mb-8">News Statistics</h2>
-			<p
-				class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 mb-8 mx-auto"
-			>
+			<h2 class="text-3xl font-bold mb-4">News Statistics</h2>
+			<p class="text-muted-foreground mb-8">
 				We are constantly updating our database with the latest news
 				from around the world. Our goal is to provide you with the most
 				accurate and up-to-date information possible.
@@ -156,16 +154,16 @@ try {
 							stroke-width="2"
 							stroke-linecap="round"
 							stroke-linejoin="round"
-							class="h-12 w-12 mb-4 text-blue-500"
+							class="h-12 w-12 mb-3 text-blue-500"
 							><path d="M17 7a5 5 0 0 0-10 0v10a5 5 0 0 0 10 0V7z"
 							></path><path d="M12 2v2"></path><path d="M12 20v2"
 							></path><path d="M5 7H3"></path><path d="M21 7h-2"
 							></path></svg
 						>
-						<div class="space-y-2">
+						<div class="space-y-1">
 							<h3 class="font-bold text-2xl">{db.total_ner_today}</h3>
-							<p class="text-sm text-muted-foreground">
-								NER Analysed Today
+							<p class="text-xs text-muted-foreground leading-tight">
+								Named Entities<br />Analyzed Today
 							</p>
 						</div>
 					</div>
