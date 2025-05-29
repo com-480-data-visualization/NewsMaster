@@ -280,7 +280,7 @@ export class ScrollAnimationController {
     if (!this.topEntitySpan) return;
     
     // Don't fade if it's the initial load (empty content)
-    const isInitialLoad = !this.topEntitySpan.textContent.trim();
+    const isInitialLoad = !this.topEntitySpan.textContent?.trim();
     
     if (!isInitialLoad) {
       this.topEntitySpan.style.opacity = '0';
