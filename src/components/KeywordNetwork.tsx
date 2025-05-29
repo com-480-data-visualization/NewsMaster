@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import ForceGraph3D from 'react-force-graph-3d';
-import type { NodeObject, LinkObject } from 'react-force-graph-3d'; // Use type-only import
+import type { NodeObject, LinkObject } from 'react-force-graph-3d';
 import Select from 'react-select';
-import * as THREE from 'three'; // Import THREE for sprite-based labels
-import { Button } from '@/components/ui/button'; // Import Button
-import { MaximizeIcon, MinimizeIcon } from 'lucide-react'; // Import icons
+import * as THREE from 'three';
+import { Button } from '@/components/ui/button';
+import { MinimizeIcon } from 'lucide-react';
 import { formatDistanceToNow, parseISO } from 'date-fns';
 
 interface NerEntity {
@@ -30,20 +30,16 @@ interface NetworkData {
     data: Article[];
 }
 
-// Extend NodeObject from react-force-graph-3d to include our custom properties
 interface CustomNodeObject extends NodeObject {
-    id: string; // Ensure id is always string
+    id: string;
     label: string;
     degree?: number;
-    // color property is added by react-force-graph when nodeAutoColorBy is used
     color?: string;
-    // val property is added by react-force-graph when nodeVal is used
-    __threeObj?: THREE.Object3D; // Internal property used by the library
+    __threeObj?: THREE.Object3D;
 }
-// Extend LinkObject similarly
 interface CustomLinkObject extends LinkObject {
-    source: string | number | CustomNodeObject; // Keep original flexibility but expect CustomNodeObject in callbacks
-    target: string | number | CustomNodeObject; // Keep original flexibility but expect CustomNodeObject in callbacks
+    source: string | number | CustomNodeObject;
+    target: string | number | CustomNodeObject;
     articles: string[];
 }
 
@@ -57,15 +53,24 @@ interface SelectOption {
     label: string;
 }
 
+interface Provider {
+    id: string;
+    builtin: boolean;
+    language: string;
+    url: string[];
+    country: string;
+}
+
 const KeywordNetwork: React.FC = () => {
     const [networkData, setNetworkData] = useState<NetworkData | null>(null);
     const [selectedLabels, setSelectedLabels] = useState<SelectOption[]>([]);
     const [allLabels, setAllLabels] = useState<SelectOption[]>([]);
+    const [selectedProviders, setSelectedProviders] = useState<SelectOption[]>([]);
+    const [allProviders, setAllProviders] = useState<SelectOption[]>([]);
     const [isClient, setIsClient] = useState(false);
-    const [isPlainScreen, setIsPlainScreen] = useState(false); // State for plain screen mode
-    const [showVisualization, setShowVisualization] = useState(false); // State to control if visualization is shown
+    const [isPlainScreen, setIsPlainScreen] = useState(false);
+    const [showVisualization, setShowVisualization] = useState(false);
     const [selectedDate, setSelectedDate] = useState<string>(() => {
-        // Default to today's date in yyyy-mm-dd format
         const today = new Date();
         return today.toISOString().slice(0, 10);
     });
@@ -73,17 +78,56 @@ const KeywordNetwork: React.FC = () => {
     const [linkDetails, setLinkDetails] = useState<CustomLinkObject | null>(null);
     const [articleDetails, setArticleDetails] = useState<Article[]>([]);
     const [showLinkDialog, setShowLinkDialog] = useState(false);
-    const [isLoading, setIsLoading] = useState(false); // State for loading indicator
+    const [isLoading, setIsLoading] = useState(false);
+    const [isLoadingLabels, setIsLoadingLabels] = useState(false);
+
+    const defaultProviders = [
+        'BBC News',
+        'CNN',
+        'New York Times',
+        'Al Jazeera',
+        'The Guardian',
+        'France 24',
+        'DW News',
+        'NPR',
+        'The Times of India',
+        'South China Morning Post',
+        'The Japan Times',
+        'El País',
+        'Le Monde',
+        'Der Spiegel'
+    ];
 
     useEffect(() => {
         setIsClient(true);
+        fetch('/data/providers.json')
+            .then(response => response.json())
+            .then((providers: Provider[]) => {
+                const providerOptions = providers.map(provider => ({
+                    value: provider.id,
+                    label: provider.id
+                }));
+                setAllProviders(providerOptions);
+
+                const defaultSelected = providerOptions.filter(option =>
+                    defaultProviders.includes(option.value)
+                );
+                setSelectedProviders(defaultSelected);
+            })
+            .catch(error => {
+                console.error('Error loading providers:', error);
+                const fallbackProviders = defaultProviders.map(provider => ({
+                    value: provider,
+                    label: provider
+                }));
+                setAllProviders(fallbackProviders);
+                setSelectedProviders(fallbackProviders);
+            });
     }, []);
 
-    // Function to load articles data
-    const loadArticlesData = (limitTo100: boolean = false) => {
-        setIsLoading(true);
+    const loadNerLabels = () => {
+        setIsLoadingLabels(true);
         setFetchError(null);
-        // Format date as DD.MM.YYYY for the path
         const [year, month, day] = selectedDate.split('-');
         const formattedDate = `${day}.${month}.${year}`;
         const jsonPath = `/data/${formattedDate}/articles.json`;
@@ -96,21 +140,50 @@ const KeywordNetwork: React.FC = () => {
                 return response.json();
             })
             .then((data: NetworkData) => {
-                // Limit to first 100 articles if requested
-                const processedData = limitTo100 ? {
-                    ...data,
-                    data: data.data.slice(0, 100)
-                } : data;
-
-                setNetworkData(processedData);
-                // Extract all unique NER labels for the select options
                 const labels = new Set<string>();
-                processedData.data.forEach(article => {
+                data.data.forEach(article => {
                     article.ner.forEach(entity => labels.add(entity.label));
                 });
                 setAllLabels(Array.from(labels).sort().map(label => ({ value: label, label })));
+                setIsLoadingLabels(false);
+            })
+            .catch(error => {
+                setFetchError("No data for this date. Please select another date.");
+                setIsLoadingLabels(false);
+                console.error("Error fetching NER labels:", error);
+            });
+    };
 
-                // Show visualization in plain screen mode
+    const loadArticlesData = (filterByProviders: boolean = false) => {
+        setIsLoading(true);
+        setFetchError(null);
+        const [year, month, day] = selectedDate.split('-');
+        const formattedDate = `${day}.${month}.${year}`;
+        const jsonPath = `/data/${formattedDate}/articles.json`;
+
+        fetch(jsonPath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data: NetworkData) => {
+                let filteredData = data.data;
+
+                if (filterByProviders && selectedProviders.length > 0) {
+                    const selectedProviderIds = selectedProviders.map(p => p.value);
+                    filteredData = filteredData.filter(article =>
+                        selectedProviderIds.includes(article.providerId)
+                    );
+                }
+
+                const processedData = {
+                    ...data,
+                    data: filteredData
+                };
+
+                setNetworkData(processedData);
                 setShowVisualization(true);
                 setIsPlainScreen(true);
                 setIsLoading(false);
@@ -123,61 +196,50 @@ const KeywordNetwork: React.FC = () => {
             });
     };
 
+    // Process articles into graph nodes and links based on shared entities
     const graphData = useMemo<GraphData>(() => {
         if (!networkData) return { nodes: [], links: [] };
 
         const nodesMap = new Map<string, CustomNodeObject>();
-        const links: CustomLinkObject[] = []; // Use CustomLinkObject here
+        const links: CustomLinkObject[] = [];
         const activeLabels = new Set(selectedLabels.map(opt => opt.value));
-        const nodeDegrees = new Map<string, number>(); // Map to store node degrees
+        const nodeDegrees = new Map<string, number>();
 
         networkData.data.forEach(article => {
             const articleEntities = article.ner
                 .filter(entity => activeLabels.size === 0 || activeLabels.has(entity.label));
 
-            // Add nodes
             articleEntities.forEach(entity => {
                 if (!nodesMap.has(entity.entity)) {
-                    // Initialize degree to 0 when adding the node
-                    // Ensure id is string and other properties match CustomNodeObject
                     nodesMap.set(entity.entity, { id: entity.entity, label: entity.label, degree: 0 });
                 }
             });
 
-            // Add links and update degrees
+            // Create links between entities that appear in the same article
             for (let i = 0; i < articleEntities.length; i++) {
                 for (let j = i + 1; j < articleEntities.length; j++) {
                     const source = articleEntities[i].entity;
                     const target = articleEntities[j].entity;
                     const linkKey = [source, target].sort().join('--');
-                    // Find existing link more efficiently
                     const existingLinkIndex = links.findIndex(l => {
-                        // Ensure source/target are treated as strings for comparison if they are objects
-                        // The source/target in the links array *should* be strings here based on creation
                         const linkSourceId = typeof l.source === 'object' && l.source !== null && 'id' in l.source ? l.source.id : l.source;
                         const linkTargetId = typeof l.target === 'object' && l.target !== null && 'id' in l.target ? l.target.id : l.target;
                         return [linkSourceId, linkTargetId].sort().join('--') === linkKey;
                     });
 
-
                     if (existingLinkIndex === -1) {
-                        // Ensure source/target are strings when creating the link object
                         links.push({ source: source, target: target, articles: [article.title] });
-                        // Increment degree for both source and target nodes
                         nodeDegrees.set(source, (nodeDegrees.get(source) || 0) + 1);
                         nodeDegrees.set(target, (nodeDegrees.get(target) || 0) + 1);
                     } else {
-                        // If the link already exists, add the article title if it's not already there
                         if (!links[existingLinkIndex].articles.includes(article.title)) {
                             links[existingLinkIndex].articles.push(article.title);
                         }
-                        // Note: Degree is only incremented when a *new* link is added
                     }
                 }
             }
         });
 
-        // Add calculated degrees to the nodes in nodesMap
         nodeDegrees.forEach((degree, nodeId) => {
             const node = nodesMap.get(nodeId);
             if (node) {
@@ -185,24 +247,19 @@ const KeywordNetwork: React.FC = () => {
             }
         });
 
-
-        // Filter nodes that are actually part of the selected links
+        // Only include nodes that have connections
         const nodesInLinks = new Set<string>();
         links.forEach(link => {
-            // Ensure source/target are treated as strings for adding to the set
             const sourceId = typeof link.source === 'object' && link.source !== null && 'id' in link.source ? link.source.id : link.source;
             const targetId = typeof link.target === 'object' && link.target !== null && 'id' in link.target ? link.target.id : link.target;
             nodesInLinks.add(sourceId as string);
             nodesInLinks.add(targetId as string);
         });
 
-        // Ensure nodes have degree property, default to 0 if not in nodeDegrees
         const filteredNodes = Array.from(nodesMap.values())
             .filter(node => nodesInLinks.has(node.id))
-            .map(node => ({ ...node, degree: node.degree ?? 0 })); // Ensure degree is always a number
+            .map(node => ({ ...node, degree: node.degree ?? 0 }));
 
-
-        // Cast links back to CustomLinkObject[] if needed, though it should already be correct
         return { nodes: filteredNodes, links: links as CustomLinkObject[] };
     }, [networkData, selectedLabels]);
 
@@ -210,35 +267,47 @@ const KeywordNetwork: React.FC = () => {
         setSelectedLabels(selectedOptions ? Array.from(selectedOptions) : []);
     };
 
-    // Function to create sprite-based labels - now accepts isDarkMode
+    const handleProviderChange = (selectedOptions: readonly SelectOption[] | null) => {
+        setSelectedProviders(selectedOptions ? Array.from(selectedOptions) : []);
+    };
+
+    const handleDateChange = (newDate: string) => {
+        setSelectedDate(newDate);
+        setAllLabels([]);
+        setSelectedLabels([]);
+        setFetchError(null);
+    };
+
+    // Create 3D text sprite for node labels with adaptive sizing
     const createNodeLabelSprite = (node: CustomNodeObject, isDarkMode: boolean): THREE.Sprite => {
-        const sprite = new THREE.Sprite() as any; // Use 'as any' for custom properties
+        const sprite = new THREE.Sprite() as any;
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
-        if (!ctx) return sprite; // Return empty sprite if context fails
+        if (!ctx) return sprite;
 
-        const fontSize = 24; // Increased font size further (was 20)
-        const fontWeight = 'bold'; // Make text bolder
+        const degree = node.degree ?? 1;
+        const nodeVal = Math.max(2, degree * 3);
+        const nodeRadius = Math.cbrt(nodeVal) * 2.5;
+        
+        const baseFontSize = 16;
+        const fontSize = Math.max(12, Math.min(32, baseFontSize + (nodeRadius * 0.8)));
+        
+        const fontWeight = 'bold';
         const fontFamily = 'sans-serif';
         ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
-        const text = node.id; // Use node.id which is the NER text
+        const text = node.id;
         const textMetrics = ctx.measureText(text);
         const textWidth = textMetrics.width;
 
-        // Base scale factor - will be multiplied by node size later
-        const baseScale = 0.1;
-        const padding = 6; // Increased padding
+        const baseScale = Math.max(0.08, Math.min(0.15, 0.1 + (nodeRadius * 0.002)));
+        const padding = Math.max(4, fontSize * 0.25);
         const canvasWidth = textWidth + padding * 2;
         const canvasHeight = fontSize + padding * 2;
 
         canvas.width = canvasWidth;
         canvas.height = canvasHeight;
 
-        // Background - Transparent
-        // No background fill
-
-        // Text - Color depends on dark mode
-        ctx.fillStyle = isDarkMode ? 'white' : 'dark'; // White text on dark, red on light
+        ctx.fillStyle = isDarkMode ? 'white' : 'dark';
         ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -246,63 +315,54 @@ const KeywordNetwork: React.FC = () => {
 
         const texture = new THREE.CanvasTexture(canvas);
         texture.needsUpdate = true;
-        // texture.minFilter = THREE.LinearFilter; // Optional: improve texture quality
 
         const material = new THREE.SpriteMaterial({
             map: texture,
-            depthWrite: false, // Don't write to depth buffer
-            transparent: true, // Enable transparency
-            // sizeAttenuation: false // Optional: Keep size constant regardless of distance
+            depthWrite: false,
+            transparent: true,
         });
         sprite.material = material;
 
-        // Set base scale - final scaling happens in nodeThreeObject
         sprite.scale.set(canvasWidth * baseScale, canvasHeight * baseScale, 1.0);
 
-        // Store node id for potential interaction later
         sprite.nodeId = node.id;
 
-        return sprite; // Return the sprite itself
+        return sprite;
     };
 
     const togglePlainScreen = () => {
         if (isPlainScreen) {
-            // Exit plain screen and hide visualization
             setIsPlainScreen(false);
             setShowVisualization(false);
-            setNetworkData(null); // Clear data when exiting
+            setNetworkData(null);
         } else {
             setIsPlainScreen(!isPlainScreen);
         }
     };
 
-    // Handle loading all articles
     const handleLoadAllArticles = () => {
-        loadArticlesData(false);
+        loadArticlesData();
     };
 
-    // Handle loading first 100 articles
-    const handleLoadFirst100 = () => {
+    const handleLoadSelectedProviders = () => {
         loadArticlesData(true);
     };
 
-    // Helper to get article details for a link
     const getArticlesForLink = (link: CustomLinkObject): Article[] => {
         if (!networkData) return [];
-        // Find articles whose title matches any in link.articles
         return networkData.data.filter(article => link.articles.includes(article.title));
     };
 
-    // Define styles for react-select in dark mode
+    // Dark theme styles for visualization mode
     const plainScreenSelectStyles = isPlainScreen ? {
         control: (baseStyles: any) => ({
             ...baseStyles,
-            backgroundColor: '#1a1a1a', // Dark background
+            backgroundColor: '#1a1a1a',
             borderColor: '#444',
         }),
         menu: (baseStyles: any) => ({
             ...baseStyles,
-            backgroundColor: '#1a1a1a', // Dark background
+            backgroundColor: '#1a1a1a',
         }),
         option: (baseStyles: any, state: { isFocused: boolean; }) => ({
             ...baseStyles,
@@ -314,7 +374,7 @@ const KeywordNetwork: React.FC = () => {
         }),
         multiValue: (baseStyles: any) => ({
             ...baseStyles,
-            backgroundColor: '#007bff', // Keep primary color or adjust
+            backgroundColor: '#007bff',
         }),
         multiValueLabel: (baseStyles: any) => ({
             ...baseStyles,
@@ -338,15 +398,13 @@ const KeywordNetwork: React.FC = () => {
         }),
         placeholder: (baseStyles: any) => ({
             ...baseStyles,
-            color: '#ccc', // Lighter placeholder text for dark bg
+            color: '#ccc',
         }),
     } : {};
-
 
     return (
         <>
             {!showVisualization ? (
-                // Show date picker and buttons when visualization is not active
                 <div className="container mx-auto px-4 py-8">
                     <div className="mb-6">
                         <label htmlFor="date-picker" className="block text-sm font-medium mb-2">
@@ -356,10 +414,58 @@ const KeywordNetwork: React.FC = () => {
                             id="date-picker"
                             type="date"
                             value={selectedDate}
-                            onChange={e => setSelectedDate(e.target.value)}
+                            onChange={e => handleDateChange(e.target.value)}
                             className="border border-gray-300 rounded-md px-3 py-2 text-sm"
                             max={new Date().toISOString().slice(0, 10)}
                         />
+                    </div>
+
+                    <div className="mb-6">
+                        <label htmlFor="provider-select" className="block text-sm font-medium mb-2">
+                            Select Providers:
+                        </label>
+                        <Select
+                            id="provider-select"
+                            isMulti
+                            options={allProviders}
+                            value={selectedProviders}
+                            onChange={handleProviderChange}
+                            className="react-select-container"
+                            classNamePrefix="react-select"
+                            placeholder="Select providers to include..."
+                        />
+                    </div>
+
+                    <div className="mb-6">
+                        <div className="flex items-center gap-4 mb-2">
+                            <label htmlFor="ner-select" className="block text-sm font-medium">
+                                Filter by NER Labels (Optional):
+                            </label>
+                            <Button
+                                onClick={loadNerLabels}
+                                disabled={isLoadingLabels}
+                                variant="outline"
+                                size="sm"
+                            >
+                                {isLoadingLabels ? 'Loading...' : 'Load Available Labels'}
+                            </Button>
+                        </div>
+                        <Select
+                            id="ner-select"
+                            isMulti
+                            options={allLabels}
+                            value={selectedLabels}
+                            onChange={handleLabelChange}
+                            className="react-select-container"
+                            classNamePrefix="react-select"
+                            placeholder="First load labels, then select NER labels to filter..."
+                            isDisabled={allLabels.length === 0}
+                        />
+                        {allLabels.length > 0 && (
+                            <p className="text-xs text-gray-500 mt-1">
+                                {allLabels.length} labels available. Leave empty to show all entities.
+                            </p>
+                        )}
                     </div>
 
                     {fetchError && (
@@ -370,30 +476,50 @@ const KeywordNetwork: React.FC = () => {
 
                     <div className="flex gap-4">
                         <Button
-                            onClick={handleLoadAllArticles}
+                            onClick={handleLoadSelectedProviders}
                             disabled={isLoading}
                             className="px-6 py-3 text-lg"
                         >
-                            {isLoading ? 'Loading...' : 'Load All Articles'}
+                            {isLoading ? 'Loading...' : 'Load Selected Providers'}
                         </Button>
 
                         <Button
-                            onClick={handleLoadFirst100}
+                            onClick={handleLoadAllArticles}
                             disabled={isLoading}
                             variant="outline"
                             className="px-6 py-3 text-lg"
                         >
-                            {isLoading ? 'Loading...' : 'Load First 100 Articles'}
+                            {isLoading ? 'Loading...' : 'Load All Articles (Requires Good Computer)'}
                         </Button>
                     </div>
 
                     <div className="mt-4 text-sm text-gray-600">
-                        <p>• <strong>Load All Articles:</strong> Visualize the complete network of all articles for the selected date</p>
-                        <p>• <strong>Load First 100 Articles:</strong> Visualize a subset for faster performance</p>
+                        <p>• <strong>Load All Articles:</strong> Visualize the complete network of all articles for the selected date (requires good computer)</p>
+                        <p>• <strong>Load Selected Providers:</strong> Visualize only articles from major news providers (BBC, CNN, NYT, Al Jazeera, Guardian, etc.)</p>
+                        <p>• <strong>NER Filtering:</strong> Optionally filter entities by their types (PERSON, ORG, LOC, etc.) to focus on specific categories</p>
+
+                        <div className="mt-3 p-3 bg-gray-50 rounded border">
+                            <p className="font-medium mb-2">Selected Providers ({selectedProviders.length}):</p>
+                            <div className="grid grid-cols-2 gap-1 text-xs">
+                                {selectedProviders.map(provider => (
+                                    <span key={provider.value} className="text-gray-700">• {provider.label}</span>
+                                ))}
+                            </div>
+                            {selectedLabels.length > 0 && (
+                                <>
+                                    <p className="font-medium mb-2 mt-3">Selected NER Labels ({selectedLabels.length}):</p>
+                                    <div className="grid grid-cols-3 gap-1 text-xs">
+                                        {selectedLabels.map(label => (
+                                            <span key={label.value} className="text-blue-700">• {label.label}</span>
+                                        ))}
+                                    </div>
+                                </>
+                            )}
+                        </div>
                     </div>
                 </div>
             ) : (
-                // Show full visualization in plain screen mode
+                // Full-screen visualization mode
                 <div
                     style={{
                         position: 'fixed',
@@ -408,78 +534,60 @@ const KeywordNetwork: React.FC = () => {
                         flexDirection: 'column',
                     }}
                 >
-                    {/* Controls container */}
                     <div style={{
                         marginBottom: '1rem',
                         zIndex: 1001,
                         position: 'relative',
                         display: 'flex',
-                        gap: '0.5rem',
+                        gap: '1rem',
                         alignItems: 'center',
                         flexShrink: 0,
                         padding: '0 1rem',
+                        flexWrap: 'wrap',
                     }}>
-                        {/* Date selector */}
-                        <label
-                            htmlFor="date-picker"
-                            className="text-white whitespace-nowrap"
-                            style={{ marginRight: '0.5rem' }}
-                        >
-                            Date:
-                        </label>
-                        <input
-                            id="date-picker"
-                            type="date"
-                            value={selectedDate}
-                            onChange={e => setSelectedDate(e.target.value)}
-                            style={{
-                                marginRight: '1rem',
-                                background: '#1a1a1a',
-                                color: 'white',
-                                border: '1px solid #444',
-                                borderRadius: 4,
-                                padding: '0.25rem 0.5rem',
-                            }}
-                            max={new Date().toISOString().slice(0, 10)}
-                        />
-                        {/* NER label filter */}
-                        <label
-                            htmlFor="ner-select"
-                            className="text-white whitespace-nowrap"
-                            style={{ marginRight: '0.5rem' }}
-                        >
-                            Filter by NER Label:
-                        </label>
-                        <div style={{ flexGrow: 1 }}>
-                            <Select
-                                id="ner-select"
-                                isMulti
-                                options={allLabels}
-                                value={selectedLabels}
-                                onChange={handleLabelChange}
-                                className="react-select-container"
-                                classNamePrefix="react-select"
-                                placeholder="Select NER labels to display..."
-                                styles={plainScreenSelectStyles}
-                            />
+                        <div className="text-white text-sm">
+                            <span className="font-medium">Date: </span>
+                            <span className="text-blue-300">{new Date(selectedDate).toLocaleDateString()}</span>
                         </div>
-                        {/* Exit button */}
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            onClick={togglePlainScreen}
-                            title="Exit visualization"
-                            style={{
-                                backgroundColor: '#2a2a2a',
-                                borderColor: '#555',
-                                color: 'white'
-                            }}
-                        >
-                            <MinimizeIcon className="h-4 w-4" />
-                        </Button>
+                        
+                        <div className="text-white text-sm">
+                            <span className="font-medium">Providers ({selectedProviders.length}): </span>
+                            <span className="text-green-300">
+                                {selectedProviders.length > 0 
+                                    ? selectedProviders.map(provider => provider.label).join(', ')
+                                    : 'All providers'
+                                }
+                            </span>
+                        </div>
+
+                        {selectedLabels.length > 0 && (
+                            <div className="text-white text-sm">
+                                <span className="font-medium">NER Filter: </span>
+                                <span className="text-blue-300">
+                                    {selectedLabels.map(label => label.label).join(', ')}
+                                </span>
+                            </div>
+                        )}
                     </div>
 
-                    {/* Graph container */}
+                    <Button
+                        variant="outline"
+                        size="icon"
+                        onClick={togglePlainScreen}
+                        title="Exit visualization"
+                        style={{
+                            position: 'fixed',
+                            top: '1rem',
+                            right: '1rem',
+                            backgroundColor: '#2a2a2a',
+                            borderColor: '#555',
+                            color: 'white',
+                            zIndex: 1002
+                        }}
+                    >
+                        <MinimizeIcon className="h-4 w-4" />
+                    </Button>
+
                     <div style={{ flexGrow: 1, position: 'relative' }}>
                         {isClient && networkData ? (
                             <ForceGraph3D
@@ -505,9 +613,13 @@ const KeywordNetwork: React.FC = () => {
                                     });
                                     const sphere = new THREE.Mesh(geometry, material);
                                     const sprite = createNodeLabelSprite(customNode, true);
-                                    const spriteScaleMultiplier = radius * 0.5;
+                                    
+                                    const spriteScaleMultiplier = Math.max(0.8, Math.min(1.5, radius * 0.4));
                                     sprite.scale.multiplyScalar(spriteScaleMultiplier);
-                                    sprite.position.set(0, radius + (sprite.scale.y / 2) + 2, 0);
+                                    
+                                    const verticalOffset = radius + (sprite.scale.y / 2) + Math.max(2, radius * 0.3);
+                                    sprite.position.set(0, verticalOffset, 0);
+                                    
                                     const group = new THREE.Group();
                                     group.add(sphere);
                                     group.add(sprite);
@@ -539,7 +651,6 @@ const KeywordNetwork: React.FC = () => {
                         )}
                     </div>
 
-                    {/* Link Details Dialog */}
                     {showLinkDialog && linkDetails && (
                         <div style={{
                             position: 'fixed',
