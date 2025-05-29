@@ -100,7 +100,6 @@ const KeywordNetwork: React.FC = () => {
 
     useEffect(() => {
         setIsClient(true);
-        // Load providers from providers.json
         fetch('/data/providers.json')
             .then(response => response.json())
             .then((providers: Provider[]) => {
@@ -110,7 +109,6 @@ const KeywordNetwork: React.FC = () => {
                 }));
                 setAllProviders(providerOptions);
 
-                // Set default selected providers
                 const defaultSelected = providerOptions.filter(option =>
                     defaultProviders.includes(option.value)
                 );
@@ -118,7 +116,6 @@ const KeywordNetwork: React.FC = () => {
             })
             .catch(error => {
                 console.error('Error loading providers:', error);
-                // Fallback to hardcoded list
                 const fallbackProviders = defaultProviders.map(provider => ({
                     value: provider,
                     label: provider
@@ -199,6 +196,7 @@ const KeywordNetwork: React.FC = () => {
             });
     };
 
+    // Process articles into graph nodes and links based on shared entities
     const graphData = useMemo<GraphData>(() => {
         if (!networkData) return { nodes: [], links: [] };
 
@@ -217,6 +215,7 @@ const KeywordNetwork: React.FC = () => {
                 }
             });
 
+            // Create links between entities that appear in the same article
             for (let i = 0; i < articleEntities.length; i++) {
                 for (let j = i + 1; j < articleEntities.length; j++) {
                     const source = articleEntities[i].entity;
@@ -227,7 +226,6 @@ const KeywordNetwork: React.FC = () => {
                         const linkTargetId = typeof l.target === 'object' && l.target !== null && 'id' in l.target ? l.target.id : l.target;
                         return [linkSourceId, linkTargetId].sort().join('--') === linkKey;
                     });
-
 
                     if (existingLinkIndex === -1) {
                         links.push({ source: source, target: target, articles: [article.title] });
@@ -249,7 +247,7 @@ const KeywordNetwork: React.FC = () => {
             }
         });
 
-
+        // Only include nodes that have connections
         const nodesInLinks = new Set<string>();
         links.forEach(link => {
             const sourceId = typeof link.source === 'object' && link.source !== null && 'id' in link.source ? link.source.id : link.source;
@@ -261,7 +259,6 @@ const KeywordNetwork: React.FC = () => {
         const filteredNodes = Array.from(nodesMap.values())
             .filter(node => nodesInLinks.has(node.id))
             .map(node => ({ ...node, degree: node.degree ?? 0 }));
-
 
         return { nodes: filteredNodes, links: links as CustomLinkObject[] };
     }, [networkData, selectedLabels]);
@@ -281,13 +278,20 @@ const KeywordNetwork: React.FC = () => {
         setFetchError(null);
     };
 
+    // Create 3D text sprite for node labels with adaptive sizing
     const createNodeLabelSprite = (node: CustomNodeObject, isDarkMode: boolean): THREE.Sprite => {
         const sprite = new THREE.Sprite() as any;
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
         if (!ctx) return sprite;
 
-        const fontSize = 24;
+        const degree = node.degree ?? 1;
+        const nodeVal = Math.max(2, degree * 3);
+        const nodeRadius = Math.cbrt(nodeVal) * 2.5;
+        
+        const baseFontSize = 16;
+        const fontSize = Math.max(12, Math.min(32, baseFontSize + (nodeRadius * 0.8)));
+        
         const fontWeight = 'bold';
         const fontFamily = 'sans-serif';
         ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
@@ -295,8 +299,8 @@ const KeywordNetwork: React.FC = () => {
         const textMetrics = ctx.measureText(text);
         const textWidth = textMetrics.width;
 
-        const baseScale = 0.1;
-        const padding = 6;
+        const baseScale = Math.max(0.08, Math.min(0.15, 0.1 + (nodeRadius * 0.002)));
+        const padding = Math.max(4, fontSize * 0.25);
         const canvasWidth = textWidth + padding * 2;
         const canvasHeight = fontSize + padding * 2;
 
@@ -349,6 +353,7 @@ const KeywordNetwork: React.FC = () => {
         return networkData.data.filter(article => link.articles.includes(article.title));
     };
 
+    // Dark theme styles for visualization mode
     const plainScreenSelectStyles = isPlainScreen ? {
         control: (baseStyles: any) => ({
             ...baseStyles,
@@ -396,7 +401,6 @@ const KeywordNetwork: React.FC = () => {
             color: '#ccc',
         }),
     } : {};
-
 
     return (
         <>
@@ -515,6 +519,7 @@ const KeywordNetwork: React.FC = () => {
                     </div>
                 </div>
             ) : (
+                // Full-screen visualization mode
                 <div
                     style={{
                         position: 'fixed',
@@ -565,7 +570,6 @@ const KeywordNetwork: React.FC = () => {
                         )}
                     </div>
 
-                    {/* Exit button in top right corner */}
                     <Button
                         variant="outline"
                         size="icon"
@@ -609,9 +613,13 @@ const KeywordNetwork: React.FC = () => {
                                     });
                                     const sphere = new THREE.Mesh(geometry, material);
                                     const sprite = createNodeLabelSprite(customNode, true);
-                                    const spriteScaleMultiplier = radius * 0.5;
+                                    
+                                    const spriteScaleMultiplier = Math.max(0.8, Math.min(1.5, radius * 0.4));
                                     sprite.scale.multiplyScalar(spriteScaleMultiplier);
-                                    sprite.position.set(0, radius + (sprite.scale.y / 2) + 2, 0);
+                                    
+                                    const verticalOffset = radius + (sprite.scale.y / 2) + Math.max(2, radius * 0.3);
+                                    sprite.position.set(0, verticalOffset, 0);
+                                    
                                     const group = new THREE.Group();
                                     group.add(sphere);
                                     group.add(sprite);
