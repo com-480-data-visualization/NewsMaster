@@ -73,8 +73,10 @@ const DesktopSidebar = () => {
 
       <div className="p-4">
         <div className="flex items-center gap-4">
-          <ModeToggle />
-          <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="[&_button]:text-[hsl(var(--sidebar-fg))] [&_button]:hover:bg-[var(--sidebar-hover)] [&_button]:hover:text-[hsl(var(--sidebar-fg))] [&_svg]:text-[hsl(var(--sidebar-fg))]">
+            <ModeToggle />
+          </div>
+          <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-[hsl(var(--sidebar-fg))]">
             Toggle Theme
           </span>
         </div>
