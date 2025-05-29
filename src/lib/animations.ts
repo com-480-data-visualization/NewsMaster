@@ -507,31 +507,150 @@ export const animationStyles = `
   .scroll-sections {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
+    padding: 16px 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
 
   .scroll-dot {
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    transition: all 0.3s ease;
+    background: rgba(100, 116, 139, 0.4);
+    border: 2px solid rgba(100, 116, 139, 0.6);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     pointer-events: none;
+    cursor: pointer;
+    box-shadow: 
+      0 2px 8px rgba(0, 0, 0, 0.15),
+      inset 0 1px 2px rgba(255, 255, 255, 0.2);
+  }
+
+  .scroll-dot::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(100, 116, 139, 0.3);
+    transition: all 0.4s ease;
+  }
+
+  .scroll-dot:hover {
+    transform: scale(1.1);
+    background: rgba(100, 116, 139, 0.6);
+    border-color: rgba(100, 116, 139, 0.8);
+    box-shadow: 
+      0 4px 12px rgba(0, 0, 0, 0.2),
+      inset 0 1px 2px rgba(255, 255, 255, 0.3);
   }
 
   .scroll-dot.active {
-    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
-    border-color: #8b5cf6;
-    box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
-    transform: scale(1.3);
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-color: #6366f1;
+    box-shadow: 
+      0 0 20px rgba(99, 102, 241, 0.4),
+      0 4px 16px rgba(59, 130, 246, 0.3),
+      inset 0 1px 2px rgba(255, 255, 255, 0.4);
+    transform: scale(1.2);
+  }
+
+  .scroll-dot.active::before {
+    background: rgba(255, 255, 255, 0.9);
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  }
+
+  /* Light mode specific styles */
+  @media (prefers-color-scheme: light) {
+    .scroll-sections {
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .scroll-dot {
+      background: rgba(71, 85, 105, 0.2);
+      border: 2px solid rgba(71, 85, 105, 0.4);
+      box-shadow: 
+        0 2px 8px rgba(0, 0, 0, 0.1),
+        inset 0 1px 2px rgba(255, 255, 255, 0.8);
+    }
+
+    .scroll-dot::before {
+      background: rgba(71, 85, 105, 0.4);
+    }
+
+    .scroll-dot:hover {
+      background: rgba(71, 85, 105, 0.3);
+      border-color: rgba(71, 85, 105, 0.6);
+      box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.15),
+        inset 0 1px 2px rgba(255, 255, 255, 0.9);
+    }
+
+    .scroll-dot.active {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      border-color: #6366f1;
+      box-shadow: 
+        0 0 20px rgba(99, 102, 241, 0.3),
+        0 4px 16px rgba(59, 130, 246, 0.2),
+        inset 0 1px 2px rgba(255, 255, 255, 0.6);
+    }
   }
 
   /* Dark theme scroll indicator */
+  .dark .scroll-sections {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
   .dark .scroll-dot {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(148, 163, 184, 0.3);
+    border: 2px solid rgba(148, 163, 184, 0.5);
+    box-shadow: 
+      0 2px 8px rgba(0, 0, 0, 0.3),
+      inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  }
+
+  .dark .scroll-dot::before {
+    background: rgba(148, 163, 184, 0.4);
+  }
+
+  .dark .scroll-dot:hover {
+    background: rgba(148, 163, 184, 0.5);
+    border-color: rgba(148, 163, 184, 0.7);
+    box-shadow: 
+      0 4px 12px rgba(0, 0, 0, 0.4),
+      inset 0 1px 2px rgba(255, 255, 255, 0.2);
+  }
+
+  .dark .scroll-dot.active {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-color: #a855f7;
+    box-shadow: 
+      0 0 25px rgba(168, 85, 247, 0.5),
+      0 4px 20px rgba(59, 130, 246, 0.4),
+      inset 0 1px 2px rgba(255, 255, 255, 0.3);
+  }
+
+  .dark .scroll-dot.active::before {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
   }
 
   /* Section Animation States */
