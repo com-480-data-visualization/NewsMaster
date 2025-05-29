@@ -6,6 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, date
 import pytz
+import time
 
 # CET timezone
 cet_tz = pytz.timezone("CET")
@@ -58,11 +59,12 @@ def get_providers():
         return []
 
 
-def is_from_today(timestamp):
-    """Check if the given timestamp is from today."""
-    article_date = date.fromtimestamp(timestamp)
-    today = date.today()
-    return article_date == today
+def is_within_24_hours(timestamp):
+    """Check if the given timestamp is within the last 24 hours."""
+    current_time = time.time()
+    time_difference = current_time - timestamp
+    # 24 hours = 24 * 60 * 60 = 86400 seconds
+    return time_difference <= 86400
 
 
 def fetch_and_deduplicate_articles(providers):
@@ -89,8 +91,8 @@ def fetch_and_deduplicate_articles(providers):
                 pub_date = item.get('published', '')
                 pub_timestamp = parse_pub_date(pub_date)
                 
-                # Skip articles that are not from today
-                if not is_from_today(pub_timestamp):
+                # Skip articles that are not within the last 24 hours
+                if not is_within_24_hours(pub_timestamp):
                     continue
                 
                 created_at = datetime.fromtimestamp(pub_timestamp, timezone.utc).isoformat(timespec='milliseconds') + 'Z'
