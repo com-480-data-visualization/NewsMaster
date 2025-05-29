@@ -1,7 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-
 ---
 
 <Layout title="News Landscape Recap">
@@ -27,7 +25,16 @@ import Layout from '../layouts/Layout.astro';
         Has <span id="top-ner-temporal" class="text-purple-600">...</span> always been so hot?
       </h1>
       <!-- Topic trend graph for the top NER -->
-      <div id="temporal-trends-recap" class="h-[400px] border rounded-xl bg-card shadow-lg"></div>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-8 h-[500px]">
+        <div class="border rounded-xl bg-card shadow-lg p-4 md:col-span-2">
+          <h3 class="text-lg font-semibold mb-4 text-left">Top 5 Topics Today</h3>
+          <div id="temporal-table-recap" class="h-full"></div>
+        </div>
+        <div class="border rounded-xl bg-card shadow-lg p-4 flex flex-col md:col-span-3">
+          <h3 class="text-lg font-semibold mb-4 text-left">7-Day Trend Evolution</h3>
+          <div id="temporal-chart-recap" class="flex-1 min-h-0"></div>
+        </div>
+      </div>
     </div>
 
     <!-- Network Section -->
@@ -56,6 +63,8 @@ import Layout from '../layouts/Layout.astro';
   import React from 'react';
   import ReactDOM from 'react-dom/client';
   import WorldMapNER from '../components/world-map/WorldMapNER';
+  import TopicTable from '../components/TopicTable';
+  import TopicTrendChart from '../components/TopicTrendChart';
   
 
   // Function to create a custom world map that shows coverage of the top entity
@@ -79,6 +88,199 @@ import Layout from '../layouts/Layout.astro';
     }
   }
 
+  // Function to load temporal trends data and create components
+  async function createTemporalTrends(topEntity: string) {
+    const tableElement = document.getElementById('temporal-table-recap');
+    const chartElement = document.getElementById('temporal-chart-recap');
+    
+    if (!tableElement || !chartElement) return;
+
+    try {
+      // Helper functions
+      function formatDate(date: Date): string {
+        const day = date.getDate().toString().padStart(2, '0');
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}.${month}.${year}`;
+      }
+
+      function getLastNDays(n: number): string[] {
+        const dates: string[] = [];
+        const today = new Date();
+        
+        for (let i = n - 1; i >= 0; i--) {
+          const date = new Date(today);
+          date.setDate(today.getDate() - i);
+          dates.push(formatDate(date));
+        }
+        
+        return dates;
+      }
+
+      async function loadTopicsForDate(date: string): Promise<any> {
+        try {
+          const response = await fetch(`/data/${date}/topics.json`);
+          if (!response.ok) return null;
+          return await response.json();
+        } catch (error) {
+          console.warn(`Error loading data for ${date}:`, error);
+          return null;
+        }
+      }
+
+      // Get the last 7 days
+      const last7Days = getLastNDays(7);
+      const today = last7Days[last7Days.length - 1];
+      const yesterday = last7Days[last7Days.length - 2];
+
+      // Load data for all days
+      const dailyDataPromises = last7Days.map(async date => ({
+        date,
+        data: await loadTopicsForDate(date)
+      }));
+
+      const dailyDataResults = await Promise.all(dailyDataPromises);
+      
+      // Filter out failed loads and create data map
+      const dailyData: any = {};
+      const availableDates: string[] = [];
+      
+      dailyDataResults.forEach(({ date, data }) => {
+        if (data) {
+          dailyData[date] = data;
+          availableDates.push(date);
+        }
+      });
+
+      if (availableDates.length === 0) {
+        console.warn('No temporal data available');
+        return;
+      }
+
+      // Get today's and yesterday's data
+      const todayData = dailyData[today];
+      const yesterdayData = dailyData[yesterday] || null;
+
+      if (!todayData) {
+        console.warn('Today\'s data not available');
+        return;
+      }
+
+      // Process table data for top 5 topics only
+      const processTableData = (todayData: any, yesterdayData: any) => {
+        let yesterdayRankings: any = {};
+        if (yesterdayData) {
+          const yesterdayEntries = Object.entries(yesterdayData)
+            .filter(([_, score]) => typeof score === 'number' && score > 0)
+            .sort(([, a], [, b]) => Number(b) - Number(a));
+          
+          yesterdayEntries.forEach(([topic, _], index) => {
+            yesterdayRankings[topic] = index + 1;
+          });
+        }
+
+        const tableData = Object.entries(todayData)
+          .map(([topic, todayScore]) => {
+            const yesterdayScore = yesterdayData && yesterdayData[topic] ? yesterdayData[topic] : 0;
+            
+            let isTrendingUp = null;
+            let isPresenceTrendingUp = null;
+            let percentageChange = null;
+
+            if (yesterdayScore === 0) {
+              percentageChange = Number(todayScore) > 0 ? Number(todayScore) : 0;
+              isPresenceTrendingUp = Number(todayScore) > 0 ? true : null;
+            } else {
+              percentageChange = parseFloat((Number(todayScore) - Number(yesterdayScore)).toFixed(1));
+              isPresenceTrendingUp = Number(todayScore) > Number(yesterdayScore) ? true : (Number(todayScore) < Number(yesterdayScore) ? false : null);
+            }
+
+            return {
+              topic,
+              latestScore: Number(todayScore),
+              isTrendingUp,
+              isPresenceTrendingUp,
+              percentageChange,
+            };
+          })
+          .filter(item => item.latestScore > 0)
+          .sort((a, b) => b.latestScore - a.latestScore)
+          .slice(0, 5) // Only top 5 topics
+          .map((item, index) => {
+            const todayRank = index + 1;
+            const yesterdayRank = yesterdayRankings[item.topic];
+            
+            let isTrendingUp = null;
+            if (yesterdayRank !== undefined) {
+              if (todayRank < yesterdayRank) {
+                isTrendingUp = true;
+              } else if (todayRank > yesterdayRank) {
+                isTrendingUp = false;
+              } else {
+                isTrendingUp = null;
+              }
+            } else {
+              isTrendingUp = true;
+            }
+
+            return { 
+              ...item, 
+              rank: todayRank,
+              isTrendingUp 
+            };
+          });
+
+        return tableData;
+      };
+
+      // Process chart data
+      const processChartData = (dailyData: any, dates: string[]) => {
+        const topics: any = {};
+        
+        // Get top 5 topics from today
+        const top5Topics = Object.entries(todayData)
+          .filter(([_, score]) => typeof score === 'number' && score > 0)
+          .sort(([, a], [, b]) => Number(b) - Number(a))
+          .slice(0, 5)
+          .map(([topic, _]) => topic);
+
+        // Build chart data for top 5 topics only
+        top5Topics.forEach((topic: string) => {
+          topics[topic] = {};
+          dates.forEach((date: string) => {
+            topics[topic][date] = dailyData[date] && dailyData[date][topic] ? dailyData[date][topic] : 0;
+          });
+        });
+
+        return {
+          topics,
+          dateRanges: dates
+        };
+      };
+
+      // Process data
+      const tableData = processTableData(todayData, yesterdayData);
+      const chartData = processChartData(dailyData, availableDates);
+      const topTopic = tableData.length > 0 ? tableData[0].topic : null;
+
+      // Create React components
+      const tableRoot = ReactDOM.createRoot(tableElement);
+      const chartRoot = ReactDOM.createRoot(chartElement);
+
+      tableRoot.render(React.createElement(TopicTable, { 
+        data: tableData, 
+        defaultSelectedTopic: topTopic 
+      }));
+
+      chartRoot.render(React.createElement(TopicTrendChart, { 
+        data: chartData, 
+        defaultTopic: topTopic 
+      }));
+
+    } catch (error) {
+      console.error('Error creating temporal trends:', error);
+    }
+  }
 
   // Main initialization function
   async function initializeRecap() {
@@ -99,6 +301,8 @@ import Layout from '../layouts/Layout.astro';
     createCustomWorldMap(topEntity);
 
     createFilteredNetwork(topEntity);
+
+    createTemporalTrends(topEntity);
  
   }
 
@@ -110,7 +314,9 @@ import Layout from '../layouts/Layout.astro';
   /* Ensure visualizations fit properly */
   #world-map-recap,
   #network-recap,
-  #temporal-trends-recap {
+  #temporal-trends-recap,
+  #temporal-table-recap,
+  #temporal-chart-recap {
     overflow: hidden;
   }
   
@@ -133,6 +339,11 @@ import Layout from '../layouts/Layout.astro';
     .container {
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+    
+    /* Stack temporal trends vertically on mobile */
+    .grid.md\\:grid-cols-5 {
+      grid-template-columns: 1fr;
     }
   }
   
