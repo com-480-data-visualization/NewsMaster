@@ -1,0 +1,2007 @@
+{
+  "importData": {},
+  "exportData": {},
+  "nerData": {},
+  "topEntitiesByCountry": {},
+  "topNer": "Donald Trump",
+  "foreignPressData": {
+    "countryCoverage": {
+      "KHM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MLT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SHN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BHS": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ATF": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "VNM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NOR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NZL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TLS": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "KGZ": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "USA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GIN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CYM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "FRO": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MDV": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NIU": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "UGA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ESH": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GBR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "HUN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LBY": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SXM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ARM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MDA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "FIN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CHE": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "JAM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SWZ": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MOZ": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ZWE": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "AUT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BES": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MLI": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "URY": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BIH": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MYS": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ABW": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "DEU": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TKL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GUY": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "VUT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "EGY": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MCO": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BDI": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ESP": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "HKG": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "HND": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BGD": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "POL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LSO": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "AUS": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ARE": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "JPN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "DZA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BRA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ERI": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ALB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "UMI": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MMR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CAN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BEN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LAO": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TCA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "FJI": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GMB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "HRV": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CHN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "FRA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SLB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CXR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ATG": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LUX": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SUR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BFA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MDG": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ROU": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MAR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MUS": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CPV": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ITA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "KEN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "COG": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CYP": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SJM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SSD": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MAF": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "DJI": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MSR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ISL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BMU": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PLW": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "IRL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PAK": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NAM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "OMN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PYF": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "YEM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SEN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SYR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "DOM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LBN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SWE": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TUN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TCD": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NLD": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MKD": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "COD": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "COM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MRT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GRC": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GIB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GAB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GLP": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TWN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BLM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ETH": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CRI": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "UZB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "COK": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "WLF": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PER": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "UKR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "HMD": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "DNK": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "VGB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BRN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "IDN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "AND": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CHL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TKM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "VEN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BTN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "COL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ATA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LCA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "THA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "VIR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BGR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "JEY": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NRU": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LKA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MNP": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PRY": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ASM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ALA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "HTI": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "IRQ": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NIC": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BOL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LTU": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "KNA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PHL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "RUS": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GUF": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SPM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NER": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BHR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GUM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "KAZ": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PRK": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "QAT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TON": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SRB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TUV": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ZAF": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PAN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MEX": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SVN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BLZ": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "EST": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SMR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TTO": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "IRN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LVA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "AGO": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BEL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "FSM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PRT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MHL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "STP": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TZA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GEO": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SYC": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CMR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BWA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CCK": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "FLK": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NGA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GNB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "AFG": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CZE": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CIV": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "AZE": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BRB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GRD": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MTQ": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BVT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "BLR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "DMA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ISR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GGY": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "KWT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "IOT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PRI": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "AIA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "VCT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NCL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GNQ": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PNG": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "WSM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PCN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SOM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ECU": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MAC": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TUR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ZMB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GRL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CAF": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "JOR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NFK": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "REU": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "PSE": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "NPL": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "ARG": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "IND": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MYT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "IMN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MNG": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SLE": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SDN": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SGS": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MWI": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LIE": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SGP": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "MNE": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SAU": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "KOR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "RWA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SLV": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TJK": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "VAT": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GTM": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "LBR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CUW": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "SVK": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "TGO": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "KIR": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "CUB": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      },
+      "GHA": {
+        "coveredBy": {},
+        "totalCoverage": 0
+      }
+    },
+    "countryCovering": {
+      "KHM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MLT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SHN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BHS": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ATF": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "VNM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NOR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NZL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TLS": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "KGZ": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "USA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GIN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CYM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "FRO": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MDV": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NIU": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "UGA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ESH": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GBR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "HUN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LBY": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SXM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ARM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MDA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "FIN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CHE": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "JAM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SWZ": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MOZ": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ZWE": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "AUT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BES": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MLI": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "URY": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BIH": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MYS": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ABW": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "DEU": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TKL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GUY": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "VUT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "EGY": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MCO": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BDI": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ESP": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "HKG": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "HND": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BGD": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "POL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LSO": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "AUS": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ARE": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "JPN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "DZA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BRA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ERI": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ALB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "UMI": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MMR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CAN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BEN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LAO": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TCA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "FJI": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GMB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "HRV": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CHN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "FRA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SLB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CXR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ATG": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LUX": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SUR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BFA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MDG": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ROU": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MAR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MUS": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CPV": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ITA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "KEN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "COG": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CYP": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SJM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SSD": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MAF": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "DJI": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MSR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ISL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BMU": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PLW": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "IRL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PAK": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NAM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "OMN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PYF": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "YEM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SEN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SYR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "DOM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LBN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SWE": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TUN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TCD": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NLD": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MKD": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "COD": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "COM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MRT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GRC": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GIB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GAB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GLP": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TWN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BLM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ETH": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CRI": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "UZB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "COK": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "WLF": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PER": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "UKR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "HMD": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "DNK": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "VGB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BRN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "IDN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "AND": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CHL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TKM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "VEN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BTN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "COL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ATA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LCA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "THA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "VIR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BGR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "JEY": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NRU": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LKA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MNP": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PRY": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ASM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ALA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "HTI": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "IRQ": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NIC": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BOL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LTU": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "KNA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PHL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "RUS": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GUF": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SPM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NER": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BHR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GUM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "KAZ": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PRK": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "QAT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TON": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SRB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TUV": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ZAF": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PAN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MEX": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SVN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BLZ": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "EST": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SMR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TTO": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "IRN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LVA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "AGO": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BEL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "FSM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PRT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MHL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "STP": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TZA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GEO": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SYC": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CMR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BWA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CCK": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "FLK": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NGA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GNB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "AFG": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CZE": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CIV": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "AZE": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BRB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GRD": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MTQ": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BVT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "BLR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "DMA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ISR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GGY": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "KWT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "IOT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PRI": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "AIA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "VCT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NCL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GNQ": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PNG": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "WSM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PCN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SOM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ECU": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MAC": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TUR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ZMB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GRL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CAF": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "JOR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NFK": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "REU": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "PSE": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "NPL": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "ARG": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "IND": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MYT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "IMN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MNG": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SLE": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SDN": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SGS": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MWI": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LIE": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SGP": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "MNE": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SAU": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "KOR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "RWA": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SLV": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TJK": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "VAT": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GTM": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "LBR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CUW": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "SVK": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "TGO": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "KIR": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "CUB": {
+        "covering": {},
+        "totalCovering": 0
+      },
+      "GHA": {
+        "covering": {},
+        "totalCovering": 0
+      }
+    },
+    "featuredRankings": [],
+    "coveringRankings": []
+  }
+}

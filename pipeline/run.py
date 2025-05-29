@@ -223,15 +223,16 @@ def main():
     # Step 5: Update daily topics (NER percentages)
     print("\n5. Updating daily topics...")
     today_date = get_today_date_str()
-    success = process_specific_day(today_date)
-    if success:
+    top_ner_entity = process_specific_day(today_date)
+    if top_ner_entity:
         print(f"Successfully created topics.json for {today_date}")
+        print(f"Top NER entity for today ({today_date}): {top_ner_entity}")
     else:
-        print(f"Failed to create topics.json for {today_date}")
+        print(f"Failed to create topics.json for {today_date} or no NER data found")
 
     # Step 6: Aggregate map data
     print("\n6. Aggregating map data...")
-    aggregate_map_data()
+    aggregate_map_data(top_ner_entity)
 
     print("\nPipeline completed successfully!")
 

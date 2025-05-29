@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import { 
-  importColorScale, exportColorScale, 
-  timeSeriesData, calculateGlobalAverage 
-} from '../../data/mapData';
+  createImportColorScale, createExportColorScale
+} from '../../lib/mapStyle';
 
 // Define entity structure
 interface EntityData {
@@ -12,11 +11,11 @@ interface EntityData {
   share: number;
 }
 
-// Define structure for the data prop
+// Define structure for the data prop - matches the actual data structure
 interface TooltipData {
   importData: Record<string, number>;
   exportData: Record<string, number>;
-  countryEntities?: Record<string, EntityData[]>;
+  topEntitiesByCountry?: Record<string, EntityData[]>;
 }
 
 type Props = {
@@ -31,6 +30,46 @@ type Props = {
 
 const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode, data }) => {
   const barChartRef = useRef<HTMLDivElement>(null);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+
+  // Detect theme changes
+  useEffect(() => {
+    const checkTheme = () => {
+      setIsDarkMode(document.documentElement.classList.contains('dark'));
+    };
+    
+    // Check initial theme
+    checkTheme();
+    
+    // Listen for theme changes
+    const observer = new MutationObserver(checkTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+    
+    return () => observer.disconnect();
+  }, []);
+
+  // Create color scales dynamically based on theme and current data
+  const { importColorScale, exportColorScale } = React.useMemo(() => {
+    if (!data) {
+      return {
+        importColorScale: createImportColorScale(isDarkMode, [0, 0.001]),
+        exportColorScale: createExportColorScale(isDarkMode, [0, 0.001])
+      };
+    }
+
+    const maxImport = Math.max(...Object.values(data.importData), 0);
+    const maxExport = Math.max(...Object.values(data.exportData), 0);
+    const importDomain: [number, number] = [0, maxImport || 0.001];
+    const exportDomain: [number, number] = [0, maxExport || 0.001];
+
+    return {
+      importColorScale: createImportColorScale(isDarkMode, importDomain),
+      exportColorScale: createExportColorScale(isDarkMode, exportDomain)
+    };
+  }, [data, isDarkMode]);
 
   // Create the bar chart when country or data changes
   useEffect(() => {
@@ -96,19 +135,29 @@ const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode, data }) => {
       .attr("width", x.bandwidth())
       .attr("height", d => chartHeight - y(d.value))
       .attr("fill", d => d.color);
-  }, [hoveredCountry, data]);
+  }, [hoveredCountry?.id, data, importColorScale, exportColorScale]);
 
   // Render entities table
   const renderTopEntities = () => {
     if (!hoveredCountry || !data) return null;
     
     const countryId = hoveredCountry.id;
-    const entities = data.countryEntities?.[countryId] || [];
+    
+    // Debug logging
+    console.log('Tooltip Debug:', {
+      countryId,
+      hastopEntitiesByCountry: !!data.topEntitiesByCountry,
+      availableCountries: data.topEntitiesByCountry ? Object.keys(data.topEntitiesByCountry) : [],
+      entitiesForCountry: data.topEntitiesByCountry?.[countryId]
+    });
+    
+    const entities = data.topEntitiesByCountry?.[countryId] || [];
     
     if (entities.length === 0) {
       return (
         <div className="text-sm text-muted-foreground mt-3">
           <p>No significant entities found for this country.</p>
+         
         </div>
       );
     }
@@ -189,4 +238,4 @@ const CountryTooltip: React.FC<Props> = ({ hoveredCountry, mode, data }) => {
   );
 };
 
-export default CountryTooltip; 
+export default React.memo(CountryTooltip); 

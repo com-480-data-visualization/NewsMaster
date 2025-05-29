@@ -132,17 +132,30 @@ def process_all_days():
     print(f"Failed to process: {failed_count} days")
 
 def process_specific_day(date_folder):
-    """Process a specific day's data"""
+    """Process a specific day's data and return the top NER entity"""
     if not re.match(r'\d{2}\.\d{2}\.\d{4}', date_folder):
         print(f"Invalid date format: {date_folder}. Expected format: DD.MM.YYYY")
-        return False
+        return None
     
     data_path = os.path.join(DATA_DIR, date_folder)
     if not os.path.exists(data_path):
         print(f"Date folder not found: {date_folder}")
-        return False
+        return None
     
-    return process_single_day(date_folder)
+    # Calculate NER percentages for the day
+    ner_percentages = calculate_daily_ner_percentages(date_folder)
+    
+    if not ner_percentages:
+        print(f"No NER data found for {date_folder}")
+        return None
+    
+    # Find the top NER entity (highest percentage)
+    top_entity = max(ner_percentages, key=ner_percentages.get)
+    save_daily_topics(date_folder, ner_percentages)
+    
+    print(f"Top NER entity for {date_folder}: {top_entity} ({ner_percentages[top_entity]}%)")
+    
+    return top_entity
 
 if __name__ == "__main__":
     # Process all available days

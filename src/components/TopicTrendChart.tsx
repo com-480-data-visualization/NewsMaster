@@ -16,6 +16,7 @@ type ChartDataInput = {
 interface TopicTrendChartProps {
     data: ChartDataInput;
     defaultTopic: string | null;
+    defaultTopics?: string[]; // Add support for multiple default topics
 }
 
 // Define a type for the formatted chart data
@@ -42,14 +43,16 @@ const formatDateForDisplay = (dateStr: string): string => {
     return `${dayName} ${day}/${month}`;
 };
 
-const TopicTrendChart: React.FC<TopicTrendChartProps> = ({ data, defaultTopic }) => {
+const TopicTrendChart: React.FC<TopicTrendChartProps> = ({ data, defaultTopic, defaultTopics }) => {
     const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
 
     useEffect(() => {
-        if (defaultTopic) {
+        if (defaultTopics && defaultTopics.length > 0) {
+            setSelectedTopics(defaultTopics);
+        } else if (defaultTopic) {
             setSelectedTopics([defaultTopic]);
         }
-    }, [defaultTopic]);
+    }, [defaultTopic, defaultTopics]);
 
     const handleTopicSelect = useCallback((event: CustomEvent) => {
         const { topic: clickedTopic } = event.detail;
@@ -90,7 +93,7 @@ const TopicTrendChart: React.FC<TopicTrendChartProps> = ({ data, defaultTopic })
         return dataPoint;
     });
 
-    if (!defaultTopic && selectedTopics.length === 0) {
+    if (!defaultTopic && !defaultTopics && selectedTopics.length === 0) {
         return (
             <div className="flex items-center justify-center h-full text-gray-500 dark:text-gray-400">
                 <div className="text-center">
@@ -101,12 +104,12 @@ const TopicTrendChart: React.FC<TopicTrendChartProps> = ({ data, defaultTopic })
         );
     }
     
-    if (selectedTopics.length === 0 && defaultTopic && !selectedTopics.includes(defaultTopic)) {
+    if (selectedTopics.length === 0 && (defaultTopic || defaultTopics) && !(defaultTopics ? defaultTopics.some(topic => selectedTopics.includes(topic)) : selectedTopics.includes(defaultTopic!))) {
          return (
              <div className="flex items-center justify-center h-full text-gray-500 dark:text-gray-400">
                  <div className="text-center">
                      <div className="animate-pulse text-2xl mb-2">📈</div>
-                     <p>Loading chart for {defaultTopic}...</p>
+                     <p>Loading chart for {defaultTopics ? 'topics' : defaultTopic}...</p>
                  </div>
              </div>
          );

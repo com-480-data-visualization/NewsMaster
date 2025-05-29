@@ -1,43 +1,72 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import * as d3 from 'd3';
-import type { Feature, GeoJSON } from 'geojson';
-import { importColorScale, exportColorScale, strokeColor, highlightColor } from '../../data/mapData';
+import type { GeoJSON } from 'geojson';
 
-type Country = {
-  id: string;
-  name: string;
-  properties: any;
+// Legend configuration type
+export type LegendConfig = {
+  title: string;
+  colorRange: [string, string]; // [start color, end color]
+  valueRange: [number, number]; // [min value, max value]
+  unit?: string; // e.g., '%', 'articles', etc.
+};
+
+// Map size configuration
+export type MapSize = {
+  width: number;
+  height: number;
+  scale: number;
 };
 
 type Props = {
-  mode: 'import' | 'export';
+  colorScale: (value: number) => string;
+  strokeColor: string;
+  highlightColor: string;
   data: Record<string, number>;
   setSelectedCountry: (country: string | null) => void;
   setHoveredCountry: (country: { id: string; name: string; position: { x: number; y: number } } | null) => void;
+  legend?: LegendConfig; // Optional legend configuration
+  mapSize?: MapSize; // Optional map size configuration
 };
 
-// Type for GeoJSON feature properties
-interface CountryFeature extends Feature {
-  id: string;
-  properties: {
-    name: string;
-    [key: string]: any;
-  };
-}
-
-const WorldMap: React.FC<Props> = ({ mode, data, setSelectedCountry, setHoveredCountry }) => {
+const WorldMap: React.FC<Props> = ({ 
+  colorScale, 
+  strokeColor, 
+  highlightColor, 
+  data, 
+  setSelectedCountry, 
+  setHoveredCountry,
+  legend,
+  mapSize = { width: 960, height: 500, scale: 160 } // Default values
+}) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const [mapInitialized, setMapInitialized] = useState(false);
 
-  // Initialize map when component mounts
+  // Stable references to avoid re-initialization
+  const stableSetSelectedCountry = useCallback(setSelectedCountry, [setSelectedCountry]);
+  const stableSetHoveredCountry = useCallback(setHoveredCountry, [setHoveredCountry]);
+
+  // Helper function to update map colors - memoized to prevent recreation
+  const updateMapColors = useCallback((
+    mapGroup: d3.Selection<any, unknown, null, undefined>, 
+    colorFunction: (value: number) => string, 
+    currentData: Record<string, number>
+  ) => {
+    mapGroup.selectAll("path")
+      .attr("fill", (d: any) => {
+        const id = d.id;
+        return colorFunction(currentData[id] || 0);
+      });
+  }, []);
+
+  // Initialize map ONCE when component mounts (no dependencies on changing props)
   useEffect(() => {
     if (!svgRef.current || mapInitialized) return;
 
-    const width = 960, height = 500;
+    const { width, height, scale } = mapSize;
     const svg = d3.select(svgRef.current);
     
     const projection = d3.geoNaturalEarth1()
-      .scale(160)
+      .scale(scale)
       .translate([width / 2, height / 2]);
     
     const path = d3.geoPath().projection(projection);
@@ -76,25 +105,19 @@ const WorldMap: React.FC<Props> = ({ mode, data, setSelectedCountry, setHoveredC
           return path(d as any) || '';
         })
         .attr("class", "country")
-        .style("stroke", strokeColor)
-        .style("stroke-width", 0.5)
         .style("cursor", "pointer")
         .style("filter", "drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15))")
         .on("mouseover", function(event, d) {
           const countryId = (d as any).id;
           const countryName = (d as any).properties.name;
           
-          // Get SVG element position
-          const svgRect = svgRef.current?.getBoundingClientRect();
-          
-          // Highlight country
+          // Highlight country - use current stroke color from closure
           d3.select(this)
-            .style("stroke", highlightColor)
             .style("stroke-width", 1.5)
             .style("filter", "drop-shadow(0px 0px 5px rgba(0, 102, 204, 0.3))");
           
           // Update hovered country
-          setHoveredCountry({
+          stableSetHoveredCountry({
             id: countryId,
             name: countryName,
             position: { 
@@ -105,72 +128,126 @@ const WorldMap: React.FC<Props> = ({ mode, data, setSelectedCountry, setHoveredC
         })
         .on("mouseout", function() {
           d3.select(this)
-            .style("stroke", strokeColor)
             .style("stroke-width", 0.5)
             .style("filter", "drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15))");
           
-          setHoveredCountry(null);
+          stableSetHoveredCountry(null);
         })
         .on("click", function(_, d) {
           const id = (d as any).id;
-          // Not using name, so removing the unused variable
-          // const name = (d as any).properties.name;
           
           // Highlight clicked country with stronger effect
           mapGroup.selectAll("path")
-            .style("stroke", strokeColor)
             .style("stroke-width", 0.5)
             .style("filter", "drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15))");
           
           d3.select(this)
-            .style("stroke", highlightColor)
             .style("stroke-width", 2)
             .style("filter", "drop-shadow(0px 0px 8px rgba(0, 102, 204, 0.5))");
           
-          setSelectedCountry(id);
+          stableSetSelectedCountry(id);
         });
       
-      // Initial coloring of countries
-      updateMapColors(mapGroup, mode, data);
       setMapInitialized(true);
     });
     
-  }, [mapInitialized, setHoveredCountry, setSelectedCountry]);
+  }, [mapSize]); // Add mapSize as dependency
 
-  // Update map colors when mode or data changes
+  // Update stroke and highlight colors when they change
   useEffect(() => {
-    if (!mapInitialized || !data) return;
+    if (!mapInitialized) return;
     
     const svg = d3.select(svgRef.current);
     const mapGroup = svg.select("g");
-    updateMapColors(mapGroup, mode, data);
-    
-  }, [mode, data, mapInitialized]);
-
-  // Helper function to update map colors
-  const updateMapColors = (
-    mapGroup: d3.Selection<any, unknown, null, undefined>, 
-    mode: 'import' | 'export', 
-    currentData: Record<string, number>
-  ) => {
-    const colorScale = mode === 'import' ? importColorScale : exportColorScale;
     
     mapGroup.selectAll("path")
-      .attr("fill", (d: any) => {
-        const id = d.id;
-        return colorScale(currentData[id] || 0);
+      .style("stroke", strokeColor)
+      .style("stroke-width", 0.5);
+      
+    // Update hover effects to use current highlight color
+    mapGroup.selectAll("path")
+      .on("mouseover", function(event, d) {
+        const countryId = (d as any).id;
+        const countryName = (d as any).properties.name;
+        
+        d3.select(this)
+          .style("stroke", highlightColor)
+          .style("stroke-width", 1.5)
+          .style("filter", "drop-shadow(0px 0px 5px rgba(0, 102, 204, 0.3))");
+        
+        stableSetHoveredCountry({
+          id: countryId,
+          name: countryName,
+          position: { 
+            x: event.pageX, 
+            y: event.pageY 
+          }
+        });
+      })
+      .on("mouseout", function() {
+        d3.select(this)
+          .style("stroke", strokeColor)
+          .style("stroke-width", 0.5)
+          .style("filter", "drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15))");
+        
+        stableSetHoveredCountry(null);
       });
-  };
+    
+  }, [mapInitialized, strokeColor, highlightColor, stableSetHoveredCountry]);
+
+  // Update map colors when colorScale or data changes (separate from initialization)
+  useEffect(() => {
+    if (!mapInitialized) return;
+    
+    const svg = d3.select(svgRef.current);
+    const mapGroup = svg.select("g");
+    updateMapColors(mapGroup, colorScale, data);
+    
+  }, [colorScale, data, mapInitialized, updateMapColors]);
 
   return (
-    <svg 
-      ref={svgRef} 
-      width="100%" 
-      height="650" 
-      viewBox="0 0 960 500" 
-      className="mx-auto"
-    />
+    <div className="relative w-full h-full">
+      <svg 
+        ref={svgRef} 
+        width="100%" 
+        height={mapSize.height} 
+        viewBox={`0 0 ${mapSize.width} ${mapSize.height}`} 
+        className="mx-auto"
+      />
+      
+      {/* Optional Legend - positioned at bottom center where Antarctica would be */}
+      {legend && (
+        <div 
+          className="absolute bg-card/90 backdrop-blur-sm p-3 rounded-lg border shadow-lg transform -translate-x-1/2"
+          style={{ 
+            left: '50%', 
+            bottom: `${Math.max(20, mapSize.height * 0.08)}px` // Y offset relative to map size
+          }}
+        >
+          <div className="space-y-2">
+            <p className="text-xs font-medium text-foreground text-center">
+              {legend.title}
+            </p>
+            <div 
+              className="w-32 h-3 rounded-sm overflow-hidden" 
+              style={{ 
+                background: `linear-gradient(to right, ${legend.colorRange[0]}, ${legend.colorRange[1]})`
+              }}
+            />
+            <div className="flex justify-between w-32">
+              <span className="text-xs text-muted-foreground">
+                {legend.valueRange[0]}{legend.unit || ''}
+              </span>
+              <span className="text-xs text-muted-foreground">
+                {legend.valueRange[1]}{legend.unit || ''}
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 
-export default WorldMap; 
+// Memoize the component to prevent unnecessary re-renders
+export default React.memo(WorldMap); 
