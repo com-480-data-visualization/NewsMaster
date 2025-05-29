@@ -217,9 +217,10 @@ def process_single_date(date_str: str, top_ner: str):
     
     Args:
         date_str: Date string in DD.MM.YYYY format
+        top_ner: Target entity to track
         
     Returns:
-        Dictionary containing importData, exportData, nerData, TopEntitiesByCountry, topNer
+        Dictionary containing importData, exportData, nerData, TopEntitiesByCountry, topNer, foreignPressData
     """
     import_counts = defaultdict(int)
     export_counts = defaultdict(int)
@@ -232,7 +233,10 @@ def process_single_date(date_str: str, top_ner: str):
     ner_counts = defaultdict(int)
     # Track entities relevant to each country
     country_related_entities = defaultdict(Counter)
+    
 
+    country_coverage_matrix = defaultdict(lambda: defaultdict(int))  
+    country_covering_matrix = defaultdict(lambda: defaultdict(int))  
 
     # Load providers once
     provider_country_map = load_providers_map()
@@ -242,7 +246,13 @@ def process_single_date(date_str: str, top_ner: str):
             "exportData": {},
             "nerData": {},
             "TopEntitiesByCountry": {},
-            "topNer": ""
+            "topNer": "",
+            "foreignPressData": {
+                "countryCoverage": {},
+                "countryCovering": {},
+                "featuredRankings": [],
+                "coveringRankings": []
+            }
         }
 
     articles_file_path = os.path.join(DATA_ROOT_DIR, date_str, "articles.json")
@@ -253,7 +263,13 @@ def process_single_date(date_str: str, top_ner: str):
             "exportData": {},
             "nerData": {},
             "TopEntitiesByCountry": {},
-            "topNer": ""
+            "topNer": "",
+            "foreignPressData": {
+                "countryCoverage": {},
+                "countryCovering": {},
+                "featuredRankings": [],
+                "coveringRankings": []
+            }
         }
 
     print(f"Processing data for {date_str}...")
@@ -306,13 +322,16 @@ def process_single_date(date_str: str, top_ner: str):
                     total_imports += 1
                     export_counts[source_country_code] += 1
                     total_exports += 1
+                    
+                    country_coverage_matrix[mentioned_code][source_country_code] += 1
+                    country_covering_matrix[source_country_code][mentioned_code] += 1
+                    
             # Associate entities with countries
             for country_code in mentioned_country_codes:
                 if country_code != source_country_code:
                     entity_counter = country_related_entities[country_code]
-
-                for entity in other_entities:
-                    entity_counter[entity] += 1
+                    for entity in other_entities:
+                        entity_counter[entity] += 1
 
 
     except (json.JSONDecodeError, Exception) as e:
@@ -402,12 +421,120 @@ def process_single_date(date_str: str, top_ner: str):
                 ]
                 country_top_entities[country] = formatted_top_10
 
+    foreign_press_data = process_foreign_press_data(
+        country_coverage_matrix, 
+        country_covering_matrix, 
+        providers_per_country,
+        all_codes
+    )
+
     return {
         "importData": normalized_import_data,
         "exportData": normalized_export_data,
         "nerData": normalized_ner_data,
         "TopEntitiesByCountry": country_top_entities,
-        "topNer": top_ner
+        "topNer": top_ner,
+        "foreignPressData": foreign_press_data
+    }
+
+def process_foreign_press_data(coverage_matrix, covering_matrix, providers_per_country, all_codes):
+    """
+    Process foreign press coverage data from country-to-country matrices.
+    
+    Args:
+        coverage_matrix: Dict[featured_country][covering_country] = count
+        covering_matrix: Dict[covering_country][featured_country] = count  
+        providers_per_country: Dict[country] = provider_count
+        all_codes: Set of all country codes
+        
+    Returns:
+        Dict containing foreign press analysis data
+    """
+
+    country_coverage = {}  # How much each country is featured by others
+    country_covering = {}  # How much each country covers others
+    
+    for country in all_codes:
+        covered_by = {}
+        total_coverage = 0
+        
+        # Get who covers this country and normalize by provider count
+        if country in coverage_matrix:
+            for covering_country, count in coverage_matrix[country].items():
+                # Normalize by the covering country's provider count
+                provider_count = providers_per_country.get(covering_country, 1)
+                normalized_count = count / provider_count
+                covered_by[covering_country] = normalized_count
+                total_coverage += normalized_count
+        
+        # Store the unnormalized total_coverage for global ranking normalization
+        original_total_coverage = total_coverage
+        
+        # Normalize coveredBy values to sum to 1 (100%) for this specific country
+        if total_coverage > 0:
+            for covering_country in covered_by:
+                covered_by[covering_country] = covered_by[covering_country] / total_coverage
+        
+        country_coverage[country] = {
+            "coveredBy": covered_by,
+            "totalCoverage": original_total_coverage
+        }
+    
+    for country in all_codes:
+        covering = {}
+        total_covering = 0
+        
+        # Get who this country covers and normalize by provider count
+        if country in covering_matrix:
+            provider_count = providers_per_country.get(country, 1)
+            for covered_country, count in covering_matrix[country].items():
+                # Normalize by this country's provider count
+                normalized_count = count / provider_count
+                covering[covered_country] = normalized_count
+                total_covering += normalized_count
+        
+        # Store the unnormalized total_covering for global ranking normalization
+        original_total_covering = total_covering
+        
+        if total_covering > 0:
+            for covered_country in covering:
+                covering[covered_country] = covering[covered_country] / total_covering
+        
+        country_covering[country] = {
+            "covering": covering,
+            "totalCovering": original_total_covering
+        }
+    
+
+    total_featured_activity = sum(data["totalCoverage"] for data in country_coverage.values())
+    if total_featured_activity > 0:
+        for country_data in country_coverage.values():
+            country_data["totalCoverage"] /= total_featured_activity
+    
+    total_covering_activity = sum(data["totalCovering"] for data in country_covering.values())
+    if total_covering_activity > 0:
+        for country_data in country_covering.values():
+            country_data["totalCovering"] /= total_covering_activity
+    
+    featured_rankings = [
+        {"countryCode": country, "totalCoverage": data["totalCoverage"]}
+        for country, data in country_coverage.items()
+        if data["totalCoverage"] > 0
+    ]
+    featured_rankings.sort(key=lambda x: x["totalCoverage"], reverse=True)
+    
+    covering_rankings = [
+        {"countryCode": country, "totalCovering": data["totalCovering"]}
+        for country, data in country_covering.items()
+        if data["totalCovering"] > 0
+    ]
+    covering_rankings.sort(key=lambda x: x["totalCovering"], reverse=True)
+    
+    return {
+        "countryCoverage": country_coverage,
+        "countryCovering": country_covering, 
+        "featuredRankings": featured_rankings,
+        "coveringRankings": covering_rankings
     }
 
 # --- Main Execution Functions ---
@@ -461,8 +588,9 @@ def main(top_ner: str, last_30_days: bool = False):
             "importData": {k: v for k, v in date_data["importData"].items() if v > 0},
             "exportData": {k: v for k, v in date_data["exportData"].items() if v > 0},
             "nerData": {k: v for k, v in date_data["nerData"].items() if v > 0},
-            "TopEntitiesByCountry": date_data["TopEntitiesByCountry"],  # Keep as is
-            "topNer": top_ner  # Keep as is
+            "TopEntitiesByCountry": date_data["TopEntitiesByCountry"],  
+            "topNer": top_ner, 
+            "foreignPressData": date_data["foreignPressData"]
         }
         
         # Convert DD.MM.YYYY to YYYY-MM-DD for filename
@@ -499,8 +627,6 @@ def aggregate_map_data():
 
 if __name__ == "__main__":
     print("Starting consolidated map data aggregation...")
-    # Example usage:
-    # main("russia")  # Process today only
-    main("Donald Trump", last_30_days=True)  # Process last 30 days
+    main("Donald Trump", last_30_days=True)  
   
     print("\nMap data aggregation finished.")

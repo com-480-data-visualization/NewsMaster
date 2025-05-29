@@ -1,244 +1,145 @@
 {
   "importData": {
-    "BIH": 0.015843429636533086,
-    "AFG": 0.0027958993476234857,
-    "MYS": 0.0009319664492078285,
-    "BGR": 0.015843429636533086,
-    "MDA": 0.016775396085740912,
-    "LIE": 0.016775396085740912,
-    "GHA": 0.0009319664492078285,
-    "KOR": 0.0027958993476234857,
-    "IRL": 0.015843429636533086,
-    "SOM": 0.0009319664492078285,
-    "USA": 0.05312208760484623,
-    "URY": 0.0009319664492078285,
-    "AUS": 0.001863932898415657,
-    "CYP": 0.015843429636533086,
-    "ZAF": 0.007455731593662628,
-    "VEN": 0.003727865796831314,
-    "POL": 0.01863932898415657,
-    "VNM": 0.0009319664492078285,
-    "MKD": 0.015843429636533086,
-    "BRA": 0.0009319664492078285,
-    "VAT": 0.004659832246039142,
     "MLT": 0.015843429636533086,
-    "SWE": 0.017707362534948742,
-    "TUR": 0.007455731593662628,
-    "UGA": 0.009319664492078284,
-    "NAM": 0.0009319664492078285,
-    "COL": 0.0027958993476234857,
-    "HUN": 0.016775396085740912,
-    "SVN": 0.015843429636533086,
-    "RWA": 0.001863932898415657,
-    "TON": 0.0009319664492078285,
-    "PRT": 0.01863932898415657,
-    "MNE": 0.017707362534948742,
-    "BLR": 0.016775396085740912,
-    "MOZ": 0.0009319664492078285,
-    "GTM": 0.0009319664492078285,
-    "PER": 0.001863932898415657,
-    "PRK": 0.001863932898415657,
-    "IND": 0.0130475302889096,
+    "VNM": 0.0009319664492078285,
+    "NOR": 0.015843429636533086,
     "NZL": 0.0009319664492078285,
-    "ARG": 0.004659832246039142,
-    "LVA": 0.015843429636533086,
-    "DNK": 0.015843429636533086,
-    "BOL": 0.0027958993476234857,
-    "PAK": 0.004659832246039142,
-    "ARE": 0.005591798695246971,
-    "COG": 0.001863932898415657,
-    "RUS": 0.04100652376514446,
-    "ALB": 0.015843429636533086,
-    "ITA": 0.02050326188257223,
-    "EST": 0.016775396085740912,
-    "AIA": 0.0009319664492078285,
-    "MMR": 0.0009319664492078285,
-    "SSD": 0.0009319664492078285,
-    "TWN": 0.001863932898415657,
-    "BEL": 0.02050326188257223,
-    "NLD": 0.016775396085740912,
-    "CHL": 0.001863932898415657,
-    "PAN": 0.0009319664492078285,
-    "HND": 0.0009319664492078285,
-    "PHL": 0.0009319664492078285,
-    "PCN": 0.0009319664492078285,
-    "SEN": 0.0009319664492078285,
-    "FRA": 0.0260950605778192,
+    "USA": 0.05312208760484623,
+    "UGA": 0.009319664492078284,
+    "GBR": 0.02702702702702703,
+    "HUN": 0.016775396085740912,
+    "MDA": 0.016775396085740912,
+    "FIN": 0.017707362534948742,
+    "CHE": 0.01863932898415657,
+    "MOZ": 0.0009319664492078285,
     "AUT": 0.021435228331780055,
-    "MHL": 0.0009319664492078285,
+    "MLI": 0.0009319664492078285,
+    "URY": 0.0009319664492078285,
+    "BIH": 0.015843429636533086,
+    "MYS": 0.0009319664492078285,
     "DEU": 0.0065237651444548,
     "EGY": 0.0009319664492078285,
-    "KEN": 0.001863932898415657,
-    "IRN": 0.004659832246039142,
-    "ISL": 0.015843429636533086,
-    "FIN": 0.017707362534948742,
-    "JPN": 0.005591798695246971,
-    "NOR": 0.015843429636533086,
-    "MLI": 0.0009319664492078285,
-    "GEO": 0.0009319664492078285,
-    "UKR": 0.0391425908667288,
     "ESP": 0.021435228331780055,
-    "GRC": 0.016775396085740912,
-    "SAU": 0.001863932898415657,
-    "ROU": 0.02050326188257223,
-    "SVK": 0.015843429636533086,
-    "SRB": 0.021435228331780055,
-    "CZE": 0.016775396085740912,
-    "HRV": 0.015843429636533086,
-    "IDN": 0.0009319664492078285,
-    "QAT": 0.0009319664492078285,
-    "CHN": 0.0195712954333644,
-    "GBR": 0.02702702702702703,
-    "ISR": 0.0027958993476234857,
-    "CHE": 0.01863932898415657,
-    "LTU": 0.015843429636533086,
-    "LUX": 0.015843429636533086,
-    "NGA": 0.001863932898415657,
     "HKG": 0.0009319664492078285,
-    "MEX": 0.0130475302889096,
+    "HND": 0.0009319664492078285,
+    "POL": 0.01863932898415657,
+    "AUS": 0.001863932898415657,
+    "ARE": 0.005591798695246971,
+    "JPN": 0.005591798695246971,
+    "BRA": 0.0009319664492078285,
+    "ALB": 0.015843429636533086,
+    "MMR": 0.0009319664492078285,
+    "HRV": 0.015843429636533086,
+    "CHN": 0.0195712954333644,
+    "FRA": 0.0260950605778192,
+    "LUX": 0.015843429636533086,
+    "ROU": 0.02050326188257223,
+    "ITA": 0.02050326188257223,
+    "KEN": 0.001863932898415657,
+    "COG": 0.001863932898415657,
+    "CYP": 0.015843429636533086,
+    "SSD": 0.0009319664492078285,
+    "ISL": 0.015843429636533086,
+    "IRL": 0.015843429636533086,
+    "PAK": 0.004659832246039142,
+    "NAM": 0.0009319664492078285,
     "YEM": 0.003727865796831314,
+    "SEN": 0.0009319664492078285,
+    "SYR": 0.003727865796831314,
+    "SWE": 0.017707362534948742,
+    "NLD": 0.016775396085740912,
+    "MKD": 0.015843429636533086,
+    "GRC": 0.016775396085740912,
+    "TWN": 0.001863932898415657,
+    "PER": 0.001863932898415657,
+    "UKR": 0.0391425908667288,
+    "DNK": 0.015843429636533086,
+    "IDN": 0.0009319664492078285,
     "AND": 0.015843429636533086,
+    "CHL": 0.001863932898415657,
+    "VEN": 0.003727865796831314,
+    "COL": 0.0027958993476234857,
+    "BGR": 0.015843429636533086,
+    "BOL": 0.0027958993476234857,
+    "LTU": 0.015843429636533086,
+    "PHL": 0.0009319664492078285,
+    "RUS": 0.04100652376514446,
+    "PRK": 0.001863932898415657,
+    "QAT": 0.0009319664492078285,
+    "TON": 0.0009319664492078285,
+    "SRB": 0.021435228331780055,
+    "ZAF": 0.007455731593662628,
+    "PAN": 0.0009319664492078285,
+    "MEX": 0.0130475302889096,
+    "SVN": 0.015843429636533086,
+    "EST": 0.016775396085740912,
+    "IRN": 0.004659832246039142,
+    "LVA": 0.015843429636533086,
+    "BEL": 0.02050326188257223,
+    "PRT": 0.01863932898415657,
+    "MHL": 0.0009319664492078285,
+    "GEO": 0.0009319664492078285,
+    "NGA": 0.001863932898415657,
+    "AFG": 0.0027958993476234857,
+    "CZE": 0.016775396085740912,
+    "BLR": 0.016775396085740912,
+    "ISR": 0.0027958993476234857,
+    "AIA": 0.0009319664492078285,
+    "PCN": 0.0009319664492078285,
+    "SOM": 0.0009319664492078285,
+    "TUR": 0.007455731593662628,
+    "ARG": 0.004659832246039142,
+    "IND": 0.0130475302889096,
+    "LIE": 0.016775396085740912,
+    "MNE": 0.017707362534948742,
+    "SAU": 0.001863932898415657,
+    "KOR": 0.0027958993476234857,
+    "RWA": 0.001863932898415657,
+    "VAT": 0.004659832246039142,
+    "GTM": 0.0009319664492078285,
+    "SVK": 0.015843429636533086,
     "CUB": 0.0009319664492078285,
-    "SYR": 0.003727865796831314
+    "GHA": 0.0009319664492078285
   },
   "exportData": {
-    "MYS": 0.010307507301151006,
     "USA": 0.018209929565366777,
-    "AUS": 0.006699879745748154,
-    "ZAF": 0.06699879745748154,
-    "BRA": 0.06596804672736643,
-    "COL": 0.009276756571035905,
-    "HUN": 0.002061501460230201,
-    "GTM": 0.004123002920460402,
-    "IND": 0.011338258031266106,
-    "DNK": 0.005153753650575503,
-    "PAK": 0.05669129015633053,
-    "TWN": 0.013399759491496308,
-    "NLD": 0.004123002920460402,
-    "DOM": 0.0010307507301151005,
-    "FRA": 0.010307507301151006,
-    "DEU": 0.5669129015633053,
-    "FIN": 0.0030922521903453018,
-    "ESP": 0.04741453358529463,
-    "SAU": 0.012369008761381207,
     "GBR": 0.05153753650575503,
-    "ISR": 0.0010307507301151005,
+    "HUN": 0.002061501460230201,
+    "FIN": 0.0030922521903453018,
     "CHE": 0.011338258031266106,
+    "MYS": 0.010307507301151006,
+    "DEU": 0.5669129015633053,
+    "ESP": 0.04741453358529463,
+    "HKG": 0.01958426387218691,
+    "AUS": 0.006699879745748154,
+    "BRA": 0.06596804672736643,
+    "FRA": 0.010307507301151006,
+    "PAK": 0.05669129015633053,
+    "DOM": 0.0010307507301151005,
+    "NLD": 0.004123002920460402,
+    "TWN": 0.013399759491496308,
+    "DNK": 0.005153753650575503,
+    "COL": 0.009276756571035905,
+    "ZAF": 0.06699879745748154,
     "NGA": 0.0010307507301151005,
-    "HKG": 0.01958426387218691
+    "ISR": 0.0010307507301151005,
+    "IND": 0.011338258031266106,
+    "SAU": 0.012369008761381207,
+    "GTM": 0.004123002920460402
   },
   "nerData": {
     "USA": 0.012779552715654952,
-    "ZAF": 0.15335463258785942,
-    "BRA": 0.1916932907348243,
-    "COL": 0.038338658146964855,
-    "IND": 0.08626198083067094,
-    "PAK": 0.038338658146964855,
-    "FRA": 0.038338658146964855,
+    "GBR": 0.019169329073482427,
     "DEU": 0.3833865814696486,
-    "SAU": 0.038338658146964855,
-    "GBR": 0.019169329073482427
+    "BRA": 0.1916932907348243,
+    "FRA": 0.038338658146964855,
+    "PAK": 0.038338658146964855,
+    "COL": 0.038338658146964855,
+    "ZAF": 0.15335463258785942,
+    "IND": 0.08626198083067094,
+    "SAU": 0.038338658146964855
   },
   "TopEntitiesByCountry": {
-    "YEM": [
-      {
-        "entity": "Lufthansa Cargo",
-        "count": 2,
-        "share": 0.18181818181818182
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Netanyahu",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Gulf Tour",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Houthi",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Switzerland",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Austria",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Eurowings",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "ITA Airways",
-        "count": 1,
-        "share": 0.09090909090909091
-      }
-    ],
-    "SYR": [
-      {
-        "entity": "Donald Trump",
-        "count": 2,
-        "share": 0.2
-      },
-      {
-        "entity": "Netanyahu",
-        "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "Gulf Tour",
-        "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "Austro-German",
-        "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "Bashar Al-Assad",
-        "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "Ahmad Al-Charaa",
-        "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "Old",
-        "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "Lucio",
-        "count": 1,
-        "share": 0.1
-      },
-      {
-        "entity": "Lucimar Da Silva Ferreira",
-        "count": 1,
-        "share": 0.1
-      }
-    ],
     "IRN": [
       {
         "entity": "Donald Trump",
@@ -291,1307 +192,96 @@
         "share": 0.07692307692307693
       }
     ],
-    "UKR": [
-      {
-        "entity": "Vladimir Putin",
-        "count": 14,
-        "share": 0.2222222222222222
-      },
+    "SYR": [
       {
         "entity": "Donald Trump",
-        "count": 13,
-        "share": 0.20634920634920634
+        "count": 2,
+        "share": 0.25
       },
       {
-        "entity": "Volodymyr Zelenskyy",
-        "count": 9,
-        "share": 0.14285714285714285
+        "entity": "Netanyahu",
+        "count": 1,
+        "share": 0.125
       },
       {
-        "entity": "Volodymyr Zelensky",
-        "count": 5,
-        "share": 0.07936507936507936
-      },
-      {
-        "entity": "News24",
-        "count": 5,
-        "share": 0.07936507936507936
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.06349206349206349
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 4,
-        "share": 0.06349206349206349
-      },
-      {
-        "entity": "EU",
-        "count": 3,
-        "share": 0.047619047619047616
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.047619047619047616
+        "entity": "Gulf Tour",
+        "count": 1,
+        "share": 0.125
       },
       {
         "entity": "Austro-German",
-        "count": 3,
-        "share": 0.047619047619047616
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "Bashar Al-Assad",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "Ahmad Al-Charaa",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "Old",
+        "count": 1,
+        "share": 0.125
       }
     ],
-    "BIH": [
+    "YEM": [
       {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
+        "entity": "Lufthansa Cargo",
         "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "PRT": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "MNE": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "BGR": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "MDA": [
-      {
-        "entity": "Donald Trump",
-        "count": 7,
-        "share": 0.23333333333333334
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.13333333333333333
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.13333333333333333
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.1
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.06666666666666667
-      }
-    ],
-    "BLR": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.1724137931034483
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.13793103448275862
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.13793103448275862
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10344827586206896
-      },
-      {
-        "entity": "Austro-German",
-        "count": 3,
-        "share": 0.10344827586206896
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.06896551724137931
-      }
-    ],
-    "BEL": [
-      {
-        "entity": "Donald Trump",
-        "count": 6,
         "share": 0.18181818181818182
       },
       {
-        "entity": "Vladimir Putin",
-        "count": 5,
-        "share": 0.15151515151515152
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.12121212121212122
-      },
-      {
-        "entity": "EU Commission",
-        "count": 4,
-        "share": 0.12121212121212122
-      },
-      {
-        "entity": "EU",
-        "count": 3,
+        "entity": "Donald Trump",
+        "count": 1,
         "share": 0.09090909090909091
       },
       {
-        "entity": "European",
-        "count": 3,
+        "entity": "Netanyahu",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Gulf Tour",
+        "count": 1,
         "share": 0.09090909090909091
       },
       {
         "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.06060606060606061
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.06060606060606061
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06060606060606061
-      },
-      {
-        "entity": "Trump Gulf",
-        "count": 2,
-        "share": 0.06060606060606061
-      }
-    ],
-    "ESP": [
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14814814814814814
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 4,
-        "share": 0.14814814814814814
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 3,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07407407407407407
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07407407407407407
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07407407407407407
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07407407407407407
-      },
-      {
-        "entity": "French",
-        "count": 2,
-        "share": 0.07407407407407407
-      }
-    ],
-    "NLD": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "GRC": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "LIE": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "IRL": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "ROU": [
-      {
-        "entity": "Donald Trump",
-        "count": 8,
-        "share": 0.21621621621621623
-      },
-      {
-        "entity": "George Simion",
-        "count": 4,
-        "share": 0.10810810810810811
-      },
-      {
-        "entity": "European",
-        "count": 4,
-        "share": 0.10810810810810811
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.10810810810810811
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.10810810810810811
-      },
-      {
-        "entity": "EU",
-        "count": 3,
-        "share": 0.08108108108108109
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 3,
-        "share": 0.08108108108108109
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.08108108108108109
-      },
-      {
-        "entity": "European Union",
-        "count": 2,
-        "share": 0.05405405405405406
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.05405405405405406
-      }
-    ],
-    "LVA": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "FRA": [
-      {
-        "entity": "Donald Trump",
-        "count": 6,
-        "share": 0.16666666666666666
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 5,
-        "share": 0.1388888888888889
-      },
-      {
-        "entity": "Austro-German",
-        "count": 4,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "French",
-        "count": 3,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Emmanuel Macron",
-        "count": 3,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "News24",
-        "count": 3,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.05555555555555555
-      }
-    ],
-    "SVK": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "AUT": [
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 6,
-        "share": 0.16666666666666666
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.1388888888888889
-      },
-      {
-        "entity": "Jj",
-        "count": 4,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Wasted Love",
-        "count": 4,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.05555555555555555
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.05555555555555555
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.05555555555555555
-      }
-    ],
-    "DNK": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "CYP": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "SRB": [
-      {
-        "entity": "Friedrich Merz",
-        "count": 7,
-        "share": 0.16279069767441862
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 7,
-        "share": 0.16279069767441862
-      },
-      {
-        "entity": "EU Commission",
-        "count": 5,
-        "share": 0.11627906976744186
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 4,
-        "share": 0.09302325581395349
-      },
-      {
-        "entity": "European",
-        "count": 4,
-        "share": 0.09302325581395349
-      },
-      {
-        "entity": "Austro-German",
-        "count": 4,
-        "share": 0.09302325581395349
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 4,
-        "share": 0.09302325581395349
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.09302325581395349
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.046511627906976744
-      },
-      {
-        "entity": "Jj",
-        "count": 2,
-        "share": 0.046511627906976744
-      }
-    ],
-    "DEU": [
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.2222222222222222
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 3,
-        "share": 0.16666666666666666
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "European",
-        "count": 2,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.1111111111111111
-      },
-      {
-        "entity": "British",
         "count": 1,
-        "share": 0.05555555555555555
+        "share": 0.09090909090909091
       },
       {
-        "entity": "Keir Starmer",
+        "entity": "Houthi",
         "count": 1,
-        "share": 0.05555555555555555
+        "share": 0.09090909090909091
       },
       {
-        "entity": "Trump Gulf",
+        "entity": "Switzerland",
         "count": 1,
-        "share": 0.05555555555555555
+        "share": 0.09090909090909091
       },
       {
-        "entity": "Volodymy",
+        "entity": "Austria",
         "count": 1,
-        "share": 0.05555555555555555
+        "share": 0.09090909090909091
       },
       {
-        "entity": "R Zelenskyy",
+        "entity": "Eurowings",
         "count": 1,
-        "share": 0.05555555555555555
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "ITA Airways",
+        "count": 1,
+        "share": 0.09090909090909091
       }
     ],
-    "POL": [
-      {
-        "entity": "Donald Trump",
-        "count": 6,
-        "share": 0.1935483870967742
-      },
-      {
-        "entity": "European",
-        "count": 4,
-        "share": 0.12903225806451613
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.12903225806451613
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.12903225806451613
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.0967741935483871
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Polish",
-        "count": 2,
-        "share": 0.06451612903225806
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.06451612903225806
-      }
-    ],
-    "CZE": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "HRV": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "MKD": [
+    "LUX": [
       {
         "entity": "Donald Trump",
         "count": 5,
@@ -1695,111 +385,579 @@
         "share": 0.07142857142857142
       }
     ],
-    "SWE": [
+    "ROU": [
       {
         "entity": "Donald Trump",
-        "count": 7,
-        "share": 0.1794871794871795
+        "count": 8,
+        "share": 0.22857142857142856
       },
       {
-        "entity": "Vladimir Putin",
-        "count": 7,
-        "share": 0.1794871794871795
-      },
-      {
-        "entity": "European",
-        "count": 5,
-        "share": 0.1282051282051282
+        "entity": "George Simion",
+        "count": 4,
+        "share": 0.11428571428571428
       },
       {
         "entity": "Friedrich Merz",
-        "count": 5,
-        "share": 0.1282051282051282
+        "count": 4,
+        "share": 0.11428571428571428
       },
       {
-        "entity": "Marco Rubio",
+        "entity": "Vladimir Putin",
         "count": 4,
-        "share": 0.10256410256410256
+        "share": 0.11428571428571428
       },
       {
         "entity": "EU",
         "count": 3,
-        "share": 0.07692307692307693
+        "share": 0.08571428571428572
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.08571428571428572
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.08571428571428572
       },
       {
         "entity": "Eurovision Song Contest",
         "count": 2,
-        "share": 0.05128205128205128
+        "share": 0.05714285714285714
+      },
+      {
+        "entity": "European Union",
+        "count": 2,
+        "share": 0.05714285714285714
       },
       {
         "entity": "Austro-German",
         "count": 2,
-        "share": 0.05128205128205128
+        "share": 0.05714285714285714
+      }
+    ],
+    "ITA": [
+      {
+        "entity": "Friedrich Merz",
+        "count": 6,
+        "share": 0.1875
       },
       {
-        "entity": "Recep Tayyip Erdogan",
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.15625
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.125
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "Austro-German",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.09375
+      },
+      {
+        "entity": "EU",
         "count": 2,
-        "share": 0.05128205128205128
+        "share": 0.0625
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.0625
+      },
+      {
+        "entity": "Georgia Meloni",
+        "count": 2,
+        "share": 0.0625
       },
       {
         "entity": "Roma Resistance Day",
         "count": 2,
-        "share": 0.05128205128205128
+        "share": 0.0625
+      }
+    ],
+    "NOR": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "CYP": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "BGR": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "UGA": [
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.21428571428571427
+      },
+      {
+        "entity": "British",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "EU",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Keir Starmer",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Jj",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Wasted Love",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "David Lammy",
+        "count": 1,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "ghan",
+        "count": 1,
+        "share": 0.07142857142857142
+      }
+    ],
+    "HUN": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
       }
     ],
     "GBR": [
       {
         "entity": "Donald Trump",
         "count": 7,
-        "share": 0.21875
+        "share": 0.22580645161290322
       },
       {
         "entity": "EU Commission",
         "count": 5,
-        "share": 0.15625
+        "share": 0.16129032258064516
       },
       {
         "entity": "British",
         "count": 3,
-        "share": 0.09375
-      },
-      {
-        "entity": "Austro-German",
-        "count": 3,
-        "share": 0.09375
+        "share": 0.0967741935483871
       },
       {
         "entity": "Friedrich Merz",
         "count": 3,
-        "share": 0.09375
+        "share": 0.0967741935483871
       },
       {
         "entity": "Manchester City",
         "count": 3,
-        "share": 0.09375
+        "share": 0.0967741935483871
       },
       {
         "entity": "Keir Starmer",
         "count": 2,
-        "share": 0.0625
+        "share": 0.06451612903225806
       },
       {
         "entity": "Eurovision Song Contest",
         "count": 2,
-        "share": 0.0625
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.06451612903225806
       },
       {
         "entity": "Roma Resistance Day",
         "count": 2,
-        "share": 0.0625
+        "share": 0.06451612903225806
       },
       {
         "entity": "English",
         "count": 2,
-        "share": 0.0625
+        "share": 0.06451612903225806
       }
     ],
     "ISL": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "MDA": [
+      {
+        "entity": "Donald Trump",
+        "count": 7,
+        "share": 0.23333333333333334
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.13333333333333333
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.1
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.06666666666666667
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.06666666666666667
+      }
+    ],
+    "FIN": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "IRL": [
       {
         "entity": "Donald Trump",
         "count": 5,
@@ -1955,371 +1113,1047 @@
         "share": 0.07142857142857142
       }
     ],
-    "LUX": [
+    "AUT": [
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 6,
+        "share": 0.16666666666666666
+      },
       {
         "entity": "Donald Trump",
         "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "UGA": [
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.1875
-      },
-      {
-        "entity": "British",
-        "count": 2,
-        "share": 0.125
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 2,
-        "share": 0.125
-      },
-      {
-        "entity": "Johann Wolfgang Von Goethe",
-        "count": 2,
-        "share": 0.125
-      },
-      {
-        "entity": "Martin Luther",
-        "count": 2,
-        "share": 0.125
-      },
-      {
-        "entity": "EU",
-        "count": 1,
-        "share": 0.0625
-      },
-      {
-        "entity": "Keir Starmer",
-        "count": 1,
-        "share": 0.0625
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 1,
-        "share": 0.0625
+        "share": 0.1388888888888889
       },
       {
         "entity": "Jj",
-        "count": 1,
-        "share": 0.0625
+        "count": 4,
+        "share": 0.1111111111111111
       },
       {
         "entity": "Wasted Love",
-        "count": 1,
-        "share": 0.0625
-      }
-    ],
-    "FIN": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
+        "count": 4,
+        "share": 0.1111111111111111
       },
       {
         "entity": "Friedrich Merz",
         "count": 4,
-        "share": 0.14285714285714285
+        "share": 0.1111111111111111
       },
       {
         "entity": "Vladimir Putin",
         "count": 4,
-        "share": 0.14285714285714285
+        "share": 0.1111111111111111
       },
       {
         "entity": "European",
         "count": 3,
-        "share": 0.10714285714285714
+        "share": 0.08333333333333333
       },
       {
         "entity": "EU",
         "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
+        "share": 0.05555555555555555
       },
       {
         "entity": "Austro-German",
         "count": 2,
-        "share": 0.07142857142857142
+        "share": 0.05555555555555555
       },
       {
         "entity": "Roma Resistance Day",
         "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "NOR": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "HUN": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
-      }
-    ],
-    "AND": [
-      {
-        "entity": "Donald Trump",
-        "count": 5,
-        "share": 0.17857142857142858
-      },
-      {
-        "entity": "Friedrich Merz",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "Vladimir Putin",
-        "count": 4,
-        "share": 0.14285714285714285
-      },
-      {
-        "entity": "European",
-        "count": 3,
-        "share": 0.10714285714285714
-      },
-      {
-        "entity": "EU",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Eurovision Song Contest",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Austro-German",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Roma Resistance Day",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.07142857142857142
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 2,
-        "share": 0.07142857142857142
+        "share": 0.05555555555555555
       }
     ],
     "RUS": [
       {
         "entity": "Vladimir Putin",
         "count": 16,
-        "share": 0.25
+        "share": 0.25806451612903225
       },
       {
         "entity": "Donald Trump",
         "count": 12,
-        "share": 0.1875
+        "share": 0.1935483870967742
       },
       {
         "entity": "Volodymyr Zelenskyy",
         "count": 7,
-        "share": 0.109375
+        "share": 0.11290322580645161
       },
       {
         "entity": "Volodymyr Zelensky",
         "count": 5,
-        "share": 0.078125
-      },
-      {
-        "entity": "Marco Rubio",
-        "count": 5,
-        "share": 0.078125
+        "share": 0.08064516129032258
       },
       {
         "entity": "News24",
         "count": 5,
-        "share": 0.078125
-      },
-      {
-        "entity": "Austro-German",
-        "count": 4,
-        "share": 0.0625
+        "share": 0.08064516129032258
       },
       {
         "entity": "Friedrich Merz",
         "count": 4,
-        "share": 0.0625
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 4,
+        "share": 0.06451612903225806
       },
       {
         "entity": "European",
         "count": 3,
-        "share": 0.046875
+        "share": 0.04838709677419355
+      },
+      {
+        "entity": "Austro-German",
+        "count": 3,
+        "share": 0.04838709677419355
       },
       {
         "entity": "Emmanuel Macron",
         "count": 3,
-        "share": 0.046875
+        "share": 0.04838709677419355
+      }
+    ],
+    "BIH": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "SWE": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Recep Tayyip Erdogan",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "SRB": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.1724137931034483
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.13793103448275862
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.13793103448275862
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10344827586206896
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.10344827586206896
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.06896551724137931
+      }
+    ],
+    "NLD": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "DEU": [
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.2222222222222222
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 3,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "European",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "British",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Keir Starmer",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Trump Gulf",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "Volodymy",
+        "count": 1,
+        "share": 0.05555555555555555
+      },
+      {
+        "entity": "R Zelenskyy",
+        "count": 1,
+        "share": 0.05555555555555555
+      }
+    ],
+    "MKD": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "GRC": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "LIE": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
       }
     ],
     "SVN": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "EST": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.1724137931034483
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.13793103448275862
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.13793103448275862
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 3,
+        "share": 0.10344827586206896
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10344827586206896
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Wasted Love",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.06896551724137931
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.06896551724137931
+      }
+    ],
+    "MNE": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "LVA": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "BEL": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.16129032258064516
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.12903225806451613
+      },
+      {
+        "entity": "EU Commission",
+        "count": 4,
+        "share": 0.12903225806451613
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.12903225806451613
+      },
+      {
+        "entity": "EU",
+        "count": 3,
+        "share": 0.0967741935483871
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.0967741935483871
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Trump Gulf",
+        "count": 2,
+        "share": 0.06451612903225806
+      }
+    ],
+    "PRT": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "ESP": [
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14814814814814814
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 4,
+        "share": 0.14814814814814814
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 3,
+        "share": 0.1111111111111111
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07407407407407407
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07407407407407407
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07407407407407407
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07407407407407407
+      },
+      {
+        "entity": "French",
+        "count": 2,
+        "share": 0.07407407407407407
+      }
+    ],
+    "POL": [
+      {
+        "entity": "Donald Trump",
+        "count": 6,
+        "share": 0.1935483870967742
+      },
+      {
+        "entity": "European",
+        "count": 4,
+        "share": 0.12903225806451613
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.12903225806451613
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.12903225806451613
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.0967741935483871
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Polish",
+        "count": 2,
+        "share": 0.06451612903225806
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.06451612903225806
+      }
+    ],
+    "UKR": [
+      {
+        "entity": "Vladimir Putin",
+        "count": 14,
+        "share": 0.2222222222222222
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 13,
+        "share": 0.20634920634920634
+      },
+      {
+        "entity": "Volodymyr Zelenskyy",
+        "count": 9,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Volodymyr Zelensky",
+        "count": 5,
+        "share": 0.07936507936507936
+      },
+      {
+        "entity": "News24",
+        "count": 5,
+        "share": 0.07936507936507936
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.06349206349206349
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 4,
+        "share": 0.06349206349206349
+      },
+      {
+        "entity": "EU",
+        "count": 3,
+        "share": 0.047619047619047616
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.047619047619047616
+      },
+      {
+        "entity": "Austro-German",
+        "count": 3,
+        "share": 0.047619047619047616
+      }
+    ],
+    "CZE": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "SVK": [
       {
         "entity": "Donald Trump",
         "count": 5,
@@ -2423,59 +2257,111 @@
         "share": 0.07142857142857142
       }
     ],
-    "ITA": [
-      {
-        "entity": "Friedrich Merz",
-        "count": 6,
-        "share": 0.1875
-      },
+    "DNK": [
       {
         "entity": "Donald Trump",
         "count": 5,
-        "share": 0.15625
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
       },
       {
         "entity": "Vladimir Putin",
         "count": 4,
-        "share": 0.125
+        "share": 0.14285714285714285
       },
       {
         "entity": "European",
         "count": 3,
-        "share": 0.09375
-      },
-      {
-        "entity": "Austro-German",
-        "count": 3,
-        "share": 0.09375
-      },
-      {
-        "entity": "EU Commission",
-        "count": 3,
-        "share": 0.09375
+        "share": 0.10714285714285714
       },
       {
         "entity": "EU",
         "count": 2,
-        "share": 0.0625
+        "share": 0.07142857142857142
       },
       {
         "entity": "Eurovision Song Contest",
         "count": 2,
-        "share": 0.0625
+        "share": 0.07142857142857142
       },
       {
-        "entity": "Georgia Meloni",
+        "entity": "Austro-German",
         "count": 2,
-        "share": 0.0625
+        "share": 0.07142857142857142
       },
       {
         "entity": "Roma Resistance Day",
         "count": 2,
-        "share": 0.0625
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
       }
     ],
-    "EST": [
+    "AND": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "BLR": [
       {
         "entity": "Donald Trump",
         "count": 5,
@@ -2492,12 +2378,12 @@
         "share": 0.13793103448275862
       },
       {
-        "entity": "Eurovision Song Contest",
+        "entity": "European",
         "count": 3,
         "share": 0.10344827586206896
       },
       {
-        "entity": "European",
+        "entity": "Austro-German",
         "count": 3,
         "share": 0.10344827586206896
       },
@@ -2507,12 +2393,7 @@
         "share": 0.06896551724137931
       },
       {
-        "entity": "Wasted Love",
-        "count": 2,
-        "share": 0.06896551724137931
-      },
-      {
-        "entity": "Austro-German",
+        "entity": "Eurovision Song Contest",
         "count": 2,
         "share": 0.06896551724137931
       },
@@ -2525,58 +2406,219 @@
         "entity": "EU Commission",
         "count": 2,
         "share": 0.06896551724137931
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.06896551724137931
+      }
+    ],
+    "HRV": [
+      {
+        "entity": "Donald Trump",
+        "count": 5,
+        "share": 0.17857142857142858
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.14285714285714285
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.10714285714285714
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Eurovision Song Contest",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Austro-German",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Roma Resistance Day",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "EU Commission",
+        "count": 2,
+        "share": 0.07142857142857142
+      },
+      {
+        "entity": "Marco Rubio",
+        "count": 2,
+        "share": 0.07142857142857142
+      }
+    ],
+    "FRA": [
+      {
+        "entity": "Donald Trump",
+        "count": 6,
+        "share": 0.17647058823529413
+      },
+      {
+        "entity": "Friedrich Merz",
+        "count": 4,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "Vladimir Putin",
+        "count": 4,
+        "share": 0.11764705882352941
+      },
+      {
+        "entity": "European",
+        "count": 3,
+        "share": 0.08823529411764706
+      },
+      {
+        "entity": "Austro-German",
+        "count": 3,
+        "share": 0.08823529411764706
+      },
+      {
+        "entity": "French",
+        "count": 3,
+        "share": 0.08823529411764706
+      },
+      {
+        "entity": "Emmanuel Macron",
+        "count": 3,
+        "share": 0.08823529411764706
+      },
+      {
+        "entity": "EU Commission",
+        "count": 3,
+        "share": 0.08823529411764706
+      },
+      {
+        "entity": "News24",
+        "count": 3,
+        "share": 0.08823529411764706
+      },
+      {
+        "entity": "EU",
+        "count": 2,
+        "share": 0.058823529411764705
       }
     ],
     "USA": [
       {
         "entity": "Donald Trump",
-        "count": 16,
-        "share": 0.3333333333333333
+        "count": 14,
+        "share": 0.35
       },
       {
         "entity": "News24",
         "count": 5,
-        "share": 0.10416666666666667
+        "share": 0.125
       },
       {
         "entity": "Mexico",
         "count": 4,
-        "share": 0.08333333333333333
+        "share": 0.1
       },
       {
         "entity": "UN Security Council",
         "count": 4,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Carlo An",
-        "count": 4,
-        "share": 0.08333333333333333
-      },
-      {
-        "entity": "Carlos Alberto Parreira",
-        "count": 4,
-        "share": 0.08333333333333333
+        "share": 0.1
       },
       {
         "entity": "FBI",
         "count": 3,
-        "share": 0.0625
-      },
-      {
-        "entity": "Manzer Ali Gill",
-        "count": 3,
-        "share": 0.0625
-      },
-      {
-        "entity": "Aliya Hamza Malik",
-        "count": 3,
-        "share": 0.0625
+        "share": 0.075
       },
       {
         "entity": "Eric Adams",
         "count": 2,
-        "share": 0.041666666666666664
+        "share": 0.05
+      },
+      {
+        "entity": "United Nations Food and Agriculture Organization",
+        "count": 2,
+        "share": 0.05
+      },
+      {
+        "entity": "FIFA Club World Cup",
+        "count": 2,
+        "share": 0.05
+      },
+      {
+        "entity": "Carlo An",
+        "count": 2,
+        "share": 0.05
+      },
+      {
+        "entity": "Carlos Alberto Parreira",
+        "count": 2,
+        "share": 0.05
+      }
+    ],
+    "IND": [
+      {
+        "entity": "Virat Kohli",
+        "count": 2,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "Donald Trump",
+        "count": 2,
+        "share": 0.16666666666666666
+      },
+      {
+        "entity": "BBC",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Pk Rosy",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Malayalam",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Jay Shah",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "International Cricket Council",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "DW",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "IP",
+        "count": 1,
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Palestine",
+        "count": 1,
+        "share": 0.08333333333333333
       }
     ],
     "PAK": [
@@ -2594,58 +2636,6 @@
         "entity": "Palestine",
         "count": 1,
         "share": 0.3333333333333333
-      }
-    ],
-    "IND": [
-      {
-        "entity": "Vanguard News",
-        "count": 4,
-        "share": 0.26666666666666666
-      },
-      {
-        "entity": "Virat Kohli",
-        "count": 2,
-        "share": 0.13333333333333333
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 2,
-        "share": 0.13333333333333333
-      },
-      {
-        "entity": "BBC",
-        "count": 1,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "Pk Rosy",
-        "count": 1,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "Malayalam",
-        "count": 1,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "Jay Shah",
-        "count": 1,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "International Cricket Council",
-        "count": 1,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "DW",
-        "count": 1,
-        "share": 0.06666666666666667
-      },
-      {
-        "entity": "IP",
-        "count": 1,
-        "share": 0.06666666666666667
       }
     ],
     "TUR": [
@@ -2709,54 +2699,54 @@
     ],
     "CHN": [
       {
-        "entity": "Mainland Chinese",
-        "count": 6,
-        "share": 0.2222222222222222
-      },
-      {
         "entity": "Donald Trump",
         "count": 5,
-        "share": 0.18518518518518517
+        "share": 0.20833333333333334
+      },
+      {
+        "entity": "Mainland Chinese",
+        "count": 4,
+        "share": 0.16666666666666666
       },
       {
         "entity": "EU Commission",
         "count": 2,
-        "share": 0.07407407407407407
+        "share": 0.08333333333333333
       },
       {
         "entity": "Xi",
         "count": 2,
-        "share": 0.07407407407407407
+        "share": 0.08333333333333333
       },
       {
         "entity": "Fu Wa",
         "count": 2,
-        "share": 0.07407407407407407
+        "share": 0.08333333333333333
       },
       {
         "entity": "Feng Yi",
         "count": 2,
-        "share": 0.07407407407407407
-      },
-      {
-        "entity": "CBRE",
-        "count": 2,
-        "share": 0.07407407407407407
+        "share": 0.08333333333333333
       },
       {
         "entity": "A Lula Da Silva",
         "count": 2,
-        "share": 0.07407407407407407
+        "share": 0.08333333333333333
       },
       {
         "entity": "Tiktok CPI",
         "count": 2,
-        "share": 0.07407407407407407
+        "share": 0.08333333333333333
       },
       {
         "entity": "Portugal",
         "count": 2,
-        "share": 0.07407407407407407
+        "share": 0.08333333333333333
+      },
+      {
+        "entity": "Latin American",
+        "count": 1,
+        "share": 0.041666666666666664
       }
     ],
     "MOZ": [
@@ -2830,54 +2820,54 @@
     ],
     "ISR": [
       {
-        "entity": "News24",
-        "count": 2,
-        "share": 0.15384615384615385
-      },
-      {
-        "entity": "Episcopal Church",
-        "count": 2,
-        "share": 0.15384615384615385
-      },
-      {
         "entity": "Lufthansa Cargo",
         "count": 2,
-        "share": 0.15384615384615385
+        "share": 0.18181818181818182
       },
       {
         "entity": "Austro-German",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.09090909090909091
       },
       {
         "entity": "Herzog",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.09090909090909091
       },
       {
         "entity": "Steinmeier",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.09090909090909091
       },
       {
         "entity": "DW",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.09090909090909091
       },
       {
         "entity": "Christoph Strack",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "News24",
+        "count": 1,
+        "share": 0.09090909090909091
       },
       {
         "entity": "Bedouins",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.09090909090909091
       },
       {
-        "entity": "Afrikaners",
+        "entity": "Houthi",
         "count": 1,
-        "share": 0.07692307692307693
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Switzerland",
+        "count": 1,
+        "share": 0.09090909090909091
       }
     ],
     "VAT": [
@@ -2978,52 +2968,52 @@
       {
         "entity": "Javier Milei",
         "count": 2,
-        "share": 0.13333333333333333
-      },
-      {
-        "entity": "EU Commission",
-        "count": 2,
-        "share": 0.13333333333333333
-      },
-      {
-        "entity": "Me",
-        "count": 2,
-        "share": 0.13333333333333333
-      },
-      {
-        "entity": "Rca",
-        "count": 2,
-        "share": 0.13333333333333333
-      },
-      {
-        "entity": "Regis Na",
-        "count": 2,
-        "share": 0.13333333333333333
+        "share": 0.18181818181818182
       },
       {
         "entity": "Nazi",
         "count": 1,
-        "share": 0.06666666666666667
+        "share": 0.09090909090909091
       },
       {
         "entity": "US Supreme Court",
         "count": 1,
-        "share": 0.06666666666666667
+        "share": 0.09090909090909091
       },
       {
         "entity": "World War II",
         "count": 1,
-        "share": 0.06666666666666667
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "EU Commission",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Me",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Rca",
+        "count": 1,
+        "share": 0.09090909090909091
+      },
+      {
+        "entity": "Regis Na",
+        "count": 1,
+        "share": 0.09090909090909091
       },
       {
         "entity": "DUBAI",
         "count": 1,
-        "share": 0.06666666666666667
+        "share": 0.09090909090909091
       },
       {
         "entity": "The Eternaut\u201d",
         "count": 1,
-        "share": 0.06666666666666667
+        "share": 0.09090909090909091
       }
     ],
     "COL": [
@@ -3229,32 +3219,32 @@
       {
         "entity": "Taliban",
         "count": 2,
-        "share": 0.2
+        "share": 0.25
       },
       {
         "entity": "Nazira Khairzad",
         "count": 2,
-        "share": 0.2
-      },
-      {
-        "entity": "David Lammy",
-        "count": 2,
-        "share": 0.2
-      },
-      {
-        "entity": "ghan",
-        "count": 2,
-        "share": 0.2
+        "share": 0.25
       },
       {
         "entity": "Sadia Bromand",
         "count": 1,
-        "share": 0.1
+        "share": 0.125
       },
       {
         "entity": "Nazima",
         "count": 1,
-        "share": 0.1
+        "share": 0.125
+      },
+      {
+        "entity": "David Lammy",
+        "count": 1,
+        "share": 0.125
+      },
+      {
+        "entity": "ghan",
+        "count": 1,
+        "share": 0.125
       }
     ],
     "RWA": [
@@ -3268,30 +3258,18 @@
       {
         "entity": "Mainland Chinese",
         "count": 1,
-        "share": 0.3333333333333333
+        "share": 0.5
       },
       {
         "entity": "Lin Fu Z",
         "count": 1,
-        "share": 0.3333333333333333
-      },
-      {
-        "entity": "Fashion Week",
-        "count": 1,
-        "share": 0.3333333333333333
+        "share": 0.5
       }
     ],
     "NZL": [
       {
         "entity": "Super Netball",
         "count": 1,
-        "share": 1.0
-      }
-    ],
-    "AIA": [
-      {
-        "entity": "Elizabeth Szczepanska",
-        "count": 2,
         "share": 1.0
       }
     ],
@@ -3502,12 +3480,12 @@
         "share": 0.08333333333333333
       },
       {
-        "entity": "Carlo An",
+        "entity": "French Polynesia",
         "count": 1,
         "share": 0.08333333333333333
       },
       {
-        "entity": "\u00d4nio F\u00e9lix De Souza",
+        "entity": "PCC",
         "count": 1,
         "share": 0.08333333333333333
       }
@@ -3613,18 +3591,18 @@
     "VEN": [
       {
         "entity": "Nicol\u00e1s Maduro",
-        "count": 3,
-        "share": 0.6
+        "count": 2,
+        "share": 0.5
       },
       {
         "entity": "News24",
         "count": 1,
-        "share": 0.2
+        "share": 0.25
       },
       {
         "entity": "South American",
         "count": 1,
-        "share": 0.2
+        "share": 0.25
       }
     ],
     "MLI": [
@@ -3665,58 +3643,6 @@
         "share": 1.0
       }
     ],
-    "TWN": [
-      {
-        "entity": "Union-PP Federation",
-        "count": 2,
-        "share": 0.18181818181818182
-      },
-      {
-        "entity": "Donald Trump",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Green Card",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "D4U Immigration",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "General Balance SP",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Secretariat of Agriculture",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Brazil",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Aguin",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Aldo Ribeiro",
-        "count": 1,
-        "share": 0.09090909090909091
-      },
-      {
-        "entity": "Daniella Ribeiro",
-        "count": 1,
-        "share": 0.09090909090909091
-      }
-    ],
     "HND": [
       {
         "entity": "British",
@@ -3732,32 +3658,32 @@
     "NAM": [
       {
         "entity": "Convention on International Trade in Endangered Species of Wild Fauna and Flora",
-        "count": 4,
+        "count": 2,
         "share": 0.2857142857142857
       },
       {
         "entity": "WWF",
-        "count": 2,
+        "count": 1,
         "share": 0.14285714285714285
       },
       {
         "entity": "Iceland",
-        "count": 2,
+        "count": 1,
         "share": 0.14285714285714285
       },
       {
         "entity": "Ministry of Climate Change and Environmental Coordination",
-        "count": 2,
+        "count": 1,
         "share": 0.14285714285714285
       },
       {
         "entity": "IUCN Red List",
-        "count": 2,
+        "count": 1,
         "share": 0.14285714285714285
       },
       {
         "entity": "CITES",
-        "count": 2,
+        "count": 1,
         "share": 0.14285714285714285
       }
     ],
@@ -3811,53 +3737,43 @@
     "PAN": [
       {
         "entity": "Alhaji Sule Lamido",
-        "count": 4,
-        "share": 0.18181818181818182
-      },
-      {
-        "entity": "Vanguard News",
-        "count": 4,
-        "share": 0.18181818181818182
+        "count": 2,
+        "share": 0.2222222222222222
       },
       {
         "entity": "Afenifere",
-        "count": 2,
-        "share": 0.09090909090909091
+        "count": 1,
+        "share": 0.1111111111111111
       },
       {
         "entity": "Yoruba",
-        "count": 2,
-        "share": 0.09090909090909091
+        "count": 1,
+        "share": 0.1111111111111111
       },
       {
         "entity": "Lucimar Da Silva Ferreira",
-        "count": 2,
-        "share": 0.09090909090909091
+        "count": 1,
+        "share": 0.1111111111111111
       },
       {
         "entity": "Po Akinrefon",
-        "count": 2,
-        "share": 0.09090909090909091
+        "count": 1,
+        "share": 0.1111111111111111
       },
       {
         "entity": "Femi Okurounmu",
-        "count": 2,
-        "share": 0.09090909090909091
+        "count": 1,
+        "share": 0.1111111111111111
       },
       {
         "entity": "Sule Lamido",
-        "count": 2,
-        "share": 0.09090909090909091
+        "count": 1,
+        "share": 0.1111111111111111
       },
       {
-        "entity": "APC",
+        "entity": "Vanguard News",
         "count": 1,
-        "share": 0.045454545454545456
-      },
-      {
-        "entity": "Nwosu",
-        "count": 1,
-        "share": 0.045454545454545456
+        "share": 0.1111111111111111
       }
     ],
     "QAT": [
@@ -3890,5 +3806,3523 @@
       }
     ]
   },
-  "topNer": "Donald Trump"
+  "topNer": "Donald Trump",
+  "foreignPressData": {
+    "countryCoverage": {
+      "KHM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MLT": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "SHN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BHS": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ATF": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "VNM": {
+        "coveredBy": {
+          "DEU": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "NOR": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "NZL": {
+        "coveredBy": {
+          "AUS": 1.0
+        },
+        "totalCoverage": 0.0005153753650575503
+      },
+      "TLS": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "KGZ": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "USA": {
+        "coveredBy": {
+          "GBR": 0.030927835051546393,
+          "DEU": 0.12371134020618557,
+          "AUS": 0.041237113402061855,
+          "IND": 0.10309278350515463,
+          "HKG": 0.041237113402061855,
+          "ESP": 0.020618556701030927,
+          "ZAF": 0.10309278350515463,
+          "FRA": 0.020618556701030927,
+          "BRA": 0.16494845360824742,
+          "PAK": 0.061855670103092786,
+          "FIN": 0.020618556701030927,
+          "DNK": 0.08247422680412371,
+          "NLD": 0.020618556701030927,
+          "CHE": 0.041237113402061855,
+          "MYS": 0.020618556701030927,
+          "SAU": 0.020618556701030927,
+          "COL": 0.061855670103092786,
+          "GTM": 0.020618556701030927
+        },
+        "totalCoverage": 0.049991410410582374
+      },
+      "GIN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "CYM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "FRO": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MDV": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "NIU": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "UGA": {
+        "coveredBy": {
+          "USA": 0.04,
+          "GBR": 0.12000000000000002,
+          "DEU": 0.6000000000000001,
+          "HKG": 0.12000000000000002,
+          "PAK": 0.12000000000000002
+        },
+        "totalCoverage": 0.008589589417625835
+      },
+      "ESH": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GBR": {
+        "coveredBy": {
+          "USA": 0.024539877300613498,
+          "DEU": 0.5521472392638037,
+          "AUS": 0.018404907975460124,
+          "HKG": 0.03680981595092025,
+          "ESP": 0.0736196319018405,
+          "ZAF": 0.03680981595092025,
+          "FRA": 0.03680981595092025,
+          "BRA": 0.03680981595092025,
+          "PAK": 0.0736196319018405,
+          "FIN": 0.03680981595092025,
+          "SAU": 0.0736196319018405
+        },
+        "totalCoverage": 0.028002061501460226
+      },
+      "HUN": {
+        "coveredBy": {
+          "USA": 0.020408163265306117,
+          "DEU": 0.7346938775510203,
+          "GBR": 0.06122448979591836,
+          "ESP": 0.06122448979591836,
+          "ZAF": 0.06122448979591836,
+          "PAK": 0.06122448979591836
+        },
+        "totalCoverage": 0.016835595258546644
+      },
+      "LBY": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "SXM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ARM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MDA": {
+        "coveredBy": {
+          "USA": 0.020408163265306117,
+          "DEU": 0.6734693877551019,
+          "GBR": 0.06122448979591836,
+          "ESP": 0.06122448979591836,
+          "ZAF": 0.06122448979591836,
+          "BRA": 0.06122448979591836,
+          "PAK": 0.06122448979591836
+        },
+        "totalCoverage": 0.016835595258546644
+      },
+      "FIN": {
+        "coveredBy": {
+          "USA": 0.01923076923076923,
+          "DEU": 0.6923076923076922,
+          "GBR": 0.05769230769230768,
+          "ESP": 0.05769230769230768,
+          "ZAF": 0.05769230769230768,
+          "PAK": 0.05769230769230768,
+          "TWN": 0.05769230769230768
+        },
+        "totalCoverage": 0.01786634598866174
+      },
+      "CHE": {
+        "coveredBy": {
+          "USA": 0.018181818181818177,
+          "DEU": 0.709090909090909,
+          "GBR": 0.054545454545454536,
+          "ESP": 0.054545454545454536,
+          "ZAF": 0.054545454545454536,
+          "PAK": 0.054545454545454536,
+          "NLD": 0.054545454545454536
+        },
+        "totalCoverage": 0.018897096718776842
+      },
+      "JAM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "SWZ": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MOZ": {
+        "coveredBy": {
+          "DEU": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "ZWE": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "AUT": {
+        "coveredBy": {
+          "USA": 0.015999999999999997,
+          "GBR": 0.072,
+          "DEU": 0.5279999999999999,
+          "ESP": 0.047999999999999994,
+          "ZAF": 0.047999999999999994,
+          "FRA": 0.047999999999999994,
+          "PAK": 0.047999999999999994,
+          "NLD": 0.047999999999999994,
+          "CHE": 0.09599999999999999,
+          "GTM": 0.047999999999999994
+        },
+        "totalCoverage": 0.021473973544064596
+      },
+      "BES": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MLI": {
+        "coveredBy": {
+          "ZAF": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "URY": {
+        "coveredBy": {
+          "BRA": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "BIH": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "MYS": {
+        "coveredBy": {
+          "HKG": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "ABW": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "DEU": {
+        "coveredBy": {
+          "USA": 0.0625,
+          "GBR": 0.1875,
+          "ESP": 0.1875,
+          "ZAF": 0.1875,
+          "PAK": 0.1875,
+          "HUN": 0.1875
+        },
+        "totalCoverage": 0.005497337227280535
+      },
+      "TKL": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GUY": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "VUT": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "EGY": {
+        "coveredBy": {
+          "SAU": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "MCO": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BDI": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ESP": {
+        "coveredBy": {
+          "USA": 0.015624999999999998,
+          "DEU": 0.6093749999999999,
+          "GBR": 0.04687499999999999,
+          "ZAF": 0.04687499999999999,
+          "BRA": 0.23437499999999997,
+          "PAK": 0.04687499999999999
+        },
+        "totalCoverage": 0.021989348909122144
+      },
+      "HKG": {
+        "coveredBy": {
+          "GBR": 1.0
+        },
+        "totalCoverage": 0.0005153753650575503
+      },
+      "HND": {
+        "coveredBy": {
+          "BRA": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "BGD": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "POL": {
+        "coveredBy": {
+          "USA": 0.018691588785046724,
+          "DEU": 0.6728971962616822,
+          "AUS": 0.02803738317757009,
+          "GBR": 0.05607476635514018,
+          "ESP": 0.05607476635514018,
+          "ZAF": 0.05607476635514018,
+          "PAK": 0.05607476635514018,
+          "MYS": 0.05607476635514018
+        },
+        "totalCoverage": 0.018381721353719294
+      },
+      "LSO": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "AUS": {
+        "coveredBy": {
+          "DEU": 0.6666666666666666,
+          "GBR": 0.3333333333333333
+        },
+        "totalCoverage": 0.0015461260951726507
+      },
+      "ARE": {
+        "coveredBy": {
+          "HKG": 0.16666666666666666,
+          "BRA": 0.3333333333333333,
+          "CHE": 0.16666666666666666,
+          "SAU": 0.16666666666666666,
+          "COL": 0.16666666666666666
+        },
+        "totalCoverage": 0.006184504380690603
+      },
+      "JPN": {
+        "coveredBy": {
+          "DEU": 0.16666666666666666,
+          "HKG": 0.5,
+          "BRA": 0.16666666666666666,
+          "CHE": 0.16666666666666666
+        },
+        "totalCoverage": 0.006184504380690603
+      },
+      "DZA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BRA": {
+        "coveredBy": {
+          "DEU": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "ERI": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ALB": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "UMI": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MMR": {
+        "coveredBy": {
+          "DEU": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "CAN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BEN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "LAO": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "TCA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "FJI": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GMB": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "HRV": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "CHN": {
+        "coveredBy": {
+          "DEU": 0.2857142857142857,
+          "HKG": 0.3333333333333333,
+          "BRA": 0.19047619047619047,
+          "CHE": 0.047619047619047616,
+          "MYS": 0.047619047619047616,
+          "TWN": 0.09523809523809523
+        },
+        "totalCoverage": 0.02164576533241711
+      },
+      "FRA": {
+        "coveredBy": {
+          "USA": 0.013157894736842103,
+          "DEU": 0.5526315789473684,
+          "GBR": 0.05921052631578947,
+          "IND": 0.019736842105263157,
+          "ESP": 0.039473684210526314,
+          "ZAF": 0.11842105263157894,
+          "BRA": 0.039473684210526314,
+          "PAK": 0.039473684210526314,
+          "TWN": 0.11842105263157894
+        },
+        "totalCoverage": 0.026112351829582547
+      },
+      "SLB": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "CXR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ATG": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "LUX": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "SUR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BFA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MDG": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ROU": {
+        "coveredBy": {
+          "USA": 0.016806722689075626,
+          "DEU": 0.6050420168067226,
+          "GBR": 0.050420168067226885,
+          "IND": 0.025210084033613443,
+          "ESP": 0.050420168067226885,
+          "ZAF": 0.050420168067226885,
+          "FRA": 0.050420168067226885,
+          "BRA": 0.10084033613445377,
+          "PAK": 0.050420168067226885
+        },
+        "totalCoverage": 0.020443222813949495
+      },
+      "MAR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MUS": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "CPV": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ITA": {
+        "coveredBy": {
+          "USA": 0.017241379310344824,
+          "DEU": 0.6206896551724137,
+          "GBR": 0.10344827586206895,
+          "ESP": 0.051724137931034475,
+          "ZAF": 0.051724137931034475,
+          "BRA": 0.10344827586206895,
+          "PAK": 0.051724137931034475
+        },
+        "totalCoverage": 0.019927847448891943
+      },
+      "KEN": {
+        "coveredBy": {
+          "DEU": 0.5,
+          "TWN": 0.5
+        },
+        "totalCoverage": 0.002061501460230201
+      },
+      "COG": {
+        "coveredBy": {
+          "USA": 0.25,
+          "BRA": 0.75
+        },
+        "totalCoverage": 0.0013743343068201338
+      },
+      "CYP": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "SJM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "SSD": {
+        "coveredBy": {
+          "ZAF": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "MAF": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "DJI": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MSR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ISL": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "BMU": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PLW": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "IRL": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "PAK": {
+        "coveredBy": {
+          "GBR": 0.1111111111111111,
+          "DEU": 0.2222222222222222,
+          "MYS": 0.4444444444444444,
+          "TWN": 0.2222222222222222
+        },
+        "totalCoverage": 0.004638378285517952
+      },
+      "NAM": {
+        "coveredBy": {
+          "PAK": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "OMN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PYF": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "YEM": {
+        "coveredBy": {
+          "USA": 0.1,
+          "ISR": 0.30000000000000004,
+          "FIN": 0.30000000000000004,
+          "SAU": 0.30000000000000004
+        },
+        "totalCoverage": 0.003435835767050334
+      },
+      "SEN": {
+        "coveredBy": {
+          "FRA": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "SYR": {
+        "coveredBy": {
+          "USA": 0.09999999999999999,
+          "DEU": 0.6,
+          "FRA": 0.3
+        },
+        "totalCoverage": 0.003435835767050335
+      },
+      "DOM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "LBN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "SWE": {
+        "coveredBy": {
+          "USA": 0.01923076923076923,
+          "DEU": 0.6923076923076922,
+          "GBR": 0.05769230769230768,
+          "ESP": 0.05769230769230768,
+          "ZAF": 0.05769230769230768,
+          "BRA": 0.05769230769230768,
+          "PAK": 0.05769230769230768
+        },
+        "totalCoverage": 0.01786634598866174
+      },
+      "TUN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "TCD": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "NLD": {
+        "coveredBy": {
+          "USA": 0.020408163265306117,
+          "DEU": 0.6734693877551019,
+          "GBR": 0.06122448979591836,
+          "ESP": 0.06122448979591836,
+          "ZAF": 0.06122448979591836,
+          "BRA": 0.06122448979591836,
+          "PAK": 0.06122448979591836
+        },
+        "totalCoverage": 0.016835595258546644
+      },
+      "MKD": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "COD": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "COM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MRT": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GRC": {
+        "coveredBy": {
+          "USA": 0.020408163265306117,
+          "DEU": 0.7346938775510203,
+          "GBR": 0.06122448979591836,
+          "ESP": 0.06122448979591836,
+          "ZAF": 0.06122448979591836,
+          "PAK": 0.06122448979591836
+        },
+        "totalCoverage": 0.016835595258546644
+      },
+      "GIB": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GAB": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GLP": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "TWN": {
+        "coveredBy": {
+          "BRA": 0.5,
+          "COL": 0.5
+        },
+        "totalCoverage": 0.002061501460230201
+      },
+      "BLM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ETH": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "CRI": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "UZB": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "COK": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "WLF": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PER": {
+        "coveredBy": {
+          "USA": 0.25,
+          "BRA": 0.75
+        },
+        "totalCoverage": 0.0013743343068201338
+      },
+      "UKR": {
+        "coveredBy": {
+          "USA": 0.02666666666666667,
+          "DEU": 0.5066666666666667,
+          "GBR": 0.04,
+          "IND": 0.02666666666666667,
+          "ESP": 0.02666666666666667,
+          "ZAF": 0.13333333333333333,
+          "FRA": 0.02666666666666667,
+          "BRA": 0.05333333333333334,
+          "PAK": 0.02666666666666667,
+          "CHE": 0.02666666666666667,
+          "MYS": 0.02666666666666667,
+          "TWN": 0.05333333333333334,
+          "SAU": 0.02666666666666667
+        },
+        "totalCoverage": 0.03865315237931627
+      },
+      "HMD": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "DNK": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "VGB": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BRN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "IDN": {
+        "coveredBy": {
+          "AUS": 1.0
+        },
+        "totalCoverage": 0.0005153753650575503
+      },
+      "AND": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "CHL": {
+        "coveredBy": {
+          "DEU": 0.5,
+          "BRA": 0.5
+        },
+        "totalCoverage": 0.002061501460230201
+      },
+      "TKM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "VEN": {
+        "coveredBy": {
+          "ZAF": 0.25,
+          "BRA": 0.25,
+          "COL": 0.5
+        },
+        "totalCoverage": 0.004123002920460402
+      },
+      "BTN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "COL": {
+        "coveredBy": {
+          "DEU": 0.3333333333333333,
+          "ESP": 0.3333333333333333,
+          "BRA": 0.3333333333333333
+        },
+        "totalCoverage": 0.0030922521903453013
+      },
+      "ATA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "LCA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "THA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "VIR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BGR": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "JEY": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "NRU": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "LKA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MNP": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PRY": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ASM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ALA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "HTI": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "IRQ": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "NIC": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BOL": {
+        "coveredBy": {
+          "IND": 0.2,
+          "BRA": 0.8
+        },
+        "totalCoverage": 0.002576876825287751
+      },
+      "LTU": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "KNA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PHL": {
+        "coveredBy": {
+          "HKG": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "RUS": {
+        "coveredBy": {
+          "USA": 0.016194331983805665,
+          "DEU": 0.534412955465587,
+          "GBR": 0.0242914979757085,
+          "IND": 0.01214574898785425,
+          "ESP": 0.0242914979757085,
+          "ZAF": 0.12145748987854249,
+          "FRA": 0.048582995951417,
+          "BRA": 0.0728744939271255,
+          "PAK": 0.048582995951417,
+          "CHE": 0.0242914979757085,
+          "MYS": 0.0242914979757085,
+          "TWN": 0.0242914979757085,
+          "SAU": 0.0242914979757085
+        },
+        "totalCoverage": 0.04243257172307164
+      },
+      "GUF": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "SPM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "NER": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BHR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GUM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "KAZ": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PRK": {
+        "coveredBy": {
+          "DEU": 0.5,
+          "BRA": 0.5
+        },
+        "totalCoverage": 0.002061501460230201
+      },
+      "QAT": {
+        "coveredBy": {
+          "SAU": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "TON": {
+        "coveredBy": {
+          "BRA": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "SRB": {
+        "coveredBy": {
+          "USA": 0.015624999999999998,
+          "DEU": 0.6093749999999999,
+          "GBR": 0.04687499999999999,
+          "ESP": 0.04687499999999999,
+          "ZAF": 0.04687499999999999,
+          "BRA": 0.18749999999999997,
+          "PAK": 0.04687499999999999
+        },
+        "totalCoverage": 0.021989348909122144
+      },
+      "TUV": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ZAF": {
+        "coveredBy": {
+          "DEU": 0.2857142857142857,
+          "AUS": 0.07142857142857142,
+          "IND": 0.07142857142857142,
+          "BRA": 0.2857142857142857,
+          "PAK": 0.14285714285714285,
+          "HUN": 0.14285714285714285
+        },
+        "totalCoverage": 0.007215255110805703
+      },
+      "PAN": {
+        "coveredBy": {
+          "NGA": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "MEX": {
+        "coveredBy": {
+          "GBR": 0.043478260869565216,
+          "IND": 0.08695652173913043,
+          "HKG": 0.08695652173913043,
+          "ESP": 0.08695652173913043,
+          "AUS": 0.08695652173913043,
+          "ZAF": 0.08695652173913043,
+          "FRA": 0.08695652173913043,
+          "BRA": 0.08695652173913043,
+          "DNK": 0.08695652173913043,
+          "NLD": 0.08695652173913043,
+          "COL": 0.08695652173913043,
+          "GTM": 0.08695652173913043
+        },
+        "totalCoverage": 0.011853633396323655
+      },
+      "SVN": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "BLZ": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "EST": {
+        "coveredBy": {
+          "USA": 0.020408163265306117,
+          "DEU": 0.6734693877551019,
+          "GBR": 0.06122448979591836,
+          "ESP": 0.06122448979591836,
+          "ZAF": 0.06122448979591836,
+          "PAK": 0.06122448979591836,
+          "GTM": 0.06122448979591836
+        },
+        "totalCoverage": 0.016835595258546644
+      },
+      "SMR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "TTO": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "IRN": {
+        "coveredBy": {
+          "USA": 0.08695652173913043,
+          "DEU": 0.2608695652173913,
+          "IND": 0.13043478260869565,
+          "ZAF": 0.2608695652173913,
+          "PAK": 0.2608695652173913
+        },
+        "totalCoverage": 0.003951211132107885
+      },
+      "LVA": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "AGO": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BEL": {
+        "coveredBy": {
+          "USA": 0.016806722689075626,
+          "DEU": 0.7058823529411764,
+          "GBR": 0.050420168067226885,
+          "IND": 0.025210084033613443,
+          "ESP": 0.050420168067226885,
+          "ZAF": 0.050420168067226885,
+          "BRA": 0.050420168067226885,
+          "PAK": 0.050420168067226885
+        },
+        "totalCoverage": 0.020443222813949495
+      },
+      "FSM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PRT": {
+        "coveredBy": {
+          "USA": 0.018181818181818177,
+          "DEU": 0.6545454545454544,
+          "GBR": 0.054545454545454536,
+          "ESP": 0.054545454545454536,
+          "ZAF": 0.054545454545454536,
+          "BRA": 0.054545454545454536,
+          "PAK": 0.054545454545454536,
+          "TWN": 0.054545454545454536
+        },
+        "totalCoverage": 0.018897096718776842
+      },
+      "MHL": {
+        "coveredBy": {
+          "DEU": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "STP": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "TZA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GEO": {
+        "coveredBy": {
+          "IND": 1.0
+        },
+        "totalCoverage": 0.0005153753650575503
+      },
+      "SYC": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "CMR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BWA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "CCK": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "FLK": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "NGA": {
+        "coveredBy": {
+          "ZAF": 0.5,
+          "TWN": 0.5
+        },
+        "totalCoverage": 0.002061501460230201
+      },
+      "GNB": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "AFG": {
+        "coveredBy": {
+          "DEU": 0.6666666666666666,
+          "PAK": 0.3333333333333333
+        },
+        "totalCoverage": 0.0030922521903453013
+      },
+      "CZE": {
+        "coveredBy": {
+          "USA": 0.020408163265306117,
+          "DEU": 0.7346938775510203,
+          "GBR": 0.06122448979591836,
+          "ESP": 0.06122448979591836,
+          "ZAF": 0.06122448979591836,
+          "PAK": 0.06122448979591836
+        },
+        "totalCoverage": 0.016835595258546644
+      },
+      "CIV": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "AZE": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BRB": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GRD": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MTQ": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BVT": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "BLR": {
+        "coveredBy": {
+          "USA": 0.020408163265306117,
+          "DEU": 0.6734693877551019,
+          "GBR": 0.06122448979591836,
+          "ESP": 0.06122448979591836,
+          "ZAF": 0.06122448979591836,
+          "PAK": 0.06122448979591836,
+          "CHE": 0.06122448979591836
+        },
+        "totalCoverage": 0.016835595258546644
+      },
+      "DMA": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ISR": {
+        "coveredBy": {
+          "DEU": 0.3333333333333333,
+          "ZAF": 0.3333333333333333,
+          "SAU": 0.3333333333333333
+        },
+        "totalCoverage": 0.0030922521903453013
+      },
+      "GGY": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "KWT": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "IOT": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PRI": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "AIA": {
+        "coveredBy": {
+          "AUS": 1.0
+        },
+        "totalCoverage": 0.0005153753650575503
+      },
+      "VCT": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "NCL": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GNQ": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PNG": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "WSM": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PCN": {
+        "coveredBy": {
+          "DOM": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "SOM": {
+        "coveredBy": {
+          "BRA": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "ECU": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MAC": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "TUR": {
+        "coveredBy": {
+          "DEU": 0.75,
+          "ZAF": 0.125,
+          "SAU": 0.125
+        },
+        "totalCoverage": 0.008246005840920804
+      },
+      "ZMB": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "GRL": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "CAF": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "JOR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "NFK": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "REU": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "PSE": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "NPL": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "ARG": {
+        "coveredBy": {
+          "DEU": 0.4,
+          "BRA": 0.4,
+          "SAU": 0.2
+        },
+        "totalCoverage": 0.005153753650575502
+      },
+      "IND": {
+        "coveredBy": {
+          "GBR": 0.12,
+          "DEU": 0.32,
+          "BRA": 0.16,
+          "PAK": 0.16,
+          "CHE": 0.08,
+          "MYS": 0.16
+        },
+        "totalCoverage": 0.012884384126438756
+      },
+      "MYT": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "IMN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MNG": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "SLE": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "SDN": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "SGS": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MWI": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "LIE": {
+        "coveredBy": {
+          "USA": 0.020408163265306117,
+          "DEU": 0.6734693877551019,
+          "GBR": 0.06122448979591836,
+          "ESP": 0.06122448979591836,
+          "ZAF": 0.06122448979591836,
+          "BRA": 0.06122448979591836,
+          "PAK": 0.06122448979591836
+        },
+        "totalCoverage": 0.016835595258546644
+      },
+      "SGP": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "MNE": {
+        "coveredBy": {
+          "USA": 0.01923076923076923,
+          "DEU": 0.6346153846153846,
+          "GBR": 0.05769230769230768,
+          "ESP": 0.05769230769230768,
+          "ZAF": 0.05769230769230768,
+          "BRA": 0.11538461538461536,
+          "PAK": 0.05769230769230768
+        },
+        "totalCoverage": 0.01786634598866174
+      },
+      "SAU": {
+        "coveredBy": {
+          "DEU": 0.6666666666666666,
+          "AUS": 0.3333333333333333
+        },
+        "totalCoverage": 0.0015461260951726507
+      },
+      "KOR": {
+        "coveredBy": {
+          "DEU": 0.3333333333333333,
+          "HKG": 0.3333333333333333,
+          "MYS": 0.3333333333333333
+        },
+        "totalCoverage": 0.0030922521903453013
+      },
+      "RWA": {
+        "coveredBy": {
+          "DEU": 0.75,
+          "USA": 0.25
+        },
+        "totalCoverage": 0.0013743343068201338
+      },
+      "SLV": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "TJK": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "VAT": {
+        "coveredBy": {
+          "DEU": 0.6666666666666666,
+          "GBR": 0.1111111111111111,
+          "BRA": 0.2222222222222222
+        },
+        "totalCoverage": 0.004638378285517952
+      },
+      "GTM": {
+        "coveredBy": {
+          "COL": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "LBR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "CUW": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "SVK": {
+        "coveredBy": {
+          "USA": 0.021739130434782608,
+          "DEU": 0.717391304347826,
+          "GBR": 0.06521739130434782,
+          "ESP": 0.06521739130434782,
+          "ZAF": 0.06521739130434782,
+          "PAK": 0.06521739130434782
+        },
+        "totalCoverage": 0.01580484452843154
+      },
+      "TGO": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "KIR": {
+        "coveredBy": {},
+        "totalCoverage": 0.0
+      },
+      "CUB": {
+        "coveredBy": {
+          "ESP": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      },
+      "GHA": {
+        "coveredBy": {
+          "PAK": 1.0
+        },
+        "totalCoverage": 0.0010307507301151005
+      }
+    },
+    "countryCovering": {
+      "KHM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MLT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SHN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BHS": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ATF": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "VNM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NOR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NZL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TLS": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "KGZ": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "USA": {
+        "covering": {
+          "IRN": 0.01886792452830188,
+          "SYR": 0.01886792452830188,
+          "YEM": 0.01886792452830188,
+          "LUX": 0.01886792452830188,
+          "MLT": 0.01886792452830188,
+          "ROU": 0.01886792452830188,
+          "ITA": 0.01886792452830188,
+          "NOR": 0.01886792452830188,
+          "CYP": 0.01886792452830188,
+          "BGR": 0.01886792452830188,
+          "UGA": 0.01886792452830188,
+          "HUN": 0.01886792452830188,
+          "GBR": 0.03773584905660376,
+          "ISL": 0.01886792452830188,
+          "MDA": 0.01886792452830188,
+          "FIN": 0.01886792452830188,
+          "IRL": 0.01886792452830188,
+          "CHE": 0.01886792452830188,
+          "LTU": 0.01886792452830188,
+          "AUT": 0.01886792452830188,
+          "RUS": 0.03773584905660376,
+          "BIH": 0.01886792452830188,
+          "SWE": 0.01886792452830188,
+          "SRB": 0.01886792452830188,
+          "NLD": 0.01886792452830188,
+          "DEU": 0.01886792452830188,
+          "MKD": 0.01886792452830188,
+          "GRC": 0.01886792452830188,
+          "LIE": 0.01886792452830188,
+          "SVN": 0.01886792452830188,
+          "EST": 0.01886792452830188,
+          "MNE": 0.01886792452830188,
+          "LVA": 0.01886792452830188,
+          "BEL": 0.01886792452830188,
+          "PRT": 0.01886792452830188,
+          "ESP": 0.01886792452830188,
+          "POL": 0.01886792452830188,
+          "UKR": 0.05660377358490565,
+          "CZE": 0.01886792452830188,
+          "SVK": 0.01886792452830188,
+          "ALB": 0.01886792452830188,
+          "DNK": 0.01886792452830188,
+          "AND": 0.01886792452830188,
+          "BLR": 0.01886792452830188,
+          "HRV": 0.01886792452830188,
+          "FRA": 0.01886792452830188,
+          "PER": 0.01886792452830188,
+          "COG": 0.01886792452830188,
+          "RWA": 0.01886792452830188
+        },
+        "totalCovering": 0.01820992956536678
+      },
+      "GIN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CYM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "FRO": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MDV": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NIU": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "UGA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ESH": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GBR": {
+        "covering": {
+          "USA": 0.03,
+          "AUT": 0.03,
+          "UGA": 0.02,
+          "IND": 0.03,
+          "PAK": 0.01,
+          "MEX": 0.01,
+          "FRA": 0.03,
+          "AUS": 0.01,
+          "ITA": 0.04,
+          "HKG": 0.01,
+          "LUX": 0.02,
+          "MLT": 0.02,
+          "ROU": 0.02,
+          "NOR": 0.02,
+          "CYP": 0.02,
+          "BGR": 0.02,
+          "HUN": 0.02,
+          "ISL": 0.02,
+          "MDA": 0.02,
+          "FIN": 0.02,
+          "IRL": 0.02,
+          "CHE": 0.02,
+          "LTU": 0.02,
+          "RUS": 0.02,
+          "BIH": 0.02,
+          "SWE": 0.02,
+          "SRB": 0.02,
+          "NLD": 0.02,
+          "DEU": 0.02,
+          "MKD": 0.02,
+          "GRC": 0.02,
+          "LIE": 0.02,
+          "SVN": 0.02,
+          "EST": 0.02,
+          "MNE": 0.02,
+          "LVA": 0.02,
+          "BEL": 0.02,
+          "PRT": 0.02,
+          "ESP": 0.02,
+          "POL": 0.02,
+          "UKR": 0.03,
+          "CZE": 0.02,
+          "SVK": 0.02,
+          "ALB": 0.02,
+          "DNK": 0.02,
+          "AND": 0.02,
+          "BLR": 0.02,
+          "HRV": 0.02,
+          "VAT": 0.01
+        },
+        "totalCovering": 0.05153753650575503
+      },
+      "HUN": {
+        "covering": {
+          "DEU": 0.5,
+          "ZAF": 0.5
+        },
+        "totalCovering": 0.002061501460230201
+      },
+      "LBY": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SXM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ARM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MDA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "FIN": {
+        "covering": {
+          "USA": 0.3333333333333333,
+          "GBR": 0.3333333333333333,
+          "YEM": 0.3333333333333333
+        },
+        "totalCovering": 0.0030922521903453018
+      },
+      "CHE": {
+        "covering": {
+          "BLR": 0.09090909090909091,
+          "IND": 0.09090909090909091,
+          "USA": 0.18181818181818182,
+          "CHN": 0.09090909090909091,
+          "AUT": 0.18181818181818182,
+          "UKR": 0.09090909090909091,
+          "RUS": 0.09090909090909091,
+          "JPN": 0.09090909090909091,
+          "ARE": 0.09090909090909091
+        },
+        "totalCovering": 0.011338258031266106
+      },
+      "JAM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SWZ": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MOZ": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ZWE": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "AUT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BES": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MLI": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "URY": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BIH": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MYS": {
+        "covering": {
+          "KOR": 0.1,
+          "POL": 0.1,
+          "UKR": 0.1,
+          "RUS": 0.1,
+          "IND": 0.2,
+          "USA": 0.1,
+          "PAK": 0.2,
+          "CHN": 0.1
+        },
+        "totalCovering": 0.010307507301151006
+      },
+      "ABW": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "DEU": {
+        "covering": {
+          "USA": 0.01090909090909091,
+          "LUX": 0.02,
+          "MLT": 0.02,
+          "ROU": 0.02181818181818182,
+          "ITA": 0.02181818181818182,
+          "NOR": 0.02,
+          "CYP": 0.02,
+          "BGR": 0.02,
+          "HUN": 0.02181818181818182,
+          "GBR": 0.02727272727272727,
+          "ISL": 0.02,
+          "MDA": 0.02,
+          "FIN": 0.02181818181818182,
+          "IRL": 0.02,
+          "CHE": 0.023636363636363636,
+          "LTU": 0.02,
+          "AUT": 0.02,
+          "RUS": 0.04,
+          "BIH": 0.02,
+          "SWE": 0.02181818181818182,
+          "SRB": 0.023636363636363636,
+          "NLD": 0.02,
+          "MKD": 0.02,
+          "GRC": 0.02181818181818182,
+          "LIE": 0.02,
+          "SVN": 0.02,
+          "EST": 0.02,
+          "MNE": 0.02,
+          "LVA": 0.02,
+          "BEL": 0.025454545454545455,
+          "PRT": 0.02181818181818182,
+          "ESP": 0.023636363636363636,
+          "POL": 0.02181818181818182,
+          "UKR": 0.034545454545454546,
+          "CZE": 0.02181818181818182,
+          "SVK": 0.02,
+          "ALB": 0.02,
+          "DNK": 0.02,
+          "AND": 0.02,
+          "BLR": 0.02,
+          "HRV": 0.02,
+          "FRA": 0.025454545454545455,
+          "TUR": 0.01090909090909091,
+          "IRN": 0.0018181818181818182,
+          "UGA": 0.00909090909090909,
+          "PRK": 0.0018181818181818182,
+          "SYR": 0.0036363636363636364,
+          "CHN": 0.01090909090909091,
+          "MOZ": 0.0018181818181818182,
+          "IND": 0.007272727272727273,
+          "JPN": 0.0018181818181818182,
+          "ISR": 0.0018181818181818182,
+          "KEN": 0.0018181818181818182,
+          "VAT": 0.005454545454545455,
+          "SAU": 0.0018181818181818182,
+          "ARG": 0.0036363636363636364,
+          "PAK": 0.0018181818181818182,
+          "COL": 0.0018181818181818182,
+          "MHL": 0.0018181818181818182,
+          "KOR": 0.0018181818181818182,
+          "ZAF": 0.0036363636363636364,
+          "VNM": 0.0018181818181818182,
+          "BRA": 0.0018181818181818182,
+          "CHL": 0.0018181818181818182,
+          "AUS": 0.0018181818181818182,
+          "AFG": 0.0036363636363636364,
+          "RWA": 0.0018181818181818182,
+          "MMR": 0.0018181818181818182
+        },
+        "totalCovering": 0.5669129015633053
+      },
+      "TKL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GUY": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "VUT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "EGY": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MCO": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BDI": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ESP": {
+        "covering": {
+          "LUX": 0.021739130434782608,
+          "MLT": 0.021739130434782608,
+          "ROU": 0.021739130434782608,
+          "ITA": 0.021739130434782608,
+          "NOR": 0.021739130434782608,
+          "CYP": 0.021739130434782608,
+          "BGR": 0.021739130434782608,
+          "HUN": 0.021739130434782608,
+          "GBR": 0.043478260869565216,
+          "ISL": 0.021739130434782608,
+          "MDA": 0.021739130434782608,
+          "FIN": 0.021739130434782608,
+          "IRL": 0.021739130434782608,
+          "CHE": 0.021739130434782608,
+          "LTU": 0.021739130434782608,
+          "AUT": 0.021739130434782608,
+          "RUS": 0.021739130434782608,
+          "BIH": 0.021739130434782608,
+          "SWE": 0.021739130434782608,
+          "SRB": 0.021739130434782608,
+          "NLD": 0.021739130434782608,
+          "DEU": 0.021739130434782608,
+          "MKD": 0.021739130434782608,
+          "GRC": 0.021739130434782608,
+          "LIE": 0.021739130434782608,
+          "SVN": 0.021739130434782608,
+          "EST": 0.021739130434782608,
+          "MNE": 0.021739130434782608,
+          "LVA": 0.021739130434782608,
+          "BEL": 0.021739130434782608,
+          "PRT": 0.021739130434782608,
+          "POL": 0.021739130434782608,
+          "UKR": 0.021739130434782608,
+          "CZE": 0.021739130434782608,
+          "SVK": 0.021739130434782608,
+          "ALB": 0.021739130434782608,
+          "DNK": 0.021739130434782608,
+          "AND": 0.021739130434782608,
+          "BLR": 0.021739130434782608,
+          "HRV": 0.021739130434782608,
+          "FRA": 0.021739130434782608,
+          "USA": 0.021739130434782608,
+          "CUB": 0.021739130434782608,
+          "MEX": 0.021739130434782608,
+          "COL": 0.021739130434782608
+        },
+        "totalCovering": 0.04741453358529463
+      },
+      "HKG": {
+        "covering": {
+          "USA": 0.10526315789473684,
+          "PHL": 0.05263157894736842,
+          "CHN": 0.3684210526315789,
+          "MYS": 0.05263157894736842,
+          "ARE": 0.05263157894736842,
+          "JPN": 0.15789473684210525,
+          "MEX": 0.05263157894736842,
+          "UGA": 0.05263157894736842,
+          "GBR": 0.05263157894736842,
+          "KOR": 0.05263157894736842
+        },
+        "totalCovering": 0.01958426387218691
+      },
+      "HND": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BGD": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "POL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "LSO": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "AUS": {
+        "covering": {
+          "IDN": 0.07692307692307693,
+          "USA": 0.3076923076923077,
+          "SAU": 0.07692307692307693,
+          "NZL": 0.07692307692307693,
+          "ZAF": 0.07692307692307693,
+          "GBR": 0.07692307692307693,
+          "AIA": 0.07692307692307693,
+          "POL": 0.07692307692307693,
+          "MEX": 0.15384615384615385
+        },
+        "totalCovering": 0.006699879745748154
+      },
+      "ARE": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "JPN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "DZA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BRA": {
+        "covering": {
+          "VEN": 0.015625,
+          "UKR": 0.03125,
+          "RUS": 0.046875,
+          "MDA": 0.015625,
+          "SOM": 0.015625,
+          "ROU": 0.03125,
+          "VAT": 0.015625,
+          "LIE": 0.015625,
+          "USA": 0.125,
+          "CHN": 0.0625,
+          "PRK": 0.015625,
+          "PER": 0.015625,
+          "NLD": 0.015625,
+          "ESP": 0.078125,
+          "ARG": 0.03125,
+          "ITA": 0.03125,
+          "SRB": 0.0625,
+          "TWN": 0.015625,
+          "COG": 0.015625,
+          "ZAF": 0.03125,
+          "BEL": 0.015625,
+          "PRT": 0.015625,
+          "BOL": 0.03125,
+          "MNE": 0.03125,
+          "GBR": 0.015625,
+          "ARE": 0.03125,
+          "IND": 0.03125,
+          "JPN": 0.015625,
+          "MEX": 0.015625,
+          "URY": 0.015625,
+          "CHL": 0.015625,
+          "HND": 0.015625,
+          "COL": 0.015625,
+          "TON": 0.015625,
+          "FRA": 0.015625,
+          "SWE": 0.015625
+        },
+        "totalCovering": 0.06596804672736643
+      },
+      "ERI": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ALB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "UMI": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MMR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CAN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BEN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "LAO": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TCA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "FJI": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GMB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "HRV": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CHN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "FRA": {
+        "covering": {
+          "ROU": 0.1,
+          "AUT": 0.1,
+          "UKR": 0.1,
+          "RUS": 0.2,
+          "MEX": 0.1,
+          "USA": 0.1,
+          "SEN": 0.1,
+          "GBR": 0.1,
+          "SYR": 0.1
+        },
+        "totalCovering": 0.010307507301151006
+      },
+      "SLB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CXR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ATG": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "LUX": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SUR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BFA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MDG": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ROU": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MAR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MUS": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CPV": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ITA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "KEN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "COG": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CYP": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SJM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SSD": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MAF": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "DJI": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MSR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ISL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BMU": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PLW": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "IRL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PAK": {
+        "covering": {
+          "IND": 0.03636363636363636,
+          "IRN": 0.01818181818181818,
+          "USA": 0.05454545454545454,
+          "NAM": 0.01818181818181818,
+          "RUS": 0.03636363636363636,
+          "ZAF": 0.01818181818181818,
+          "GBR": 0.03636363636363636,
+          "GHA": 0.01818181818181818,
+          "UGA": 0.01818181818181818,
+          "AFG": 0.01818181818181818,
+          "LUX": 0.01818181818181818,
+          "MLT": 0.01818181818181818,
+          "ROU": 0.01818181818181818,
+          "ITA": 0.01818181818181818,
+          "NOR": 0.01818181818181818,
+          "CYP": 0.01818181818181818,
+          "BGR": 0.01818181818181818,
+          "HUN": 0.01818181818181818,
+          "ISL": 0.01818181818181818,
+          "MDA": 0.01818181818181818,
+          "FIN": 0.01818181818181818,
+          "IRL": 0.01818181818181818,
+          "CHE": 0.01818181818181818,
+          "LTU": 0.01818181818181818,
+          "AUT": 0.01818181818181818,
+          "BIH": 0.01818181818181818,
+          "SWE": 0.01818181818181818,
+          "SRB": 0.01818181818181818,
+          "NLD": 0.01818181818181818,
+          "DEU": 0.01818181818181818,
+          "MKD": 0.01818181818181818,
+          "GRC": 0.01818181818181818,
+          "LIE": 0.01818181818181818,
+          "SVN": 0.01818181818181818,
+          "EST": 0.01818181818181818,
+          "MNE": 0.01818181818181818,
+          "LVA": 0.01818181818181818,
+          "BEL": 0.01818181818181818,
+          "PRT": 0.01818181818181818,
+          "ESP": 0.01818181818181818,
+          "POL": 0.01818181818181818,
+          "UKR": 0.01818181818181818,
+          "CZE": 0.01818181818181818,
+          "SVK": 0.01818181818181818,
+          "ALB": 0.01818181818181818,
+          "DNK": 0.01818181818181818,
+          "AND": 0.01818181818181818,
+          "BLR": 0.01818181818181818,
+          "HRV": 0.01818181818181818,
+          "FRA": 0.01818181818181818
+        },
+        "totalCovering": 0.05669129015633053
+      },
+      "NAM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "OMN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PYF": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "YEM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SEN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SYR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "DOM": {
+        "covering": {
+          "PCN": 1.0
+        },
+        "totalCovering": 0.0010307507301151005
+      },
+      "LBN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SWE": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TUN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TCD": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NLD": {
+        "covering": {
+          "MEX": 0.25,
+          "USA": 0.25,
+          "CHE": 0.25,
+          "AUT": 0.25
+        },
+        "totalCovering": 0.004123002920460402
+      },
+      "MKD": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "COD": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "COM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MRT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GRC": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GIB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GAB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GLP": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TWN": {
+        "covering": {
+          "UKR": 0.15384615384615385,
+          "RUS": 0.07692307692307693,
+          "FRA": 0.23076923076923078,
+          "CHN": 0.15384615384615385,
+          "FIN": 0.07692307692307693,
+          "KEN": 0.07692307692307693,
+          "PAK": 0.07692307692307693,
+          "PRT": 0.07692307692307693,
+          "NGA": 0.07692307692307693
+        },
+        "totalCovering": 0.013399759491496308
+      },
+      "BLM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ETH": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CRI": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "UZB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "COK": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "WLF": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PER": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "UKR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "HMD": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "DNK": {
+        "covering": {
+          "USA": 0.8,
+          "MEX": 0.2
+        },
+        "totalCovering": 0.005153753650575503
+      },
+      "VGB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BRN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "IDN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "AND": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CHL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TKM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "VEN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BTN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "COL": {
+        "covering": {
+          "VEN": 0.2222222222222222,
+          "MEX": 0.1111111111111111,
+          "USA": 0.3333333333333333,
+          "TWN": 0.1111111111111111,
+          "ARE": 0.1111111111111111,
+          "GTM": 0.1111111111111111
+        },
+        "totalCovering": 0.009276756571035905
+      },
+      "ATA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "LCA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "THA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "VIR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BGR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "JEY": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NRU": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "LKA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MNP": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PRY": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ASM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ALA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "HTI": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "IRQ": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NIC": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BOL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "LTU": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "KNA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PHL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "RUS": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GUF": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SPM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NER": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BHR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GUM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "KAZ": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PRK": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "QAT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TON": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SRB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TUV": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ZAF": {
+        "covering": {
+          "USA": 0.07692307692307693,
+          "IRN": 0.015384615384615385,
+          "FRA": 0.046153846153846156,
+          "UKR": 0.07692307692307693,
+          "RUS": 0.07692307692307693,
+          "SSD": 0.015384615384615385,
+          "LUX": 0.015384615384615385,
+          "MLT": 0.015384615384615385,
+          "ROU": 0.015384615384615385,
+          "ITA": 0.015384615384615385,
+          "NOR": 0.015384615384615385,
+          "CYP": 0.015384615384615385,
+          "BGR": 0.015384615384615385,
+          "HUN": 0.015384615384615385,
+          "GBR": 0.015384615384615385,
+          "ISL": 0.015384615384615385,
+          "MDA": 0.015384615384615385,
+          "FIN": 0.015384615384615385,
+          "IRL": 0.015384615384615385,
+          "CHE": 0.015384615384615385,
+          "LTU": 0.015384615384615385,
+          "AUT": 0.015384615384615385,
+          "BIH": 0.015384615384615385,
+          "SWE": 0.015384615384615385,
+          "SRB": 0.015384615384615385,
+          "NLD": 0.015384615384615385,
+          "DEU": 0.015384615384615385,
+          "MKD": 0.015384615384615385,
+          "GRC": 0.015384615384615385,
+          "LIE": 0.015384615384615385,
+          "SVN": 0.015384615384615385,
+          "EST": 0.015384615384615385,
+          "MNE": 0.015384615384615385,
+          "LVA": 0.015384615384615385,
+          "BEL": 0.015384615384615385,
+          "PRT": 0.015384615384615385,
+          "ESP": 0.015384615384615385,
+          "POL": 0.015384615384615385,
+          "CZE": 0.015384615384615385,
+          "SVK": 0.015384615384615385,
+          "ALB": 0.015384615384615385,
+          "DNK": 0.015384615384615385,
+          "AND": 0.015384615384615385,
+          "BLR": 0.015384615384615385,
+          "HRV": 0.015384615384615385,
+          "VEN": 0.015384615384615385,
+          "MEX": 0.015384615384615385,
+          "MLI": 0.015384615384615385,
+          "TUR": 0.015384615384615385,
+          "ISR": 0.015384615384615385,
+          "NGA": 0.015384615384615385
+        },
+        "totalCovering": 0.06699879745748154
+      },
+      "PAN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MEX": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SVN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BLZ": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "EST": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SMR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TTO": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "IRN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "LVA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "AGO": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BEL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "FSM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PRT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MHL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "STP": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TZA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GEO": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SYC": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CMR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BWA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CCK": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "FLK": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NGA": {
+        "covering": {
+          "PAN": 1.0
+        },
+        "totalCovering": 0.0010307507301151005
+      },
+      "GNB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "AFG": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CZE": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CIV": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "AZE": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BRB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GRD": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MTQ": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BVT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "BLR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "DMA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ISR": {
+        "covering": {
+          "YEM": 1.0
+        },
+        "totalCovering": 0.0010307507301151005
+      },
+      "GGY": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "KWT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "IOT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PRI": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "AIA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "VCT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NCL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GNQ": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PNG": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "WSM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PCN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SOM": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ECU": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MAC": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TUR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ZMB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GRL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CAF": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "JOR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NFK": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "REU": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "PSE": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "NPL": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "ARG": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "IND": {
+        "covering": {
+          "UKR": 0.09090909090909091,
+          "BEL": 0.045454545454545456,
+          "ROU": 0.045454545454545456,
+          "USA": 0.45454545454545453,
+          "MEX": 0.09090909090909091,
+          "ZAF": 0.045454545454545456,
+          "RUS": 0.045454545454545456,
+          "GEO": 0.045454545454545456,
+          "FRA": 0.045454545454545456,
+          "IRN": 0.045454545454545456,
+          "BOL": 0.045454545454545456
+        },
+        "totalCovering": 0.011338258031266106
+      },
+      "MYT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "IMN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MNG": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SLE": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SDN": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SGS": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MWI": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "LIE": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SGP": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "MNE": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SAU": {
+        "covering": {
+          "ARG": 0.08333333333333333,
+          "USA": 0.08333333333333333,
+          "QAT": 0.08333333333333333,
+          "EGY": 0.08333333333333333,
+          "GBR": 0.16666666666666666,
+          "ARE": 0.08333333333333333,
+          "UKR": 0.08333333333333333,
+          "RUS": 0.08333333333333333,
+          "TUR": 0.08333333333333333,
+          "ISR": 0.08333333333333333,
+          "YEM": 0.08333333333333333
+        },
+        "totalCovering": 0.012369008761381207
+      },
+      "KOR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "RWA": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SLV": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TJK": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "VAT": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GTM": {
+        "covering": {
+          "MEX": 0.25,
+          "USA": 0.25,
+          "EST": 0.25,
+          "AUT": 0.25
+        },
+        "totalCovering": 0.004123002920460402
+      },
+      "LBR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CUW": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "SVK": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "TGO": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "KIR": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "CUB": {
+        "covering": {},
+        "totalCovering": 0.0
+      },
+      "GHA": {
+        "covering": {},
+        "totalCovering": 0.0
+      }
+    },
+    "featuredRankings": [
+      {
+        "countryCode": "USA",
+        "totalCoverage": 0.049991410410582374
+      },
+      {
+        "countryCode": "RUS",
+        "totalCoverage": 0.04243257172307164
+      },
+      {
+        "countryCode": "UKR",
+        "totalCoverage": 0.03865315237931627
+      },
+      {
+        "countryCode": "GBR",
+        "totalCoverage": 0.028002061501460226
+      },
+      {
+        "countryCode": "FRA",
+        "totalCoverage": 0.026112351829582547
+      },
+      {
+        "countryCode": "ESP",
+        "totalCoverage": 0.021989348909122144
+      },
+      {
+        "countryCode": "SRB",
+        "totalCoverage": 0.021989348909122144
+      },
+      {
+        "countryCode": "CHN",
+        "totalCoverage": 0.02164576533241711
+      },
+      {
+        "countryCode": "AUT",
+        "totalCoverage": 0.021473973544064596
+      },
+      {
+        "countryCode": "ROU",
+        "totalCoverage": 0.020443222813949495
+      },
+      {
+        "countryCode": "BEL",
+        "totalCoverage": 0.020443222813949495
+      },
+      {
+        "countryCode": "ITA",
+        "totalCoverage": 0.019927847448891943
+      },
+      {
+        "countryCode": "CHE",
+        "totalCoverage": 0.018897096718776842
+      },
+      {
+        "countryCode": "PRT",
+        "totalCoverage": 0.018897096718776842
+      },
+      {
+        "countryCode": "POL",
+        "totalCoverage": 0.018381721353719294
+      },
+      {
+        "countryCode": "FIN",
+        "totalCoverage": 0.01786634598866174
+      },
+      {
+        "countryCode": "SWE",
+        "totalCoverage": 0.01786634598866174
+      },
+      {
+        "countryCode": "MNE",
+        "totalCoverage": 0.01786634598866174
+      },
+      {
+        "countryCode": "HUN",
+        "totalCoverage": 0.016835595258546644
+      },
+      {
+        "countryCode": "MDA",
+        "totalCoverage": 0.016835595258546644
+      },
+      {
+        "countryCode": "NLD",
+        "totalCoverage": 0.016835595258546644
+      },
+      {
+        "countryCode": "GRC",
+        "totalCoverage": 0.016835595258546644
+      },
+      {
+        "countryCode": "EST",
+        "totalCoverage": 0.016835595258546644
+      },
+      {
+        "countryCode": "CZE",
+        "totalCoverage": 0.016835595258546644
+      },
+      {
+        "countryCode": "BLR",
+        "totalCoverage": 0.016835595258546644
+      },
+      {
+        "countryCode": "LIE",
+        "totalCoverage": 0.016835595258546644
+      },
+      {
+        "countryCode": "MLT",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "NOR",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "BIH",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "ALB",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "HRV",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "LUX",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "CYP",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "ISL",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "IRL",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "MKD",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "DNK",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "AND",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "BGR",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "LTU",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "SVN",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "LVA",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "SVK",
+        "totalCoverage": 0.01580484452843154
+      },
+      {
+        "countryCode": "IND",
+        "totalCoverage": 0.012884384126438756
+      },
+      {
+        "countryCode": "MEX",
+        "totalCoverage": 0.011853633396323655
+      },
+      {
+        "countryCode": "UGA",
+        "totalCoverage": 0.008589589417625835
+      },
+      {
+        "countryCode": "TUR",
+        "totalCoverage": 0.008246005840920804
+      },
+      {
+        "countryCode": "ZAF",
+        "totalCoverage": 0.007215255110805703
+      },
+      {
+        "countryCode": "ARE",
+        "totalCoverage": 0.006184504380690603
+      },
+      {
+        "countryCode": "JPN",
+        "totalCoverage": 0.006184504380690603
+      },
+      {
+        "countryCode": "DEU",
+        "totalCoverage": 0.005497337227280535
+      },
+      {
+        "countryCode": "ARG",
+        "totalCoverage": 0.005153753650575502
+      },
+      {
+        "countryCode": "PAK",
+        "totalCoverage": 0.004638378285517952
+      },
+      {
+        "countryCode": "VAT",
+        "totalCoverage": 0.004638378285517952
+      },
+      {
+        "countryCode": "VEN",
+        "totalCoverage": 0.004123002920460402
+      },
+      {
+        "countryCode": "IRN",
+        "totalCoverage": 0.003951211132107885
+      },
+      {
+        "countryCode": "SYR",
+        "totalCoverage": 0.003435835767050335
+      },
+      {
+        "countryCode": "YEM",
+        "totalCoverage": 0.003435835767050334
+      },
+      {
+        "countryCode": "COL",
+        "totalCoverage": 0.0030922521903453013
+      },
+      {
+        "countryCode": "AFG",
+        "totalCoverage": 0.0030922521903453013
+      },
+      {
+        "countryCode": "ISR",
+        "totalCoverage": 0.0030922521903453013
+      },
+      {
+        "countryCode": "KOR",
+        "totalCoverage": 0.0030922521903453013
+      },
+      {
+        "countryCode": "BOL",
+        "totalCoverage": 0.002576876825287751
+      },
+      {
+        "countryCode": "KEN",
+        "totalCoverage": 0.002061501460230201
+      },
+      {
+        "countryCode": "TWN",
+        "totalCoverage": 0.002061501460230201
+      },
+      {
+        "countryCode": "CHL",
+        "totalCoverage": 0.002061501460230201
+      },
+      {
+        "countryCode": "PRK",
+        "totalCoverage": 0.002061501460230201
+      },
+      {
+        "countryCode": "NGA",
+        "totalCoverage": 0.002061501460230201
+      },
+      {
+        "countryCode": "AUS",
+        "totalCoverage": 0.0015461260951726507
+      },
+      {
+        "countryCode": "SAU",
+        "totalCoverage": 0.0015461260951726507
+      },
+      {
+        "countryCode": "COG",
+        "totalCoverage": 0.0013743343068201338
+      },
+      {
+        "countryCode": "PER",
+        "totalCoverage": 0.0013743343068201338
+      },
+      {
+        "countryCode": "RWA",
+        "totalCoverage": 0.0013743343068201338
+      },
+      {
+        "countryCode": "VNM",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "MOZ",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "MLI",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "URY",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "MYS",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "EGY",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "HND",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "BRA",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "MMR",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "SSD",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "NAM",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "SEN",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "PHL",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "QAT",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "TON",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "PAN",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "MHL",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "PCN",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "SOM",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "GTM",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "CUB",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "GHA",
+        "totalCoverage": 0.0010307507301151005
+      },
+      {
+        "countryCode": "NZL",
+        "totalCoverage": 0.0005153753650575503
+      },
+      {
+        "countryCode": "HKG",
+        "totalCoverage": 0.0005153753650575503
+      },
+      {
+        "countryCode": "IDN",
+        "totalCoverage": 0.0005153753650575503
+      },
+      {
+        "countryCode": "GEO",
+        "totalCoverage": 0.0005153753650575503
+      },
+      {
+        "countryCode": "AIA",
+        "totalCoverage": 0.0005153753650575503
+      }
+    ],
+    "coveringRankings": [
+      {
+        "countryCode": "DEU",
+        "totalCovering": 0.5669129015633053
+      },
+      {
+        "countryCode": "ZAF",
+        "totalCovering": 0.06699879745748154
+      },
+      {
+        "countryCode": "BRA",
+        "totalCovering": 0.06596804672736643
+      },
+      {
+        "countryCode": "PAK",
+        "totalCovering": 0.05669129015633053
+      },
+      {
+        "countryCode": "GBR",
+        "totalCovering": 0.05153753650575503
+      },
+      {
+        "countryCode": "ESP",
+        "totalCovering": 0.04741453358529463
+      },
+      {
+        "countryCode": "HKG",
+        "totalCovering": 0.01958426387218691
+      },
+      {
+        "countryCode": "USA",
+        "totalCovering": 0.01820992956536678
+      },
+      {
+        "countryCode": "TWN",
+        "totalCovering": 0.013399759491496308
+      },
+      {
+        "countryCode": "SAU",
+        "totalCovering": 0.012369008761381207
+      },
+      {
+        "countryCode": "CHE",
+        "totalCovering": 0.011338258031266106
+      },
+      {
+        "countryCode": "IND",
+        "totalCovering": 0.011338258031266106
+      },
+      {
+        "countryCode": "MYS",
+        "totalCovering": 0.010307507301151006
+      },
+      {
+        "countryCode": "FRA",
+        "totalCovering": 0.010307507301151006
+      },
+      {
+        "countryCode": "COL",
+        "totalCovering": 0.009276756571035905
+      },
+      {
+        "countryCode": "AUS",
+        "totalCovering": 0.006699879745748154
+      },
+      {
+        "countryCode": "DNK",
+        "totalCovering": 0.005153753650575503
+      },
+      {
+        "countryCode": "NLD",
+        "totalCovering": 0.004123002920460402
+      },
+      {
+        "countryCode": "GTM",
+        "totalCovering": 0.004123002920460402
+      },
+      {
+        "countryCode": "FIN",
+        "totalCovering": 0.0030922521903453018
+      },
+      {
+        "countryCode": "HUN",
+        "totalCovering": 0.002061501460230201
+      },
+      {
+        "countryCode": "DOM",
+        "totalCovering": 0.0010307507301151005
+      },
+      {
+        "countryCode": "NGA",
+        "totalCovering": 0.0010307507301151005
+      },
+      {
+        "countryCode": "ISR",
+        "totalCovering": 0.0010307507301151005
+      }
+    ]
+  }
 }
