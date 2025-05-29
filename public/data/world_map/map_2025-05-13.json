@@ -82,7 +82,7 @@
   "nerData": {
     "USA": 1.0
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "SAU": [
       {
         "entity": "Donald Trump",

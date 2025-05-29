@@ -220,7 +220,7 @@ def process_single_date(date_str: str, top_ner: str):
         top_ner: Target entity to track
         
     Returns:
-        Dictionary containing importData, exportData, nerData, TopEntitiesByCountry, topNer, foreignPressData
+        Dictionary containing importData, exportData, nerData, topEntitiesByCountry, topNer, foreignPressData
     """
     import_counts = defaultdict(int)
     export_counts = defaultdict(int)
@@ -245,7 +245,7 @@ def process_single_date(date_str: str, top_ner: str):
             "importData": {},
             "exportData": {},
             "nerData": {},
-            "TopEntitiesByCountry": {},
+            "topEntitiesByCountry": {},
             "topNer": "",
             "foreignPressData": {
                 "countryCoverage": {},
@@ -262,7 +262,7 @@ def process_single_date(date_str: str, top_ner: str):
             "importData": {},
             "exportData": {},
             "nerData": {},
-            "TopEntitiesByCountry": {},
+            "topEntitiesByCountry": {},
             "topNer": "",
             "foreignPressData": {
                 "countryCoverage": {},
@@ -432,7 +432,7 @@ def process_single_date(date_str: str, top_ner: str):
         "importData": normalized_import_data,
         "exportData": normalized_export_data,
         "nerData": normalized_ner_data,
-        "TopEntitiesByCountry": country_top_entities,
+        "topEntitiesByCountry": country_top_entities,
         "topNer": top_ner,
         "foreignPressData": foreign_press_data
     }
@@ -588,7 +588,7 @@ def main(top_ner: str, last_30_days: bool = False):
             "importData": {k: v for k, v in date_data["importData"].items() if v > 0},
             "exportData": {k: v for k, v in date_data["exportData"].items() if v > 0},
             "nerData": {k: v for k, v in date_data["nerData"].items() if v > 0},
-            "TopEntitiesByCountry": date_data["TopEntitiesByCountry"],  
+            "topEntitiesByCountry": date_data["topEntitiesByCountry"],  
             "topNer": top_ner, 
             "foreignPressData": date_data["foreignPressData"]
         }

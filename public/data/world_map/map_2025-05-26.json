@@ -212,7 +212,7 @@
     "IND": 0.15168539325842695,
     "GTM": 0.06741573033707865
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "RUS": [
       {
         "entity": "Vladimir Putin",

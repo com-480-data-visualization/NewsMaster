@@ -2,7 +2,7 @@
   "importData": {},
   "exportData": {},
   "nerData": {},
-  "TopEntitiesByCountry": {},
+  "topEntitiesByCountry": {},
   "topNer": "Donald Trump",
   "foreignPressData": {
     "countryCoverage": {

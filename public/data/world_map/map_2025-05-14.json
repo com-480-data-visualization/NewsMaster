@@ -43,7 +43,7 @@
   "nerData": {
     "USA": 1.0
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "VEN": [
       {
         "entity": "Alien Enemies Act",

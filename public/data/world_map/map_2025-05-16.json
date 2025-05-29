@@ -37,7 +37,7 @@
   "nerData": {
     "USA": 1.0
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "UKR": [
       {
         "entity": "Keir Starmer",

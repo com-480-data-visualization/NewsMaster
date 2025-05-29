@@ -205,7 +205,7 @@
     "NPL": 0.04838709677419355,
     "IND": 0.04838709677419355
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "ZAF": [
       {
         "entity": "Cyril Ramaphosa",

@@ -128,7 +128,7 @@
     "ZAF": 0.21428571428571427,
     "IND": 0.07142857142857142
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "ZAF": [
       {
         "entity": "Q Dar",

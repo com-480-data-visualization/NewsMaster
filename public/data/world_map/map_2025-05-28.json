@@ -273,7 +273,7 @@
     "GTM": 0.019230769230769232,
     "GHA": 0.019230769230769232
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "ISR": [
       {
         "entity": "Benjamin Netanyahu",
