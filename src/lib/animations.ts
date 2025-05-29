@@ -50,7 +50,6 @@ export class ScrollAnimationController {
     const indicator = document.createElement('div');
     indicator.className = 'scroll-indicator';
     indicator.innerHTML = `
-      <div class="scroll-progress"></div>
       <div class="scroll-sections"></div>
     `;
     document.body.appendChild(indicator);
@@ -74,7 +73,7 @@ export class ScrollAnimationController {
       };
     });
 
-    this.updateScrollIndicator();
+    this.createScrollDots();
     
     // Trigger the first section animation with proper delay for layout
     setTimeout(() => {
@@ -96,27 +95,42 @@ export class ScrollAnimationController {
     }
   }
 
-  private updateScrollIndicator() {
+  private createScrollDots() {
     if (!this.scrollIndicator) return;
 
     const sectionsContainer = this.scrollIndicator.querySelector('.scroll-sections');
     if (!sectionsContainer) return;
 
+    // Clear existing dots
     sectionsContainer.innerHTML = '';
     
+    // Create dots for each section
     this.sections.forEach((section, index) => {
       const dot = document.createElement('div');
-      dot.className = `scroll-dot ${index === this.currentSectionIndex ? 'active' : ''}`;
-      dot.addEventListener('click', () => this.scrollToSection(index));
+      dot.className = 'scroll-dot';
+      dot.setAttribute('data-section-index', index.toString());
       sectionsContainer.appendChild(dot);
     });
 
-    // Update progress
-    const progress = this.scrollIndicator.querySelector('.scroll-progress') as HTMLElement;
-    if (progress) {
-      const progressPercent = (this.currentSectionIndex / Math.max(this.sections.length - 1, 1)) * 100;
-      progress.style.height = `${progressPercent}%`;
-    }
+    // Set initial active state
+    this.updateActiveScrollDot();
+  }
+
+  private updateActiveScrollDot() {
+    if (!this.scrollIndicator) return;
+
+    const dots = this.scrollIndicator.querySelectorAll('.scroll-dot');
+    dots.forEach((dot, index) => {
+      if (index === this.currentSectionIndex) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  }
+
+  private updateScrollIndicator() {
+    this.updateActiveScrollDot();
   }
 
   private setupScrollListeners() {
@@ -323,36 +337,12 @@ export const animationStyles = `
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-  }
-
-  .scroll-progress {
-    width: 3px;
-    height: 0%;
-    background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
-    border-radius: 2px;
-    transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-  }
-
-  .scroll-progress::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 8px;
-    height: 8px;
-    background: #8b5cf6;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
   }
 
   .scroll-sections {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-top: 20px;
   }
 
   .scroll-dot {
@@ -361,14 +351,9 @@ export const animationStyles = `
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.3);
     border: 2px solid rgba(255, 255, 255, 0.5);
-    cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-  }
-
-  .scroll-dot:hover {
-    background: rgba(255, 255, 255, 0.6);
-    transform: scale(1.2);
+    pointer-events: none;
   }
 
   .scroll-dot.active {
@@ -382,10 +367,6 @@ export const animationStyles = `
   .dark .scroll-dot {
     background: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  .dark .scroll-dot:hover {
-    background: rgba(255, 255, 255, 0.4);
   }
 
   /* Section Animation States */
@@ -499,16 +480,6 @@ export const animationStyles = `
   @media (max-width: 768px) {
     .scroll-indicator {
       right: 10px;
-      gap: 6px;
-    }
-
-    .scroll-progress {
-      width: 2px;
-    }
-
-    .scroll-progress::before {
-      width: 6px;
-      height: 6px;
     }
 
     .scroll-dot {
@@ -518,7 +489,6 @@ export const animationStyles = `
 
     .scroll-sections {
       gap: 6px;
-      margin-top: 15px;
     }
 
     .section-jump {
@@ -541,19 +511,12 @@ export const animationStyles = `
     }
   }
 
-  /* Enhanced focus states for accessibility */
-  .scroll-dot:focus {
-    outline: 2px solid #3b82f6;
-    outline-offset: 2px;
-  }
-
   /* Reduced motion support */
   @media (prefers-reduced-motion: reduce) {
     .section-visible,
     .section-jump,
     .entity-reveal,
     .entity-update,
-    .scroll-progress,
     .scroll-dot {
       animation: none;
       transition: none;
