@@ -139,7 +139,7 @@
     "IND": 0.08626198083067094,
     "SAU": 0.038338658146964855
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "IRN": [
       {
         "entity": "Donald Trump",

@@ -195,7 +195,7 @@
     "BRA": 0.2727272727272727,
     "IRL": 0.18181818181818182
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "CHN": [
       {
         "entity": "Chinese",

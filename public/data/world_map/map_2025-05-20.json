@@ -146,7 +146,7 @@
     "GTM": 0.00438489646772229
   },
   "nerData": {},
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "CAN": [
       {
         "entity": "UN Security Council",

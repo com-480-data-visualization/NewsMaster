@@ -196,7 +196,7 @@
     "SAU": 0.048,
     "GHA": 0.048
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "UGA": [
       {
         "entity": "British",

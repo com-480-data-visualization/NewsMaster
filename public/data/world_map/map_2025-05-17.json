@@ -144,7 +144,7 @@
     "ZAF": 0.08839779005524862,
     "IND": 0.03867403314917127
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "BIH": [
       {
         "entity": "Donald Trump",

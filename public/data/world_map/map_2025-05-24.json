@@ -200,7 +200,7 @@
     "SAU": 0.022058823529411763,
     "GTM": 0.022058823529411763
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "LUX": [
       {
         "entity": "Donald Trump",

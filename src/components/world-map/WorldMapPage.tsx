@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import WorldMap from './WorldMap';
-import CountryTooltip from './CountryTooltip';
-import GlobalRankings from './GlobalRankings';
-import { ImportExportToggle } from './ImportExportToggle';
-
+import WorldMap, { type LegendConfig, type MapSize } from './WorldMap';
+import ForeignPressTooltip from './WolrdMapTooltip';
+import CountryRankings from './CountryRankings';
+import CountryTopEntities from './CountryTopEntities';
+import CountryTrendChart from './CountryTrendChart';
 import TimeRangeToggle, { type TimeRange } from './TimeRangeToggle';
-import { createImportColorScale, createExportColorScale, getImportColorRange, getExportColorRange, strokeColor, highlightColor } from '../../data/mapStyle';
-import { loadAggregatedData, type MapData } from '../../data/dataLoader';
-import { alpha3ToAlpha2, getName } from 'i18n-iso-countries';
+import { ForeignPressToggle, type ForeignPressMode } from './WolrdMapToggle';
+import { createImportColorScale, getImportColorRange, strokeColor, highlightColor } from '../../lib/mapStyle';
+import { loadAggregatedData, loadCountryTrendData, type MapData, type TrendDataPoint } from '../../lib/worldMapHelper.ts';
 
-const WorldMapPage: React.FC = () => {
+const ForeignPressPage: React.FC = () => {
   // State management
-  const [mode, setMode] = useState<'import' | 'export'>('import');
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
-  const [timeRange, setTimeRange] = useState<TimeRange>('today');
-  const [mapData, setMapData] = useState<MapData | null>(null); // State for loaded data
-  const [isLoading, setIsLoading] = useState<boolean>(true); // Loading state
+  const [timeRange, setTimeRange] = useState<TimeRange>('7days');
+  const [mode, setMode] = useState<ForeignPressMode>('featured');
+  const [data, setData] = useState<MapData | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [trendData, setTrendData] = useState<TrendDataPoint[]>([]);
+  const [isTrendLoading, setIsTrendLoading] = useState<boolean>(false);
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
   const [hoveredCountry, setHoveredCountry] = useState<{
     id: string;
@@ -23,16 +25,21 @@ const WorldMapPage: React.FC = () => {
     position: { x: number; y: number }
   } | null>(null);
 
+  // Map size configuration for larger display
+  const mapSize: MapSize = {
+    width: 960,
+    height: 560,
+    scale: 200
+  };
+
   // Detect theme changes
   useEffect(() => {
     const checkTheme = () => {
       setIsDarkMode(document.documentElement.classList.contains('dark'));
     };
     
-    // Check initial theme
     checkTheme();
     
-    // Listen for theme changes
     const observer = new MutationObserver(checkTheme);
     observer.observe(document.documentElement, {
       attributes: true,
@@ -42,86 +49,83 @@ const WorldMapPage: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Calculate domains and create color scales using useMemo for performance
-  const { importColorScale, exportColorScale, currentDomain, currentRange } = React.useMemo(() => {
-    if (!mapData) {
+  // Get current rankings and map data based on mode
+  const { currentRankings, mapData, colorScale, legendConfig } = React.useMemo(() => {
+    if (!data) {
       return {
-        importColorScale: createImportColorScale(isDarkMode, [0, 0.001]),
-        exportColorScale: createExportColorScale(isDarkMode, [0, 0.001]),
-        currentDomain: [0, 0.001] as [number, number],
-        currentRange: isDarkMode ? getImportColorRange(true) : getImportColorRange(false)
+        currentRankings: [],
+        mapData: {},
+        colorScale: createImportColorScale(isDarkMode, [0, 0.001]),
+        maxValue: 0.001,
+        legendConfig: undefined
       };
     }
 
-    const maxImport = Math.max(...Object.values(mapData.importData), 0);
-    const maxExport = Math.max(...Object.values(mapData.exportData), 0);
-    const importDomain: [number, number] = [0, maxImport || 0.001];
-    const exportDomain: [number, number] = [0, maxExport || 0.001];
-
-    return {
-      importColorScale: createImportColorScale(isDarkMode, importDomain),
-      exportColorScale: createExportColorScale(isDarkMode, exportDomain),
-      currentDomain: mode === 'import' ? importDomain : exportDomain,
-      currentRange: mode === 'import' 
-        ? getImportColorRange(isDarkMode) 
-        : getExportColorRange(isDarkMode)
-    };
-  }, [mapData, isDarkMode, mode]);
-
-  // Get country name from ISO code - memoized
-  const getCountryName = React.useCallback((code: string): string => {
-    if (!code || code.length !== 3) return code;
+    const rankings = mode === 'featured' ? data.foreignPressData.featuredRankings : data.foreignPressData.coveringRankings;
     
-    try {
-      // Convert alpha-3 to alpha-2 for compatibility with the library
-      const alpha2 = alpha3ToAlpha2(code);
-      if (alpha2) {
-        return getName(alpha2, 'en') || code;
+    if (!selectedCountry) {
+      // No country selected - show overall data
+      const overallData: Record<string, number> = {};
+      
+      if (mode === 'featured') {
+        Object.entries(data.foreignPressData.countryCoverage).forEach(([countryCode, coverage]) => {
+          overallData[countryCode] = coverage.totalCoverage;
+        });
+      } else {
+        Object.entries(data.foreignPressData.countryCovering).forEach(([countryCode, covering]) => {
+          overallData[countryCode] = covering.totalCovering;
+        });
       }
-      return code;
-    } catch (error) {
-      console.warn(`Could not find country name for code: ${code}`);
-      return code;
-    }
-  }, []);
-
-  // Get highest and lowest media attention countries - memoized
-  const getExtremeCountries = React.useCallback((data: Record<string, number>) => {
-    // Handle empty data case
-    const entries = Object.entries(data);
-    if (entries.length === 0) {
+      
+      const max = Math.max(...Object.values(overallData), 0.001);
+      const currentRange = getImportColorRange(isDarkMode);
+      
       return {
-        highest: { id: '', value: 0 },
-        lowest: { id: '', value: 0 }
+        currentRankings: rankings,
+        mapData: overallData,
+        colorScale: createImportColorScale(isDarkMode, [0, max]),
+        maxValue: max,
+        legendConfig: {
+          title: mode === 'featured' ? 'Total Foreign Coverage' : 'Total Coverage Activity',
+          colorRange: currentRange,
+          valueRange: [0, Math.round(max * 100)],
+          unit: '%'
+        } as LegendConfig
       };
     }
 
-    const highest = entries.reduce((max, current) => 
-      current[1] > max[1] ? current : max, entries[0]);
-    const lowest = entries.reduce((min, current) => 
-      current[1] < min[1] ? current : min, entries[0]);
+    // Country selected - show specific relationships
+    let relationshipData: Record<string, number> = {};
+    
+    if (mode === 'featured') {
+      // Featured mode: show who covers the selected country
+      relationshipData = data.foreignPressData.countryCoverage[selectedCountry]?.coveredBy || {};
+    } else {
+      // Covering mode: show who the selected country covers
+      relationshipData = data.foreignPressData.countryCovering[selectedCountry]?.covering || {};
+    }
+    
+    const max = Math.max(...Object.values(relationshipData), 0.001);
+    const currentRange = getImportColorRange(isDarkMode);
     
     return {
-      highest: { id: getCountryName(highest[0]), value: highest[1] },
-      lowest: { id: getCountryName(lowest[0]), value: lowest[1] }
+      currentRankings: rankings,
+      mapData: relationshipData,
+      colorScale: createImportColorScale(isDarkMode, [0, max]),
+      maxValue: max,
+      legendConfig: {
+        title: 'Coverage Intensity',
+        colorRange: currentRange,
+        valueRange: [0, Math.round(max * 100)],
+        unit: '%'
+      } as LegendConfig
     };
-  }, [getCountryName]);
+  }, [data, selectedCountry, mode, isDarkMode]);
 
-  // Memoize current data to prevent unnecessary recalculations
-  const currentData = React.useMemo(() => {
-    return mapData ? (mode === 'import' ? mapData.importData : mapData.exportData) : {};
-  }, [mapData, mode]);
-  
-  // Memoize extreme countries calculation
-  const { highest, lowest } = React.useMemo(() => 
-    getExtremeCountries(currentData), 
-    [currentData, getExtremeCountries]
-  );
-
-  // Stable callback references to prevent WorldMap re-renders
-  const handleSetSelectedCountry = React.useCallback((country: string | null) => {
-    setSelectedCountry(country);
-  }, []);
+  // Stable callback references
+  const handleCountrySelect = React.useCallback((countryCode: string) => {
+    setSelectedCountry(countryCode === selectedCountry ? null : countryCode);
+  }, [selectedCountry]);
 
   const handleSetHoveredCountry = React.useCallback((country: {
     id: string;
@@ -131,142 +135,153 @@ const WorldMapPage: React.FC = () => {
     setHoveredCountry(country);
   }, []);
 
-  // Effect to load data when timeRange changes
+  // Reset selected country when mode changes
+  useEffect(() => {
+    setSelectedCountry(null);
+  }, [mode]);
+
+  // Load data when timeRange changes
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const data = await loadAggregatedData(timeRange);
-        setMapData(data);
+        const foreignPressData = await loadAggregatedData(timeRange);
+        setData(foreignPressData);
       } catch (error) {
-        console.error("Error loading map data:", error);
-        setMapData(null); // Set to null or some error state
+        console.error("Error loading foreign press data:", error);
+        setData(null);
       } finally {
         setIsLoading(false);
       }
     };
     fetchData();
-  }, [timeRange]); // Dependency array ensures this runs when timeRange changes
+  }, [timeRange]);
 
-  // Display loading indicator or error message
+  // Load trend data when selected country changes
+  useEffect(() => {
+    const fetchTrendData = async () => {
+      if (!selectedCountry) {
+        setTrendData([]);
+        return;
+      }
+      
+      setIsTrendLoading(true);
+      try {
+        const countryTrendData = await loadCountryTrendData(selectedCountry);
+        setTrendData(countryTrendData);
+      } catch (error) {
+        console.error("Error loading trend data:", error);
+        setTrendData([]);
+      } finally {
+        setIsTrendLoading(false);
+      }
+    };
+    fetchTrendData();
+  }, [selectedCountry]);
+
+  // Display loading or error states
   if (isLoading) {
-    return <div className="text-center p-10">Loading map data...</div>;
+    return (
+      <div className="max-w-7xl w-full mx-auto px-4 py-8">
+        <div className="text-center p-10">Loading foreign press data...</div>
+      </div>
+    );
   }
-  if (!mapData) {
-    return <div className="text-center p-10 text-red-600">Failed to load map data. Please try again later.</div>;
+
+  if (!data) {
+    return (
+      <div className="max-w-7xl w-full mx-auto px-4 py-8">
+        <div className="text-center p-10 text-red-600">
+          Failed to load foreign press data. Please try again later.
+        </div>
+      </div>
+    );
   }
+
+ 
+
 
   return (
-    <div className="max-w-7xl w-full mx-auto px-4 py-8">
+    <div className="max-w-screen-2xl mx-auto px-4 py-8">
+      {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-        <h1 className="text-3xl font-bold">World Media Attention Map</h1>
+        <div>
+          <h1 className="text-3xl font-bold">Foreign Press Coverage Analysis</h1>
+          <p className="text-muted-foreground mt-1">
+            {mode === 'featured' 
+              ? 'Track how countries are featured in international media'
+              : 'Track how countries cover overseas events'
+            }
+          </p>
+        </div>
         
         <div className="flex items-center mt-2 md:mt-0 gap-2">
           <div className="flex items-center bg-card p-2 rounded-md border">
-            <span className="text-sm mr-2 md:block hidden">Media Type:</span>
-            <ImportExportToggle mode={mode} setMode={setMode} />
+            <span className="text-sm mr-2 md:block hidden">Analysis Type:</span>
+            <ForeignPressToggle mode={mode} setMode={setMode} />
           </div>
           <TimeRangeToggle selectedRange={timeRange} onRangeChange={setTimeRange} />
         </div>
       </div>
-      
-      {/* Quick Media Attention Overview */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-        <div className="bg-card p-4 border rounded-lg shadow-sm col-span-1 md:col-span-2">
-          <p className="text-sm">
-            <span className="font-medium">Media {mode === 'import' ? 'Import' : 'Export'}</span>:  
-            {mode === 'import' 
-                    ? ' How much a country is featured in foreign news' 
-                    : ' How much a country cover overseas events'}
-          </p>
-          <div className="grid grid-cols-2 gap-4 mt-3">
-            <div className="flex flex-col">
-              <span className="text-xs text-muted-foreground">Highest Coverage</span>
-              <div className="flex items-center mt-1">
-                <div 
-                  className="w-3 h-3 rounded-sm mr-2" 
-                  style={{ backgroundColor: highest.id ? (mode === 'import' 
-                    ? importColorScale(highest.value) 
-                    : exportColorScale(highest.value)) : 'transparent' // Handle no highest country
-                  }}
-                ></div>
-                <span className="font-medium">{highest.id || 'N/A'}</span>
-                <span className="ml-2 text-sm text-muted-foreground">
-                  {highest.id ? `(${(highest.value * 100).toFixed(1)}%)` : ''} {/* Assuming value is proportion 0-1 */}
-                </span>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xs text-muted-foreground">Lowest Coverage</span>
-              <div className="flex items-center mt-1">
-                <div 
-                  className="w-3 h-3 rounded-sm mr-2" 
-                  style={{ backgroundColor: lowest.id ? (mode === 'import' 
-                    ? importColorScale(lowest.value) 
-                    : exportColorScale(lowest.value)) : 'transparent' // Handle no lowest country
-                  }}
-                ></div>
-                <span className="font-medium">{lowest.id || 'N/A'}</span>
-                <span className="ml-2 text-sm text-muted-foreground">
-                  {lowest.id ? `(${(lowest.value * 100).toFixed(1)}%)` : ''} {/* Assuming value is proportion 0-1 */}
-                </span>
-              </div>
-            </div>
-          </div>
+
+      {/* Main Content Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 mb-6">
+        {/* Left Side - Rankings */}
+        <div className="lg:col-span-2">
+          <CountryRankings
+            rankings={currentRankings}
+            selectedCountry={selectedCountry}
+            onCountrySelect={handleCountrySelect}
+            isLoading={isLoading}
+            mode={mode}
+          />
         </div>
-        
-        <div className="bg-card p-4 border rounded-lg shadow-sm hidden md:block">
-          <div className="flex flex-col gap-1">
-            <div className="text-xs text-muted-foreground">
-              <span className="font-medium">Color intensity</span>: Proportion of global media {mode}s
-            </div>
+
+        {/* Right Side - World Map */}
+        <div className="lg:col-span-4">
+          <div className="p-4 border rounded-lg bg-card shadow-lg" style={{ height: '600' }}>
+      
             
-            {/* Mini gradient legend - Uses color scales which are now dynamic */}
-            <div className="w-full h-3 mt-2 rounded-sm overflow-hidden" 
-              style={{ 
-                background: `linear-gradient(to right, ${currentRange[0]}, ${currentRange[1]})`
-              }}>
-            </div>
-            <div className="flex justify-between w-full mt-1">
-              <div className="text-xs text-muted-foreground">0%</div>
-              <div className="text-xs text-muted-foreground">
-                {(currentDomain[1] * 100).toFixed(1)}%
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* World Map - Full Width */}
-      <div className="mb-8">
-        <div className="p-4 border rounded-lg bg-card shadow-lg">
-          <div className="relative">
-            <WorldMap 
-              colorScale={mode === 'import' ? importColorScale : exportColorScale}
-              strokeColor={strokeColor[isDarkMode ? 1 : 0]} // Dynamic theme-based stroke color
-              highlightColor={highlightColor[isDarkMode ? 1 : 0]} // Dynamic theme-based highlight color
-              setSelectedCountry={handleSetSelectedCountry} 
-              setHoveredCountry={handleSetHoveredCountry} 
-              data={currentData} // Pass the dynamically loaded data
-            />
-            {hoveredCountry && mapData && (
-              <CountryTooltip 
-                hoveredCountry={hoveredCountry} 
-                mode={mode} 
-                data={mapData} // Pass combined data to tooltip
+            <div className=" flex-1">
+              <WorldMap 
+                colorScale={colorScale}
+                strokeColor={strokeColor[isDarkMode ? 1 : 0]}
+                highlightColor={highlightColor[isDarkMode ? 1 : 0]}
+                setSelectedCountry={() => {}} // Disable map country selection
+                setHoveredCountry={handleSetHoveredCountry}
+                data={mapData}
+                legend={legendConfig}
+                mapSize={mapSize}
               />
-            )}
+              {hoveredCountry && (
+                <ForeignPressTooltip 
+                  hoveredCountry={hoveredCountry}
+                  selectedCountry={selectedCountry}
+                  data={data}
+                  mode={mode}
+                />
+              )}
+            </div>
           </div>
         </div>
       </div>
-      
-      {/* Top 10 Exporters and Importers */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <GlobalRankings mode="import" data={mapData.importData} /> 
-        <GlobalRankings mode="export" data={mapData.exportData} /> 
+
+      {/* Bottom Section - Country Analysis */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <CountryTopEntities
+          selectedCountry={selectedCountry}
+          topEntitiesByCountry={data.topEntitiesByCountry}
+          isLoading={isLoading}
+        />
+        
+        <CountryTrendChart
+          selectedCountry={selectedCountry}
+          trendData={trendData}
+          isLoading={isTrendLoading}
+        />
       </div>
     </div>
   );
 };
 
-export default WorldMapPage; 
+export default ForeignPressPage; 

@@ -211,7 +211,7 @@
     "NPL": 0.025806451612903226,
     "IND": 0.05161290322580645
   },
-  "TopEntitiesByCountry": {
+  "topEntitiesByCountry": {
     "ISR": [
       {
         "entity": "Donald Trump",
