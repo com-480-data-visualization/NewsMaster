@@ -1,3 +1,5 @@
+import { parseConfigFileTextToJson } from "typescript";
+
 export interface AnimationSection {
   id: string;
   element: HTMLElement;
@@ -37,58 +39,6 @@ export class ScrollAnimationController {
     
     // Setup intersection observer for animations
     this.setupIntersectionObserver();
-    
-    // Detect trackpad vs mouse wheel
-    this.detectInputDevice();
-  }
-
-  private detectInputDevice() {
-    let wheelEventCount = 0;
-    let wheelEventTime = 0;
-    let consecutiveSmallDeltas = 0;
-    
-    const detectHandler = (e: WheelEvent) => {
-      const now = Date.now();
-      
-      // Reset counter if too much time has passed
-      if (now - wheelEventTime > 100) {
-        wheelEventCount = 0;
-        consecutiveSmallDeltas = 0;
-      }
-      
-      wheelEventCount++;
-      wheelEventTime = now;
-      
-      // Count small delta events (typical of trackpads)
-      if (Math.abs(e.deltaY) < 30) {
-        consecutiveSmallDeltas++;
-      } else {
-        consecutiveSmallDeltas = 0;
-      }
-      
-      // Enhanced trackpad detection
-      // Trackpads: many small events in quick succession with decimal values
-      // Mouse wheels: fewer, larger events with integer values
-      const hasDecimalDelta = e.deltaY % 1 !== 0;
-      const isSmallDelta = Math.abs(e.deltaY) < 50;
-      const isManyEvents = wheelEventCount > 3;
-      const hasConsecutiveSmallDeltas = consecutiveSmallDeltas > 2;
-      
-      if ((hasDecimalDelta && isSmallDelta) || (isManyEvents && hasConsecutiveSmallDeltas)) {
-        this.isTrackpad = true;
-        this.scrollThreshold = 40; // Lower threshold for trackpads
-      } else if (Math.abs(e.deltaY) > 80 && !hasDecimalDelta) {
-        this.isTrackpad = false;
-        this.scrollThreshold = 100; // Higher threshold for mouse wheels
-      }
-    };
-    
-    window.addEventListener('wheel', detectHandler, { passive: true });
-    
-    // Remove detection after 3 seconds
-    setTimeout(() => {
-      window.removeEventListener('wheel', detectHandler);
-    }, 3000);
   }
 
   private calculateHeaderHeight() {
@@ -205,6 +155,20 @@ export class ScrollAnimationController {
       const timeDelta = now - lastWheelEvent;
       lastWheelEvent = now;
       
+      // Detect input device type regularly
+      // Trackpads: decimal values, small deltas
+      // Mouse wheels: integer values, larger deltas
+      const hasDecimalDelta = e.deltaY % 1 !== 0;
+      const isSmallDelta = Math.abs(e.deltaY) < 50;
+      
+      if (hasDecimalDelta || isSmallDelta) {
+        this.isTrackpad = true;
+        this.scrollThreshold = 40; // Lower threshold for trackpads
+      } else if (Math.abs(e.deltaY) > 80 && !hasDecimalDelta) {
+        this.isTrackpad = false;
+        this.scrollThreshold = 100; // Higher threshold for mouse wheels
+      }
+      
       // Skip if we're already scrolling to a section
       if (this.isScrolling) {
         return;
@@ -218,39 +182,25 @@ export class ScrollAnimationController {
       // Determine scroll direction
       const direction = e.deltaY > 0 ? 1 : -1;
       
-      // For trackpads, use accumulator approach with momentum detection
+      // For trackpads, only trigger on deltaY === -0 (end of gesture)
       if (this.isTrackpad) {
-        // Reset accumulator if direction changed or too much time passed
-        if (this.scrollDirection !== direction || timeDelta > 200) {
-          this.scrollAccumulator = 0;
+        // Store the last direction during the gesture
+        if (e.deltaY !== 0) {
+          this.scrollDirection = direction;
+          return; // Don't trigger section change yet
         }
         
-        this.scrollDirection = direction;
-        this.scrollAccumulator += Math.abs(e.deltaY);
-        
-        // Clear any existing momentum timeout
-        if (this.momentumTimeout) {
-          clearTimeout(this.momentumTimeout);
+        // Only trigger when deltaY === 0 (end of trackpad gesture)
+        if (e.deltaY === -0 && this.scrollDirection !== 0) {
+          this.triggerSectionChange(this.scrollDirection);
+          this.scrollDirection = 0; // Reset direction
+          
+          // Set cooldown to prevent rapid section changes
+          scrollCooldown = true;
+          setTimeout(() => {
+            scrollCooldown = false;
+          }, 700);
         }
-        
-        // Set momentum timeout to detect end of trackpad gesture
-        this.momentumTimeout = setTimeout(() => {
-          // If we have accumulated enough scroll, trigger section change
-          if (this.scrollAccumulator >= this.scrollThreshold) {
-            this.triggerSectionChange(direction);
-            this.scrollAccumulator = 0;
-            
-            // Set cooldown to prevent rapid section changes
-            scrollCooldown = true;
-            setTimeout(() => {
-              scrollCooldown = false;
-            }, 700);
-          } else {
-            // Reset accumulator if threshold wasn't reached
-            this.scrollAccumulator = 0;
-          }
-          this.momentumTimeout = null;
-        }, 100); // Wait for momentum to settle
         
       } else {
         // For mouse wheels, use immediate response with debouncing
