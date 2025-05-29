@@ -52,8 +52,8 @@ const GlobalRankings: React.FC<Props> = ({ mode, data }) => {
       </h3>
       <p className="text-sm text-muted-foreground mb-3">
         {mode === 'import' 
-          ? 'Countries that receive the most coverage in foreign media' 
-          : 'Countries whose media provides the most coverage of foreign events'}
+          ? 'How much a country is featured in foreign news' 
+          : 'How much a country cover overseas events'}
       </p>
       <div className="overflow-hidden">
         <table className="min-w-full">

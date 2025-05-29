@@ -174,10 +174,10 @@ const WorldMapPage: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
         <div className="bg-card p-4 border rounded-lg shadow-sm col-span-1 md:col-span-2">
           <p className="text-sm">
-            <span className="font-medium">Media {mode === 'import' ? 'Import' : 'Export'}</span>: 
+            <span className="font-medium">Media {mode === 'import' ? 'Import' : 'Export'}</span>:  
             {mode === 'import' 
-              ? ' How much a country is featured in foreign news' 
-              : ' How much a country\'s media covers foreign events'}
+                    ? ' How much a country is featured in foreign news' 
+                    : ' How much a country cover overseas events'}
           </p>
           <div className="grid grid-cols-2 gap-4 mt-3">
             <div className="flex flex-col">
