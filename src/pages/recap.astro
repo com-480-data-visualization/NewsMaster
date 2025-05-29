@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="News Landscape Recap">
@@ -7,11 +7,16 @@ import Layout from '../layouts/Layout.astro';
     <!-- Hero Section -->
     <div class="text-center mb-12">
       <h1 class="text-4xl font-bold mb-4">
-        <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <span
+          class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+        >
           TODAY THE WORLD IS OBSESSED BY
         </span>
-        <br>
-        <span id="top-ner-display" class="text-6xl font-black bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent drop-shadow-lg">
+        <br />
+        <span
+          id="top-ner-display"
+          class="text-6xl font-black bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 bg-clip-text text-transparent drop-shadow-lg"
+        >
           Loading...
         </span>
       </h1>
@@ -22,16 +27,23 @@ import Layout from '../layouts/Layout.astro';
     <!-- Temporal Trends Section -->
     <div class="mt-16 text-center">
       <h1 id="temporal-question" class="text-3xl font-bold mb-8">
-        Has <span id="top-ner-temporal" class="text-purple-600">...</span> always been so hot?
+        Has <span id="top-ner-temporal" class="text-purple-600">...</span> always
+        been so hot?
       </h1>
       <!-- Topic trend graph for the top NER -->
       <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 h-[400px]">
         <div class="border rounded-xl bg-card shadow-lg p-6 lg:col-span-4">
-          <h3 class="text-lg font-semibold mb-4 text-left">Top 5 Topics of today</h3>
+          <h3 class="text-lg font-semibold mb-4 text-left">
+            Top 5 Topics of today
+          </h3>
           <div id="temporal-table-recap" class="h-full"></div>
         </div>
-        <div class="border rounded-xl bg-card shadow-lg p-6 flex flex-col lg:col-span-3">
-          <h3 class="text-lg font-semibold mb-4 text-left">7-Day Trend Evolution</h3>
+        <div
+          class="border rounded-xl bg-card shadow-lg p-6 flex flex-col lg:col-span-3"
+        >
+          <h3 class="text-lg font-semibold mb-4 text-left">
+            7-Day Trend Evolution
+          </h3>
           <div id="temporal-chart-recap" class="flex-1 min-h-0"></div>
         </div>
       </div>
@@ -43,14 +55,21 @@ import Layout from '../layouts/Layout.astro';
         <span id="top-ner-network" class="text-green-600">...</span> POWER WEB
       </h1>
       <p class="text-muted-foreground mb-8">
-        Click and drag to explore • Mouse wheel to zoom • Click nodes for details
+        Click and drag to explore • Mouse wheel to zoom • Click nodes for
+        details
       </p>
       <!-- Network graph filtered to only show nodes connected to the top NER -->
-      <div id="network-recap" class="w-full h-[600px] border rounded-xl bg-card shadow-lg"></div>
+      <div
+        id="network-recap"
+        class="w-full h-[600px] border rounded-xl bg-card shadow-lg"
+      >
+      </div>
     </div>
 
     <!-- Insights Section -->
-    <div class="mt-16 text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/10 dark:to-purple-950/10 rounded-xl border p-8">
+    <div
+      class="mt-16 text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/10 dark:to-purple-950/10 rounded-xl border p-8"
+    >
       <h2 class="text-2xl font-bold mb-4">Key Insights</h2>
       <div id="insights-content" class="text-muted-foreground">
         <p>Loading insights about today's top story...</p>
@@ -60,16 +79,16 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <script>
-  import React from 'react';
-  import ReactDOM from 'react-dom/client';
-  import WorldMapNER from '../components/world-map/WorldMapNER';
-  import TopicTable from '../components/TopicTable';
-  import TopicTrendChart from '../components/TopicTrendChart';
-  
+  import React from "react";
+  import ReactDOM from "react-dom/client";
+  import WorldMapNER from "../components/world-map/WorldMapNER";
+  import TopicTable from "../components/TopicTable";
+  import TopicTrendChart from "../components/TopicTrendChart";
+  import EntityPowerNetwork from "../components/EntityPowerNetwork";
 
   // Function to create a custom world map that shows coverage of the top entity
   function createCustomWorldMap(topEntity: string) {
-    const worldMapElement = document.getElementById('world-map-recap');
+    const worldMapElement = document.getElementById("world-map-recap");
     if (worldMapElement && topEntity) {
       // For now, we'll use the existing WorldMapPage but we could enhance it
       // to show entity-specific data in the future
@@ -78,28 +97,41 @@ import Layout from '../layouts/Layout.astro';
     }
   }
 
-  
   // Function to create filtered network showing only connections to the top entity
   function createFilteredNetwork(topEntity: string) {
-    const networkElement = document.getElementById('network-recap');
+    const networkElement = document.getElementById("network-recap");
     if (networkElement && topEntity) {
       const root = ReactDOM.createRoot(networkElement);
-      // TODO: Implement filtered network
+
+      // Get today's date in DD.MM.YYYY format
+      const today = new Date();
+      const day = today.getDate().toString().padStart(2, "0");
+      const month = (today.getMonth() + 1).toString().padStart(2, "0");
+      const year = today.getFullYear();
+      const formattedDate = `${day}.${month}.${year}`;
+
+      root.render(
+        React.createElement(EntityPowerNetwork, {
+          targetEntity: topEntity,
+          date: formattedDate,
+          className: "w-full h-full",
+        }),
+      );
     }
   }
 
   // Function to load temporal trends data and create components
   async function createTemporalTrends(topEntity: string) {
-    const tableElement = document.getElementById('temporal-table-recap');
-    const chartElement = document.getElementById('temporal-chart-recap');
-    
+    const tableElement = document.getElementById("temporal-table-recap");
+    const chartElement = document.getElementById("temporal-chart-recap");
+
     if (!tableElement || !chartElement) return;
 
     try {
       // Helper functions
       function formatDate(date: Date): string {
-        const day = date.getDate().toString().padStart(2, '0');
-        const month = (date.getMonth() + 1).toString().padStart(2, '0');
+        const day = date.getDate().toString().padStart(2, "0");
+        const month = (date.getMonth() + 1).toString().padStart(2, "0");
         const year = date.getFullYear();
         return `${day}.${month}.${year}`;
       }
@@ -107,13 +139,13 @@ import Layout from '../layouts/Layout.astro';
       function getLastNDays(n: number): string[] {
         const dates: string[] = [];
         const today = new Date();
-        
+
         for (let i = n - 1; i >= 0; i--) {
           const date = new Date(today);
           date.setDate(today.getDate() - i);
           dates.push(formatDate(date));
         }
-        
+
         return dates;
       }
 
@@ -134,17 +166,17 @@ import Layout from '../layouts/Layout.astro';
       const yesterday = last7Days[last7Days.length - 2];
 
       // Load data for all days
-      const dailyDataPromises = last7Days.map(async date => ({
+      const dailyDataPromises = last7Days.map(async (date) => ({
         date,
-        data: await loadTopicsForDate(date)
+        data: await loadTopicsForDate(date),
       }));
 
       const dailyDataResults = await Promise.all(dailyDataPromises);
-      
+
       // Filter out failed loads and create data map
       const dailyData: any = {};
       const availableDates: string[] = [];
-      
+
       dailyDataResults.forEach(({ date, data }) => {
         if (data) {
           dailyData[date] = data;
@@ -153,7 +185,7 @@ import Layout from '../layouts/Layout.astro';
       });
 
       if (availableDates.length === 0) {
-        console.warn('No temporal data available');
+        console.warn("No temporal data available");
         return;
       }
 
@@ -162,7 +194,7 @@ import Layout from '../layouts/Layout.astro';
       const yesterdayData = dailyData[yesterday] || null;
 
       if (!todayData) {
-        console.warn('Today\'s data not available');
+        console.warn("Today's data not available");
         return;
       }
 
@@ -171,9 +203,9 @@ import Layout from '../layouts/Layout.astro';
         let yesterdayRankings: any = {};
         if (yesterdayData) {
           const yesterdayEntries = Object.entries(yesterdayData)
-            .filter(([_, score]) => typeof score === 'number' && score > 0)
+            .filter(([_, score]) => typeof score === "number" && score > 0)
             .sort(([, a], [, b]) => Number(b) - Number(a));
-          
+
           yesterdayEntries.forEach(([topic, _], index) => {
             yesterdayRankings[topic] = index + 1;
           });
@@ -181,18 +213,27 @@ import Layout from '../layouts/Layout.astro';
 
         const tableData = Object.entries(todayData)
           .map(([topic, todayScore]) => {
-            const yesterdayScore = yesterdayData && yesterdayData[topic] ? yesterdayData[topic] : 0;
-            
+            const yesterdayScore =
+              yesterdayData && yesterdayData[topic] ? yesterdayData[topic] : 0;
+
             let isTrendingUp = null;
             let isPresenceTrendingUp = null;
             let percentageChange = null;
 
             if (yesterdayScore === 0) {
-              percentageChange = Number(todayScore) > 0 ? Number(todayScore) : 0;
+              percentageChange =
+                Number(todayScore) > 0 ? Number(todayScore) : 0;
               isPresenceTrendingUp = Number(todayScore) > 0 ? true : null;
             } else {
-              percentageChange = parseFloat((Number(todayScore) - Number(yesterdayScore)).toFixed(1));
-              isPresenceTrendingUp = Number(todayScore) > Number(yesterdayScore) ? true : (Number(todayScore) < Number(yesterdayScore) ? false : null);
+              percentageChange = parseFloat(
+                (Number(todayScore) - Number(yesterdayScore)).toFixed(1),
+              );
+              isPresenceTrendingUp =
+                Number(todayScore) > Number(yesterdayScore)
+                  ? true
+                  : Number(todayScore) < Number(yesterdayScore)
+                    ? false
+                    : null;
             }
 
             return {
@@ -203,13 +244,13 @@ import Layout from '../layouts/Layout.astro';
               percentageChange,
             };
           })
-          .filter(item => item.latestScore > 0)
+          .filter((item) => item.latestScore > 0)
           .sort((a, b) => b.latestScore - a.latestScore)
           .slice(0, 5) // Only top 5 topics
           .map((item, index) => {
             const todayRank = index + 1;
             const yesterdayRank = yesterdayRankings[item.topic];
-            
+
             let isTrendingUp = null;
             if (yesterdayRank !== undefined) {
               if (todayRank < yesterdayRank) {
@@ -223,10 +264,10 @@ import Layout from '../layouts/Layout.astro';
               isTrendingUp = true;
             }
 
-            return { 
-              ...item, 
+            return {
+              ...item,
               rank: todayRank,
-              isTrendingUp 
+              isTrendingUp,
             };
           });
 
@@ -236,10 +277,10 @@ import Layout from '../layouts/Layout.astro';
       // Process chart data
       const processChartData = (dailyData: any, dates: string[]) => {
         const topics: any = {};
-        
+
         // Get top 5 topics from today
         const top5Topics = Object.entries(todayData)
-          .filter(([_, score]) => typeof score === 'number' && score > 0)
+          .filter(([_, score]) => typeof score === "number" && score > 0)
           .sort(([, a], [, b]) => Number(b) - Number(a))
           .slice(0, 5)
           .map(([topic, _]) => topic);
@@ -248,67 +289,76 @@ import Layout from '../layouts/Layout.astro';
         top5Topics.forEach((topic: string) => {
           topics[topic] = {};
           dates.forEach((date: string) => {
-            topics[topic][date] = dailyData[date] && dailyData[date][topic] ? dailyData[date][topic] : 0;
+            topics[topic][date] =
+              dailyData[date] && dailyData[date][topic]
+                ? dailyData[date][topic]
+                : 0;
           });
         });
 
         return {
           topics,
-          dateRanges: dates
+          dateRanges: dates,
         };
       };
 
       // Process data
       const tableData = processTableData(todayData, yesterdayData);
       const chartData = processChartData(dailyData, availableDates);
-      const allTopTopics = tableData.map(item => item.topic); // Get all top 5 topics
+      const allTopTopics = tableData.map((item) => item.topic); // Get all top 5 topics
 
       // Create React components
       const tableRoot = ReactDOM.createRoot(tableElement);
       const chartRoot = ReactDOM.createRoot(chartElement);
 
-      tableRoot.render(React.createElement(TopicTable, { 
-        data: tableData, 
-        defaultSelectedTopic: null // Don't pre-select any single topic in the table
-      }));
+      tableRoot.render(
+        React.createElement(TopicTable, {
+          data: tableData,
+          defaultSelectedTopic: null, // Don't pre-select any single topic in the table
+        }),
+      );
 
-      chartRoot.render(React.createElement(TopicTrendChart, { 
-        data: chartData, 
-        defaultTopic: null, // Pass null as defaultTopic since we want all 5
-        defaultTopics: allTopTopics // Pass all 5 topics to be selected by default
-      }));
-
+      chartRoot.render(
+        React.createElement(TopicTrendChart, {
+          data: chartData,
+          defaultTopic: null, // Pass null as defaultTopic since we want all 5
+          defaultTopics: allTopTopics, // Pass all 5 topics to be selected by default
+        }),
+      );
     } catch (error) {
-      console.error('Error creating temporal trends:', error);
+      console.error("Error creating temporal trends:", error);
     }
   }
 
   // Main initialization function
   async function initializeRecap() {
-    const topEntityInfo =  {entity: "Ukraine", count: 100, totalArticles: 1000}
+    const topEntityInfo = {
+      entity: "Ukraine",
+      count: 100,
+      totalArticles: 1000,
+    };
 
     const topEntity = topEntityInfo.entity;
-    
+
     // Update all the dynamic text elements
-    const topNerDisplay = document.getElementById('top-ner-display');
-    const topNerTemporal = document.getElementById('top-ner-temporal');
-    const topNerNetwork = document.getElementById('top-ner-network');
-    
+    const topNerDisplay = document.getElementById("top-ner-display");
+    const topNerTemporal = document.getElementById("top-ner-temporal");
+    const topNerNetwork = document.getElementById("top-ner-network");
+
     if (topNerDisplay) topNerDisplay.textContent = topEntity.toUpperCase();
     if (topNerTemporal) topNerTemporal.textContent = topEntity.toUpperCase();
     if (topNerNetwork) topNerNetwork.textContent = topEntity.toUpperCase();
-    
+
     // Initialize all visualizations
     createCustomWorldMap(topEntity);
 
     createFilteredNetwork(topEntity);
 
     createTemporalTrends(topEntity);
- 
   }
 
   // Start the initialization when the page loads
-  document.addEventListener('DOMContentLoaded', initializeRecap);
+  document.addEventListener("DOMContentLoaded", initializeRecap);
 </script>
 
 <style>
@@ -320,40 +370,46 @@ import Layout from '../layouts/Layout.astro';
   #temporal-chart-recap {
     overflow: hidden;
   }
-  
+
   /* Smooth scrolling for internal links */
   html {
     scroll-behavior: smooth;
   }
-  
+
   /* Loading animation for the top NER */
   #top-ner-display {
     transition: all 0.5s ease;
   }
-  
+
   /* Responsive design */
   @media (max-width: 768px) {
     #top-ner-display {
       font-size: 3rem;
     }
-    
+
     .container {
       padding-left: 1rem;
       padding-right: 1rem;
     }
-    
+
     /* Stack temporal trends vertically on mobile */
     .grid.lg\\:grid-cols-7 {
       grid-template-columns: 1fr;
     }
   }
-  
+
   /* Custom animations */
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  
+
   .fade-in {
     animation: fadeIn 0.6s ease-out;
   }
