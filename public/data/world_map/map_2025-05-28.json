@@ -1098,7 +1098,7 @@
         "share": 0.2222222222222222
       },
       {
-        "entity": "OTML",
+        "entity": "Chinese Communist Party",
         "count": 1,
         "share": 0.1111111111111111
       },
@@ -1989,12 +1989,12 @@
         "share": 0.08333333333333333
       },
       {
-        "entity": "Greens",
+        "entity": "Trump Customs",
         "count": 1,
         "share": 0.08333333333333333
       },
       {
-        "entity": "DW",
+        "entity": "Itama",
         "count": 1,
         "share": 0.08333333333333333
       },
@@ -2066,7 +2066,7 @@
         "share": 0.038461538461538464
       }
     ],
-    "CHE": [
+    "MCO": [
       {
         "entity": "Eurovision Song Contest",
         "count": 2,
@@ -4119,12 +4119,12 @@
         "share": 0.25
       },
       {
-        "entity": "Peter Pelle",
+        "entity": "Friedrich Merz",
         "count": 1,
         "share": 0.25
       },
       {
-        "entity": "National Council",
+        "entity": "Volodymyr Zelenskyy",
         "count": 1,
         "share": 0.25
       },
@@ -4930,9 +4930,9 @@
         "share": 0.08333333333333333
       }
     ],
-    "YEM": [
+    "UGA": [
       {
-        "entity": "Lufthansa Cargo",
+        "entity": "Andrew Tate",
         "count": 2,
         "share": 0.18181818181818182
       },
@@ -4989,7 +4989,7 @@
         "share": 0.5
       },
       {
-        "entity": "EU Subsidies Management Agency",
+        "entity": "Itama",
         "count": 1,
         "share": 0.25
       },
@@ -5095,7 +5095,7 @@
         "share": 0.25
       }
     ],
-    "SSD": [
+    "HTI": [
       {
         "entity": "Eastern Conference",
         "count": 2,
@@ -6209,7 +6209,7 @@
         "share": 0.25
       },
       {
-        "entity": "Alliance of the States of the Sahel",
+        "entity": "Ministry of State Security",
         "count": 1,
         "share": 0.25
       },
