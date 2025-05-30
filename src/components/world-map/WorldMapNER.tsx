@@ -188,7 +188,7 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
         <div className="bg-card p-4 border rounded-lg shadow-sm hidden md:block">
           <div className="flex flex-col gap-1">
             <div className="text-xs text-muted-foreground">
-              <span className="font-medium">Color intensity</span>: Presence of {entity} in the media
+              Presence of {entity} in the country's media
             </div>
             
             {/* Mini gradient legend - Uses color scales which are now dynamic */}
