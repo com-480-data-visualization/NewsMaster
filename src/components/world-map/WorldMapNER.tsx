@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import WorldMap from './WorldMap';
 import NERTooltip from './NERTooltip';
 import { createImportColorScale, getImportColorRange, strokeColor, highlightColor } from '../../lib/mapStyle';
-import { loadAggregatedData, type MapData, type TimeRange } from '../../lib/worldMapHelper.ts';
+import { loadAggregatedData, createEntitySpecificNerData, type MapData, type TimeRange } from '../../lib/worldMapHelper.ts';
 import countries from 'i18n-iso-countries';
 // Initialize the countries library with English translations
 import countriesEn from 'i18n-iso-countries/langs/en.json';
@@ -21,6 +21,7 @@ interface WorldMapPageProps {
 const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
   // State management
   const [mapData, setMapData] = useState<MapData | null>(null); // State for loaded map data
+  const [entitySpecificData, setEntitySpecificData] = useState<Record<string, number>>({}); // Entity-specific filtered data
   const [isLoading, setIsLoading] = useState<boolean>(true); // Loading state
   const [timeRange] = useState<TimeRange>('today'); // Default to today for NER view
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
@@ -57,7 +58,7 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
 
   // Calculate domain and create color scale using useMemo for performance
   const { importColorScale, currentDomain, currentRange } = React.useMemo(() => {
-    if (!mapData) {
+    if (!entitySpecificData || Object.keys(entitySpecificData).length === 0) {
       return {
         importColorScale: createImportColorScale(isDarkMode, [0, 0.001]),
         currentDomain: [0, 0.001] as [number, number],
@@ -65,7 +66,7 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
       };
     }
 
-    const maxEntityMentions = Math.max(...Object.values(mapData.nerData), 0);
+    const maxEntityMentions = Math.max(...Object.values(entitySpecificData), 0);
     const domain: [number, number] = [0, maxEntityMentions || 0.001];
 
     return {
@@ -73,18 +74,23 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
       currentDomain: domain,
       currentRange: getImportColorRange(isDarkMode)
     };
-  }, [mapData, isDarkMode]);
+  }, [entitySpecificData, isDarkMode]);
 
-  // Effect to load NER data
+  // Effect to load NER data and create entity-specific filtering
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
         const aggregatedData = await loadAggregatedData(timeRange);
         setMapData(aggregatedData);
+        
+        // Create entity-specific data using the new function
+        const filteredData = createEntitySpecificNerData(aggregatedData, entity);
+        setEntitySpecificData(filteredData);
       } catch (error) {
         console.error("Error loading NER map data:", error);
         setMapData(null);
+        setEntitySpecificData({});
       } finally {
         setIsLoading(false);
       }
@@ -128,9 +134,9 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
     setHoveredCountry(country);
   }, []);
 
-  // Determine current data slice based on loaded data (use nerData for NER)
-  const currentData = mapData ? mapData.nerData : {};
-  const totalArticles = mapData ? Object.values(mapData.nerData).reduce((sum, count) => sum + count, 0) : 0;
+  // Determine current data slice based on loaded data (use entitySpecificData for NER)
+  const currentData = entitySpecificData;
+  const totalArticles = Object.values(entitySpecificData).reduce((sum, count) => sum + count, 0);
 
   const { highest, lowest } = getExtremeCountries(currentData);
 
@@ -164,7 +170,7 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
                 ></div>
                 <span className="font-medium">{highest.id ? getCountryName(highest.id) : 'N/A'}</span>
                 <span className="ml-2 text-sm text-muted-foreground">
-                  {highest.id ? `(${(highest.value * 100).toFixed(1)}%)` : ''} {/* Assuming value is proportion 0-1 */}
+                  {highest.id ? `(${(highest.value * 100).toFixed(1)}% relative)` : ''}
                 </span>
               </div>
             </div>
@@ -178,7 +184,7 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
                 ></div>
                 <span className="font-medium">{lowest.id ? getCountryName(lowest.id) : 'N/A'}</span>
                 <span className="ml-2 text-sm text-muted-foreground">
-                  {lowest.id ? `(${(lowest.value * 100).toFixed(1)}%)` : ''} {/* Assuming value is proportion 0-1 */}
+                  {lowest.id ? `(${(lowest.value * 100).toFixed(1)}% relative)` : ''}
                 </span>
               </div>
             </div>
@@ -200,7 +206,7 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
             <div className="flex justify-between w-full mt-1">
               <div className="text-xs text-muted-foreground">0%</div>
               <div className="text-xs text-muted-foreground">
-                {(currentDomain[1] * 100).toFixed(1)}%
+                100% (relative)
               </div>
             </div>
           </div>

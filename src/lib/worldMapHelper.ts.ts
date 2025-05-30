@@ -584,6 +584,93 @@ export function clearDailyDataCache(): void {
   console.log('Daily data cache cleared');
 }
 
+// --- New Function: Create Entity-Specific NER Data ---
+export function createEntitySpecificNerData(mapData: MapData, targetEntity: string): Record<string, number> {
+  const entityNerData: Record<string, number> = {};
+  
+  if (!mapData.topEntitiesByCountry || !targetEntity) {
+    return entityNerData;
+  }
+
+  // Normalize the target entity for better matching
+  const normalizedTargetEntity = targetEntity.toLowerCase().trim();
+  
+  // Collect all countries and their entity mentions
+  let maxMentionCount = 0;
+  const entityMentions: Record<string, number> = {};
+  
+  Object.entries(mapData.topEntitiesByCountry).forEach(([countryCode, entities]) => {
+    // Find the target entity in this country's entities with more flexible matching
+    const targetEntityData = entities.find(entity => {
+      const normalizedEntityName = entity.entity.toLowerCase().trim();
+      
+      // Exact match
+      if (normalizedEntityName === normalizedTargetEntity) {
+        return true;
+      }
+      
+      // Partial match (both ways)
+      if (normalizedEntityName.includes(normalizedTargetEntity) || 
+          normalizedTargetEntity.includes(normalizedEntityName)) {
+        return true;
+      }
+      
+      // For names like "Donald Trump" and "Trump", also check word boundaries
+      const targetWords = normalizedTargetEntity.split(/\s+/);
+      const entityWords = normalizedEntityName.split(/\s+/);
+      
+      // Check if any target word matches any entity word completely
+      for (const targetWord of targetWords) {
+        for (const entityWord of entityWords) {
+          if (targetWord === entityWord && targetWord.length > 2) { // Avoid very short matches
+            return true;
+          }
+        }
+      }
+      
+      return false;
+    });
+    
+    if (targetEntityData) {
+      entityMentions[countryCode] = targetEntityData.count;
+      maxMentionCount = Math.max(maxMentionCount, targetEntityData.count);
+    }
+  });
+
+  // If no exact matches found, try a more lenient search
+  if (maxMentionCount === 0 && normalizedTargetEntity.length > 3) {
+    Object.entries(mapData.topEntitiesByCountry).forEach(([countryCode, entities]) => {
+      // Look for any entity that contains significant parts of the target entity
+      const targetEntityData = entities.find(entity => {
+        const normalizedEntityName = entity.entity.toLowerCase().trim();
+        
+        // Check if the entity name contains the target as a substring (more lenient)
+        return normalizedEntityName.includes(normalizedTargetEntity) && entity.count > 0;
+      });
+      
+      if (targetEntityData && !entityMentions[countryCode]) {
+        entityMentions[countryCode] = targetEntityData.count;
+        maxMentionCount = Math.max(maxMentionCount, targetEntityData.count);
+      }
+    });
+  }
+
+  // Normalize the data to create proportions (0-1 scale)
+  if (maxMentionCount > 0) {
+    Object.entries(entityMentions).forEach(([countryCode, count]) => {
+      entityNerData[countryCode] = count / maxMentionCount;
+    });
+  }
+
+  console.log(`Entity-specific data created for "${targetEntity}":`, {
+    matchedCountries: Object.keys(entityNerData).length,
+    maxMentionCount,
+    data: entityNerData
+  });
+
+  return entityNerData;
+}
+
 // --- Main Data Loading Function ---
 export async function loadAggregatedData(timeRange: TimeRange): Promise<MapData> {
   console.log(`Loading aggregated map data for time range: ${timeRange}`);
