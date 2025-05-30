@@ -222,6 +222,9 @@ def process_single_date(date_str: str, top_ner: str):
     Returns:
         Dictionary containing importData, exportData, nerData, topEntitiesByCountry, topNer, foreignPressData
     """
+    # Convert top_ner to lowercase for case-insensitive matching
+    top_ner = top_ner.lower() if top_ner else ""
+    
     import_counts = defaultdict(int)
     export_counts = defaultdict(int)
     total_imports = 0
@@ -300,10 +303,10 @@ def process_single_date(date_str: str, top_ner: str):
 
             # Count target entity mentions by source country
             for entity in other_entities:
-                if entity == top_ner:
+                if entity.lower() == top_ner:
                     ner_counts[source_country_code] += 1
             for entity in location_entities:
-                if entity[1] == top_ner:
+                if entity[1].lower() == top_ner:
                     ner_counts[entity[0]] += 1
                     
  
@@ -547,6 +550,9 @@ def main(top_ner: str, last_30_days: bool = False):
         top_ner (str): The top NER entity to track
         last_30_days (bool): If True, process last 30 days. If False, process only today.
     """
+    # Convert top_ner to lowercase for case-insensitive matching
+    top_ner = top_ner.lower() if top_ner else ""
+    
     print(f"Output directory set to: {OUTPUT_DIR}")
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -627,6 +633,6 @@ def aggregate_map_data():
 
 if __name__ == "__main__":
     print("Starting consolidated map data aggregation...")
-    main("Donald Trump", last_30_days=True)  
+    main("trump", last_30_days=True)  
   
     print("\nMap data aggregation finished.")
