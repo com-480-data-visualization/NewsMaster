@@ -29,6 +29,10 @@ The application serves as a one-stop solution for news consumption and to get an
 
 ### [Milestone 2](/milestones/Milestone%202.md)
 
+### [Process Book](/milestones/COM%20480%20-%20Process%20book.pdf)
+
+### [Screencast video](/milestones/NewsMaster%20Screencast.mp4)
+
 ## ⚡ Quick Start
 
 ```bash
