@@ -23,7 +23,7 @@ try {
 
 <Layout title="NewsMaster">
 	<!-- Hero Section -->
-	<section id="hero-section" class="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32 min-h-screen flex flex-col justify-center">
+	<section id="hero-section" class="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
 		<div
 			class="max-w-[64rem] flex flex-col items-center gap-4 text-center mx-auto"
 		>
@@ -38,32 +38,12 @@ try {
 				A dashboard updated daily, featuring the most important
 				statistics in world news.
 			</p>
-			
-			<!-- Animated scroll down indicator -->
-			<div class="flex flex-col items-center animate-bounce">
-				<p class="text-sm text-muted-foreground mb-2">Scroll down to explore</p>
-				<svg 
-					xmlns="http://www.w3.org/2000/svg" 
-					width="24" 
-					height="24" 
-					viewBox="0 0 24 24" 
-					fill="none" 
-					stroke="currentColor" 
-					stroke-width="2" 
-					stroke-linecap="round" 
-					stroke-linejoin="round" 
-					class="h-6 w-6 text-muted-foreground"
-				>
-					<path d="M7 13l3 3 3-3"></path>
-					<path d="M7 6l3 3 3-3"></path>
-				</svg>
-			</div>
 		</div>
 	</section>
 
 	<!-- Recap Section - Today's Obsession -->
 	<main class="container mx-auto px-4 py-8 max-w-6xl">
-		<div id="recap-section" class="text-center mb-12 min-h-screen flex flex-col justify-center">
+		<div id="recap-section" class="text-center mb-12">
 			<h1 class="text-4xl font-bold mb-4">
 				<span
 					class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
@@ -82,7 +62,7 @@ try {
 		</div>
 
 		<!-- Temporal Trends Section -->
-		<div id="temporal-section" class="mt-16 text-center min-h-screen flex flex-col justify-center">
+		<div id="temporal-section" class="mt-16 text-center">
 			<h1 id="temporal-question" class="text-3xl font-bold mb-8">
 				Has <span class="top-entity-ref text-purple-600">...</span> always
 				been so hot?
@@ -107,7 +87,7 @@ try {
 		</div>
 
 		<!-- Network Section -->
-		<div id="network-section" class="mt-16 text-center min-h-screen flex flex-col justify-center">
+		<div id="network-section" class="mt-16 text-center">
 			<h1 id="network-title" class="text-3xl font-bold mb-4">
 				<span class="top-entity-ref text-green-600">...</span> POWER WEB
 			</h1>
@@ -125,7 +105,7 @@ try {
 		<!-- Statistics Section (replaces Insights) -->
 		<div
 			id="statistics-section"
-			class="mt-16 text-center min-h-screen flex flex-col justify-center"
+			class="mt-16 text-center"
 		>
 			<h2 class="text-3xl font-bold mb-8">News Statistics</h2>
 			
@@ -276,7 +256,7 @@ try {
 		<!-- Visualization Exploration Section -->
 		<div
 			id="exploration-section"
-			class="mt-16 text-center min-h-screen flex flex-col justify-center"
+			class="mt-16 text-center"
 		>
 			<h2 class="text-3xl font-bold mb-4">Explore Our Visualizations</h2>
 			<p class="text-muted-foreground mb-12 text-lg">
@@ -395,7 +375,7 @@ try {
 	import TopicTable from "../components/TopicTable";
 	import TopicTrendChart from "../components/TopicTrendChart";
 	import EntityPowerNetwork from "../components/EntityPowerNetwork";
-	import { ScrollAnimationController, animationStyles } from "../lib/animations";
+	import { BasicAnimationController, animationStyles } from "../lib/animations";
 
 	// Inject animation styles
 	const styleSheet = document.createElement('style');
@@ -403,7 +383,7 @@ try {
 	document.head.appendChild(styleSheet);
 
 	// Initialize animation controller
-	let animationController: ScrollAnimationController;
+	let animationController: BasicAnimationController;
 
 	// Function to update all entity references
 	function updateEntityReferences(entity: string) {
@@ -658,11 +638,7 @@ try {
 	// Main initialization function
 	async function initializeRecap() {
 		// Initialize animation controller first
-		animationController = new ScrollAnimationController();
-		
-		// Register sections for animation
-		const sectionIds = ['hero-section', 'recap-section', 'temporal-section', 'network-section', 'statistics-section', 'exploration-section'];
-		animationController.registerSections(sectionIds);
+		animationController = new BasicAnimationController();
 		
 		// Register the top entity span
 		animationController.registerTopEntitySpan('top-entity');
@@ -709,13 +685,10 @@ try {
 		// Update all other entity references
 		updateEntityReferences(topEntity);
 
-		// Initialize all visualizations with coordinated timing
-		// Start world map first since it's needed for hero section animation
+		// Initialize all visualizations
 		createCustomWorldMap(topEntity);
-		
-		// Then load other visualizations with delays
-		setTimeout(() => createFilteredNetwork(topEntity), 800);
-		setTimeout(() => createTemporalTrends(topEntity), 1200);
+		createFilteredNetwork(topEntity);
+		createTemporalTrends(topEntity);
 	}
 
 	// Start the initialization when the page loads
@@ -733,7 +706,6 @@ try {
 	html {
 		box-sizing: border-box;
 		height: 100%;
-		scroll-behavior: smooth;
 	}
 
 	*, *::before, *::after {
@@ -743,7 +715,6 @@ try {
 	body {
 		height: 100%;
 		margin: 0;
-		overflow-x: hidden; /* Prevent horizontal scroll */
 	}
 </style>
 
@@ -761,16 +732,6 @@ try {
 	.top-entity-ref {
 		font-weight: 700;
 		transition: all 0.3s ease;
-	}
-
-	/* Section layout improvements */
-	#hero-section,
-	#recap-section,
-	#temporal-section,
-	#network-section,
-	#statistics-section,
-	#exploration-section {
-		scroll-margin-top: 2rem;
 	}
 
 	/* Loading animation for the top entity */
@@ -792,17 +753,6 @@ try {
 		/* Stack temporal trends vertically on mobile */
 		.grid.lg\\:grid-cols-7 {
 			grid-template-columns: 1fr;
-		}
-
-		/* Adjust section heights for mobile */
-		#hero-section,
-		#recap-section,
-		#temporal-section,
-		#network-section,
-		#statistics-section,
-		#exploration-section {
-			min-height: 100vh;
-			padding: 2rem 0;
 		}
 	}
 
