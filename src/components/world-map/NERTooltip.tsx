@@ -44,8 +44,9 @@ const NERTooltip: React.FC<Props> = ({
     }
   };
 
-  const mentionCount = nerData[hoveredCountry.id] || 0;
-  const mentionPercentage = totalMentions > 0 ? (mentionCount / totalMentions) * 100 : 0;
+  const mentionValue = nerData[hoveredCountry.id] || 0;
+  // For entity-specific data, the values are normalized (0-1), so we can display them as percentages directly
+  const mentionPercentage = mentionValue * 100;
 
   // Calculate tooltip position with better positioning
   const tooltipWidth = 300;
@@ -91,7 +92,7 @@ const NERTooltip: React.FC<Props> = ({
           <p className="text-sm text-muted-foreground">
             <span className="font-medium text-foreground">{entity}</span> mentions:
           </p>
-          {mentionCount > 0 ? (
+          {mentionValue > 0 ? (
             <div className="space-y-2 mt-2">
               <div className="flex items-center justify-between mx-auto ">
                 <span className="text-sm text-muted-foreground">
@@ -101,7 +102,7 @@ const NERTooltip: React.FC<Props> = ({
               <div className="w-full bg-muted rounded-full h-2">
                 <div 
                   className="bg-blue-500 h-2 rounded-full transition-all duration-300"
-                  style={{ width: `${Math.min(mentionPercentage * 2, 100)}%` }}
+                  style={{ width: `${Math.min(mentionPercentage, 100)}%` }}
                 ></div>
               </div>
             
