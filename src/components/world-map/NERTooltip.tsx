@@ -93,10 +93,7 @@ const NERTooltip: React.FC<Props> = ({
           </p>
           {mentionCount > 0 ? (
             <div className="space-y-2 mt-2">
-              <div className="flex items-center justify-between">
-                <span className="text-lg font-semibold text-foreground">
-                  {mentionCount}
-                </span>
+              <div className="flex items-center justify-between mx-auto ">
                 <span className="text-sm text-muted-foreground">
                   {mentionPercentage.toFixed(1)}% of total
                 </span>
@@ -107,9 +104,7 @@ const NERTooltip: React.FC<Props> = ({
                   style={{ width: `${Math.min(mentionPercentage * 2, 100)}%` }}
                 ></div>
               </div>
-              <p className="text-xs text-muted-foreground">
-                Media coverage intensity for {entity}
-              </p>
+            
             </div>
           ) : (
             <p className="text-sm text-muted-foreground mt-2">
