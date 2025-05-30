@@ -116,15 +116,32 @@ const WorldMap: React.FC<Props> = ({
             .style("stroke-width", 1.5)
             .style("filter", "drop-shadow(0px 0px 5px rgba(0, 102, 204, 0.3))");
           
-          // Update hovered country
-          stableSetHoveredCountry({
-            id: countryId,
-            name: countryName,
-            position: { 
-              x: event.pageX, 
-              y: event.pageY 
-            }
-          });
+          // Get mouse position relative to the map container
+          const mapContainer = document.getElementById('world-map-container');
+          if (mapContainer) {
+            const containerRect = mapContainer.getBoundingClientRect();
+            const x = event.clientX - containerRect.left;
+            const y = event.clientY - containerRect.top;
+            
+            stableSetHoveredCountry({
+              id: countryId,
+              name: countryName,
+              position: { 
+                x: x, 
+                y: y 
+              }
+            });
+          } else {
+            // Fallback to viewport coordinates
+            stableSetHoveredCountry({
+              id: countryId,
+              name: countryName,
+              position: { 
+                x: event.clientX, 
+                y: event.clientY 
+              }
+            });
+          }
         })
         .on("mouseout", function() {
           d3.select(this)
@@ -175,14 +192,32 @@ const WorldMap: React.FC<Props> = ({
           .style("stroke-width", 1.5)
           .style("filter", "drop-shadow(0px 0px 5px rgba(0, 102, 204, 0.3))");
         
-        stableSetHoveredCountry({
-          id: countryId,
-          name: countryName,
-          position: { 
-            x: event.pageX, 
-            y: event.pageY 
-          }
-        });
+        // Get mouse position relative to the map container
+        const mapContainer = document.getElementById('world-map-container');
+        if (mapContainer) {
+          const containerRect = mapContainer.getBoundingClientRect();
+          const x = event.clientX - containerRect.left;
+          const y = event.clientY - containerRect.top;
+          
+          stableSetHoveredCountry({
+            id: countryId,
+            name: countryName,
+            position: { 
+              x: x, 
+              y: y 
+            }
+          });
+        } else {
+          // Fallback to viewport coordinates
+          stableSetHoveredCountry({
+            id: countryId,
+            name: countryName,
+            position: { 
+              x: event.clientX, 
+              y: event.clientY 
+            }
+          });
+        }
       })
       .on("mouseout", function() {
         d3.select(this)
