@@ -1,8 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Chart } from "../components/Chart";
 import fs from "fs";
 import path from "path";
+import NerEntityBarChart from "../components/NerEntityBarChart.tsx";
 
 // Fetch data server-side in Astro
 let db = {
@@ -270,6 +270,11 @@ try {
 						</div>
 					</div>
 				</div>
+			</div>
+			
+			<!-- Add Chart component for temporal trends -->
+			<div class="mt-12 max-w-6xl mx-auto">
+				<NerEntityBarChart client:load />
 			</div>
 		</div>
 

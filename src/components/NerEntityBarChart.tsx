@@ -38,7 +38,7 @@ const chartConfig = {
     },
 } satisfies ChartConfig;
 
-export function Chart() {
+export function NerEntityBarChart() {
     const [activeChart, setActiveChart] =
         React.useState<keyof typeof chartConfig>("articles");
     const [dbData, setDbData] = React.useState<DBData | null>(null);
@@ -177,3 +177,5 @@ export function Chart() {
         </Card>
     )
 }
+
+export default NerEntityBarChart;
