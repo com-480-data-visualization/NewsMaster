@@ -23,7 +23,6 @@ const ForeignPressTooltip: React.FC<Props> = ({
   data,
   mode 
 }) => {
-
   // Get country name from ISO code
   const getCountryName = (code: string): string => {
     if (!code || code.length !== 3) return code;

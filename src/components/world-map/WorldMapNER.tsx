@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import WorldMap from './WorldMap';
-import NERTooltip from './NERTooltip';
 import { createImportColorScale, getImportColorRange, strokeColor, highlightColor } from '../../lib/mapStyle';
 import { loadAggregatedData, type MapData, type TimeRange } from '../../lib/worldMapHelper.ts';
 import countries from 'i18n-iso-countries';
@@ -24,17 +23,6 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true); // Loading state
   const [timeRange] = useState<TimeRange>('today'); // Default to today for NER view
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
-  const [hoveredCountry, setHoveredCountry] = useState<{
-    id: string;
-    name: string;
-    position: { x: number; y: number }
-  } | null>(null);
-
-  const mapSize = {
-    width: 960,
-    height: 560,
-    scale: 200
-  };
 
   // Detect theme changes
   useEffect(() => {
@@ -119,14 +107,6 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
     };
   };
 
-  // Stable callback reference for hover handling
-  const handleSetHoveredCountry = React.useCallback((country: {
-    id: string;
-    name: string;
-    position: { x: number; y: number }
-  } | null) => {
-    setHoveredCountry(country);
-  }, []);
 
   // Determine current data slice based on loaded data (use nerData for NER)
   const currentData = mapData ? mapData.nerData : {};
@@ -209,29 +189,16 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
       
       {/* World Map - Full Width */}
       <div className="">
-        <div 
-          id="world-map-container" 
-          className="relative p-4 border rounded-lg bg-card shadow-lg" 
-          style={{ height: '600px' }}
-        >
-          <div className="flex-1">
+        <div className=" border rounded-lg bg-card shadow-lg">
+          <div className="relative">
             <WorldMap 
               colorScale={importColorScale}
               strokeColor={strokeColor[isDarkMode ? 1 : 0]} // Dynamic theme-based stroke color
               highlightColor={highlightColor[isDarkMode ? 1 : 0]} // Dynamic theme-based highlight color
               setSelectedCountry={() => {}} 
-              setHoveredCountry={handleSetHoveredCountry} 
+              setHoveredCountry={() => {}} 
               data={currentData} // Pass the dynamically loaded NER data
-              mapSize={mapSize}
             />
-            {hoveredCountry && (
-              <NERTooltip
-                hoveredCountry={hoveredCountry}
-                entity={entity}
-                nerData={currentData}
-                totalMentions={totalArticles}
-              />
-            )}
           </div>
         </div>
       </div>
