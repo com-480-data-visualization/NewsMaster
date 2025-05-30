@@ -66,11 +66,9 @@ const CountryTopEntities: React.FC<Props> = ({
     return (
       <div className="p-4 border rounded-lg bg-card shadow-sm">
         <h3 className="font-bold text-lg mb-2 text-foreground">
-          Top Entities by Country
+          Click a country
         </h3>
-        <p className="text-sm text-muted-foreground">
-          Select a country from the rankings above to see its most mentioned entities in foreign press coverage.
-        </p>
+  
       </div>
     );
   }
@@ -80,7 +78,7 @@ const CountryTopEntities: React.FC<Props> = ({
     return (
       <div className="p-4 border rounded-lg bg-card shadow-sm">
         <h3 className="font-bold text-lg mb-2 text-foreground">
-          Top Entities for {getCountryName(selectedCountry)}
+          {getCountryName(selectedCountry)} Top Entities
         </h3>
         <p className="text-sm text-muted-foreground">
           No significant entities found for {getCountryName(selectedCountry)} in the foreign press coverage data.
@@ -93,11 +91,9 @@ const CountryTopEntities: React.FC<Props> = ({
   return (
     <div className="p-4 border rounded-lg bg-card shadow-sm">
       <h3 className="font-bold text-lg mb-2 text-foreground">
-        Top Entities for {getCountryName(selectedCountry)}
+        {getCountryName(selectedCountry)} Top Entities
       </h3>
-      <p className="text-sm text-muted-foreground mb-3">
-        Most mentioned entities when {getCountryName(selectedCountry)} appears in foreign press coverage
-      </p>
+     
       <div className="overflow-hidden">
         <table className="min-w-full">
           <thead>

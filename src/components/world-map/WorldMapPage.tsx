@@ -123,7 +123,8 @@ const ForeignPressPage: React.FC = () => {
   }, [data, selectedCountry, mode, isDarkMode]);
 
   // Stable callback references
-  const handleCountrySelect = React.useCallback((countryCode: string) => {
+  const handleCountrySelect = React.useCallback((countryCode: string | null) => {
+    if (countryCode === null) return; // Ignore null selections from map
     setSelectedCountry(countryCode === selectedCountry ? null : countryCode);
   }, [selectedCountry]);
 
@@ -247,7 +248,7 @@ const ForeignPressPage: React.FC = () => {
                 colorScale={colorScale}
                 strokeColor={strokeColor[isDarkMode ? 1 : 0]}
                 highlightColor={highlightColor[isDarkMode ? 1 : 0]}
-                setSelectedCountry={() => {}} // Disable map country selection
+                setSelectedCountry={handleCountrySelect}
                 setHoveredCountry={handleSetHoveredCountry}
                 data={mapData}
                 legend={legendConfig}

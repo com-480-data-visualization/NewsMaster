@@ -278,11 +278,9 @@ const CountryTrendChart: React.FC<Props> = ({
     return (
       <div className="p-4 border rounded-lg bg-card shadow-sm">
         <h3 className="font-bold text-lg mb-2 text-foreground">
-          Country Trend Analysis
+          Click a country
         </h3>
-        <p className="text-sm text-muted-foreground">
-          Select a country from the rankings above to see its 14-day trend in foreign press coverage.
-        </p>
+       
       </div>
     );
   }
@@ -307,9 +305,7 @@ const CountryTrendChart: React.FC<Props> = ({
       <h3 className="font-bold text-lg mb-2 text-foreground">
         14-Day Trend for {getCountryName(selectedCountry)}
       </h3>
-      <p className="text-sm text-muted-foreground mb-3">
-        Foreign press coverage evolution over the last 14 days
-      </p>
+      
       <div ref={chartRef} className="w-full"></div>
       
       <div className="mt-3 p-2 bg-muted/20 rounded text-xs text-muted-foreground">
