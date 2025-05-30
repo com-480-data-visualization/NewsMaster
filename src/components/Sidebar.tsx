@@ -13,8 +13,8 @@ import {
 
 const navigation = [
   { title: "Home", path: "/", icon: Home },
-  { title: "Temporal Trends", path: "/temporal-trends", icon: LineChart },
   { title: "World Map", path: "/world-map", icon: Globe },
+  { title: "Temporal Trends", path: "/temporal-trends", icon: LineChart },
   { title: "Network", path: "/network", icon: Share2 },
 ] as const
 
