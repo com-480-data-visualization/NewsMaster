@@ -7,10 +7,44 @@ import KeywordNetwork from "@/components/KeywordNetwork";
     <main class="container mx-auto px-4 py-8">
         <h1 class="text-3xl font-bold mb-4">Article Keyword Network</h1>
         <p class="mb-6 text-muted-foreground">
-            Visualize the connections between named entities (like people,
-            organizations, locations) mentioned together in news articles. Use
-            the dropdown below to filter entities by type.
+            Explore the relationships between keywords in our articles. This
+            interactive network visualization allows you to see how different
+            topics are connected, helping you discover new insights and
+            connections within our content.
         </p>
+
+        <div class="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+            <div class="flex items-start">
+                <svg
+                    class="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <div>
+                    <h3 class="text-sm font-medium text-blue-800 mb-1">
+                        How to use the Keyword Network tool
+                    </h3>
+                    <p class="text-sm text-blue-700">
+                        Use the Keyword Network tool by first selecting a date
+                        to fetch articles. Choose specific news providers or
+                        leave it blank to include all. Optionally, load and
+                        filter by NER labels like PERSON or ORG to focus the
+                        graph. Click "Load Selected Providers" or "Load All
+                        Articles" to generate a 3D graph where nodes represent
+                        entities and links show co-occurrences. Hover or click
+                        links to view related articles. Use your mouse to
+                        navigate the graph, and click the minimize button to
+                        exit visualization mode.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <KeywordNetwork client:only="react" />
     </main>
 </Layout>
