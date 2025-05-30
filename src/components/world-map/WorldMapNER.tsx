@@ -3,6 +3,16 @@ import WorldMap from './WorldMap';
 import NERTooltip from './NERTooltip';
 import { createImportColorScale, getImportColorRange, strokeColor, highlightColor } from '../../lib/mapStyle';
 import { loadAggregatedData, type MapData, type TimeRange } from '../../lib/worldMapHelper.ts';
+import countries from 'i18n-iso-countries';
+// Initialize the countries library with English translations
+import countriesEn from 'i18n-iso-countries/langs/en.json';
+countries.registerLocale(countriesEn);
+
+// Function to convert ISO 3-letter country code to country name
+const getCountryName = (countryCode: string): string => {
+  if (!countryCode) return 'N/A';
+  return countries.getName(countryCode, 'en') || countryCode;
+};
 
 interface WorldMapPageProps {
   entity?: string;
@@ -95,8 +105,13 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
 
     const highest = entries.reduce((max, current) => 
       current[1] > max[1] ? current : max, entries[0]);
-    const lowest = entries.reduce((min, current) => 
-      current[1] < min[1] ? current : min, entries[0]);
+    
+    // Find lowest non-zero value
+    const nonZeroEntries = entries.filter(entry => entry[1] > 0);
+    const lowest = nonZeroEntries.length > 0 
+      ? nonZeroEntries.reduce((min, current) => 
+          current[1] < min[1] ? current : min, nonZeroEntries[0])
+      : entries[0]; // Fallback to first entry if all are zero
     
     return {
       highest: { id: highest[0], value: highest[1] },
@@ -147,7 +162,7 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
                   style={{ backgroundColor: highest.id ? importColorScale(highest.value) : 'transparent' 
                   }}
                 ></div>
-                <span className="font-medium">{highest.id || 'N/A'}</span>
+                <span className="font-medium">{highest.id ? getCountryName(highest.id) : 'N/A'}</span>
                 <span className="ml-2 text-sm text-muted-foreground">
                   {highest.id ? `(${(highest.value * 100).toFixed(1)}%)` : ''} {/* Assuming value is proportion 0-1 */}
                 </span>
@@ -161,7 +176,7 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({ entity = 'Ukraine' }) => {
                   style={{ backgroundColor: lowest.id ? importColorScale(lowest.value) : 'transparent' 
                   }}
                 ></div>
-                <span className="font-medium">{lowest.id || 'N/A'}</span>
+                <span className="font-medium">{lowest.id ? getCountryName(lowest.id) : 'N/A'}</span>
                 <span className="ml-2 text-sm text-muted-foreground">
                   {lowest.id ? `(${(lowest.value * 100).toFixed(1)}%)` : ''} {/* Assuming value is proportion 0-1 */}
                 </span>
