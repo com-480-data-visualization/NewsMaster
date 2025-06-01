@@ -1,6 +1,11 @@
 {
     "articles_per_day": [
         {
+            "date": "01.06.2025",
+            "articles": 2467,
+            "ner": 11292
+        },
+        {
             "date": "12.05.2025",
             "articles": 85,
             "ner": 369
@@ -101,8 +106,8 @@
             "ner": 14011
         }
     ],
-    "total_ner_today": 14011,
-    "total_articles_today": 3005,
-    "total_articles_week": 11907,
-    "total_articles_total": 20568
+    "total_ner_today": 11292,
+    "total_articles_today": 2467,
+    "total_articles_week": 13548,
+    "total_articles_total": 23035
 }
