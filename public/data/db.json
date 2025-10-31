@@ -859,10 +859,15 @@
             "date": "31.08.2025",
             "articles": 2564,
             "ner": 12315
+        },
+        {
+            "date": "31.10.2025",
+            "articles": 3088,
+            "ner": 14035
         }
     ],
-    "total_ner_today": 14192,
-    "total_articles_today": 3085,
-    "total_articles_week": 19960,
-    "total_articles_total": 455290
+    "total_ner_today": 14035,
+    "total_articles_today": 3088,
+    "total_articles_week": 20054,
+    "total_articles_total": 458378
 }
