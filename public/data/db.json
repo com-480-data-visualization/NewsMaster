@@ -1164,10 +1164,15 @@
             "date": "31.10.2025",
             "articles": 3088,
             "ner": 14035
+        },
+        {
+            "date": "31.12.2025",
+            "articles": 2835,
+            "ner": 11928
         }
     ],
-    "total_ner_today": 12249,
-    "total_articles_today": 2840,
-    "total_articles_week": 17950,
-    "total_articles_total": 625810
+    "total_ner_today": 11928,
+    "total_articles_today": 2835,
+    "total_articles_week": 17882,
+    "total_articles_total": 628645
 }
