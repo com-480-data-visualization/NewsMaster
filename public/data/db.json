@@ -936,6 +936,11 @@
             "ner": 10951
         },
         {
+            "date": "23.01.2026",
+            "articles": 3108,
+            "ner": 15097
+        },
+        {
             "date": "23.05.2025",
             "articles": 1073,
             "ner": 4570
@@ -1281,8 +1286,8 @@
             "ner": 11928
         }
     ],
-    "total_ner_today": 15069,
-    "total_articles_today": 3156,
-    "total_articles_week": 20024,
-    "total_articles_total": 689701
+    "total_ner_today": 15097,
+    "total_articles_today": 3108,
+    "total_articles_week": 20199,
+    "total_articles_total": 692809
 }
